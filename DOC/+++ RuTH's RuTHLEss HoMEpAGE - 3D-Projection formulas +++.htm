@@ -1,0 +1,506 @@
+
+<!-- saved from url=(0067)http://ruthless.zathras.de/facts/apps/polygonesia/3d-projection.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+
+<meta name="robots" content="index,follow">
+
+<meta name="Creator" content="R. Kusterer">
+<meta name="Format" content="text/html">
+<meta name="Rights" content="Alle Rechte liegen beim Autor">
+
+<meta name="description" content="How to implement a very simple 3D engine in Cocoa/Objective C that will run on a G3 iMac or faster">
+<meta name="keywords" content="game, games, program, Programm, development, Computerspiel, Konzept,
+   Hra, Hry, Spiel, spielen, program, develop,dimension, 3D, matrix, 
+   matrices, Matrizen, formula, math, maths, mathematics, Mathematik, berechnen, 
+   computation, compute, calculate, programmieren, Spielentwicklung, 3D, Cocoa, concept,
+   MacOS, Mac, macintosh, C, Objective C, Apple, 3-dimensionial, 3-dimensioniales,
+   The Black Art of Macintosh Game Programming,Tieskoetter,G3,iMac,3D-engine"> 
+
+<title>+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++</title>
+<link rel="stylesheet" href="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/aussehen.css" type="text/css">  
+<link rel="SHORTCUT ICON" href="http://ruthless.zathras.de/favicon.ico">
+</head>
+
+
+<body bgcolor="#ffffff" text="#000000" link="#5500FF" vlink="2200AA">
+
+<script language="JavaScript">
+<!-- if(top.frame.length > 0) top.location.href=self.location; //--> 
+</script>
+
+  <!-- Kopfzeile -->
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#FFFFFF"> 
+  <tbody><tr>
+    <td width="22%">
+      <a href="http://ruthless.zathras.de/fun/top-secret/index.php">
+      <img src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/dracheL.gif" alt="Logo" border="0"></a></td>
+    <td align="middle">
+      
+<hr width="80%" size="4">
+<i><div><b><font size="+2">
+<font color="#5500FF" size="+1">R</font>u<font size="-1">T</font>h's 
+<font color="#5500FF" size="+1">&nbsp;R</font>u<font size="-1">T</font>h<font size="-1">L</font><font size="-1">E</font><font size="+1">s</font>s 
+<font color="#5500FF" size="+1">&nbsp;H</font>om<font size="-1">E</font>p<font size="-1">A</font>g<font size="-1">E</font>
+</font></b></div></i>
+<hr width="70%" size="4">
+<p>&nbsp;</p>
+
+<!-- <B><FONT COLOR="#AA00FF" SIZE="+1">R</FONT>UTH'S 
+
+<FONT COLOR="#AA00FF" SIZE="+1">&nbsp;R</FONT>UTHLESS 
+<FONT COLOR="#AA00FF" SIZE="+1">&nbsp;H</FONT>OMEPAGE</B>
+<hr width="70%" size="4"> -->
+
+    </td>
+    <td width="5%"></td>
+  </tr>
+</tbody></table>
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%"> 
+    <tbody><tr><td valign="top" width="22%" bgcolor="#FFFFFF"> 
+
+  <!-- linke Spalte: -->
+
+  <!-- Navigation Anfang --> 
+
+  <table border="0" bgcolor="#FFFFFF">
+
+    <tbody><tr><td colspan="4" height="10"></td></tr>
+    <tr>
+      <td align="left" valign="top" width="0"></td>
+      <td bgcolor="#FFFFFF"><b><i><div class="head">sTaRt</div></i></b></td>
+ <td>&nbsp;</td>
+      <td valign="top" width="6"></td>
+    </tr>
+
+    <tr><td></td><td colspan="2">
+
+        <table border="0" bgcolor="#FFFFFF" width="100%">
+          <tbody><tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/index.php"><b>Intro<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"><img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/person/kontakt.php"><b>Contact<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"><img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://seapegasus.org/"><b>Current Seapegasus Blog<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://blogs.sun.com/seapegasus"><b>Sun Blog (2005-2010)<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/person/blog/photos.php"><b>Prague Photo Blog (2004)<img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/person/blog/index.php"><b>Prag ERASMUS Blog (2004)<img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/person/links/index.php"><b>Links<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"><img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+        </tbody></table>
+
+      </td><td></td>
+    </tr>
+
+    <tr>
+      <td align="left" valign="top" width="0"></td>
+      <td bgcolor="#FFFFFF"><b><i><div class="head">FuN</div></i></b></td>
+ <td>&nbsp;</td>
+      <td valign="top" width="6"></td>
+    </tr>
+
+    <tr><td></td><td colspan="2">
+
+        <table border="0" bgcolor="#FFFFFF" width="100%">
+          <tbody><tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/fun/babylon5/index.php"><b>Babylon 5<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/fun/fantascifi/index.php"><b>Fantasy&amp;SciFi<img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/fun/parodien/index.php"><b>Parodies<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"><img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+        </tbody></table>
+
+      </td><td></td>
+    </tr>
+
+    <tr>
+      <td align="left" valign="top" width="0"></td>
+      <td bgcolor="#FFFFFF"><b><i><div class="head">fAcTs</div></i></b></td>
+ <td>&nbsp;</td>
+      <td valign="top" width="6"></td>
+    </tr>
+
+    <tr><td></td><td colspan="2">
+
+        <table border="0" bgcolor="#FFFFFF" width="100%">
+          <tbody><tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/facts/apps/index.php"><b>Projects<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"><img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"><img border="0" alt="Cesky" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/cz.jpg"></b></a></div>
+              <table border="0" width="100%">
+                <tbody><tr><td valign="top" width="3">&gt;</td>
+                  <td align="left" bgcolor="#FFFFFF"><a href="http://ruthless.zathras.de/facts/apps/polygonesia/index.php"><div class="head"> 3D Game Design<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"></div></a></td></tr>
+                <tr><td valign="top" width="3">&gt;</td>
+                  <td align="left" bgcolor="#FFFFFF"><a href="http://ruthless.zathras.de/facts/apps/planetris/index.php"><div class="head"> Planetris<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"><img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"><img border="0" alt="Cesky" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/cz.jpg"></div></a></td></tr>
+                <tr><td valign="top" width="3">&gt;</td>
+                  <td align="left" bgcolor="#FFFFFF"><a href="http://ruthless.zathras.de/facts/apps/PHP/index.php"><div class="head"> PHP-Skripte<img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></div></a></td></tr>
+                <tr><td valign="top" width="3">&gt;</td>
+                  <td align="left" bgcolor="#FFFFFF"><a href="http://ruthless.zathras.de/person/links/index.php#comp"><div class="head"> Programming Links</div></a></td></tr>
+              </tbody></table>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/facts/linux/index.php"><b>Linux<img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/facts/apple/index.php"><b>Apple Macintosh<img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/facts/rats/index.php"><b>Pet Rats<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/facts/luzid/index.php"><b>Klarträumen<img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/facts/coli/index.php"><b>Computerlinguistik<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"><img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+          <tr><td width="3">&nbsp;</td>
+            <td colspan="2"><div class="head"><a href="http://ruthless.zathras.de/facts/misc/index.php"><b>Miscellaneous<img border="0" alt="English" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/english.jpg"><img border="0" alt="Deutsch" src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/german.jpg"></b></a></div>
+          </td></tr>
+        </tbody></table>
+
+      </td><td></td>
+    </tr>
+
+
+    <tr><td colspan="4" height="5"></td>
+    </tr>
+  </tbody></table>
+
+  <!-- Navigation Ende -->
+
+  </td> 
+
+   <!-- mittlere Spalte: -->
+
+  <td align="left" valign="top">
+<div align="center"><font size="-2">
+* <a href="http://ruthless.zathras.de/facts/apps/polygonesia/index.php">INDEX</a> * 
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/to-do.php">3D game to-do list</a> *
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/schedule.php">3D Engine to-do list</a>
+( chapter  
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/ch1_concept.php">1</a>, 
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/ch2_rotating_cube.php">2, </a> 
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/ch3_saving_and_loading.php">3, </a> 
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/ch4_drawing-to-buffer.php">4, </a> 
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/ch5_z-buffer.php">5, </a> 
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/ch6_clipping.php">6, </a> 
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/ch7_3D-camera.php">7</a> ) *
+
+<br>*
+<a href="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++.htm">projection formula</a> *
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/3d-transformation-matrix.php">transformation matrices</a> *
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/bresenham.php">Bresenham algorithm</a> *
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/scanline-polygonfill.php">Scanline Polygonfill algorithm</a> * 
+
+<br>*
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/spiel_design.php">Spieldesign</a> / 
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/game_design.php">game design</a> *
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/troubleshooting.php">Troubleshooting 3D</a> *
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/irrlicht-on-mac.php">Irrlicht 3D engine</a> *
+<a href="http://ruthless.zathras.de/facts/apps/polygonesia/blender.php">Blender for Beginners</a> *
+
+</font></div>
+
+<!--------------------- Inhalt Anfang ----------------------->
+
+
+<h2>3D Object Projection</h2>
+
+<h3>Analytic Geometry?! Don't Panic</h3>
+
+<p>
+The first thing you want to be able to do in a 3D engine is to define and <b>display</b> 3D entities such as characters, buildings, weapons and treasures that populate your game. (The second thing is to <a href="http://ruthless.zathras.de/facts/apps/polygonesia/3d_matrix_formulas.php">transform and animate</a> them, which will be discussed subsequently.) 
+Well, if maths teachers had thought of telling us that <a href="http://en.wikipedia.org/wiki/Analytic_geometry"><b>analytic geometry</b></a> is what computer games are made of, we surely would have listened more closely. Anyway. It's about time to make good use of it. :-) 
+
+</p><p><img src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/vertex.jpg" border="0" alt="Cartesian coordinate system, vector and vertex." align="right">
+I'm not going to go into details how <a href="http://en.wikipedia.org/wiki/Vector"><b>vectors</b></a>, <a href="http://en.wikipedia.org/wiki/Vertex"><b>vertices</b></a> and the <a href="http://en.wikipedia.org/wiki/Cartesian_coordinate_system"><b>coordinate system</b></a> work. For now, think of vertices as the <em>cornerpoints</em> of your entities in 3D space. Each corner or <b>vertex</b> is defined by a <b>vector</b> — three floating point numbers (x|y|z) that describe a fixed position in the <b>3D coordinate system</b>. You can connect three vertices to form a triangle, four to form a square, or any number of them to form any polygon. You can then put together several of those polygons to form a 3D entity: The simplest example for that is to construct a cube out of 6 square polygons; other cases such as a house or person are more complex but possible.<img src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/polygons.jpg" border="0" alt="Six square polygons form one cube." align="left">
+
+</p><p><img src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/convex.jpg" border="0" alt="Polygons must be convex, never concave." align="right">
+One more thing you need to keep in mind is that with the approach I am designing this 3D-engine, there are small limitations: Polygons must always be a) flat ("<b>coplanar</b>"), b) <b>convex</b>, and c) their vertices must be defined <b>counter-clockwise</b>. This is an simplification which ensures that we don't get too many case differentiations so calculations will not get too time-consuming. It does not limit the kinds of shapes you can create, since you can substitute any concave shape with two or more convex shapes!
+
+</p><h3>Projection</h3>
+
+<p><b>Projection</b> means the displaying of 3D images on a 2D screen -- that's what your eyes do all day long on your retina and it's essentially what we need 3D-engines for. 
+Projection requires three preparational steps: First you have to define the 3D entities, of course; next you might want to do some transformations on your entities as they walk or move; then you want to place them into your 3D game world. Finally, you project the coordinates to the 2D screen. 
+
+<img src="./+++ RuTH's RuTHLEss HoMEpAGE - 3D-Projection formulas +++_files/projection.jpg" align="center" alt="Graphic: First, define the entity with local coordinates, second, transform the entity, third, place the entity into the 3D world, fourth, project the 3D world to the 2D screen.">
+
+</p><p>In more detail:</p><ol>
+<li><b>Define Local Coordinates</b>: The 3D image data of each entity is defined as a list of polygon vertices in <i>local coordinates</i>; local coordinates pretend, that the entity described is alone in the center of its own little 3D world. Each entity first lives in its own local 3D world before it is projected in the real game world together with all the other objects.
+</li><li><b>Transformed Coordinates</b>: The next step is the transformation of the entity. You do a transformation every time when you want to move an entity to a special position in the game world ('translation') or you want it to face a certain way ('rotation'). Assume for now, that we don't need any transformation yet; for starters, we want to display the object as it is and where it is, so we don't care <a href="http://ruthless.zathras.de/facts/apps/polygonesia/3d_matrix_formulas.php">how transformation works</a> until later.
+</li><li><b>World Coordinates</b>: Next we want to convert the (possibly transformed) local coordinates to world coordinates. This means nothing else than taking the entities out of their own lonely worlds and putting them all together into the big wide game world, each in the place where it belongs. Concerning calculations, this is the easiest step.
+</li><li><b>Projection</b>: The last step is the projection itself. In this step, the three coordinates (x|y|z) of each 3D vertex will be converted to a 2D vertex with only an (x|y) coordinate, which can be drawn to the screen. As you may have noticed, things appear smaller in a distance than close by; also, parallel lines seem to come together in a distance (cf. railroad tracks). There is an easy formula to simulate the effect of this dependency of the x- and y- upon the z-coordinate (depth) -- it's the projection formula.
+</li></ol>
+
+<h3>The Projection Formula</h3>
+<p>
+<table border="0" cellpadding="7" cellspacing="0" width="100%">
+  <tbody><tr><td width="120">
+  <pre>sx = wx * c / wz
+sy = wy * c / wz</pre>
+  </td><td>
+The Projection Formula projects 3D vertex's world coordinates (&nbsp;wx&nbsp;|&nbsp;wy&nbsp;|&nbsp;wz&nbsp;) to its 2D screen coordinates (&nbsp;sx&nbsp;|&nbsp;sy&nbsp;). The formular zooms the outcome by multiplying everything with the zoom constant c (choose 200 &lt; c &lt; 400).
+</td></tr>
+</tbody></table>
+</p>
+
+<h3>Implementation in Objective C (Apple Cocoa)</h3>
+
+<p>Now on to the implementation. Basically, you will need (at least) three C objects to describe 3D entities: A vertex object, a polygon object, and an entity object. Each entity consists of a list (array) of polygons; each polygon consists of a list of vertices and has a color; each vertex has three floating point number coordinates. 
+
+</p><h4>The MYVertex Object</h4>
+
+<p>We heard about the four steps of projection -- there are local, transformed, world and screen coordinates. The definition of coordinates happens in the vertex object. Let's call the <b>vertex object</b> MYVertex. MYVertex needs the following float instance variables: 
+</p><ul>
+<li>( lx | ly | lz ) to store the local coordinates of the vertex. 
+</li><li>( tx | ty | tz ) to store the transformed coordinates of the vertex.  
+</li><li>( wx | wy | wz ) to store the world coordinates of the vertex. 
+</li><li>( sx | sy ) to store the screen coordinates of the vertex. Note these are 2D.
+</li><li> I also define four more temporary float variables lt, tt, wt and st that will be needed during the transformation. Ignore those for now.
+</li></ul>
+<p> Of course I also write the accessor methods for the vertex object: methods to get and set the instance variables, and (for convenience) methods adding a value to them or multiplying them by a value, respectively. The vertex initializer method sets the three local coordinates to the init:'s arguments, the four temporary variables to 1.0, and all the other variables to 0.0. No dealloc method is necessary, since the data is all just primitive floats.
+
+</p><h4>The MYPolygon Object</h4>
+
+<p>The next object to be implemented is the <b>polygon object</b>, let's call it MYPolygon.
+The polygon object has an array of vertices (given in counter-clockwise order) and a color, which I represent by one of Cocoa's NSColor objects. Additionally, a polygon has a position in 3D space, the so-called origin, which is given by three floats ( oriX | oriY | oriZ ) and their accessor methods.
+
+</p><p>MYPolygon also has a draw method, that loops through the screen (!) coordinates of each of the vertices in the array and draws a closed and filled NSBezierPath object. Don't forget the dealloc and the initializer which sets the initial color and the vertex list. 
+
+</p><pre>- (void) draw:(NSRect)cliprect
+{
+    NSBezierPath   *	polygon = [NSBezierPath bezierPath];
+    int 		v=0;
+
+    [[self color] set];
+    
+    /* Define start point */
+    [polygon moveToPoint:[self screenCoordOfVertexAtIndex:0]];
+    /* loop: Connect all points */
+    for (v=1;v&lt;[self numOfVertices];v++){
+	[polygon lineToPoint:[self screenCoordOfVertexAtIndex:v]];
+    }
+    /* draw and fill the polygon */
+    [polygon closePath];
+    [polygon fill];     
+    /* or for wireframe use [polygon stroke]; */
+    [polygon removeAllPoints];
+}</pre>
+
+
+<h4>The MYEntity Object</h4>
+
+<p>Last we take care of the <b>entity object</b> which will be named MYEntity. MYEntity has a list of polygons that constitute the entitity, and also its own position, that is origin point ( oriX | oriY | oriZ ). It has a draw method that loops over all the polygons in the polygon array and calls their draw method, an obvious init and dealloc method, and a couple of necessary accessors.
+
+</p><p>But that's not all -- MYEntity is where the calculation of the transformed coordinates, the world coordinates and the projected screen coordinates is initiated. Therfore there are three special methods, transformation, toWorldCoordinates and projection.
+
+</p><p>Transformation is a complex issue, since I need to introduce matrices first. I will  explain the <a href="http://ruthless.zathras.de/facts/apps/polygonesia/3d_matrix_formulas.php#Transform_MYEntity">real transformation</a> later, for now I only give you a temporary fake transformation method that does nothing but copy the local coordinates to the transformed coordinates. Nothing happens here...
+
+</p><pre>- (void) transformation
+{
+  /* Does nothing yet, just copies local coordinates the vertix'es 
+   * transformation variables tx,ty,tz,tt.
+   * The <a href="http://ruthless.zathras.de/facts/apps/polygonesia/3d_matrix_formulas.php#Transform_MYEntity">real transformation</a> will be handed in later.
+   */
+  int p,v; MYVertex* theVertex; MYPolygon* thePolygon;
+  int numOfPolygons=[self size];
+  for(p=0;p &lt; numOfPolygons;p++)
+   {
+      thePolygon = [self polygon:p];
+      int numOfVertices=[thePolygon groesse];
+      for(v=0; v &lt; numOfVertices; v++)
+      {
+         theVertex=[thePolygon vertex:v];
+         [theVertex setTX:[theVertex lx]]; // only fake!
+         [theVertex setTY:[theVertex ly]]; // only fake!
+         [theVertex setTZ:[theVertex lz]]; // only fake!
+         [theVertex setTT:1.0];            // only fake!
+      }
+   }
+}</pre>
+
+<p>The conversion to world coordinates places the object in its position in the 3D game world. The calculations are easy: Just add the entity's origin coordinates ([self oriX], [self oriY], [self oriZ]) to the vertices' transformed coordinates (tx, ty, tz) and store the result in the world coordinate variables (wx, wy, wz).
+
+</p><pre>- (void) toWorldCoordinates
+{
+    /* Converts the transformed coordinates to world coordinates.
+     * Stores results in wx, wy, wz. 
+     */
+    int p,v; 
+    int numOfPolygons=[self size];
+    for(p=0;p &lt; numOfPolygons;p++)
+    {
+      MYPolygon* thePolygon = [self polygon:p];
+      int numOfVertices=[thePolygon size];
+      for(v=0;v &lt; numOfVertices;v++)
+      {
+          MYVertex* theVertex = [thePolygon vertex:v];
+          [theVertex setWX:([theVertex tx]+[self oriX])];
+          [theVertex setWY:([theVertex ty]+[self oriY])];
+          [theVertex setWZ:([theVertex tz]+[self oriZ])];
+      }
+    }
+}</pre>
+
+<p>Now the blowoff, the projection. This method implements the improved projection formula shown above (sx=wx*c/wz, sy=wy*c/wz). The constant c is defined with <code>#define c 400.0</code> in the header; you may want to choose to turn this constant into a variable later to take advantage of the 'zooming' effects you gain by changing it. Apart from implementing the projection formula, the method also centers the screen coordinates in the last step.
+
+</p><pre>- (void) projection:(NSRect)rect
+{
+    /* Converts 3D world coordinates to 2D screen coordinates 
+    * Stores results in the vertices' variables sx, sy.
+    */
+    int p,v;
+    float w = rect.size.width*0.5; 
+    float h = rect.size.height*0.5;
+    int numOfPolygons=[self size];
+    for(p=0;p &lt; numOfPolygons;p++)
+    {
+      MYPolygon* thePolygon = [self polygon:p];
+      int numOfVertices=[thePolygon size];
+      for(v=0;v &lt; numOfVertices;v++){
+          MYVertex* theVertex = [thePolygon vertex:v];
+          float depth=[theVertex wz];
+          /* projection */
+          if(depth==0.0) depth=0.0000000001; /* don't div by zero! */
+          [theVertex setSX:(([theVertex wx]*c)/depth)];
+          [theVertex setSY:(([theVertex wy]*c)/depth)];
+          /* center */
+          [theVertex addToSX:w];
+          [theVertex addToSY:h];
+      }
+    }
+}</pre>
+
+<h3>Culling of Backfacing Polygons</h3>
+
+<p>That's almost it. If you defined a test entity now and drew it to the screen, you'd get a weird result: The back of the entity would be visible in the front. Why? Well, nobody told the drawing methods <i>not</i> to draw the backside of entities, right? What we need is one more step of optimization, which is called culling of backfacing polygons. 
+
+</p><p>The following method goes into the MYPolygon object: It looks at the first three vertices' world coordinates, calculates their cross product and dot product and thus determines whether the polygon is backfacing or not in relation to the viewer. It is considerd given that the viewer stands in the worlds origin (0|0|0) and looks down the z-axis. (If you don't know what a <a href="http://en.wikipedia.org/wiki/Dot_product">dot product</a> or a <a href="http://en.wikipedia.org/wiki/Cross_product">cross products</a> is -- just trust Tieskoetter and Decartes.) 
+
+</p><pre>- (BOOL) isBackfacing
+{
+    float cullMe,x1,x2,x3,y1,y2,y3,z1,z2,z3;
+    MYVertex* v0,*v1,*v2;
+    v0=[self vertex:0];
+    v1=[self vertex:1];
+    v2=[self vertex:2];
+    x1 = [v0 wx]; x2 = [v1 wx]; x3 = [v2 wx];
+    y1 = [v0 wy]; y2 = [v1 wy]; y3 = [v2 wy];
+    z1 = [v0 wz]; z2 = [v1 wz]; z3 = [v2 wz];
+    cullMe = x3  * ((z1*y2)-(y1*z2)) +
+	     y3  * ((x1*z2)-(z1*x2)) +
+	     z3  * ((y1*x2)-(x1*y2)) ;
+    return (cullMe &lt; 0.0);
+}</pre>
+
+<p>Now adapt the draw method of MYEntity to test each polygon before drawing it; MYEntity has to reject drawing polygons which face away from the viewer and therfore are not visible at all. 
+
+</p><p>That's it! Define a test entity (for instance a cube), transform, convert and project it, then draw it to the screen from your custom NSView's drawRect method. Here is sample code for how to create a cube as a test entity.
+
+</p><h3>Object Creation Sample Code</h3>
+
+<pre>typedef struct _MYPoint {
+    float x;
+    float y;
+    float z;
+} MYPoint;
+
++ (MyEntity*) createCubeAt:(MYPoint)loc  center:(MYPoint)j
+                         x:(float)x y:(float)y z:(float)z
+{
+    // Create the eight corner vertices of the cube
+    MYVertex* a=[[MYVertex alloc] initWithX:0-j.x y:y-j.y z:0-j.z];
+    MYVertex* b=[[MYVertex alloc] initWithX:x-j.x y:y-j.y z:0-j.z];
+    MYVertex* c=[[MYVertex alloc] initWithX:x-j.x y:0-j.y z:0-j.z];
+    MYVertex* d=[[MYVertex alloc] initWithX:0-j.x y:0-j.y z:0-j.z];
+    MYVertex* e=[[MYVertex alloc] initWithX:0-j.x y:y-j.y z:z-j.z];
+    MYVertex* f=[[MYVertex alloc] initWithX:x-j.x y:y-j.y z:z-j.z];
+    MYVertex* g=[[MYVertex alloc] initWithX:x-j.x y:0-j.y z:z-j.z];
+    MYVertex* h=[[MYVertex alloc] initWithX:0-j.x y:0-j.y z:z-j.z];
+    // initialize six lists with those vertices (anti-clockwise)
+    NSArray *vlist1 = [NSArray arrayWithObjects:a,e,f,b,nil];
+    NSArray *vlist2 = [NSArray arrayWithObjects:f,g,c,b,nil];
+    NSArray *vlist3 = [NSArray arrayWithObjects:d,c,g,h,nil];
+    NSArray *vlist4 = [NSArray arrayWithObjects:a,d,h,e,nil];
+    NSArray *vlist5 = [NSArray arrayWithObjects:b,c,d,a,nil];
+    NSArray *vlist6 = [NSArray arrayWithObjects:e,h,g,f,nil];
+    // construct six squares from those vertex lists
+    MYPolygon *square1 =
+	[[MYPolygon alloc] initWithVertexList:vlist1 
+                           color:[NSColor greenColor]];
+    MYPolygon *square2 =
+	[[MYPolygon alloc] initWithVertexList:vlist2 
+                           color:[NSColor yellowColor]];
+    MYPolygon *square3 =
+	[[MYPolygon alloc] initWithVertexList:vlist3  
+                           color:[NSColor orangeColor]];
+    MYPolygon *square4 =
+	[[MYPolygon alloc] initWithVertexList:vlist4  
+                           color:[NSColor redColor]];
+    MYPolygon *square5 =
+	[[MYPolygon alloc] initWithVertexList:vlist5  
+                           color:[NSColor magentaColor]];
+    MYPolygon *square6 =
+	[[MYPolygon alloc] initWithVertexList:vlist6  
+                           color:[NSColor blueColor]];
+    // initialize an entity with this list of squares
+    NSMutableArray *plist = [NSArray arrayWithObjects: 
+        square1,square2,square3,square4,square5,square6,nil];
+    // construct a cube from this list
+    MYEntity *cube = [[MYEntity alloc] initWithPolygonList:plist];
+
+    [a retain]; [b retain]; [c retain]; [d retain];
+    [e retain]; [f retain]; [g retain]; [h retain];
+    [square1 retain]; [square2 retain]; [square3 retain];
+    [square4 retain]; [square5 retain]; [square6 retain];
+    [vlist1 retain]; [vlist2 retain]; [vlist3 retain];
+    [vlist4 retain]; [vlist5 retain]; [vlist6 retain];
+    [plist retain]; [cube retain];
+    [cube setOriX:loc.x]; [cube setOriY:loc.y]; [cube setOriZ:loc.z];
+    return cube;
+}
+</pre>
+
+<p>The projection you just implemented displays static 3D entities on the screen. Next, read how to <a href="http://ruthless.zathras.de/facts/apps/polygonesia/3d-transformation-matrix.php">transform</a> entities before projection.
+
+<!--------------------- Inhalt Ende----------------------->
+
+    </p></td>
+    <td width="5%"> &nbsp; </td>
+  </tr>
+</tbody></table>
+
+  <!-- Fusszeile -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tbody><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr>
+    <td valign="middle" align="center" width="22%">
+      <table bgcolor="#FFFFFF" border="1" cellpadding="3"><tbody><tr><td> 2008.08.26 </td></tr></tbody></table>
+    </td>
+    <td valign="middle" align="center">
+      <hr width="70%" size="4">
+      <a href="http://www.ruthless.zathras.de/">http://www.ruthless.zathras.de/</a>
+      <hr width="80%" size="4">
+    </td>
+    <td width="5%"></td>
+  </tr>
+</tbody></table>
+
+
+
+</body></html>

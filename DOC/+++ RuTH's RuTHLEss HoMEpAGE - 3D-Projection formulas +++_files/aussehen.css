@@ -1,0 +1,3 @@
+h1, h2, h3, h4, h5    { font-family:"Helvetica","Arial","Verdana","sans-serif"; letter-spacing: 2px }h1    { font-size: 18; }h2    { font-size: 16; }h3    { font-size: 14; }h4    { font-size: 12; }h5    { font-size: 10; }pre   { background: #E6E6FA; border: 1; padding: 10px; border: thin dashed #5500FF  }.head	{ font-size:small; font-family:"Helvetica","Arial","Verdana","sans-serif"; }.head2	{ font-size:x-large; font-family:"Helvetica","Arial","Verdana","sans-serif"; }
+A:link, A:visited, A:active { text-decoration: none }
+A:hover { background: #E6E6FA }
