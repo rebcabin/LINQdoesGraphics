@@ -1,0 +1,56 @@
+h1, h3.center, p.center, hr {text-align: center;}
+p.right {text-align: right;}
+p.left {text-align: left;}
+p.header
+{
+text-align: center;
+}
+p.pagedescrip
+{
+text-align: left;
+margin-left:5%;
+}
+
+hr.width80 {width: 80%;}
+table {width: 100%; text-align: center; margin-left:auto; margin-right:auto;}
+td.half {width: 50%;}
+td.third {width: 33%;}
+td.quarter {width: 25%;}
+td.threequarter {width: 75%;}
+td.left {text-align: left;}
+td.center {text-align: center;}
+td.menubar
+{
+width: 20%;
+background-color: #bbbbff;
+border-style: double;
+font-family: "Comic Sans MS", sans-serif;
+font-size: large;
+vertical-align: top;
+}
+
+body {background-color: #ffffff;}
+
+a:link {color: #3333ee;}
+a:visited {color: #3333ff;}
+a:hover {color: #000000;}
+a:active {color: #3333ff;}
+
+a.menuitem:link {color: #3333aa; text-decoration: none;}
+a.menuitem:visited {color: #3333ff; text-decoration: none;}
+a.menuitem:hover {color: #eeeeee;text-decoration: underline;}
+a.menuitem:active {color: #3333ff;text-decoration: none;}
+
+a.header
+{
+text-decoration: none;
+font-family: "Comic Sans MS", sans-serif;
+}
+
+ul.left {text-align: left;}
+
+img.linking
+{
+border-style:solid;
+border-width:0px;
+}
