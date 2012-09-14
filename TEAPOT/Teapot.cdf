@@ -20,10 +20,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       835,         17]
-NotebookDataLength[    566677,      11765]
-NotebookOptionsPosition[    563876,      11662]
-NotebookOutlinePosition[    564339,      11681]
-CellTagsIndexPosition[    564296,      11678]
+NotebookDataLength[    731502,      14677]
+NotebookOptionsPosition[    728374,      14564]
+NotebookOutlinePosition[    728836,      14582]
+CellTagsIndexPosition[    728793,      14579]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5774,42 +5774,57 @@ Cell[BoxData[
    "]"}], ":=", "\[IndentingNewLine]", 
   RowBox[{"With", "[", 
    RowBox[{
-    RowBox[{"{", 
+    RowBox[{"{", "\[IndentingNewLine]", 
      RowBox[{
+      RowBox[{"vpn", "=", "cameraPosition3d"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"vup", "=", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], ",", 
+      "\[IndentingNewLine]", 
       RowBox[{"d", "=", 
        RowBox[{"vertex3d", "-", "cameraPosition3d"}]}], ",", 
       "\[IndentingNewLine]", 
-      RowBox[{"v", "=", "vertex3d"}], ",", 
+      RowBox[{"v", "=", "vertex3d"}], ",", "\[IndentingNewLine]", 
       RowBox[{"c", "=", "cameraPosition3d"}]}], "}"}], ",", 
     "\[IndentingNewLine]", 
-    RowBox[{"{", 
+    RowBox[{"Module", "[", 
      RowBox[{
-      RowBox[{
-       RowBox[{"-", "focalLength"}], "*", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "u", ",", "v"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
        RowBox[{
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"d", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}],
-           "+", 
-          RowBox[{
-           RowBox[{
-           "d", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], "/", 
-           "3.75"}]}], ")"}], "/", 
         RowBox[{
-        "d", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}]}]}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"-", "focalLength"}], "*", 
-       RowBox[{
-        RowBox[{"d", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], 
-        "/", 
-        RowBox[{"(", 
+         RowBox[{"-", "focalLength"}], "*", 
          RowBox[{
-          RowBox[{"c", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}],
-           "*", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+            "d", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], "+", 
+            RowBox[{
+             RowBox[{
+             "d", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], "/",
+              "3.75"}]}], ")"}], "/", 
           RowBox[{
-          "d", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}]}], 
-         ")"}]}]}]}], "}"}]}], "]"}]}]], "Input"],
+          "d", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}]}]}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"-", "focalLength"}], "*", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+            "d", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], "-", 
+            RowBox[{
+             RowBox[{
+             "d", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], "/",
+              "10000"}]}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+            "c", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}], "*", 
+            RowBox[{
+            "d", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}]}], 
+           ")"}]}]}]}], "}"}]}], "]"}]}], "]"}]}]], "Input"],
 
 Cell["\<\
 Convert quadrilaterals into pairs of triangles (another possibility is to \
@@ -6248,27 +6263,26 @@ Cell[BoxData[
      ")"}]}]}]}]], "Input"],
 
 Cell[BoxData[
- RowBox[{"\[Sqrt]", 
-  RowBox[{"(", 
+ SqrtBox[
+  RowBox[{
    RowBox[{
-    RowBox[{
-     FractionBox["1", "9"], " ", 
-     SuperscriptBox[
-      RowBox[{"Abs", "[", 
-       RowBox[{"x1", "+", "x2", "+", "x3", "-", 
-        RowBox[{"3", " ", "xc"}]}], "]"}], "2"]}], "+", 
-    RowBox[{
-     FractionBox["1", "9"], " ", 
-     SuperscriptBox[
-      RowBox[{"Abs", "[", 
-       RowBox[{"y1", "+", "y2", "+", "y3", "-", 
-        RowBox[{"3", " ", "yc"}]}], "]"}], "2"]}], "+", 
-    RowBox[{
-     FractionBox["1", "9"], " ", 
-     SuperscriptBox[
-      RowBox[{"Abs", "[", 
-       RowBox[{"z1", "+", "z2", "+", "z3", "-", 
-        RowBox[{"3", " ", "zc"}]}], "]"}], "2"]}]}], ")"}]}]], "Output"]
+    FractionBox["1", "9"], " ", 
+    SuperscriptBox[
+     RowBox[{"Abs", "[", 
+      RowBox[{"x1", "+", "x2", "+", "x3", "-", 
+       RowBox[{"3", " ", "xc"}]}], "]"}], "2"]}], "+", 
+   RowBox[{
+    FractionBox["1", "9"], " ", 
+    SuperscriptBox[
+     RowBox[{"Abs", "[", 
+      RowBox[{"y1", "+", "y2", "+", "y3", "-", 
+       RowBox[{"3", " ", "yc"}]}], "]"}], "2"]}], "+", 
+   RowBox[{
+    FractionBox["1", "9"], " ", 
+    SuperscriptBox[
+     RowBox[{"Abs", "[", 
+      RowBox[{"z1", "+", "z2", "+", "z3", "-", 
+       RowBox[{"3", " ", "zc"}]}], "]"}], "2"]}]}]]], "Output"]
 }, Open  ]],
 
 Cell["\<\
@@ -6344,8 +6358,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{-0.8, 0.}, {-0.7, 1.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{26.75, 59.55714285714285}, {139.91412105891652`, 
-         142.9316801472587}}],
+        ImageSizeCache->{{24.75, 57.67959183673469}, {139.93059270944124`, 
+         143.16774812475848`}}],
        StatusArea[#, 1.]& ,
        TagBoxNote->"1."],
       StyleBox["1.`", {
@@ -6363,15 +6377,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.7, 0.}, {-0.6, 3.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{58.05714285714285, 90.8642857142857}, {
-         136.87900288223216`, 142.9316801472587}}],
-       StatusArea[#, 3.]& ,
-       TagBoxNote->"3."],
-      StyleBox["3.`", {
+         RectangleBox[{-0.7, 0.}, {-0.6, 1.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{56.17959183673469, 89.10918367346937}, {
+         139.93059270944124`, 143.16774812475848`}}],
+       StatusArea[#, 1.]& ,
+       TagBoxNote->"1."],
+      StyleBox["1.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[3., {
+      Style[1., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6383,15 +6397,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.6, 0.}, {-0.5, 11.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{89.3642857142857, 122.17142857142855`}, {
-         124.73853017549473`, 142.9316801472587}}],
-       StatusArea[#, 11.]& ,
-       TagBoxNote->"11."],
-      StyleBox["11.`", {
+         RectangleBox[{-0.6, 0.}, {-0.5, 10.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{87.60918367346937, 120.53877551020406`}, {
+         124.29619397158604`, 143.16774812475848`}}],
+       StatusArea[#, 10.]& ,
+       TagBoxNote->"10."],
+      StyleBox["10.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[11., {
+      Style[10., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6403,15 +6417,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.5, 0.}, {-0.4, 16.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{120.67142857142855`, 153.4785714285714}, {
-         117.15073473378385`, 142.9316801472587}}],
-       StatusArea[#, 16.]& ,
-       TagBoxNote->"16."],
-      StyleBox["16.`", {
+         RectangleBox[{-0.5, 0.}, {-0.4, 23.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{119.03877551020406`, 151.96836734693875`}, {
+         101.71317357246187`, 143.16774812475848`}}],
+       StatusArea[#, 23.]& ,
+       TagBoxNote->"23."],
+      StyleBox["23.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[16., {
+      Style[23., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6424,8 +6438,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{-0.4, 0.}, {-0.3, 58.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{151.9785714285714, 184.78571428571425`}, {
-         53.41325302341235, 142.9316801472587}}],
+        ImageSizeCache->{{150.46836734693875`, 183.39795918367344`}, {
+         40.912734036358316`, 143.16774812475848`}}],
        StatusArea[#, 58.]& ,
        TagBoxNote->"58."],
       StyleBox["58.`", {
@@ -6443,15 +6457,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.3, 0.}, {-0.2, 93.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{183.28571428571425`, 216.0928571428571}, {
-         0.29868493143609953`, 142.9316801472587}}],
-       StatusArea[#, 93.]& ,
-       TagBoxNote->"93."],
-      StyleBox["93.`", {
+         RectangleBox[{-0.3, 0.}, {-0.2, 88.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{181.89795918367344`, 
+         214.82755102040812`}, {-11.201928423159018`, 143.16774812475848`}}],
+       StatusArea[#, 88.]& ,
+       TagBoxNote->"88."],
+      StyleBox["88.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[93., {
+      Style[88., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6463,15 +6477,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.2, 0.}, {-0.1, 128.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{214.5928571428571, 
-         247.39999999999995`}, {-52.81588316054015, 142.9316801472587}}],
-       StatusArea[#, 128.]& ,
-       TagBoxNote->"128."],
-      StyleBox["128.`", {
+         RectangleBox[{-0.2, 0.}, {-0.1, 135.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{213.32755102040812`, 
+         246.2571428571428}, {-92.84823294306949, 143.16774812475848`}}],
+       StatusArea[#, 135.]& ,
+       TagBoxNote->"135."],
+      StyleBox["135.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[128., {
+      Style[135., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6483,15 +6497,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.1, 0.}, {0., 163.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{245.89999999999995`, 
-         278.7071428571428}, {-105.9304512525164, 142.9316801472587}}],
-       StatusArea[#, 163.]& ,
-       TagBoxNote->"163."],
-      StyleBox["163.`", {
+         RectangleBox[{-0.1, 0.}, {0., 164.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{244.7571428571428, 
+         277.6867346938775}, {-143.22573998726955`, 143.16774812475848`}}],
+       StatusArea[#, 164.]& ,
+       TagBoxNote->"164."],
+      StyleBox["164.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[163., {
+      Style[164., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6503,15 +6517,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0., 0.}, {0.1, 187.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{277.2071428571428, 
-         310.0142857142856}, {-142.3518693727287, 142.9316801472587}}],
-       StatusArea[#, 187.]& ,
-       TagBoxNote->"187."],
-      StyleBox["187.`", {
+         RectangleBox[{0., 0.}, {0.1, 159.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{276.1867346938775, 
+         309.1163265306122}, {-134.53996291068336`, 143.16774812475848`}}],
+       StatusArea[#, 159.]& ,
+       TagBoxNote->"159."],
+      StyleBox["159.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[187., {
+      Style[159., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6523,15 +6537,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.1, 0.}, {0.2, 116.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{308.5142857142856, 
-         341.3214285714285}, {-34.605174100434, 142.9316801472587}}],
-       StatusArea[#, 116.]& ,
-       TagBoxNote->"116."],
-      StyleBox["116.`", {
+         RectangleBox[{0.1, 0.}, {0.2, 155.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{307.6163265306122, 
+         340.54591836734687`}, {-127.59134124941437`, 143.16774812475848`}}],
+       StatusArea[#, 155.]& ,
+       TagBoxNote->"155."],
+      StyleBox["155.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[116., {
+      Style[155., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6543,15 +6557,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.2, 0.}, {0.3, 110.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{339.8214285714285, 
-         372.6285714285714}, {-25.499819570380936`, 142.9316801472587}}],
-       StatusArea[#, 110.]& ,
-       TagBoxNote->"110."],
-      StyleBox["110.`", {
+         RectangleBox[{0.2, 0.}, {0.3, 101.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{339.04591836734687`, 
+         371.97551020408156`}, {-33.784948822283184`, 143.16774812475848`}}],
+       StatusArea[#, 101.]& ,
+       TagBoxNote->"101."],
+      StyleBox["101.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[110., {
+      Style[101., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6563,15 +6577,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.3, 0.}, {0.4, 59.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{371.1285714285714, 403.9357142857142}, {
-         51.89569393507017, 142.9316801472587}}],
-       StatusArea[#, 59.]& ,
-       TagBoxNote->"59."],
-      StyleBox["59.`", {
+         RectangleBox[{0.3, 0.}, {0.4, 48.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{370.47551020408156`, 403.40510204081625`}, {
+         58.284288189530756`, 143.16774812475848`}}],
+       StatusArea[#, 48.]& ,
+       TagBoxNote->"48."],
+      StyleBox["48.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[59., {
+      Style[48., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6583,15 +6597,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.4, 0.}, {0.5, 34.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{402.4357142857142, 435.242857142857}, {
-         89.83467114362463, 142.9316801472587}}],
-       StatusArea[#, 34.]& ,
-       TagBoxNote->"34."],
-      StyleBox["34.`", {
+         RectangleBox[{0.4, 0.}, {0.5, 39.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{401.90510204081625`, 434.83469387755093`}, {
+         73.91868692738595, 143.16774812475848`}}],
+       StatusArea[#, 39.]& ,
+       TagBoxNote->"39."],
+      StyleBox["39.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[34., {
+      Style[39., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6603,15 +6617,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.5, 0.}, {0.6, 15.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{433.742857142857, 466.5499999999999}, {
-         118.66829382212603`, 142.9316801472587}}],
-       StatusArea[#, 15.]& ,
-       TagBoxNote->"15."],
-      StyleBox["15.`", {
+         RectangleBox[{0.5, 0.}, {0.6, 13.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{433.33469387755093`, 466.2642857142856}, {
+         119.08472772563431`, 143.16774812475848`}}],
+       StatusArea[#, 13.]& ,
+       TagBoxNote->"13."],
+      StyleBox["13.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[15., {
+      Style[13., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6623,15 +6637,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.6, 0.}, {0.7, 5.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{465.0499999999999, 497.8571428571428}, {
-         133.84388470554782`, 142.9316801472587}}],
-       StatusArea[#, 5.]& ,
-       TagBoxNote->"5."],
-      StyleBox["5.`", {
+         RectangleBox[{0.6, 0.}, {0.7, 4.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{464.7642857142856, 497.6938775510203}, {
+         134.7191264634895, 143.16774812475848`}}],
+       StatusArea[#, 4.]& ,
+       TagBoxNote->"4."],
+      StyleBox["4.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[5., {
+      Style[4., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6644,8 +6658,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.7, 0.}, {0.8, 1.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{496.3571428571428, 529.1642857142856}, {
-         139.91412105891652`, 142.9316801472587}}],
+        ImageSizeCache->{{496.1938775510203, 529.123469387755}, {
+         139.93059270944124`, 143.16774812475848`}}],
        StatusArea[#, 1.]& ,
        TagBoxNote->"1."],
       StyleBox["1.`", {
@@ -6664,7 +6678,41 @@ Cell[BoxData[
      Scaled[0.02]}, {
      Scaled[0.02], 
      Scaled[0.1]}},
-  Ticks->{Automatic, Automatic}]], "Output"]
+  Ticks->{Automatic, Automatic}]], "Output",
+ ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJztXb9vEz0Ydn61pMAnJIYIKQ0ZkfgPCkLfBAPqxgZLKBQ6IBCUAZgpIFVV
+Z9gRM0ME7IiFjQXIjOA/YAzn1/bFd3Uc55K72Lmnapzmvdd+nue170cv9nub
+vd27t+/1dne2et0rD3sP7u5sPepevv8wMtUqjFXbjFWudRn/e8iYKobRryg6
+vODmHAyP6e1EVA7Y4QYTPxuHbCC8RnZlGxyy6GOV/Gpsu6/chmyPylPuTem2
+ke/B/Bj1dI0N1t/mlQb0acCb2O6zJn2qRds22OFAF2L2X7FsO5gSR9LbpbdV
+KWSb9WOh/eiTcD8mq5Mtao5/eu5Qr+7gs58RX9Lf0TfJ7mpQuUbKVWcMRViO
+9GPUYYnWpUusbny1kTqLz76Djwk/1TnUj4bqvJ9VddXXeufY6tUdfPYz4k9B
+fzUemrSnUX/vFUjfhH8ztWtMHASN5PFCDuMXBQ4iG4+tlBxtz0rvaQ01FiMo
+dSx76VCv7uCznxH/1uTj6IphF3qVw3HUhJOiZzpxrMptg1HPxNv2LPVWLNsO
+MuLJXfOMUCJP9rIjmDo9VwN3OkWGobiQYewkLypH6g8v/X+Vv9g6lUlbW7N9
+/faXvyI/XiZtbYNt3n5FYEzyM8Qljn9zfNesG2xtrQvylsNp+xLaMVxMcXEJ
+7UVhe7+5uelE6fTplhMlV7+iMSx+PAZxXM5lC9ksNF39isBw9EPIEDKEbMEh
++9NqtbhmClObl+cRo5RfYghdQXgQHoQH4UF4EB6EB+EpYXjqPDoX+F9d8iln
+FFKD5Ia0IRQIBUKBUJQtFOr2vPwqo6yh4OKVtjuQDdmQDdmQDdmQDdmQ7bls
+urNxvSRiS9rHkA3ZkF0e2WfFPWo+02FZdT4Ttrl/QQGJkAiJkAiJkAiJkAiJ
+c73R8HQJhZWg7yAREiEREiEREiEREiEREiEREh38utxtJ3ARqcmde4H+WztW
+xJL1CeRADuRADuRADuRADuR4LUelzpN5XeMfnoywprYZUu41wglDnHCmw0uR
+3ZEdp7dmIkMsf5myIIaiVf/X9a0uc43pmWQtmWfrS6JUJQ0dn0CUlDa40Cdh
+6dPTzlryvAbck2v0djyRoXaCWhaw3PgIbMhkK9J7umTCDVJ6nAlay35bU5In
+Zt8NW7J2mFK5jJfs3NOU+7EpK68+iEO8rDDIDeXCENRBHdRB3SvqvBlercPL
+jn9c30ib5yEFzZlo0veJrz0lF0gMQRM0QRM0QRM0QRM0QTNQmrgYBk3QBE3Q
+BE3QBE3QBE3Q9JsmsfSVXCAxBE3QBE3QBE3QBM0MNM+St1e8Pgmb8ywZUFoU
+Jbrr/NEDIh7GBpRACZRACZRAaQkpyaU/aiVqlVNjx+KFQeJ1ZMmIWCLlvkh1
+wSIFXbn+Ry5nUutsTet/qpZtgcgTtv9s606nXZPqs0rLUj2n9agf/NVmW4E5
+5VpUj3vQd5WU1etdviOxmN5KJCT47KDIsibUsm3BiuRxeijWMzMWzlHf2j90
+xE5KMZ2DPTk/m6QUeA0EeMADHvCAz/0ur6+aAQ94wAMe8IAHPC4yAA94wAMe
+8IAHfKjwuMgAPOABv2h43vSldAK9OeP9lLYCpAEKUMsLRRcNP5ZDC6AABShA
+lRTKOGm5Ppq0LOzC3EzNZeYvt0lROZE3zbVbIVv2B+MUTnWmh9ssiu00D6j5
+XjzHGR4yU2BExfCb/UExBVI2zoac8WEvBdKvKdscHtiS1wHZNtt2tueu5B1o
+bUZtXQ7tWZ+dEv4JNjCoyMabpubpeXNf5tp2XPcXmi1Hs39ardETDNd5+TtT
+O4kBT2VDa4eayVx7XizQzvTtyGwbU1WkkooqnPJxolt8o00Vz+nCKVyncIba
+yNARBlb5B9jeNjQ=\
+\>"]]
 }, Open  ]],
 
 Cell["How about over our triangles?", "Text"],
@@ -6741,8 +6789,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0., 0.}, {0.0002, 280.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{26.750000000000004`, 
-         73.78766233766234}, {-142.35186937272871`, 142.93168014725873`}}],
+        ImageSizeCache->{{24.750000000000004`, 
+         71.96576994434136}, {-143.2257399872695, 143.16774812475848`}}],
        StatusArea[#, 280.]& ,
        TagBoxNote->"280."],
       StyleBox["280.`", {
@@ -6761,8 +6809,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0002, 0.}, {0.0004, 185.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{72.28766233766234, 
-         119.32532467532467`}, {-46.068165071304406`, 142.93168014725873`}}],
+        ImageSizeCache->{{70.46576994434136, 
+         117.68153988868272`}, {-46.56544937783141, 143.16774812475848`}}],
        StatusArea[#, 185.]& ,
        TagBoxNote->"185."],
       StyleBox["185.`", {
@@ -6781,8 +6829,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0004, 0.}, {0.0006, 135.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{117.82532467532467`, 164.862987012987}, {
-         4.6074687715504865`, 142.93168014725873`}}],
+        ImageSizeCache->{{116.18153988868272`, 163.39730983302405`}, {
+         4.308387785030703, 143.16774812475848`}}],
        StatusArea[#, 135.]& ,
        TagBoxNote->"135."],
       StyleBox["135.`", {
@@ -6801,8 +6849,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0006, 0.}, {0.0008, 95.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{163.362987012987, 210.40064935064933`}, {
-         45.14797584583441, 142.93168014725873`}}],
+        ImageSizeCache->{{161.89730983302405`, 209.11307977736544`}, {
+         45.007457515320425`, 143.16774812475848`}}],
        StatusArea[#, 95.]& ,
        TagBoxNote->"95."],
       StyleBox["95.`", {
@@ -6821,8 +6869,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0008, 0.}, {0.001, 67.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{208.90064935064933`, 255.93831168831167`}, {
-         73.52633079783315, 142.93168014725873`}}],
+        ImageSizeCache->{{207.61307977736544`, 254.8288497217068}, {
+         73.49680632652321, 143.16774812475848`}}],
        StatusArea[#, 67.]& ,
        TagBoxNote->"67."],
       StyleBox["67.`", {
@@ -6841,8 +6889,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.001, 0.}, {0.0012, 56.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{254.43831168831167`, 301.475974025974}, {
-         84.67497024326124, 142.93168014725873`}}],
+        ImageSizeCache->{{253.3288497217068, 300.5446196660481}, {
+         84.68905050235288, 143.16774812475848`}}],
        StatusArea[#, 56.]& ,
        TagBoxNote->"56."],
       StyleBox["56.`", {
@@ -6861,8 +6909,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0012, 0.}, {0.0014, 28.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{299.975974025974, 347.0136363636363}, {
-         113.05332519525999`, 142.93168014725873`}}],
+        ImageSizeCache->{{299.0446196660481, 346.2603896103895}, {
+         113.17839931355567`, 143.16774812475848`}}],
        StatusArea[#, 28.]& ,
        TagBoxNote->"28."],
       StyleBox["28.`", {
@@ -6881,8 +6929,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0014, 0.}, {0.0016, 13.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{345.5136363636363, 392.55129870129866`}, {
-         128.25601534811645`, 142.93168014725873`}}],
+        ImageSizeCache->{{344.7603896103895, 391.9761595547309}, {
+         128.4405504624143, 143.16774812475848`}}],
        StatusArea[#, 13.]& ,
        TagBoxNote->"13."],
       StyleBox["13.`", {
@@ -6901,8 +6949,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0016, 0.}, {0.0018, 14.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{391.05129870129866`, 438.088961038961}, {
-         127.24250267125936`, 142.93168014725873`}}],
+        ImageSizeCache->{{390.4761595547309, 437.6919294990722}, {
+         127.42307371915709`, 143.16774812475848`}}],
        StatusArea[#, 14.]& ,
        TagBoxNote->"14."],
       StyleBox["14.`", {
@@ -6921,8 +6969,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0018, 0.}, {0.002, 5.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{436.588961038961, 483.62662337662334`}, {
-         136.36411676297325`, 142.93168014725873`}}],
+        ImageSizeCache->{{436.1919294990722, 483.4076994434136}, {
+         136.58036440847226`, 143.16774812475848`}}],
        StatusArea[#, 5.]& ,
        TagBoxNote->"5."],
       StyleBox["5.`", {
@@ -6941,8 +6989,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.002, 0.}, {0.0022, 2.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{482.12662337662334`, 529.1642857142857}, {
-         139.40465479354452`, 142.93168014725873`}}],
+        ImageSizeCache->{{481.9076994434136, 529.123469387755}, {
+         139.63279463824398`, 143.16774812475848`}}],
        StatusArea[#, 2.]& ,
        TagBoxNote->"2."],
       StyleBox["2.`", {
@@ -7058,31 +7106,8 @@ Cell[BoxData[
   "\"\<e:/LINQdoesGraphics/TEAPOT/teapotZorders2d.csv\>\"", ",", "zorders"}], 
   "]"}]], "Input"],
 
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"Export", "::", "nodir"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Directory \
-\[NoBreak]\\!\\(\\\"/Users/rebcabin/e:/LINQdoesGraphics/TEAPOT/\\\"\\)\
-\[NoBreak] does not exist. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
-ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/Export\\\", ButtonNote -> \
-\\\"Export::nodir\\\"]\\)\"\>"}]], "Message", "MSG"],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"Export", "::", "noopen"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Cannot open \
-\[NoBreak]\\!\\(\\\"e:/LINQdoesGraphics/TEAPOT/teapotZorders2d.csv\\\"\\)\
-\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
-ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/General/noopen\\\", ButtonNote -> \
-\\\"Export::noopen\\\"]\\)\"\>"}]], "Message", "MSG"],
-
-Cell[BoxData["$Failed"], "Output"]
+Cell[BoxData["\<\"e:/LINQdoesGraphics/TEAPOT/teapotZorders2d.csv\"\>"], \
+"Output"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -7127,7 +7152,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.16711185852134147`"},
-          {"1.0554433169768938`"}
+          {"1.0554631065390871`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7143,7 +7168,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.17547478091488755`"},
-          {"1.1158564526726025`"}
+          {"1.1158774351056278`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7159,7 +7184,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.17381420284493007`"},
-          {"1.1329402049915414`"}
+          {"1.132961726020199`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7176,7 +7201,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.17381420284493007`"},
-          {"1.1329402049915414`"}
+          {"1.132961726020199`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7192,7 +7217,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.16543473345648196`"},
-          {"1.0724119348724233`"}
+          {"1.0724322607873469`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7208,7 +7233,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.16711185852134147`"},
-          {"1.0554433169768938`"}
+          {"1.0554631065390871`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7225,7 +7250,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.17547478091488755`"},
-          {"1.1158564526726025`"}
+          {"1.1158774351056278`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7241,7 +7266,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.1361228700201032`"},
-          {"1.1647256770888763`"}
+          {"1.1647499302967643`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7257,7 +7282,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.13438697805934532`"},
-          {"1.1819025123930604`"}
+          {"1.1819273104444878`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7274,7 +7299,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.13438697805934532`"},
-          {"1.1819025123930604`"}
+          {"1.1819273104444878`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7290,7 +7315,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.17381420284493007`"},
-          {"1.1329402049915414`"}
+          {"1.132961726020199`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7306,7 +7331,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.17547478091488755`"},
-          {"1.1158564526726025`"}
+          {"1.1158774351056278`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7323,7 +7348,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.1361228700201032`"},
-          {"1.1647256770888763`"}
+          {"1.1647499302967643`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7339,7 +7364,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.05582855378759033`"},
-          {"1.1974334257139416`"}
+          {"1.1974625658442712`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7355,7 +7380,7 @@ Cell[BoxData[
       RowBox[{"(", "\[NoBreak]", 
        TagBox[GridBox[{
           {"0.053940950019943784`"},
-          {"1.2146731869312306`"}
+          {"1.2147028811687144`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7411,9 +7436,9 @@ Cell[BoxData[
 Cell[BoxData[
  InterpretationBox[GridBox[{
     {GridBox[{
-       {"0.16711185852134147`", "1.0554433169768938`"},
-       {"0.17547478091488755`", "1.1158564526726025`"},
-       {"0.17381420284493007`", "1.1329402049915414`"}
+       {"0.16711185852134147`", "1.0554631065390871`"},
+       {"0.17547478091488755`", "1.1158774351056278`"},
+       {"0.17381420284493007`", "1.132961726020199`"}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -7426,9 +7451,9 @@ Cell[BoxData[
            Offset[0.1]}, 
           Offset[0.2]}, "RowsIndexed" -> {}}], "2.7756800857982533`"},
     {GridBox[{
-       {"0.17381420284493007`", "1.1329402049915414`"},
-       {"0.16543473345648196`", "1.0724119348724233`"},
-       {"0.16711185852134147`", "1.0554433169768938`"}
+       {"0.17381420284493007`", "1.132961726020199`"},
+       {"0.16543473345648196`", "1.0724322607873469`"},
+       {"0.16711185852134147`", "1.0554631065390871`"}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -7441,9 +7466,9 @@ Cell[BoxData[
            Offset[0.1]}, 
           Offset[0.2]}, "RowsIndexed" -> {}}], "2.7309213956934424`"},
     {GridBox[{
-       {"0.17547478091488755`", "1.1158564526726025`"},
-       {"0.1361228700201032`", "1.1647256770888763`"},
-       {"0.13438697805934532`", "1.1819025123930604`"}
+       {"0.17547478091488755`", "1.1158774351056278`"},
+       {"0.1361228700201032`", "1.1647499302967643`"},
+       {"0.13438697805934532`", "1.1819273104444878`"}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -7456,9 +7481,9 @@ Cell[BoxData[
            Offset[0.1]}, 
           Offset[0.2]}, "RowsIndexed" -> {}}], "2.8933383835007005`"},
     {GridBox[{
-       {"0.13438697805934532`", "1.1819025123930604`"},
-       {"0.17381420284493007`", "1.1329402049915414`"},
-       {"0.17547478091488755`", "1.1158564526726025`"}
+       {"0.13438697805934532`", "1.1819273104444878`"},
+       {"0.17381420284493007`", "1.132961726020199`"},
+       {"0.17547478091488755`", "1.1158774351056278`"}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -7471,9 +7496,9 @@ Cell[BoxData[
            Offset[0.1]}, 
           Offset[0.2]}, "RowsIndexed" -> {}}], "2.852812423041631`"},
     {GridBox[{
-       {"0.1361228700201032`", "1.1647256770888763`"},
-       {"0.05582855378759033`", "1.1974334257139416`"},
-       {"0.053940950019943784`", "1.2146731869312306`"}
+       {"0.1361228700201032`", "1.1647499302967643`"},
+       {"0.05582855378759033`", "1.1974625658442712`"},
+       {"0.053940950019943784`", "1.2147028811687144`"}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -7496,18 +7521,18 @@ Cell[BoxData[
        Offset[0.2], {
         Offset[0.4]}, 
        Offset[0.2]}, "RowsIndexed" -> {}}],
-  TableForm[{{{{0.16711185852134147`, 1.0554433169768938`}, {
-     0.17547478091488755`, 1.1158564526726025`}, {0.17381420284493007`, 
-     1.1329402049915414`}}, 2.7756800857982533`}, {{{0.17381420284493007`, 
-     1.1329402049915414`}, {0.16543473345648196`, 1.0724119348724233`}, {
-     0.16711185852134147`, 1.0554433169768938`}}, 2.7309213956934424`}, {{{
-     0.17547478091488755`, 1.1158564526726025`}, {0.1361228700201032, 
-     1.1647256770888763`}, {0.13438697805934532`, 1.1819025123930604`}}, 
-     2.8933383835007005`}, {{{0.13438697805934532`, 1.1819025123930604`}, {
-     0.17381420284493007`, 1.1329402049915414`}, {0.17547478091488755`, 
-     1.1158564526726025`}}, 2.852812423041631}, {{{0.1361228700201032, 
-     1.1647256770888763`}, {0.05582855378759033, 1.1974334257139416`}, {
-     0.053940950019943784`, 1.2146731869312306`}}, 
+  TableForm[{{{{0.16711185852134147`, 1.0554631065390871`}, {
+     0.17547478091488755`, 1.1158774351056278`}, {0.17381420284493007`, 
+     1.132961726020199}}, 2.7756800857982533`}, {{{0.17381420284493007`, 
+     1.132961726020199}, {0.16543473345648196`, 1.0724322607873469`}, {
+     0.16711185852134147`, 1.0554631065390871`}}, 2.7309213956934424`}, {{{
+     0.17547478091488755`, 1.1158774351056278`}, {0.1361228700201032, 
+     1.1647499302967643`}, {0.13438697805934532`, 1.1819273104444878`}}, 
+     2.8933383835007005`}, {{{0.13438697805934532`, 1.1819273104444878`}, {
+     0.17381420284493007`, 1.132961726020199}, {0.17547478091488755`, 
+     1.1158774351056278`}}, 2.852812423041631}, {{{0.1361228700201032, 
+     1.1647499302967643`}, {0.05582855378759033, 1.1974625658442712`}, {
+     0.053940950019943784`, 1.2147028811687144`}}, 
      2.990450955722992}}]]], "Output"]
 }, Open  ]],
 
@@ -7543,7 +7568,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.020093304571218048`"}]},
-          {"0.907894305529815`"}
+          {"0.9079195207098577`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7560,7 +7585,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.1452322086942782`"}]},
-          {"0.8961578999789452`"}
+          {"0.8961890591333793`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7577,7 +7602,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.13654231697644925`"}]},
-          {"0.8541266934965467`"}
+          {"0.854156297324222`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7595,7 +7620,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.01763711589944114`"}]},
-          {"0.9590181770321099`"}
+          {"0.9590446327059591`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7612,7 +7637,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.15426964813292393`"}]},
-          {"0.9462037100114223`"}
+          {"0.9462366555927625`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7629,7 +7654,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.1452322086942782`"}]},
-          {"0.8961578999789452`"}
+          {"0.8961890591333793`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7647,7 +7672,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.25855910375164054`"}]},
-          {"0.8639770264494632`"}
+          {"0.8640129937920227`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7664,7 +7689,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.1452322086942782`"}]},
-          {"0.8961578999789452`"}
+          {"0.8961890591333793`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7681,7 +7706,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.15426964813292393`"}]},
-          {"0.9462037100114223`"}
+          {"0.9462366555927625`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7699,7 +7724,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.1452322086942782`"}]},
-          {"0.8961578999789452`"}
+          {"0.8961890591333793`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7716,7 +7741,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.020093304571218048`"}]},
-          {"0.907894305529815`"}
+          {"0.9079195207098577`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7733,7 +7758,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.01763711589944114`"}]},
-          {"0.9590181770321099`"}
+          {"0.9590446327059591`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7751,7 +7776,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.23628472169330866`"}]},
-          {"0.8258032969677767`"}
+          {"0.8258371326251137`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7768,7 +7793,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.13654231697644925`"}]},
-          {"0.8541266934965467`"}
+          {"0.854156297324222`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7785,7 +7810,7 @@ Cell[BoxData[
        TagBox[GridBox[{
           {
            RowBox[{"-", "0.1452322086942782`"}]},
-          {"0.8961578999789452`"}
+          {"0.8961890591333793`"}
          },
          GridBoxAlignment->{
           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
@@ -7827,3504 +7852,3495 @@ Cell[BoxData[
 
 Cell[BoxData[
  GraphicsBox[{
-   {RGBColor[0.11050652727370247`, 0.3996867181875401, 0.9677498223816587], 
+   {RGBColor[0.22451759980095098`, 0.22365684780453732`, 0.710639037866335], 
     PolygonBox[{{-0.020093304571218048`, 
-     0.907894305529815}, {-0.1452322086942782, 
-     0.8961578999789452}, {-0.13654231697644925`, 0.8541266934965467}}]}, 
-   {RGBColor[0.5027454191999488, 0.46341330143697457`, 0.34410313152844463`], 
+     0.9079195207098577}, {-0.1452322086942782, 
+     0.8961890591333793}, {-0.13654231697644925`, 0.854156297324222}}]}, 
+   {RGBColor[0.995625669870928, 0.07661470727811248, 0.27416256337914], 
     PolygonBox[{{-0.01763711589944114, 
-     0.9590181770321099}, {-0.15426964813292393`, 
-     0.9462037100114223}, {-0.1452322086942782, 0.8961578999789452}}]}, 
-   {RGBColor[0.7627339328425076, 0.28253465763977026`, 0.2532864493481315], 
+     0.9590446327059591}, {-0.15426964813292393`, 
+     0.9462366555927625}, {-0.1452322086942782, 0.8961890591333793}}]}, 
+   {RGBColor[0.9307185053647153, 0.1739431300036567, 0.6577344006421812], 
     PolygonBox[{{-0.25855910375164054`, 
-     0.8639770264494632}, {-0.1452322086942782, 
-     0.8961578999789452}, {-0.15426964813292393`, 0.9462037100114223}}]}, 
-   {RGBColor[0.9161529819304604, 0.7514716175538299, 0.2560280493470344], 
+     0.8640129937920227}, {-0.1452322086942782, 
+     0.8961890591333793}, {-0.15426964813292393`, 0.9462366555927625}}]}, 
+   {RGBColor[0.595578513790026, 0.9393322962581361, 0.7009252127916532], 
     PolygonBox[{{-0.1452322086942782, 
-     0.8961578999789452}, {-0.020093304571218048`, 
-     0.907894305529815}, {-0.01763711589944114, 0.9590181770321099}}]}, 
-   {RGBColor[0.3415092537872171, 0.6893516275160754, 0.603140174941754], 
+     0.8961890591333793}, {-0.020093304571218048`, 
+     0.9079195207098577}, {-0.01763711589944114, 0.9590446327059591}}]}, 
+   {RGBColor[0.235066312807384, 0.557130076974234, 0.9523110158287484], 
     PolygonBox[{{-0.23628472169330866`, 
-     0.8258032969677767}, {-0.13654231697644925`, 
-     0.8541266934965467}, {-0.1452322086942782, 0.8961578999789452}}]}, 
-   {RGBColor[0.6550845021730454, 0.7835939494184581, 0.9301812883054412], 
+     0.8258371326251137}, {-0.13654231697644925`, 
+     0.854156297324222}, {-0.1452322086942782, 0.8961890591333793}}]}, 
+   {RGBColor[0.23924181126993238`, 0.7988810152811106, 0.5201321910999523], 
     PolygonBox[{{-0.13654231697644925`, 
-     0.8541266934965467}, {-0.026403364194804088`, 
-     0.8644562988779585}, {-0.020093304571218048`, 0.907894305529815}}]}, 
-   {RGBColor[0.10368137015280032`, 0.10777099847292315`, 0.9819859368369388], 
+     0.854156297324222}, {-0.026403364194804088`, 
+     0.8644806712141384}, {-0.020093304571218048`, 0.9079195207098577}}]}, 
+   {RGBColor[0.4903791768260575, 0.7390243118373043, 0.4627785378191389], 
     PolygonBox[{{-0.026403364194804088`, 
-     0.8644562988779585}, {-0.13654231697644925`, 
-     0.8541266934965467}, {-0.12976295448948635`, 0.823370212816663}}]}, 
-   {RGBColor[0.9244147801065268, 0.045749308987975024`, 0.39399670128399467`],
-     PolygonBox[{{-0.1452322086942782, 
-     0.8961578999789452}, {-0.25855910375164054`, 
-     0.8639770264494632}, {-0.23628472169330866`, 0.8258032969677767}}]}, 
-   {RGBColor[0.4669582876831311, 0.45820748877536843`, 0.34970649915048924`], 
+     0.8644806712141384}, {-0.13654231697644925`, 
+     0.854156297324222}, {-0.12976295448948635`, 0.823398657503396}}]}, 
+   {RGBColor[0.3863046413608533, 0.8680492745453114, 0.4769001101994439], 
+    PolygonBox[{{-0.1452322086942782, 
+     0.8961890591333793}, {-0.25855910375164054`, 
+     0.8640129937920227}, {-0.23628472169330866`, 0.8258371326251137}}]}, 
+   {RGBColor[0.7711687072612421, 0.6325783379472045, 0.18754448424061176`], 
     PolygonBox[{{-0.21771355147239896`, 
-     0.7983952360525249}, {-0.12976295448948635`, 
-     0.823370212816663}, {-0.13654231697644925`, 0.8541266934965467}}]}, 
-   {RGBColor[0.21203350715389613`, 0.8185522914483514, 0.29955445178399764`], 
+     0.7984274122697267}, {-0.12976295448948635`, 
+     0.823398657503396}, {-0.13654231697644925`, 0.854156297324222}}]}, 
+   {RGBColor[0.18772393828823075`, 0.003809615286667123, 0.0879930451301445], 
     PolygonBox[{{-0.12976295448948635`, 
-     0.823370212816663}, {-0.03264443967811379, 
-     0.8324786706703844}, {-0.026403364194804088`, 0.8644562988779585}}]}, 
-   {RGBColor[0.9374948864163999, 0.1743314856933076, 0.6105812006892539], 
+     0.823398657503396}, {-0.03264443967811379, 
+     0.8325025023235862}, {-0.026403364194804088`, 0.8644806712141384}}]}, 
+   {RGBColor[0.5392994045528017, 0.8733422177748789, 0.5508684210870161], 
     PolygonBox[{{-0.15426964813292393`, 
-     0.9462037100114223}, {-0.2780050393649405, 
-     0.9110672681805044}, {-0.25855910375164054`, 0.8639770264494632}}]}, 
-   {RGBColor[0.9712459614503828, 0.2794383934412532, 0.9056333489421577], 
+     0.9462366555927625}, {-0.2780050393649405, 
+     0.9111054635596242}, {-0.25855910375164054`, 0.8640129937920227}}]}, 
+   {RGBColor[0.3731057397022661, 0.5192376050621077, 0.992527993313377], 
     PolygonBox[{{-0.03264443967811379, 
-     0.8324786706703844}, {-0.12976295448948635`, 
-     0.823370212816663}, {-0.12643784046324472`, 0.8076518087874298}}]}, 
-   {RGBColor[0.7489130293185249, 0.7186512452371365, 0.3165320269969436], 
+     0.8325025023235862}, {-0.12976295448948635`, 
+     0.823398657503396}, {-0.12643784046324472`, 0.8076796680610205}}]}, 
+   {RGBColor[0.1127256519455031, 0.12932575187945683`, 0.4923451295437342], 
     PolygonBox[{{-0.13654231697644925`, 
-     0.8541266934965467}, {-0.23628472169330866`, 
-     0.8258032969677767}, {-0.21771355147239896`, 0.7983952360525249}}]}, 
-   {RGBColor[0.16456595345930847`, 0.9999996516696716, 0.4503429063132238], 
+     0.854156297324222}, {-0.23628472169330866`, 
+     0.8258371326251137}, {-0.21771355147239896`, 0.7984274122697267}}]}, 
+   {RGBColor[0.4476533704237773, 0.696673869520597, 0.11808078864321869`], 
     PolygonBox[{{-0.20897661167880732`, 
-     0.7842137802795491}, {-0.12643784046324472`, 
-     0.8076518087874298}, {-0.12976295448948635`, 0.823370212816663}}]}, 
-   {RGBColor[0.5600000633132227, 0.9322785098478581, 0.6143801777374154], 
+     0.7842451414776072}, {-0.12643784046324472`, 
+     0.8076796680610205}, {-0.12976295448948635`, 0.823398657503396}}]}, 
+   {RGBColor[
+    0.057175029740777816`, 0.41085241390443517`, 0.04402068729177877], 
     PolygonBox[{{-0.12643784046324472`, 
-     0.8076518087874298}, {-0.03529513497741997, 
-     0.816199996352836}, {-0.03264443967811379, 0.8324786706703844}}]}, 
-   {RGBColor[0.9979924646612042, 0.6447110361367776, 0.38189488545757455`], 
+     0.8076796680610205}, {-0.03529513497741997, 
+     0.816223526442821}, {-0.03264443967811379, 0.8325025023235862}}]}, 
+   {RGBColor[0.02912288465099655, 0.21420135613564395`, 0.7183432801483862], 
     PolygonBox[{{-0.2780050393649405, 
-     0.9110672681805044}, {-0.15426964813292393`, 
-     0.9462037100114223}, {-0.1626181182456439, 1.0007040241684548`}}]}, 
-   {RGBColor[0.7725400219532608, 0.7226426786269429, 0.5006701311589081], 
+     0.9111054635596242}, {-0.15426964813292393`, 
+     0.9462366555927625}, {-0.1626181182456439, 1.0007388405150115`}}]}, 
+   {RGBColor[0.3472498062605973, 0.6705145256098273, 0.4804596030430326], 
     PolygonBox[{{-0.15426964813292393`, 
-     0.9462037100114223}, {-0.01763711589944114, 
-     0.9590181770321099}, {-0.020728493044339547`, 1.014011695364601}}]}, 
-   {RGBColor[0.36820235922996414`, 0.9846172377397571, 0.7618523525293865], 
-    PolygonBox[{{0.09252676696424773, 
-     0.8961578999789452}, {-0.020093304571218048`, 
-     0.907894305529815}, {-0.026403364194804088`, 0.8644562988779585}}]}, 
-   {RGBColor[0.5804331274059906, 0.354024323395965, 0.5011630066599029], 
+     0.9462366555927625}, {-0.01763711589944114, 
+     0.9590446327059591}, {-0.020728493044339547`, 1.0140397721011296`}}]}, 
+   {RGBColor[0.1313589698595754, 0.17537686214139336`, 0.017602889117983134`],
+     PolygonBox[{{0.09252676696424773, 
+     0.8961771711845964}, {-0.020093304571218048`, 
+     0.9079195207098577}, {-0.026403364194804088`, 0.8644806712141384}}]}, 
+   {RGBColor[0.6387988682326384, 0.5982121425742633, 0.5781806066875617], 
     PolygonBox[{{-0.12976295448948635`, 
-     0.823370212816663}, {-0.21771355147239896`, 
-     0.7983952360525249}, {-0.20897661167880732`, 0.7842137802795491}}]}, 
-   {RGBColor[0.09046310434221572, 0.7649108532137598, 0.3081953016028023], 
+     0.823398657503396}, {-0.21771355147239896`, 
+     0.7984274122697267}, {-0.20897661167880732`, 0.7842451414776072}}]}, 
+   {RGBColor[0.5210829294250401, 0.23585012914517645`, 0.49061775766411775`], 
     PolygonBox[{{0.10532665151197483`, 
-     0.9462037100114223}, {-0.01763711589944114, 
-     0.9590181770321099}, {-0.020093304571218048`, 0.907894305529815}}]}, 
-   {RGBColor[0.9308017530864858, 0.5253416306720631, 0.48488063690849836`], 
+     0.9462236757777803}, {-0.01763711589944114, 
+     0.9590446327059591}, {-0.020093304571218048`, 0.9079195207098577}}]}, 
+   {RGBColor[0.12276509973202909`, 0.24895508827832713`, 0.3128921854353357], 
     PolygonBox[{{-0.020728493044339547`, 
-     1.014011695364601}, {-0.1626181182456439, 
-     1.0007040241684548`}, {-0.15426964813292393`, 0.9462037100114223}}]}, 
-   {RGBColor[0.9695723654992565, 0.44037552776995037`, 0.5812989597657208], 
+     1.0140397721011296`}, {-0.1626181182456439, 
+     1.0007388405150115`}, {-0.15426964813292393`, 0.9462366555927625}}]}, 
+   {RGBColor[0.14356801966294608`, 0.3856508551072697, 0.24139427956221482`], 
     PolygonBox[{{0.07271734284666848, 
-     0.8541266934965467}, {-0.026403364194804088`, 
-     0.8644562988779585}, {-0.03264443967811379, 0.8324786706703844}}]}, 
-   {RGBColor[0.23957860084909366`, 0.08025368732733917, 0.8226222177875753], 
+     0.8541458343412309}, {-0.026403364194804088`, 
+     0.8644806712141384}, {-0.03264443967811379, 0.8325025023235862}}]}, 
+   {RGBColor[0.1466726131267051, 0.9443643562511956, 0.4914168439546134], 
     PolygonBox[{{0.05475779096462585, 
-     0.823370212816663}, {-0.03264443967811379, 
-     0.8324786706703844}, {-0.03529513497741997, 0.816199996352836}}]}, 
-   {RGBColor[0.680077857188887, 0.9183429568618724, 0.08231219918455857], 
+     0.8233894314661232}, {-0.03264443967811379, 
+     0.8325025023235862}, {-0.03529513497741997, 0.816223526442821}}]}, 
+   {RGBColor[
+    0.20680627749975433`, 0.5925952419347953, 0.0014038890040275476`], 
     PolygonBox[{{-0.3155010901542871, 
-     0.7834850003503523}, {-0.23628472169330866`, 
-     0.8258032969677767}, {-0.25855910375164054`, 0.8639770264494632}}]}, 
-   {RGBColor[0.3621619283302784, 0.6029189162065598, 0.49638696553322426`], 
-    PolygonBox[{{-0.026403364194804088`, 0.8644562988779585}, {
-     0.07271734284666848, 0.8541266934965467}, {0.09252676696424773, 
-     0.8961578999789452}}]}, 
-   {RGBColor[0.17997441882288867`, 0.935416342588498, 0.4718189870758793], 
+     0.7835216683382027}, {-0.23628472169330866`, 
+     0.8258371326251137}, {-0.25855910375164054`, 0.8640129937920227}}]}, 
+   {RGBColor[0.4407777921675011, 0.009123164604497802, 0.46491929976148305`], 
+    PolygonBox[{{-0.026403364194804088`, 0.8644806712141384}, {
+     0.07271734284666848, 0.8541458343412309}, {0.09252676696424773, 
+     0.8961771711845964}}]}, 
+   {RGBColor[0.2658230101011745, 0.1455897624846041, 0.7982356628602814], 
     PolygonBox[{{-0.3485641425851192, 
-     0.8158951451953105}, {-0.25855910375164054`, 
-     0.8639770264494632}, {-0.2780050393649405, 0.9110672681805044}}]}, 
-   {RGBColor[0.07337623000921889, 0.5671917780311406, 0.6425709133167046], 
-    PolygonBox[{{-0.020093304571218048`, 0.907894305529815}, {
-     0.09252676696424773, 0.8961578999789452}, {0.10532665151197483`, 
-     0.9462037100114223}}]}, 
-   {RGBColor[0.4592228942610104, 0.6150458568140702, 0.47012957944981526`], 
+     0.8159343306063117}, {-0.25855910375164054`, 
+     0.8640129937920227}, {-0.2780050393649405, 0.9111054635596242}}]}, 
+   {RGBColor[0.9470375932360124, 0.328812951089974, 0.40437237057000286`], 
+    PolygonBox[{{-0.020093304571218048`, 0.9079195207098577}, {
+     0.09252676696424773, 0.8961771711845964}, {0.10532665151197483`, 
+     0.9462236757777803}}]}, 
+   {RGBColor[0.7321983843979212, 0.031354833329131804`, 0.5906996315298345], 
     PolygonBox[{{-0.1626181182456439, 
-     1.0007040241684548`}, {-0.2911137830805374, 
-     0.9642158483350847}, {-0.2780050393649405, 0.9110672681805044}}]}, 
-   {RGBColor[0.11907274250930144`, 0.9059748328198525, 0.8156156019511309], 
+     1.0007388405150115`}, {-0.2911137830805374, 
+     0.9642561164468609}, {-0.2780050393649405, 0.9111054635596242}}]}, 
+   {RGBColor[0.7834909251180375, 0.23051016815755943`, 0.2068253078412423], 
     PolygonBox[{{-0.2875651597117959, 
-     0.7610796334691737}, {-0.21771355147239896`, 
-     0.7983952360525249}, {-0.23628472169330866`, 0.8258032969677767}}]}, 
-   {RGBColor[0.2683792957471993, 0.9290384378254306, 0.33128582941177154`], 
-    PolygonBox[{{-0.03264443967811379, 0.8324786706703844}, {
-     0.05475779096462585, 0.823370212816663}, {0.07271734284666848, 
-     0.8541266934965467}}]}, 
-   {RGBColor[
-    0.23982534108370945`, 0.12903751227864757`, 0.15796821429384478`], 
+     0.7611143071840519}, {-0.21771355147239896`, 
+     0.7984274122697267}, {-0.23628472169330866`, 0.8258371326251137}}]}, 
+   {RGBColor[0.5384884464079958, 0.9006022616541001, 0.7510499650287583], 
+    PolygonBox[{{-0.03264443967811379, 0.8325025023235862}, {
+     0.05475779096462585, 0.8233894314661232}, {0.07271734284666848, 
+     0.8541458343412309}}]}, 
+   {RGBColor[0.4864004835356346, 0.8388234521207047, 0.14267800389932783`], 
     PolygonBox[{{-0.27453034430600265`, 
-     0.749194241481078}, {-0.20897661167880732`, 
-     0.7842137802795491}, {-0.21771355147239896`, 0.7983952360525249}}]}, 
-   {RGBColor[0.35402609672483987`, 0.060840368272866874`, 0.5074284698644211],
-     PolygonBox[{{-0.03529513497741997, 0.816199996352836}, {
-     0.04672891551972181, 0.8076518087874298}, {0.05475779096462585, 
-     0.823370212816663}}]}, 
-   {RGBColor[0.860291138643988, 0.5391830805588691, 0.6948839000158686], 
+     0.7492279465113995}, {-0.20897661167880732`, 
+     0.7842451414776072}, {-0.21771355147239896`, 0.7984274122697267}}]}, 
+   {RGBColor[0.2912451387019983, 0.7877543042084763, 0.36117762423433053`], 
+    PolygonBox[{{-0.03529513497741997, 0.816223526442821}, {
+     0.04672891551972181, 0.8076710097232215}, {0.05475779096462585, 
+     0.8233894314661232}}]}, 
+   {RGBColor[0.8972052552370957, 0.06749426666184144, 0.22726947400601838`], 
     PolygonBox[{{0.1069662828810756, 
-     1.0007040241684548`}, {-0.020728493044339547`, 
-     1.014011695364601}, {-0.01763711589944114, 0.9590181770321099}}]}, 
-   {RGBColor[0.6921328477054363, 0.6181706562190499, 0.32728859912896513`], 
-    PolygonBox[{{-0.25855910375164054`, 
-     0.8639770264494632}, {-0.3485641425851192, 
-     0.8158951451953105}, {-0.3155010901542871, 0.7834850003503523}}]}, 
-   {RGBColor[0.0528452545998932, 0.6234117024293506, 0.16824151480114669`], 
+     1.0007253612949554`}, {-0.020728493044339547`, 
+     1.0140397721011296`}, {-0.01763711589944114, 0.9590446327059591}}]}, 
+   {RGBColor[0.0025248244778444118`, 0.02421756107856421, 0.6300721409981367],
+     PolygonBox[{{-0.25855910375164054`, 
+     0.8640129937920227}, {-0.3485641425851192, 
+     0.8159343306063117}, {-0.3155010901542871, 0.7835216683382027}}]}, 
+   {RGBColor[0.707059042901067, 0.1068801215686428, 0.25782769243450043`], 
     PolygonBox[{{-0.1626181182456439, 
-     1.0007040241684548`}, {-0.020728493044339547`, 
-     1.014011695364601}, {-0.02784086728680082, 1.0739498637356697`}}]}, 
-   {RGBColor[0.9896829007052368, 0.733412416529871, 0.17114751074913515`], 
+     1.0007388405150115`}, {-0.020728493044339547`, 
+     1.0140397721011296`}, {-0.02784086728680082, 1.0739798944420669`}}]}, 
+   {RGBColor[0.530739666169229, 0.8776716968738285, 0.4812413471673702], 
     PolygonBox[{{-0.2911137830805374, 
-     0.9642158483350847}, {-0.1626181182456439, 
-     1.0007040241684548`}, {-0.17082016361729874`, 1.0605400271777892`}}]}, 
-   {RGBColor[0.890520656650704, 0.17856836997734704`, 0.708269847455262], 
+     0.9642561164468609}, {-0.1626181182456439, 
+     1.0007388405150115`}, {-0.17082016361729874`, 1.0605768492533614`}}]}, 
+   {RGBColor[0.5385147745651098, 0.509669803707641, 0.24103034111253807`], 
     PolygonBox[{{-0.23628472169330866`, 
-     0.8258032969677767}, {-0.3155010901542871, 
-     0.7834850003503523}, {-0.2875651597117959, 0.7610796334691737}}]}, 
-   {RGBColor[0.18791281600717458`, 0.5794105308179145, 0.3680880863155851], 
+     0.8258371326251137}, {-0.3155010901542871, 
+     0.7835216683382027}, {-0.2875651597117959, 0.7611143071840519}}]}, 
+   {RGBColor[0.2199765148234052, 0.2281959031201084, 0.9611229897264921], 
     PolygonBox[{{-0.3762768445171387, 
-     0.8585692903860743}, {-0.2780050393649405, 
-     0.9110672681805044}, {-0.2911137830805374, 0.9642158483350847}}]}, 
-   {RGBColor[0.7967613233154911, 0.23992966123429826`, 0.7903847060054243], 
-    PolygonBox[{{-0.01763711589944114, 0.9590181770321099}, {
-     0.10532665151197483`, 0.9462037100114223}, {0.1069662828810756, 
-     1.0007040241684548`}}]}, 
-   {RGBColor[0.011054745938779531`, 0.29192743326460424`, 0.8096445711205666],
-     PolygonBox[{{-0.2780050393649405, 
-     0.9110672681805044}, {-0.3762768445171387, 
-     0.8585692903860743}, {-0.3485641425851192, 0.8158951451953105}}]}, 
-   {RGBColor[0.1680572609783899, 0.17079981753579854`, 0.5217835115847487], 
+     0.8586109994093771}, {-0.2780050393649405, 
+     0.9111054635596242}, {-0.2911137830805374, 0.9642561164468609}}]}, 
+   {RGBColor[0.01711413084816904, 0.15439491050006704`, 0.5370088216862983], 
+    PolygonBox[{{-0.01763711589944114, 0.9590446327059591}, {
+     0.10532665151197483`, 0.9462236757777803}, {0.1069662828810756, 
+     1.0007253612949554`}}]}, 
+   {RGBColor[0.7965085119978121, 0.5014410570737422, 0.6975802921136893], 
+    PolygonBox[{{-0.2780050393649405, 
+     0.9111054635596242}, {-0.3762768445171387, 
+     0.8586109994093771}, {-0.3485641425851192, 0.8159343306063117}}]}, 
+   {RGBColor[0.9785654815337188, 0.07421577213263619, 0.14007301854726384`], 
     PolygonBox[{{-0.21771355147239896`, 
-     0.7983952360525249}, {-0.2875651597117959, 
-     0.7610796334691737}, {-0.27453034430600265`, 0.749194241481078}}]}, 
-   {RGBColor[0.27233389960963494`, 0.6321971393730881, 0.7732306824653681], 
+     0.7984274122697267}, {-0.2875651597117959, 
+     0.7611143071840519}, {-0.27453034430600265`, 0.7492279465113995}}]}, 
+   {RGBColor[0.9266223382417909, 0.9774629249075859, 0.9505457923237697], 
     PolygonBox[{{-0.02784086728680082, 
-     1.0739498637356697`}, {-0.17082016361729874`, 
-     1.0605400271777892`}, {-0.1626181182456439, 1.0007040241684548`}}]}, 
-   {RGBColor[0.8000040579186223, 0.5393612696339367, 0.6338231017829858], 
-    PolygonBox[{{0.17152739692349586`, 0.8639770264494632}, {
-     0.09252676696424773, 0.8961578999789452}, {0.07271734284666848, 
-     0.8541266934965467}}]}, 
-   {RGBColor[0.6921626292703249, 0.6317523807338252, 0.6329101383909315], 
-    PolygonBox[{{0.14224812459950667`, 0.8258032969677767}, {
-     0.07271734284666848, 0.8541266934965467}, {0.05475779096462585, 
-     0.823370212816663}}]}, 
-   {RGBColor[0.677219398581562, 0.2867951352627567, 0.648783074616567], 
+     1.0739798944420669`}, {-0.17082016361729874`, 
+     1.0605768492533614`}, {-0.1626181182456439, 1.0007388405150115`}}]}, 
+   {RGBColor[0.41137186969641926`, 0.3570832333287868, 0.848022533812425], 
+    PolygonBox[{{0.17152739692349586`, 0.863991489466989}, {
+     0.09252676696424773, 0.8961771711845964}, {0.07271734284666848, 
+     0.8541458343412309}}]}, 
+   {RGBColor[0.8365764757707441, 0.9583493965027434, 0.7322084030799296], 
+    PolygonBox[{{0.14224812459950667`, 0.8258182059827991}, {
+     0.07271734284666848, 0.8541458343412309}, {0.05475779096462585, 
+     0.8233894314661232}}]}, 
+   {RGBColor[0.42110191001413355`, 0.9869462356335688, 0.9059953128991745], 
     PolygonBox[{{-0.17082016361729874`, 
-     1.0605400271777892`}, {-0.30030336018579007`, 
-     1.0237715564164356`}, {-0.2911137830805374, 0.9642158483350847}}]}, 
-   {RGBColor[0.3938709063964094, 0.15789324160283358`, 0.8321885857588951], 
-    PolygonBox[{{0.11606900852378792`, 0.7983952360525249}, {
-     0.05475779096462585, 0.823370212816663}, {0.04672891551972181, 
-     0.8076518087874298}}]}, 
-   {RGBColor[0.18989138037060105`, 0.8148828193597819, 0.20404942167870788`], 
-    PolygonBox[{{0.1915831714576789, 0.9110672681805044}, {
-     0.10532665151197483`, 0.9462037100114223}, {0.09252676696424773, 
-     0.8961578999789452}}]}, 
-   {RGBColor[0.6842804966279958, 0.7261996581579544, 0.7657517574140718], 
-    PolygonBox[{{-0.2911137830805374, 
-     0.9642158483350847}, {-0.3931664264935831, 
-     0.9096981961398699}, {-0.3762768445171387, 0.8585692903860743}}]}, 
-   {RGBColor[0.5165038522962906, 0.2825036697169989, 0.8524401097370213], 
+     1.0605768492533614`}, {-0.30030336018579007`, 
+     1.0238138721592827`}, {-0.2911137830805374, 0.9642561164468609}}]}, 
+   {RGBColor[0.3914312794713979, 0.7153785169020317, 0.23611207425953107`], 
+    PolygonBox[{{0.11606900852378792`, 0.7984107231417269}, {
+     0.05475779096462585, 0.8233894314661232}, {0.04672891551972181, 
+     0.8076710097232215}}]}, 
+   {RGBColor[0.842490290083117, 0.5984569251363525, 0.2376603159079944], 
+    PolygonBox[{{0.1915831714576789, 0.911081984149083}, {
+     0.10532665151197483`, 0.9462236757777803}, {0.09252676696424773, 
+     0.8961771711845964}}]}, 
+   {RGBColor[0.016170136848913552`, 0.5575145998344437, 0.44809763746560005`],
+     PolygonBox[{{-0.2911137830805374, 
+     0.9642561164468609}, {-0.3931664264935831, 
+     0.9097421130797583}, {-0.3762768445171387, 0.8586109994093771}}]}, 
+   {RGBColor[0.4608950437014936, 0.38961908141911494`, 0.6024368930613122], 
     PolygonBox[{{0.10083460338195802`, 
-     1.0605400271777892`}, {-0.02784086728680082, 
-     1.0739498637356697`}, {-0.020728493044339547`, 1.014011695364601}}]}, 
-   {RGBColor[0.1864854030819525, 0.7470328332952556, 0.8011915211383769], 
+     1.0605632665150115`}, {-0.02784086728680082, 
+     1.0739798944420669`}, {-0.020728493044339547`, 1.0140397721011296`}}]}, 
+   {RGBColor[0.4851721886904399, 0.3556432403678793, 0.9932104245373787], 
     PolygonBox[{{-0.3931664264935831, 
-     0.9096981961398699}, {-0.2911137830805374, 
-     0.9642158483350847}, {-0.30030336018579007`, 1.0237715564164356`}}]}, 
-   {RGBColor[0.3932844262863173, 0.10265160010581975`, 0.2830284893059216], 
-    PolygonBox[{{-0.020728493044339547`, 1.014011695364601}, {
-     0.1069662828810756, 1.0007040241684548`}, {0.10083460338195802`, 
-     1.0605400271777892`}}]}, 
-   {RGBColor[0.8371191169930392, 0.5799491521721527, 0.4622158357205224], 
+     0.9097421130797583}, {-0.2911137830805374, 
+     0.9642561164468609}, {-0.30030336018579007`, 1.0238138721592827`}}]}, 
+   {RGBColor[0.19333614109838337`, 0.04326737983174955, 0.5111606354142135], 
+    PolygonBox[{{-0.020728493044339547`, 1.0140397721011296`}, {
+     0.1069662828810756, 1.0007253612949554`}, {0.10083460338195802`, 
+     1.0605632665150115`}}]}, 
+   {RGBColor[0.8177521053069914, 0.8898670641618966, 0.3659981066266549], 
     PolygonBox[{{-0.36406177168604775`, 
-     0.7311700853945728}, {-0.3155010901542871, 
-     0.7834850003503523}, {-0.3485641425851192, 0.8158951451953105}}]}, 
-   {RGBColor[0.551930249608904, 0.5762737576143036, 0.7256989767279394], 
-    PolygonBox[{{0.07271734284666848, 0.8541266934965467}, {
-     0.14224812459950667`, 0.8258032969677767}, {0.17152739692349586`, 
-     0.8639770264494632}}]}, 
-   {RGBColor[0.7447352209406917, 0.1190780609793165, 0.6801848406931996], 
+     0.731207786352101}, {-0.3155010901542871, 
+     0.7835216683382027}, {-0.3485641425851192, 0.8159343306063117}}]}, 
+   {RGBColor[0.6775742899089297, 0.3165906471556077, 0.6764962729471713], 
+    PolygonBox[{{0.07271734284666848, 0.8541458343412309}, {
+     0.14224812459950667`, 0.8258182059827991}, {0.17152739692349586`, 
+     0.863991489466989}}]}, 
+   {RGBColor[0.565622403222309, 0.3213531769670501, 0.6043782212108362], 
     PolygonBox[{{-0.3303847620409428, 
-     0.7149495960534782}, {-0.2875651597117959, 
-     0.7610796334691737}, {-0.3155010901542871, 0.7834850003503523}}]}, 
-   {RGBColor[0.18297869749256357`, 0.89754856005218, 0.4681667247086476], 
+     0.7149851806141416}, {-0.2875651597117959, 
+     0.7611143071840519}, {-0.3155010901542871, 0.7835216683382027}}]}, 
+   {RGBColor[0.7646164520533207, 0.7094404393764959, 0.37935687953944], 
     PolygonBox[{{-0.17082016361729874`, 
-     1.0605400271777892`}, {-0.02784086728680082, 
-     1.0739498637356697`}, {-0.03865625161032207, 1.1415842249289567`}}]}, 
-   {RGBColor[0.8526062403019292, 0.001545700791778959, 0.8078893361782189], 
+     1.0605768492533614`}, {-0.02784086728680082, 
+     1.0739798944420669`}, {-0.03865625161032207, 1.1416165999875354`}}]}, 
+   {RGBColor[0.04098152230976093, 0.8826503270286838, 0.724541447821968], 
     PolygonBox[{{-0.30030336018579007`, 
-     1.0237715564164356`}, {-0.17082016361729874`, 
-     1.0605400271777892`}, {-0.17940795190792969`, 1.128383699481756}}]}, 
-   {RGBColor[0.31376087937460073`, 0.020776029625985792`, 0.9210942462252527],
-     PolygonBox[{{0.05475779096462585, 0.823370212816663}, {
-     0.11606900852378792`, 0.7983952360525249}, {0.14224812459950667`, 
-     0.8258032969677767}}]}, 
-   {RGBColor[0.4189752405007452, 0.759700472226847, 0.2843834946582413], 
+     1.0238138721592827`}, {-0.17082016361729874`, 
+     1.0605768492533614`}, {-0.17940795190792969`, 1.1284227601113377`}}]}, 
+   {RGBColor[0.2997377477707923, 0.2986388412774248, 0.5684809742658217], 
+    PolygonBox[{{0.05475779096462585, 0.8233894314661232}, {
+     0.11606900852378792`, 0.7984107231417269}, {0.14224812459950667`, 
+     0.8258182059827991}}]}, 
+   {RGBColor[0.3884644460229396, 0.9192849321859533, 0.3247370021648379], 
     PolygonBox[{{-0.31471495354866114`, 
-     0.7059026995483987}, {-0.27453034430600265`, 
-     0.749194241481078}, {-0.2875651597117959, 0.7610796334691737}}]}, 
-   {RGBColor[0.16887155213049243`, 0.8232706398628722, 0.7162426274988254], 
-    PolygonBox[{{0.04672891551972181, 0.8076518087874298}, {
-     0.10426771124579468`, 0.7842137802795491}, {0.11606900852378792`, 
-     0.7983952360525249}}]}, 
-   {RGBColor[0.6578970179543124, 0.3686219665855883, 0.8895336155078559], 
+     0.7059372593680641}, {-0.27453034430600265`, 
+     0.7492279465113995}, {-0.2875651597117959, 0.7611143071840519}}]}, 
+   {RGBColor[0.9087171421797371, 0.028278722631413178`, 0.21427823501314336`],
+     PolygonBox[{{0.04672891551972181, 0.8076710097232215}, {
+     0.10426771124579468`, 0.7842294792614609}, {0.11606900852378792`, 
+     0.7984107231417269}}]}, 
+   {RGBColor[0.3615874896302389, 0.8912917699179173, 0.07721985082888594], 
     PolygonBox[{{-0.4037384025931291, 
-     0.756455401280679}, {-0.3485641425851192, 
-     0.8158951451953105}, {-0.3762768445171387, 0.8585692903860743}}]}, 
-   {RGBColor[0.1453528053901465, 0.40317167398596787`, 0.47809578614777704`], 
-    PolygonBox[{{0.09252676696424773, 0.8961578999789452}, {
-     0.17152739692349586`, 0.8639770264494632}, {0.1915831714576789, 
-     0.9110672681805044}}]}, 
-   {RGBColor[0.6221457162371289, 0.41131006358316125`, 0.6483341883639233], 
-    PolygonBox[{{0.19654122682704098`, 0.9642158483350847}, {
-     0.1069662828810756, 1.0007040241684548`}, {0.10532665151197483`, 
-     0.9462037100114223}}]}, 
-   {RGBColor[0.07100797090952904, 0.2940079733893204, 0.20230523650775667`], 
+     0.7564957603448428}, {-0.3485641425851192, 
+     0.8159343306063117}, {-0.3762768445171387, 0.8586109994093771}}]}, 
+   {RGBColor[0.9727203017795825, 0.6393482411902482, 0.45536827622987075`], 
+    PolygonBox[{{0.09252676696424773, 0.8961771711845964}, {
+     0.17152739692349586`, 0.863991489466989}, {0.1915831714576789, 
+     0.911081984149083}}]}, 
+   {RGBColor[0.4842322463424331, 0.8320609775055707, 0.6851905668647928], 
+    PolygonBox[{{0.19654122682704098`, 0.9642317336963656}, {
+     0.1069662828810756, 1.0007253612949554`}, {0.10532665151197483`, 
+     0.9462236757777803}}]}, 
+   {RGBColor[0.9324939608993605, 0.8473553208899569, 0.8434435115247041], 
     PolygonBox[{{-0.03865625161032207, 
-     1.1415842249289567`}, {-0.17940795190792969`, 
-     1.128383699481756}, {-0.17082016361729874`, 1.0605400271777892`}}]}, 
-   {RGBColor[0.6302800310387233, 0.9541841194134602, 0.6429459020238015], 
+     1.1416165999875354`}, {-0.17940795190792969`, 
+     1.1284227601113377`}, {-0.17082016361729874`, 1.0605768492533614`}}]}, 
+   {RGBColor[
+    0.15603311985052826`, 0.31072934925982865`, 0.20525388168679126`], 
     PolygonBox[{{-0.3155010901542871, 
-     0.7834850003503523}, {-0.36406177168604775`, 
-     0.7311700853945728}, {-0.3303847620409428, 0.7149495960534782}}]}, 
-   {RGBColor[0.48125096095704833`, 0.44970687565418643`, 0.05362086403194999],
-     PolygonBox[{{-0.2875651597117959, 
-     0.7610796334691737}, {-0.3303847620409428, 
-     0.7149495960534782}, {-0.31471495354866114`, 0.7059026995483987}}]}, 
-   {RGBColor[0.8745405082184297, 0.27277351243898873`, 0.713472889717895], 
+     0.7835216683382027}, {-0.36406177168604775`, 
+     0.731207786352101}, {-0.3303847620409428, 0.7149851806141416}}]}, 
+   {RGBColor[0.5096094878813859, 0.15421251627113564`, 0.927061752351082], 
+    PolygonBox[{{-0.2875651597117959, 
+     0.7611143071840519}, {-0.3303847620409428, 
+     0.7149851806141416}, {-0.31471495354866114`, 0.7059372593680641}}]}, 
+   {RGBColor[0.5857915856136593, 0.4466739163368385, 0.3768981783287453], 
     PolygonBox[{{-0.17940795190792969`, 
-     1.128383699481756}, {-0.3068733598323188, 
-     1.092187979302625}, {-0.30030336018579007`, 1.0237715564164356`}}]}, 
-   {RGBColor[0.16101123595612288`, 0.5054037414610997, 0.1728617189870787], 
-    PolygonBox[{{-0.30030336018579007`, 
-     1.0237715564164356`}, {-0.4031397103538368, 
-     0.968834883668551}, {-0.3931664264935831, 0.9096981961398699}}]}, 
-   {RGBColor[0.20690985423787178`, 0.18769363712626186`, 0.06319281328462023],
-     PolygonBox[{{0.10532665151197483`, 0.9462037100114223}, {
-     0.1915831714576789, 0.9110672681805044}, {0.19654122682704098`, 
-     0.9642158483350847}}]}, 
-   {RGBColor[0.03397920820919653, 0.8251260756350827, 0.1525331319266836], 
+     1.1284227601113377`}, {-0.3068733598323188, 
+     1.092232447983398}, {-0.30030336018579007`, 1.0238138721592827`}}]}, 
+   {RGBColor[0.34427958223660826`, 0.025333954216478105`, 0.5953282427329054],
+     PolygonBox[{{-0.30030336018579007`, 
+     1.0238138721592827`}, {-0.4031397103538368, 
+     0.9688808762509664}, {-0.3931664264935831, 0.9097421130797583}}]}, 
+   {RGBColor[0.5889586533132216, 0.8080569186629813, 0.2637029606024628], 
+    PolygonBox[{{0.10532665151197483`, 0.9462236757777803}, {
+     0.1915831714576789, 0.911081984149083}, {0.19654122682704098`, 
+     0.9642317336963656}}]}, 
+   {RGBColor[0.45922841676981485`, 0.9953948591246173, 0.09766921233942427], 
     PolygonBox[{{-0.3485641425851192, 
-     0.8158951451953105}, {-0.4037384025931291, 
-     0.756455401280679}, {-0.36406177168604775`, 0.7311700853945728}}]}, 
-   {RGBColor[0.035716056525128215`, 0.3265215999752733, 0.0961540467531592], 
+     0.8159343306063117}, {-0.4037384025931291, 
+     0.7564957603448428}, {-0.36406177168604775`, 0.731207786352101}}]}, 
+   {RGBColor[0.38498896156257834`, 0.6192164895076835, 0.34771025467096783`], 
     PolygonBox[{{-0.4365186185111673, 
-     0.7936702154748496}, {-0.3762768445171387, 
-     0.8585692903860743}, {-0.3931664264935831, 0.9096981961398699}}]}, 
-   {RGBColor[0.09726511560290185, 0.12897759247444562`, 0.8192808861339071], 
+     0.7937132059448545}, {-0.3762768445171387, 
+     0.8586109994093771}, {-0.3931664264935831, 0.9097421130797583}}]}, 
+   {RGBColor[0.3295149288174355, 0.5572623928953511, 0.968518558916422], 
     PolygonBox[{{-0.5643773622715922, 
-     0.8625330176653727}, {-0.5720872384017818, 
-     0.8477882830936544}, {-0.4917581907849245, 0.8080074918560308}}]}, 
-   {RGBColor[0.10952076266889255`, 0.2643564416854278, 0.9633944011159492], 
+     0.8625842374139573}, {-0.5720872384017818, 
+     0.8478394951431236}, {-0.4917581907849245, 0.8080536266320196}}]}, 
+   {RGBColor[0.8691565695911738, 0.5933023563358386, 0.6346914411872906], 
     PolygonBox[{{-0.4917581907849245, 
-     0.8080074918560308}, {-0.4920435736043516, 
-     0.8237631399610429}, {-0.5643773622715922, 0.8625330176653727}}]}, 
-   {RGBColor[0.2051508499934842, 0.17882871878008788`, 0.9234157248776753], 
+     0.8080536266320196}, {-0.4920435736043516, 
+     0.8238097091567887}, {-0.5643773622715922, 0.8625842374139573}}]}, 
+   {RGBColor[0.7711331193645721, 0.20399341707271845`, 0.7914746689509915], 
     PolygonBox[{{-0.5720872384017818, 
-     0.8477882830936544}, {-0.5643773622715922, 
-     0.8625330176653727}, {-0.6235470743513488, 0.906999504450712}}]}, 
-   {RGBColor[0.9126321254863288, 0.8731679911390313, 0.09254668760130791], 
+     0.8478394951431236}, {-0.5643773622715922, 
+     0.8625842374139573}, {-0.6235470743513488, 0.9070548684578816}}]}, 
+   {RGBColor[0.395456021359027, 0.4445446855452784, 0.00571983432772627], 
     PolygonBox[{{-0.6235470743513488, 
-     0.906999504450712}, {-0.6385394811075372, 
-     0.894685821677425}, {-0.5720872384017818, 0.8477882830936544}}]}, 
-   {RGBColor[0.9725771333924125, 0.83945353283212, 0.5317751903880439], 
+     0.9070548684578816}, {-0.6385394811075372, 
+     0.8947416069400586}, {-0.5720872384017818, 0.8478394951431236}}]}, 
+   {RGBColor[0.9148503313795977, 0.6166975061574747, 0.6024694623530573], 
     PolygonBox[{{-0.4920435736043516, 
-     0.8237631399610429}, {-0.4917581907849245, 
-     0.8080074918560308}, {-0.39846041430850493`, 0.7751978951284374}}]}, 
-   {RGBColor[0.2295037248391738, 0.7850586077138979, 0.141993609638972], 
+     0.8238097091567887}, {-0.4917581907849245, 
+     0.8080536266320196}, {-0.39846041430850493`, 0.7752384900930229}}]}, 
+   {RGBColor[0.2957553627969318, 0.5542561653730278, 0.42176599867240405`], 
     PolygonBox[{{-0.4979087800065768, 
-     0.7892140743176587}, {-0.4917581907849245, 
-     0.8080074918560308}, {-0.5720872384017818, 0.8477882830936544}}]}, 
-   {RGBColor[0.7069376704397807, 0.6486043340733227, 0.11734474070963063`], 
-    PolygonBox[{{-0.02784086728680082, 1.0739498637356697`}, {
-     0.10083460338195802`, 1.0605400271777892`}, {0.08801488821027162, 
-     1.128383699481756}}]}, 
-   {RGBColor[0.9733198001648415, 0.11885883482085435`, 0.795376107076778], 
-    PolygonBox[{{-0.4031397103538368, 
-     0.968834883668551}, {-0.30030336018579007`, 
-     1.0237715564164356`}, {-0.3068733598323188, 1.092187979302625}}]}, 
-   {RGBColor[0.2747178552601002, 0.7412302152420327, 0.2281509939100297], 
+     0.7892600154653076}, {-0.4917581907849245, 
+     0.8080536266320196}, {-0.5720872384017818, 0.8478394951431236}}]}, 
+   {RGBColor[0.19527378428463305`, 0.32063915750333827`, 0.938109479559732], 
+    PolygonBox[{{-0.02784086728680082, 1.0739798944420669`}, {
+     0.10083460338195802`, 1.0605632665150115`}, {0.08801488821027162, 
+     1.1284093889693319`}}]}, 
+   {RGBColor[0.13789890670506577`, 0.5765938447479717, 0.022690103153974572`],
+     PolygonBox[{{-0.4031397103538368, 
+     0.9688808762509664}, {-0.30030336018579007`, 
+     1.0238138721592827`}, {-0.3068733598323188, 1.092232447983398}}]}, 
+   {RGBColor[0.48750946550052077`, 0.7767307697946708, 0.4702621267401954], 
     PolygonBox[{{-0.5821268601306107, 
-     0.8288351757648595}, {-0.5720872384017818, 
-     0.8477882830936544}, {-0.6385394811075372, 0.894685821677425}}]}, 
-   {RGBColor[0.16413747243125743`, 0.9751925197836566, 0.39011772698271785`], 
+     0.8288863843792198}, {-0.5720872384017818, 
+     0.8478394951431236}, {-0.6385394811075372, 0.8947416069400586}}]}, 
+   {RGBColor[0.40679687153975963`, 0.9774413538393363, 0.20449739569001468`], 
     PolygonBox[{{0.08801488821027162, 
-     1.128383699481756}, {-0.03865625161032207, 
-     1.1415842249289567`}, {-0.02784086728680082, 1.0739498637356697`}}]}, 
-   {RGBColor[0.48835377930602086`, 0.906274803059016, 0.5673272005407108], 
+     1.1284093889693319`}, {-0.03865625161032207, 
+     1.1416165999875354`}, {-0.02784086728680082, 1.0739798944420669`}}]}, 
+   {RGBColor[0.2220169342895999, 0.9457842687621008, 0.7481146067516284], 
     PolygonBox[{{-0.5618154184806048, 
-     0.8676308042765717}, {-0.5643773622715922, 
-     0.8625330176653727}, {-0.4920435736043516, 0.8237631399610429}}]}, 
-   {RGBColor[0.5524741524577084, 0.8597606679698016, 0.7236421720705852], 
+     0.867682031868943}, {-0.5643773622715922, 
+     0.8625842374139573}, {-0.4920435736043516, 0.8238097091567887}}]}, 
+   {RGBColor[0.38411408228797983`, 0.03397422968750963, 0.2643694582462981], 
     PolygonBox[{{-0.39846041430850493`, 
-     0.7751978951284374}, {-0.4082121249475887, 
-     0.7926258471614565}, {-0.4920435736043516, 0.8237631399610429}}]}, 
-   {RGBColor[0.5644889024590698, 0.5411605539383408, 0.5008344934500881], 
+     0.7752384900930229}, {-0.4082121249475887, 
+     0.7926673944569614}, {-0.4920435736043516, 0.8238097091567887}}]}, 
+   {RGBColor[0.9465227536078245, 0.5694210889655023, 0.9240876524823052], 
     PolygonBox[{{-0.4974376369430304, 
-     0.830392648224892}, {-0.4920435736043516, 
-     0.8237631399610429}, {-0.4082121249475887, 0.7926258471614565}}]}, 
-   {RGBColor[0.9701712228925661, 0.179647114438515, 0.13893858114973567`], 
+     0.8304396639106918}, {-0.4920435736043516, 
+     0.8238097091567887}, {-0.4082121249475887, 0.7926673944569614}}]}, 
+   {RGBColor[0.5339734250450767, 0.9590102422952846, 0.006121148129682563], 
     PolygonBox[{{-0.5720872384017818, 
-     0.8477882830936544}, {-0.5821268601306107, 
-     0.8288351757648595}, {-0.4979087800065768, 0.7892140743176587}}]}, 
-   {RGBColor[0.4716593949500618, 0.17889201552905654`, 0.9360643452678079], 
+     0.8478394951431236}, {-0.5821268601306107, 
+     0.8288863843792198}, {-0.4979087800065768, 0.7892600154653076}}]}, 
+   {RGBColor[0.912050118595477, 0.933629608168778, 0.13667285451738764`], 
     PolygonBox[{{-0.6138978334327172, 
-     0.9090411359682329}, {-0.6235470743513488, 
-     0.906999504450712}, {-0.5643773622715922, 0.8625330176653727}}]}, 
-   {RGBColor[0.9015449139889624, 0.12847778284737044`, 0.8519893999895101], 
+     0.9090960719568636}, {-0.6235470743513488, 
+     0.9070548684578816}, {-0.5643773622715922, 0.8625842374139573}}]}, 
+   {RGBColor[0.22382877522104083`, 0.7639238357745308, 0.23880975157500983`], 
     PolygonBox[{{-0.4920435736043516, 
-     0.8237631399610429}, {-0.4974376369430304, 
-     0.830392648224892}, {-0.5618154184806048, 0.8676308042765717}}]}, 
-   {RGBColor[0.5401815607268952, 0.383064147888452, 0.31590520504924835`], 
+     0.8238097091567887}, {-0.4974376369430304, 
+     0.8304396639106918}, {-0.5618154184806048, 0.867682031868943}}]}, 
+   {RGBColor[0.8094410837523394, 0.10100759214510924`, 0.0109557238982394], 
     PolygonBox[{{-0.3762768445171387, 
-     0.8585692903860743}, {-0.4365186185111673, 
-     0.7936702154748496}, {-0.4037384025931291, 0.756455401280679}}]}, 
-   {RGBColor[0.749010893660393, 0.12965302093970954`, 0.3359998240613282], 
+     0.8586109994093771}, {-0.4365186185111673, 
+     0.7937132059448545}, {-0.4037384025931291, 0.7564957603448428}}]}, 
+   {RGBColor[0.7493892962209183, 0.46804524112510126`, 0.43437681923024574`], 
     PolygonBox[{{-0.6385394811075372, 
-     0.894685821677425}, {-0.6235470743513488, 
-     0.906999504450712}, {-0.6662215761576267, 0.9541735781507238}}]}, 
-   {RGBColor[0.5526197391495826, 0.1952545203490923, 0.5624847781889455], 
+     0.8947416069400586}, {-0.6235470743513488, 
+     0.9070548684578816}, {-0.6662215761576267, 0.9542323338582823}}]}, 
+   {RGBColor[0.32658871763567054`, 0.7395873394598891, 0.5712768998740763], 
     PolygonBox[{{-0.6385394811075372, 
-     0.894685821677425}, {-0.6522448252499767, 
-     0.8760863470703674}, {-0.5821268601306107, 0.8288351757648595}}]}, 
-   {RGBColor[0.9952028515821625, 0.37569422036528466`, 0.13760403392597276`], 
+     0.8947416069400586}, {-0.6522448252499767, 
+     0.8761423216142185}, {-0.5821268601306107, 0.8288863843792198}}]}, 
+   {RGBColor[0.05734543961001459, 0.1457148211728212, 0.17904114296942208`], 
     PolygonBox[{{-0.40014770806735594`, 
-     0.7561846451666567}, {-0.39846041430850493`, 
-     0.7751978951284374}, {-0.4917581907849245, 0.8080074918560308}}]}, 
-   {RGBColor[0.8954023374598756, 0.03239087970814203, 0.7237030810367444], 
+     0.7562248174759313}, {-0.39846041430850493`, 
+     0.7752384900930229}, {-0.4917581907849245, 0.8080536266320196}}]}, 
+   {RGBColor[0.27126898837858593`, 0.8131850183805489, 0.24499846881952103`], 
     PolygonBox[{{-0.5643773622715922, 
-     0.8625330176653727}, {-0.5618154184806048, 
-     0.8676308042765717}, {-0.6138978334327172, 0.9090411359682329}}]}, 
-   {RGBColor[0.12600746007665964`, 0.10687935027583295`, 0.5655979419147856], 
+     0.8625842374139573}, {-0.5618154184806048, 
+     0.867682031868943}, {-0.6138978334327172, 0.9090960719568636}}]}, 
+   {RGBColor[0.12860502713490707`, 0.9189316166530166, 0.1996869565221142], 
     PolygonBox[{{-0.6522448252499767, 
-     0.8760863470703674}, {-0.6385394811075372, 
-     0.894685821677425}, {-0.6891652843698552, 0.9487106764073595}}]}, 
-   {RGBColor[0.8678653973679695, 0.2466684511286037, 0.9216830766194148], 
+     0.8761423216142185}, {-0.6385394811075372, 
+     0.8947416069400586}, {-0.6891652843698552, 0.9487704336229489}}]}, 
+   {RGBColor[0.5532021087657888, 0.3515060178861129, 0.36034608173382066`], 
     PolygonBox[{{-0.6662215761576267, 
-     0.9541735781507238}, {-0.6891652843698552, 
-     0.9487106764073595}, {-0.6385394811075372, 0.894685821677425}}]}, 
-   {RGBColor[0.2255215088274567, 0.6131436695310428, 0.8243957662133334], 
+     0.9542323338582823}, {-0.6891652843698552, 
+     0.9487704336229489}, {-0.6385394811075372, 0.8947416069400586}}]}, 
+   {RGBColor[0.47262478443743383`, 0.936839152705832, 0.9446117713191782], 
     PolygonBox[{{-0.4917581907849245, 
-     0.8080074918560308}, {-0.4979087800065768, 
-     0.7892140743176587}, {-0.40014770806735594`, 0.7561846451666567}}]}, 
-   {RGBColor[0.5912646042733616, 0.784117213426154, 0.7376545847057734], 
+     0.8080536266320196}, {-0.4979087800065768, 
+     0.7892600154653076}, {-0.40014770806735594`, 0.7562248174759313}}]}, 
+   {RGBColor[0.7484584872927793, 0.8017055176666317, 0.5937900570635268], 
     PolygonBox[{{-0.4082121249475887, 
-     0.7926258471614565}, {-0.4232162457323549, 
-     0.801414246092012}, {-0.4974376369430304, 0.830392648224892}}]}, 
-   {RGBColor[0.013671475093849583`, 0.2532714884007954, 0.7063403058889173], 
-    PolygonBox[{{0.19109809780500547`, 1.0237715564164356`}, {
-     0.10083460338195802`, 1.0605400271777892`}, {0.1069662828810756, 
-     1.0007040241684548`}}]}, 
-   {RGBColor[0.9404961034894028, 0.5317989864023307, 0.7242173810329182], 
-    PolygonBox[{{0.14611730734094355`, 0.7610796334691737}, {
-     0.11606900852378792`, 0.7983952360525249}, {0.10426771124579468`, 
-     0.7842137802795491}}]}, 
-   {RGBColor[0.9557610107697172, 0.8495331502674814, 0.9722955636887434], 
-    PolygonBox[{{0.17632515946108698`, 0.7834850003503523}, {
-     0.14224812459950667`, 0.8258032969677767}, {0.11606900852378792`, 
-     0.7983952360525249}}]}, 
-   {RGBColor[0.3763132491176677, 0.4933941815016756, 0.128811083344053], 
+     0.7926673944569614}, {-0.4232162457323549, 
+     0.801456777950861}, {-0.4974376369430304, 0.8304396639106918}}]}, 
+   {RGBColor[0.1112862944692441, 0.9823992599494549, 0.6681716468987182], 
+    PolygonBox[{{0.19109809780500547`, 1.023789302086383}, {
+     0.10083460338195802`, 1.0605632665150115`}, {0.1069662828810756, 
+     1.0007253612949554`}}]}, 
+   {RGBColor[0.22029597753668706`, 0.051456880186979026`, 0.5071525109958523],
+     PolygonBox[{{0.14611730734094355`, 0.7610926230606992}, {
+     0.11606900852378792`, 0.7984107231417269}, {0.10426771124579468`, 
+     0.7842294792614609}}]}, 
+   {RGBColor[0.7617254089612806, 0.24848839062401273`, 0.4168920681340893], 
+    PolygonBox[{{0.17632515946108698`, 0.7834970770257219}, {
+     0.14224812459950667`, 0.8258182059827991}, {0.11606900852378792`, 
+     0.7984107231417269}}]}, 
+   {RGBColor[0.7579934733835105, 0.8114361981602625, 0.8278235355371466], 
     PolygonBox[{{-0.17940795190792969`, 
-     1.128383699481756}, {-0.03865625161032207, 
-     1.1415842249289567`}, {-0.05277216584884473, 1.2203563352545335`}}]}, 
-   {RGBColor[0.49215840980370884`, 0.7336022012926642, 0.8074786317785463], 
+     1.1284227601113377`}, {-0.03865625161032207, 
+     1.1416165999875354`}, {-0.05277216584884473, 1.2203915166984327`}}]}, 
+   {RGBColor[0.1114587839887784, 0.6843255704373288, 0.1999227734799902], 
     PolygonBox[{{-0.3068733598323188, 
-     1.092187979302625}, {-0.17940795190792969`, 
-     1.128383699481756}, {-0.189045846991796, 1.207575356453992}}]}, 
-   {RGBColor[0.3414810896846652, 0.3983959602517313, 0.12857873613824822`], 
+     1.092232447983398}, {-0.17940795190792969`, 
+     1.1284227601113377`}, {-0.189045846991796, 1.2076170107558468`}}]}, 
+   {RGBColor[0.6506555481950165, 0.27260244916726517`, 0.9231839176515921], 
     PolygonBox[{{-0.6491049631383201, 
-     0.9487106764073595}, {-0.6662215761576267, 
-     0.9541735781507238}, {-0.6235470743513488, 0.906999504450712}}]}, 
-   {RGBColor[0.2005414933045031, 0.6727871413642508, 0.05184462028062353], 
+     0.9487684306068872}, {-0.6662215761576267, 
+     0.9542323338582823}, {-0.6235470743513488, 0.9070548684578816}}]}, 
+   {RGBColor[0.5382335117303683, 0.21320314982549848`, 0.33522364462409304`], 
     PolygonBox[{{-0.6235470743513488, 
-     0.906999504450712}, {-0.6138978334327172, 
-     0.9090411359682329}, {-0.6491049631383201, 0.9487106764073595}}]}, 
-   {RGBColor[0.09633223312259531, 0.714683392293828, 0.5680706892288847], 
+     0.9070548684578816}, {-0.6138978334327172, 
+     0.9090960719568636}, {-0.6491049631383201, 0.9487684306068872}}]}, 
+   {RGBColor[0.5176808288646924, 0.20763863171002828`, 0.5185997405621499], 
     PolygonBox[{{-0.5066468286659773, 
-     0.7800912958290569}, {-0.4979087800065768, 
-     0.7892140743176587}, {-0.5821268601306107, 0.8288351757648595}}]}, 
-   {RGBColor[0.20767083640597628`, 0.2415178718359603, 0.5333373544572824], 
+     0.7801374306050456}, {-0.4979087800065768, 
+     0.7892600154653076}, {-0.5821268601306107, 0.8288863843792198}}]}, 
+   {RGBColor[0.008487260089772963, 0.9442697847622941, 0.7992928528422019], 
     PolygonBox[{{-0.5877088915102037, 
-     0.8184976835153635}, {-0.5821268601306107, 
-     0.8288351757648595}, {-0.6522448252499767, 0.8760863470703674}}]}, 
-   {RGBColor[0.7041403168123204, 0.9342633396253206, 0.3139610818880938], 
-    PolygonBox[{{0.21024484360074447`, 0.8158951451953105}, {
-     0.17152739692349586`, 0.8639770264494632}, {0.14224812459950667`, 
-     0.8258032969677767}}]}, 
-   {RGBColor[0.41057962177495777`, 0.7069455088369356, 0.9558779214107704], 
+     0.8185488955648327}, {-0.5821268601306107, 
+     0.8288863843792198}, {-0.6522448252499767, 0.8761423216142185}}]}, 
+   {RGBColor[0.9915777155192216, 0.30988449050995515`, 0.023475658092753093`],
+     PolygonBox[{{0.21024484360074447`, 0.8159063901570024}, {
+     0.17152739692349586`, 0.863991489466989}, {0.14224812459950667`, 
+     0.8258182059827991}}]}, 
+   {RGBColor[0.79085595986091, 0.4375992959842323, 0.8267666110803196], 
     PolygonBox[{{-0.5674504358162213, 
-     0.8572028613431512}, {-0.5618154184806048, 
-     0.8676308042765717}, {-0.4974376369430304, 0.830392648224892}}]}, 
-   {RGBColor[0.14299102408993325`, 0.1275297095607859, 0.4596302818590352], 
+     0.857254092607911}, {-0.5618154184806048, 
+     0.867682031868943}, {-0.4974376369430304, 0.8304396639106918}}]}, 
+   {RGBColor[
+    0.029394949144305293`, 0.36546560384521043`, 0.20028183248160558`], 
     PolygonBox[{{-0.5064716135509288, 
-     0.8212186474118267}, {-0.4974376369430304, 
-     0.830392648224892}, {-0.4232162457323549, 0.801414246092012}}]}, 
-   {RGBColor[0.43541284445549544`, 0.76507225965355, 0.7323282331959813], 
+     0.8212658701564352}, {-0.4974376369430304, 
+     0.8304396639106918}, {-0.4232162457323549, 0.801456777950861}}]}, 
+   {RGBColor[0.5236477666029491, 0.7599852924074224, 0.6695177181385965], 
     PolygonBox[{{-0.6891652843698552, 
-     0.9487106764073595}, {-0.7070108281427603, 
-     0.9323219711772662}, {-0.6522448252499767, 0.8760863470703674}}]}, 
-   {RGBColor[0.7625866267247832, 0.535233649355439, 0.059226093682391845`], 
+     0.9487704336229489}, {-0.7070108281427603, 
+     0.9323821836379047}, {-0.6522448252499767, 0.8761423216142185}}]}, 
+   {RGBColor[0.08934393988505662, 0.944943029416484, 0.485705514565552], 
     PolygonBox[{{-0.6891652843698552, 
-     0.9487106764073595}, {-0.6662215761576267, 
-     0.9541735781507238}, {-0.6755041737822154, 0.9916352640524513}}]}, 
-   {RGBColor[0.05751815901182589, 0.3402583868408122, 0.22693474051454476`], 
-    PolygonBox[{{0.1069662828810756, 1.0007040241684548`}, {
-     0.19654122682704098`, 0.9642158483350847}, {0.19109809780500547`, 
-     1.0237715564164356`}}]}, 
-   {RGBColor[0.5051470529293123, 0.2457604004056022, 0.7415677514385748], 
-    PolygonBox[{{-0.4557260047435647, 0.84230209585819}, {-0.3931664264935831,
-      0.9096981961398699}, {-0.4031397103538368, 0.968834883668551}}]}, 
-   {RGBColor[0.29084930357067074`, 0.34424559359169704`, 0.3358810983392475], 
-    PolygonBox[{{-0.6165921611143034, 
-     0.8966070149038502}, {-0.6138978334327172, 
-     0.9090411359682329}, {-0.5618154184806048, 0.8676308042765717}}]}, 
-   {RGBColor[0.26512351966172676`, 0.48795729104485264`, 0.734737626254957], 
-    PolygonBox[{{-0.5821268601306107, 
-     0.8288351757648595}, {-0.5877088915102037, 
-     0.8184976835153635}, {-0.5066468286659773, 0.7800912958290569}}]}, 
-   {RGBColor[0.7416776206640692, 0.33718889534604535`, 0.7281160529121471], 
-    PolygonBox[{{-0.4974376369430304, 
-     0.830392648224892}, {-0.5064716135509288, 
-     0.8212186474118267}, {-0.5674504358162213, 0.8572028613431512}}]}, 
-   {RGBColor[0.5525403440150725, 0.7024751853821034, 0.20515877012298067`], 
-    PolygonBox[{{-0.4127444907100863, 
-     0.7484152518754724}, {-0.40014770806735594`, 
-     0.7561846451666567}, {-0.4979087800065768, 0.7892140743176587}}]}, 
-   {RGBColor[0.6058336723853559, 0.5558416846846885, 0.9472498202278494], 
-    PolygonBox[{{-0.05277216584884473, 
-     1.2203563352545335`}, {-0.189045846991796, 
-     1.207575356453992}, {-0.17940795190792969`, 1.128383699481756}}]}, 
-   {RGBColor[0.11008814038685122`, 0.3698593878798473, 0.6248173426298631], 
-    PolygonBox[{{-0.7070108281427603, 
-     0.9323219711772662}, {-0.6891652843698552, 
-     0.9487106764073595}, {-0.7042565149200531, 0.9948826153376109}}]}, 
-   {RGBColor[0.7119911078545629, 0.7292545799373571, 0.5024542116779287], 
-    PolygonBox[{{-0.6755041737822154, 
-     0.9916352640524513}, {-0.7042565149200531, 
-     0.9948826153376109}, {-0.6891652843698552, 0.9487106764073595}}]}, 
-   {RGBColor[0.42472038761282627`, 0.5937087339062328, 0.3167704206737483], 
-    PolygonBox[{{-0.6550252852003547, 
-     0.8637749390033923}, {-0.6522448252499767, 
-     0.8760863470703674}, {-0.7070108281427603, 0.9323219711772662}}]}, 
-   {RGBColor[0.8749568427976817, 0.1484307081844416, 0.10993473599676751`], 
-    PolygonBox[{{-0.6522448252499767, 
-     0.8760863470703674}, {-0.6550252852003547, 
-     0.8637749390033923}, {-0.5877088915102037, 0.8184976835153635}}]}, 
-   {RGBColor[0.03820343627824907, 0.8311817212067341, 0.2754649309956283], 
-    PolygonBox[{{-0.5618154184806048, 
-     0.8676308042765717}, {-0.5674504358162213, 
-     0.8572028613431512}, {-0.6165921611143034, 0.8966070149038502}}]}, 
-   {RGBColor[0.7969782921617068, 0.029262648581842354`, 0.9004727058163964], 
-    PolygonBox[{{-0.4232162457323549, 
-     0.801414246092012}, {-0.4365186185111673, 
-     0.7936702154748496}, {-0.5064716135509288, 0.8212186474118267}}]}, 
-   {RGBColor[0.7802194541233574, 0.6832012489292347, 0.25865591589224834`], 
-    PolygonBox[{{-0.6662215761576267, 
-     0.9541735781507238}, {-0.6491049631383201, 
-     0.9487106764073595}, {-0.6532638068623781, 0.9771910681532273}}]}, 
-   {RGBColor[0.7229863756491941, 0.17401500690990424`, 0.5078909693751359], 
-    PolygonBox[{{-0.4979087800065768, 
-     0.7892140743176587}, {-0.5066468286659773, 
-     0.7800912958290569}, {-0.4127444907100863, 0.7484152518754724}}]}, 
-   {RGBColor[0.5913616643621165, 0.4255302524733531, 0.6742257347168443], 
-    PolygonBox[{{-0.3931664264935831, 
-     0.9096981961398699}, {-0.4557260047435647, 
-     0.84230209585819}, {-0.4365186185111673, 0.7936702154748496}}]}, 
-   {RGBColor[0.048799555552371476`, 0.3715871713607002, 0.949513477501597], 
-    PolygonBox[{{-0.3068733598323188, 
-     1.092187979302625}, {-0.40810773987827526`, 
-     1.0381074673881987`}, {-0.4031397103538368, 0.968834883668551}}]}, 
-   {RGBColor[0.19941863637805368`, 0.6638599512732228, 0.21628346539361165`], 
-    PolygonBox[{{-0.6532638068623781, 
-     0.9771910681532273}, {-0.6755041737822154, 
-     0.9916352640524513}, {-0.6662215761576267, 0.9541735781507238}}]}, 
-   {RGBColor[0.6584775618937537, 0.1659589309209879, 0.9222933474218762], 
-    PolygonBox[{{0.2338571336291519, 0.8585692903860743}, {0.1915831714576789,
-      0.9110672681805044}, {0.17152739692349586`, 0.8639770264494632}}]}, 
-   {RGBColor[0.7238975264479464, 0.994275739550623, 0.9156658027266449], 
-    PolygonBox[{{0.10426771124579468`, 0.7842137802795491}, {
-     0.1324666809023711, 0.749194241481078}, {0.14611730734094355`, 
-     0.7610796334691737}}]}, 
-   {RGBColor[0.9675472572443722, 0.6858545972493266, 0.281623029325869], 
-    PolygonBox[{{-0.6487407049441811, 
-     0.9323219711772662}, {-0.6491049631383201, 
-     0.9487106764073595}, {-0.6138978334327172, 0.9090411359682329}}]}, 
-   {RGBColor[0.6570805652284832, 0.10826344112353725`, 0.1616556067435], 
-    PolygonBox[{{-0.32070798903419384`, 
-     0.6626111576157194}, {-0.31471495354866114`, 
-     0.7059026995483987}, {-0.3303847620409428, 0.7149495960534782}}]}, 
-   {RGBColor[0.5758639071674976, 0.9184591006952829, 0.222713058529874], 
-    PolygonBox[{{-0.189045846991796, 
-     1.207575356453992}, {-0.31245519863003474`, 
-     1.1725315599540178`}, {-0.3068733598323188, 1.092187979302625}}]}, 
-   {RGBColor[0.49242836072004614`, 0.8511168143191865, 0.98694440785415], 
-    PolygonBox[{{0.11606900852378792`, 0.7983952360525249}, {
-     0.14611730734094355`, 0.7610796334691737}, {0.17632515946108698`, 
-     0.7834850003503523}}]}, 
-   {RGBColor[
-    0.36290965993303326`, 0.31801177798850544`, 0.41382434162738013`], 
-    PolygonBox[{{-0.5121663116171834, 
-     0.7860330061869831}, {-0.5066468286659773, 
-     0.7800912958290569}, {-0.5877088915102037, 0.8184976835153635}}]}, 
-   {RGBColor[0.4943805890107693, 0.7067980102895088, 0.17516286022208338`], 
-    PolygonBox[{{-0.6138978334327172, 
-     0.9090411359682329}, {-0.6165921611143034, 
-     0.8966070149038502}, {-0.6487407049441811, 0.9323219711772662}}]}, 
-   {RGBColor[0.6628215104276749, 0.19641377183413566`, 0.11739191898809409`], 
-    PolygonBox[{{-0.5854471638928669, 
-     0.8230271396254826}, {-0.5877088915102037, 
-     0.8184976835153635}, {-0.6550252852003547, 0.8637749390033923}}]}, 
-   {RGBColor[0.5954354515533462, 0.5983867022158096, 0.2591827901032018], 
-    PolygonBox[{{-0.5778026970510641, 
-     0.8376546569569606}, {-0.5674504358162213, 
-     0.8572028613431512}, {-0.5064716135509288, 0.8212186474118267}}]}, 
-   {RGBColor[0.6424126940463217, 0.6691051298424282, 0.10108733812069737`], 
-    PolygonBox[{{-0.33677053295520454`, 
-     0.6688195586377826}, {-0.3303847620409428, 
-     0.7149495960534782}, {-0.36406177168604775`, 0.7311700853945728}}]}, 
-   {RGBColor[0.028507852058875738`, 0.8781887669416877, 0.5142793838313802], 
-    PolygonBox[{{-0.7042565149200531, 
-     0.9948826153376109}, {-0.7253085106731112, 
-     0.981736429948197}, {-0.7070108281427603, 0.9323219711772662}}]}, 
-   {RGBColor[0.719941642922195, 0.7779971248727211, 0.3762535721895659], 
-    PolygonBox[{{-0.5127387518004057, 
-     0.8017030578673133}, {-0.5064716135509288, 
-     0.8212186474118267}, {-0.4365186185111673, 0.7936702154748496}}]}, 
-   {RGBColor[0.8056961321680545, 0.4600410504189951, 0.32765178374573933`], 
-    PolygonBox[{{-0.7070108281427603, 
-     0.9323219711772662}, {-0.7066465699486214, 
-     0.915933265947173}, {-0.6550252852003547, 0.8637749390033923}}]}, 
-   {RGBColor[0.8108545679056218, 0.07000812660263689, 0.44426571728574693`], 
-    PolygonBox[{{-0.7042565149200531, 
-     0.9948826153376109}, {-0.6755041737822154, 
-     0.9916352640524513}, {-0.6383828368696143, 1.0120389018356577`}}]}, 
-   {RGBColor[0.43012701803121556`, 0.10907561194127768`, 0.5995697480767006], 
-    PolygonBox[{{-0.5877088915102037, 
-     0.8184976835153635}, {-0.5854471638928669, 
-     0.8230271396254826}, {-0.5121663116171834, 0.7860330061869831}}]}, 
-   {RGBColor[0.8418162171281545, 0.8697294192715361, 0.5306939742588619], 
-    PolygonBox[{{0.14224812459950667`, 0.8258032969677767}, {
-     0.17632515946108698`, 0.7834850003503523}, {0.21024484360074447`, 
-     0.8158951451953105}}]}, 
-   {RGBColor[0.6496605128401503, 0.8221522940904837, 0.3953019745949464], 
-    PolygonBox[{{-0.03865625161032207, 1.1415842249289567`}, {
-     0.08801488821027162, 1.128383699481756}, {0.0698675917040982, 
-     1.207575356453992}}]}, 
-   {RGBColor[0.675191975025009, 0.20016807216024057`, 0.41178131826128084`], 
-    PolygonBox[{{-0.40810773987827526`, 
-     1.0381074673881987`}, {-0.3068733598323188, 
-     1.092187979302625}, {-0.31245519863003474`, 1.1725315599540178`}}]}, 
-   {RGBColor[0.4607201276805264, 0.2924035702322261, 0.7167555318178913], 
-    PolygonBox[{{-0.5064716135509288, 
-     0.8212186474118267}, {-0.5127387518004057, 
-     0.8017030578673133}, {-0.5778026970510641, 0.8376546569569606}}]}, 
-   {RGBColor[0.567424618263364, 0.5088891818805334, 0.06708027156656149], 
-    PolygonBox[{{-0.630648153731509, 
-     0.8776342854079983}, {-0.6165921611143034, 
-     0.8966070149038502}, {-0.5674504358162213, 0.8572028613431512}}]}, 
-   {RGBColor[0.6386465996993, 0.42176497693405746`, 0.950858539226582], 
-    PolygonBox[{{-0.427574246765012, 
-     0.7563218687537876}, {-0.4127444907100863, 
-     0.7484152518754724}, {-0.5066468286659773, 0.7800912958290569}}]}, 
-   {RGBColor[0.716763969223231, 0.917847788746802, 0.5996841022918817], 
-    PolygonBox[{{0.0698675917040982, 
-     1.207575356453992}, {-0.05277216584884473, 
-     1.2203563352545335`}, {-0.03865625161032207, 1.1415842249289567`}}]}, 
-   {RGBColor[0.6684311223220665, 0.3219570987614302, 0.8485916634693018], 
-    PolygonBox[{{-0.37130366610711857`, 
-     0.6788551704387934}, {-0.36406177168604775`, 
-     0.7311700853945728}, {-0.4037384025931291, 0.756455401280679}}]}, 
-   {RGBColor[0.4136524191219595, 0.0926769240311236, 0.5392519705400489], 
-    PolygonBox[{{-0.7066465699486214, 
-     0.915933265947173}, {-0.7070108281427603, 
-     0.9323219711772662}, {-0.7253085106731112, 0.981736429948197}}]}, 
-   {RGBColor[0.835535722741217, 0.44567266229556, 0.4246737824007982], 
-    PolygonBox[{{-0.5066468286659773, 
-     0.7800912958290569}, {-0.5121663116171834, 
-     0.7860330061869831}, {-0.427574246765012, 0.7563218687537876}}]}, 
-   {RGBColor[0.2823453779744809, 0.753778483751887, 0.4352347958036671], 
-    PolygonBox[{{-0.6508935588205756, 
-     0.9564450849084122}, {-0.6532638068623781, 
-     0.9771910681532273}, {-0.6491049631383201, 0.9487106764073595}}]}, 
-   {RGBColor[0.0824361650819545, 0.2890216667558203, 0.7531327322984598], 
-    PolygonBox[{{-0.6550252852003547, 
-     0.8637749390033923}, {-0.6457030953244323, 
-     0.8654569651261804}, {-0.5854471638928669, 0.8230271396254826}}]}, 
-   {RGBColor[0.9182294555692845, 0.5715819994526041, 0.25017564249943414`], 
-    PolygonBox[{{-0.6755041737822154, 
-     0.9916352640524513}, {-0.6532638068623781, 
-     0.9771910681532273}, {-0.6178623656053813, 0.9924914982297461}}]}, 
-   {RGBColor[0.6516326976012345, 0.7305279526221493, 0.4190313479078711], 
-    PolygonBox[{{-0.5674504358162213, 
-     0.8572028613431512}, {-0.5778026970510641, 
-     0.8376546569569606}, {-0.630648153731509, 0.8776342854079983}}]}, 
-   {RGBColor[0.1861972255600275, 0.3198915728627678, 0.6884945133370179], 
-    PolygonBox[{{-0.4365186185111673, 
-     0.7936702154748496}, {-0.4379833940856116, 
-     0.7737258429296555}, {-0.5127387518004057, 0.8017030578673133}}]}, 
-   {RGBColor[0.5804768349386742, 0.9368177622116136, 0.05220835430822346], 
-    PolygonBox[{{-0.5127387518004057, 
-     0.8017030578673133}, {-0.5121663116171834, 
-     0.7860330061869831}, {-0.5854471638928669, 0.8230271396254826}}]}, 
-   {RGBColor[0.5426290470431059, 0.7101135909993397, 0.18897908651568218`], 
-    PolygonBox[{{-0.5854471638928669, 
-     0.8230271396254826}, {-0.5778026970510641, 
-     0.8376546569569606}, {-0.5127387518004057, 0.8017030578673133}}]}, 
-   {RGBColor[0.2942802906895172, 0.003721182317646843, 0.8413593379078945], 
-    PolygonBox[{{-0.6457030953244323, 
-     0.8654569651261804}, {-0.6550252852003547, 
-     0.8637749390033923}, {-0.7066465699486214, 0.915933265947173}}]}, 
-   {RGBColor[0.3451858248225408, 0.716726125995502, 0.12481557132244991`], 
-    PolygonBox[{{0.17687152794358751`, 1.092187979302625}, {
-     0.08801488821027162, 1.128383699481756}, {0.10083460338195802`, 
-     1.0605400271777892`}}]}, 
-   {RGBColor[0.7892982975271847, 0.4192119355769859, 0.44717559670861173`], 
-    PolygonBox[{{-0.6491049631383201, 
-     0.9487106764073595}, {-0.6487407049441811, 
-     0.9323219711772662}, {-0.6508935588205756, 0.9564450849084122}}]}, 
-   {RGBColor[0.1726139831723097, 0.17196896936067851`, 0.7066769146592586], 
-    PolygonBox[{{-0.189045846991796, 
-     1.207575356453992}, {-0.05277216584884473, 
-     1.2203563352545335`}, {-0.05664527502748805, 1.234305027913989}}]}, 
-   {RGBColor[0.5042522423150508, 0.36528302021499925`, 0.5247111294099234], 
-    PolygonBox[{{-0.31245519863003474`, 
-     1.1725315599540178`}, {-0.189045846991796, 
-     1.207575356453992}, {-0.19042216985277277`, 1.2217582551142878`}}]}, 
-   {RGBColor[0.71974426524938, 0.7740368031246407, 0.13232720237859819`], 
-    PolygonBox[{{-0.05664527502748805, 
-     1.234305027913989}, {-0.19042216985277277`, 
-     1.2217582551142878`}, {-0.189045846991796, 1.207575356453992}}]}, 
-   {RGBColor[0.8724862190920102, 0.5739618208707018, 0.09282201528597023], 
-    PolygonBox[{{-0.7253085106731112, 
-     0.981736429948197}, {-0.7042565149200531, 
-     0.9948826153376109}, {-0.665746502882928, 1.0203844321885185`}}]}, 
-   {RGBColor[0.06761432775120357, 0.8715747381104133, 0.710825644900519], 
-    PolygonBox[{{-0.5778026970510641, 
-     0.8376546569569606}, {-0.5854471638928669, 
-     0.8230271396254826}, {-0.6457030953244323, 0.8654569651261804}}]}, 
-   {RGBColor[
-    0.0022193601841826727`, 0.34103077009900185`, 0.09796669934591029], 
-    PolygonBox[{{-0.5121663116171834, 
-     0.7860330061869831}, {-0.5127387518004057, 
-     0.8017030578673133}, {-0.4379833940856116, 0.7737258429296555}}]}, 
-   {RGBColor[0.9824319482651802, 0.47013528908098134`, 0.9175158533874501], 
-    PolygonBox[{{-0.6178623656053813, 
-     0.9924914982297461}, {-0.6383828368696143, 
-     1.0120389018356577`}, {-0.6755041737822154, 0.9916352640524513}}]}, 
-   {RGBColor[0.13453201008991167`, 0.3788989967470622, 0.6132827629463302], 
-    PolygonBox[{{-0.6383828368696143, 
-     1.0120389018356577`}, {-0.665746502882928, 
-     1.0203844321885185`}, {-0.7042565149200531, 0.9948826153376109}}]}, 
-   {RGBColor[0.5863248754342292, 0.43362244486786494`, 0.905557648060777], 
-    PolygonBox[{{-0.4379833940856116, 
-     0.7737258429296555}, {-0.427574246765012, 
-     0.7563218687537876}, {-0.5121663116171834, 0.7860330061869831}}]}, 
-   {RGBColor[0.5900384035233626, 0.5033217679866897, 0.525269142443884], 
-    PolygonBox[{{-0.6457030953244323, 
-     0.8654569651261804}, {-0.630648153731509, 
-     0.8776342854079983}, {-0.5778026970510641, 0.8376546569569606}}]}, 
-   {RGBColor[
-    0.29189866815420107`, 0.20104981283473666`, 0.12922375975225409`], 
-    PolygonBox[{{-0.6665862487170863, 
-     0.915933265947173}, {-0.6487407049441811, 
-     0.9323219711772662}, {-0.6165921611143034, 0.8966070149038502}}]}, 
-   {RGBColor[0.6391124185018395, 0.6773070625406103, 0.7724766235404903], 
-    PolygonBox[{{0.17152739692349586`, 0.8639770264494632}, {
-     0.21024484360074447`, 0.8158951451953105}, {0.2338571336291519, 
-     0.8585692903860743}}]}, 
-   {RGBColor[0.42041465094885533`, 0.7269917362172658, 0.9387101528717205], 
-    PolygonBox[{{0.24044149732300005`, 0.9096981961398699}, {
-     0.19654122682704098`, 0.9642158483350847}, {0.1915831714576789, 
-     0.9110672681805044}}]}, 
-   {RGBColor[0.016802716056540268`, 0.8863907503677717, 0.8746100930197687], 
-    PolygonBox[{{-0.6165921611143034, 
-     0.8966070149038502}, {-0.630648153731509, 
-     0.8776342854079983}, {-0.6665862487170863, 0.915933265947173}}]}, 
-   {RGBColor[0.25186664220563704`, 0.26707020280557914`, 0.6839203457782848], 
-    PolygonBox[{{0.10083460338195802`, 1.0605400271777892`}, {
-     0.19109809780500547`, 1.0237715564164356`}, {0.17687152794358751`, 
-     1.092187979302625}}]}, 
-   {RGBColor[0.5186645728108343, 0.2857719693394807, 0.4498537962255551], 
-    PolygonBox[{{-0.7066465699486214, 
-     0.915933265947173}, {-0.6895299569293146, 
-     0.9104703642038087}, {-0.6457030953244323, 0.8654569651261804}}]}, 
-   {RGBColor[0.6406432268162654, 0.7257777447904343, 0.7797242416937449], 
-    PolygonBox[{{-0.05863573983204974, 
-     1.209362134036024}, {-0.18582398899524435`, 
-     1.1974334257139416`}, {-0.1881712367799165, 1.2146731869312306`}}]}, 
-   {RGBColor[0.8060462028984066, 0.5489868721061204, 0.9998040054492479], 
-    PolygonBox[{{-0.05971138041910461, 
-     1.2357791183277986`}, {-0.18993125937426633`, 
-     1.2235659169649662`}, {-0.19042216985277277`, 1.2217582551142878`}}]}, 
-   {RGBColor[0.7460383054453295, 0.8029175680639971, 0.2311593421277216], 
-    PolygonBox[{{-0.4119665360940595, 
-     0.6970156573660474}, {-0.4037384025931291, 
-     0.756455401280679}, {-0.4365186185111673, 0.7936702154748496}}]}, 
-   {RGBColor[0.23735864800452489`, 0.2810990894962564, 0.36782562446791167`], 
-    PolygonBox[{{-0.19042216985277277`, 
-     1.2217582551142878`}, {-0.31157069920364483`, 
-     1.1873557270818866`}, {-0.31245519863003474`, 1.1725315599540178`}}]}, 
-   {RGBColor[0.017105646914921113`, 0.9462197432337232, 0.0899374350141815], 
-    PolygonBox[{{-0.19042216985277277`, 
-     1.2217582551142878`}, {-0.05664527502748805, 
-     1.234305027913989}, {-0.05971138041910461, 1.2357791183277986`}}]}, 
-   {RGBColor[0.1762511580075634, 0.8688531893061959, 0.93553763405682], 
-    PolygonBox[{{-0.31157069920364483`, 
-     1.1873557270818866`}, {-0.19042216985277277`, 
-     1.2217582551142878`}, {-0.18993125937426633`, 1.2235659169649662`}}]}, 
-   {RGBColor[0.019917863451765605`, 0.31002015758722923`, 0.1238312852545882],
-     PolygonBox[{{-0.630648153731509, 
-     0.8776342854079983}, {-0.6457030953244323, 
-     0.8654569651261804}, {-0.6895299569293146, 0.9104703642038087}}]}, 
-   {RGBColor[0.03241507802778587, 0.09737403424001267, 0.4038940755243683], 
-    PolygonBox[{{-0.46617979383920055`, 
-     0.9009211919187368}, {-0.4031397103538368, 
-     0.968834883668551}, {-0.40810773987827526`, 1.0381074673881987`}}]}, 
-   {RGBColor[0.03852970772903075, 0.8318700756504218, 0.6731387074623343], 
-    PolygonBox[{{-0.7253085106731112, 
-     0.981736429948197}, {-0.7225885813219272, 
-     0.9605099908340972}, {-0.7066465699486214, 0.915933265947173}}]}, 
-   {RGBColor[0.2532472399514989, 0.9784322701716024, 0.8634354798097394], 
-    PolygonBox[{{-0.4031397103538368, 
-     0.968834883668551}, {-0.46617979383920055`, 
-     0.9009211919187368}, {-0.4557260047435647, 0.84230209585819}}]}, 
-   {RGBColor[0.3905526539844706, 0.3793395858152475, 0.9007749296726086], 
-    PolygonBox[{{-0.3303847620409428, 
-     0.7149495960534782}, {-0.33677053295520454`, 
-     0.6688195586377826}, {-0.32070798903419384`, 0.6626111576157194}}]}, 
-   {RGBColor[0.19661999026245813`, 0.7794736793496204, 0.6551186596311134], 
-    PolygonBox[{{-0.060741411991174075`, 
-     1.2266247711070777`}, {-0.1881712367799165, 
-     1.2146731869312306`}, {-0.18993125937426633`, 1.2235659169649662`}}]}, 
-   {RGBColor[0.2809148925263898, 0.8057941360941909, 0.4426650081381265], 
-    PolygonBox[{{-0.30357354466997877`, 
-     1.1819025123930604`}, {-0.1881712367799165, 
-     1.2146731869312306`}, {-0.18582398899524435`, 1.1974334257139416`}}]}, 
-   {RGBColor[0.9734636376244474, 0.18993269796869683`, 0.38291256188887157`], 
-    PolygonBox[{{-0.1881712367799165, 
-     1.2146731869312306`}, {-0.060741411991174075`, 
-     1.2266247711070777`}, {-0.05863573983204974, 1.209362134036024}}]}, 
-   {RGBColor[0.7929008886139872, 0.6319277221626489, 0.538527423938544], 
-    PolygonBox[{{-0.6164295592160106, 
-     0.969324122600115}, {-0.6178623656053813, 
-     0.9924914982297461}, {-0.6532638068623781, 0.9771910681532273}}]}, 
-   {RGBColor[0.6997622004717376, 0.035732208616172434`, 0.4311206890616577], 
-    PolygonBox[{{-0.6895299569293146, 
-     0.9104703642038087}, {-0.6665862487170863, 
-     0.915933265947173}, {-0.630648153731509, 0.8776342854079983}}]}, 
-   {RGBColor[0.9067031751144174, 0.5764601337134787, 0.029239765287311315`], 
-    PolygonBox[{{-0.30785934886885863`, 
-     1.1900777734650163`}, {-0.18993125937426633`, 
-     1.2235659169649662`}, {-0.1881712367799165, 1.2146731869312306`}}]}, 
-   {RGBColor[0.05556764204653852, 0.9737305047411271, 0.9862001769161495], 
-    PolygonBox[{{-0.18993125937426633`, 
-     1.2235659169649662`}, {-0.05971138041910461, 
-     1.2357791183277986`}, {-0.060741411991174075`, 1.2266247711070777`}}]}, 
-   {RGBColor[0.8650568695630949, 0.18337897254136837`, 0.6871536418073159], 
-    PolygonBox[{{-0.6532638068623781, 
-     0.9771910681532273}, {-0.6508935588205756, 
-     0.9564450849084122}, {-0.6164295592160106, 0.969324122600115}}]}, 
-   {RGBColor[0.7143778085275063, 0.8006370945571941, 0.8913883356004451], 
-    PolygonBox[{{-0.6895299569293146, 
-     0.9104703642038087}, {-0.7066465699486214, 
-     0.915933265947173}, {-0.7225885813219272, 0.9605099908340972}}]}, 
-   {RGBColor[0.24279282337697183`, 0.8652721431857044, 0.8428076326531833], 
-    PolygonBox[{{-0.665746502882928, 
-     1.0203844321885185`}, {-0.6864683526525642, 
-     1.0092030911890681`}, {-0.7253085106731112, 0.981736429948197}}]}, 
-   {RGBColor[0.49738691401952484`, 0.18780734019598966`, 0.6454850260214042], 
-    PolygonBox[{{-0.6712698824260004, 
-     0.9434296764714356}, {-0.6508935588205756, 
-     0.9564450849084122}, {-0.6487407049441811, 0.9323219711772662}}]}, 
-   {RGBColor[0.25812887824939335`, 0.09635539618106437, 0.42340536771718695`],
-     PolygonBox[{{-0.18582398899524435`, 
-     1.1974334257139416`}, {-0.30100657042782697`, 
-     1.1647256770888763`}, {-0.30357354466997877`, 1.1819025123930604`}}]}, 
-   {RGBColor[0.7084589569624635, 0.692914097859834, 0.6000163128837817], 
-    PolygonBox[{{-0.18993125937426633`, 
-     1.2235659169649662`}, {-0.30785934886885863`, 
-     1.1900777734650163`}, {-0.31157069920364483`, 1.1873557270818866`}}]}, 
-   {RGBColor[0.20730774972433785`, 0.328662565357176, 0.6050562132873978], 
-    PolygonBox[{{0.0637483954781155, 
-     1.2217582551142878`}, {-0.05664527502748805, 
-     1.234305027913989}, {-0.05277216584884473, 1.2203563352545335`}}]}, 
-   {RGBColor[0.37651262543649566`, 0.21330243664341242`, 0.6220354218386988], 
-    PolygonBox[{{-0.6487407049441811, 
-     0.9323219711772662}, {-0.6665862487170863, 
-     0.915933265947173}, {-0.6712698824260004, 0.9434296764714356}}]}, 
-   {RGBColor[0.5579864993266928, 0.0927607696544086, 0.5001646263595856], 
-    PolygonBox[{{-0.36406177168604775`, 
-     0.7311700853945728}, {-0.37130366610711857`, 
-     0.6788551704387934}, {-0.33677053295520454`, 0.6688195586377826}}]}, 
-   {RGBColor[0.8871080432917198, 0.7439116288893501, 0.7918896245431208], 
-    PolygonBox[{{-0.665746502882928, 
-     1.0203844321885185`}, {-0.6383828368696143, 
-     1.0120389018356577`}, {-0.558764417231233, 1.0197692135874523`}}]}, 
-   {RGBColor[0.5922899782192845, 0.15463364130086665`, 0.5520457595410053], 
-    PolygonBox[{{-0.7225885813219272, 
-     0.9605099908340972}, {-0.7253085106731112, 
-     0.981736429948197}, {-0.6864683526525642, 1.0092030911890681`}}]}, 
-   {RGBColor[0.04868835133613847, 0.8798529207015191, 0.27065026799252045`], 
-    PolygonBox[{{-0.6383828368696143, 
-     1.0120389018356577`}, {-0.6178623656053813, 
-     0.9924914982297461}, {-0.5469314890433972, 0.9982497639456034}}]}, 
-   {RGBColor[0.9684224811495954, 0.9354371124171865, 0.31191719987061606`], 
-    PolygonBox[{{-0.1881712367799165, 
-     1.2146731869312306`}, {-0.30357354466997877`, 
-     1.1819025123930604`}, {-0.30785934886885863`, 1.1900777734650163`}}]}, 
-   {RGBColor[0.4860865687021656, 0.5775336109984455, 0.7313283278166576], 
-    PolygonBox[{{-0.31245519863003474`, 
-     1.1725315599540178`}, {-0.4104690595325736, 
-     1.120171456766843}, {-0.40810773987827526`, 1.0381074673881987`}}]}, 
-   {RGBColor[0.6017414466587412, 0.11348080519116399`, 0.2389946973017434], 
-    PolygonBox[{{-0.6665862487170863, 
-     0.915933265947173}, {-0.6895299569293146, 
-     0.9104703642038087}, {-0.699727661887979, 0.9462162238541445}}]}, 
-   {RGBColor[0.6199344513879159, 0.6660908497656162, 0.12288475018247524`], 
-    PolygonBox[{{0.1915831714576789, 0.9110672681805044}, {0.2338571336291519,
-      0.8585692903860743}, {0.24044149732300005`, 0.9096981961398699}}]}, 
-   {RGBColor[0.7106228726192647, 0.7757644178794139, 0.9806146085388123], 
-    PolygonBox[{{0.05582855378759033, 
-     1.1974334257139416`}, {-0.05863573983204974, 
-     1.209362134036024}, {-0.060741411991174075`, 1.2266247711070777`}}]}, 
-   {RGBColor[0.5196366038121301, 0.392112002056501, 0.682901001329653], 
-    PolygonBox[{{0.05748108374903559, 
-     1.2235659169649662`}, {-0.05971138041910461, 
-     1.2357791183277986`}, {-0.05664527502748805, 1.234305027913989}}]}, 
-   {RGBColor[0.7376884611623926, 0.2243798546200524, 0.7214371031020814], 
-    PolygonBox[{{-0.7225885813219272, 
-     0.9605099908340972}, {-0.699727661887979, 
-     0.9462162238541445}, {-0.6895299569293146, 0.9104703642038087}}]}, 
-   {RGBColor[0.8886922537847941, 0.16966519878303798`, 0.23100051428266477`], 
-    PolygonBox[{{-0.4104690595325736, 
-     1.120171456766843}, {-0.31245519863003474`, 
-     1.1725315599540178`}, {-0.31157069920364483`, 1.1873557270818866`}}]}, 
-   {RGBColor[0.7576395321867591, 0.9063237750498643, 0.09976570965550935], 
-    PolygonBox[{{-0.05277216584884473, 1.2203563352545335`}, {
-     0.0698675917040982, 1.207575356453992}, {0.0637483954781155, 
-     1.2217582551142878`}}]}, 
-   {RGBColor[0.12195883149950504`, 0.25904529780846564`, 0.4888391665134799], 
-    PolygonBox[{{-0.5469314890433972, 
-     0.9982497639456034}, {-0.558764417231233, 
-     1.0197692135874523`}, {-0.6383828368696143, 1.0120389018356577`}}]}, 
-   {RGBColor[0.6578483681480947, 0.48383514770787883`, 0.5102371664316194], 
-    PolygonBox[{{-0.699727661887979, 
-     0.9462162238541445}, {-0.6712698824260004, 
-     0.9434296764714356}, {-0.6665862487170863, 0.915933265947173}}]}, 
-   {RGBColor[0.9284414003019914, 0.737931464777386, 0.05065038773996511], 
-    PolygonBox[{{-0.4037384025931291, 
-     0.756455401280679}, {-0.4119665360940595, 
-     0.6970156573660474}, {-0.37130366610711857`, 0.6788551704387934}}]}, 
-   {RGBColor[0.549652561898619, 0.10293446862393374`, 0.4254796419917366], 
-    PolygonBox[{{0.053940950019943784`, 
-     1.2146731869312306`}, {-0.060741411991174075`, 
-     1.2266247711070777`}, {-0.05971138041910461, 1.2357791183277986`}}]}, 
-   {RGBColor[0.2818965516087144, 0.40087781028503566`, 0.03840108299503475], 
-    PolygonBox[{{-0.6864683526525642, 
-     1.0092030911890681`}, {-0.665746502882928, 
-     1.0203844321885185`}, {-0.5773021067168103, 1.0301122659965127`}}]}, 
-   {RGBColor[0.11483494380552539`, 0.4761102925483831, 0.06410623163036622], 
-    PolygonBox[{{-0.1826030105347903, 
-     1.1872914949738909`}, {-0.06449907927229534, 
-     1.1983683725855634`}, {-0.07436093585817147, 1.2057983686903337`}}]}, 
-   {RGBColor[0.5774300303901478, 0.20768721447020666`, 0.6216960875112985], 
-    PolygonBox[{{-0.28955794222561926`, 
-     1.1569197942237346`}, {-0.1826030105347903, 
-     1.1872914949738909`}, {-0.18146853742640495`, 1.1957531242853492`}}]}, 
-   {RGBColor[0.19332855905379476`, 0.12585289331973137`, 0.8413142435205612], 
-    PolygonBox[{{-0.4455025244224451, 
-     0.7287711405636249}, {-0.4365186185111673, 
-     0.7936702154748496}, {-0.4557260047435647, 0.84230209585819}}]}, 
-   {RGBColor[0.12779225284418483`, 0.3482889130353801, 0.3446902558449967], 
-    PolygonBox[{{-0.558764417231233, 
-     1.0197692135874523`}, {-0.5773021067168103, 
-     1.0301122659965127`}, {-0.665746502882928, 1.0203844321885185`}}]}, 
-   {RGBColor[0.5119272243257282, 0.14214943547511583`, 0.6887713021740081], 
-    PolygonBox[{{0.13973153642668187`, 0.7149495960534782}, {
-     0.14611730734094355`, 0.7610796334691737}, {0.1324666809023711, 
-     0.749194241481078}}]}, 
-   {RGBColor[0.5582580970989464, 0.9512636468918805, 0.5317938892416234], 
-    PolygonBox[{{-0.6508935588205756, 
-     0.9564450849084122}, {-0.6712698824260004, 
-     0.9434296764714356}, {-0.6361503724198022, 0.9582014854527069}}]}, 
-   {RGBColor[0.8606752045817958, 0.8761996545285842, 0.7494723855978329], 
-    PolygonBox[{{-0.6361503724198022, 
-     0.9582014854527069}, {-0.6164295592160106, 
-     0.969324122600115}, {-0.6508935588205756, 0.9564450849084122}}]}, 
-   {RGBColor[0.03636017155363125, 0.018311105266445082`, 0.8170479475083898], 
-    PolygonBox[{{-0.4077888087260967, 
-     1.1359545762051453`}, {-0.31157069920364483`, 
-     1.1873557270818866`}, {-0.30785934886885863`, 1.1900777734650163`}}]}, 
-   {RGBColor[
-    0.061058292605248754`, 0.13812590169302097`, 0.02135877943100728], 
-    PolygonBox[{{0.23533548052884068`, 0.968834883668551}, {
-     0.19109809780500547`, 1.0237715564164356`}, {0.19654122682704098`, 
-     0.9642158483350847}}]}, 
-   {RGBColor[0.23275728656991146`, 0.18120251607826776`, 0.8752285262372614], 
-    PolygonBox[{{-0.05664527502748805, 1.234305027913989}, {
-     0.0637483954781155, 1.2217582551142878`}, {0.05748108374903559, 
-     1.2235659169649662`}}]}, 
-   {RGBColor[0.4056707250797573, 0.49837394357296483`, 0.6139119817840453], 
-    PolygonBox[{{-0.6864683526525642, 
-     1.0092030911890681`}, {-0.6845484749728421, 
-     0.9851307345199298}, {-0.7225885813219272, 0.9605099908340972}}]}, 
-   {RGBColor[0.6995014726222921, 0.20291871163978747`, 0.9819242321777155], 
-    PolygonBox[{{-0.6178623656053813, 
-     0.9924914982297461}, {-0.6164295592160106, 
-     0.969324122600115}, {-0.5494221624017521, 0.9741572322244717}}]}, 
-   {RGBColor[0.9915238966149242, 0.24029736692937398`, 0.10172123294672741`], 
-    PolygonBox[{{-0.07436093585817147, 
-     1.2057983686903337`}, {-0.18146853742640495`, 
-     1.1957531242853492`}, {-0.1826030105347903, 1.1872914949738909`}}]}, 
-   {RGBColor[0.3188923433080759, 0.6279967455789375, 0.543812649617855], 
-    PolygonBox[{{-0.699727661887979, 
-     0.9462162238541445}, {-0.7225885813219272, 
-     0.9605099908340972}, {-0.6845484749728421, 0.9851307345199298}}]}, 
-   {RGBColor[0.25196200920825995`, 0.818830450429012, 0.7424558763884244], 
-    PolygonBox[{{-0.5494221624017521, 
-     0.9741572322244717}, {-0.5469314890433972, 
-     0.9982497639456034}, {-0.6178623656053813, 0.9924914982297461}}]}, 
-   {RGBColor[0.6489087400026154, 0.6817169236950569, 0.29888634414711013`], 
-    PolygonBox[{{-0.3952272306838503, 
-     1.1329402049915414`}, {-0.30357354466997877`, 
-     1.1819025123930604`}, {-0.30100657042782697`, 1.1647256770888763`}}]}, 
-   {RGBColor[0.9579987313235048, 0.6051267092429786, 0.5166041342295382], 
-    PolygonBox[{{-0.060741411991174075`, 1.2266247711070777`}, {
-     0.053940950019943784`, 1.2146731869312306`}, {0.05582855378759033, 
-     1.1974334257139416`}}]}, 
-   {RGBColor[0.5451179718350716, 0.09840837777541411, 0.8577240773298405], 
-    PolygonBox[{{0.15589777327846194`, 1.1725315599540178`}, {
-     0.0698675917040982, 1.207575356453992}, {0.08801488821027162, 
-     1.128383699481756}}]}, 
-   {RGBColor[0.2831136827914289, 0.6481510226511726, 0.043308515276436754`], 
-    PolygonBox[{{-0.4015188108279065, 
-     1.1400434510717212`}, {-0.30785934886885863`, 
-     1.1900777734650163`}, {-0.30357354466997877`, 1.1819025123930604`}}]}, 
-   {RGBColor[0.8755655223974812, 0.11576962981216865`, 0.8284887662487794], 
-    PolygonBox[{{-0.05971138041910461, 1.2357791183277986`}, {
-     0.05748108374903559, 1.2235659169649662`}, {0.053940950019943784`, 
-     1.2146731869312306`}}]}, 
-   {RGBColor[0.28247875164057423`, 0.3962364263317213, 0.03829665327206522], 
-    PolygonBox[{{0.16908308224749496`, 0.7311700853945728}, {
-     0.17632515946108698`, 0.7834850003503523}, {0.14611730734094355`, 
-     0.7610796334691737}}]}, 
-   {RGBColor[0.5117774077996244, 0.3082950971532923, 0.5672927544817328], 
-    PolygonBox[{{-0.6712698824260004, 
-     0.9434296764714356}, {-0.699727661887979, 
-     0.9462162238541445}, {-0.6631047413741009, 0.9656853308897452}}]}, 
-   {RGBColor[0.6115105123321622, 0.11979280863553998`, 0.3544412384093967], 
-    PolygonBox[{{-0.31157069920364483`, 
-     1.1873557270818866`}, {-0.4077888087260967, 
-     1.1359545762051453`}, {-0.4104690595325736, 1.120171456766843}}]}, 
-   {RGBColor[0.23006775008417657`, 0.5993723870488001, 0.9025166725899882], 
-    PolygonBox[{{-0.18146853742640495`, 
-     1.1957531242853492`}, {-0.27846602484481364`, 
-     1.1682087430664856`}, {-0.28955794222561926`, 1.1569197942237346`}}]}, 
-   {RGBColor[0.26610949811248297`, 0.8855395935357975, 0.5118002398162436], 
-    PolygonBox[{{0.08801488821027162, 1.128383699481756}, {
-     0.17687152794358751`, 1.092187979302625}, {0.15589777327846194`, 
-     1.1725315599540178`}}]}, 
-   {RGBColor[0.790629997055821, 0.23880650273641768`, 0.9603876060825638], 
-    PolygonBox[{{-0.40810773987827526`, 
-     1.0381074673881987`}, {-0.4701654932056893, 
-     0.9712517573586483}, {-0.46617979383920055`, 0.9009211919187368}}]}, 
-   {RGBColor[0.0650350689640733, 0.630901370272372, 0.013773926871110564`], 
-    PolygonBox[{{-0.4365186185111673, 
-     0.7936702154748496}, {-0.4455025244224451, 
-     0.7287711405636249}, {-0.4119665360940595, 0.6970156573660474}}]}, 
-   {RGBColor[0.35454784120813576`, 0.24386365445994973`, 0.817313903250837], 
-    PolygonBox[{{-0.5773021067168103, 
-     1.0301122659965127`}, {-0.5940367946974847, 
-     1.0197144799456153`}, {-0.6864683526525642, 1.0092030911890681`}}]}, 
-   {RGBColor[0.04863399676821656, 0.4450968568822906, 0.7616637634207162], 
-    PolygonBox[{{-0.4701654932056893, 
-     0.9712517573586483}, {-0.40810773987827526`, 
-     1.0381074673881987`}, {-0.4104690595325736, 1.120171456766843}}]}, 
-   {RGBColor[0.9048392680988802, 0.45520566473532575`, 0.03517099366176213], 
-    PolygonBox[{{-0.6631047413741009, 
-     0.9656853308897452}, {-0.6361503724198022, 
-     0.9582014854527069}, {-0.6712698824260004, 0.9434296764714356}}]}, 
-   {RGBColor[0.32566232783052085`, 0.7076102264488833, 0.9341065984529162], 
-    PolygonBox[{{-0.6845484749728421, 
-     0.9851307345199298}, {-0.6631047413741009, 
-     0.9656853308897452}, {-0.699727661887979, 0.9462162238541445}}]}, 
-   {RGBColor[0.19114671432157282`, 0.7196308939574438, 0.6560144977390692], 
-    PolygonBox[{{-0.558764417231233, 
-     1.0197692135874523`}, {-0.5469314890433972, 
-     0.9982497639456034}, {-0.445781769418133, 0.9990779490779491}}]}, 
-   {RGBColor[0.7100255492059668, 0.13100930186425752`, 0.07103646095921867], 
-    PolygonBox[{{-0.30100657042782697`, 
-     1.1647256770888763`}, {-0.39248565403330343`, 
-     1.1158564526726025`}, {-0.3952272306838503, 1.1329402049915414`}}]}, 
-   {RGBColor[0.9556362919995856, 0.8326588040365044, 0.1872434584152105], 
-    PolygonBox[{{-0.6845484749728421, 
-     0.9851307345199298}, {-0.6864683526525642, 
-     1.0092030911890681`}, {-0.5940367946974847, 1.0197144799456153`}}]}, 
-   {RGBColor[0.9155658102998161, 0.447528703699656, 0.9613750488666823], 
-    PolygonBox[{{0.022031738344745325`, 
-     1.1957531242853492`}, {-0.07436093585817147, 
-     1.2057983686903337`}, {-0.06449907927229534, 1.1983683725855634`}}]}, 
-   {RGBColor[0.5230562964883165, 0.5958505323798278, 0.874004754876462], 
-    PolygonBox[{{-0.30785934886885863`, 
-     1.1900777734650163`}, {-0.4015188108279065, 
-     1.1400434510717212`}, {-0.4077888087260967, 1.1359545762051453`}}]}, 
-   {RGBColor[
-    0.44409282468823874`, 0.18238662476882883`, 0.34645420051412223`], 
-    PolygonBox[{{-0.5773021067168103, 
-     1.0301122659965127`}, {-0.558764417231233, 
-     1.0197692135874523`}, {-0.4426421103410937, 1.0208830734420444`}}]}, 
-   {RGBColor[0.35478650176271276`, 0.39389243312132427`, 0.5207306345004903], 
-    PolygonBox[{{-0.06449907927229534, 1.1983683725855634`}, {
-     0.04178863633498465, 1.1872914949738909`}, {0.022031738344745325`, 
-     1.1957531242853492`}}]}, 
-   {RGBColor[0.7293618353181641, 0.28841512111941503`, 0.11379510658381231`], 
-    PolygonBox[{{-0.30357354466997877`, 
-     1.1819025123930604`}, {-0.3952272306838503, 
-     1.1329402049915414`}, {-0.4015188108279065, 1.1400434510717212`}}]}, 
-   {RGBColor[0.7724232412863794, 0.5021000883128395, 0.40995193861033297`], 
-    PolygonBox[{{0.19654122682704098`, 0.9642158483350847}, {
-     0.24044149732300005`, 0.9096981961398699}, {0.23533548052884068`, 
-     0.968834883668551}}]}, 
-   {RGBColor[0.9154999882102623, 0.7009106692553424, 0.32838903722796275`], 
-    PolygonBox[{{-0.37450336261309014`, 
-     1.1115410088103133`}, {-0.28955794222561926`, 
-     1.1569197942237346`}, {-0.27846602484481364`, 1.1682087430664856`}}]}, 
-   {RGBColor[0.6368161971343951, 0.30314466444288724`, 0.6343141847781888], 
-    PolygonBox[{{0.20201708832751494`, 0.756455401280679}, {
-     0.21024484360074447`, 0.8158951451953105}, {0.17632515946108698`, 
-     0.7834850003503523}}]}, 
-   {RGBColor[0.935966759357111, 0.2980307492793899, 0.6460578243013986], 
-    PolygonBox[{{0.1324666809023711, 0.749194241481078}, {
-     0.12647423366908808`, 0.7059026995483987}, {0.13973153642668187`, 
-     0.7149495960534782}}]}, 
-   {RGBColor[0.9455509967102651, 0.30322099135737934`, 0.7916920026631069], 
-    PolygonBox[{{-0.6164295592160106, 
-     0.969324122600115}, {-0.6361503724198022, 
-     0.9582014854527069}, {-0.5653255997416687, 0.9637608063863444}}]}, 
-   {RGBColor[0.13554520364015366`, 0.0842242080311959, 0.9224314039424735], 
-    PolygonBox[{{-0.5653255997416687, 
-     0.9637608063863444}, {-0.5494221624017521, 
-     0.9741572322244717}, {-0.6164295592160106, 0.969324122600115}}]}, 
-   {RGBColor[
-    0.10896925974868332`, 0.23355328644961126`, 0.045412345710972746`], 
-    PolygonBox[{{-0.29250843112536784`, 
-     0.6275916188172482}, {-0.32070798903419384`, 
-     0.6626111576157194}, {-0.33677053295520454`, 0.6688195586377826}}]}, 
-   {RGBColor[0.7779096658845996, 0.20307247705411324`, 0.5882538330305402], 
-    PolygonBox[{{-0.46505560012737485`, 
-     0.7749059955765101}, {-0.4557260047435647, 
-     0.84230209585819}, {-0.46617979383920055`, 0.9009211919187368}}]}, 
-   {RGBColor[0.17355878930683688`, 0.7135040085890423, 0.9528061399033225], 
-    PolygonBox[{{0.14820089492775965`, 1.1873557270818866`}, {
-     0.0637483954781155, 1.2217582551142878`}, {0.0698675917040982, 
-     1.207575356453992}}]}, 
-   {RGBColor[0.28305283982026985`, 0.27225594880363424`, 0.6212826945864265], 
-    PolygonBox[{{-0.445781769418133, 
-     0.9990779490779491}, {-0.4426421103410937, 
-     1.0208830734420444`}, {-0.558764417231233, 1.0197692135874523`}}]}, 
-   {RGBColor[0.9998138111720534, 0.5129114004902191, 0.9595764894213532], 
-    PolygonBox[{{-0.18146853742640495`, 
-     1.1957531242853492`}, {-0.07436093585817147, 
-     1.2057983686903337`}, {-0.09545931842046657, 1.184718326825432}}]}, 
-   {RGBColor[0.5944684769739406, 0.502390693639444, 0.27460505412256175`], 
-    PolygonBox[{{-0.5469314890433972, 
-     0.9982497639456034}, {-0.5494221624017521, 
-     0.9741572322244717}, {-0.45493059465115343`, 0.9748512742524718}}]}, 
-   {RGBColor[0.3545819475837695, 0.37567881341648146`, 0.27271722098874696`], 
-    PolygonBox[{{-0.27846602484481364`, 
-     1.1682087430664856`}, {-0.18146853742640495`, 
-     1.1957531242853492`}, {-0.17293173749596583`, 1.1774525089890857`}}]}, 
-   {RGBColor[0.910540863304315, 0.818864904184007, 0.15854092028962752`], 
-    PolygonBox[{{0.14611730734094355`, 0.7610796334691737}, {
-     0.13973153642668187`, 0.7149495960534782}, {0.16908308224749496`, 
-     0.7311700853945728}}]}, 
-   {RGBColor[0.8961571249874096, 0.3024299833487578, 0.05255540915211787], 
-    PolygonBox[{{-0.6631047413741009, 
-     0.9656853308897452}, {-0.6845484749728421, 
-     0.9851307345199298}, {-0.596283327385969, 0.9945224772418402}}]}, 
-   {RGBColor[0.9313544925715642, 0.024605589143445794`, 0.08441856711742979], 
-    PolygonBox[{{-0.5940367946974847, 
-     1.0197144799456153`}, {-0.5773021067168103, 
-     1.0301122659965127`}, {-0.44573621054498924`, 1.031516745017043}}]}, 
-   {RGBColor[0.8686081322691757, 0.8959304151800827, 0.6274296398761803], 
-    PolygonBox[{{0.1361228700201032, 1.1647256770888763`}, {
-     0.05582855378759033, 1.1974334257139416`}, {0.053940950019943784`, 
-     1.2146731869312306`}}]}, 
-   {RGBColor[0.43669459513232156`, 0.6401861707927661, 0.2476384302934811], 
-    PolygonBox[{{0.13968848684368151`, 1.1900777734650163`}, {
-     0.05748108374903559, 1.2235659169649662`}, {0.0637483954781155, 
-     1.2217582551142878`}}]}, 
-   {RGBColor[0.9775629478465926, 0.7516394357275329, 0.28180305245112236`], 
-    PolygonBox[{{-0.45493059465115343`, 
-     0.9748512742524718}, {-0.445781769418133, 
-     0.9990779490779491}, {-0.5469314890433972, 0.9982497639456034}}]}, 
-   {RGBColor[0.9052752871091967, 0.15705992796581714`, 0.12038992443244334`], 
-    PolygonBox[{{-0.4426421103410937, 
-     1.0208830734420444`}, {-0.44573621054498924`, 
-     1.031516745017043}, {-0.5773021067168103, 1.0301122659965127`}}]}, 
-   {RGBColor[0.24411978071282614`, 0.5577451654006427, 0.6608785642100314], 
-    PolygonBox[{{-0.3067222341380489, 
-     0.6315039560544314}, {-0.33677053295520454`, 
-     0.6688195586377826}, {-0.37130366610711857`, 0.6788551704387934}}]}, 
-   {RGBColor[0.9670343936345744, 0.6217709939966756, 0.4155295596954982], 
-    PolygonBox[{{-0.6361503724198022, 
-     0.9582014854527069}, {-0.6631047413741009, 
-     0.9656853308897452}, {-0.5836751564026195, 0.9730615776411028}}]}, 
-   {RGBColor[0.9572534748982122, 0.28405246182863997`, 0.120039159784874], 
-    PolygonBox[{{-0.5940367946974847, 
-     1.0197144799456153`}, {-0.596283327385969, 
-     0.9945224772418402}, {-0.6845484749728421, 0.9851307345199298}}]}, 
-   {RGBColor[0.3929295861029458, 0.068124051755033, 0.34549324389832137`], 
-    PolygonBox[{{0.2204200286141559, 1.0381074673881987`}, {
-     0.17687152794358751`, 1.092187979302625}, {0.19109809780500547`, 
-     1.0237715564164356`}}]}, 
-   {RGBColor[0.8195189248354626, 0.9709790744405695, 0.38606498532321676`], 
-    PolygonBox[{{0.13438697805934532`, 1.1819025123930604`}, {
-     0.053940950019943784`, 1.2146731869312306`}, {0.05748108374903559, 
-     1.2235659169649662`}}]}, 
-   {RGBColor[0.23468241109025145`, 0.8895758677651942, 0.9377584361449538], 
+     0.9487704336229489}, {-0.6662215761576267, 
+     0.9542323338582823}, {-0.6755041737822154, 0.9916954828681818}}]}, 
+   {RGBColor[0.3656815543577301, 0.587222784247009, 0.3033352012388988], 
+    PolygonBox[{{0.1069662828810756, 1.0007253612949554`}, {
+     0.19654122682704098`, 0.9642317336963656}, {0.19109809780500547`, 
+     1.023789302086383}}]}, 
+   {RGBColor[0.12506951517339893`, 0.15326205221607436`, 0.425934342131004], 
     PolygonBox[{{-0.4557260047435647, 
-     0.84230209585819}, {-0.46505560012737485`, 
-     0.7749059955765101}, {-0.4455025244224451, 0.7287711405636249}}]}, 
-   {RGBColor[0.7150167839973387, 0.8274154856456473, 0.6559308514279529], 
-    PolygonBox[{{-0.27846602484481364`, 
-     1.1682087430664856`}, {-0.35550246400401797`, 
-     1.1270551676823117`}, {-0.37450336261309014`, 1.1115410088103133`}}]}, 
-   {RGBColor[0.010058404234061458`, 0.9062453217567918, 0.5562316734695927], 
-    PolygonBox[{{0.22487322771787405`, 0.7936702154748496}, {
-     0.2338571336291519, 0.8585692903860743}, {0.21024484360074447`, 
-     0.8158951451953105}}]}, 
-   {RGBColor[0.5955173057512835, 0.2670354446188119, 0.555436447632115], 
-    PolygonBox[{{-0.5836751564026195, 
-     0.9730615776411028}, {-0.5653255997416687, 
-     0.9637608063863444}, {-0.6361503724198022, 0.9582014854527069}}]}, 
-   {RGBColor[0.6418621544436276, 0.08448301992520535, 0.5939632943969579], 
-    PolygonBox[{{0.0698675917040982, 1.207575356453992}, {
-     0.15589777327846194`, 1.1725315599540178`}, {0.14820089492775965`, 
-     1.1873557270818866`}}]}, 
-   {RGBColor[0.6668684744029056, 0.520302302617387, 0.15556133882763712`], 
-    PolygonBox[{{-0.09545931842046657, 
-     1.184718326825432}, {-0.17293173749596583`, 
-     1.1774525089890857`}, {-0.18146853742640495`, 1.1957531242853492`}}]}, 
-   {RGBColor[0.3865186340362554, 0.4059329584806992, 0.10919298243040765`], 
-    PolygonBox[{{-0.4705518121521985, 
-     1.0554433169768938`}, {-0.4104690595325736, 
-     1.120171456766843}, {-0.4077888087260967, 1.1359545762051453`}}]}, 
-   {RGBColor[0.8563014713252983, 0.4864860104336275, 0.7625329086856503], 
-    PolygonBox[{{-0.596283327385969, 
-     0.9945224772418402}, {-0.5836751564026195, 
-     0.9730615776411028}, {-0.6631047413741009, 0.9656853308897452}}]}, 
-   {RGBColor[0.20218886823484694`, 0.19017218516096523`, 0.5488798398433139], 
-    PolygonBox[{{0.17632515946108698`, 0.7834850003503523}, {
-     0.16908308224749496`, 0.7311700853945728}, {0.20201708832751494`, 
-     0.756455401280679}}]}, 
-   {RGBColor[0.5780415378105839, 0.9814469107675445, 0.15755858562778435`], 
-    PolygonBox[{{-0.07436093585817147, 1.2057983686903337`}, {
-     0.022031738344745325`, 1.1957531242853492`}, {-0.025737105037070072`, 
-     1.1774525089890857`}}]}, 
-   {RGBColor[0.11630212899019443`, 0.42862662474862456`, 0.5665318510156427], 
-    PolygonBox[{{-0.3372268140380594, 
-     0.636536873821369}, {-0.37130366610711857`, 
-     0.6788551704387934}, {-0.4119665360940595, 0.6970156573660474}}]}, 
-   {RGBColor[0.7027794011236297, 0.18364911604955925`, 0.10777066773866584`], 
-    PolygonBox[{{-0.35550246400401797`, 
-     1.1270551676823117`}, {-0.27846602484481364`, 
-     1.1682087430664856`}, {-0.24309203338954838`, 1.1575296946665514`}}]}, 
-   {RGBColor[0.8042581943317713, 0.3165135309303049, 0.3482804638214372], 
-    PolygonBox[{{-0.17293173749596583`, 
-     1.1774525089890857`}, {-0.24309203338954838`, 
-     1.1575296946665514`}, {-0.27846602484481364`, 1.1682087430664856`}}]}, 
-   {RGBColor[0.9177020210217977, 0.28574960513314274`, 0.33952402845791574`], 
-    PolygonBox[{{0.0637483954781155, 1.2217582551142878`}, {
-     0.14820089492775965`, 1.1873557270818866`}, {0.13968848684368151`, 
-     1.1900777734650163`}}]}, 
-   {RGBColor[0.570279047569991, 0.5853052759480575, 0.6154350588136221], 
-    PolygonBox[{{-0.4667717630362841, 
-     1.0724119348724233`}, {-0.4077888087260967, 
-     1.1359545762051453`}, {-0.4015188108279065, 1.1400434510717212`}}]}, 
-   {RGBColor[0.3899703312760976, 0.4080191553056558, 0.17602254274953366`], 
-    PolygonBox[{{-0.5494221624017521, 
-     0.9741572322244717}, {-0.5653255997416687, 
-     0.9637608063863444}, {-0.464191140554777, 0.9645603781967417}}]}, 
-   {RGBColor[0.4058742985874506, 0.9583702927237414, 0.5464210437373189], 
-    PolygonBox[{{-0.4104690595325736, 
-     1.120171456766843}, {-0.4705518121521985, 
-     1.0554433169768938`}, {-0.4701654932056893, 0.9712517573586483}}]}, 
-   {RGBColor[0.33956940084991327`, 0.9675008614738285, 0.9022276982574406], 
-    PolygonBox[{{0.19109809780500547`, 1.0237715564164356`}, {
-     0.23533548052884068`, 0.968834883668551}, {0.2204200286141559, 
-     1.0381074673881987`}}]}, 
-   {RGBColor[0.08925558408974288, 0.05550102130473089, 0.5070512499215247], 
+     0.8423473435476501}, {-0.3931664264935831, 
+     0.9097421130797583}, {-0.4031397103538368, 0.9688808762509664}}]}, 
+   {RGBColor[0.4777748799259631, 0.5696060934474345, 0.3536006946226409], 
+    PolygonBox[{{-0.6165921611143034, 
+     0.8966617540323034}, {-0.6138978334327172, 
+     0.9090960719568636}, {-0.5618154184806048, 0.867682031868943}}]}, 
+   {RGBColor[0.7905056259004781, 0.7145055628026491, 0.6748880477490036], 
+    PolygonBox[{{-0.5821268601306107, 
+     0.8288863843792198}, {-0.5877088915102037, 
+     0.8185488955648327}, {-0.5066468286659773, 0.7801374306050456}}]}, 
+   {RGBColor[0.7334667564487045, 0.8351210432852756, 0.3337460072121097], 
+    PolygonBox[{{-0.4974376369430304, 
+     0.8304396639106918}, {-0.5064716135509288, 
+     0.8212658701564352}, {-0.5674504358162213, 0.857254092607911}}]}, 
+   {RGBColor[0.7880291467322109, 0.49346831237382394`, 0.10097638215327565`], 
+    PolygonBox[{{-0.4127444907100863, 
+     0.748455846840058}, {-0.40014770806735594`, 
+     0.7562248174759313}, {-0.4979087800065768, 0.7892600154653076}}]}, 
+   {RGBColor[0.7107287618155242, 0.04937942362391845, 0.5979228016586093], 
+    PolygonBox[{{-0.05277216584884473, 
+     1.2203915166984327`}, {-0.189045846991796, 
+     1.2076170107558468`}, {-0.17940795190792969`, 1.1284227601113377`}}]}, 
+   {RGBColor[0.9640448289723098, 0.7760628862956453, 0.6452174757313267], 
+    PolygonBox[{{-0.7070108281427603, 
+     0.9323821836379047}, {-0.6891652843698552, 
+     0.9487704336229489}, {-0.7042565149200531, 0.9949443583664325}}]}, 
+   {RGBColor[0.9238682248708479, 0.12548881872513573`, 0.5084549133221985], 
+    PolygonBox[{{-0.6755041737822154, 
+     0.9916954828681818}, {-0.7042565149200531, 
+     0.9949443583664325}, {-0.6891652843698552, 0.9487704336229489}}]}, 
+   {RGBColor[0.7834271724423387, 0.23293712463571814`, 0.3718947835227455], 
+    PolygonBox[{{-0.6550252852003547, 
+     0.8638307242660257}, {-0.6522448252499767, 
+     0.8761423216142185}, {-0.7070108281427603, 0.9323821836379047}}]}, 
+   {RGBColor[0.12380621352972798`, 0.8720309032793001, 0.7690432929595474], 
+    PolygonBox[{{-0.6522448252499767, 
+     0.8761423216142185}, {-0.6550252852003547, 
+     0.8638307242660257}, {-0.5877088915102037, 0.8185488955648327}}]}, 
+   {RGBColor[0.08127068479337085, 0.8764345612634503, 0.8999008880391661], 
+    PolygonBox[{{-0.5618154184806048, 
+     0.867682031868943}, {-0.5674504358162213, 
+     0.857254092607911}, {-0.6165921611143034, 0.8966617540323034}}]}, 
+   {RGBColor[0.5724422127523228, 0.13448379324766524`, 0.9379701018304891], 
+    PolygonBox[{{-0.4232162457323549, 
+     0.801456777950861}, {-0.4365186185111673, 
+     0.7937132059448545}, {-0.5064716135509288, 0.8212658701564352}}]}, 
+   {RGBColor[0.17886978645042184`, 0.17427841180749715`, 0.5651984733506286], 
+    PolygonBox[{{-0.6662215761576267, 
+     0.9542323338582823}, {-0.6491049631383201, 
+     0.9487684306068872}, {-0.6532638068623781, 0.9772497897720545}}]}, 
+   {RGBColor[0.682939350380324, 0.4986303129354226, 0.09550672956877793], 
+    PolygonBox[{{-0.4979087800065768, 
+     0.7892600154653076}, {-0.5066468286659773, 
+     0.7801374306050456}, {-0.4127444907100863, 0.748455846840058}}]}, 
+   {RGBColor[0.7541356889189808, 0.6275498117710276, 0.4713125993149281], 
+    PolygonBox[{{-0.3931664264935831, 
+     0.9097421130797583}, {-0.4557260047435647, 
+     0.8423473435476501}, {-0.4365186185111673, 0.7937132059448545}}]}, 
+   {RGBColor[0.6748639661217946, 0.890049646735793, 0.4042037117378725], 
+    PolygonBox[{{-0.3068733598323188, 
+     1.092232447983398}, {-0.40810773987827526`, 
+     1.0381555556409896`}, {-0.4031397103538368, 0.9688808762509664}}]}, 
+   {RGBColor[0.08410154886374444, 0.3494288057313255, 0.65083816916783], 
+    PolygonBox[{{-0.6532638068623781, 
+     0.9772497897720545}, {-0.6755041737822154, 
+     0.9916954828681818}, {-0.6662215761576267, 0.9542323338582823}}]}, 
+   {RGBColor[0.5818257004654446, 0.7669830378613052, 0.819652556665794], 
+    PolygonBox[{{0.2338571336291519, 0.8585804927104699}, {0.1915831714576789,
+      0.911081984149083}, {0.17152739692349586`, 0.863991489466989}}]}, 
+   {RGBColor[0.6438001498533239, 0.2792313860030873, 0.6135363128831863], 
+    PolygonBox[{{0.10426771124579468`, 0.7842294792614609}, {
+     0.1324666809023711, 0.749207596660139}, {0.14611730734094355`, 
+     0.7610926230606992}}]}, 
+   {RGBColor[0.6809873844685455, 0.2602187968944467, 0.36307706782804483`], 
+    PolygonBox[{{-0.6487407049441811, 
+     0.9323792701317449}, {-0.6491049631383201, 
+     0.9487684306068872}, {-0.6138978334327172, 0.9090960719568636}}]}, 
+   {RGBColor[0.7394088842939193, 0.5097093495433882, 0.5676869204954815], 
+    PolygonBox[{{-0.32070798903419384`, 
+     0.6626448626460408}, {-0.31471495354866114`, 
+     0.7059372593680641}, {-0.3303847620409428, 0.7149851806141416}}]}, 
+   {RGBColor[0.5983908568994667, 0.666290761562476, 0.8258544526503631], 
+    PolygonBox[{{-0.189045846991796, 
+     1.2076170107558468`}, {-0.31245519863003474`, 
+     1.1725784502222147`}, {-0.3068733598323188, 1.092232447983398}}]}, 
+   {RGBColor[0.3050069829380089, 0.5471363848504343, 0.17243373681850382`], 
+    PolygonBox[{{0.11606900852378792`, 0.7984107231417269}, {
+     0.14611730734094355`, 0.7610926230606992}, {0.17632515946108698`, 
+     0.7834970770257219}}]}, 
+   {RGBColor[0.5989388612966633, 0.7915115057886644, 0.08583749748260061], 
+    PolygonBox[{{-0.5121663116171834, 
+     0.786079575382729}, {-0.5066468286659773, 
+     0.7801374306050456}, {-0.5877088915102037, 0.8185488955648327}}]}, 
+   {RGBColor[0.9934571582808966, 0.607010262988211, 0.19962891903439317`], 
+    PolygonBox[{{-0.6138978334327172, 
+     0.9090960719568636}, {-0.6165921611143034, 
+     0.8966617540323034}, {-0.6487407049441811, 0.9323792701317449}}]}, 
+   {RGBColor[0.48912177572731586`, 0.8127454448890441, 0.9302214530320745], 
+    PolygonBox[{{-0.5854471638928669, 
+     0.8230783593740671}, {-0.5877088915102037, 
+     0.8185488955648327}, {-0.6550252852003547, 0.8638307242660257}}]}, 
+   {RGBColor[0.4621998940803975, 0.5086821513008388, 0.5721948373451042], 
+    PolygonBox[{{-0.5778026970510641, 
+     0.8377058845493319}, {-0.5674504358162213, 
+     0.857254092607911}, {-0.5064716135509288, 0.8212658701564352}}]}, 
+   {RGBColor[0.17552382366617447`, 0.5454877459652379, 0.26847880091729404`], 
     PolygonBox[{{-0.33677053295520454`, 
-     0.6688195586377826}, {-0.3067222341380489, 
-     0.6315039560544314}, {-0.29250843112536784`, 0.6275916188172482}}]}, 
-   {RGBColor[0.028677280005773076`, 0.45799089391788184`, 0.7079033127549199],
-     PolygonBox[{{0.053940950019943784`, 1.2146731869312306`}, {
-     0.13438697805934532`, 1.1819025123930604`}, {0.1361228700201032, 
-     1.1647256770888763`}}]}, 
-   {RGBColor[0.2119140705038911, 0.6132055667798586, 0.5689408011591062], 
-    PolygonBox[{{0.08964855246303237, 1.1682087430664856`}, {
-     0.022031738344745325`, 1.1957531242853492`}, {0.04178863633498465, 
-     1.1872914949738909`}}]}, 
-   {RGBColor[0.1334724260474176, 0.21253733019641885`, 0.9864534701704792], 
-    PolygonBox[{{-0.4514112494224614, 
-     1.0724119348724233`}, {-0.3952272306838503, 
-     1.1329402049915414`}, {-0.39248565403330343`, 1.1158564526726025`}}]}, 
-   {RGBColor[0.8369868759825938, 0.6211905939735405, 0.7072363413725029], 
-    PolygonBox[{{-0.464191140554777, 
-     0.9645603781967417}, {-0.45493059465115343`, 
-     0.9748512742524718}, {-0.5494221624017521, 0.9741572322244717}}]}, 
-   {RGBColor[0.4580458914177088, 0.9600538736494808, 0.43492344484622913`], 
-    PolygonBox[{{0.05748108374903559, 1.2235659169649662`}, {
-     0.13968848684368151`, 1.1900777734650163`}, {0.13438697805934532`, 
-     1.1819025123930604`}}]}, 
-   {RGBColor[0.15828519113215211`, 0.8205350563341718, 0.4714225164533745], 
-    PolygonBox[{{-0.44573621054498924`, 
-     1.031516745017043}, {-0.4553001619506931, 
-     1.0212340081137041`}, {-0.5940367946974847, 1.0197144799456153`}}]}, 
-   {RGBColor[0.3122520334600085, 0.4576783061746097, 0.033257508910014666`], 
-    PolygonBox[{{-0.596283327385969, 
-     0.9945224772418402}, {-0.5940367946974847, 
-     1.0197144799456153`}, {-0.4553001619506931, 1.0212340081137041`}}]}, 
-   {RGBColor[0.3021951664301308, 0.13147975527436317`, 0.0745536125531212], 
-    PolygonBox[{{-0.025737105037070072`, 
-     1.1774525089890857`}, {-0.09545931842046657, 
-     1.184718326825432}, {-0.07436093585817147, 1.2057983686903337`}}]}, 
-   {RGBColor[0.3873393344907141, 0.5242745061384335, 0.8861664274218999], 
-    PolygonBox[{{-0.4589326274780409, 
-     1.0781903652908957`}, {-0.4015188108279065, 
-     1.1400434510717212`}, {-0.3952272306838503, 1.1329402049915414`}}]}, 
-   {RGBColor[0.9634297834817713, 0.15772197965010393`, 0.09093299405190214], 
-    PolygonBox[{{-0.47558098155363865`, 
-     0.8330075001689226}, {-0.46617979383920055`, 
-     0.9009211919187368}, {-0.4701654932056893, 0.9712517573586483}}]}, 
-   {RGBColor[
-    0.39916108296097796`, 0.31517212969831054`, 0.12386450951241201`], 
-    PolygonBox[{{0.04178863633498465, 1.1872914949738909`}, {
-     0.1163479667617445, 1.1569197942237346`}, {0.08964855246303237, 
-     1.1682087430664856`}}]}, 
-   {RGBColor[0.383165270062632, 0.4725294268445812, 0.7696922787183145], 
-    PolygonBox[{{-0.4265750072781612, 
-     1.0554433169768938`}, {-0.37450336261309014`, 
-     1.1115410088103133`}, {-0.35550246400401797`, 1.1270551676823117`}}]}, 
-   {RGBColor[
-    0.26204414586432523`, 0.29073979792761073`, 0.35128133497176095`], 
-    PolygonBox[{{0.20080758719567507`, 0.8503152608912748}, {
-     0.18636375096799754`, 0.8016734137060734}, {0.3080919380498636, 
-     0.8377786322624167}}]}, 
-   {RGBColor[0.7863484089812485, 0.14967392186727535`, 0.33820429700050547`], 
-    PolygonBox[{{0.23111225289839657`, 0.84230209585819}, {
-     0.24044149732300005`, 0.9096981961398699}, {0.2338571336291519, 
-     0.8585692903860743}}]}, 
-   {RGBColor[0.43618735511802087`, 0.7863283738098978, 0.9726479320275689], 
+     0.6688542323526607}, {-0.3303847620409428, 
+     0.7149851806141416}, {-0.36406177168604775`, 0.731207786352101}}]}, 
+   {RGBColor[0.8059749473292812, 0.33245606496154534`, 0.45777734972191264`], 
+    PolygonBox[{{-0.7042565149200531, 
+     0.9949443583664325}, {-0.7253085106731112, 
+     0.9817988750118627}, {-0.7070108281427603, 0.9323821836379047}}]}, 
+   {RGBColor[0.8784589885669163, 0.7529486734750608, 0.2924841027221139], 
+    PolygonBox[{{-0.5127387518004057, 
+     0.8017500735531131}, {-0.5064716135509288, 
+     0.8212658701564352}, {-0.4365186185111673, 0.7937132059448545}}]}, 
+   {RGBColor[0.10500517569544843`, 0.4885814009738296, 0.7535391956455897], 
+    PolygonBox[{{-0.7070108281427603, 
+     0.9323821836379047}, {-0.7066465699486214, 
+     0.9159930231627624}, {-0.6550252852003547, 0.8638307242660257}}]}, 
+   {RGBColor[0.019398699071634606`, 0.832654404644319, 0.7057846110744592], 
+    PolygonBox[{{-0.7042565149200531, 
+     0.9949443583664325}, {-0.6755041737822154, 
+     0.9916954828681818}, {-0.6383828368696143, 1.0120978086815502`}}]}, 
+   {RGBColor[0.8947005595735726, 0.42686789814058645`, 0.858994315922349], 
+    PolygonBox[{{-0.5877088915102037, 
+     0.8185488955648327}, {-0.5854471638928669, 
+     0.8230783593740671}, {-0.5121663116171834, 0.786079575382729}}]}, 
+   {RGBColor[0.5836939458221426, 0.2134520033144809, 0.9796835614550017], 
+    PolygonBox[{{0.14224812459950667`, 0.8258182059827991}, {
+     0.17632515946108698`, 0.7834970770257219}, {0.21024484360074447`, 
+     0.8159063901570024}}]}, 
+   {RGBColor[0.42051030768544995`, 0.44143217324092965`, 0.5164140196526767], 
+    PolygonBox[{{-0.03865625161032207, 1.1416165999875354`}, {
+     0.08801488821027162, 1.1284093889693319`}, {0.0698675917040982, 
+     1.2076040650839122`}}]}, 
+   {RGBColor[0.7925370739067836, 0.40157924286489277`, 0.0477644319732593], 
+    PolygonBox[{{-0.40810773987827526`, 
+     1.0381555556409896`}, {-0.3068733598323188, 
+     1.092232447983398}, {-0.31245519863003474`, 1.1725784502222147`}}]}, 
+   {RGBColor[0.4767755881546425, 0.5097402238937223, 0.5016623825800897], 
+    PolygonBox[{{-0.5064716135509288, 
+     0.8212658701564352}, {-0.5127387518004057, 
+     0.8017500735531131}, {-0.5778026970510641, 0.8377058845493319}}]}, 
+   {RGBColor[0.01928905445240159, 0.6682578206460146, 0.6374193106253512], 
+    PolygonBox[{{-0.630648153731509, 
+     0.8776892213966291}, {-0.6165921611143034, 
+     0.8966617540323034}, {-0.5674504358162213, 0.857254092607911}}]}, 
+   {RGBColor[0.8344106593693734, 0.9232347561136172, 0.5258118666610712], 
+    PolygonBox[{{-0.427574246765012, 
+     0.7563634160492927}, {-0.4127444907100863, 
+     0.748455846840058}, {-0.5066468286659773, 0.7801374306050456}}]}, 
+   {RGBColor[0.10686425537761335`, 0.6224357538277494, 0.15629776440231224`], 
+    PolygonBox[{{0.0698675917040982, 
+     1.2076040650839122`}, {-0.05277216584884473, 
+     1.2203915166984327`}, {-0.03865625161032207, 1.1416165999875354`}}]}, 
+   {RGBColor[0.1393546488334112, 0.5762702941950293, 0.16965513505551466`], 
     PolygonBox[{{-0.37130366610711857`, 
-     0.6788551704387934}, {-0.3372268140380594, 
-     0.636536873821369}, {-0.3067222341380489, 0.6315039560544314}}]}, 
-   {RGBColor[0.6471756857550004, 0.5966381209940306, 0.030357761557906704`], 
-    PolygonBox[{{-0.5653255997416687, 
-     0.9637608063863444}, {-0.5836751564026195, 
-     0.9730615776411028}, {-0.4675800586809287, 0.9741244203048537}}]}, 
-   {RGBColor[0.28568660023082604`, 0.513616300177089, 0.4180269861143031], 
-    PolygonBox[{{0.21024484360074447`, 0.8158951451953105}, {
-     0.20201708832751494`, 0.756455401280679}, {0.22487322771787405`, 
-     0.7936702154748496}}]}, 
-   {RGBColor[0.7482677064546248, 0.6189889848659966, 0.7891445410015694], 
-    PolygonBox[{{-0.5836751564026195, 
-     0.9730615776411028}, {-0.596283327385969, 
-     0.9945224772418402}, {-0.46474331065184993`, 0.9958784323166792}}]}, 
-   {RGBColor[0.07209421349972067, 0.7439436010749543, 0.18916389067588146`], 
-    PolygonBox[{{-0.4077888087260967, 
-     1.1359545762051453`}, {-0.4667717630362841, 
-     1.0724119348724233`}, {-0.4705518121521985, 1.0554433169768938`}}]}, 
-   {RGBColor[0.5982336903528045, 0.9717186733387824, 0.9222069585775916], 
-    PolygonBox[{{-0.46617979383920055`, 
-     0.9009211919187368}, {-0.47558098155363865`, 
-     0.8330075001689226}, {-0.46505560012737485`, 0.7749059955765101}}]}, 
-   {RGBColor[0.06354524387621518, 0.7356969888707394, 0.1443523205860473], 
-    PolygonBox[{{-0.3732488372650103, 
-     0.6489337761118948}, {-0.4119665360940595, 
-     0.6970156573660474}, {-0.4455025244224451, 0.7287711405636249}}]}, 
-   {RGBColor[0.8159734776901562, 0.40035705194911797`, 0.5583328732735169], 
-    PolygonBox[{{0.1980599779119168, 1.120171456766843}, {
-     0.15589777327846194`, 1.1725315599540178`}, {0.17687152794358751`, 
-     1.092187979302625}}]}, 
-   {RGBColor[0.9764796019412556, 0.2593909705999271, 0.9800336323580316], 
-    PolygonBox[{{-0.39248565403330343`, 
-     1.1158564526726025`}, {-0.44856340971517994`, 
-     1.0554433169768938`}, {-0.4514112494224614, 1.0724119348724233`}}]}, 
-   {RGBColor[0.8456460971874991, 0.08013529085153714, 0.47420823905449994`], 
-    PolygonBox[{{-0.24309203338954838`, 
-     1.1575296946665514`}, {-0.2988136073470341, 
-     1.1277622972057693`}, {-0.35550246400401797`, 1.1270551676823117`}}]}, 
-   {RGBColor[0.7078213342417323, 0.277856754496705, 0.6028227609962569], 
-    PolygonBox[{{-0.4675800586809287, 
-     0.9741244203048537}, {-0.464191140554777, 
-     0.9645603781967417}, {-0.5653255997416687, 0.9637608063863444}}]}, 
-   {RGBColor[0.24805112957314002`, 0.07372901484582939, 0.9206001941985278], 
-    PolygonBox[{{-0.4015188108279065, 
-     1.1400434510717212`}, {-0.4589326274780409, 
-     1.0781903652908957`}, {-0.4667717630362841, 1.0724119348724233`}}]}, 
-   {RGBColor[0.36502262364706994`, 0.9438187904337476, 0.29721231372919044`], 
-    PolygonBox[{{0.09691193409753496, 0.6688195586377826}, {
-     0.13973153642668187`, 0.7149495960534782}, {0.12647423366908808`, 
-     0.7059026995483987}}]}, 
-   {RGBColor[0.004378118244452445, 0.7881068610560973, 0.27801793119241136`], 
-    PolygonBox[{{-0.4553001619506931, 
-     1.0212340081137041`}, {-0.46474331065184993`, 
-     0.9958784323166792}, {-0.596283327385969, 0.9945224772418402}}]}, 
-   {RGBColor[0.7830797292652221, 0.05318181687898704, 0.8526425294868927], 
-    PolygonBox[{{-0.3952272306838503, 
-     1.1329402049915414`}, {-0.4514112494224614, 
-     1.0724119348724233`}, {-0.4589326274780409, 1.0781903652908957`}}]}, 
-   {RGBColor[0.9612058229329923, 0.2634048478159918, 0.4591748764050694], 
-    PolygonBox[{{0.3080919380498636, 0.8377786322624167}, {
-     0.31052989236543105`, 0.8783108802274894}, {0.20080758719567507`, 
-     0.8503152608912748}}]}, 
-   {RGBColor[0.2985945807197188, 0.6391305646987953, 0.48293018721222536`], 
-    PolygonBox[{{-0.17293173749596583`, 
-     1.1774525089890857`}, {-0.09545931842046657, 
-     1.184718326825432}, {-0.11947515195994377`, 1.1589747797817826`}}]}, 
-   {RGBColor[
-    0.021742072709033167`, 0.6191583081739074, 0.0028688837887338448`], 
-    PolygonBox[{{0.20502225348166156`, 0.8819359396912956}, {
-     0.20080758719567507`, 0.8503152608912748}, {0.31052989236543105`, 
-     0.8783108802274894}}]}, 
-   {RGBColor[0.7499962703863041, 0.7283950453197301, 0.25576227117678485`], 
-    PolygonBox[{{-0.24309203338954838`, 
-     1.1575296946665514`}, {-0.17293173749596583`, 
-     1.1774525089890857`}, {-0.16292626078041247`, 1.1548995672161135`}}]}, 
-   {RGBColor[0.3247451131692407, 0.022358805179882646`, 0.818625477594729], 
-    PolygonBox[{{-0.46474331065184993`, 
-     0.9958784323166792}, {-0.4675800586809287, 
-     0.9741244203048537}, {-0.5836751564026195, 0.9730615776411028}}]}, 
-   {RGBColor[0.8920146629522281, 0.0629436895143538, 0.1620401583010933], 
-    PolygonBox[{{0.023171279776109988`, 
-     1.1575296946665514`}, {-0.025737105037070072`, 1.1774525089890857`}, {
-     0.022031738344745325`, 1.1957531242853492`}}]}, 
-   {RGBColor[0.6084301352535249, 0.8066355040348188, 0.7550785843133756], 
-    PolygonBox[{{0.022031738344745325`, 1.1957531242853492`}, {
-     0.08964855246303237, 1.1682087430664856`}, {0.023171279776109988`, 
-     1.1575296946665514`}}]}, 
-   {RGBColor[0.9567922400175795, 0.08387538424835772, 0.8292837074610238], 
-    PolygonBox[{{0.17687152794358751`, 1.092187979302625}, {
-     0.2204200286141559, 1.0381074673881987`}, {0.1980599779119168, 
-     1.120171456766843}}]}, 
-   {RGBColor[0.41240419921519433`, 0.6402650063070967, 0.18094213359153466`], 
+     0.6788918384266438}, {-0.36406177168604775`, 
+     0.731207786352101}, {-0.4037384025931291, 0.7564957603448428}}]}, 
+   {RGBColor[0.7765212820350638, 0.7549708559754122, 0.9646582113473199], 
+    PolygonBox[{{-0.7066465699486214, 
+     0.9159930231627624}, {-0.7070108281427603, 
+     0.9323821836379047}, {-0.7253085106731112, 0.9817988750118627}}]}, 
+   {RGBColor[0.41276105862642076`, 0.9987270088604789, 0.8705870373173403], 
+    PolygonBox[{{-0.5066468286659773, 
+     0.7801374306050456}, {-0.5121663116171834, 
+     0.786079575382729}, {-0.427574246765012, 0.7563634160492927}}]}, 
+   {RGBColor[0.5921760661485691, 0.08038276962403845, 0.6698271858128109], 
+    PolygonBox[{{-0.6508935588205756, 
+     0.9565031347886175}, {-0.6532638068623781, 
+     0.9772497897720545}, {-0.6491049631383201, 0.9487684306068872}}]}, 
+   {RGBColor[0.7441026258402668, 0.40915511522095493`, 0.18526022057244695`], 
+    PolygonBox[{{-0.6550252852003547, 
+     0.8638307242660257}, {-0.6457030953244323, 
+     0.8655123291333501}, {-0.5854471638928669, 0.8230783593740671}}]}, 
+   {RGBColor[0.1634087224463594, 0.8883559806655439, 0.6862641387351867], 
+    PolygonBox[{{-0.6755041737822154, 
+     0.9916954828681818}, {-0.6532638068623781, 
+     0.9772497897720545}, {-0.6178623656053813, 0.9925488577879792}}]}, 
+   {RGBColor[0.3820517834609727, 0.14081393432680667`, 0.5688394611358067], 
+    PolygonBox[{{-0.5674504358162213, 
+     0.857254092607911}, {-0.5778026970510641, 
+     0.8377058845493319}, {-0.630648153731509, 0.8776892213966291}}]}, 
+   {RGBColor[0.5895097306510462, 0.9530569123440902, 0.6822586631958931], 
+    PolygonBox[{{-0.4365186185111673, 
+     0.7937132059448545}, {-0.4379833940856116, 
+     0.7737683747885046}, {-0.5127387518004057, 0.8017500735531131}}]}, 
+   {RGBColor[0.6295192111095185, 0.33728279373042813`, 0.7838446887476875], 
+    PolygonBox[{{-0.5127387518004057, 
+     0.8017500735531131}, {-0.5121663116171834, 
+     0.786079575382729}, {-0.5854471638928669, 0.8230783593740671}}]}, 
+   {RGBColor[0.25339964300926443`, 0.4382284330798569, 0.35515869631375296`], 
+    PolygonBox[{{-0.5854471638928669, 
+     0.8230783593740671}, {-0.5778026970510641, 
+     0.8377058845493319}, {-0.5127387518004057, 0.8017500735531131}}]}, 
+   {RGBColor[0.14469717872874166`, 0.39163696940407977`, 0.8804415974669633], 
+    PolygonBox[{{-0.6457030953244323, 
+     0.8655123291333501}, {-0.6550252852003547, 
+     0.8638307242660257}, {-0.7066465699486214, 0.9159930231627624}}]}, 
+   {RGBColor[0.9520512158503629, 0.5314034368019576, 0.16151776544516205`], 
+    PolygonBox[{{0.17687152794358751`, 1.0922082607390091`}, {
+     0.08801488821027162, 1.1284093889693319`}, {0.10083460338195802`, 
+     1.0605632665150115`}}]}, 
+   {RGBColor[0.16167062131442078`, 0.5060625084228396, 0.6245291040812935], 
+    PolygonBox[{{-0.6491049631383201, 
+     0.9487684306068872}, {-0.6487407049441811, 
+     0.9323792701317449}, {-0.6508935588205756, 0.9565031347886175}}]}, 
+   {RGBColor[0.1584627785527919, 0.34708842193826484`, 0.9881934483029722], 
+    PolygonBox[{{-0.189045846991796, 
+     1.2076170107558468`}, {-0.05277216584884473, 
+     1.2203915166984327`}, {-0.05664527502748805, 1.2343407749784847`}}]}, 
+   {RGBColor[0.4651442865082931, 0.9444704247829687, 0.6733111216049523], 
+    PolygonBox[{{-0.31245519863003474`, 
+     1.1725784502222147`}, {-0.189045846991796, 
+     1.2076170107558468`}, {-0.19042216985277277`, 1.2218003564429167`}}]}, 
+   {RGBColor[0.5735938486105052, 0.8532579573824715, 0.7089476136298636], 
+    PolygonBox[{{-0.05664527502748805, 
+     1.2343407749784847`}, {-0.19042216985277277`, 
+     1.2218003564429167`}, {-0.189045846991796, 1.2076170107558468`}}]}, 
+   {RGBColor[0.7287915102544962, 0.9804887959362945, 0.3747389510470678], 
+    PolygonBox[{{-0.7253085106731112, 
+     0.9817988750118627}, {-0.7042565149200531, 
+     0.9949443583664325}, {-0.665746502882928, 1.0204449297651879`}}]}, 
+   {RGBColor[0.9687189479811651, 0.06388631889494434, 0.23638345991235732`], 
+    PolygonBox[{{-0.5778026970510641, 
+     0.8377058845493319}, {-0.5854471638928669, 
+     0.8230783593740671}, {-0.6457030953244323, 0.8655123291333501}}]}, 
+   {RGBColor[0.37598112836602193`, 0.42050401996355324`, 0.8386352073550696], 
+    PolygonBox[{{-0.5121663116171834, 
+     0.786079575382729}, {-0.5127387518004057, 
+     0.8017500735531131}, {-0.4379833940856116, 0.7737683747885046}}]}, 
+   {RGBColor[0.7785573010870401, 0.9365393706743967, 0.4495018691715045], 
+    PolygonBox[{{-0.6178623656053813, 
+     0.9925488577879792}, {-0.6383828368696143, 
+     1.0120978086815502`}, {-0.6755041737822154, 0.9916954828681818}}]}, 
+   {RGBColor[0.8828790200804515, 0.8856747774357006, 0.7988010793025033], 
+    PolygonBox[{{-0.6383828368696143, 
+     1.0120978086815502`}, {-0.665746502882928, 
+     1.0204449297651879`}, {-0.7042565149200531, 0.9949443583664325}}]}, 
+   {RGBColor[0.2593412971953981, 0.9611447851250385, 0.3817761295069235], 
+    PolygonBox[{{-0.4379833940856116, 
+     0.7737683747885046}, {-0.427574246765012, 
+     0.7563634160492927}, {-0.5121663116171834, 0.786079575382729}}]}, 
+   {RGBColor[0.09337791545944585, 0.05839715723553596, 0.9452100808809514], 
+    PolygonBox[{{-0.6457030953244323, 
+     0.8655123291333501}, {-0.630648153731509, 
+     0.8776892213966291}, {-0.5778026970510641, 0.8377058845493319}}]}, 
+   {RGBColor[0.8218516746691129, 0.8732826693158033, 0.046292817943337505`], 
+    PolygonBox[{{-0.6665862487170863, 
+     0.9159910201467008}, {-0.6487407049441811, 
+     0.9323792701317449}, {-0.6165921611143034, 0.8966617540323034}}]}, 
+   {RGBColor[0.14893052476728896`, 0.4888611106467562, 0.3313195879303965], 
+    PolygonBox[{{0.17152739692349586`, 0.863991489466989}, {
+     0.21024484360074447`, 0.8159063901570024}, {0.2338571336291519, 
+     0.8585804927104699}}]}, 
+   {RGBColor[0.5542926035959805, 0.2967770195947992, 0.2215480206754612], 
+    PolygonBox[{{0.24044149732300005`, 0.9097104326835674}, {
+     0.19654122682704098`, 0.9642317336963656}, {0.1915831714576789, 
+     0.911081984149083}}]}, 
+   {RGBColor[0.8740431507560327, 0.16664831054978557`, 0.4196273261873831], 
+    PolygonBox[{{-0.6165921611143034, 
+     0.8966617540323034}, {-0.630648153731509, 
+     0.8776892213966291}, {-0.6665862487170863, 0.9159910201467008}}]}, 
+   {RGBColor[0.6858807706902905, 0.5975020854534341, 0.4263175883047168], 
+    PolygonBox[{{0.10083460338195802`, 1.0605632665150115`}, {
+     0.19109809780500547`, 1.023789302086383}, {0.17687152794358751`, 
+     1.0922082607390091`}}]}, 
+   {RGBColor[0.21629410281254202`, 0.05172601053422721, 0.8905913246129651], 
+    PolygonBox[{{-0.7066465699486214, 
+     0.9159930231627624}, {-0.6895299569293146, 
+     0.9105291199113673}, {-0.6457030953244323, 0.8655123291333501}}]}, 
+   {RGBColor[0.8836621921864913, 0.4493338522943524, 0.992679175701539], 
+    PolygonBox[{{-0.05863573983204974, 
+     1.2093973154799234`}, {-0.18582398899524435`, 
+     1.1974746484714103`}, {-0.1881712367799165, 1.2147149867780545`}}]}, 
+   {RGBColor[0.8977986550494808, 0.8139866971403971, 0.7970392394637307], 
+    PolygonBox[{{-0.05971138041910461, 
+     1.2358150580066418`}, {-0.18993125937426633`, 
+     1.2236080419523874`}, {-0.19042216985277277`, 1.2218003564429167`}}]}, 
+   {RGBColor[0.3630159615120787, 0.9638359505316272, 0.7196785535518821], 
     PolygonBox[{{-0.4119665360940595, 
-     0.6970156573660474}, {-0.3732488372650103, 
-     0.6489337761118948}, {-0.3372268140380594, 0.636536873821369}}]}, 
-   {RGBColor[0.3626593888932552, 0.44651326296093163`, 0.9918927548964347], 
-    PolygonBox[{{0.18636375096799754`, 0.8016734137060734}, {
-     0.16699077580763672`, 0.7561846451666567}, {0.29445487143159693`, 
-     0.7966852582023726}}]}, 
-   {RGBColor[0.5345039806976799, 0.6272842852717497, 0.2212183060525985], 
-    PolygonBox[{{-0.4027263229168068, 
-     1.0761800987395242`}, {-0.35550246400401797`, 
-     1.1270551676823117`}, {-0.2988136073470341, 1.1277622972057693`}}]}, 
-   {RGBColor[0.5858759108392959, 0.8999729300242927, 0.327440903115652], 
-    PolygonBox[{{0.29445487143159693`, 0.7966852582023726}, {
-     0.3080919380498636, 0.8377786322624167}, {0.18636375096799754`, 
-     0.8016734137060734}}]}, 
-   {RGBColor[0.3299448440596622, 0.49548983047194417`, 0.9182169801510189], 
-    PolygonBox[{{0.18959111018168745`, 1.1359545762051453`}, {
-     0.14820089492775965`, 1.1873557270818866`}, {0.15589777327846194`, 
-     1.1725315599540178`}}]}, 
-   {RGBColor[0.8136352150345125, 0.08004426585300228, 0.11132544887763474`], 
-    PolygonBox[{{-0.35550246400401797`, 
-     1.1270551676823117`}, {-0.4027263229168068, 
-     1.0761800987395242`}, {-0.4265750072781612, 1.0554433169768938`}}]}, 
-   {RGBColor[0.49211739401198784`, 0.8395464697001875, 0.0321965930329855], 
-    PolygonBox[{{0.2338571336291519, 0.8585692903860743}, {
-     0.22487322771787405`, 0.7936702154748496}, {0.23111225289839657`, 
-     0.84230209585819}}]}, 
-   {RGBColor[0.08898298397009241, 0.958129804468921, 0.4252349327651912], 
-    PolygonBox[{{0.12052258350825555`, 0.6788551704387934}, {
-     0.16908308224749496`, 0.7311700853945728}, {0.13973153642668187`, 
-     0.7149495960534782}}]}, 
-   {RGBColor[0.9011478538491786, 0.5345007838020692, 0.6425290315761389], 
-    PolygonBox[{{-0.47942049724312896`, 
-     0.9043960473290981}, {-0.4701654932056893, 
-     0.9712517573586483}, {-0.4705518121521985, 1.0554433169768938`}}]}, 
-   {RGBColor[0.20429455072563218`, 0.3772468919289196, 0.17220788272437626`], 
-    PolygonBox[{{0.17547478091488755`, 1.1158564526726025`}, {
-     0.1361228700201032, 1.1647256770888763`}, {0.13438697805934532`, 
-     1.1819025123930604`}}]}, 
-   {RGBColor[0.25105891472057884`, 0.35901226698935695`, 0.9601485395818723], 
-    PolygonBox[{{-0.09545931842046657, 
-     1.184718326825432}, {-0.025737105037070072`, 
-     1.1774525089890857`}, {-0.08037093654285529, 1.1548995672161135`}}]}, 
-   {RGBColor[0.2726670405865068, 0.10030108461393628`, 0.2171820299104108], 
-    PolygonBox[{{0.22593451804470063`, 0.9009211919187368}, {
-     0.23533548052884068`, 0.968834883668551}, {0.24044149732300005`, 
-     0.9096981961398699}}]}, 
-   {RGBColor[0.4643362359284664, 0.9543341123776417, 0.7169366415652292], 
-    PolygonBox[{{0.179978004916548, 1.1400434510717212`}, {
-     0.13968848684368151`, 1.1900777734650163`}, {0.14820089492775965`, 
-     1.1873557270818866`}}]}, 
-   {RGBColor[0.7368560283519605, 0.5578051715313206, 0.691372603819346], 
-    PolygonBox[{{-0.23497022365154455`, 
-     0.6041535903093677}, {-0.29250843112536784`, 
-     0.6275916188172482}, {-0.3067222341380489, 0.6315039560544314}}]}, 
-   {RGBColor[0.6475303195677569, 0.8628297538566989, 0.90747890901354], 
-    PolygonBox[{{-0.2988136073470341, 
-     1.1277622972057693`}, {-0.24309203338954838`, 
-     1.1575296946665514`}, {-0.20227457098092153`, 1.143726016636456}}]}, 
-   {RGBColor[0.5204280382972277, 0.009232875862468681, 0.6677935503738635], 
-    PolygonBox[{{0.12647423366908808`, 0.7059026995483987}, {
-     0.08628903617417989, 0.6626111576157194}, {0.09691193409753496, 
-     0.6688195586377826}}]}, 
-   {RGBColor[0.2686300042792611, 0.1389757540701746, 0.009843196367951057], 
-    PolygonBox[{{0.17381420284493007`, 1.1329402049915414`}, {
-     0.13438697805934532`, 1.1819025123930604`}, {0.13968848684368151`, 
-     1.1900777734650163`}}]}, 
-   {RGBColor[0.10870829486399258`, 0.847994766760739, 0.15071892937434583`], 
-    PolygonBox[{{-0.11947515195994377`, 
-     1.1589747797817826`}, {-0.16292626078041247`, 
-     1.1548995672161135`}, {-0.17293173749596583`, 1.1774525089890857`}}]}, 
-   {RGBColor[0.35556116375736124`, 0.27535309482189585`, 0.8595491666681805], 
-    PolygonBox[{{-0.4032285622509722, 
-     0.6762731627691948}, {-0.4455025244224451, 
-     0.7287711405636249}, {-0.46505560012737485`, 0.7749059955765101}}]}, 
-   {RGBColor[0.14876292433986205`, 0.7909788187364573, 0.12635820642458917`], 
-    PolygonBox[{{-0.4701654932056893, 
-     0.9712517573586483}, {-0.47942049724312896`, 
-     0.9043960473290981}, {-0.47558098155363865`, 0.8330075001689226}}]}, 
-   {RGBColor[0.6236774529663069, 0.588316972236417, 0.3132654130258723], 
-    PolygonBox[{{0.31052989236543105`, 0.8783108802274894}, {
-     0.30233699225742705`, 0.901651997331132}, {0.20502225348166156`, 
-     0.8819359396912956}}]}, 
-   {RGBColor[0.5902051991357082, 0.33184745972061, 0.7032365575557711], 
-    PolygonBox[{{-0.16292626078041247`, 
-     1.1548995672161135`}, {-0.20227457098092153`, 
-     1.143726016636456}, {-0.24309203338954838`, 1.1575296946665514`}}]}, 
-   {RGBColor[0.5381294153545837, 0.550112770449789, 0.9994252906598196], 
-    PolygonBox[{{-0.08037093654285529, 
-     1.1548995672161135`}, {-0.11947515195994377`, 
-     1.1589747797817826`}, {-0.09545931842046657, 1.184718326825432}}]}, 
-   {RGBColor[0.17892047903771768`, 0.6042292788418626, 0.566752409162262], 
-    PolygonBox[{{0.12278784454578466`, 1.1270551676823117`}, {
-     0.08964855246303237, 1.1682087430664856`}, {0.1163479667617445, 
-     1.1569197942237346`}}]}, 
-   {RGBColor[0.5713748185495975, 0.9163817234831568, 0.20430452071305427`], 
-    PolygonBox[{{0.31052989236543105`, 0.8783108802274894}, {
-     0.3080919380498636, 0.8377786322624167}, {0.3796680814288364, 
-     0.9043459893621237}}]}, 
-   {RGBColor[0.45490601469320935`, 0.8126946812880373, 0.20745043352831471`], 
-    PolygonBox[{{-0.2454116123702168, 
-     0.6065289792902934}, {-0.3067222341380489, 
-     0.6315039560544314}, {-0.3372268140380594, 0.636536873821369}}]}, 
-   {RGBColor[0.8608046362430419, 0.7642493526494392, 0.0942532007357253], 
-    PolygonBox[{{0.15589777327846194`, 1.1725315599540178`}, {
-     0.1980599779119168, 1.120171456766843}, {0.18959111018168745`, 
-     1.1359545762051453`}}]}, 
-   {RGBColor[0.6233085127628384, 0.17739515273117945`, 0.14363641041068353`], 
-    PolygonBox[{{0.13973153642668187`, 0.7149495960534782}, {
-     0.09691193409753496, 0.6688195586377826}, {0.12052258350825555`, 
-     0.6788551704387934}}]}, 
-   {RGBColor[0.1212407709095975, 0.31810099826435434`, 0.05778782195723098], 
+     0.6970548427770487}, {-0.4037384025931291, 
+     0.7564957603448428}, {-0.4365186185111673, 0.7937132059448545}}]}, 
+   {RGBColor[0.5575064384037722, 0.4495012571199739, 0.08700912229600766], 
+    PolygonBox[{{-0.19042216985277277`, 
+     1.2218003564429167`}, {-0.31157069920364483`, 
+     1.1874029684362357`}, {-0.31245519863003474`, 1.1725784502222147`}}]}, 
+   {RGBColor[0.47408599667079354`, 0.9520726247079792, 0.020799238524460417`],
+     PolygonBox[{{-0.19042216985277277`, 
+     1.2218003564429167`}, {-0.05664527502748805, 
+     1.2343407749784847`}, {-0.05971138041910461, 1.2358150580066418`}}]}, 
+   {RGBColor[0.1346030744834441, 0.5066674938959406, 0.8415744577507001], 
+    PolygonBox[{{-0.31157069920364483`, 
+     1.1874029684362357`}, {-0.19042216985277277`, 
+     1.2218003564429167`}, {-0.18993125937426633`, 1.2236080419523874`}}]}, 
+   {RGBColor[0.5661671132695987, 0.6719089895398624, 0.32334081923964253`], 
+    PolygonBox[{{-0.630648153731509, 
+     0.8776892213966291}, {-0.6457030953244323, 
+     0.8655123291333501}, {-0.6895299569293146, 0.9105291199113673}}]}, 
+   {RGBColor[0.3235466612919995, 0.7333622749711988, 0.8812040516778477], 
+    PolygonBox[{{-0.46617979383920055`, 
+     0.9009685254735466}, {-0.4031397103538368, 
+     0.9688808762509664}, {-0.40810773987827526`, 1.0381555556409896`}}]}, 
+   {RGBColor[0.4590318672920959, 0.7158993677433287, 0.08968551616354126], 
+    PolygonBox[{{-0.7253085106731112, 
+     0.9817988750118627}, {-0.7225885813219272, 
+     0.9605717338629187}, {-0.7066465699486214, 0.9159930231627624}}]}, 
+   {RGBColor[0.6690437844576838, 0.27947461277798324`, 0.6913634095970547], 
+    PolygonBox[{{-0.4031397103538368, 
+     0.9688808762509664}, {-0.46617979383920055`, 
+     0.9009685254735466}, {-0.4557260047435647, 0.8423473435476501}}]}, 
+   {RGBColor[0.48942136916068923`, 0.4706363897513075, 0.152398194711991], 
+    PolygonBox[{{-0.3303847620409428, 
+     0.7149851806141416}, {-0.33677053295520454`, 
+     0.6688542323526607}, {-0.32070798903419384`, 0.6626448626460408}}]}, 
+   {RGBColor[0.19717452245940237`, 0.3823799202589133, 0.8878418853255146], 
+    PolygonBox[{{-0.060741411991174075`, 
+     1.2266605181715735`}, {-0.1881712367799165, 
+     1.2147149867780545`}, {-0.18993125937426633`, 1.2236080419523874`}}]}, 
+   {RGBColor[0.8349063308792326, 0.7368076083265065, 0.1583593726236392], 
+    PolygonBox[{{-0.30357354466997877`, 
+     1.1819492084706242`}, {-0.1881712367799165, 
+     1.2147149867780545`}, {-0.18582398899524435`, 1.1974746484714103`}}]}, 
+   {RGBColor[0.14192187099040066`, 0.03743789244040219, 0.7487315647191328], 
+    PolygonBox[{{-0.1881712367799165, 
+     1.2147149867780545`}, {-0.060741411991174075`, 
+     1.2266605181715735`}, {-0.05863573983204974, 1.2093973154799234`}}]}, 
+   {RGBColor[0.4449327995676622, 0.8674325459962842, 0.3774735874717583], 
+    PolygonBox[{{-0.6164295592160106, 
+     0.9693807927213453}, {-0.6178623656053813, 
+     0.9925488577879792}, {-0.6532638068623781, 0.9772497897720545}}]}, 
+   {RGBColor[0.020977965626633566`, 0.7714940414117173, 0.9964732794539415], 
+    PolygonBox[{{-0.6895299569293146, 
+     0.9105291199113673}, {-0.6665862487170863, 
+     0.9159910201467008}, {-0.630648153731509, 0.8776892213966291}}]}, 
+   {RGBColor[0.9367713346622384, 0.27256129159996845`, 0.7721722617066886], 
+    PolygonBox[{{-0.30785934886885863`, 
+     1.1901249018397522`}, {-0.18993125937426633`, 
+     1.2236080419523874`}, {-0.1881712367799165, 1.2147149867780545`}}]}, 
+   {RGBColor[0.06067317133398609, 0.7355477269993898, 0.24203996939771555`], 
+    PolygonBox[{{-0.18993125937426633`, 
+     1.2236080419523874`}, {-0.05971138041910461, 
+     1.2358150580066418`}, {-0.060741411991174075`, 1.2266605181715735`}}]}, 
+   {RGBColor[0.5103824352121149, 0.2929067701564956, 0.8663911438931224], 
+    PolygonBox[{{-0.6532638068623781, 
+     0.9772497897720545}, {-0.6508935588205756, 
+     0.9565031347886175}, {-0.6164295592160106, 0.9693807927213453}}]}, 
+   {RGBColor[0.5794716300449596, 0.8988126279765218, 0.577334990804008], 
+    PolygonBox[{{-0.6895299569293146, 
+     0.9105291199113673}, {-0.7066465699486214, 
+     0.9159930231627624}, {-0.7225885813219272, 0.9605717338629187}}]}, 
+   {RGBColor[0.49243846336319974`, 0.7599341584045942, 0.725999115380557], 
+    PolygonBox[{{-0.665746502882928, 
+     1.0204449297651879`}, {-0.6864683526525642, 
+     1.0092643266891326`}, {-0.7253085106731112, 0.9817988750118627}}]}, 
+   {RGBColor[0.48594783763034854`, 0.887967724473659, 0.7864288052196375], 
+    PolygonBox[{{-0.6712698824260004, 
+     0.9434883980902627}, {-0.6508935588205756, 
+     0.9565031347886175}, {-0.6487407049441811, 0.9323792701317449}}]}, 
+   {RGBColor[0.25851023199930356`, 0.6478287115868666, 0.18585597065793236`], 
+    PolygonBox[{{-0.18582398899524435`, 
+     1.1974746484714103`}, {-0.30100657042782697`, 
+     1.1647717867687868`}, {-0.30357354466997877`, 1.1819492084706242`}}]}, 
+   {RGBColor[0.7257854005180908, 0.3012329835101193, 0.6432158817367413], 
+    PolygonBox[{{-0.18993125937426633`, 
+     1.2236080419523874`}, {-0.30785934886885863`, 
+     1.1901249018397522`}, {-0.31157069920364483`, 1.1874029684362357`}}]}, 
+   {RGBColor[0.7798060741964614, 0.7124318359300397, 0.30686505100616435`], 
+    PolygonBox[{{0.0637483954781155, 
+     1.2217876479146503`}, {-0.05664527502748805, 
+     1.2343407749784847`}, {-0.05277216584884473, 1.2203915166984327`}}]}, 
+   {RGBColor[0.06645393414271861, 0.1611635596024088, 0.09742153322889191], 
+    PolygonBox[{{-0.6487407049441811, 
+     0.9323792701317449}, {-0.6665862487170863, 
+     0.9159910201467008}, {-0.6712698824260004, 0.9434883980902627}}]}, 
+   {RGBColor[0.14073615731757427`, 0.5297868350391464, 0.6502469629146981], 
+    PolygonBox[{{-0.36406177168604775`, 
+     0.731207786352101}, {-0.37130366610711857`, 
+     0.6788918384266438}, {-0.33677053295520454`, 0.6688542323526607}}]}, 
+   {RGBColor[0.8762463174467157, 0.38794158852382576`, 0.7805945251694919], 
+    PolygonBox[{{-0.665746502882928, 
+     1.0204449297651879`}, {-0.6383828368696143, 
+     1.0120978086815502`}, {-0.558764417231233, 1.0198243456540097`}}]}, 
+   {RGBColor[0.534098966703229, 0.08469760862622944, 0.7327924715970779], 
+    PolygonBox[{{-0.7225885813219272, 
+     0.9605717338629187}, {-0.7253085106731112, 
+     0.9817988750118627}, {-0.6864683526525642, 1.0092643266891326`}}]}, 
+   {RGBColor[0.3248329050855989, 0.3135399759591708, 0.5941336906708354], 
+    PolygonBox[{{-0.6383828368696143, 
+     1.0120978086815502`}, {-0.6178623656053813, 
+     0.9925488577879792}, {-0.5469314890433972, 0.9983037305137608}}]}, 
+   {RGBColor[0.8832098017271792, 0.7724881689190872, 0.9337853552227979], 
+    PolygonBox[{{-0.1881712367799165, 
+     1.2147149867780545`}, {-0.30357354466997877`, 
+     1.1819492084706242`}, {-0.30785934886885863`, 1.1901249018397522`}}]}, 
+   {RGBColor[0.3132849001153759, 0.3756710606028968, 0.5369215760745258], 
+    PolygonBox[{{-0.31245519863003474`, 
+     1.1725784502222147`}, {-0.4104690595325736, 
+     1.1202218514586666`}, {-0.40810773987827526`, 1.0381555556409896`}}]}, 
+   {RGBColor[0.6195508936193044, 0.740119801264882, 0.25008825062719797`], 
+    PolygonBox[{{-0.6665862487170863, 
+     0.9159910201467008}, {-0.6895299569293146, 
+     0.9105291199113673}, {-0.699727661887979, 0.946276442669875}}]}, 
+   {RGBColor[0.29158686055515326`, 0.3601767907014335, 0.565280822284004], 
+    PolygonBox[{{0.1915831714576789, 0.911081984149083}, {0.2338571336291519, 
+     0.8585804927104699}, {0.24044149732300005`, 0.9097104326835674}}]}, 
+   {RGBColor[0.5372489005627321, 0.07220888171782303, 0.49960661860805655`], 
+    PolygonBox[{{0.05582855378759033, 
+     1.1974625658442712`}, {-0.05863573983204974, 
+     1.2093973154799234`}, {-0.060741411991174075`, 1.2266605181715735`}}]}, 
+   {RGBColor[0.8828567501371811, 0.32322902765731576`, 0.4523704805866584], 
+    PolygonBox[{{0.05748108374903559, 
+     1.223595671335231}, {-0.05971138041910461, 
+     1.2358150580066418`}, {-0.05664527502748805, 1.2343407749784847`}}]}, 
+   {RGBColor[0.9602810532478583, 0.7392946306423194, 0.4578610168286208], 
+    PolygonBox[{{-0.7225885813219272, 
+     0.9605717338629187}, {-0.699727661887979, 
+     0.946276442669875}, {-0.6895299569293146, 0.9105291199113673}}]}, 
+   {RGBColor[0.3919899664980946, 0.5978019207173111, 0.5535100317660626], 
+    PolygonBox[{{-0.4104690595325736, 
+     1.1202218514586666`}, {-0.31245519863003474`, 
+     1.1725784502222147`}, {-0.31157069920364483`, 1.1874029684362357`}}]}, 
+   {RGBColor[0.05771773797431079, 0.5315840969425112, 0.9383648689566602], 
+    PolygonBox[{{-0.05277216584884473, 1.2203915166984327`}, {
+     0.0698675917040982, 1.2076040650839122`}, {0.0637483954781155, 
+     1.2217876479146503`}}]}, 
+   {RGBColor[0.3581814094745579, 0.43076398377793046`, 0.7340574445667456], 
+    PolygonBox[{{-0.5469314890433972, 
+     0.9983037305137608}, {-0.558764417231233, 
+     1.0198243456540097`}, {-0.6383828368696143, 1.0120978086815502`}}]}, 
+   {RGBColor[0.5105344451932274, 0.5283225014322301, 0.535745474513718], 
+    PolygonBox[{{-0.699727661887979, 0.946276442669875}, {-0.6712698824260004,
+      0.9434883980902627}, {-0.6665862487170863, 0.9159910201467008}}]}, 
+   {RGBColor[0.02710644513558602, 0.8084981690380737, 0.19808726792282583`], 
+    PolygonBox[{{-0.4037384025931291, 
+     0.7564957603448428}, {-0.4119665360940595, 
+     0.6970548427770487}, {-0.37130366610711857`, 0.6788918384266438}}]}, 
+   {RGBColor[0.5403279399250214, 0.4908575779006763, 0.0946459230246024], 
+    PolygonBox[{{0.053940950019943784`, 
+     1.2147028811687144`}, {-0.060741411991174075`, 
+     1.2266605181715735`}, {-0.05971138041910461, 1.2358150580066418`}}]}, 
+   {RGBColor[0.4725540607276897, 0.24580086203890938`, 0.4832427085040292], 
+    PolygonBox[{{-0.6864683526525642, 
+     1.0092643266891326`}, {-0.665746502882928, 
+     1.0204449297651879`}, {-0.5773021067168103, 1.0301686007622752`}}]}, 
+   {RGBColor[0.8166779318655972, 0.864794926676888, 0.48696915880662184`], 
+    PolygonBox[{{-0.1826030105347903, 
+     1.1873322862309503`}, {-0.06449907927229534, 
+     1.1984035540294626`}, {-0.07436093585817147, 1.2058342413602918`}}]}, 
+   {RGBColor[0.7833430938679435, 0.4502864058982703, 0.8354956176203747], 
+    PolygonBox[{{-0.28955794222561926`, 
+     1.1569651233153586`}, {-0.1826030105347903, 
+     1.1873322862309503`}, {-0.18146853742640495`, 1.1957940844622015`}}]}, 
+   {RGBColor[0.282311893947258, 0.9172958078335964, 0.9673556977906552], 
     PolygonBox[{{-0.4455025244224451, 
-     0.7287711405636249}, {-0.4032285622509722, 
-     0.6762731627691948}, {-0.3732488372650103, 0.6489337761118948}}]}, 
-   {RGBColor[0.016019106626952828`, 0.8712539818090872, 0.5711604806206423], 
-    PolygonBox[{{-0.2988136073470341, 
-     1.1277622972057693`}, {-0.33297119401424624`, 
-     1.0909636390910453`}, {-0.4027263229168068, 1.0761800987395242`}}]}, 
-   {RGBColor[0.3671740179114036, 0.4646152861999888, 0.7811143404796532], 
-    PolygonBox[{{0.30233699225742705`, 0.901651997331132}, {
-     0.31052989236543105`, 0.8783108802274894}, {0.37330297568985543`, 
-     0.9331494428090833}}]}, 
-   {RGBColor[0.2752679368630311, 0.5756705262678343, 0.19651431368983796`], 
-    PolygonBox[{{0.14684245009180416`, 0.6970156573660474}, {
-     0.20201708832751494`, 0.756455401280679}, {0.16908308224749496`, 
-     0.7311700853945728}}]}, 
-   {RGBColor[0.9349867970716053, 0.8761675935157069, 0.6173512327391943], 
-    PolygonBox[{{-0.4795124086418528, 
-     0.9907151771869445}, {-0.4705518121521985, 
-     1.0554433169768938`}, {-0.4667717630362841, 1.0724119348724233`}}]}, 
-   {RGBColor[0.7412246773048938, 0.6463760206656897, 0.8451963465392645], 
-    PolygonBox[{{0.14820089492775965`, 1.1873557270818866`}, {
-     0.18959111018168745`, 1.1359545762051453`}, {0.179978004916548, 
-     1.1400434510717212`}}]}, 
-   {RGBColor[0.45091622768950845`, 0.4401228564272692, 0.5034635178146203], 
-    PolygonBox[{{-0.20227457098092153`, 
-     1.143726016636456}, {-0.23352673075138206`, 
-     1.1270311062265927`}, {-0.2988136073470341, 1.1277622972057693`}}]}, 
-   {RGBColor[0.2164409437328838, 0.8370418792678718, 0.9357367383594353], 
-    PolygonBox[{{0.13438697805934532`, 1.1819025123930604`}, {
-     0.17381420284493007`, 1.1329402049915414`}, {0.17547478091488755`, 
-     1.1158564526726025`}}]}, 
-   {RGBColor[0.6943551891272195, 0.4371668343443931, 0.3951769870330739], 
-    PolygonBox[{{-0.025737105037070072`, 1.1774525089890857`}, {
-     0.023171279776109988`, 1.1575296946665514`}, {-0.052941080293980924`, 
-     1.143726016636456}}]}, 
-   {RGBColor[0.7102952755766712, 0.06163249988256503, 0.9568485457532188], 
-    PolygonBox[{{0.24044149732300005`, 0.9096981961398699}, {
-     0.23111225289839657`, 0.84230209585819}, {0.22593451804470063`, 
-     0.9009211919187368}}]}, 
-   {RGBColor[0.09227156409844928, 0.18879884721342832`, 0.5753135226072288], 
-    PolygonBox[{{0.13968848684368151`, 1.1900777734650163`}, {
-     0.179978004916548, 1.1400434510717212`}, {0.17381420284493007`, 
-     1.1329402049915414`}}]}, 
-   {RGBColor[0.9466366546060547, 0.11523213678494981`, 0.8631236597833125], 
-    PolygonBox[{{-0.3067222341380489, 
-     0.6315039560544314}, {-0.2454116123702168, 
-     0.6065289792902934}, {-0.23497022365154455`, 0.6041535903093677}}]}, 
-   {RGBColor[0.7148676093434203, 0.7165636485222404, 0.4847185146546136], 
-    PolygonBox[{{0.3796680814288364, 0.9043459893621237}, {
-     0.37330297568985543`, 0.9331494428090833}, {0.31052989236543105`, 
-     0.8783108802274894}}]}, 
+     0.7288128495869277}, {-0.4365186185111673, 
+     0.7937132059448545}, {-0.4557260047435647, 0.8423473435476501}}]}, 
+   {RGBColor[0.8256104235798956, 0.6689190263293061, 0.6935988776461841], 
+    PolygonBox[{{-0.558764417231233, 
+     1.0198243456540097`}, {-0.5773021067168103, 
+     1.0301686007622752`}, {-0.665746502882928, 1.0204449297651879`}}]}, 
+   {RGBColor[0.1898082282907676, 0.4592361574509114, 0.7689864012660848], 
+    PolygonBox[{{0.13973153642668187`, 0.7149616747992183}, {
+     0.14611730734094355`, 0.7610926230606992}, {0.1324666809023711, 
+     0.749207596660139}}]}, 
+   {RGBColor[0.34866007076812267`, 0.03821884600974701, 0.5694161331055887], 
+    PolygonBox[{{-0.6508935588205756, 
+     0.9565031347886175}, {-0.6712698824260004, 
+     0.9434883980902627}, {-0.6361503724198022, 0.9582588450109399}}]}, 
+   {RGBColor[0.2791180553147501, 0.06232218675182, 0.45371365199719516`], 
+    PolygonBox[{{-0.6361503724198022, 
+     0.9582588450109399}, {-0.6164295592160106, 
+     0.9693807927213453}, {-0.6508935588205756, 0.9565031347886175}}]}, 
+   {RGBColor[0.6347015605164668, 0.009199842009788739, 0.42988041616625927`], 
+    PolygonBox[{{-0.4077888087260967, 
+     1.1360052577676139`}, {-0.31157069920364483`, 
+     1.1874029684362357`}, {-0.30785934886885863`, 1.1901249018397522`}}]}, 
+   {RGBColor[0.8909504383004558, 0.3559662841801179, 0.7558112485293988], 
+    PolygonBox[{{0.23533548052884068`, 0.9688489524914223}, {
+     0.19109809780500547`, 1.023789302086383}, {0.19654122682704098`, 
+     0.9642317336963656}}]}, 
+   {RGBColor[0.8634297673690674, 0.5215355857263637, 0.26666342197733006`], 
+    PolygonBox[{{-0.05664527502748805, 1.2343407749784847`}, {
+     0.0637483954781155, 1.2217876479146503`}, {0.05748108374903559, 
+     1.223595671335231}}]}, 
+   {RGBColor[0.4743453659710468, 0.1775941973454307, 0.9738266216139204], 
+    PolygonBox[{{-0.6864683526525642, 
+     1.0092643266891326`}, {-0.6845484749728421, 
+     0.9851912320965991}, {-0.7225885813219272, 0.9605717338629187}}]}, 
    {RGBColor[
-    0.19950626594365994`, 0.45410271882084285`, 0.43428845462694166`], 
-    PolygonBox[{{-0.4597904804971464, 
-     1.0118841115916113`}, {-0.4514112494224614, 
-     1.0724119348724233`}, {-0.44856340971517994`, 1.0554433169768938`}}]}, 
-   {RGBColor[0.42690008246602384`, 0.8969788419245792, 0.8652417550072484], 
-    PolygonBox[{{-0.4755673878339037, 
-     1.0088697403780074`}, {-0.4667717630362841, 
-     1.0724119348724233`}, {-0.4589326274780409, 1.0781903652908957`}}]}, 
-   {RGBColor[0.8454092635784722, 0.6112688732090255, 0.6110794287653647], 
-    PolygonBox[{{0.1163479667617445, 1.1569197942237346`}, {
-     0.1528884698388015, 1.1115410088103133`}, {0.12278784454578466`, 
-     1.1270551676823117`}}]}, 
-   {RGBColor[0.27009137964044116`, 0.7146416444322035, 0.5386536960308483], 
-    PolygonBox[{{-0.052941080293980924`, 
-     1.143726016636456}, {-0.08037093654285529, 
-     1.1548995672161135`}, {-0.025737105037070072`, 1.1774525089890857`}}]}, 
-   {RGBColor[0.06316529456063802, 0.6326769217587322, 0.3363677893867343], 
-    PolygonBox[{{-0.33297119401424624`, 
-     1.0909636390910453`}, {-0.2988136073470341, 
-     1.1277622972057693`}, {-0.23352673075138206`, 1.1270311062265927`}}]}, 
-   {RGBColor[0.6466359479818276, 0.5932858253025313, 0.6498808340843987], 
-    PolygonBox[{{0.19187548511915106`, 0.8688701212942689}, {
-     0.20502225348166156`, 0.8819359396912956}, {0.30233699225742705`, 
-     0.901651997331132}}]}, 
-   {RGBColor[0.7923912778012481, 0.22076404296832108`, 0.567200184678599], 
-    PolygonBox[{{0.2111647008261305, 0.9712517573586483}, {0.2204200286141559,
-      1.0381074673881987`}, {0.23533548052884068`, 0.968834883668551}}]}, 
-   {RGBColor[0.7697487970867556, 0.719470598221013, 0.4266936907134524], 
-    PolygonBox[{{-0.4674951960629281, 
-     1.0163377287560558`}, {-0.4589326274780409, 
-     1.0781903652908957`}, {-0.4514112494224614, 1.0724119348724233`}}]}, 
-   {RGBColor[0.6554393298215477, 0.6994578444852841, 0.733690992126967], 
-    PolygonBox[{{0.04714187224512742, 1.1277622972057693`}, {
-     0.023171279776109988`, 1.1575296946665514`}, {0.08964855246303237, 
-     1.1682087430664856`}}]}, 
-   {RGBColor[0.9680347402519995, 0.9212113673679017, 0.3234437591055639], 
-    PolygonBox[{{-0.4211551190558917, 
-     0.7203883433812953}, {-0.46505560012737485`, 
-     0.7749059955765101}, {-0.47558098155363865`, 0.8330075001689226}}]}, 
-   {RGBColor[0.6078855051536647, 0.3843285185762013, 0.8601437871631443], 
-    PolygonBox[{{-0.4343409005687376, 
-     0.9993456251434742}, {-0.4265750072781612, 
-     1.0554433169768938`}, {-0.4027263229168068, 1.0761800987395242`}}]}, 
-   {RGBColor[0.8313383896421971, 0.29870886213293946`, 0.7896934961933042], 
-    PolygonBox[{{0.3080919380498636, 0.8377786322624167}, {
-     0.29445487143159693`, 0.7966852582023726}, {0.3719460755213007, 
-     0.8719529784823803}}]}, 
-   {RGBColor[0.8814015430163411, 0.019560428857317236`, 0.15374222306357854`],
-     PolygonBox[{{-0.16292626078041247`, 
-     1.1548995672161135`}, {-0.11947515195994377`, 
-     1.1589747797817826`}, {-0.13810289651466592`, 1.1534704880924134`}}]}, 
-   {RGBColor[0.5840703483624483, 0.49809860245692694`, 0.7858328769174932], 
-    PolygonBox[{{0.277940611068949, 0.7812448941732018}, {
-     0.29445487143159693`, 0.7966852582023726}, {0.16699077580763672`, 
-     0.7561846451666567}}]}, 
-   {RGBColor[0.6469031842531232, 0.4102090425467697, 0.9912606426587185], 
-    PolygonBox[{{-0.20227457098092153`, 
-     1.143726016636456}, {-0.16292626078041247`, 
-     1.1548995672161135`}, {-0.1575549177724295, 1.1516462149203588`}}]}, 
-   {RGBColor[0.1474135808379773, 0.6737457053051783, 0.7849831080803487], 
-    PolygonBox[{{-0.4705518121521985, 
-     1.0554433169768938`}, {-0.4795124086418528, 
-     0.9907151771869445}, {-0.47942049724312896`, 0.9043960473290981}}]}, 
-   {RGBColor[0.8070262269162578, 0.17054180260026697`, 0.9754793706647604], 
-    PolygonBox[{{0.3719460755213007, 0.8719529784823803}, {0.3796680814288364,
-      0.9043459893621237}, {0.3080919380498636, 0.8377786322624167}}]}, 
-   {RGBColor[0.5239742194863095, 0.040032692538834125`, 0.8455535029363712], 
-    PolygonBox[{{0.08964855246303237, 1.1682087430664856`}, {
-     0.12278784454578466`, 1.1270551676823117`}, {0.04714187224512742, 
-     1.1277622972057693`}}]}, 
-   {RGBColor[0.524664057664818, 0.45929070816490736`, 0.6208485421221752], 
-    PolygonBox[{{-0.2676960322852213, 
-     0.608213477292599}, {-0.3372268140380594, 
-     0.636536873821369}, {-0.3732488372650103, 0.6489337761118948}}]}, 
-   {RGBColor[0.15132321287630823`, 0.6024522001786283, 0.3144416605793017], 
-    PolygonBox[{{0.16908308224749496`, 0.7311700853945728}, {
-     0.12052258350825555`, 0.6788551704387934}, {0.14684245009180416`, 
-     0.6970156573660474}}]}, 
-   {RGBColor[0.20400951207279072`, 0.6169064462300147, 0.9107972014740435], 
-    PolygonBox[{{0.37330297568985543`, 0.9331494428090833}, {
-     0.3579027443541505, 0.9469150515080409}, {0.30233699225742705`, 
-     0.901651997331132}}]}, 
-   {RGBColor[0.5548469815438304, 0.5806528221334653, 0.9790770567706459], 
-    PolygonBox[{{-0.11947515195994377`, 
-     1.1589747797817826`}, {-0.08037093654285529, 
-     1.1548995672161135`}, {-0.12059676664042722`, 1.1516462149203588`}}]}, 
-   {RGBColor[0.226938560471581, 0.8834750100505206, 0.6760230714471869], 
-    PolygonBox[{{0.16699077580763672`, 0.7561846451666567}, {
-     0.15452575195078844`, 0.7419771655488063}, {0.277940611068949, 
-     0.7812448941732018}}]}, 
-   {RGBColor[0.13357855248676986`, 0.7984724830313232, 0.7474014055795706], 
-    PolygonBox[{{-0.23352673075138206`, 
-     1.1270311062265927`}, {-0.20227457098092153`, 
-     1.143726016636456}, {-0.17517077647584658`, 1.1466440586358722`}}]}, 
-   {RGBColor[0.2895426926657181, 0.7915785613978834, 0.8997445166943521], 
+    0.48406326073209427`, 0.11258659409591565`, 0.10252608621169457`], 
+    PolygonBox[{{-0.6178623656053813, 
+     0.9925488577879792}, {-0.6164295592160106, 
+     0.9693807927213453}, {-0.5494221624017521, 0.9742106808587844}}]}, 
+   {RGBColor[0.15073500862807765`, 0.7080585337679717, 0.9248003250134054], 
+    PolygonBox[{{-0.07436093585817147, 
+     1.2058342413602918`}, {-0.18146853742640495`, 
+     1.1957940844622015`}, {-0.1826030105347903, 1.1873322862309503`}}]}, 
+   {RGBColor[0.2573624180829144, 0.7073794748828877, 0.48659099108632486`], 
+    PolygonBox[{{-0.699727661887979, 0.946276442669875}, {-0.7225885813219272,
+      0.9605717338629187}, {-0.6845484749728421, 0.9851912320965991}}]}, 
+   {RGBColor[0.4977706859648019, 0.1805411229645828, 0.6371490722367892], 
+    PolygonBox[{{-0.5494221624017521, 
+     0.9742106808587844}, {-0.5469314890433972, 
+     0.9983037305137608}, {-0.6178623656053813, 0.9925488577879792}}]}, 
+   {RGBColor[0.7679461830424406, 0.14631712639859318`, 0.1152453776547091], 
+    PolygonBox[{{-0.3952272306838503, 
+     1.1329901780918752`}, {-0.30357354466997877`, 
+     1.1819492084706242`}, {-0.30100657042782697`, 1.1647717867687868`}}]}, 
+   {RGBColor[0.3879944533510782, 0.6861840861947959, 0.7334551357658905], 
+    PolygonBox[{{-0.060741411991174075`, 1.2266605181715735`}, {
+     0.053940950019943784`, 1.2147028811687144`}, {0.05582855378759033, 
+     1.1974625658442712`}}]}, 
+   {RGBColor[0.5909989394991133, 0.2920664489642797, 0.4817316286000768], 
+    PolygonBox[{{0.15589777327846194`, 1.1725550325736191`}, {
+     0.0698675917040982, 1.2076040650839122`}, {0.08801488821027162, 
+     1.1284093889693319`}}]}, 
+   {RGBColor[0.30981903047238935`, 0.7626290364297919, 0.7002846064058958], 
+    PolygonBox[{{-0.4015188108279065, 
+     1.140093928170958}, {-0.30785934886885863`, 
+     1.1901249018397522`}, {-0.30357354466997877`, 1.1819492084706242`}}]}, 
+   {RGBColor[0.9628458149074595, 0.6192513537429545, 0.25853818332290146`], 
+    PolygonBox[{{-0.05971138041910461, 1.2358150580066418`}, {
+     0.05748108374903559, 1.223595671335231}, {0.053940950019943784`, 
+     1.2147028811687144`}}]}, 
+   {RGBColor[0.14634994036351912`, 0.6942133075394263, 0.5889836195223748], 
+    PolygonBox[{{0.16908308224749496`, 0.7311811291094044}, {
+     0.17632515946108698`, 0.7834970770257219}, {0.14611730734094355`, 
+     0.7610926230606992}}]}, 
+   {RGBColor[0.633261931209238, 0.7721169675629986, 0.004064842745202357], 
+    PolygonBox[{{-0.6712698824260004, 
+     0.9434883980902627}, {-0.699727661887979, 
+     0.946276442669875}, {-0.6631047413741009, 0.9657442377356377}}]}, 
+   {RGBColor[0.45508185004769386`, 0.6123683035124543, 0.7186657055619958], 
+    PolygonBox[{{-0.31157069920364483`, 
+     1.1874029684362357`}, {-0.4077888087260967, 
+     1.1360052577676139`}, {-0.4104690595325736, 1.1202218514586666`}}]}, 
+   {RGBColor[0.9081146287802775, 0.568821609593376, 0.9497930193829962], 
+    PolygonBox[{{-0.18146853742640495`, 
+     1.1957940844622015`}, {-0.27846602484481364`, 
+     1.1682538186008762`}, {-0.28955794222561926`, 1.1569651233153586`}}]}, 
+   {RGBColor[0.025852778746318084`, 0.35736714781296497`, 0.7923846206938019],
+     PolygonBox[{{0.08801488821027162, 1.1284093889693319`}, {
+     0.17687152794358751`, 1.0922082607390091`}, {0.15589777327846194`, 
+     1.1725550325736191`}}]}, 
+   {RGBColor[0.36982647938774416`, 0.5719944062456592, 0.985254378185866], 
+    PolygonBox[{{-0.40810773987827526`, 
+     1.0381555556409896`}, {-0.4701654932056893, 
+     0.9713011656801716}, {-0.46617979383920055`, 0.9009685254735466}}]}, 
+   {RGBColor[0.5851214591983007, 0.12565891484023828`, 0.9685987397657312], 
+    PolygonBox[{{-0.4365186185111673, 
+     0.7937132059448545}, {-0.4455025244224451, 
+     0.7288128495869277}, {-0.4119665360940595, 0.6970548427770487}}]}, 
+   {RGBColor[0.011188536760614154`, 0.4396691056507225, 0.2611662243913817], 
+    PolygonBox[{{-0.5773021067168103, 
+     1.0301686007622752`}, {-0.5940367946974847, 
+     1.0197713741714818`}, {-0.6864683526525642, 1.0092643266891326`}}]}, 
+   {RGBColor[0.9748328828835862, 0.261933680733047, 0.5103240226186967], 
+    PolygonBox[{{-0.4701654932056893, 
+     0.9713011656801716}, {-0.40810773987827526`, 
+     1.0381555556409896`}, {-0.4104690595325736, 1.1202218514586666`}}]}, 
+   {RGBColor[0.39788715393849783`, 0.4075196735191946, 0.33344557159288857`], 
+    PolygonBox[{{-0.6631047413741009, 
+     0.9657442377356377}, {-0.6361503724198022, 
+     0.9582588450109399}, {-0.6712698824260004, 0.9434883980902627}}]}, 
+   {RGBColor[0.06929532816733497, 0.9634690151470888, 0.657444606676524], 
+    PolygonBox[{{-0.6845484749728421, 
+     0.9851912320965991}, {-0.6631047413741009, 
+     0.9657442377356377}, {-0.699727661887979, 0.946276442669875}}]}, 
+   {RGBColor[0.47379747557971474`, 0.0375106936951104, 0.7268154234668303], 
+    PolygonBox[{{-0.558764417231233, 
+     1.0198243456540097`}, {-0.5469314890433972, 
+     0.9983037305137608}, {-0.445781769418133, 0.9991268802450621}}]}, 
+   {RGBColor[0.49562387371329475`, 0.1092781932395741, 0.9872969316373919], 
+    PolygonBox[{{-0.30100657042782697`, 
+     1.1647717867687868`}, {-0.39248565403330343`, 
+     1.1159058331273752`}, {-0.3952272306838503, 1.1329901780918752`}}]}, 
+   {RGBColor[0.948400144058515, 0.4325494211498786, 0.4719445460761922], 
+    PolygonBox[{{-0.6845484749728421, 
+     0.9851912320965991}, {-0.6864683526525642, 
+     1.0092643266891326`}, {-0.5940367946974847, 1.0197713741714818`}}]}, 
+   {RGBColor[0.727098006117257, 0.3758314558747746, 0.2627538970950778], 
+    PolygonBox[{{0.022031738344745325`, 
+     1.195783909448413}, {-0.07436093585817147, 
+     1.2058342413602918`}, {-0.06449907927229534, 1.1984035540294626`}}]}, 
+   {RGBColor[0.7077159922396346, 0.5899188652799727, 0.03767684034407082], 
+    PolygonBox[{{-0.30785934886885863`, 
+     1.1901249018397522`}, {-0.4015188108279065, 
+     1.140093928170958}, {-0.4077888087260967, 1.1360052577676139`}}]}, 
+   {RGBColor[0.6852709453704451, 0.8491139010227986, 0.6400628032171558], 
+    PolygonBox[{{-0.5773021067168103, 
+     1.0301686007622752`}, {-0.558764417231233, 
+     1.0198243456540097`}, {-0.4426421103410937, 1.0209324290961868`}}]}, 
+   {RGBColor[0.06202371220791392, 0.9335753407225598, 0.7455652568157476], 
+    PolygonBox[{{-0.06449907927229534, 1.1984035540294626`}, {
+     0.04178863633498465, 1.1873210666486067`}, {0.022031738344745325`, 
+     1.195783909448413}}]}, 
+   {RGBColor[0.09283383050039329, 0.558429046941417, 0.24158225582248516`], 
+    PolygonBox[{{-0.30357354466997877`, 
+     1.1819492084706242`}, {-0.3952272306838503, 
+     1.1329901780918752`}, {-0.4015188108279065, 1.140093928170958}}]}, 
+   {RGBColor[0.5027671513523535, 0.2380505281564802, 0.672752032488438], 
+    PolygonBox[{{0.19654122682704098`, 0.9642317336963656}, {
+     0.24044149732300005`, 0.9097104326835674}, {0.23533548052884068`, 
+     0.9688489524914223}}]}, 
+   {RGBColor[0.37407978905658545`, 0.5404028763910449, 0.879582662403555], 
+    PolygonBox[{{-0.37450336261309014`, 
+     1.111589375072012}, {-0.28955794222561926`, 
+     1.1569651233153586`}, {-0.27846602484481364`, 1.1682538186008762`}}]}, 
+   {RGBColor[0.8804735859183754, 0.39741500816303166`, 0.8680243559286922], 
+    PolygonBox[{{0.20201708832751494`, 0.7564654725702968}, {
+     0.21024484360074447`, 0.8159063901570024}, {0.17632515946108698`, 
+     0.7834970770257219}}]}, 
+   {RGBColor[0.48670015043911596`, 0.01518137800264907, 0.35293616993391774`],
+     PolygonBox[{{0.1324666809023711, 0.749207596660139}, {
+     0.12647423366908808`, 0.7059151999087033}, {0.13973153642668187`, 
+     0.7149616747992183}}]}, 
+   {RGBColor[0.6942279738063111, 0.641566292660247, 0.8996945473270832], 
+    PolygonBox[{{-0.6164295592160106, 
+     0.9693807927213453}, {-0.6361503724198022, 
+     0.9582588450109399}, {-0.5653255997416687, 0.9638147729545017}}]}, 
+   {RGBColor[0.6686847464163981, 0.09930200866307115, 0.02345745534424415], 
+    PolygonBox[{{-0.5653255997416687, 
+     0.9638147729545017}, {-0.5494221624017521, 
+     0.9742106808587844}, {-0.6164295592160106, 0.9693807927213453}}]}, 
+   {RGBColor[0.18030748516690442`, 0.4618547684368688, 0.620403021177506], 
+    PolygonBox[{{-0.29250843112536784`, 
+     0.6276229800153064}, {-0.32070798903419384`, 
+     0.6626448626460408}, {-0.33677053295520454`, 0.6688542323526607}}]}, 
+   {RGBColor[0.33167736875939546`, 0.4366668448737998, 0.5482123923806561], 
     PolygonBox[{{-0.46505560012737485`, 
-     0.7749059955765101}, {-0.4211551190558917, 
-     0.7203883433812953}, {-0.4032285622509722, 0.6762731627691948}}]}, 
-   {RGBColor[0.4035756875887915, 0.2603809978125271, 0.7042953798791076], 
-    PolygonBox[{{0.027060325858137998`, 0.6315039560544314}, {
-     0.09691193409753496, 0.6688195586377826}, {0.08628903617417989, 
-     0.6626111576157194}}]}, 
-   {RGBColor[0.31716781035425545`, 0.08721118397473271, 0.007820446710993467],
-     PolygonBox[{{-0.3372268140380594, 
-     0.636536873821369}, {-0.2676960322852213, 
-     0.608213477292599}, {-0.2454116123702168, 0.6065289792902934}}]}, 
-   {RGBColor[0.4033749733714309, 0.6500845858034994, 0.37713014760135], 
-    PolygonBox[{{-0.40976920420965807`, 
-     1.0253050297967365`}, {-0.4027263229168068, 
-     1.0761800987395242`}, {-0.33297119401424624`, 1.0909636390910453`}}]}, 
-   {RGBColor[0.02122209360300853, 0.6370967292192928, 0.6167927129464841], 
-    PolygonBox[{{0.16463145372384555`, 0.7287711405636249}, {
-     0.22487322771787405`, 0.7936702154748496}, {0.20201708832751494`, 
-     0.756455401280679}}]}, 
-   {RGBColor[0.9944162042260078, 0.6079675384745129, 0.9411818415019508], 
-    PolygonBox[{{-0.23352673075138206`, 
-     1.1270311062265927`}, {-0.25268346293492755`, 
-     1.1063925517653415`}, {-0.33297119401424624`, 1.0909636390910453`}}]}, 
-   {RGBColor[0.21119432015343476`, 0.06586855548336223, 0.8922460398126837], 
-    PolygonBox[{{-0.13810289651466592`, 
-     1.1534704880924134`}, {-0.1575549177724295, 
-     1.1516462149203588`}, {-0.16292626078041247`, 1.1548995672161135`}}]}, 
-   {RGBColor[0.8157866805478471, 0.539504401034, 0.6897481816495865], 
-    PolygonBox[{{-0.44856340971517994`, 
-     1.0554433169768938`}, {-0.456926332108726, 
-     0.995030181281185}, {-0.4597904804971464, 1.0118841115916113`}}]}, 
-   {RGBColor[0.7724339266648104, 0.5786716283521793, 0.15316060127414755`], 
+     0.7749499125163986}, {-0.4557260047435647, 
+     0.8423473435476501}, {-0.46617979383920055`, 0.9009685254735466}}]}, 
+   {RGBColor[0.9609136633632152, 0.3088379152041483, 0.7313882724713252], 
+    PolygonBox[{{0.14820089492775965`, 1.1873799798565292`}, {
+     0.0637483954781155, 1.2217876479146503`}, {0.0698675917040982, 
+     1.2076040650839122`}}]}, 
+   {RGBColor[0.863994111922896, 0.8662975925374057, 0.3422211619514963], 
+    PolygonBox[{{-0.445781769418133, 
+     0.9991268802450621}, {-0.4426421103410937, 
+     1.0209324290961868`}, {-0.558764417231233, 1.0198243456540097`}}]}, 
+   {RGBColor[0.41833047072511165`, 0.9497196663960035, 0.9986691030580519], 
+    PolygonBox[{{-0.18146853742640495`, 
+     1.1957940844622015`}, {-0.07436093585817147, 
+     1.2058342413602918`}, {-0.09545931842046657, 1.1847546922800685`}}]}, 
+   {RGBColor[0.07277641578344562, 0.2180176577258841, 0.9165508710152861], 
+    PolygonBox[{{-0.5469314890433972, 
+     0.9983037305137608}, {-0.5494221624017521, 
+     0.9742106808587844}, {-0.45493059465115343`, 0.9749000168161843}}]}, 
+   {RGBColor[0.12305899752169736`, 0.622895879355686, 0.9950884858356477], 
+    PolygonBox[{{-0.27846602484481364`, 
+     1.1682538186008762`}, {-0.18146853742640495`, 
+     1.1957940844622015`}, {-0.17293173749596583`, 1.1774925543095336`}}]}, 
+   {RGBColor[0.6214296716282899, 0.13739484005300495`, 0.0716258803005323], 
+    PolygonBox[{{0.14611730734094355`, 0.7610926230606992}, {
+     0.13973153642668187`, 0.7149616747992183}, {0.16908308224749496`, 
+     0.7311811291094044}}]}, 
+   {RGBColor[0.17697013829087616`, 0.6772702337160095, 0.0649582354418814], 
+    PolygonBox[{{-0.6631047413741009, 
+     0.9657442377356377}, {-0.6845484749728421, 
+     0.9851912320965991}, {-0.596283327385969, 0.9945788120076026}}]}, 
+   {RGBColor[0.1531705836013868, 0.22626818721206665`, 0.6043679504416744], 
+    PolygonBox[{{-0.5940367946974847, 
+     1.0197713741714818`}, {-0.5773021067168103, 
+     1.0301686007622752`}, {-0.44573621054498924`, 1.0315665389407707`}}]}, 
+   {RGBColor[0.5800828413483174, 0.7352606357322415, 0.30636568937661446`], 
+    PolygonBox[{{0.1361228700201032, 1.1647499302967643`}, {
+     0.05582855378759033, 1.1974625658442712`}, {0.053940950019943784`, 
+     1.2147028811687144`}}]}, 
+   {RGBColor[0.22736421876206836`, 0.28128028193284726`, 0.7986606114849253], 
+    PolygonBox[{{0.13968848684368151`, 1.1901025244479666`}, {
+     0.05748108374903559, 1.223595671335231}, {0.0637483954781155, 
+     1.2217876479146503`}}]}, 
+   {RGBColor[0.06572419672950547, 0.9337921567834397, 0.40667887546788006`], 
+    PolygonBox[{{-0.45493059465115343`, 
+     0.9749000168161843}, {-0.445781769418133, 
+     0.9991268802450621}, {-0.5469314890433972, 0.9983037305137608}}]}, 
+   {RGBColor[0.7391228524914621, 0.9356801848557097, 0.38497663514971414`], 
+    PolygonBox[{{-0.4426421103410937, 
+     1.0209324290961868`}, {-0.44573621054498924`, 
+     1.0315665389407707`}, {-0.5773021067168103, 1.0301686007622752`}}]}, 
+   {RGBColor[0.10863757259587237`, 0.14227420233480093`, 0.8681724795551591], 
+    PolygonBox[{{-0.3067222341380489, 
+     0.6315361322716331}, {-0.33677053295520454`, 
+     0.6688542323526607}, {-0.37130366610711857`, 0.6788918384266438}}]}, 
+   {RGBColor[0.8781323780244084, 0.6590038361895247, 0.9666037018530884], 
+    PolygonBox[{{-0.6361503724198022, 
+     0.9582588450109399}, {-0.6631047413741009, 
+     0.9657442377356377}, {-0.5836751564026195, 0.9731167097076601}}]}, 
+   {RGBColor[0.5581007912399265, 0.4406338969216481, 0.9430025640895165], 
+    PolygonBox[{{-0.5940367946974847, 
+     1.0197713741714818`}, {-0.596283327385969, 
+     0.9945788120076026}, {-0.6845484749728421, 0.9851912320965991}}]}, 
+   {RGBColor[0.4213082396972032, 0.8895492583160824, 0.32579927002605835`], 
+    PolygonBox[{{0.2204200286141559, 1.038124129252565}, {
+     0.17687152794358751`, 1.0922082607390091`}, {0.19109809780500547`, 
+     1.023789302086383}}]}, 
+   {RGBColor[0.4670975996635658, 0.0479464740941542, 0.2787511684677535], 
+    PolygonBox[{{0.13438697805934532`, 1.1819273104444878`}, {
+     0.053940950019943784`, 1.2147028811687144`}, {0.05748108374903559, 
+     1.223595671335231}}]}, 
+   {RGBColor[0.2255214293145209, 0.4770346621002324, 0.180704518069303], 
+    PolygonBox[{{-0.4557260047435647, 
+     0.8423473435476501}, {-0.46505560012737485`, 
+     0.7749499125163986}, {-0.4455025244224451, 0.7288128495869277}}]}, 
+   {RGBColor[0.9767569413964134, 0.2001968984891178, 0.4968397660926973], 
+    PolygonBox[{{-0.27846602484481364`, 
+     1.1682538186008762`}, {-0.35550246400401797`, 
+     1.1271029976099836`}, {-0.37450336261309014`, 1.111589375072012}}]}, 
+   {RGBColor[0.7843859952977341, 0.8551172672529677, 0.12466108565214551`], 
+    PolygonBox[{{0.22487322771787405`, 0.7936801363525431}, {
+     0.2338571336291519, 0.8585804927104699}, {0.21024484360074447`, 
+     0.8159063901570024}}]}, 
+   {RGBColor[0.19521123983410216`, 0.3132876559840605, 0.11106623029521101`], 
+    PolygonBox[{{-0.5836751564026195, 
+     0.9731167097076601}, {-0.5653255997416687, 
+     0.9638147729545017}, {-0.6361503724198022, 0.9582588450109399}}]}, 
+   {RGBColor[
+    0.3322550790829901, 0.37964137629492667`, 0.0030764113744701227`], 
+    PolygonBox[{{0.0698675917040982, 1.2076040650839122`}, {
+     0.15589777327846194`, 1.1725550325736191`}, {0.14820089492775965`, 
+     1.1873799798565292`}}]}, 
+   {RGBColor[0.4923047885054994, 0.8560102432320469, 0.7927260205078888], 
+    PolygonBox[{{-0.09545931842046657, 
+     1.1847546922800685`}, {-0.17293173749596583`, 
+     1.1774925543095336`}, {-0.18146853742640495`, 1.1957940844622015`}}]}, 
+   {RGBColor[0.4641892278292985, 0.35257503416980485`, 0.6585771276873607], 
+    PolygonBox[{{-0.4705518121521985, 
+     1.0554949897226207`}, {-0.4104690595325736, 
+     1.1202218514586666`}, {-0.4077888087260967, 1.1360052577676139`}}]}, 
+   {RGBColor[0.20165424921158648`, 0.6399742654575538, 0.8687406200394716], 
+    PolygonBox[{{-0.596283327385969, 
+     0.9945788120076026}, {-0.5836751564026195, 
+     0.9731167097076601}, {-0.6631047413741009, 0.9657442377356377}}]}, 
+   {RGBColor[0.6814504013603824, 0.22819915868202667`, 0.8515551913526702], 
+    PolygonBox[{{0.17632515946108698`, 0.7834970770257219}, {
+     0.16908308224749496`, 0.7311811291094044}, {0.20201708832751494`, 
+     0.7564654725702968}}]}, 
+   {RGBColor[0.5337048558287683, 0.5937225462424973, 0.6552402963122961], 
+    PolygonBox[{{-0.07436093585817147, 1.2058342413602918`}, {
+     0.022031738344745325`, 1.195783909448413}, {-0.025737105037070072`, 
+     1.1774851945779106`}}]}, 
+   {RGBColor[0.5370347137168747, 0.7790273130231247, 0.2921177327322859], 
+    PolygonBox[{{-0.3372268140380594, 
+     0.6365707094787061}, {-0.37130366610711857`, 
+     0.6788918384266438}, {-0.4119665360940595, 0.6970548427770487}}]}, 
+   {RGBColor[0.5918555529195604, 0.6774953720887615, 0.33226623120143683`], 
+    PolygonBox[{{-0.35550246400401797`, 
+     1.1271029976099836`}, {-0.27846602484481364`, 
+     1.1682538186008762`}, {-0.24309203338954838`, 1.157572716726745}}]}, 
+   {RGBColor[0.9740003521118155, 0.5467881501216303, 0.31608159487323473`], 
+    PolygonBox[{{-0.17293173749596583`, 
+     1.1774925543095336`}, {-0.24309203338954838`, 
+     1.157572716726745}, {-0.27846602484481364`, 1.1682538186008762`}}]}, 
+   {RGBColor[0.5257576721183184, 0.7843007895947582, 0.38002282555212274`], 
+    PolygonBox[{{0.0637483954781155, 1.2217876479146503`}, {
+     0.14820089492775965`, 1.1873799798565292`}, {0.13968848684368151`, 
+     1.1901025244479666`}}]}, 
+   {RGBColor[0.2760307296036084, 0.7138020324464134, 0.2904467918830247], 
     PolygonBox[{{-0.4667717630362841, 
-     1.0724119348724233`}, {-0.4755673878339037, 
-     1.0088697403780074`}, {-0.4795124086418528, 0.9907151771869445}}]}, 
-   {RGBColor[0.7000726602465486, 0.19444733891885124`, 0.13404241090819125`], 
-    PolygonBox[{{-0.1575549177724295, 
-     1.1516462149203588`}, {-0.17517077647584658`, 
-     1.1466440586358722`}, {-0.20227457098092153`, 1.143726016636456}}]}, 
-   {RGBColor[0.8404011925166419, 0.8905026925562998, 0.2569931145872988], 
-    PolygonBox[{{0.23533548052884068`, 0.968834883668551}, {
-     0.22593451804470063`, 0.9009211919187368}, {0.2111647008261305, 
-     0.9712517573586483}}]}, 
-   {RGBColor[0.43323256225551643`, 0.04332587127489651, 0.004594027859946115],
-     PolygonBox[{{-0.12059676664042722`, 
-     1.1516462149203588`}, {-0.13810289651466592`, 
-     1.1534704880924134`}, {-0.11947515195994377`, 1.1589747797817826`}}]}, 
-   {RGBColor[0.24461436203398135`, 0.4699438094799322, 0.6014185833341803], 
-    PolygonBox[{{-0.039496824960707805`, 
-     1.1270311062265927`}, {-0.052941080293980924`, 1.143726016636456}, {
-     0.023171279776109988`, 1.1575296946665514`}}]}, 
-   {RGBColor[0.8238500235469566, 0.387183223258055, 0.8945311305970187], 
-    PolygonBox[{{0.30233699225742705`, 0.901651997331132}, {
-     0.2843892524327723, 0.8865922864993421}, {0.19187548511915106`, 
-     0.8688701212942689}}]}, 
-   {RGBColor[0.24386587280650773`, 0.9457659920551968, 0.7405780746889699], 
-    PolygonBox[{{0.2843892524327723, 0.8865922864993421}, {
-     0.30233699225742705`, 0.901651997331132}, {0.3579027443541505, 
-     0.9469150515080409}}]}, 
-   {RGBColor[
-    0.34030024584898144`, 0.40125236340605563`, 0.20314255106655388`], 
-    PolygonBox[{{-0.4589326274780409, 
-     1.0781903652908957`}, {-0.4674951960629281, 
-     1.0163377287560558`}, {-0.4755673878339037, 1.0088697403780074`}}]}, 
-   {RGBColor[0.026179894529717807`, 0.5565707078641582, 0.7630979852997579], 
+     1.0724638711121717`}, {-0.4077888087260967, 
+     1.1360052577676139`}, {-0.4015188108279065, 1.140093928170958}}]}, 
+   {RGBColor[0.6809791594843142, 0.9621281392896746, 0.5045658489395357], 
+    PolygonBox[{{-0.5494221624017521, 
+     0.9742106808587844}, {-0.5653255997416687, 
+     0.9638147729545017}, {-0.464191140554777, 0.9646093093638547}}]}, 
+   {RGBColor[0.4044011586521381, 0.8074160091186862, 0.6460362697130524], 
+    PolygonBox[{{-0.4104690595325736, 
+     1.1202218514586666`}, {-0.4705518121521985, 
+     1.0554949897226207`}, {-0.4701654932056893, 0.9713011656801716}}]}, 
+   {RGBColor[0.29175195698071343`, 0.5337755416642256, 0.42031115794113316`], 
+    PolygonBox[{{0.19109809780500547`, 1.023789302086383}, {
+     0.23533548052884068`, 0.9688489524914223}, {0.2204200286141559, 
+     1.038124129252565}}]}, 
+   {RGBColor[0.28317139706387806`, 0.6805919000357685, 0.17500207760664077`], 
+    PolygonBox[{{-0.33677053295520454`, 
+     0.6688542323526607}, {-0.3067222341380489, 
+     0.6315361322716331}, {-0.29250843112536784`, 0.6276229800153064}}]}, 
+   {RGBColor[0.5681464827914506, 0.5855607464658901, 0.5366931561430885], 
+    PolygonBox[{{0.053940950019943784`, 1.2147028811687144`}, {
+     0.13438697805934532`, 1.1819273104444878`}, {0.1361228700201032, 
+     1.1647499302967643`}}]}, 
+   {RGBColor[0.17242864338625563`, 0.9628803671423871, 0.8713276789542725], 
+    PolygonBox[{{0.08964855246303237, 1.168235412872011}, {
+     0.022031738344745325`, 1.195783909448413}, {0.04178863633498465, 
+     1.1873210666486067`}}]}, 
+   {RGBColor[0.2568858788598838, 0.1484705749821864, 0.18793499132842006`], 
     PolygonBox[{{-0.4514112494224614, 
-     1.0724119348724233`}, {-0.4597904804971464, 
-     1.0118841115916113`}, {-0.4674951960629281, 1.0163377287560558`}}]}, 
-   {RGBColor[0.8033657212870164, 0.5097557468109319, 0.742445982411273], 
-    PolygonBox[{{-0.08037093654285529, 
-     1.1548995672161135`}, {-0.052941080293980924`, 
-     1.143726016636456}, {-0.10831654130712913`, 1.1466440586358722`}}]}, 
-   {RGBColor[0.34130457094899325`, 0.6005165404494499, 0.3242969004800249], 
-    PolygonBox[{{-0.15294558490215313`, 
-     0.5956054027439615}, {-0.23497022365154455`, 
-     0.6041535903093677}, {-0.2454116123702168, 0.6065289792902934}}]}, 
-   {RGBColor[0.7377535591402391, 0.5179876407977608, 0.42824646621042994`], 
-    PolygonBox[{{0.023171279776109988`, 1.1575296946665514`}, {
-     0.04714187224512742, 1.1277622972057693`}, {-0.039496824960707805`, 
-     1.1270311062265927`}}]}, 
-   {RGBColor[0.49171032538156245`, 0.3637945610640405, 0.5940090053343756], 
-    PolygonBox[{{0.1891002609583601, 1.0554433169768938`}, {
-     0.1980599779119168, 1.120171456766843}, {0.2204200286141559, 
-     1.0381074673881987`}}]}, 
-   {RGBColor[0.4500979733560857, 0.6066826493962452, 0.8563144273562429], 
-    PolygonBox[{{0.08628903617417989, 0.6626111576157194}, {
-     0.02073589179923415, 0.6275916188172482}, {0.027060325858137998`, 
-     0.6315039560544314}}]}, 
-   {RGBColor[0.34215838863786674`, 0.5950422085351283, 0.5746321819926243], 
-    PolygonBox[{{-0.4027263229168068, 
-     1.0761800987395242`}, {-0.40976920420965807`, 
-     1.0253050297967365`}, {-0.4343409005687376, 0.9993456251434742}}]}, 
-   {RGBColor[0.9604464991780721, 0.5836853998459521, 0.3998852705320448], 
-    PolygonBox[{{-0.4313437489833355, 
-     0.778070827421038}, {-0.47558098155363865`, 
-     0.8330075001689226}, {-0.47942049724312896`, 0.9043960473290981}}]}, 
-   {RGBColor[0.5383816857989034, 0.7227382049508013, 0.9259251258513967], 
-    PolygonBox[{{-0.25268346293492755`, 
-     1.1063925517653415`}, {-0.23352673075138206`, 
-     1.1270311062265927`}, {-0.18916144073701627`, 1.1391701788680355`}}]}, 
-   {RGBColor[0.07780457039879773, 0.936558320294018, 0.38305981782411336`], 
-    PolygonBox[{{-0.17517077647584658`, 
-     1.1466440586358722`}, {-0.18916144073701627`, 
-     1.1391701788680355`}, {-0.23352673075138206`, 1.1270311062265927`}}]}, 
-   {RGBColor[0.8780671795046469, 0.6634750513066026, 0.8086201662169972], 
-    PolygonBox[{{0.37330297568985543`, 0.9331494428090833}, {
-     0.3796680814288364, 0.9043459893621237}, {0.44917647211363293`, 
-     0.9903360026839372}}]}, 
-   {RGBColor[0.024731030948420996`, 0.7063861363988277, 0.24742038681356338`],
-     PolygonBox[{{-0.10831654130712913`, 
-     1.1466440586358722`}, {-0.12059676664042722`, 
-     1.1516462149203588`}, {-0.08037093654285529, 1.1548995672161135`}}]}, 
-   {RGBColor[0.2586389688447037, 0.5260447959744186, 0.5753510062582012], 
-    PolygonBox[{{0.3579027443541505, 0.9469150515080409}, {
-     0.37330297568985543`, 0.9331494428090833}, {0.43077545223969893`, 
-     1.0053548342253424`}}]}, 
-   {RGBColor[
-    0.09975864266752765, 0.27521563453324727`, 0.028110403124525174`], 
-    PolygonBox[{{-0.20397342929430384`, 
-     1.2387018053161571`}, {-0.17335010634330258`, 
-     1.2473815355771265`}, {-0.17932799855891815`, 1.2879253616561355`}}]}, 
-   {RGBColor[0.6939028819358581, 0.27158411853114095`, 0.6832337851619656], 
-    PolygonBox[{{-0.17335010634330258`, 
-     1.2473815355771265`}, {-0.13943900464012957`, 
-     1.2505419476448234`}, {-0.14267910985478327`, 1.2913393228300631`}}]}, 
-   {RGBColor[0.3371472618257998, 0.007682923133830455, 0.23109381343908697`], 
-    PolygonBox[{{-0.33806550933607304`, 
-     1.0541649809763214`}, {-0.33297119401424624`, 
-     1.0909636390910453`}, {-0.25268346293492755`, 1.1063925517653415`}}]}, 
-   {RGBColor[0.11969413866895873`, 0.22073549262533465`, 0.6267928909786822], 
-    PolygonBox[{{-0.14267910985478327`, 
-     1.2913393228300631`}, {-0.17932799855891815`, 
-     1.2879253616561355`}, {-0.17335010634330258`, 1.2473815355771265`}}]}, 
-   {RGBColor[0.9937184749052201, 0.25374776294055024`, 0.8060240735552129], 
-    PolygonBox[{{-0.13943900464012957`, 
-     1.2505419476448234`}, {-0.17335010634330258`, 
-     1.2473815355771265`}, {-0.16254858756128635`, 1.1884244693331467`}}]}, 
-   {RGBColor[0.9010362791330961, 0.3291325152040627, 0.9995963936985308], 
-    PolygonBox[{{-0.1575549177724295, 
-     1.1516462149203588`}, {-0.13810289651466592`, 
-     1.1534704880924134`}, {-0.1427569567357118, 1.1902734322984858`}}]}, 
-   {RGBColor[0.146513191689418, 0.9313318921358147, 0.4919356449432455], 
-    PolygonBox[{{-0.17517077647584658`, 
-     1.1466440586358722`}, {-0.1575549177724295, 
-     1.1516462149203588`}, {-0.16254858756128635`, 1.1884244693331467`}}]}, 
-   {RGBColor[0.9576609281708144, 0.7502657178570087, 0.23101637164706257`], 
-    PolygonBox[{{-0.17335010634330258`, 
-     1.2473815355771265`}, {-0.20397342929430384`, 
-     1.2387018053161571`}, {-0.18044108275250526`, 1.1833496622918669`}}]}, 
-   {RGBColor[0.589379869260952, 0.5678931030887786, 0.5382767448600827], 
-    PolygonBox[{{-0.17932799855891815`, 
-     1.2879253616561355`}, {-0.21241683294534988`, 
-     1.278548023362155}, {-0.20397342929430384`, 1.2387018053161571`}}]}, 
-   {RGBColor[0.8709524910441282, 0.6134094840848379, 0.3158219712850274], 
-    PolygonBox[{{-0.18044108275250526`, 
-     1.1833496622918669`}, {-0.16254858756128635`, 
-     1.1884244693331467`}, {-0.17335010634330258`, 1.2473815355771265`}}]}, 
-   {RGBColor[0.3842684127571483, 0.018110255257312913`, 0.4110940448274223], 
-    PolygonBox[{{-0.1427569567357118, 
-     1.1902734322984858`}, {-0.16254858756128635`, 
-     1.1884244693331467`}, {-0.1575549177724295, 1.1516462149203588`}}]}, 
-   {RGBColor[0.6677947460374933, 0.35446627337450476`, 0.06585238970851859], 
-    PolygonBox[{{-0.16254858756128635`, 
-     1.1884244693331467`}, {-0.1427569567357118, 
-     1.1902734322984858`}, {-0.13943900464012957`, 1.2505419476448234`}}]}, 
-   {RGBColor[0.4092488594230401, 0.8166730029968996, 0.446438562279011], 
-    PolygonBox[{{-0.10967177973617119`, 
-     1.2879253616561355`}, {-0.14267910985478327`, 
-     1.2913393228300631`}, {-0.13943900464012957`, 1.2505419476448234`}}]}, 
-   {RGBColor[0.9065072220380956, 0.5025749621020297, 0.9726953054322223], 
-    PolygonBox[{{-0.10889900914250011`, 
-     1.2473815355771265`}, {-0.13943900464012957`, 
-     1.2505419476448234`}, {-0.1427569567357118, 1.1902734322984858`}}]}, 
-   {RGBColor[0.4739717026022545, 0.9705379282297475, 0.6167638714261303], 
-    PolygonBox[{{-0.29424820730576223`, 
-     0.6167529025824127}, {-0.3732488372650103, 
-     0.6489337761118948}, {-0.4032285622509722, 0.6762731627691948}}]}, 
-   {RGBColor[0.5358361805581295, 0.6304233990436092, 0.6624992748152982], 
-    PolygonBox[{{-0.16254858756128635`, 
-     1.1884244693331467`}, {-0.18044108275250526`, 
-     1.1833496622918669`}, {-0.17517077647584658`, 1.1466440586358722`}}]}, 
-   {RGBColor[0.2288840928994602, 0.4029748850019119, 0.39306447987628723`], 
-    PolygonBox[{{-0.33297119401424624`, 
-     1.0909636390910453`}, {-0.33806550933607304`, 
-     1.0541649809763214`}, {-0.40976920420965807`, 1.0253050297967365`}}]}, 
-   {RGBColor[0.8282461564385244, 0.40570411685111485`, 0.5605581939060478], 
-    PolygonBox[{{-0.22826390610877598`, 
-     1.225704637777576}, {-0.20397342929430384`, 
-     1.2387018053161571`}, {-0.21241683294534988`, 1.278548023362155}}]}, 
-   {RGBColor[0.9942521490427272, 0.29764490895108353`, 0.8429352963525623], 
-    PolygonBox[{{0.041306032254755924`, 0.636536873821369}, {
-     0.12052258350825555`, 0.6788551704387934}, {0.09691193409753496, 
-     0.6688195586377826}}]}, 
-   {RGBColor[0.3445011875232853, 0.6397554008193449, 0.3232420889698093], 
-    PolygonBox[{{0.20201708832751494`, 0.756455401280679}, {
-     0.14684245009180416`, 0.6970156573660474}, {0.16463145372384555`, 
-     0.7287711405636249}}]}, 
-   {RGBColor[0.0036968638599708115`, 0.6302117782809522, 0.3329143510853274], 
-    PolygonBox[{{-0.18916144073701627`, 
-     1.1391701788680355`}, {-0.17517077647584658`, 
-     1.1466440586358722`}, {-0.18044108275250526`, 1.1833496622918669`}}]}, 
-   {RGBColor[0.2119447000151482, 0.5327117477269374, 0.4994131019003276], 
-    PolygonBox[{{-0.13810289651466592`, 
-     1.1534704880924134`}, {-0.12059676664042722`, 
-     1.1516462149203588`}, {-0.12493755307316523`, 1.1884244693331467`}}]}, 
-   {RGBColor[0.3381408716841974, 0.052835521349871906`, 0.7122451932361498], 
-    PolygonBox[{{-0.13943900464012957`, 
-     1.2505419476448234`}, {-0.10889900914250011`, 
-     1.2473815355771265`}, {-0.10967177973617119`, 1.2879253616561355`}}]}, 
-   {RGBColor[0.6798559592985665, 0.977898926500355, 0.1291744518386193], 
-    PolygonBox[{{-0.12493755307316523`, 
-     1.1884244693331467`}, {-0.1427569567357118, 
-     1.1902734322984858`}, {-0.13810289651466592`, 1.1534704880924134`}}]}, 
-   {RGBColor[0.9256329626933673, 0.41823281804505985`, 0.03731879077613853], 
-    PolygonBox[{{0.16711185852134147`, 1.0554433169768938`}, {
-     0.17547478091488755`, 1.1158564526726025`}, {0.17381420284493007`, 
-     1.1329402049915414`}}]}, 
-   {RGBColor[0.6311650716930866, 0.5186992765496761, 0.471088710404006], 
-    PolygonBox[{{0.18079524707030462`, 1.0724119348724233`}, {
-     0.18959111018168745`, 1.1359545762051453`}, {0.1980599779119168, 
-     1.120171456766843}}]}, 
-   {RGBColor[0.4560147172767568, 0.0669657642605821, 0.1252497451882546], 
-    PolygonBox[{{-0.18916144073701627`, 
-     1.1391701788680355`}, {-0.19773787866803774`, 
-     1.1299307352459296`}, {-0.25268346293492755`, 1.1063925517653415`}}]}, 
-   {RGBColor[0.9148074022237513, 0.6016679139410752, 0.45377075534856526`], 
+     1.0724631030864908`}, {-0.3952272306838503, 
+     1.1329901780918752`}, {-0.39248565403330343`, 1.1159058331273752`}}]}, 
+   {RGBColor[0.32625299069615243`, 0.5756849212855188, 0.19652046859610972`], 
+    PolygonBox[{{-0.464191140554777, 
+     0.9646093093638547}, {-0.45493059465115343`, 
+     0.9749000168161843}, {-0.5494221624017521, 0.9742106808587844}}]}, 
+   {RGBColor[0.3455314456401417, 0.7302022082258814, 0.38356439596507697`], 
+    PolygonBox[{{0.05748108374903559, 1.223595671335231}, {
+     0.13968848684368151`, 1.1901025244479666`}, {0.13438697805934532`, 
+     1.1819273104444878`}}]}, 
+   {RGBColor[0.2931009847597461, 0.1935888736610425, 0.12370905727411108`], 
+    PolygonBox[{{-0.44573621054498924`, 
+     1.0315665389407707`}, {-0.4553001619506931, 
+     1.0212840060286847`}, {-0.5940367946974847, 1.0197713741714818`}}]}, 
+   {RGBColor[0.5494241576043248, 0.48862783615770455`, 0.6481021859997385], 
+    PolygonBox[{{-0.596283327385969, 
+     0.9945788120076026}, {-0.5940367946974847, 
+     1.0197713741714818`}, {-0.4553001619506931, 1.0212840060286847`}}]}, 
+   {RGBColor[0.1810151410725842, 0.3999815885252358, 0.47695336182546644`], 
+    PolygonBox[{{-0.025737105037070072`, 
+     1.1774851945779106`}, {-0.09545931842046657, 
+     1.1847546922800685`}, {-0.07436093585817147, 1.2058342413602918`}}]}, 
+   {RGBColor[0.4077422447632064, 0.11696579432029264`, 0.8860024170981293], 
+    PolygonBox[{{-0.4589326274780409, 
+     1.078242063665344}, {-0.4015188108279065, 
+     1.140093928170958}, {-0.3952272306838503, 1.1329901780918752`}}]}, 
+   {RGBColor[0.8194673117453726, 0.8461068607543851, 0.7850094855976872], 
     PolygonBox[{{-0.47558098155363865`, 
-     0.8330075001689226}, {-0.4313437489833355, 
-     0.778070827421038}, {-0.4211551190558917, 0.7203883433812953}}]}, 
-   {RGBColor[0.5797622258283808, 0.18741024425967123`, 0.7511996106266856], 
-    PolygonBox[{{-0.19463978609064334`, 
-     1.1757568909662954`}, {-0.18044108275250526`, 
-     1.1833496622918669`}, {-0.20397342929430384`, 1.2387018053161571`}}]}, 
-   {RGBColor[0.19991149998059554`, 0.7622493543893725, 0.8251029427592917], 
-    PolygonBox[{{0.3546184424109582, 0.8573779162036022}, {0.3719460755213007,
-      0.8719529784823803}, {0.29445487143159693`, 0.7966852582023726}}]}, 
-   {RGBColor[0.09727341662020561, 0.4355341050382471, 0.25868201942160596`], 
-    PolygonBox[{{-0.20397342929430384`, 
-     1.2387018053161571`}, {-0.22826390610877598`, 
-     1.225704637777576}, {-0.19463978609064334`, 1.1757568909662954`}}]}, 
-   {RGBColor[0.7927683406262511, 0.549766287653775, 0.18309537985524615`], 
-    PolygonBox[{{-0.1427569567357118, 
-     1.1902734322984858`}, {-0.12493755307316523`, 
-     1.1884244693331467`}, {-0.10889900914250011`, 1.2473815355771265`}}]}, 
-   {RGBColor[0.43336107700028514`, 0.8537430983918206, 0.47980010425842856`], 
-    PolygonBox[{{-0.10229801546498549`, 
-     1.1391701788680355`}, {-0.10831654130712913`, 
-     1.1466440586358722`}, {-0.052941080293980924`, 1.143726016636456}}]}, 
-   {RGBColor[0.3566606585634382, 0.3511012394013362, 0.5445711916448046], 
-    PolygonBox[{{0.44917647211363293`, 0.9903360026839372}, {
-     0.43077545223969893`, 1.0053548342253424`}, {0.37330297568985543`, 
-     0.9331494428090833}}]}, 
-   {RGBColor[0.14227731711101876`, 0.5324865583898539, 0.9586936833072981], 
-    PolygonBox[{{-0.052941080293980924`, 
-     1.143726016636456}, {-0.039496824960707805`, 
-     1.1270311062265927`}, {-0.10229801546498549`, 1.1391701788680355`}}]}, 
-   {RGBColor[0.478845998787929, 0.855452293506676, 0.5723698084374986], 
-    PolygonBox[{{0.11574496325293374`, 1.0761800987395242`}, {
-     0.12278784454578466`, 1.1270551676823117`}, {0.1528884698388015, 
-     1.1115410088103133`}}]}, 
-   {RGBColor[0.10850977510998128`, 0.6131224991565567, 0.4579403342787087], 
-    PolygonBox[{{0.17141519673380198`, 1.0781903652908957`}, {
-     0.179978004916548, 1.1400434510717212`}, {0.18959111018168745`, 
-     1.1359545762051453`}}]}, 
-   {RGBColor[0.694720335726351, 0.8724213465981316, 0.23072678835693927`], 
-    PolygonBox[{{0.16543473345648196`, 1.0724119348724233`}, {
-     0.17381420284493007`, 1.1329402049915414`}, {0.179978004916548, 
-     1.1400434510717212`}}]}, 
-   {RGBColor[0.17936082847581503`, 0.5597950181486813, 0.18188034891975047`], 
-    PolygonBox[{{0.16855232368920825`, 0.7749059955765101}, {
-     0.23111225289839657`, 0.84230209585819}, {0.22487322771787405`, 
-     0.7936702154748496}}]}, 
-   {RGBColor[0.7135309296963868, 0.24347091372595742`, 0.2903991713273], 
-    PolygonBox[{{-0.18044108275250526`, 
-     1.1833496622918669`}, {-0.19463978609064334`, 
-     1.1757568909662954`}, {-0.18916144073701627`, 1.1391701788680355`}}]}, 
-   {RGBColor[0.29864219270761083`, 0.5419607778959481, 0.7232489916262008], 
-    PolygonBox[{{-0.21241683294534988`, 
-     1.278548023362155}, {-0.23866112404389764`, 
-     1.264504021865647}, {-0.22826390610877598`, 1.225704637777576}}]}, 
-   {RGBColor[
-    0.2164401227683308, 0.0035427032033303885`, 0.044117184379331986`], 
-    PolygonBox[{{0.29445487143159693`, 0.7966852582023726}, {
-     0.277940611068949, 0.7812448941732018}, {0.3546184424109582, 
-     0.8573779162036022}}]}, 
-   {RGBColor[0.5753896849467663, 0.7145271746981416, 0.46247903825854286`], 
+     0.833053492751338}, {-0.46617979383920055`, 
+     0.9009685254735466}, {-0.4701654932056893, 0.9713011656801716}}]}, 
+   {RGBColor[0.5754225986213948, 0.3370348689989333, 0.851701997688757], 
+    PolygonBox[{{0.04178863633498465, 1.1873210666486067`}, {
+     0.1163479667617445, 1.1569448280199093`}, {0.08964855246303237, 
+     1.168235412872011}}]}, 
+   {RGBColor[0.8389928216109148, 0.19849861809836344`, 0.8201234722110986], 
+    PolygonBox[{{-0.4265750072781612, 
+     1.055492790882377}, {-0.37450336261309014`, 
+     1.111589375072012}, {-0.35550246400401797`, 1.1271029976099836`}}]}, 
+   {RGBColor[0.5937449049101327, 0.872212640434034, 0.08963085445922525], 
+    PolygonBox[{{0.20080758719567507`, 0.8503278955855388}, {
+     0.18636375096799754`, 0.8016854734762238}, {0.3080919380498636, 
+     0.8377855684290413}}]}, 
+   {RGBColor[0.12334220169405974`, 0.5880750887030342, 0.7000658181358888], 
+    PolygonBox[{{0.23111225289839657`, 0.8423130016347679}, {
+     0.24044149732300005`, 0.9097104326835674}, {0.2338571336291519, 
+     0.8585804927104699}}]}, 
+   {RGBColor[0.12810143812231423`, 0.5203965003984281, 0.32207008397500814`], 
+    PolygonBox[{{-0.37130366610711857`, 
+     0.6788918384266438}, {-0.3372268140380594, 
+     0.6365707094787061}, {-0.3067222341380489, 0.6315361322716331}}]}, 
+   {RGBColor[0.009817185293905739, 0.4545480335301, 0.2559104052022494], 
+    PolygonBox[{{-0.5653255997416687, 
+     0.9638147729545017}, {-0.5836751564026195, 
+     0.9731167097076601}, {-0.4675800586809287, 0.9741737759589959}}]}, 
+   {RGBColor[0.8369720856704286, 0.4663125202378007, 0.12433573773779405`], 
+    PolygonBox[{{0.21024484360074447`, 0.8159063901570024}, {
+     0.20201708832751494`, 0.7564654725702968}, {0.22487322771787405`, 
+     0.7936801363525431}}]}, 
+   {RGBColor[0.8484923782103551, 0.485641829721025, 0.02081617430087257], 
+    PolygonBox[{{-0.5836751564026195, 
+     0.9731167097076601}, {-0.596283327385969, 
+     0.9945788120076026}, {-0.46474331065184993`, 0.9959282262404068}}]}, 
+   {RGBColor[0.7847344055609322, 0.2638953097548409, 0.06398631375183284], 
+    PolygonBox[{{-0.4077888087260967, 
+     1.1360052577676139`}, {-0.4667717630362841, 
+     1.0724638711121717`}, {-0.4705518121521985, 1.0554949897226207`}}]}, 
+   {RGBColor[0.15494600592366137`, 0.08417454961678161, 0.06454384437989469], 
+    PolygonBox[{{-0.46617979383920055`, 
+     0.9009685254735466}, {-0.47558098155363865`, 
+     0.833053492751338}, {-0.46505560012737485`, 0.7749499125163986}}]}, 
+   {RGBColor[0.5041171984175374, 0.24959207571602904`, 0.45816634460867034`], 
     PolygonBox[{{-0.3732488372650103, 
-     0.6489337761118948}, {-0.29424820730576223`, 
-     0.6167529025824127}, {-0.2676960322852213, 0.608213477292599}}]}, 
-   {RGBColor[0.40047554407905905`, 0.9329976819175205, 0.6634449966883291], 
-    PolygonBox[{{-0.2454116123702168, 
-     0.6065289792902934}, {-0.15800878593614712`, 
-     0.597420521436572}, {-0.15294558490215313`, 0.5956054027439615}}]}, 
-   {RGBColor[0.7339684098116515, 0.5538473810264803, 0.16100933719253008`], 
-    PolygonBox[{{-0.15800878593614712`, 
-     0.597420521436572}, {-0.2454116123702168, 
-     0.6065289792902934}, {-0.2676960322852213, 0.608213477292599}}]}, 
-   {RGBColor[0.9479408274657823, 0.13649877601912586`, 0.5804508526385914], 
-    PolygonBox[{{-0.11245818539264511`, 
-     1.1833496622918669`}, {-0.12493755307316523`, 
-     1.1884244693331467`}, {-0.12059676664042722`, 1.1516462149203588`}}]}, 
-   {RGBColor[0.31035090414284316`, 0.23505541203418368`, 0.9981415009993391], 
-    PolygonBox[{{-0.12059676664042722`, 
-     1.1516462149203588`}, {-0.10831654130712913`, 
-     1.1466440586358722`}, {-0.11245818539264511`, 1.1833496622918669`}}]}, 
-   {RGBColor[0.24551263430786108`, 0.5565847839009619, 0.9157978649595673], 
-    PolygonBox[{{-0.19773787866803774`, 
-     1.1299307352459296`}, {-0.18916144073701627`, 
-     1.1391701788680355`}, {-0.19463978609064334`, 1.1757568909662954`}}]}, 
-   {RGBColor[0.3606634587278108, 0.3293560617491056, 0.5545988194874816], 
-    PolygonBox[{{-0.08753406513653277, 
-     1.2387018053161571`}, {-0.10889900914250011`, 
-     1.2473815355771265`}, {-0.12493755307316523`, 1.1884244693331467`}}]}, 
-   {RGBColor[0.843311747981162, 0.916879841051319, 0.32123090466552195`], 
-    PolygonBox[{{-0.25554118884338345`, 
-     1.0857539973040902`}, {-0.25268346293492755`, 
-     1.1063925517653415`}, {-0.19773787866803774`, 1.1299307352459296`}}]}, 
-   {RGBColor[0.1380883548547278, 0.8836082939149732, 0.41318345407475476`], 
-    PolygonBox[{{0.2204200286141559, 1.0381074673881987`}, {
-     0.2111647008261305, 0.9712517573586483}, {0.1891002609583601, 
-     1.0554433169768938`}}]}, 
-   {RGBColor[0.6114707447494097, 0.040199334870279824`, 0.8704885197909178], 
-    PolygonBox[{{0.09691193409753496, 0.6688195586377826}, {
-     0.027060325858137998`, 0.6315039560544314}, {0.041306032254755924`, 
-     0.636536873821369}}]}, 
-   {RGBColor[0.657759763715378, 0.5193515297465006, 0.3246295376595889], 
-    PolygonBox[{{0.16999667436045124`, 0.8162629788390263}, {
-     0.19187548511915106`, 0.8688701212942689}, {0.2843892524327723, 
-     0.8865922864993421}}]}, 
-   {RGBColor[0.28616869622685215`, 0.2967708979521597, 0.5768579402910161], 
-    PolygonBox[{{0.3579027443541505, 0.9469150515080409}, {
-     0.33941140823842003`, 0.9322995167580838}, {0.2843892524327723, 
-     0.8865922864993421}}]}, 
-   {RGBColor[0.12245159969269426`, 0.9300592394444791, 0.7973662442276468], 
-    PolygonBox[{{0.3796680814288364, 0.9043459893621237}, {0.3719460755213007,
-      0.8719529784823803}, {0.44937291172340327`, 0.9684761028521621}}]}, 
-   {RGBColor[0.5803072061576626, 0.5656654697690218, 0.7430762225143328], 
-    PolygonBox[{{0.04204755692330072, 1.0909636390910453`}, {
-     0.04714187224512742, 1.1277622972057693`}, {0.12278784454578466`, 
-     1.1270551676823117`}}]}, 
-   {RGBColor[0.1141833733319566, 0.7140995677744175, 0.4861654724011504], 
-    PolygonBox[{{-0.08658543952998565, 
-     1.278548023362155}, {-0.10967177973617119`, 
-     1.2879253616561355`}, {-0.10889900914250011`, 1.2473815355771265`}}]}, 
-   {RGBColor[0.8283826643909453, 0.15316596385348036`, 0.5383290380992056], 
-    PolygonBox[{{-0.25268346293492755`, 
-     1.1063925517653415`}, {-0.25554118884338345`, 
-     1.0857539973040902`}, {-0.33806550933607304`, 1.0541649809763214`}}]}, 
-   {RGBColor[0.6710386323035888, 0.12416541525839175`, 0.46430070195851236`], 
-    PolygonBox[{{-0.20335287948548236`, 
-     1.166354180942356}, {-0.19463978609064334`, 
-     1.1757568909662954`}, {-0.22826390610877598`, 1.225704637777576}}]}, 
-   {RGBColor[0.9294345356600937, 0.5595905443147147, 0.16622827674090068`], 
-    PolygonBox[{{0.43077545223969893`, 1.0053548342253424`}, {
-     0.4055575672852047, 1.0085003325680693`}, {0.3579027443541505, 
-     0.9469150515080409}}]}, 
-   {RGBColor[0.11278554649134631`, 0.9502077950559962, 0.6785328063841063], 
-    PolygonBox[{{-0.2431784047496649, 
-     1.209592065076053}, {-0.22826390610877598`, 
-     1.225704637777576}, {-0.23866112404389764`, 1.264504021865647}}]}, 
-   {RGBColor[0.9005305093713389, 0.8330911988015635, 0.5266404703878795], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.17932799855891815`, 
-     1.2879253616561355`}, {-0.14267910985478327`, 1.2913393228300631`}}]}, 
-   {RGBColor[0.9704921648582727, 0.18541430150697225`, 0.7125254393241942], 
-    PolygonBox[{{-0.10889900914250011`, 
-     1.2473815355771265`}, {-0.08753406513653277, 
-     1.2387018053161571`}, {-0.08658543952998565, 1.278548023362155}}]}, 
-   {RGBColor[0.5995551048141123, 0.40214246149804644`, 0.6336901002813708], 
-    PolygonBox[{{-0.12493755307316523`, 
-     1.1884244693331467`}, {-0.11245818539264511`, 
-     1.1833496622918669`}, {-0.08753406513653277, 1.2387018053161571`}}]}, 
-   {RGBColor[0.04541460591840729, 0.9869480322968811, 0.5432344286416475], 
-    PolygonBox[{{0.2688518551932612, 0.8001645605296709}, {0.277940611068949, 
-     0.7812448941732018}, {0.15452575195078844`, 0.7419771655488063}}]}, 
-   {RGBColor[0.7782462093956806, 0.8213621681117498, 0.6671214189524921], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.21241683294534988`, 
-     1.278548023362155}, {-0.17932799855891815`, 1.2879253616561355`}}]}, 
-   {RGBColor[0.627796284579037, 0.6039447293334346, 0.47473573794587276`], 
-    PolygonBox[{{-0.19463978609064334`, 
-     1.1757568909662954`}, {-0.20335287948548236`, 
-     1.166354180942356}, {-0.19773787866803774`, 1.1299307352459296`}}]}, 
-   {RGBColor[0.05689795810822251, 0.7977409402114786, 0.556340613918547], 
-    PolygonBox[{{-0.04235455086916358, 
-     1.1063925517653415`}, {-0.039496824960707805`, 1.1270311062265927`}, {
-     0.04714187224512742, 1.1277622972057693`}}]}, 
-   {RGBColor[0.02932149925503391, 0.6909643821274887, 0.8077873928664001], 
-    PolygonBox[{{0.44937291172340327`, 0.9684761028521621}, {
-     0.44917647211363293`, 0.9903360026839372}, {0.3796680814288364, 
-     0.9043459893621237}}]}, 
-   {RGBColor[0.3902457390523497, 0.911296726162756, 0.8033638473590601], 
-    PolygonBox[{{-0.4358719965725605, 
-     0.8503155354146719}, {-0.47942049724312896`, 
-     0.9043960473290981}, {-0.4795124086418528, 0.9907151771869445}}]}, 
-   {RGBColor[0.9377705219083174, 0.1382894462855062, 0.6647054401566768], 
-    PolygonBox[{{-0.22826390610877598`, 
-     1.225704637777576}, {-0.2431784047496649, 
-     1.209592065076053}, {-0.20335287948548236`, 1.166354180942356}}]}, 
-   {RGBColor[0.8051938199266768, 0.47576547215057663`, 0.9229337343746762], 
-    PolygonBox[{{0.33941140823842003`, 0.9322995167580838}, {
-     0.3579027443541505, 0.9469150515080409}, {0.4055575672852047, 
-     1.0085003325680693`}}]}, 
-   {RGBColor[0.1344438699198478, 0.09205030479035226, 0.9873721611807011], 
-    PolygonBox[{{0.15452575195078844`, 0.7419771655488063}, {
-     0.1563331039995939, 0.7669256048986226}, {0.2688518551932612, 
-     0.8001645605296709}}]}, 
-   {RGBColor[
-    0.47880631677826213`, 0.20253198267300165`, 0.43678180521512244`], 
-    PolygonBox[{{-0.10635843813511638`, 
-     1.1757568909662954`}, {-0.11245818539264511`, 
-     1.1833496622918669`}, {-0.10831654130712913`, 1.1466440586358722`}}]}, 
-   {RGBColor[0.550263797976253, 0.3539781377749258, 0.7893340789786334], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.14267910985478327`, 
-     1.2913393228300631`}, {-0.10967177973617119`, 1.2879253616561355`}}]}, 
-   {RGBColor[0.4550605927172322, 0.08174491676653894, 0.7548909904295431], 
-    PolygonBox[{{-0.10831654130712913`, 
-     1.1466440586358722`}, {-0.10229801546498549`, 
-     1.1391701788680355`}, {-0.10635843813511638`, 1.1757568909662954`}}]}, 
-   {RGBColor[0.9182947326432238, 0.5628651705588303, 0.8089644151583797], 
-    PolygonBox[{{-0.06089086691610462, 0.6065289792902934}, {
-     0.027060325858137998`, 0.6315039560544314}, {0.02073589179923415, 
-     0.6275916188172482}}]}, 
-   {RGBColor[0.3593021035475694, 0.9193158287856313, 0.3490886792013095], 
-    PolygonBox[{{-0.19773787866803774`, 
-     1.1299307352459296`}, {-0.19901684726726254`, 
-     1.1206912916238236`}, {-0.25554118884338345`, 1.0857539973040902`}}]}, 
-   {RGBColor[0.5060408614772391, 0.15887491576242496`, 0.7417399703550007], 
-    PolygonBox[{{-0.19901684726726254`, 
-     1.1206912916238236`}, {-0.19773787866803774`, 
-     1.1299307352459296`}, {-0.20335287948548236`, 1.166354180942356}}]}, 
-   {RGBColor[0.8957922137036933, 0.34088142509089425`, 0.48942906288723886`], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.23866112404389764`, 
-     1.264504021865647}, {-0.21241683294534988`, 1.278548023362155}}]}, 
-   {RGBColor[0.4644789395006872, 0.5707039476295053, 0.36160047579359134`], 
-    PolygonBox[{{-0.10357698406421019`, 
-     1.1299307352459296`}, {-0.10229801546498549`, 
-     1.1391701788680355`}, {-0.039496824960707805`, 1.1270311062265927`}}]}, 
-   {RGBColor[0.03869852571862231, 0.49475763497397685`, 0.42346597199816594`],
-     PolygonBox[{{-0.06180346766857801, 
-     0.6041535903093677}, {-0.15294558490215313`, 
-     0.5956054027439615}, {-0.15800878593614712`, 0.597420521436572}}]}, 
-   {RGBColor[0.597754812990877, 0.49686005908225095`, 0.009086402766725898], 
-    PolygonBox[{{0.02073589179923415, 
-     0.6275916188172482}, {-0.06180346766857801, 
-     0.6041535903093677}, {-0.06089086691610462, 0.6065289792902934}}]}, 
-   {RGBColor[
-    0.45723268518653515`, 0.11811621621020185`, 0.15966214168138126`], 
-    PolygonBox[{{-0.23866112404389764`, 
-     1.264504021865647}, {-0.25477635517126707`, 
-     1.2470901230462255`}, {-0.2431784047496649, 1.209592065076053}}]}, 
-   {RGBColor[0.09493559611771674, 0.37222860410852454`, 0.15283837976448011`],
-     PolygonBox[{{-0.07710723369654697, 
-     1.225704637777576}, {-0.08753406513653277, 
-     1.2387018053161571`}, {-0.11245818539264511`, 1.1833496622918669`}}]}, 
-   {RGBColor[0.6407383305513596, 0.4528877869424459, 0.8340204683882488], 
-    PolygonBox[{{-0.20466934344951207`, 
-     1.1569514709184165`}, {-0.20335287948548236`, 
-     1.166354180942356}, {-0.2431784047496649, 1.209592065076053}}]}, 
-   {RGBColor[0.3090251648169182, 0.06474358794183144, 0.8902778458614202], 
-    PolygonBox[{{-0.20335287948548236`, 
-     1.166354180942356}, {-0.20466934344951207`, 
-     1.1569514709184165`}, {-0.19901684726726254`, 1.1206912916238236`}}]}, 
-   {RGBColor[0.42473025642590345`, 0.7701921630491686, 0.12247337005849057`], 
-    PolygonBox[{{-0.039496824960707805`, 
-     1.1270311062265927`}, {-0.04235455086916358, 
-     1.1063925517653415`}, {-0.10357698406421019`, 1.1299307352459296`}}]}, 
-   {RGBColor[0.17614827683464895`, 0.7617389400711168, 0.5681634647541831], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.10967177973617119`, 
-     1.2879253616561355`}, {-0.08658543952998565, 1.278548023362155}}]}, 
-   {RGBColor[0.9216629833834677, 0.6695070001395615, 0.5053890671800463], 
-    PolygonBox[{{-0.11245818539264511`, 
-     1.1833496622918669`}, {-0.10635843813511638`, 
-     1.1757568909662954`}, {-0.07710723369654697, 1.225704637777576}}]}, 
-   {RGBColor[0.4877085548193134, 0.12680254354757348`, 0.49207575392223135`], 
-    PolygonBox[{{-0.07532141669437975, 
-     1.264504021865647}, {-0.08658543952998565, 
-     1.278548023362155}, {-0.08753406513653277, 1.2387018053161571`}}]}, 
-   {RGBColor[0.23655902835000897`, 0.6534065027924361, 0.45345494747567017`], 
-    PolygonBox[{{0.1528884698388015, 1.1115410088103133`}, {
-     0.14512345608432284`, 1.0554433169768938`}, {0.11574496325293374`, 
-     1.0761800987395242`}}]}, 
-   {RGBColor[0.5872160490513976, 0.7009221213998835, 0.7677501444909116], 
-    PolygonBox[{{0.04714187224512742, 1.1277622972057693`}, {
-     0.04204755692330072, 1.0909636390910453`}, {-0.04235455086916358, 
-     1.1063925517653415`}}]}, 
-   {RGBColor[0.38872382450659115`, 0.8102722957429702, 0.7701387934555781], 
-    PolygonBox[{{0.2698868877219246, 0.8408080513270649}, {0.2843892524327723,
-      0.8865922864993421}, {0.33941140823842003`, 0.9322995167580838}}]}, 
-   {RGBColor[0.03509669757699019, 0.4560366511624252, 0.5550457629349801], 
-    PolygonBox[{{0.2843892524327723, 0.8865922864993421}, {0.2698868877219246,
-      0.8408080513270649}, {0.16999667436045124`, 0.8162629788390263}}]}, 
-   {RGBColor[0.3826012126794984, 0.9758302759936799, 0.8836187565253972], 
-    PolygonBox[{{0.12278784454578466`, 1.1270551676823117`}, {
-     0.11574496325293374`, 1.0761800987395242`}, {0.04204755692330072, 
-     1.0909636390910453`}}]}, 
-   {RGBColor[0.26699702232289724`, 0.48721434748061987`, 0.7541269498116281], 
-    PolygonBox[{{-0.10767490209914597`, 
-     1.166354180942356}, {-0.10635843813511638`, 
-     1.1757568909662954`}, {-0.10229801546498549`, 1.1391701788680355`}}]}, 
-   {RGBColor[0.7362313092431856, 0.08947742581567142, 0.13069486388439033`], 
-    PolygonBox[{{0.1980599779119168, 1.120171456766843}, {0.1891002609583601, 
-     1.0554433169768938`}, {0.18079524707030462`, 1.0724119348724233`}}]}, 
-   {RGBColor[0.5621951856148104, 0.5204257284691547, 0.2219710973340474], 
+     0.6489697434544544}, {-0.4119665360940595, 
+     0.6970548427770487}, {-0.4455025244224451, 0.7288128495869277}}]}, 
+   {RGBColor[0.8207372543808353, 0.3518618831822704, 0.6332941224023274], 
+    PolygonBox[{{0.1980599779119168, 1.1201914250067946`}, {
+     0.15589777327846194`, 1.1725550325736191`}, {0.17687152794358751`, 
+     1.0922082607390091`}}]}, 
+   {RGBColor[0.9955998938292832, 0.27448883878263186`, 0.31765220062404764`], 
+    PolygonBox[{{-0.39248565403330343`, 
+     1.1159058331273752`}, {-0.44856340971517994`, 
+     1.0554938903024988`}, {-0.4514112494224614, 1.0724631030864908`}}]}, 
+   {RGBColor[0.21404049696727268`, 0.1712273266433879, 0.605131669119678], 
+    PolygonBox[{{-0.24309203338954838`, 
+     1.157572716726745}, {-0.2988136073470341, 
+     1.1278073115473957`}, {-0.35550246400401797`, 1.1271029976099836`}}]}, 
+   {RGBColor[0.9575826501852589, 0.14262272595454673`, 0.6328928253550623], 
+    PolygonBox[{{-0.4675800586809287, 
+     0.9741737759589959}, {-0.464191140554777, 
+     0.9646093093638547}, {-0.5653255997416687, 0.9638147729545017}}]}, 
+   {RGBColor[0.9618310744444396, 0.2016073713155806, 0.5750542174116497], 
+    PolygonBox[{{-0.4015188108279065, 
+     1.140093928170958}, {-0.4589326274780409, 
+     1.078242063665344}, {-0.4667717630362841, 1.0724638711121717`}}]}, 
+   {RGBColor[0.37813490683942685`, 0.502328936634101, 0.005078759733990079], 
+    PolygonBox[{{0.09691193409753496, 0.6688325482293082}, {
+     0.13973153642668187`, 0.7149616747992183}, {0.12647423366908808`, 
+     0.7059151999087033}}]}, 
+   {RGBColor[0.35935956282020776`, 0.29143020091321614`, 0.7848962741244054], 
+    PolygonBox[{{-0.4553001619506931, 
+     1.0212840060286847`}, {-0.46474331065184993`, 
+     0.9959282262404068}, {-0.596283327385969, 0.9945788120076026}}]}, 
+   {RGBColor[0.010552673156919656`, 0.47472920827054144`, 0.6839580828541894],
+     PolygonBox[{{-0.3952272306838503, 
+     1.1329901780918752`}, {-0.4514112494224614, 
+     1.0724631030864908`}, {-0.4589326274780409, 1.078242063665344}}]}, 
+   {RGBColor[0.7797468833859054, 0.5741382096852721, 0.617591683540258], 
+    PolygonBox[{{0.3080919380498636, 0.8377855684290413}, {
+     0.31052989236543105`, 0.8783187753563437}, {0.20080758719567507`, 
+     0.8503278955855388}}]}, 
+   {RGBColor[0.4242724535886526, 0.7977760472837139, 0.8759307877074312], 
+    PolygonBox[{{-0.17293173749596583`, 
+     1.1774925543095336`}, {-0.09545931842046657, 
+     1.1847546922800685`}, {-0.11947515195994377`, 1.159011659533508}}]}, 
+   {RGBColor[0.5673582084589757, 0.6904265062566941, 0.08074368044783053], 
+    PolygonBox[{{0.20502225348166156`, 0.8819492068703466}, {
+     0.20080758719567507`, 0.8503278955855388}, {0.31052989236543105`, 
+     0.8783187753563437}}]}, 
+   {RGBColor[0.3202351968582171, 0.1972450125628149, 0.18514308969081084`], 
+    PolygonBox[{{-0.24309203338954838`, 
+     1.157572716726745}, {-0.17293173749596583`, 
+     1.1774925543095336`}, {-0.16292626078041247`, 1.154938510850945}}]}, 
+   {RGBColor[0.47306724641546904`, 0.55830732045253, 0.27219470525718337`], 
+    PolygonBox[{{-0.46474331065184993`, 
+     0.9959282262404068}, {-0.4675800586809287, 
+     0.9741737759589959}, {-0.5836751564026195, 0.9731167097076601}}]}, 
+   {RGBColor[0.19955272734089236`, 0.505767685974845, 0.47309516681555563`], 
+    PolygonBox[{{0.023171279776109988`, 
+     1.157559403561087}, {-0.025737105037070072`, 1.1774851945779106`}, {
+     0.022031738344745325`, 1.195783909448413}}]}, 
+   {RGBColor[0.8165465244455885, 0.8530544099775683, 0.7874730497479094], 
+    PolygonBox[{{0.022031738344745325`, 1.195783909448413}, {
+     0.08964855246303237, 1.168235412872011}, {0.023171279776109988`, 
+     1.157559403561087}}]}, 
+   {RGBColor[0.46792712566630024`, 0.4521808387666446, 0.35198868361739066`], 
+    PolygonBox[{{0.17687152794358751`, 1.0922082607390091`}, {
+     0.2204200286141559, 1.038124129252565}, {0.1980599779119168, 
+     1.1201914250067946`}}]}, 
+   {RGBColor[0.877628465957832, 0.653330315665138, 0.38200404429350954`], 
+    PolygonBox[{{-0.4119665360940595, 
+     0.6970548427770487}, {-0.3732488372650103, 
+     0.6489697434544544}, {-0.3372268140380594, 0.6365707094787061}}]}, 
+   {RGBColor[0.26204130451386787`, 0.3603380288399711, 0.90435352647144], 
+    PolygonBox[{{0.18636375096799754`, 0.8016854734762238}, {
+     0.16699077580763672`, 0.7561964605517375}, {0.29445487143159693`, 
+     0.7966917803990197}}]}, 
+   {RGBColor[0.17498800674774606`, 0.4048220098498221, 0.3529347194475838], 
+    PolygonBox[{{-0.4027263229168068, 
+     1.0762289331916364`}, {-0.35550246400401797`, 
+     1.1271029976099836`}, {-0.2988136073470341, 1.1278073115473957`}}]}, 
+   {RGBColor[0.27782615521032716`, 0.6397651944529434, 0.29725251421391863`], 
+    PolygonBox[{{0.29445487143159693`, 0.7966917803990197}, {
+     0.3080919380498636, 0.8377855684290413}, {0.18636375096799754`, 
+     0.8016854734762238}}]}, 
+   {RGBColor[0.9174365321385347, 0.4585285312680223, 0.9023007142090786], 
+    PolygonBox[{{0.18959111018168745`, 1.1359753887716684`}, {
+     0.14820089492775965`, 1.1873799798565292`}, {0.15589777327846194`, 
+     1.1725550325736191`}}]}, 
+   {RGBColor[0.37460243969705576`, 0.4840623663504995, 0.34023224037221644`], 
+    PolygonBox[{{-0.35550246400401797`, 
+     1.1271029976099836`}, {-0.4027263229168068, 
+     1.0762289331916364`}, {-0.4265750072781612, 1.055492790882377}}]}, 
+   {RGBColor[0.7410917788779288, 0.16909870421009976`, 0.3621189705469614], 
+    PolygonBox[{{0.2338571336291519, 0.8585804927104699}, {
+     0.22487322771787405`, 0.7936801363525431}, {0.23111225289839657`, 
+     0.8423130016347679}}]}, 
+   {RGBColor[0.1312209862762843, 0.6530897572172041, 0.6000905550464675], 
+    PolygonBox[{{0.12052258350825555`, 0.678867247114163}, {
+     0.16908308224749496`, 0.7311811291094044}, {0.13973153642668187`, 
+     0.7149616747992183}}]}, 
+   {RGBColor[0.2710810013085294, 0.5522386699749868, 0.8308769540125536], 
     PolygonBox[{{-0.47942049724312896`, 
-     0.9043960473290981}, {-0.4358719965725605, 
-     0.8503155354146719}, {-0.4313437489833355, 0.778070827421038}}]}, 
-   {RGBColor[0.16532999708546847`, 0.1578166922812101, 0.991383053094075], 
-    PolygonBox[{{0.22487322771787405`, 0.7936702154748496}, {
-     0.16463145372384555`, 0.7287711405636249}, {0.16855232368920825`, 
-     0.7749059955765101}}]}, 
-   {RGBColor[0.9638774320393242, 0.08063412595756514, 0.4101630021399505], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.25477635517126707`, 
-     1.2470901230462255`}, {-0.23866112404389764`, 1.264504021865647}}]}, 
-   {RGBColor[0.4819737348915194, 0.2277108534568666, 0.04394880252440769], 
-    PolygonBox[{{-0.10229801546498549`, 
-     1.1391701788680355`}, {-0.10357698406421019`, 
-     1.1299307352459296`}, {-0.10767490209914597`, 1.166354180942356}}]}, 
-   {RGBColor[0.24731094501626516`, 0.058167584224567026`, 0.607874039718562], 
-    PolygonBox[{{-0.24209693351011033`, 
-     1.069059086894227}, {-0.25554118884338345`, 
-     1.0857539973040902`}, {-0.19901684726726254`, 1.1206912916238236`}}]}, 
-   {RGBColor[0.0009145435605222296, 0.6690307011368941, 0.39182350209531913`],
-     PolygonBox[{{-0.15800878593614712`, 
-     0.597420521436572}, {-0.06089086691610462, 
-     0.6065289792902934}, {-0.06180346766857801, 0.6041535903093677}}]}, 
-   {RGBColor[0.2975189109370411, 0.6965976865608328, 0.41192275869836914`], 
-    PolygonBox[{{0.17381420284493007`, 1.1329402049915414`}, {
-     0.16543473345648196`, 1.0724119348724233`}, {0.16711185852134147`, 
-     1.0554433169768938`}}]}, 
-   {RGBColor[
-    0.12242864338203652`, 0.35811274915431945`, 0.42117851142255835`], 
-    PolygonBox[{{-0.3169720423052681, 
-     0.6411367209382769}, {-0.4032285622509722, 
-     0.6762731627691948}, {-0.4211551190558917, 0.7203883433812953}}]}, 
-   {RGBColor[0.7125486788754645, 0.07251307695576337, 0.12273432874988632`], 
-    PolygonBox[{{-0.08753406513653277, 
-     1.2387018053161571`}, {-0.07710723369654697, 
-     1.225704637777576}, {-0.07532141669437975, 1.264504021865647}}]}, 
-   {RGBColor[0.7680269439300245, 0.7512443838694509, 0.002033264535592716], 
-    PolygonBox[{{-0.1929983214251189, 
-     1.1132174118559868`}, {-0.19901684726726254`, 
-     1.1206912916238236`}, {-0.20466934344951207`, 1.1569514709184165`}}]}, 
-   {RGBColor[0.7190931644301581, 0.8810093833839263, 0.780962297739098], 
-    PolygonBox[{{-0.24545065032373403`, 
-     1.19347949237453}, {-0.2431784047496649, 
-     1.209592065076053}, {-0.25477635517126707`, 1.2470901230462255`}}]}, 
-   {RGBColor[0.6555623470827283, 0.6198780985255687, 0.8947024717047773], 
-    PolygonBox[{{0.16289420932903884`, 0.8330075001689226}, {
-     0.22593451804470063`, 0.9009211919187368}, {0.23111225289839657`, 
-     0.84230209585819}}]}, 
-   {RGBColor[0.9543953437265373, 0.40149911870165855`, 0.9782414093478113], 
-    PolygonBox[{{-0.3977995179555829, 
-     0.9539668397300528}, {-0.4343409005687376, 
-     0.9993456251434742}, {-0.40976920420965807`, 1.0253050297967365`}}]}, 
-   {RGBColor[0.08357757877354266, 0.42392878400578193`, 0.48203341950584444`],
-     PolygonBox[{{0.18959111018168745`, 1.1359545762051453`}, {
-     0.18079524707030462`, 1.0724119348724233`}, {0.17141519673380198`, 
-     1.0781903652908957`}}]}, 
-   {RGBColor[0.8091420524466624, 0.45691256036778305`, 0.42717204127635355`], 
-    PolygonBox[{{-0.2431784047496649, 
-     1.209592065076053}, {-0.24545065032373403`, 
-     1.19347949237453}, {-0.20466934344951207`, 1.1569514709184165`}}]}, 
-   {RGBColor[0.7093341690591279, 0.4056849969944425, 0.44393472860262384`], 
-    PolygonBox[{{0.179978004916548, 1.1400434510717212`}, {
-     0.17141519673380198`, 1.0781903652908957`}, {0.16543473345648196`, 
-     1.0724119348724233`}}]}, 
-   {RGBColor[0.028664073295413983`, 0.9713725030326357, 0.8133801607797773], 
-    PolygonBox[{{0.4055575672852047, 1.0085003325680693`}, {
-     0.43077545223969893`, 1.0053548342253424`}, {0.5299204987321486, 
-     1.0760574442615987`}}]}, 
-   {RGBColor[0.7126923980571058, 0.48362462760819724`, 0.23992259991309228`], 
-    PolygonBox[{{0.05683766341012611, 0.6489337761118948}, {
-     0.14684245009180416`, 0.6970156573660474}, {0.12052258350825555`, 
-     0.6788551704387934}}]}, 
-   {RGBColor[0.7661171132762947, 0.014603191226910228`, 0.6803885648976313], 
-    PolygonBox[{{0.1563331039995939, 0.7669256048986226}, {
-     0.16999667436045124`, 0.8162629788390263}, {0.2698868877219246, 
-     0.8408080513270649}}]}, 
-   {RGBColor[0.04266868153896297, 0.6016244498715102, 0.8258620293610361], 
-    PolygonBox[{{-0.31409582600342145`, 
-     1.0243975835155394`}, {-0.33806550933607304`, 
-     1.0541649809763214`}, {-0.25554118884338345`, 1.0857539973040902`}}]}, 
-   {RGBColor[0.5197879710698636, 0.2465391590780408, 0.9186359442331], 
-    PolygonBox[{{-0.4373493244723005, 
-     0.9383550739997696}, {-0.4795124086418528, 
-     0.9907151771869445}, {-0.4755673878339037, 1.0088697403780074`}}]}, 
-   {RGBColor[0.6033135578410602, 0.8618086894105712, 0.6239337528829358], 
-    PolygonBox[{{-0.42036325571156186`, 
-     0.9629218041900922}, {-0.4597904804971464, 
-     1.0118841115916113`}, {-0.456926332108726, 0.995030181281185}}]}, 
-   {RGBColor[0.4599621458180785, 0.2112365671609726, 0.5365535528774319], 
-    PolygonBox[{{0.43077545223969893`, 1.0053548342253424`}, {
-     0.44917647211363293`, 0.9903360026839372}, {0.5725208178864806, 
-     1.0709038904520198`}}]}, 
-   {RGBColor[0.12990522334950394`, 0.5856824003831536, 0.682893382112072], 
-    PolygonBox[{{-0.2676960322852213, 
-     0.608213477292599}, {-0.1685753252437488, 
-     0.5978838719111872}, {-0.15800878593614712`, 0.597420521436572}}]}, 
-   {RGBColor[0.2433395986993021, 0.5726057506495699, 0.6029177498449894], 
-    PolygonBox[{{-0.19901684726726254`, 
-     1.1206912916238236`}, {-0.1929983214251189, 
-     1.1132174118559868`}, {-0.24209693351011033`, 1.069059086894227}}]}, 
-   {RGBColor[0.566384634344925, 0.05024076899090302, 0.002274589724016174], 
-    PolygonBox[{{-0.3766299121269057, 
-     0.9841514544125627}, {-0.40976920420965807`, 
-     1.0253050297967365`}, {-0.33806550933607304`, 1.0541649809763214`}}]}, 
-   {RGBColor[0.6467804292407233, 0.9128624772547602, 0.9728387174384132], 
-    PolygonBox[{{-0.11215342199523176`, 
-     1.1206912916238236`}, {-0.10357698406421019`, 
-     1.1299307352459296`}, {-0.04235455086916358, 1.1063925517653415`}}]}, 
-   {RGBColor[0.9938055241582922, 0.9205815773459805, 0.6203989652326107], 
-    PolygonBox[{{-0.20466934344951207`, 
-     1.1569514709184165`}, {-0.19856959619198336`, 
-     1.1493586995928453`}, {-0.1929983214251189, 1.1132174118559868`}}]}, 
-   {RGBColor[0.4015086560302965, 0.792270061779347, 0.38858142513841987`], 
-    PolygonBox[{{-0.4272054383922027, 
-     0.9663038556087462}, {-0.4674951960629281, 
-     1.0163377287560558`}, {-0.4597904804971464, 1.0118841115916113`}}]}, 
-   {RGBColor[0.7794613448162859, 0.7522804631991502, 0.64325013733271], 
-    PolygonBox[{{-0.4341766959524494, 
-     0.9574694831778782}, {-0.4755673878339037, 
-     1.0088697403780074`}, {-0.4674951960629281, 1.0163377287560558`}}]}, 
-   {RGBColor[0.3758297258501666, 0.655607116687716, 0.42706445361429957`], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.08658543952998565, 
-     1.278548023362155}, {-0.07532141669437975, 1.264504021865647}}]}, 
-   {RGBColor[0.8685059654646208, 0.2879232383371324, 0.2738355497751963], 
-    PolygonBox[{{0.4055575672852047, 1.0085003325680693`}, {
-     0.3856620785096914, 0.9944229446520764}, {0.33941140823842003`, 
-     0.9322995167580838}}]}, 
-   {RGBColor[0.4970915626722363, 0.4922486197534033, 0.004602316086639746], 
-    PolygonBox[{{-0.07937947927061596, 
-     1.209592065076053}, {-0.07710723369654697, 
-     1.225704637777576}, {-0.10635843813511638`, 1.1757568909662954`}}]}, 
-   {RGBColor[0.5159893052193889, 0.866940212844189, 0.9747769424869748], 
-    PolygonBox[{{0.2698868877219246, 0.8408080513270649}, {0.2688518551932612,
-      0.8001645605296709}, {0.1563331039995939, 0.7669256048986226}}]}, 
-   {RGBColor[0.6581752566707673, 0.45870982124760795`, 0.6758007116940941], 
-    PolygonBox[{{-0.19856959619198336`, 
-     1.1493586995928453`}, {-0.20466934344951207`, 
-     1.1569514709184165`}, {-0.24545065032373403`, 1.19347949237453}}]}, 
-   {RGBColor[0.006431800917713781, 0.5697743552588679, 0.5136617600008531], 
+     0.9044441355818891}, {-0.4701654932056893, 
+     0.9713011656801716}, {-0.4705518121521985, 1.0554949897226207`}}]}, 
+   {RGBColor[0.25299443612980044`, 0.5475537480991688, 0.37944136357332514`], 
+    PolygonBox[{{0.17547478091488755`, 1.1158774351056278`}, {
+     0.1361228700201032, 1.1647499302967643`}, {0.13438697805934532`, 
+     1.1819273104444878`}}]}, 
+   {RGBColor[0.08895762480119407, 0.3550088313804727, 0.17220894875971382`], 
+    PolygonBox[{{-0.09545931842046657, 
+     1.1847546922800685`}, {-0.025737105037070072`, 
+     1.1774851945779106`}, {-0.08037093654285529, 1.154934383084733}}]}, 
+   {RGBColor[0.38507186097892365`, 0.3165508698435857, 0.3578681607570384], 
+    PolygonBox[{{0.22593451804470063`, 0.9009339197579525}, {
+     0.23533548052884068`, 0.9688489524914223}, {0.24044149732300005`, 
+     0.9097104326835674}}]}, 
+   {RGBColor[0.25413415729954014`, 0.44712893817208266`, 0.618905794778001], 
+    PolygonBox[{{0.179978004916548, 1.1400648533301707`}, {
+     0.13968848684368151`, 1.1901025244479666`}, {0.14820089492775965`, 
+     1.1873799798565292`}}]}, 
+   {RGBColor[0.6103051403602695, 0.4672973603864219, 0.23068520831402162`], 
+    PolygonBox[{{-0.23497022365154455`, 
+     0.6041814495829584}, {-0.29250843112536784`, 
+     0.6276229800153064}, {-0.3067222341380489, 0.6315361322716331}}]}, 
+   {RGBColor[0.7941583485529375, 0.06293731030143657, 0.8449878737790584], 
+    PolygonBox[{{-0.2988136073470341, 
+     1.1278073115473957`}, {-0.24309203338954838`, 
+     1.157572716726745}, {-0.20227457098092153`, 1.1437666297254487`}}]}, 
+   {RGBColor[0.5721609379404022, 0.5321918878107412, 0.56432232342758], 
+    PolygonBox[{{0.12647423366908808`, 0.7059151999087033}, {
+     0.08628903617417989, 0.6626245127947804}, {0.09691193409753496, 
+     0.6688325482293082}}]}, 
+   {RGBColor[0.11119137815150726`, 0.7235135892218565, 0.02608660173736177], 
+    PolygonBox[{{0.17381420284493007`, 1.132961726020199}, {
+     0.13438697805934532`, 1.1819273104444878`}, {0.13968848684368151`, 
+     1.1901025244479666`}}]}, 
+   {RGBColor[0.3145945692272938, 0.8274351646668807, 0.5498584239212294], 
+    PolygonBox[{{-0.11947515195994377`, 
+     1.159011659533508}, {-0.16292626078041247`, 
+     1.154938510850945}, {-0.17293173749596583`, 1.1774925543095336`}}]}, 
+   {RGBColor[0.517325540856924, 0.5817561314150965, 0.17207467765364437`], 
     PolygonBox[{{-0.4032285622509722, 
-     0.6762731627691948}, {-0.3169720423052681, 
-     0.6411367209382769}, {-0.29424820730576223`, 0.6167529025824127}}]}, 
-   {RGBColor[0.663466382668126, 0.5742543396180035, 0.6267227595400247], 
-    PolygonBox[{{-0.11638799549398512`, 
-     1.1569514709184165`}, {-0.10767490209914597`, 
-     1.166354180942356}, {-0.10357698406421019`, 1.1299307352459296`}}]}, 
-   {RGBColor[0.23221598634696394`, 0.6834907308632401, 0.4881625978129691], 
-    PolygonBox[{{-0.25477635517126707`, 
-     1.2470901230462255`}, {-0.25723594945128053`, 
-     1.229676224226804}, {-0.24545065032373403`, 1.19347949237453}}]}, 
-   {RGBColor[0.0804759799140713, 0.4091007521794763, 0.13271864604519257`], 
-    PolygonBox[{{-0.10635843813511638`, 
-     1.1757568909662954`}, {-0.10767490209914597`, 
-     1.166354180942356}, {-0.07937947927061596, 1.209592065076053}}]}, 
-   {RGBColor[0.6934359200463522, 0.9008054085364943, 0.3267151524874936], 
-    PolygonBox[{{-0.10357698406421019`, 
-     1.1299307352459296`}, {-0.11215342199523176`, 
-     1.1206912916238236`}, {-0.11638799549398512`, 1.1569514709184165`}}]}, 
-   {RGBColor[0.8753536128132569, 0.4808016184083508, 0.13693605233166228`], 
-    PolygonBox[{{-0.1685753252437488, 
-     0.5978838719111872}, {-0.2676960322852213, 
-     0.608213477292599}, {-0.29424820730576223`, 0.6167529025824127}}]}, 
-   {RGBColor[0.003494691231292757, 0.20000793396518746`, 0.0683289004993739], 
-    PolygonBox[{{-0.1807180960918207, 
-     1.1082152555715001`}, {-0.1929983214251189, 
-     1.1132174118559868`}, {-0.19856959619198336`, 1.1493586995928453`}}]}, 
-   {RGBColor[0.8651584550190201, 0.6341029810783319, 0.4240862125416254], 
-    PolygonBox[{{0.277940611068949, 0.7812448941732018}, {0.2688518551932612, 
-     0.8001645605296709}, {0.33913544795546485`, 0.8690853283071008}}]}, 
-   {RGBColor[0.02382432058168371, 0.9812040998213742, 0.24349244464021913`], 
-    PolygonBox[{{0.33913544795546485`, 0.8690853283071008}, {
-     0.3546184424109582, 0.8573779162036022}, {0.277940611068949, 
-     0.7812448941732018}}]}, 
-   {RGBColor[0.6379919386495003, 0.6802757199916432, 0.10709707012022229`], 
-    PolygonBox[{{0.3719460755213007, 0.8719529784823803}, {0.3546184424109582,
-      0.8573779162036022}, {0.43008849213295214`, 0.9545460402201607}}]}, 
-   {RGBColor[0.7644502881089554, 0.07912675515668588, 0.15641422104828284`], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.25723594945128053`, 
-     1.229676224226804}, {-0.25477635517126707`, 1.2470901230462255`}}]}, 
-   {RGBColor[0.7788462365996149, 0.3438420479719675, 0.43341472942003145`], 
-    PolygonBox[{{0.12052258350825555`, 0.6788551704387934}, {
-     0.041306032254755924`, 0.636536873821369}, {0.05683766341012611, 
-     0.6489337761118948}}]}, 
-   {RGBColor[0.46015996290395433`, 0.5949931517446985, 0.6991317466659348], 
-    PolygonBox[{{-0.25554118884338345`, 
-     1.0857539973040902`}, {-0.24209693351011033`, 
-     1.069059086894227}, {-0.31409582600342145`, 1.0243975835155394`}}]}, 
-   {RGBColor[0.19926319027009343`, 0.425186325132743, 0.23951081087726322`], 
-    PolygonBox[{{0.5725208178864806, 1.0709038904520198`}, {
-     0.5299204987321486, 1.0760574442615987`}, {0.43077545223969893`, 
-     1.0053548342253424`}}]}, 
-   {RGBColor[0.07564074291396272, 0.7284952697870819, 0.5758244092610965], 
-    PolygonBox[{{0.43008849213295214`, 0.9545460402201607}, {
-     0.44937291172340327`, 0.9684761028521621}, {0.3719460755213007, 
-     0.8719529784823803}}]}, 
-   {RGBColor[0.1262675643581288, 0.3799052245403811, 0.6040567878705525], 
-    PolygonBox[{{-0.06089086691610462, 
-     0.6065289792902934}, {-0.15800878593614712`, 
-     0.597420521436572}, {-0.1685753252437488, 0.5978838719111872}}]}, 
-   {RGBColor[0.6309309247984776, 0.5675999602826101, 0.8320064520456576], 
-    PolygonBox[{{0.027060325858137998`, 
-     0.6315039560544314}, {-0.06089086691610462, 
-     0.6065289792902934}, {-0.05843637246210363, 0.608213477292599}}]}, 
-   {RGBColor[0.49323181612488587`, 0.34218400095317625`, 0.7709964756075023], 
-    PolygonBox[{{-0.0777810109743931, 
-     1.2470901230462255`}, {-0.07532141669437975, 
-     1.264504021865647}, {-0.07710723369654697, 1.225704637777576}}]}, 
-   {RGBColor[0.8264827854506074, 0.07020318137755188, 0.4453482278845098], 
-    PolygonBox[{{0.5299204987321486, 1.0760574442615987`}, {
-     0.4818230555142661, 1.0709038904520198`}, {0.4055575672852047, 
-     1.0085003325680693`}}]}, 
-   {RGBColor[0.7752409376732412, 0.09728114764799223, 0.19339682838439964`], 
-    PolygonBox[{{-0.04235455086916358, 
-     1.1063925517653415`}, {-0.06151128305270919, 
-     1.0857539973040902`}, {-0.11215342199523176`, 1.1206912916238236`}}]}, 
-   {RGBColor[0.3222300859713778, 0.32540384559502633`, 0.9875895358150082], 
-    PolygonBox[{{-0.19856959619198336`, 
-     1.1493586995928453`}, {-0.18609022851146312`, 
-     1.1442838925515653`}, {-0.1807180960918207, 1.1082152555715001`}}]}, 
-   {RGBColor[0.2569039433266356, 0.38138178920210875`, 0.7194000638141096], 
-    PolygonBox[{{0.33941140823842003`, 0.9322995167580838}, {
-     0.3316739773779153, 0.8977361134276001}, {0.2698868877219246, 
-     0.8408080513270649}}]}, 
-   {RGBColor[0.824484135208823, 0.8780692112484063, 0.3839600714558371], 
-    PolygonBox[{{0.3856620785096914, 0.9944229446520764}, {0.4055575672852047,
-      1.0085003325680693`}, {0.4818230555142661, 1.0709038904520198`}}]}, 
-   {RGBColor[0.4656986807123005, 0.599398910451447, 0.6409805727139963], 
-    PolygonBox[{{-0.05843637246210363, 0.608213477292599}, {
-     0.041306032254755924`, 0.636536873821369}, {0.027060325858137998`, 
-     0.6315039560544314}}]}, 
-   {RGBColor[0.499021220099632, 0.8489109301645699, 0.6323797718221322], 
-    PolygonBox[{{-0.06151128305270919, 
-     1.0857539973040902`}, {-0.04235455086916358, 1.1063925517653415`}, {
-     0.04204755692330072, 1.0909636390910453`}}]}, 
-   {RGBColor[0.9976600545913263, 0.9863301066166883, 0.4913641727001321], 
-    PolygonBox[{{-0.24545065032373403`, 
-     1.19347949237453}, {-0.2350238188837482, 
-     1.1804823248359488`}, {-0.19856959619198336`, 1.1493586995928453`}}]}, 
-   {RGBColor[0.22111538181779, 0.3323590434105872, 0.6625612180575233], 
-    PolygonBox[{{-0.1929983214251189, 
-     1.1132174118559868`}, {-0.1807180960918207, 
-     1.1082152555715001`}, {-0.21466707726123596`, 1.0578855363145696`}}]}, 
-   {RGBColor[0.19991195691671004`, 0.011407351804495924`, 0.476873266976356], 
-    PolygonBox[{{-0.16321196621758213`, 
-     1.1063909823994456`}, {-0.1807180960918207, 
-     1.1082152555715001`}, {-0.18609022851146312`, 1.1442838925515653`}}]}, 
-   {RGBColor[0.15062528361408734`, 0.825943478533268, 0.9188240198271345], 
-    PolygonBox[{{-0.11215342199523176`, 
-     1.1206912916238236`}, {-0.12614408625640147`, 
-     1.1132174118559868`}, {-0.1305866988321232, 1.1493586995928453`}}]}, 
-   {RGBColor[0.4474742196737398, 0.5522392963038938, 0.916789387207982], 
-    PolygonBox[{{-0.21466707726123596`, 
-     1.0578855363145696`}, {-0.24209693351011033`, 
-     1.069059086894227}, {-0.1929983214251189, 1.1132174118559868`}}]}, 
-   {RGBColor[0.978511131584326, 0.38062569310136785`, 0.9355556519659893], 
-    PolygonBox[{{-0.1305866988321232, 
-     1.1493586995928453`}, {-0.11638799549398512`, 
-     1.1569514709184165`}, {-0.11215342199523176`, 1.1206912916238236`}}]}, 
-   {RGBColor[0.2001182176541927, 0.09655676897615839, 0.9779652812032167], 
-    PolygonBox[{{0.3316739773779153, 0.8977361134276001}, {
-     0.33941140823842003`, 0.9322995167580838}, {0.3856620785096914, 
-     0.9944229446520764}}]}, 
-   {RGBColor[0.7765597618095257, 0.271854544903517, 0.7009161809733055], 
-    PolygonBox[{{-0.07710723369654697, 
-     1.225704637777576}, {-0.07937947927061596, 
-     1.209592065076053}, {-0.0777810109743931, 1.2470901230462255`}}]}, 
-   {RGBColor[0.7017242581654084, 0.1847343462507225, 0.2925139915880608], 
-    PolygonBox[{{-0.12614408625640147`, 
-     1.1132174118559868`}, {-0.11215342199523176`, 
-     1.1206912916238236`}, {-0.06151128305270919, 1.0857539973040902`}}]}, 
-   {RGBColor[0.9367896319639584, 0.6488486532515991, 0.9531685773054845], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.07532141669437975, 
-     1.264504021865647}, {-0.0777810109743931, 1.2470901230462255`}}]}, 
-   {RGBColor[0.985000076678159, 0.7450055121980299, 0.06781613050228086], 
-    PolygonBox[{{-0.2350238188837482, 
-     1.1804823248359488`}, {-0.24545065032373403`, 
-     1.19347949237453}, {-0.25723594945128053`, 1.229676224226804}}]}, 
-   {RGBColor[0.4705816478015703, 0.8656582601769416, 0.14800836807757145`], 
-    PolygonBox[{{0.44917647211363293`, 0.9903360026839372}, {
-     0.44937291172340327`, 0.9684761028521621}, {0.5848915048246952, 
-     1.0554433169768938`}}]}, 
-   {RGBColor[0.7327111298803444, 0.07907037309805576, 0.7866230597255484], 
-    PolygonBox[{{0.2688518551932612, 0.8001645605296709}, {0.2698868877219246,
-      0.8408080513270649}, {0.3316739773779153, 0.8977361134276001}}]}, 
-   {RGBColor[0.01452376071518735, 0.6164333005789584, 0.6824126837355422], 
-    PolygonBox[{{-0.18609022851146312`, 
-     1.1442838925515653`}, {-0.19856959619198336`, 
-     1.1493586995928453`}, {-0.2350238188837482, 1.1804823248359488`}}]}, 
-   {RGBColor[0.2654869668799671, 0.7875268014907582, 0.5317092306620628], 
-    PolygonBox[{{-0.33806550933607304`, 
-     1.0541649809763214`}, {-0.31409582600342145`, 
-     1.0243975835155394`}, {-0.3766299121269057, 0.9841514544125627}}]}, 
-   {RGBColor[0.30975325423367694`, 0.8878155666196237, 0.23702663589254858`], 
-    PolygonBox[{{-0.10767490209914597`, 
-     1.166354180942356}, {-0.11638799549398512`, 
-     1.1569514709184165`}, {-0.09429397791150501, 1.19347949237453}}]}, 
-   {RGBColor[0.25145637231789486`, 0.5316980832997085, 0.04324820266358609], 
-    PolygonBox[{{-0.12614408625640147`, 
-     1.1132174118559868`}, {-0.14375994495981842`, 
-     1.1082152555715001`}, {-0.148479194023342, 1.1442838925515653`}}]}, 
-   {RGBColor[0.5859355441567604, 0.3945722467274193, 0.9092077124042921], 
-    PolygonBox[{{-0.14375994495981842`, 
-     1.1082152555715001`}, {-0.16321196621758213`, 
-     1.1063909823994456`}, {-0.16827082484891667`, 1.1424349295862264`}}]}, 
-   {RGBColor[0.6968894166890607, 0.7261815536929364, 0.551498963696117], 
+     0.6763113581483146}, {-0.4455025244224451, 
+     0.7288128495869277}, {-0.46505560012737485`, 0.7749499125163986}}]}, 
+   {RGBColor[0.16379371275461607`, 0.6183956464270386, 0.5124550350275343], 
+    PolygonBox[{{-0.4701654932056893, 
+     0.9713011656801716}, {-0.47942049724312896`, 
+     0.9044441355818891}, {-0.47558098155363865`, 0.833053492751338}}]}, 
+   {RGBColor[
+    0.12967953240683916`, 0.10174569481046447`, 0.002863596763812204], 
+    PolygonBox[{{0.31052989236543105`, 0.8783187753563437}, {
+     0.30233699225742705`, 0.9016609245347813}, {0.20502225348166156`, 
+     0.8819492068703466}}]}, 
+   {RGBColor[0.13708608678038603`, 0.45599320504234453`, 0.9090643431486918], 
+    PolygonBox[{{-0.16292626078041247`, 
+     1.154938510850945}, {-0.20227457098092153`, 
+     1.1437666297254487`}, {-0.24309203338954838`, 1.157572716726745}}]}, 
+   {RGBColor[0.6000271587505184, 0.04556693966843506, 0.8692376465879936], 
+    PolygonBox[{{-0.08037093654285529, 
+     1.154934383084733}, {-0.11947515195994377`, 
+     1.159011659533508}, {-0.09545931842046657, 1.1847546922800685`}}]}, 
+   {RGBColor[0.5745127567152848, 0.025160579762884883`, 0.9687782505014559], 
+    PolygonBox[{{0.12278784454578466`, 1.1270790830945558`}, {
+     0.08964855246303237, 1.168235412872011}, {0.1163479667617445, 
+     1.1569448280199093`}}]}, 
+   {RGBColor[0.2453674020242651, 0.2500220885396902, 0.7536659472484435], 
+    PolygonBox[{{0.31052989236543105`, 0.8783187753563437}, {
+     0.3080919380498636, 0.8377855684290413}, {0.3796680814288364, 
+     0.904351121851102}}]}, 
+   {RGBColor[0.5452143904135136, 0.7083135226208068, 0.20718472772045105`], 
+    PolygonBox[{{-0.2454116123702168, 
+     0.6065574239770264}, {-0.3067222341380489, 
+     0.6315361322716331}, {-0.3372268140380594, 0.6365707094787061}}]}, 
+   {RGBColor[0.85051281151392, 0.566368763209788, 0.6351979856733101], 
+    PolygonBox[{{0.15589777327846194`, 1.1725550325736191`}, {
+     0.1980599779119168, 1.1201914250067946`}, {0.18959111018168745`, 
+     1.1359753887716684`}}]}, 
+   {RGBColor[0.7130676757939445, 0.925176265438681, 0.8380755584091686], 
+    PolygonBox[{{0.13973153642668187`, 0.7149616747992183}, {
+     0.09691193409753496, 0.6688325482293082}, {0.12052258350825555`, 
+     0.678867247114163}}]}, 
+   {RGBColor[0.2937665529729563, 0.8250491483211464, 0.9203676130849954], 
+    PolygonBox[{{-0.4455025244224451, 
+     0.7288128495869277}, {-0.4032285622509722, 
+     0.6763113581483146}, {-0.3732488372650103, 0.6489697434544544}}]}, 
+   {RGBColor[0.6710445261358946, 0.08284988188537579, 0.9392142946562434], 
+    PolygonBox[{{-0.2988136073470341, 
+     1.1278073115473957`}, {-0.33297119401424624`, 
+     1.0910093800144551`}, {-0.4027263229168068, 1.0762289331916364`}}]}, 
+   {RGBColor[0.7706395653209455, 0.3639582875799585, 0.0035103075789904015`], 
+    PolygonBox[{{0.30233699225742705`, 0.9016609245347813}, {
+     0.31052989236543105`, 0.8783187753563437}, {0.37330297568985543`, 
+     0.9331556616454404}}]}, 
+   {RGBColor[0.907672961468728, 0.44358431766202866`, 0.2920423823016618], 
+    PolygonBox[{{0.14684245009180416`, 0.6970269023277393}, {
+     0.20201708832751494`, 0.7564654725702968}, {0.16908308224749496`, 
+     0.7311811291094044}}]}, 
+   {RGBColor[0.6629059154801316, 0.4473634754699938, 0.09166263041580014], 
     PolygonBox[{{-0.4795124086418528, 
-     0.9907151771869445}, {-0.4373493244723005, 
-     0.9383550739997696}, {-0.4358719965725605, 0.8503155354146719}}]}, 
-   {RGBColor[0.37752150473892976`, 0.3888239110266196, 0.7527668198827806], 
-    PolygonBox[{{-0.18609022851146312`, 
-     1.1442838925515653`}, {-0.16827082484891667`, 
-     1.1424349295862264`}, {-0.16321196621758213`, 1.1063909823994456`}}]}, 
-   {RGBColor[0.13344817045121515`, 0.7480100025329388, 0.19228682099855154`], 
-    PolygonBox[{{0.5848915048246952, 1.0554433169768938`}, {
-     0.5725208178864806, 1.0709038904520198`}, {0.44917647211363293`, 
-     0.9903360026839372}}]}, 
-   {RGBColor[0.4184807623029221, 0.3306864388756581, 0.8145024690982121], 
-    PolygonBox[{{-0.09429397791150501, 
-     1.19347949237453}, {-0.07937947927061596, 
-     1.209592065076053}, {-0.10767490209914597`, 1.166354180942356}}]}, 
-   {RGBColor[0.6922602247305698, 0.42368867494785145`, 0.9456502926418784], 
-    PolygonBox[{{0.4818230555142661, 1.0709038904520198`}, {
-     0.5299204987321486, 1.0760574442615987`}, {0.5555302454579741, 
-     1.0861332258434386`}}]}, 
-   {RGBColor[0.31479994320619387`, 0.15874877638987628`, 0.06831816786601963],
-     PolygonBox[{{-0.148479194023342, 
-     1.1442838925515653`}, {-0.1305866988321232, 
-     1.1493586995928453`}, {-0.12614408625640147`, 1.1132174118559868`}}]}, 
-   {RGBColor[0.2899318803213533, 0.5798005640355797, 0.5536765888387882], 
-    PolygonBox[{{0.14910727124930218`, 0.9043960473290981}, {
-     0.2111647008261305, 0.9712517573586483}, {0.22593451804470063`, 
-     0.9009211919187368}}]}, 
-   {RGBColor[0.8591232096507226, 0.5979923626383148, 0.6909701313599272], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.24597192661567463`, 
-     1.215632222730296}, {-0.25723594945128053`, 1.229676224226804}}]}, 
-   {RGBColor[0.6503049339356737, 0.44780550997889823`, 0.7182077467813357], 
-    PolygonBox[{{-0.40976920420965807`, 
-     1.0253050297967365`}, {-0.3766299121269057, 
-     0.9841514544125627}, {-0.3977995179555829, 0.9539668397300528}}]}, 
-   {RGBColor[0.8112392837082218, 0.5491944070597994, 0.7056849762619439], 
-    PolygonBox[{{0.23111225289839657`, 0.84230209585819}, {
-     0.16855232368920825`, 0.7749059955765101}, {0.16289420932903884`, 
-     0.8330075001689226}}]}, 
-   {RGBColor[0.1315579426154605, 0.6744675991549625, 0.823368125303926], 
-    PolygonBox[{{-0.16827082484891667`, 
-     1.1424349295862264`}, {-0.148479194023342, 
-     1.1442838925515653`}, {-0.14375994495981842`, 1.1082152555715001`}}]}, 
-   {RGBColor[0.9998386184266645, 0.15727175785511593`, 0.15673773365987587`], 
-    PolygonBox[{{0.6026462610758907, 1.0823975086197308`}, {
-     0.5555302454579741, 1.0861332258434386`}, {0.5299204987321486, 
-     1.0760574442615987`}}]}, 
-   {RGBColor[0.4522925545788852, 0.25880951988010903`, 0.4758053771306683], 
-    PolygonBox[{{0.5299204987321486, 1.0760574442615987`}, {
-     0.5725208178864806, 1.0709038904520198`}, {0.6026462610758907, 
-     1.0823975086197308`}}]}, 
-   {RGBColor[0.9292343756359762, 0.023050064397015957`, 0.10033886241517442`],
-     PolygonBox[{{-0.3315801751099264, 
-     0.6839001675479252}, {-0.4211551190558917, 
-     0.7203883433812953}, {-0.4313437489833355, 0.778070827421038}}]}, 
-   {RGBColor[0.14430776837864112`, 0.24816162316722679`, 0.619586404094632], 
-    PolygonBox[{{-0.456926332108726, 0.995030181281185}, {-0.4175744212139416,
-      0.9461609568649112}, {-0.42036325571156186`, 0.9629218041900922}}]}, 
-   {RGBColor[0.6841968760043831, 0.9602530571744647, 0.47700758466087523`], 
-    PolygonBox[{{-0.1807180960918207, 
-     1.1082152555715001`}, {-0.16321196621758213`, 
-     1.1063909823994456`}, {-0.1755628618441475, 1.0538103237489005`}}]}, 
-   {RGBColor[0.1057682671133311, 0.3616214844328012, 0.5111180973168372], 
-    PolygonBox[{{0.3316739773779153, 0.8977361134276001}, {
-     0.33913544795546485`, 0.8690853283071008}, {0.2688518551932612, 
-     0.8001645605296709}}]}, 
-   {RGBColor[0.15673272932923732`, 0.402589160396265, 0.14457853788845854`], 
-    PolygonBox[{{0.5555302454579741, 1.0861332258434386`}, {
-     0.5033114644736836, 1.080106352091304}, {0.4818230555142661, 
-     1.0709038904520198`}}]}, 
-   {RGBColor[
-    0.47839503802656713`, 0.32592295649834324`, 0.13110206340484276`], 
-    PolygonBox[{{-0.14375994495981842`, 
-     1.1082152555715001`}, {-0.12614408625640147`, 
-     1.1132174118559868`}, {-0.09276344282316971, 1.069059086894227}}]}, 
-   {RGBColor[0.008898818509692097, 0.26370306060202875`, 0.1310731405073784], 
-    PolygonBox[{{-0.25723594945128053`, 
-     1.229676224226804}, {-0.24597192661567463`, 
-     1.215632222730296}, {-0.2350238188837482, 1.1804823248359488`}}]}, 
-   {RGBColor[0.42884782561930734`, 0.38111292666903607`, 0.3693113929923413], 
-    PolygonBox[{{0.5033114644736836, 1.080106352091304}, {0.5555302454579741, 
-     1.0861332258434386`}, {0.5636517609432626, 1.0875666260046886`}}]}, 
-   {RGBColor[0.08776544288587451, 0.5091277478694285, 0.3200601568435357], 
-    PolygonBox[{{-0.1685753252437488, 
-     0.5978838719111872}, {-0.05843637246210363, 
-     0.608213477292599}, {-0.06089086691610462, 0.6065289792902934}}]}, 
-   {RGBColor[0.3134711020253218, 0.20559088894584154`, 0.29893870998313177`], 
-    PolygonBox[{{0.6087149291901947, 1.0852430631598613`}, {
-     0.5636517609432626, 1.0875666260046886`}, {0.5555302454579741, 
-     1.0861332258434386`}}]}, 
-   {RGBColor[0.7744959526356092, 0.9712878376229923, 0.60980434474603], 
-    PolygonBox[{{-0.16827082484891667`, 
-     1.1424349295862264`}, {-0.18609022851146312`, 
-     1.1442838925515653`}, {-0.21365887487778087`, 1.1718025945749795`}}]}, 
-   {RGBColor[0.3865324682676292, 0.152047178198075, 0.6960026890852375], 
-    PolygonBox[{{-0.16321196621758213`, 
-     1.1063909823994456`}, {-0.14375994495981842`, 
-     1.1082152555715001`}, {-0.13211175302367875`, 1.0578855363145696`}}]}, 
-   {RGBColor[0.8024883358716242, 0.22691221813629414`, 0.3529273431218025], 
-    PolygonBox[{{-0.06151128305270919, 
-     1.0857539973040902`}, {-0.09276344282316971, 
-     1.069059086894227}, {-0.12614408625640147`, 1.1132174118559868`}}]}, 
-   {RGBColor[0.9881828862932436, 0.06109730392207746, 0.029300107057981473`], 
+     0.9907655718787681}, {-0.4705518121521985, 
+     1.0554949897226207`}, {-0.4667717630362841, 1.0724638711121717`}}]}, 
+   {RGBColor[0.5263563409913088, 0.7897039991026298, 0.3583479410201367], 
+    PolygonBox[{{0.14820089492775965`, 1.1873799798565292`}, {
+     0.18959111018168745`, 1.1359753887716684`}, {0.179978004916548, 
+     1.1400648533301707`}}]}, 
+   {RGBColor[0.5155853547297269, 0.6339894532213854, 0.7546233700893501], 
+    PolygonBox[{{-0.20227457098092153`, 
+     1.1437666297254487`}, {-0.23352673075138206`, 
+     1.127072836725963}, {-0.2988136073470341, 1.1278073115473957`}}]}, 
+   {RGBColor[0.9715318856634394, 0.33245717409170106`, 0.7484041301497446], 
+    PolygonBox[{{0.13438697805934532`, 1.1819273104444878`}, {
+     0.17381420284493007`, 1.132961726020199}, {0.17547478091488755`, 
+     1.1158774351056278`}}]}, 
+   {RGBColor[0.3289137612188293, 0.5968429411190226, 0.22182824972246862`], 
+    PolygonBox[{{-0.025737105037070072`, 1.1774851945779106`}, {
+     0.023171279776109988`, 1.157559403561087}, {-0.052941080293980924`, 
+     1.1437591630509145`}}]}, 
+   {RGBColor[0.05705797256060241, 0.32846836464728923`, 0.49524515413924264`],
+     PolygonBox[{{0.24044149732300005`, 0.9097104326835674}, {
+     0.23111225289839657`, 0.8423130016347679}, {0.22593451804470063`, 
+     0.9009339197579525}}]}, 
+   {RGBColor[0.13641567042953961`, 0.9397661778684341, 0.741589282331429], 
+    PolygonBox[{{0.13968848684368151`, 1.1901025244479666`}, {
+     0.179978004916548, 1.1400648533301707`}, {0.17381420284493007`, 
+     1.132961726020199}}]}, 
+   {RGBColor[0.9816085918648336, 0.026620124905012643`, 0.8050053636776939], 
+    PolygonBox[{{-0.3067222341380489, 
+     0.6315361322716331}, {-0.2454116123702168, 
+     0.6065574239770264}, {-0.23497022365154455`, 0.6041814495829584}}]}, 
+   {RGBColor[0.7139810411824605, 0.7682199247726593, 0.6010899416963851], 
+    PolygonBox[{{0.3796680814288364, 0.904351121851102}, {
+     0.37330297568985543`, 0.9331556616454404}, {0.31052989236543105`, 
+     0.8783187753563437}}]}, 
+   {RGBColor[0.7001117753044332, 0.7069611560668032, 0.1600783302943587], 
     PolygonBox[{{-0.4597904804971464, 
-     1.0118841115916113`}, {-0.42036325571156186`, 
-     0.9629218041900922}, {-0.4272054383922027, 0.9663038556087462}}]}, 
-   {RGBColor[0.02585553313244371, 0.3582210230982057, 0.7262928364014285], 
-    PolygonBox[{{0.5555302454579741, 1.0861332258434386`}, {
-     0.6026462610758907, 1.0823975086197308`}, {0.6087149291901947, 
-     1.0852430631598613`}}]}, 
-   {RGBColor[0.5371208619565357, 0.41030933796359426`, 0.7235599843647067], 
+     1.0119340846919451`}, {-0.4514112494224614, 
+     1.0724631030864908`}, {-0.44856340971517994`, 1.0554938903024988`}}]}, 
+   {RGBColor[0.6779687997815629, 0.0022535473751537083`, 0.4638001545392687], 
     PolygonBox[{{-0.4755673878339037, 
-     1.0088697403780074`}, {-0.4341766959524494, 
-     0.9574694831778782}, {-0.4373493244723005, 0.9383550739997696}}]}, 
-   {RGBColor[0.6356551945006403, 0.36365131525891137`, 0.15480675274179223`], 
-    PolygonBox[{{-0.2350238188837482, 
-     1.1804823248359488`}, {-0.21365887487778087`, 
-     1.1718025945749795`}, {-0.18609022851146312`, 1.1442838925515653`}}]}, 
-   {RGBColor[0.3825839750645774, 0.5266402790409168, 0.4576014726849835], 
-    PolygonBox[{{-0.11638799549398512`, 
-     1.1569514709184165`}, {-0.1305866988321232, 
-     1.1493586995928453`}, {-0.11858445472597715`, 1.1804823248359488`}}]}, 
-   {RGBColor[0.8204682557495606, 0.07798548399720096, 0.3881098739665343], 
-    PolygonBox[{{0.5636517609432626, 1.0875666260046886`}, {0.514289023108308,
-      1.0815316157998827`}, {0.5033114644736836, 1.080106352091304}}]}, 
-   {RGBColor[0.9301794062940238, 0.0031211639378605494`, 0.6790296191867067], 
-    PolygonBox[{{0.4818230555142661, 1.0709038904520198`}, {
-     0.45296109020258357`, 1.0554433169768938`}, {0.3856620785096914, 
-     0.9944229446520764}}]}, 
-   {RGBColor[0.2502909191002667, 0.27018657976116645`, 0.8637862016960838], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.0777810109743931, 
-     1.2470901230462255`}, {-0.09389624210176266, 1.229676224226804}}]}, 
-   {RGBColor[0.9925007801597769, 0.016757287386591324`, 0.14569849437955384`],
-     PolygonBox[{{0.007889970256088475, 1.0541649809763214`}, {
-     0.04204755692330072, 1.0909636390910453`}, {0.11574496325293374`, 
-     1.0761800987395242`}}]}, 
-   {RGBColor[0.545368111969333, 0.4273299130892141, 0.1853460671709406], 
-    PolygonBox[{{-0.1755628618441475, 
-     1.0538103237489005`}, {-0.21466707726123596`, 
-     1.0578855363145696`}, {-0.1807180960918207, 1.1082152555715001`}}]}, 
-   {RGBColor[0.3619639152415024, 0.8162093640271382, 0.20613553751433433`], 
+     1.0089204219404757`}, {-0.4667717630362841, 
+     1.0724638711121717`}, {-0.4589326274780409, 1.078242063665344}}]}, 
+   {RGBColor[0.31042006523507926`, 0.5121012005763022, 0.2818421680371499], 
+    PolygonBox[{{0.1163479667617445, 1.1569448280199093`}, {
+     0.1528884698388015, 1.1115630054803896`}, {0.12278784454578466`, 
+     1.1270790830945558`}}]}, 
+   {RGBColor[0.9893988969887404, 0.9043815409161198, 0.1647803299106103], 
+    PolygonBox[{{-0.052941080293980924`, 
+     1.1437591630509145`}, {-0.08037093654285529, 
+     1.154934383084733}, {-0.025737105037070072`, 1.1774851945779106`}}]}, 
+   {RGBColor[0.5730500477877376, 0.2341224825150403, 0.8207743124517362], 
+    PolygonBox[{{-0.33297119401424624`, 
+     1.0910093800144551`}, {-0.2988136073470341, 
+     1.1278073115473957`}, {-0.23352673075138206`, 1.127072836725963}}]}, 
+   {RGBColor[0.6570432934457022, 0.13589755613285037`, 0.7683474336051057], 
+    PolygonBox[{{0.19187548511915106`, 0.8688836973899141}, {
+     0.20502225348166156`, 0.8819492068703466}, {0.30233699225742705`, 
+     0.9016609245347813}}]}, 
+   {RGBColor[0.5869382953074507, 0.30841559802805696`, 0.3986623324841221], 
+    PolygonBox[{{0.2111647008261305, 0.97126709917047}, {0.2204200286141559, 
+     1.038124129252565}, {0.23533548052884068`, 0.9688489524914223}}]}, 
+   {RGBColor[0.202526855747857, 0.9484555496620677, 0.028599222637640143`], 
     PolygonBox[{{-0.4674951960629281, 
-     1.0163377287560558`}, {-0.4272054383922027, 
-     0.9663038556087462}, {-0.4341766959524494, 0.9574694831778782}}]}, 
-   {RGBColor[0.6829498858217462, 0.31154131052834777`, 0.4508611915656211], 
-    PolygonBox[{{0.514289023108308, 1.0815316157998827`}, {0.5636517609432626,
-      1.0875666260046886`}, {0.5536118359769442, 1.0810972334139133`}}]}, 
-   {RGBColor[0.12242686473932496`, 0.7990206979975802, 0.1825602537278075], 
-    PolygonBox[{{0.5541033554595297, 1.0647196962434133`}, {
-     0.5255228182447449, 1.0678117933477167`}, {0.5536118359769442, 
-     1.0810972334139133`}}]}, 
-   {RGBColor[0.22287468850581726`, 0.9535086075048183, 0.9416280338629197], 
-    PolygonBox[{{0.5118597175512024, 1.0760301873923765`}, {
-     0.5536118359769442, 1.0810972334139133`}, {0.5255228182447449, 
-     1.0678117933477167`}}]}, 
-   {RGBColor[0.5230845014050709, 0.8391995500297156, 0.7429595262151765], 
-    PolygonBox[{{0.5918017181842851, 1.07926501214083}, {0.5536118359769442, 
-     1.0810972334139133`}, {0.5636517609432626, 1.0875666260046886`}}]}, 
-   {RGBColor[0.7100502979114751, 0.0072319849253601465`, 0.03397014844838475],
-     PolygonBox[{{-0.09389624210176266, 
-     1.229676224226804}, {-0.0777810109743931, 
-     1.2470901230462255`}, {-0.07937947927061596, 1.209592065076053}}]}, 
-   {RGBColor[0.6532700478696745, 0.821592846933717, 0.5582177774154351], 
-    PolygonBox[{{0.5255228182447449, 1.0678117933477167`}, {
-     0.49364404411870333`, 1.0647196962434133`}, {0.5118597175512024, 
-     1.0760301873923765`}}]}, 
-   {RGBColor[0.945333773886891, 0.16201747216116158`, 0.6281545980658618], 
-    PolygonBox[{{0.45296109020258357`, 1.0554433169768938`}, {
-     0.4818230555142661, 1.0709038904520198`}, {0.5033114644736836, 
-     1.080106352091304}}]}, 
-   {RGBColor[0.15146532487887931`, 0.6786385015377288, 0.24563767638774747`], 
-    PolygonBox[{{0.5536118359769442, 1.0810972334139133`}, {
-     0.5118597175512024, 1.0760301873923765`}, {0.514289023108308, 
-     1.0815316157998827`}}]}, 
-   {RGBColor[0.3820252407468958, 0.9150499337392419, 0.9299918259294562], 
-    PolygonBox[{{0.04204755692330072, 1.0909636390910453`}, {
-     0.007889970256088475, 1.0541649809763214`}, {-0.06151128305270919, 
-     1.0857539973040902`}}]}, 
-   {RGBColor[0.07271735986120031, 0.07923810393026165, 0.8309359487583865], 
-    PolygonBox[{{0.5636517609432626, 1.0875666260046886`}, {
-     0.6087149291901947, 1.0852430631598613`}, {0.5918017181842851, 
-     1.07926501214083}}]}, 
-   {RGBColor[0.15446456202941694`, 0.19987529374989355`, 0.6590870378911402], 
-    PolygonBox[{{0.3546184424109582, 0.8573779162036022}, {
-     0.33913544795546485`, 0.8690853283071008}, {0.4050935307882798, 
-     0.9572012315039314}}]}, 
-   {RGBColor[0.04211455777244488, 0.4601818310785357, 0.2697238884325328], 
-    PolygonBox[{{0.3856620785096914, 0.9944229446520764}, {
-     0.38611948353746794`, 0.9720539255410627}, {0.3316739773779153, 
-     0.8977361134276001}}]}, 
-   {RGBColor[0.20662046056396943`, 0.4535347634852236, 0.23775367425424765`], 
-    PolygonBox[{{0.5536118359769442, 1.0810972334139133`}, {
-     0.5918017181842851, 1.07926501214083}, {0.5541033554595297, 
-     1.0647196962434133`}}]}, 
-   {RGBColor[0.9110769904474916, 0.5109790387872624, 0.3169027906274575], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.2228855864094891, 
-     1.2062548844363152`}, {-0.24597192661567463`, 1.215632222730296}}]}, 
-   {RGBColor[0.506524215429915, 0.03517608954285656, 0.4556419678125301], 
-    PolygonBox[{{-0.148479194023342, 
-     1.1442838925515653`}, {-0.16827082484891667`, 
-     1.1424349295862264`}, {-0.18311887938015142`, 1.1686421825072826`}}]}, 
-   {RGBColor[0.7823007036959171, 0.34870180433884457`, 0.7786795332562184], 
-    PolygonBox[{{-0.11858445472597715`, 
-     1.1804823248359488`}, {-0.09429397791150501, 
-     1.19347949237453}, {-0.11638799549398512`, 1.1569514709184165`}}]}, 
-   {RGBColor[0.4798796112126895, 0.6863205355515498, 0.8958549258230013], 
-    PolygonBox[{{0.06635964857164711, 0.6762731627691948}, {
-     0.16463145372384555`, 0.7287711405636249}, {0.14684245009180416`, 
-     0.6970156573660474}}]}, 
-   {RGBColor[0.5443329363203389, 0.3014496561647533, 0.22303666430672053`], 
-    PolygonBox[{{0.6174571565154766, 1.0682495751482417`}, {
-     0.6026462610758907, 1.0823975086197308`}, {0.5725208178864806, 
-     1.0709038904520198`}}]}, 
-   {RGBColor[0.47755820259649284`, 0.45080088974301447`, 0.7503111466979064], 
-    PolygonBox[{{-0.1305866988321232, 
-     1.1493586995928453`}, {-0.148479194023342, 
-     1.1442838925515653`}, {-0.1492077776769784, 1.1718025945749795`}}]}, 
-   {RGBColor[0.5443939115205854, 0.08446174112117277, 0.3909502242223588], 
-    PolygonBox[{{-0.21365887487778087`, 
-     1.1718025945749795`}, {-0.2350238188837482, 
-     1.1804823248359488`}, {-0.24597192661567463`, 1.215632222730296}}]}, 
-   {RGBColor[0.19303749778795654`, 0.4575231231382251, 0.7400732408963786], 
-    PolygonBox[{{-0.07937947927061596, 
-     1.209592065076053}, {-0.09429397791150501, 
-     1.19347949237453}, {-0.09389624210176266, 1.229676224226804}}]}, 
-   {RGBColor[0.34209649982085155`, 0.4715664187614479, 0.5811567377313867], 
-    PolygonBox[{{0.4729943201987931, 1.0649627263045793`}, {
-     0.5033114644736836, 1.080106352091304}, {0.514289023108308, 
-     1.0815316157998827`}}]}, 
-   {RGBColor[0.5684199357297388, 0.6106583560152103, 0.6948906826244605], 
-    PolygonBox[{{0.4050935307882798, 0.9572012315039314}, {
-     0.43008849213295214`, 0.9545460402201607}, {0.3546184424109582, 
-     0.8573779162036022}}]}, 
-   {RGBColor[0.5825097832726169, 0.5537012799370216, 0.9482906735359213], 
-    PolygonBox[{{0.33913544795546485`, 0.8690853283071008}, {
-     0.3316739773779153, 0.8977361134276001}, {0.38611948353746794`, 
-     0.9720539255410627}}]}, 
-   {RGBColor[0.49407627157627987`, 0.19521513973264426`, 0.3521159289975555], 
+     1.0163882058552924`}, {-0.4589326274780409, 
+     1.078242063665344}, {-0.4514112494224614, 1.0724631030864908`}}]}, 
+   {RGBColor[0.07426540545241633, 0.9585937452143465, 0.6005707317476912], 
+    PolygonBox[{{0.04714187224512742, 1.127790013773416}, {
+     0.023171279776109988`, 1.157559403561087}, {0.08964855246303237, 
+     1.168235412872011}}]}, 
+   {RGBColor[0.8880512082739092, 0.1434658151274022, 0.4123336568734548], 
     PolygonBox[{{-0.4211551190558917, 
-     0.7203883433812953}, {-0.3315801751099264, 
-     0.6839001675479252}, {-0.3169720423052681, 0.6411367209382769}}]}, 
-   {RGBColor[0.7335644726718233, 0.1524057507886818, 0.6747810909521601], 
-    PolygonBox[{{-0.26518653205387555`, 
-     1.0044747691930052`}, {-0.31409582600342145`, 
-     1.0243975835155394`}, {-0.24209693351011033`, 1.069059086894227}}]}, 
-   {RGBColor[0.8312042287721, 0.11888841565396246`, 0.1615931118840903], 
-    PolygonBox[{{-0.09276344282316971, 
-     1.069059086894227}, {-0.13211175302367875`, 
-     1.0578855363145696`}, {-0.14375994495981842`, 1.1082152555715001`}}]}, 
-   {RGBColor[0.32641050838713714`, 0.6953791224646859, 0.2630153499174064], 
-    PolygonBox[{{0.38611948353746794`, 0.9720539255410627}, {
-     0.3856620785096914, 0.9944229446520764}, {0.45296109020258357`, 
-     1.0554433169768938`}}]}, 
-   {RGBColor[0.2512530334625689, 0.8642059002453404, 0.0034011196857974824`], 
-    PolygonBox[{{-0.24209693351011033`, 
-     1.069059086894227}, {-0.21466707726123596`, 
-     1.0578855363145696`}, {-0.26518653205387555`, 1.0044747691930052`}}]}, 
-   {RGBColor[0.6868403208704215, 0.4888563450700407, 0.775936615082766], 
-    PolygonBox[{{0.488249911253106, 1.0649627263045793`}, {0.5118597175512024,
-      1.0760301873923765`}, {0.49364404411870333`, 1.0647196962434133`}}]}, 
-   {RGBColor[0.5605647526495001, 0.2975662681079314, 0.9299834142937768], 
-    PolygonBox[{{0.6235569125510252, 1.0735094544872248`}, {
-     0.6087149291901947, 1.0852430631598613`}, {0.6026462610758907, 
-     1.0823975086197308`}}]}, 
-   {RGBColor[0.7647183318138606, 0.5666180437039265, 0.07124132713425868], 
-    PolygonBox[{{-0.13211175302367875`, 
-     1.0578855363145696`}, {-0.1755628618441475, 
-     1.0538103237489005`}, {-0.16321196621758213`, 1.1063909823994456`}}]}, 
-   {RGBColor[0.1890086812463565, 0.5471685239950685, 0.4299881581825131], 
-    PolygonBox[{{0.5629031023876767, 1.0554433169768938`}, {
-     0.5541033554595297, 1.0647196962434133`}, {0.5918017181842851, 
-     1.07926501214083}}]}, 
-   {RGBColor[0.8037211129634696, 0.6853129295787856, 0.6985215527796922], 
-    PolygonBox[{{0.4862414802036295, 1.0681735034221609`}, {0.514289023108308,
-      1.0815316157998827`}, {0.5118597175512024, 1.0760301873923765`}}]}, 
-   {RGBColor[0.9652174891389258, 0.7721842224572222, 0.9942999567590731], 
-    PolygonBox[{{-0.29424820730576223`, 
-     0.6167529025824127}, {-0.18162813577029646`, 
-     0.6050164970315429}, {-0.1685753252437488, 0.5978838719111872}}]}, 
-   {RGBColor[0.3484789849518706, 0.5352340614252877, 0.7832014562115215], 
-    PolygonBox[{{-0.21365887487778087`, 
-     1.1718025945749795`}, {-0.18311887938015142`, 
-     1.1686421825072826`}, {-0.16827082484891667`, 1.1424349295862264`}}]}, 
-   {RGBColor[0.3540499695785464, 0.9857690715172229, 0.2475341781771241], 
-    PolygonBox[{{0.5033114644736836, 1.080106352091304}, {0.4729943201987931, 
-     1.0649627263045793`}, {0.45296109020258357`, 1.0554433169768938`}}]}, 
-   {RGBColor[0.4975691672769178, 0.7087907506999513, 0.8946045226771489], 
-    PolygonBox[{{0.6044972283403646, 1.069622628223241}, {0.5918017181842851, 
-     1.07926501214083}, {0.6087149291901947, 1.0852430631598613`}}]}, 
-   {RGBColor[0.7444589760925986, 0.6103938773046145, 0.5626348379824457], 
-    PolygonBox[{{0.5725208178864806, 1.0709038904520198`}, {
-     0.5848915048246952, 1.0554433169768938`}, {0.6174571565154766, 
-     1.0682495751482417`}}]}, 
-   {RGBColor[0.6943547797428908, 0.3401196254860279, 0.5265434598945442], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.09389624210176266, 
-     1.229676224226804}, {-0.12014053320031041`, 1.215632222730296}}]}, 
-   {RGBColor[0.1388403903328217, 0.5544662132929448, 0.6866791993990287], 
-    PolygonBox[{{0.0685211043401446, 1.0253050297967365`}, {
-     0.11574496325293374`, 1.0761800987395242`}, {0.14512345608432284`, 
-     1.0554433169768938`}}]}, 
-   {RGBColor[0.6929769748523023, 0.7606196781346564, 0.7821105322579895], 
-    PolygonBox[{{0.49364404411870333`, 1.0647196962434133`}, {
-     0.4749494926396021, 1.0554433169768938`}, {0.488249911253106, 
-     1.0649627263045793`}}]}, 
-   {RGBColor[0.8099582184927312, 0.11779668251082276`, 0.3518755330556733], 
-    PolygonBox[{{0.44937291172340327`, 0.9684761028521621}, {
-     0.43008849213295214`, 0.9545460402201607}, {0.5560295395130126, 
-     1.0399827435017674`}}]}, 
-   {RGBColor[0.7365418042054728, 0.8046324508356963, 0.7283525879951878], 
-    PolygonBox[{{-0.1492077776769784, 
-     1.1718025945749795`}, {-0.11858445472597715`, 
-     1.1804823248359488`}, {-0.1305866988321232, 1.1493586995928453`}}]}, 
-   {RGBColor[0.9281041413833895, 0.49779265584380195`, 0.22555164651781645`], 
-    PolygonBox[{{0.514289023108308, 1.0815316157998827`}, {0.4862414802036295,
-      1.0681735034221609`}, {0.4729943201987931, 1.0649627263045793`}}]}, 
-   {RGBColor[0.7605665496318026, 0.09449995181313886, 0.5162563775136972], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.1898782562908769, 
-     1.2028409232623876`}, {-0.2228855864094891, 1.2062548844363152`}}]}, 
-   {RGBColor[0.783922376056573, 0.19846142616836548`, 0.7462487815020777], 
-    PolygonBox[{{-0.24597192661567463`, 
-     1.215632222730296}, {-0.2228855864094891, 
-     1.2062548844363152`}, {-0.21365887487778087`, 1.1718025945749795`}}]}, 
-   {RGBColor[0.28385279027580523`, 0.6677324207678987, 0.8810451494381957], 
-    PolygonBox[{{-0.09276344282316971, 
-     1.069059086894227}, {-0.06151128305270919, 1.0857539973040902`}, {
-     0.007889970256088475, 1.0541649809763214`}}]}, 
-   {RGBColor[0.4983162950970217, 0.6928452010113986, 0.28850791851398383`], 
-    PolygonBox[{{0.5560295395130126, 1.0399827435017674`}, {
-     0.5848915048246952, 1.0554433169768938`}, {0.44937291172340327`, 
-     0.9684761028521621}}]}, 
-   {RGBColor[0.6479325105231226, 0.5623899517245603, 0.6740511967599419], 
-    PolygonBox[{{0.6026462610758907, 1.0823975086197308`}, {
-     0.6174571565154766, 1.0682495751482417`}, {0.6235569125510252, 
-     1.0735094544872248`}}]}, 
-   {RGBColor[0.9577495277704169, 0.6098097057944944, 0.3076093787198939], 
-    PolygonBox[{{0.12901662880263762`, 0.9907151771869445}, {
-     0.1891002609583601, 1.0554433169768938`}, {0.2111647008261305, 
-     0.9712517573586483}}]}, 
-   {RGBColor[0.06446595146604484, 0.87900512104367, 0.5014465277682216], 
-    PolygonBox[{{0.5118597175512024, 1.0760301873923765`}, {0.488249911253106,
-      1.0649627263045793`}, {0.4862414802036295, 1.0681735034221609`}}]}, 
-   {RGBColor[0.39741336361811164`, 0.4848191207325312, 0.37069411969747756`], 
-    PolygonBox[{{0.5918017181842851, 1.07926501214083}, {0.6044972283403646, 
-     1.069622628223241}, {0.5629031023876767, 1.0554433169768938`}}]}, 
-   {RGBColor[0.6927520583022295, 0.019735896476279713`, 0.8838080466255358], 
-    PolygonBox[{{-0.18311887938015142`, 
-     1.1686421825072826`}, {-0.1492077776769784, 
-     1.1718025945749795`}, {-0.148479194023342, 1.1442838925515653`}}]}, 
-   {RGBColor[0.05185359762068553, 0.5810277878346455, 0.6866946428087914], 
-    PolygonBox[{{0.38611948353746794`, 0.9720539255410627}, {
-     0.4050935307882798, 0.9572012315039314}, {0.33913544795546485`, 
-     0.8690853283071008}}]}, 
-   {RGBColor[0.9251921734950044, 0.8231249890886636, 0.22024339930194015`], 
-    PolygonBox[{{0.6087149291901947, 1.0852430631598613`}, {
-     0.6235569125510252, 1.0735094544872248`}, {0.6044972283403646, 
-     1.069622628223241}}]}, 
-   {RGBColor[0.7036600622888252, 0.069940979777118, 0.24380053400132073`], 
-    PolygonBox[{{-0.18162813577029646`, 
-     0.6050164970315429}, {-0.29424820730576223`, 
-     0.6167529025824127}, {-0.3169720423052681, 0.6411367209382769}}]}, 
-   {RGBColor[0.3678896627635009, 0.9820792013184032, 0.01617568938478464], 
-    PolygonBox[{{0.22593451804470063`, 0.9009211919187368}, {
-     0.16289420932903884`, 0.8330075001689226}, {0.14910727124930218`, 
-     0.9043960473290981}}]}, 
-   {RGBColor[0.06588599158167252, 0.2562657316701342, 0.36900464101567665`], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.12014053320031041`, 
-     1.215632222730296}, {-0.15322936758674213`, 1.2062548844363152`}}]}, 
-   {RGBColor[0.4035043171009607, 0.33956573268848156`, 0.4365127445839907], 
-    PolygonBox[{{0.14684245009180416`, 0.6970156573660474}, {
-     0.05683766341012611, 0.6489337761118948}, {0.06635964857164711, 
-     0.6762731627691948}}]}, 
-   {RGBColor[0.26873372928890205`, 0.4521092102334703, 0.4384407451008032], 
-    PolygonBox[{{-0.1684299173640718, 
-     1.2632243802305383`}, {-0.15322936758674213`, 
-     1.2062548844363152`}, {-0.1898782562908769, 1.2028409232623876`}}]}, 
-   {RGBColor[0.21795416862438, 0.6734534143448674, 0.6458761693268824], 
-    PolygonBox[{{-0.12014053320031041`, 
-     1.215632222730296}, {-0.09389624210176266, 
-     1.229676224226804}, {-0.09429397791150501, 1.19347949237453}}]}, 
-   {RGBColor[0.23069930143164252`, 0.987042429677403, 0.5810730440591991], 
-    PolygonBox[{{0.11103410283946495`, 0.995030181281185}, {
-     0.16711185852134147`, 1.0554433169768938`}, {0.16543473345648196`, 
-     1.0724119348724233`}}]}, 
-   {RGBColor[0.23773035201495918`, 0.495466304311984, 0.4410712005961279], 
-    PolygonBox[{{-0.34108025456028795`, 
-     0.7413023566596844}, {-0.4313437489833355, 
-     0.778070827421038}, {-0.4358719965725605, 0.8503155354146719}}]}, 
-   {RGBColor[0.45022629733736075`, 0.26968449540848005`, 0.6397150862376155], 
-    PolygonBox[{{-0.18311887938015142`, 
-     1.1686421825072826`}, {-0.21365887487778087`, 
-     1.1718025945749795`}, {-0.2228855864094891, 1.2062548844363152`}}]}, 
-   {RGBColor[0.9320488976848134, 0.246397388809672, 0.9828684550285403], 
-    PolygonBox[{{-0.09429397791150501, 
-     1.19347949237453}, {-0.11858445472597715`, 
-     1.1804823248359488`}, {-0.12014053320031041`, 1.215632222730296}}]}, 
-   {RGBColor[0.020000509071302464`, 0.6603566103156486, 0.8135684211399123], 
-    PolygonBox[{{-0.05843637246210363, 
-     0.608213477292599}, {-0.1685753252437488, 
-     0.5978838719111872}, {-0.18162813577029646`, 0.6050164970315429}}]}, 
-   {RGBColor[0.09883443965319594, 0.0948588528400518, 0.27023282451222697`], 
-    PolygonBox[{{0.041306032254755924`, 
-     0.636536873821369}, {-0.05843637246210363, 
-     0.608213477292599}, {-0.05648923164723632, 0.6167529025824127}}]}, 
-   {RGBColor[0.20716642446684452`, 0.07798276927595804, 0.7006829328419892], 
-    PolygonBox[{{0.5442085509085753, 1.046166937710374}, {0.5629031023876767, 
-     1.0554433169768938`}, {0.6044972283403646, 1.069622628223241}}]}, 
-   {RGBColor[0.048735884575335175`, 0.8654745578440093, 0.6442669069606948], 
-    PolygonBox[{{0.5008281876878089, 1.0553460688985137`}, {0.488249911253106,
-      1.0649627263045793`}, {0.4749494926396021, 1.0554433169768938`}}]}, 
-   {RGBColor[0.5600547324572704, 0.7312421000023637, 0.09675956033856159], 
-    PolygonBox[{{0.10925095303163398`, 1.0118841115916113`}, {
-     0.16543473345648196`, 1.0724119348724233`}, {0.17141519673380198`, 
-     1.0781903652908957`}}]}, 
-   {RGBColor[0.000502999327298248, 0.14883544014928307`, 0.400995203350766], 
-    PolygonBox[{{0.4653317771407981, 1.0399827435017674`}, {
-     0.45296109020258357`, 1.0554433169768938`}, {0.4729943201987931, 
-     1.0649627263045793`}}]}, 
-   {RGBColor[0.08327676466313738, 0.22620863620652787`, 0.3968553603873415], 
-    PolygonBox[{{0.45296109020258357`, 1.0554433169768938`}, {
-     0.4653317771407981, 1.0399827435017674`}, {0.38611948353746794`, 
-     0.9720539255410627}}]}, 
-   {RGBColor[0.9949320262911885, 0.10776942392510991`, 0.062486226697064495`],
-     PolygonBox[{{0.12181253107388049`, 1.0088697403780074`}, {
-     0.18079524707030462`, 1.0724119348724233`}, {0.1891002609583601, 
-     1.0554433169768938`}}]}, 
+     0.7204286114930717}, {-0.46505560012737485`, 
+     0.7749499125163986}, {-0.47558098155363865`, 0.833053492751338}}]}, 
+   {RGBColor[0.9406476475305903, 0.8429412826479501, 0.9374470156369776], 
+    PolygonBox[{{-0.4343409005687376, 
+     0.9993939914051732}, {-0.4265750072781612, 
+     1.055492790882377}, {-0.4027263229168068, 1.0762289331916364`}}]}, 
+   {RGBColor[0.3451912653964089, 0.4112041568629501, 0.8895985856924615], 
+    PolygonBox[{{0.3080919380498636, 0.8377855684290413}, {
+     0.29445487143159693`, 0.7966917803990197}, {0.3719460755213007, 
+     0.8719576332580304}}]}, 
+   {RGBColor[0.055033385134577006`, 0.8571793006339519, 0.858262524649209], 
+    PolygonBox[{{-0.16292626078041247`, 
+     1.154938510850945}, {-0.11947515195994377`, 
+     1.159011659533508}, {-0.13810289651466592`, 1.153508152450255}}]}, 
+   {RGBColor[0.4396613850532016, 0.8347404744325375, 0.7851689167928881], 
+    PolygonBox[{{0.277940611068949, 0.7812518303398264}, {
+     0.29445487143159693`, 0.7966917803990197}, {0.16699077580763672`, 
+     0.7561964605517375}}]}, 
+   {RGBColor[0.02736068945094483, 0.26389292669080855`, 0.1973802171958523], 
+    PolygonBox[{{-0.20227457098092153`, 
+     1.1437666297254487`}, {-0.16292626078041247`, 
+     1.154938510850945}, {-0.1575549177724295, 1.1516848032319786`}}]}, 
+   {RGBColor[0.9745560424275639, 0.006309588417356737, 0.6329154053012214], 
+    PolygonBox[{{-0.4705518121521985, 
+     1.0554949897226207`}, {-0.4795124086418528, 
+     0.9907655718787681}, {-0.47942049724312896`, 0.9044441355818891}}]}, 
+   {RGBColor[0.7697333275231324, 0.24306180492252993`, 0.9663987651517112], 
+    PolygonBox[{{0.3719460755213007, 0.8719576332580304}, {0.3796680814288364,
+      0.904351121851102}, {0.3080919380498636, 0.8377855684290413}}]}, 
+   {RGBColor[0.3019829125678579, 0.2589750964162485, 0.3728856149526385], 
+    PolygonBox[{{0.08964855246303237, 1.168235412872011}, {
+     0.12278784454578466`, 1.1270790830945558`}, {0.04714187224512742, 
+     1.127790013773416}}]}, 
+   {RGBColor[0.1986515277085612, 0.2713081108162563, 0.806036013973108], 
+    PolygonBox[{{-0.2676960322852213, 
+     0.6082430811202744}, {-0.3372268140380594, 
+     0.6365707094787061}, {-0.3732488372650103, 0.6489697434544544}}]}, 
+   {RGBColor[0.9280619575543179, 0.6884752031491261, 0.5576348234213273], 
+    PolygonBox[{{0.16908308224749496`, 0.7311811291094044}, {
+     0.12052258350825555`, 0.678867247114163}, {0.14684245009180416`, 
+     0.6970269023277393}}]}, 
+   {RGBColor[0.8698254539480959, 0.14874777992633503`, 0.7570933880753721], 
+    PolygonBox[{{0.37330297568985543`, 0.9331556616454404}, {
+     0.3579027443541505, 0.9469224074388634}, {0.30233699225742705`, 
+     0.9016609245347813}}]}, 
+   {RGBColor[0.015080410651516107`, 0.7472453113100899, 0.6791115096676485], 
+    PolygonBox[{{-0.11947515195994377`, 
+     1.159011659533508}, {-0.08037093654285529, 
+     1.154934383084733}, {-0.12059676664042722`, 1.1516829553244219`}}]}, 
+   {RGBColor[0.21679250717362009`, 0.5019497868868497, 0.14030480482538366`], 
+    PolygonBox[{{0.16699077580763672`, 0.7561964605517375}, {
+     0.15452575195078844`, 0.7419892253189567}, {0.277940611068949, 
+     0.7812518303398264}}]}, 
+   {RGBColor[0.13301629765330514`, 0.4898024801833465, 0.6598711794549466], 
+    PolygonBox[{{-0.23352673075138206`, 
+     1.127072836725963}, {-0.20227457098092153`, 
+     1.1437666297254487`}, {-0.17517077647584658`, 1.1466833943495929`}}]}, 
+   {RGBColor[0.6193817137304294, 0.879369857128594, 0.7178017472848628], 
+    PolygonBox[{{-0.46505560012737485`, 
+     0.7749499125163986}, {-0.4211551190558917, 
+     0.7204286114930717}, {-0.4032285622509722, 0.6763113581483146}}]}, 
+   {RGBColor[0.5201805053051023, 0.9381703378455872, 0.8044789974849869], 
+    PolygonBox[{{0.027060325858137998`, 0.6315194431436333}, {
+     0.09691193409753496, 0.6688325482293082}, {0.08628903617417989, 
+     0.6626245127947804}}]}, 
+   {RGBColor[0.12334087009263084`, 0.7607658348826865, 0.0766609210803344], 
+    PolygonBox[{{-0.3372268140380594, 
+     0.6365707094787061}, {-0.2676960322852213, 
+     0.6082430811202744}, {-0.2454116123702168, 0.6065574239770264}}]}, 
+   {RGBColor[0.9161954660544565, 0.9521116525639375, 0.648212476321758], 
+    PolygonBox[{{-0.40976920420965807`, 
+     1.0253528597244084`}, {-0.4027263229168068, 
+     1.0762289331916364`}, {-0.33297119401424624`, 1.0910093800144551`}}]}, 
+   {RGBColor[0.8887576103716666, 0.8699948581240224, 0.31552166876660337`], 
+    PolygonBox[{{0.16463145372384555`, 0.7287823428880205}, {
+     0.22487322771787405`, 0.7936801363525431}, {0.20201708832751494`, 
+     0.7564654725702968}}]}, 
+   {RGBColor[0.6288677594281433, 0.8426374631525135, 0.5548663201934037], 
+    PolygonBox[{{-0.23352673075138206`, 
+     1.127072836725963}, {-0.25268346293492755`, 
+     1.1064346897398687`}, {-0.33297119401424624`, 1.0910093800144551`}}]}, 
+   {RGBColor[0.5456517767272298, 0.06501383193046828, 0.6947975681047458], 
+    PolygonBox[{{-0.13810289651466592`, 
+     1.153508152450255}, {-0.1575549177724295, 
+     1.1516848032319786`}, {-0.16292626078041247`, 1.154938510850945}}]}, 
+   {RGBColor[0.6575871128400026, 0.12433201446078712`, 0.43127400456732645`], 
+    PolygonBox[{{-0.44856340971517994`, 
+     1.0554938903024988`}, {-0.456926332108726, 
+     0.9950795617359579}, {-0.4597904804971464, 1.0119340846919451`}}]}, 
+   {RGBColor[0.23729025144403826`, 0.9144975266187743, 0.5504754478756808], 
+    PolygonBox[{{-0.4667717630362841, 
+     1.0724638711121717`}, {-0.4755673878339037, 
+     1.0089204219404757`}, {-0.4795124086418528, 0.9907655718787681}}]}, 
+   {RGBColor[0.8294744345700338, 0.36157845368712715`, 0.8529173115619708], 
+    PolygonBox[{{-0.1575549177724295, 
+     1.1516848032319786`}, {-0.17517077647584658`, 
+     1.1466833943495929`}, {-0.20227457098092153`, 1.1437666297254487`}}]}, 
+   {RGBColor[0.6848283145906751, 0.3019560402977728, 0.07055539020287704], 
+    PolygonBox[{{0.23533548052884068`, 0.9688489524914223}, {
+     0.22593451804470063`, 0.9009339197579525}, {0.2111647008261305, 
+     0.97126709917047}}]}, 
    {RGBColor[
-    0.23054491506719454`, 0.5014473889912996, 0.0018515191196550873`], 
-    PolygonBox[{{0.11400161968152642`, 1.0163377287560558`}, {
-     0.17141519673380198`, 1.0781903652908957`}, {0.18079524707030462`, 
-     1.0724119348724233`}}]}, 
-   {RGBColor[0.46216641609442277`, 0.5661466656079399, 0.23519214318666948`], 
-    PolygonBox[{{0.11574496325293374`, 1.0761800987395242`}, {
-     0.0685211043401446, 1.0253050297967365`}, {0.007889970256088475, 
-     1.0541649809763214`}}]}, 
-   {RGBColor[0.9929546482603553, 0.07477861584769618, 0.019958157539165855`], 
-    PolygonBox[{{-0.05648923164723632, 0.6167529025824127}, {
-     0.05683766341012611, 0.6489337761118948}, {0.041306032254755924`, 
-     0.636536873821369}}]}, 
-   {RGBColor[0.2845693322652174, 0.37831413335813013`, 0.7885975661935185], 
-    PolygonBox[{{0.5009264703262245, 1.0564768293334759`}, {
-     0.4862414802036295, 1.0681735034221609`}, {0.488249911253106, 
-     1.0649627263045793`}}]}, 
-   {RGBColor[0.9083368878266271, 0.27139619880478194`, 0.8360458273056424], 
-    PolygonBox[{{0.4877039236386419, 1.0508422130256005`}, {
-     0.4729943201987931, 1.0649627263045793`}, {0.4862414802036295, 
-     1.0681735034221609`}}]}, 
-   {RGBColor[0.6986567985150922, 0.7632343025368977, 0.2447333435713981], 
-    PolygonBox[{{0.587005613020428, 1.053071293515738}, {0.6174571565154766, 
-     1.0682495751482417`}, {0.5848915048246952, 1.0554433169768938`}}]}, 
-   {RGBColor[0.8998192836163577, 0.4588038045967209, 0.45479058396115946`], 
-    PolygonBox[{{0.4749494926396021, 1.0554433169768938`}, {
-     0.48374923956774896`, 1.046166937710374}, {0.5008281876878089, 
-     1.0553460688985137`}}]}, 
-   {RGBColor[0.013460279251715557`, 0.5905512730607261, 0.901586819068483], 
-    PolygonBox[{{0.5807370246919957, 1.0585187118427875`}, {
-     0.6044972283403646, 1.069622628223241}, {0.6235569125510252, 
-     1.0735094544872248`}}]}, 
-   {RGBColor[0.8283725873534671, 0.23934658725231417`, 0.02843817475141397], 
-    PolygonBox[{{-0.2228855864094891, 
-     1.2062548844363152`}, {-0.1898782562908769, 
-     1.2028409232623876`}, {-0.18311887938015142`, 1.1686421825072826`}}]}, 
-   {RGBColor[0.016196647018802635`, 0.175826989629015, 0.5396320291279106], 
-    PolygonBox[{{0.4050935307882798, 0.9572012315039314}, {
-     0.38611948353746794`, 0.9720539255410627}, {0.4653317771407981, 
-     1.0399827435017674`}}]}, 
-   {RGBColor[0.883751788962654, 0.7988846864009436, 0.053990721506435246`], 
-    PolygonBox[{{0.5953065206878334, 1.060102297217934}, {0.6235569125510252, 
-     1.0735094544872248`}, {0.6174571565154766, 1.0682495751482417`}}]}, 
-   {RGBColor[0.869910396781143, 0.5409542866033392, 0.1883308412704976], 
-    PolygonBox[{{-0.1492077776769784, 
-     1.1718025945749795`}, {-0.18311887938015142`, 
-     1.1686421825072826`}, {-0.1898782562908769, 1.2028409232623876`}}]}, 
-   {RGBColor[0.2212385032729831, 0.8616621661742196, 0.5784489942169098], 
-    PolygonBox[{{-0.11858445472597715`, 
-     1.1804823248359488`}, {-0.1492077776769784, 
-     1.1718025945749795`}, {-0.15322936758674213`, 1.2062548844363152`}}]}, 
-   {RGBColor[0.4725431299527627, 0.08560863003366448, 0.5760320321687462], 
-    PolygonBox[{{0.43008849213295214`, 0.9545460402201607}, {
-     0.4050935307882798, 0.9572012315039314}, {0.50793209629513, 
-     1.0348291896921888`}}]}, 
-   {RGBColor[0.2355317234817953, 0.5341111974576773, 0.006239750473702177], 
-    PolygonBox[{{0.6044972283403646, 1.069622628223241}, {0.5807370246919957, 
-     1.0585187118427875`}, {0.5442085509085753, 1.046166937710374}}]}, 
-   {RGBColor[0.9473159633701231, 0.71529943468209, 0.3208478867411111], 
-    PolygonBox[{{-0.3090130980086185, 
-     0.9566070731936991}, {-0.3766299121269057, 
-     0.9841514544125627}, {-0.31409582600342145`, 1.0243975835155394`}}]}, 
-   {RGBColor[0.08293843382798305, 0.20055063510331883`, 0.20198547537888412`],
-     PolygonBox[{{-0.15322936758674213`, 
-     1.2062548844363152`}, {-0.12014053320031041`, 
-     1.215632222730296}, {-0.11858445472597715`, 1.1804823248359488`}}]}, 
-   {RGBColor[0.5331759306360673, 0.3096355894846454, 0.4470988719321163], 
-    PolygonBox[{{-0.21466707726123596`, 
-     1.0578855363145696`}, {-0.1755628618441475, 
-     1.0538103237489005`}, {-0.19546431867047906`, 0.9972089513566588}}]}, 
-   {RGBColor[0.5259248185649328, 0.15929339525413777`, 0.5201915493370333], 
-    PolygonBox[{{0.488249911253106, 1.0649627263045793`}, {0.5008281876878089,
-      1.0553460688985137`}, {0.5009264703262245, 1.0564768293334759`}}]}, 
-   {RGBColor[0.9532283787262541, 0.9963389524966995, 0.37215502615280305`], 
-    PolygonBox[{{0.4729943201987931, 1.0649627263045793`}, {
-     0.4877039236386419, 1.0508422130256005`}, {0.4653317771407981, 
-     1.0399827435017674`}}]}, 
-   {RGBColor[0.10138935531472315`, 0.9128352974395573, 0.7302518672621998], 
-    PolygonBox[{{-0.1898782562908769, 
-     1.2028409232623876`}, {-0.15322936758674213`, 
-     1.2062548844363152`}, {-0.1492077776769784, 1.1718025945749795`}}]}, 
-   {RGBColor[0.9412159194152747, 0.2825684469858407, 0.3691536147612655], 
-    PolygonBox[{{0.5848915048246952, 1.0554433169768938`}, {
-     0.5560295395130126, 1.0399827435017674`}, {0.587005613020428, 
-     1.053071293515738}}]}, 
-   {RGBColor[0.9651986622821143, 0.8873993653555079, 0.5762257695870159], 
-    PolygonBox[{{0.6235569125510252, 1.0735094544872248`}, {
-     0.5953065206878334, 1.060102297217934}, {0.5807370246919957, 
-     1.0585187118427875`}}]}, 
-   {RGBColor[
-    0.056629217593718195`, 0.1747607123654875, 0.029276187432450307`], 
-    PolygonBox[{{0.4862414802036295, 1.0681735034221609`}, {
-     0.5009264703262245, 1.0564768293334759`}, {0.4877039236386419, 
-     1.0508422130256005`}}]}, 
-   {RGBColor[0.7015457109790437, 0.1285088156806371, 0.202794572473588], 
-    PolygonBox[{{-0.13211175302367875`, 
-     1.0578855363145696`}, {-0.09276344282316971, 
-     1.069059086894227}, {-0.047832512837763054`, 1.0243975835155394`}}]}, 
-   {RGBColor[0.6282246411501786, 0.4841514394379203, 0.6802840238711929], 
-    PolygonBox[{{0.50793209629513, 1.0348291896921888`}, {0.5560295395130126, 
-     1.0399827435017674`}, {0.43008849213295214`, 0.9545460402201607}}]}, 
-   {RGBColor[0.6991353375508127, 0.968319934446267, 0.5038991380152413], 
-    PolygonBox[{{0.5123297767825338, 1.0430748406060706`}, {
-     0.5442085509085753, 1.046166937710374}, {0.5807370246919957, 
-     1.0585187118427875`}}]}, 
-   {RGBColor[0.3127186642790796, 0.6368947141176258, 0.9303922602911836], 
-    PolygonBox[{{0.6174571565154766, 1.0682495751482417`}, {0.587005613020428,
-      1.053071293515738}, {0.5953065206878334, 1.060102297217934}}]}, 
-   {RGBColor[0.10360514809496268`, 0.5924793650087397, 0.9481237189619423], 
+    0.021239119713748478`, 0.16055152307803056`, 0.11576735229031643`], 
+    PolygonBox[{{-0.12059676664042722`, 
+     1.1516829553244219`}, {-0.13810289651466592`, 
+     1.153508152450255}, {-0.11947515195994377`, 1.159011659533508}}]}, 
+   {RGBColor[0.340094045061587, 0.8146901225304268, 0.3913848381160929], 
+    PolygonBox[{{-0.039496824960707805`, 
+     1.1270631352306735`}, {-0.052941080293980924`, 1.1437591630509145`}, {
+     0.023171279776109988`, 1.157559403561087}}]}, 
+   {RGBColor[0.9611991039363137, 0.6745360984832027, 0.6341910940024384], 
+    PolygonBox[{{0.30233699225742705`, 0.9016609245347813}, {
+     0.2843892524327723, 0.8866017094976937}, {0.19187548511915106`, 
+     0.8688836973899141}}]}, 
+   {RGBColor[0.544582287334014, 0.5678792229351048, 0.9647749087442405], 
+    PolygonBox[{{0.2843892524327723, 0.8866017094976937}, {
+     0.30233699225742705`, 0.9016609245347813}, {0.3579027443541505, 
+     0.9469224074388634}}]}, 
+   {RGBColor[0.39646006169469405`, 0.6677269742983793, 0.5551230319558875], 
+    PolygonBox[{{-0.4589326274780409, 
+     1.078242063665344}, {-0.4674951960629281, 
+     1.0163882058552924`}, {-0.4755673878339037, 1.0089204219404757`}}]}, 
+   {RGBColor[0.7363103393877086, 0.29386217855447994`, 0.4115950490517213], 
+    PolygonBox[{{-0.4514112494224614, 
+     1.0724631030864908`}, {-0.4597904804971464, 
+     1.0119340846919451`}, {-0.4674951960629281, 1.0163882058552924`}}]}, 
+   {RGBColor[0.4068545452945307, 0.9097331991374684, 0.6149686165762407], 
+    PolygonBox[{{-0.08037093654285529, 
+     1.154934383084733}, {-0.052941080293980924`, 
+     1.1437591630509145`}, {-0.10831654130712913`, 1.1466800516378346`}}]}, 
+   {RGBColor[0.5185760369333496, 0.9505063473648356, 0.6118107882991495], 
+    PolygonBox[{{-0.15294558490215313`, 
+     0.5956289328339464}, {-0.23497022365154455`, 
+     0.6041814495829584}, {-0.2454116123702168, 0.6065574239770264}}]}, 
+   {RGBColor[0.48007734454171325`, 0.5885635308887076, 0.851061796040639], 
+    PolygonBox[{{0.023171279776109988`, 1.157559403561087}, {
+     0.04714187224512742, 1.127790013773416}, {-0.039496824960707805`, 
+     1.1270631352306735`}}]}, 
+   {RGBColor[0.7741172301341475, 0.6165804837829263, 0.338864454848927], 
+    PolygonBox[{{0.1891002609583601, 1.0554620071189653`}, {
+     0.1980599779119168, 1.1201914250067946`}, {0.2204200286141559, 
+     1.038124129252565}}]}, 
+   {RGBColor[0.1491777694205616, 0.457696173964635, 0.5834174786707826], 
+    PolygonBox[{{0.08628903617417989, 0.6626245127947804}, {
+     0.02073589179923415, 0.62760731779916}, {0.027060325858137998`, 
+     0.6315194431436333}}]}, 
+   {RGBColor[0.6217421412344222, 0.8934657542484312, 0.009009895807147172], 
+    PolygonBox[{{-0.4027263229168068, 
+     1.0762289331916364`}, {-0.40976920420965807`, 
+     1.0253528597244084`}, {-0.4343409005687376, 0.9993939914051732}}]}, 
+   {RGBColor[0.6322352574082719, 0.22770164699368234`, 0.37384222147182866`], 
     PolygonBox[{{-0.4313437489833355, 
-     0.778070827421038}, {-0.34108025456028795`, 
-     0.7413023566596844}, {-0.3315801751099264, 0.6839001675479252}}]}, 
-   {RGBColor[0.42822573696185473`, 0.88577617791223, 0.8650450963447296], 
-    PolygonBox[{{0.5388810443285845, 1.053476999073239}, {0.5008281876878089, 
-     1.0553460688985137`}, {0.48374923956774896`, 1.046166937710374}}]}, 
-   {RGBColor[0.5514684495281537, 0.12481537514609053`, 0.41301178602670396`], 
-    PolygonBox[{{0.48374923956774896`, 1.046166937710374}, {
-     0.5123297767825338, 1.0430748406060706`}, {0.5388810443285845, 
-     1.053476999073239}}]}, 
-   {RGBColor[0.8985986847195138, 0.7241595302436379, 0.7728633584550983], 
-    PolygonBox[{{0.007889970256088475, 
-     1.0541649809763214`}, {-0.047832512837763054`, 
-     1.0243975835155394`}, {-0.09276344282316971, 1.069059086894227}}]}, 
-   {RGBColor[0.024056886695908553`, 0.4529619460524059, 0.5041765758643546], 
-    PolygonBox[{{0.14512345608432284`, 1.0554433169768938`}, {
-     0.09305093188315408, 0.9993456251434742}, {0.0685211043401446, 
-     1.0253050297967365`}}]}, 
-   {RGBColor[0.5787873270492665, 0.9833583511603146, 0.23418450809231084`], 
-    PolygonBox[{{0.4653317771407981, 1.0399827435017674`}, {0.50793209629513, 
-     1.0348291896921888`}, {0.4050935307882798, 0.9572012315039314}}]}, 
+     0.7781131431638849}, {-0.47558098155363865`, 
+     0.833053492751338}, {-0.47942049724312896`, 0.9044441355818891}}]}, 
+   {RGBColor[0.27604976825530536`, 0.10823535507104776`, 0.5129251881948529], 
+    PolygonBox[{{-0.25268346293492755`, 
+     1.1064346897398687`}, {-0.23352673075138206`, 
+     1.127072836725963}, {-0.18916144073701627`, 1.1392100148115087`}}]}, 
+   {RGBColor[0.731167350336374, 0.2983274374718681, 0.6246895728769921], 
+    PolygonBox[{{-0.17517077647584658`, 
+     1.1466833943495929`}, {-0.18916144073701627`, 
+     1.1392100148115087`}, {-0.23352673075138206`, 1.127072836725963}}]}, 
+   {RGBColor[0.7108535835865526, 0.8834177523667417, 0.9842901112913238], 
+    PolygonBox[{{0.37330297568985543`, 0.9331556616454404}, {
+     0.3796680814288364, 0.904351121851102}, {0.44917647211363293`, 
+     0.9903399528204031}}]}, 
+   {RGBColor[0.30740983355872986`, 0.06982454758014733, 0.8959100105324742], 
+    PolygonBox[{{-0.10831654130712913`, 
+     1.1466800516378346`}, {-0.12059676664042722`, 
+     1.1516829553244219`}, {-0.08037093654285529, 1.154934383084733}}]}, 
+   {RGBColor[0.32985037702764375`, 0.5080960201738296, 0.40851987040065096`], 
+    PolygonBox[{{0.3579027443541505, 0.9469224074388634}, {
+     0.37330297568985543`, 0.9331556616454404}, {0.43077545223969893`, 
+     1.0053601049149763`}}]}, 
+   {RGBColor[0.10815471082788686`, 0.8540291010568792, 0.4185278514451036], 
+    PolygonBox[{{-0.20397342929430384`, 
+     1.2387450360357637`}, {-0.17335010634330258`, 
+     1.247423466590059}, {-0.17932799855891815`, 1.2879686727323743`}}]}, 
+   {RGBColor[0.38219132957763713`, 0.02528630637258522, 0.9822514898161514], 
+    PolygonBox[{{-0.17335010634330258`, 
+     1.247423466590059}, {-0.13943900464012957`, 
+     1.250582267380326}, {-0.14267910985478327`, 1.2913808925008314`}}]}, 
+   {RGBColor[0.5894147891902317, 0.8365665738869028, 0.07965122374484945], 
+    PolygonBox[{{-0.33806550933607304`, 
+     1.0542099953179476`}, {-0.33297119401424624`, 
+     1.0910093800144551`}, {-0.25268346293492755`, 1.1064346897398687`}}]}, 
+   {RGBColor[0.5030737791519673, 0.6081521583109859, 0.034984150528632574`], 
+    PolygonBox[{{-0.14267910985478327`, 
+     1.2913808925008314`}, {-0.17932799855891815`, 
+     1.2879686727323743`}, {-0.17335010634330258`, 1.247423466590059}}]}, 
+   {RGBColor[0.7618362666478067, 0.8302951954096773, 0.3879182145828606], 
+    PolygonBox[{{-0.13943900464012957`, 
+     1.250582267380326}, {-0.17335010634330258`, 
+     1.247423466590059}, {-0.16254858756128635`, 1.1884642880817071`}}]}, 
+   {RGBColor[0.01875188748232892, 0.6274512738468934, 0.8757159599250903], 
+    PolygonBox[{{-0.1575549177724295, 
+     1.1516848032319786`}, {-0.13810289651466592`, 
+     1.153508152450255}, {-0.1427569567357118, 1.1903123107711837`}}]}, 
+   {RGBColor[0.24417059969554766`, 0.34226970502609033`, 0.04570324691382788],
+     PolygonBox[{{-0.17517077647584658`, 
+     1.1466833943495929`}, {-0.1575549177724295, 
+     1.1516848032319786`}, {-0.16254858756128635`, 1.1884642880817071`}}]}, 
+   {RGBColor[0.9688218613837596, 0.9224064390094109, 0.33293424776380953`], 
+    PolygonBox[{{-0.17335010634330258`, 
+     1.247423466590059}, {-0.20397342929430384`, 
+     1.2387450360357637`}, {-0.18044108275250526`, 1.183390240336999}}]}, 
+   {RGBColor[0.5488498707392719, 0.7912194705411908, 0.9083264753692744], 
+    PolygonBox[{{-0.17932799855891815`, 
+     1.2879686727323743`}, {-0.21241683294534988`, 
+     1.2785927388177585`}, {-0.20397342929430384`, 1.2387450360357637`}}]}, 
+   {RGBColor[0.23305629755497148`, 0.7024987156990254, 0.4241180851690074], 
+    PolygonBox[{{-0.18044108275250526`, 
+     1.183390240336999}, {-0.16254858756128635`, 
+     1.1884642880817071`}, {-0.17335010634330258`, 1.247423466590059}}]}, 
+   {RGBColor[0.21039852904830814`, 0.5623858428854107, 0.7921649776224771], 
+    PolygonBox[{{-0.1427569567357118, 
+     1.1903123107711837`}, {-0.16254858756128635`, 
+     1.1884642880817071`}, {-0.1575549177724295, 1.1516848032319786`}}]}, 
+   {RGBColor[0.2645937739923845, 0.32328507785459504`, 0.08692443089485757], 
+    PolygonBox[{{-0.16254858756128635`, 
+     1.1884642880817071`}, {-0.1427569567357118, 
+     1.1903123107711837`}, {-0.13943900464012957`, 1.250582267380326}}]}, 
+   {RGBColor[0.41257247251926654`, 0.49372720224670674`, 0.9015078285514087], 
+    PolygonBox[{{-0.10967177973617119`, 
+     1.287965189921433}, {-0.14267910985478327`, 
+     1.2913808925008314`}, {-0.13943900464012957`, 1.250582267380326}}]}, 
+   {RGBColor[0.02129993397999619, 0.9307802410307231, 0.6591339297292684], 
+    PolygonBox[{{-0.10889900914250011`, 
+     1.247420244035199}, {-0.13943900464012957`, 
+     1.250582267380326}, {-0.1427569567357118, 1.1903123107711837`}}]}, 
+   {RGBColor[0.6015076354879108, 0.8868368973188918, 0.6916144646340971], 
+    PolygonBox[{{-0.29424820730576223`, 
+     0.6167840617368467}, {-0.3732488372650103, 
+     0.6489697434544544}, {-0.4032285622509722, 0.6763113581483146}}]}, 
+   {RGBColor[0.3250619528608749, 0.9685396099694379, 0.010106222913942364`], 
+    PolygonBox[{{-0.16254858756128635`, 
+     1.1884642880817071`}, {-0.18044108275250526`, 
+     1.183390240336999}, {-0.17517077647584658`, 1.1466833943495929`}}]}, 
+   {RGBColor[0.5675412713557935, 0.7993693128576786, 0.6350940217896699], 
+    PolygonBox[{{-0.33297119401424624`, 
+     1.0910093800144551`}, {-0.33806550933607304`, 
+     1.0542099953179476`}, {-0.40976920420965807`, 1.0253528597244084`}}]}, 
+   {RGBColor[0.9894380640874461, 0.05213268750109146, 0.09203535112325811], 
+    PolygonBox[{{-0.22826390610877598`, 
+     1.225748736429889}, {-0.20397342929430384`, 
+     1.2387450360357637`}, {-0.21241683294534988`, 1.2785927388177585`}}]}, 
+   {RGBColor[0.2537349330986036, 0.9844026363832312, 0.10695645584557534`], 
+    PolygonBox[{{0.041306032254755924`, 0.6365517828363915}, {
+     0.12052258350825555`, 0.678867247114163}, {0.09691193409753496, 
+     0.6688325482293082}}]}, 
+   {RGBColor[0.5624446327214949, 0.8604548321395482, 0.4441709202319315], 
+    PolygonBox[{{0.20201708832751494`, 0.7564654725702968}, {
+     0.14684245009180416`, 0.6970269023277393}, {0.16463145372384555`, 
+     0.7287823428880205}}]}, 
+   {RGBColor[0.3516985385080562, 0.9105637155762312, 0.2945390714220615], 
+    PolygonBox[{{-0.18916144073701627`, 
+     1.1392100148115087`}, {-0.17517077647584658`, 
+     1.1466833943495929`}, {-0.18044108275250526`, 1.183390240336999}}]}, 
+   {RGBColor[0.7496993804554812, 0.8900870953820241, 0.08006306970783439], 
+    PolygonBox[{{-0.13810289651466592`, 
+     1.153508152450255}, {-0.12059676664042722`, 
+     1.1516829553244219`}, {-0.12493755307316523`, 1.1884624075299826`}}]}, 
+   {RGBColor[0.7256105529854313, 0.6259247208490724, 0.43059479760732433`], 
+    PolygonBox[{{-0.13943900464012957`, 
+     1.250582267380326}, {-0.10889900914250011`, 
+     1.247420244035199}, {-0.10967177973617119`, 1.287965189921433}}]}, 
+   {RGBColor[0.21200541377835935`, 0.09884375338607243, 0.34340833978655305`],
+     PolygonBox[{{-0.12493755307316523`, 
+     1.1884624075299826`}, {-0.1427569567357118, 
+     1.1903123107711837`}, {-0.13810289651466592`, 1.153508152450255}}]}, 
+   {RGBColor[0.900212697179156, 0.7559866941996651, 0.18340172721406534`], 
+    PolygonBox[{{0.16711185852134147`, 1.0554631065390871`}, {
+     0.17547478091488755`, 1.1158774351056278`}, {0.17381420284493007`, 
+     1.132961726020199}}]}, 
+   {RGBColor[0.6985057223559428, 0.06268901723448894, 0.6679543396159973], 
+    PolygonBox[{{0.18079524707030462`, 1.0724314927616663`}, {
+     0.18959111018168745`, 1.1359753887716684`}, {0.1980599779119168, 
+     1.1201914250067946`}}]}, 
+   {RGBColor[0.1618720065916026, 0.6245591620636755, 0.4094952021635758], 
+    PolygonBox[{{-0.18916144073701627`, 
+     1.1392100148115087`}, {-0.19773787866803774`, 
+     1.129970753626136}, {-0.25268346293492755`, 1.1064346897398687`}}]}, 
+   {RGBColor[0.0631844902752432, 0.7146008127139751, 0.23915258448859178`], 
+    PolygonBox[{{-0.47558098155363865`, 
+     0.833053492751338}, {-0.4313437489833355, 
+     0.7781131431638849}, {-0.4211551190558917, 0.7204286114930717}}]}, 
+   {RGBColor[0.7190350754217711, 0.624917340640337, 0.9859281796672532], 
+    PolygonBox[{{-0.19463978609064334`, 
+     1.1757979764726925`}, {-0.18044108275250526`, 
+     1.183390240336999}, {-0.20397342929430384`, 1.2387450360357637`}}]}, 
+   {RGBColor[0.13970212809815408`, 0.9221584366889497, 0.7688464874720085], 
+    PolygonBox[{{0.3546184424109582, 0.8573830486925804}, {0.3719460755213007,
+      0.8719576332580304}, {0.29445487143159693`, 0.7966917803990197}}]}, 
+   {RGBColor[0.4185626625423453, 0.9406354875272787, 0.6125953185885586], 
+    PolygonBox[{{-0.20397342929430384`, 
+     1.2387450360357637`}, {-0.22826390610877598`, 
+     1.225748736429889}, {-0.19463978609064334`, 1.1757979764726925`}}]}, 
+   {RGBColor[0.9126623978612325, 0.7052599305386733, 0.5724148910114026], 
+    PolygonBox[{{-0.1427569567357118, 
+     1.1903123107711837`}, {-0.12493755307316523`, 
+     1.1884624075299826`}, {-0.10889900914250011`, 1.247420244035199}}]}, 
+   {RGBColor[0.1051567384789669, 0.11223678121086844`, 0.9360406244458581], 
+    PolygonBox[{{-0.10229801546498549`, 
+     1.139205671640245}, {-0.10831654130712913`, 
+     1.1466800516378346`}, {-0.052941080293980924`, 1.1437591630509145`}}]}, 
    {RGBColor[
-    0.46533547446568924`, 0.46046059006782825`, 0.41590563833110417`], 
-    PolygonBox[{{0.5807370246919957, 1.0585187118427875`}, {
-     0.5388810443285845, 1.053476999073239}, {0.5123297767825338, 
-     1.0430748406060706`}}]}, 
-   {RGBColor[0.5784061415158455, 0.021422584483400176`, 0.06390549964234093], 
-    PolygonBox[{{0.0664998908516867, 0.7203883433812953}, {
-     0.16855232368920825`, 0.7749059955765101}, {0.16463145372384555`, 
-     0.7287711405636249}}]}, 
-   {RGBColor[0.05748596505152603, 0.45339053559105813`, 0.5897010051924494], 
-    PolygonBox[{{-0.3232410670649206, 
-     0.9235951389798965}, {-0.3977995179555829, 
-     0.9539668397300528}, {-0.3766299121269057, 0.9841514544125627}}]}, 
-   {RGBColor[0.920786096894648, 0.49357113339575087`, 0.30232755340086404`], 
-    PolygonBox[{{-0.19546431867047906`, 
-     0.9972089513566588}, {-0.26518653205387555`, 
-     1.0044747691930052`}, {-0.21466707726123596`, 1.0578855363145696`}}]}, 
-   {RGBColor[0.03696149846304153, 0.8101940850728815, 0.040712229601946426`], 
-    PolygonBox[{{-0.31409582600342145`, 
-     1.0243975835155394`}, {-0.26518653205387555`, 
-     1.0044747691930052`}, {-0.3090130980086185, 0.9566070731936991}}]}, 
-   {RGBColor[0.9260081297719722, 0.6313634369362642, 0.6002874440597665], 
-    PolygonBox[{{0.2111647008261305, 0.9712517573586483}, {
-     0.14910727124930218`, 0.9043960473290981}, {0.12901662880263762`, 
-     0.9907151771869445}}]}, 
-   {RGBColor[0.5682457797980005, 0.12840467094616326`, 0.35370647187857407`], 
-    PolygonBox[{{0.5388810443285845, 1.053476999073239}, {0.5807370246919957, 
-     1.0585187118427875`}, {0.5953065206878334, 1.060102297217934}}]}, 
-   {RGBColor[0.1771611024107549, 0.7325681744110026, 0.1945492414211596], 
-    PolygonBox[{{-0.1755628618441475, 
-     1.0538103237489005`}, {-0.13211175302367875`, 
-     1.0578855363145696`}, {-0.11799189959497977`, 1.0044747691930052`}}]}, 
-   {RGBColor[0.7834111944779281, 0.3258906859435504, 0.03202241423669383], 
-    PolygonBox[{{0.5458045137472881, 1.0541030375122364`}, {
-     0.5009264703262245, 1.0564768293334759`}, {0.5008281876878089, 
-     1.0553460688985137`}}]}, 
-   {RGBColor[0.9742663854935039, 0.8213412570919427, 0.6111584676637987], 
-    PolygonBox[{{0.5008281876878089, 1.0553460688985137`}, {
-     0.5388810443285845, 1.053476999073239}, {0.5458045137472881, 
-     1.0541030375122364`}}]}, 
-   {RGBColor[0.1333405873264797, 0.2211650575485522, 0.7672039990144917], 
-    PolygonBox[{{-0.34701535683924456`, 
-     0.8141198152355407}, {-0.4358719965725605, 
-     0.8503155354146719}, {-0.4373493244723005, 0.9383550739997696}}]}, 
-   {RGBColor[0.47644806573897536`, 0.9836400538412375, 0.28572734567527003`], 
-    PolygonBox[{{-0.18162813577029646`, 
-     0.6050164970315429}, {-0.05648923164723632, 
-     0.6167529025824127}, {-0.05843637246210363, 0.608213477292599}}]}, 
-   {RGBColor[0.769935972128879, 0.8323197289400823, 0.7273550218821032], 
-    PolygonBox[{{0.50793209629513, 1.0348291896921888`}, {0.4653317771407981, 
-     1.0399827435017674`}, {0.4877039236386419, 1.0508422130256005`}}]}, 
-   {RGBColor[0.723310568074411, 0.4248800367891856, 0.8190086958230949], 
-    PolygonBox[{{0.5953065206878334, 1.060102297217934}, {0.5458045137472881, 
-     1.0541030375122364`}, {0.5388810443285845, 1.053476999073239}}]}, 
-   {RGBColor[0.5454324256396321, 0.6692642158229283, 0.6839518357085337], 
-    PolygonBox[{{0.5346981587170659, 1.0470730632042358`}, {
-     0.4877039236386419, 1.0508422130256005`}, {0.5009264703262245, 
-     1.0564768293334759`}}]}, 
-   {RGBColor[0.2688006496226496, 0.8769075125355021, 0.7418637278738967], 
-    PolygonBox[{{0.5458045137472881, 1.0541030375122364`}, {
-     0.5953065206878334, 1.060102297217934}, {0.587005613020428, 
-     1.053071293515738}}]}, 
-   {RGBColor[0.10209354081203226`, 0.11455788346761775`, 0.5505101728054023], 
-    PolygonBox[{{0.5346981587170659, 1.0470730632042358`}, {0.587005613020428,
-      1.053071293515738}, {0.5560295395130126, 1.0399827435017674`}}]}, 
-   {RGBColor[0.5706492415517666, 0.9676192368445695, 0.08064474355161377], 
-    PolygonBox[{{0.5009264703262245, 1.0564768293334759`}, {
-     0.5458045137472881, 1.0541030375122364`}, {0.5346981587170659, 
-     1.0470730632042358`}}]}, 
-   {RGBColor[0.5437658609617118, 0.33765934894679606`, 0.5918481759351271], 
-    PolygonBox[{{0.5560295395130126, 1.0399827435017674`}, {0.50793209629513, 
-     1.0348291896921888`}, {0.5346981587170659, 1.0470730632042358`}}]}, 
-   {RGBColor[0.21897917109216247`, 0.10756906338957495`, 0.78035725050039], 
-    PolygonBox[{{0.4877039236386419, 1.0508422130256005`}, {
-     0.5346981587170659, 1.0470730632042358`}, {0.50793209629513, 
-     1.0348291896921888`}}]}, 
-   {RGBColor[0.45639077851985466`, 0.9976644244760884, 0.8811195337578213], 
-    PolygonBox[{{0.587005613020428, 1.053071293515738}, {0.5346981587170659, 
-     1.0470730632042358`}, {0.5458045137472881, 1.0541030375122364`}}]}, 
-   {RGBColor[0.4988071614276839, 0.6995229897013509, 0.3736691412549933], 
-    PolygonBox[{{0.16543473345648196`, 1.0724119348724233`}, {
-     0.10925095303163398`, 1.0118841115916113`}, {0.11103410283946495`, 
-     0.995030181281185}}]}, 
-   {RGBColor[0.1563656408237888, 0.13748716536505357`, 0.8319184633129122], 
-    PolygonBox[{{-0.3399160956817845, 
-     0.9301515764902281}, {-0.42036325571156186`, 
-     0.9629218041900922}, {-0.4175744212139416, 0.9461609568649112}}]}, 
-   {RGBColor[0.47425189684527336`, 0.8759386357485364, 0.12401621706490884`], 
-    PolygonBox[{{-0.047832512837763054`, 1.0243975835155394`}, {
-     0.007889970256088475, 1.0541649809763214`}, {0.0685211043401446, 
-     1.0253050297967365`}}]}, 
-   {RGBColor[0.8010932221139995, 0.10431662503866068`, 0.0982847539110685], 
-    PolygonBox[{{-0.3169720423052681, 
-     0.6411367209382769}, {-0.1940082748938522, 
-     0.6283222539175892}, {-0.18162813577029646`, 0.6050164970315429}}]}, 
-   {RGBColor[0.7839783762993533, 0.4876489616146342, 0.47161646971316173`], 
-    PolygonBox[{{0.17141519673380198`, 1.0781903652908957`}, {
-     0.11400161968152642`, 1.0163377287560558`}, {0.10925095303163398`, 
-     1.0118841115916113`}}]}, 
-   {RGBColor[0.9438752892387638, 0.24593972534093478`, 0.5983170581084307], 
-    PolygonBox[{{-0.34499755610183885`, 
-     0.9328166106007677}, {-0.4272054383922027, 
-     0.9663038556087462}, {-0.42036325571156186`, 0.9629218041900922}}]}, 
-   {RGBColor[0.9404922165305454, 0.09063070565988385, 0.35807022317514225`], 
-    PolygonBox[{{0.1891002609583601, 1.0554433169768938`}, {
-     0.12901662880263762`, 0.9907151771869445}, {0.12181253107388049`, 
-     1.0088697403780074`}}]}, 
-   {RGBColor[0.6936140127171262, 0.43380140668467493`, 0.3385260167588202], 
-    PolygonBox[{{-0.1940082748938522, 
-     0.6283222539175892}, {-0.3169720423052681, 
-     0.6411367209382769}, {-0.3315801751099264, 0.6839001675479252}}]}, 
-   {RGBColor[0.7511049042853444, 0.3979445005029061, 0.8496457398681214], 
-    PolygonBox[{{0.16463145372384555`, 0.7287711405636249}, {
-     0.06635964857164711, 0.6762731627691948}, {0.0664998908516867, 
-     0.7203883433812953}}]}, 
-   {RGBColor[0.9700355700129841, 0.3448820069156746, 0.2793633322416422], 
-    PolygonBox[{{0.18079524707030462`, 1.0724119348724233`}, {
-     0.12181253107388049`, 1.0088697403780074`}, {0.11400161968152642`, 
-     1.0163377287560558`}}]}, 
-   {RGBColor[0.020943201957451363`, 0.08024821024451012, 0.8784583413143521], 
-    PolygonBox[{{-0.3513200224340342, 
-     0.9033112774997955}, {-0.4373493244723005, 
-     0.9383550739997696}, {-0.4341766959524494, 0.9574694831778782}}]}, 
-   {RGBColor[0.8098520942426679, 0.4888256576479131, 0.3669280017597003], 
-    PolygonBox[{{-0.047832512837763054`, 
-     1.0243975835155394`}, {-0.11799189959497977`, 
-     1.0044747691930052`}, {-0.13211175302367875`, 1.0578855363145696`}}]}, 
-   {RGBColor[0.9866627984371188, 0.34959148816239605`, 0.3888123198529687], 
-    PolygonBox[{{-0.3497237198752786, 
-     0.9230678488220896}, {-0.4341766959524494, 
-     0.9574694831778782}, {-0.4272054383922027, 0.9663038556087462}}]}, 
-   {RGBColor[0.2024703956988163, 0.33887025912964597`, 0.3833509774959887], 
-    PolygonBox[{{-0.11799189959497977`, 
-     1.0044747691930052`}, {-0.19546431867047906`, 
-     0.9972089513566588}, {-0.1755628618441475, 1.0538103237489005`}}]}, 
-   {RGBColor[0.09176847222929307, 0.0810928662477064, 0.05939119061455633], 
+    0.06525722133998735, 0.46029717411507076`, 0.012555610565549102`], 
+    PolygonBox[{{0.44917647211363293`, 0.9903399528204031}, {
+     0.43077545223969893`, 1.0053601049149763`}, {0.37330297568985543`, 
+     0.9331556616454404}}]}, 
+   {RGBColor[0.3472995178224958, 0.1163299950905261, 0.8680608857591154], 
+    PolygonBox[{{-0.052941080293980924`, 
+     1.1437591630509145`}, {-0.039496824960707805`, 
+     1.1270631352306735`}, {-0.10229801546498549`, 1.139205671640245}}]}, 
+   {RGBColor[0.5905817746611794, 0.17148714478075888`, 0.008696194549662195], 
+    PolygonBox[{{0.11574496325293374`, 1.0762030096273278`}, {
+     0.12278784454578466`, 1.1270790830945558`}, {0.1528884698388015, 
+     1.1115630054803896`}}]}, 
+   {RGBColor[0.2154670620876602, 0.2991819654343355, 0.371677394174462], 
+    PolygonBox[{{0.17141519673380198`, 1.0782105462741334`}, {
+     0.179978004916548, 1.1400648533301707`}, {0.18959111018168745`, 
+     1.1359753887716684`}}]}, 
+   {RGBColor[0.8616376364012954, 0.5860090695414286, 0.45180387070467676`], 
+    PolygonBox[{{0.16543473345648196`, 1.0724322607873469`}, {
+     0.17381420284493007`, 1.132961726020199}, {0.179978004916548, 
+     1.1400648533301707`}}]}, 
+   {RGBColor[0.3540564054911459, 0.48994395300965676`, 0.763698298542977], 
+    PolygonBox[{{0.16855232368920825`, 0.7749182321202077}, {
+     0.23111225289839657`, 0.8423130016347679}, {0.22487322771787405`, 
+     0.7936801363525431}}]}, 
+   {RGBColor[0.5301537960744096, 0.9204395687017801, 0.09598682506123368], 
+    PolygonBox[{{-0.18044108275250526`, 
+     1.183390240336999}, {-0.19463978609064334`, 
+     1.1757979764726925`}, {-0.18916144073701627`, 1.1392100148115087`}}]}, 
+   {RGBColor[0.5983059513090683, 0.5099402719036226, 0.9826450578893067], 
+    PolygonBox[{{-0.21241683294534988`, 
+     1.2785927388177585`}, {-0.23866112404389764`, 
+     1.2645496750290988`}, {-0.22826390610877598`, 1.225748736429889}}]}, 
+   {RGBColor[0.7413317971907416, 0.49366401129989956`, 0.5438459759747065], 
+    PolygonBox[{{0.29445487143159693`, 0.7966917803990197}, {
+     0.277940611068949, 0.7812518303398264}, {0.3546184424109582, 
+     0.8573830486925804}}]}, 
+   {RGBColor[0.12923180551706182`, 0.9886820781079178, 0.5983716353186261], 
+    PolygonBox[{{-0.3732488372650103, 
+     0.6489697434544544}, {-0.29424820730576223`, 
+     0.6167840617368467}, {-0.2676960322852213, 0.6082430811202744}}]}, 
+   {RGBColor[0.6280933283527004, 0.6401451976320198, 0.3946470755392406], 
+    PolygonBox[{{-0.2454116123702168, 
+     0.6065574239770264}, {-0.15800878593614712`, 
+     0.5974443530897737}, {-0.15294558490215313`, 0.5956289328339464}}]}, 
+   {RGBColor[0.8094581284355071, 0.392907223715812, 0.35068514644927995`], 
+    PolygonBox[{{-0.15800878593614712`, 
+     0.5974443530897737}, {-0.2454116123702168, 
+     0.6065574239770264}, {-0.2676960322852213, 0.6082430811202744}}]}, 
+   {RGBColor[0.6710766860232646, 0.22391837548195292`, 0.8070425512049402], 
+    PolygonBox[{{-0.11245818539264511`, 
+     1.183386841192131}, {-0.12493755307316523`, 
+     1.1884624075299826`}, {-0.12059676664042722`, 1.1516829553244219`}}]}, 
+   {RGBColor[0.6014409286160414, 0.4774594973839421, 0.5633131412853205], 
+    PolygonBox[{{-0.12059676664042722`, 
+     1.1516829553244219`}, {-0.10831654130712913`, 
+     1.1466800516378346`}, {-0.11245818539264511`, 1.183386841192131}}]}, 
+   {RGBColor[0.6408162078970905, 0.9592271469584865, 0.2922092488208141], 
+    PolygonBox[{{-0.19773787866803774`, 
+     1.129970753626136}, {-0.18916144073701627`, 
+     1.1392100148115087`}, {-0.19463978609064334`, 1.1757979764726925`}}]}, 
+   {RGBColor[0.3315314530612672, 0.5770977811926592, 0.6271455747949481], 
+    PolygonBox[{{-0.08753406513653277, 
+     1.2387392140675557`}, {-0.10889900914250011`, 
+     1.247420244035199}, {-0.12493755307316523`, 1.1884624075299826`}}]}, 
+   {RGBColor[0.3110624441144314, 0.6701921862998095, 0.1600851068448934], 
+    PolygonBox[{{-0.25554118884338345`, 
+     1.0857957278034605`}, {-0.25268346293492755`, 
+     1.1064346897398687`}, {-0.19773787866803774`, 1.129970753626136}}]}, 
+   {RGBColor[0.014483774449524534`, 0.6620125104682346, 0.45613014561156895`],
+     PolygonBox[{{0.2204200286141559, 1.038124129252565}, {0.2111647008261305,
+      0.97126709917047}, {0.1891002609583601, 1.0554620071189653`}}]}, 
+   {RGBColor[0.4289098385675467, 0.41643838802354716`, 0.9468305817116884], 
+    PolygonBox[{{0.09691193409753496, 0.6688325482293082}, {
+     0.027060325858137998`, 0.6315194431436333}, {0.041306032254755924`, 
+     0.6365517828363915}}]}, 
+   {RGBColor[0.4894939394654447, 0.5208706272363934, 0.39087337985863035`], 
+    PolygonBox[{{0.16999667436045124`, 0.8162762460180772}, {
+     0.19187548511915106`, 0.8688836973899141}, {0.2843892524327723, 
+     0.8866017094976937}}]}, 
+   {RGBColor[0.06770689203877533, 0.3745964618415394, 0.03022642206806525], 
+    PolygonBox[{{0.3579027443541505, 0.9469224074388634}, {
+     0.33941140823842003`, 0.9323074075081187}, {0.2843892524327723, 
+     0.8866017094976937}}]}, 
+   {RGBColor[0.8112768621132953, 0.6406624661309877, 0.10821308595973633`], 
+    PolygonBox[{{0.3796680814288364, 0.904351121851102}, {0.3719460755213007, 
+     0.8719576332580304}, {0.44937291172340327`, 0.9684794602359853}}]}, 
+   {RGBColor[0.4600474956548748, 0.7227745111573074, 0.4215872604789417], 
+    PolygonBox[{{0.04204755692330072, 1.0909906290769085`}, {
+     0.04714187224512742, 1.127790013773416}, {0.12278784454578466`, 
+     1.1270790830945558`}}]}, 
+   {RGBColor[0.734989855940235, 0.9628576508882967, 0.3329330709215239], 
+    PolygonBox[{{-0.08658543952998565, 
+     1.2785864472480877`}, {-0.10967177973617119`, 
+     1.287965189921433}, {-0.10889900914250011`, 1.247420244035199}}]}, 
+   {RGBColor[0.6439454056085336, 0.5863046773048497, 0.19211798438184124`], 
+    PolygonBox[{{-0.25268346293492755`, 
+     1.1064346897398687`}, {-0.25554118884338345`, 
+     1.0857957278034605`}, {-0.33806550933607304`, 1.0542099953179476`}}]}, 
+   {RGBColor[0.3072717166508574, 0.19185296473413493`, 0.022880494364203585`],
+     PolygonBox[{{-0.20335287948548236`, 
+     1.1663954513644887`}, {-0.19463978609064334`, 
+     1.1757979764726925`}, {-0.22826390610877598`, 1.225748736429889}}]}, 
+   {RGBColor[0.9234041368607433, 0.9547937319385891, 0.9703721561779131], 
+    PolygonBox[{{0.43077545223969893`, 1.0053601049149763`}, {
+     0.4055575672852047, 1.0085069480319067`}, {0.3579027443541505, 
+     0.9469224074388634}}]}, 
+   {RGBColor[0.4641778648382249, 0.8747119597060942, 0.28202617742115454`], 
+    PolygonBox[{{-0.2431784047496649, 
+     1.2096364797846926`}, {-0.22826390610877598`, 
+     1.225748736429889}, {-0.23866112404389764`, 1.2645496750290988`}}]}, 
+   {RGBColor[
+    0.41140848888530224`, 0.18813097091312425`, 0.18478034157409517`], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.17932799855891815`, 
+     1.2879686727323743`}, {-0.14267910985478327`, 1.2913808925008314`}}]}, 
+   {RGBColor[0.5037555320590292, 0.3693753879087709, 0.9525190866382611], 
+    PolygonBox[{{-0.10889900914250011`, 
+     1.247420244035199}, {-0.08753406513653277, 
+     1.2387392140675557`}, {-0.08658543952998565, 1.2785864472480877`}}]}, 
+   {RGBColor[0.19985672419184675`, 0.835374984891081, 0.5073353846993789], 
+    PolygonBox[{{-0.12493755307316523`, 
+     1.1884624075299826`}, {-0.11245818539264511`, 
+     1.183386841192131}, {-0.08753406513653277, 1.2387392140675557`}}]}, 
+   {RGBColor[0.12391629410347438`, 0.7395702489060261, 0.871388337832375], 
+    PolygonBox[{{0.2688518551932612, 0.8001724556585252}, {0.277940611068949, 
+     0.7812518303398264}, {0.15452575195078844`, 0.7419892253189567}}]}, 
+   {RGBColor[0.9287631888656736, 0.7384966407735178, 0.8301689239943335], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.21241683294534988`, 
+     1.2785927388177585`}, {-0.17932799855891815`, 1.2879686727323743`}}]}, 
+   {RGBColor[0.4084868499238592, 0.45400795192952437`, 0.26000395946860255`], 
+    PolygonBox[{{-0.19463978609064334`, 
+     1.1757979764726925`}, {-0.20335287948548236`, 
+     1.1663954513644887`}, {-0.19773787866803774`, 1.129970753626136}}]}, 
+   {RGBColor[0.6087174793393455, 0.5725601230890691, 0.7826078393816249], 
+    PolygonBox[{{-0.04235455086916358, 
+     1.1064241732942655`}, {-0.039496824960707805`, 1.1270631352306735`}, {
+     0.04714187224512742, 1.127790013773416}}]}, 
+   {RGBColor[0.5224346298437068, 0.4796122386414938, 0.42435171425819407`], 
+    PolygonBox[{{0.44937291172340327`, 0.9684794602359853}, {
+     0.44917647211363293`, 0.9903399528204031}, {0.3796680814288364, 
+     0.904351121851102}}]}, 
+   {RGBColor[0.7401287942898547, 0.9191650441212855, 0.9283683744958369], 
     PolygonBox[{{-0.4358719965725605, 
-     0.8503155354146719}, {-0.34701535683924456`, 
-     0.8141198152355407}, {-0.34108025456028795`, 0.7413023566596844}}]}, 
-   {RGBColor[0.6938470587664021, 0.6110531657047598, 0.8447196622493234], 
-    PolygonBox[{{-0.3766299121269057, 
-     0.9841514544125627}, {-0.3090130980086185, 
-     0.9566070731936991}, {-0.3232410670649206, 0.9235951389798965}}]}, 
-   {RGBColor[0.18375468437437448`, 0.7266485242331069, 0.15676115308412286`], 
-    PolygonBox[{{0.06005770900746004, 0.778070827421038}, {
-     0.16289420932903884`, 0.8330075001689226}, {0.16855232368920825`, 
-     0.7749059955765101}}]}, 
-   {RGBColor[0.9982618522137796, 0.6834532497706904, 0.8671662701157656], 
-    PolygonBox[{{0.05683766341012611, 
-     0.6489337761118948}, {-0.05648923164723632, 
-     0.6167529025824127}, {-0.057375742660369336`, 0.6411367209382769}}]}, 
-   {RGBColor[0.810828084161344, 0.9276889967508426, 0.6203456088928025], 
-    PolygonBox[{{-0.05648923164723632, 
-     0.6167529025824127}, {-0.18162813577029646`, 
-     0.6050164970315429}, {-0.1940082748938522, 0.6283222539175892}}]}, 
-   {RGBColor[0.2781946820810166, 0.9459352601766735, 0.8152158755021657], 
-    PolygonBox[{{-0.057375742660369336`, 0.6411367209382769}, {
-     0.06635964857164711, 0.6762731627691948}, {0.05683766341012611, 
-     0.6489337761118948}}]}, 
-   {RGBColor[0.635664320155543, 0.5190848007546516, 0.9126750757791835], 
-    PolygonBox[{{-0.4175744212139416, 
-     0.9461609568649112}, {-0.33728010498142874`, 
-     0.9134532082398459}, {-0.3399160956817845, 0.9301515764902281}}]}, 
-   {RGBColor[0.7359453984741784, 0.5111784491369349, 0.04722270053745303], 
+     0.8503600040954449}, {-0.47942049724312896`, 
+     0.9044441355818891}, {-0.4795124086418528, 0.9907655718787681}}]}, 
+   {RGBColor[0.5544521455442513, 0.9854772998686454, 0.2530845264328818], 
+    PolygonBox[{{-0.22826390610877598`, 
+     1.225748736429889}, {-0.2431784047496649, 
+     1.2096364797846926`}, {-0.20335287948548236`, 1.1663954513644887`}}]}, 
+   {RGBColor[0.4242227895648609, 0.41404606115162035`, 0.6886252319068711], 
+    PolygonBox[{{0.33941140823842003`, 0.9323074075081187}, {
+     0.3579027443541505, 0.9469224074388634}, {0.4055575672852047, 
+     1.0085069480319067`}}]}, 
+   {RGBColor[0.7844719395969191, 0.11827582348544774`, 0.9374733630069125], 
+    PolygonBox[{{0.15452575195078844`, 0.7419892253189567}, {
+     0.1563331039995939, 0.7669382395928865}, {0.2688518551932612, 
+     0.8001724556585252}}]}, 
+   {RGBColor[0.7762143504584438, 0.5031397932664714, 0.6991308415939219], 
+    PolygonBox[{{-0.10635843813511638`, 
+     1.1757935624052946`}, {-0.11245818539264511`, 
+     1.183386841192131}, {-0.10831654130712913`, 1.1466800516378346`}}]}, 
+   {RGBColor[0.526347064240223, 0.8678362151516792, 0.628258467595223], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.14267910985478327`, 
+     1.2913808925008314`}, {-0.10967177973617119`, 1.287965189921433}}]}, 
+   {RGBColor[0.5350314833905774, 0.9491704271332742, 0.5699054128793339], 
+    PolygonBox[{{-0.10831654130712913`, 
+     1.1466800516378346`}, {-0.10229801546498549`, 
+     1.139205671640245}, {-0.10635843813511638`, 1.1757935624052946`}}]}, 
+   {RGBColor[0.34657163072357, 0.36252784085792134`, 0.7620932074383076], 
+    PolygonBox[{{-0.06089086691610462, 0.6065481979397536}, {
+     0.027060325858137998`, 0.6315194431436333}, {0.02073589179923415, 
+     0.62760731779916}}]}, 
+   {RGBColor[0.35046461721924227`, 0.28914927860030626`, 0.4903443462322925], 
+    PolygonBox[{{-0.19773787866803774`, 
+     1.129970753626136}, {-0.19901684726726254`, 
+     1.1207311275672969`}, {-0.25554118884338345`, 1.0857957278034605`}}]}, 
+   {RGBColor[0.9911858966021132, 0.6269164512753986, 0.4548666271784976], 
+    PolygonBox[{{-0.19901684726726254`, 
+     1.1207311275672969`}, {-0.19773787866803774`, 
+     1.129970753626136}, {-0.20335287948548236`, 1.1663954513644887`}}]}, 
+   {RGBColor[0.9506685200569991, 0.909261786258976, 0.8935344615933214], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.23866112404389764`, 
+     1.2645496750290988`}, {-0.21241683294534988`, 1.2785927388177585`}}]}, 
+   {RGBColor[0.6725716246101694, 0.29464088457563387`, 0.776044146338893], 
+    PolygonBox[{{-0.10357698406421019`, 
+     1.1299660455814058`}, {-0.10229801546498549`, 
+     1.139205671640245}, {-0.039496824960707805`, 1.1270631352306735`}}]}, 
+   {RGBColor[0.18549373048896234`, 0.364292940876088, 0.5198339619489258], 
+    PolygonBox[{{-0.06180346766857801, 
+     0.6041727912451593}, {-0.15294558490215313`, 
+     0.5956289328339464}, {-0.15800878593614712`, 0.5974443530897737}}]}, 
+   {RGBColor[0.4876708594380623, 0.6779308471726413, 0.26560823632710595`], 
+    PolygonBox[{{0.02073589179923415, 
+     0.62760731779916}, {-0.06180346766857801, 
+     0.6041727912451593}, {-0.06089086691610462, 0.6065481979397536}}]}, 
+   {RGBColor[0.47807850877390723`, 0.6115711030017423, 0.8750027838908978], 
+    PolygonBox[{{-0.23866112404389764`, 
+     1.2645496750290988`}, {-0.25477635517126707`, 
+     1.2471361176005984`}, {-0.2431784047496649, 1.2096364797846926`}}]}, 
+   {RGBColor[0.34018371437344985`, 0.5459232126294649, 0.8654102514670214], 
+    PolygonBox[{{-0.07710723369654697, 
+     1.2257411785962684`}, {-0.08753406513653277, 
+     1.2387392140675557`}, {-0.11245818539264511`, 1.183386841192131}}]}, 
+   {RGBColor[0.8574783953434915, 0.8638172356843365, 0.5975762172169212], 
+    PolygonBox[{{-0.20466934344951207`, 
+     1.1569925564248136`}, {-0.20335287948548236`, 
+     1.1663954513644887`}, {-0.2431784047496649, 1.2096364797846926`}}]}, 
+   {RGBColor[0.4938535402983786, 0.7367020869531113, 0.7706474022328458], 
+    PolygonBox[{{-0.20335287948548236`, 
+     1.1663954513644887`}, {-0.20466934344951207`, 
+     1.1569925564248136`}, {-0.19901684726726254`, 1.1207311275672969`}}]}, 
+   {RGBColor[0.35548520609887424`, 0.4776996062082546, 0.3669469758392161], 
+    PolygonBox[{{-0.039496824960707805`, 
+     1.1270631352306735`}, {-0.04235455086916358, 
+     1.1064241732942655`}, {-0.10357698406421019`, 1.1299660455814058`}}]}, 
+   {RGBColor[0.9638882922906886, 0.7565791449900665, 0.7195068080508253], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.10967177973617119`, 
+     1.287965189921433}, {-0.08658543952998565, 1.2785864472480877`}}]}, 
+   {RGBColor[0.06513305796850499, 0.2610199409887375, 0.73521285123453], 
+    PolygonBox[{{-0.11245818539264511`, 
+     1.183386841192131}, {-0.10635843813511638`, 
+     1.1757935624052946`}, {-0.07710723369654697, 1.2257411785962684`}}]}, 
+   {RGBColor[0.5597923079664606, 0.7641621278223187, 0.5220927832382878], 
+    PolygonBox[{{-0.07532141669437975, 
+     1.2645415080437312`}, {-0.08658543952998565, 
+     1.2785864472480877`}, {-0.08753406513653277, 1.2387392140675557`}}]}, 
+   {RGBColor[0.2862297190882803, 0.18909276583758228`, 0.23474872126166924`], 
+    PolygonBox[{{0.1528884698388015, 1.1115630054803896`}, {
+     0.14512345608432284`, 1.055464205959209}, {0.11574496325293374`, 
+     1.0762030096273278`}}]}, 
+   {RGBColor[0.8243142232110814, 0.8803240640455066, 0.06654092905210263], 
+    PolygonBox[{{0.04714187224512742, 1.127790013773416}, {
+     0.04204755692330072, 1.0909906290769085`}, {-0.04235455086916358, 
+     1.1064241732942655`}}]}, 
+   {RGBColor[0.09885010507032499, 0.08760056964594987, 0.40519667977672014`], 
+    PolygonBox[{{0.2698868877219246, 0.8408169785307141}, {0.2843892524327723,
+      0.8866017094976937}, {0.33941140823842003`, 0.9323074075081187}}]}, 
+   {RGBColor[0.21144832518767132`, 0.10768073875980932`, 0.5689896706608226], 
+    PolygonBox[{{0.2843892524327723, 0.8866017094976937}, {0.2698868877219246,
+      0.8408169785307141}, {0.16999667436045124`, 0.8162762460180772}}]}, 
+   {RGBColor[0.1347058679248867, 0.7630503669728179, 0.9575457385419246], 
+    PolygonBox[{{0.12278784454578466`, 1.1270790830945558`}, {
+     0.11574496325293374`, 1.0762030096273278`}, {0.04204755692330072, 
+     1.0909906290769085`}}]}, 
+   {RGBColor[0.7328382357576806, 0.08244698165631359, 0.319074778763899], 
+    PolygonBox[{{-0.10767490209914597`, 
+     1.1663906674656195`}, {-0.10635843813511638`, 
+     1.1757935624052946`}, {-0.10229801546498549`, 1.139205671640245}}]}, 
+   {RGBColor[0.7928876499725745, 0.1824746906825756, 0.2810213151467935], 
+    PolygonBox[{{0.1980599779119168, 1.1201914250067946`}, {
+     0.1891002609583601, 1.0554620071189653`}, {0.18079524707030462`, 
+     1.0724314927616663`}}]}, 
+   {RGBColor[0.6414220479984656, 0.6464930745301198, 0.20840800753161792`], 
+    PolygonBox[{{-0.47942049724312896`, 
+     0.9044441355818891}, {-0.4358719965725605, 
+     0.8503600040954449}, {-0.4313437489833355, 0.7781131431638849}}]}, 
+   {RGBColor[0.4748260492058678, 0.3614711075733772, 0.22327205938515493`], 
+    PolygonBox[{{0.22487322771787405`, 0.7936801363525431}, {
+     0.16463145372384555`, 0.7287823428880205}, {0.16855232368920825`, 
+     0.7749182321202077}}]}, 
+   {RGBColor[0.20604046520724228`, 0.41021485798535307`, 0.6515476969588452], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.25477635517126707`, 
+     1.2471361176005984`}, {-0.23866112404389764`, 1.2645496750290988`}}]}, 
+   {RGBColor[0.9712311798221478, 0.3957666757966414, 0.6576388546057126], 
+    PolygonBox[{{-0.10229801546498549`, 
+     1.139205671640245}, {-0.10357698406421019`, 
+     1.1299660455814058`}, {-0.10767490209914597`, 1.1663906674656195`}}]}, 
+   {RGBColor[0.4733599976229983, 0.9608192618006306, 0.9668060355894594], 
+    PolygonBox[{{-0.24209693351011033`, 
+     1.0690996999832196`}, {-0.25554118884338345`, 
+     1.0857957278034605`}, {-0.19901684726726254`, 1.1207311275672969`}}]}, 
+   {RGBColor[0.9769264985906654, 0.12811377671158364`, 0.9394355025058603], 
+    PolygonBox[{{-0.15800878593614712`, 
+     0.5974443530897737}, {-0.06089086691610462, 
+     0.6065481979397536}, {-0.06180346766857801, 0.6041727912451593}}]}, 
+   {RGBColor[0.8482384119950999, 0.5963565405544542, 0.7584112898677604], 
+    PolygonBox[{{0.17381420284493007`, 1.132961726020199}, {
+     0.16543473345648196`, 1.0724322607873469`}, {0.16711185852134147`, 
+     1.0554631065390871`}}]}, 
+   {RGBColor[0.5576052639120721, 0.73047135759569, 0.7936104132365736], 
+    PolygonBox[{{-0.3169720423052681, 
+     0.6411696665196173}, {-0.4032285622509722, 
+     0.6763113581483146}, {-0.4211551190558917, 0.7204286114930717}}]}, 
+   {RGBColor[0.4243931593745378, 0.061133303152151486`, 0.4882250741173879], 
+    PolygonBox[{{-0.08753406513653277, 
+     1.2387392140675557`}, {-0.07710723369654697, 
+     1.2257411785962684`}, {-0.07532141669437975, 1.2645415080437312`}}]}, 
+   {RGBColor[0.5793351432545519, 0.5082594583234805, 0.2895066174163732], 
+    PolygonBox[{{-0.1929983214251189, 
+     1.1132567475697075`}, {-0.19901684726726254`, 
+     1.1207311275672969`}, {-0.20466934344951207`, 1.1569925564248136`}}]}, 
+   {RGBColor[0.6398027602176324, 0.38676564687021653`, 0.41631406598514187`], 
+    PolygonBox[{{-0.24545065032373403`, 
+     1.1935235910268427`}, {-0.2431784047496649, 
+     1.2096364797846926`}, {-0.25477635517126707`, 1.2471361176005984`}}]}, 
+   {RGBColor[0.2914903722615758, 0.5343957707246636, 0.5975316715128896], 
+    PolygonBox[{{0.16289420932903884`, 0.8330215689917939}, {
+     0.22593451804470063`, 0.9009339197579525}, {0.23111225289839657`, 
+     0.8423130016347679}}]}, 
+   {RGBColor[0.07446339801140378, 0.028292073608990886`, 0.5479230165263138], 
+    PolygonBox[{{-0.3977995179555829, 
+     0.9540121688216767}, {-0.4343409005687376, 
+     0.9993939914051732}, {-0.40976920420965807`, 1.0253528597244084`}}]}, 
+   {RGBColor[0.4958022094447372, 0.7361887758358288, 0.5545147954375007], 
+    PolygonBox[{{0.18959111018168745`, 1.1359753887716684`}, {
+     0.18079524707030462`, 1.0724314927616663`}, {0.17141519673380198`, 
+     1.0782105462741334`}}]}, 
+   {RGBColor[0.9814020376895951, 0.7104981604376421, 0.42195223318611763`], 
+    PolygonBox[{{-0.2431784047496649, 
+     1.2096364797846926`}, {-0.24545065032373403`, 
+     1.1935235910268427`}, {-0.20466934344951207`, 1.1569925564248136`}}]}, 
+   {RGBColor[0.9111656782335642, 0.7123012067070738, 0.9016661049714247], 
+    PolygonBox[{{0.179978004916548, 1.1400648533301707`}, {
+     0.17141519673380198`, 1.0782105462741334`}, {0.16543473345648196`, 
+     1.0724322607873469`}}]}, 
+   {RGBColor[0.21680801284779427`, 0.9947814827869126, 0.5528170870853861], 
+    PolygonBox[{{0.4055575672852047, 1.0085069480319067`}, {
+     0.43077545223969893`, 1.0053601049149763`}, {0.5299204987321486, 
+     1.0760596431018423`}}]}, 
+   {RGBColor[0.2230860717493266, 0.9736672164198921, 0.7412262044574403], 
+    PolygonBox[{{0.05683766341012611, 0.6489482391294207}, {
+     0.14684245009180416`, 0.6970269023277393}, {0.12052258350825555`, 
+     0.678867247114163}}]}, 
+   {RGBColor[0.3731674851791478, 0.5027058309903294, 0.056727844317981946`], 
+    PolygonBox[{{0.1563331039995939, 0.7669382395928865}, {
+     0.16999667436045124`, 0.8162762460180772}, {0.2698868877219246, 
+     0.8408169785307141}}]}, 
+   {RGBColor[0.8323063175692875, 0.3303519647065627, 0.6511491364027155], 
+    PolygonBox[{{-0.31409582600342145`, 
+     1.0244406055757334`}, {-0.33806550933607304`, 
+     1.0542099953179476`}, {-0.25554118884338345`, 1.0857957278034605`}}]}, 
+   {RGBColor[0.7823571773710472, 0.6891057131911174, 0.4604625872534358], 
     PolygonBox[{{-0.4373493244723005, 
-     0.9383550739997696}, {-0.3513200224340342, 
-     0.9033112774997955}, {-0.34701535683924456`, 0.8141198152355407}}]}, 
-   {RGBColor[0.9378042408363874, 0.22328110802954426`, 0.6959357204670378], 
-    PolygonBox[{{0.0685211043401446, 
-     1.0253050297967365`}, {-0.008515334819059745, 
-     0.9841514544125627}, {-0.047832512837763054`, 1.0243975835155394`}}]}, 
-   {RGBColor[0.8023488124915421, 0.5744704873388089, 0.9862811915877143], 
-    PolygonBox[{{-0.008515334819059745, 0.9841514544125627}, {
-     0.0685211043401446, 1.0253050297967365`}, {0.09305093188315408, 
-     0.9993456251434742}}]}, 
-   {RGBColor[0.3494575600685057, 0.7768735467798542, 0.7170137097029554], 
+     0.9384019642679665}, {-0.4795124086418528, 
+     0.9907655718787681}, {-0.4755673878339037, 1.0089204219404757`}}]}, 
+   {RGBColor[0.3597102444570437, 0.3799954514983799, 0.5054138576218663], 
     PolygonBox[{{-0.42036325571156186`, 
-     0.9629218041900922}, {-0.3399160956817845, 
-     0.9301515764902281}, {-0.34499755610183885`, 0.9328166106007677}}]}, 
-   {RGBColor[0.19048030456210885`, 0.48752637504257734`, 0.5814313836302989], 
-    PolygonBox[{{-0.26518653205387555`, 
-     1.0044747691930052`}, {-0.19546431867047906`, 
-     0.9972089513566588}, {-0.2126204238057018, 0.9465618287887145}}]}, 
-   {RGBColor[0.2537447273834661, 0.8034740771801179, 0.75033737337723], 
-    PolygonBox[{{-0.2126204238057018, 
-     0.9465618287887145}, {-0.3090130980086185, 
-     0.9566070731936991}, {-0.26518653205387555`, 1.0044747691930052`}}]}, 
-   {RGBColor[0.02420409159840098, 0.8180256960687731, 0.9420645892556974], 
+     0.9629685002676561}, {-0.4597904804971464, 
+     1.0119340846919451`}, {-0.456926332108726, 0.9950795617359579}}]}, 
+   {RGBColor[0.5196941641145723, 0.42777084892301076`, 0.571836426896472], 
+    PolygonBox[{{0.43077545223969893`, 1.0053601049149763`}, {
+     0.44917647211363293`, 0.9903399528204031}, {0.5725208178864806, 
+     1.0709038218482043`}}]}, 
+   {RGBColor[0.9579714006895532, 0.32774239810391537`, 0.5467582314582171], 
+    PolygonBox[{{-0.2676960322852213, 
+     0.6082430811202744}, {-0.1685753252437488, 
+     0.597908244247367}, {-0.15800878593614712`, 0.5974443530897737}}]}, 
+   {RGBColor[0.4585290469437959, 0.6987320794312768, 0.810060706045018], 
+    PolygonBox[{{-0.19901684726726254`, 
+     1.1207311275672969`}, {-0.1929983214251189, 
+     1.1132567475697075`}, {-0.24209693351011033`, 1.0690996999832196`}}]}, 
+   {RGBColor[
+    0.17939608449406763`, 0.002814582400295418, 0.39778748294456245`], 
+    PolygonBox[{{-0.3766299121269057, 
+     0.9841965299469534}, {-0.40976920420965807`, 
+     1.0253528597244084`}, {-0.33806550933607304`, 1.0542099953179476`}}]}, 
+   {RGBColor[
+    0.21245488187418737`, 0.31092966383996745`, 0.020680078026910076`], 
+    PolygonBox[{{-0.11215342199523176`, 
+     1.1207267843960333`}, {-0.10357698406421019`, 
+     1.1299660455814058`}, {-0.04235455086916358, 1.1064241732942655`}}]}, 
+   {RGBColor[0.22257269816781422`, 0.11354211018857008`, 0.4957879762563786], 
+    PolygonBox[{{-0.20466934344951207`, 
+     1.1569925564248136`}, {-0.19856959619198336`, 
+     1.1493992776379773`}, {-0.1929983214251189, 1.1132567475697075`}}]}, 
+   {RGBColor[0.1882497479862424, 0.8961226709562391, 0.14803252226157615`], 
     PolygonBox[{{-0.4272054383922027, 
-     0.9663038556087462}, {-0.34499755610183885`, 
-     0.9328166106007677}, {-0.3497237198752786, 0.9230678488220896}}]}, 
-   {RGBColor[0.37669869305257775`, 0.615956409600805, 0.7899466254115048], 
+     0.9663509839834822}, {-0.4674951960629281, 
+     1.0163882058552924`}, {-0.4597904804971464, 1.0119340846919451`}}]}, 
+   {RGBColor[0.17960404275304787`, 0.9875361534461862, 0.8534998613181384], 
     PolygonBox[{{-0.4341766959524494, 
-     0.9574694831778782}, {-0.3497237198752786, 
-     0.9230678488220896}, {-0.3513200224340342, 0.9033112774997955}}]}, 
-   {RGBColor[0.7861060591522941, 0.9237987584334051, 0.40018569415983607`], 
-    PolygonBox[{{0.16855232368920825`, 0.7749059955765101}, {
-     0.0664998908516867, 0.7203883433812953}, {0.06005770900746004, 
-     0.778070827421038}}]}, 
-   {RGBColor[0.8280106467002089, 0.831179244215462, 0.3310437733684506], 
-    PolygonBox[{{-0.20388539918451123`, 
-     0.670592496351779}, {-0.3315801751099264, 
-     0.6839001675479252}, {-0.34108025456028795`, 0.7413023566596844}}]}, 
-   {RGBColor[0.8036779256342399, 0.34013481903030107`, 0.031305976852259], 
-    PolygonBox[{{-0.11799189959497977`, 
-     1.0044747691930052`}, {-0.047832512837763054`, 
-     1.0243975835155394`}, {-0.008515334819059745, 0.9841514544125627}}]}, 
-   {RGBColor[0.7438054220461694, 0.42277359471092835`, 0.9010618893141298], 
-    PolygonBox[{{0.0478728912033458, 0.8503155354146719}, {
-     0.14910727124930218`, 0.9043960473290981}, {0.16289420932903884`, 
-     0.8330075001689226}}]}, 
-   {RGBColor[0.8377412404428441, 0.4300458291716647, 0.2922575533338576], 
+     0.9575167245322272}, {-0.4755673878339037, 
+     1.0089204219404757`}, {-0.4674951960629281, 1.0163882058552924`}}]}, 
+   {RGBColor[0.8689081091579116, 0.5224945321329544, 0.2099481545654276], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.08658543952998565, 
+     1.2785864472480877`}, {-0.07532141669437975, 1.2645415080437312`}}]}, 
+   {RGBColor[0.26790402589418694`, 0.36099870757872843`, 0.8936123273887486], 
+    PolygonBox[{{0.4055575672852047, 1.0085069480319067`}, {
+     0.3856620785096914, 0.9944301794933417}, {0.33941140823842003`, 
+     0.9323074075081187}}]}, 
+   {RGBColor[0.3453247785054132, 0.5992161767170661, 0.3566563486615386], 
+    PolygonBox[{{-0.07937947927061596, 
+     1.2096282898384185`}, {-0.07710723369654697, 
+     1.2257411785962684`}, {-0.10635843813511638`, 1.1757935624052946`}}]}, 
+   {RGBColor[0.09176999983302037, 0.719813080683565, 0.006910999268033624], 
+    PolygonBox[{{0.2698868877219246, 0.8408169785307141}, {0.2688518551932612,
+      0.8001724556585252}, {0.1563331039995939, 0.7669382395928865}}]}, 
+   {RGBColor[0.8691337506981769, 0.7264796239431157, 0.7412374103550066], 
+    PolygonBox[{{-0.19856959619198336`, 
+     1.1493992776379773`}, {-0.20466934344951207`, 
+     1.1569925564248136`}, {-0.24545065032373403`, 1.1935235910268427`}}]}, 
+   {RGBColor[0.6170259066744537, 0.6147450374840819, 0.6390558641881705], 
+    PolygonBox[{{-0.4032285622509722, 
+     0.6763113581483146}, {-0.3169720423052681, 
+     0.6411696665196173}, {-0.29424820730576223`, 0.6167840617368467}}]}, 
+   {RGBColor[0.27676435741497807`, 0.0580828168176013, 0.5363863298819271], 
+    PolygonBox[{{-0.11638799549398512`, 
+     1.1569881423574158`}, {-0.10767490209914597`, 
+     1.1663906674656195`}, {-0.10357698406421019`, 1.1299660455814058`}}]}, 
+   {RGBColor[0.8992794220274685, 0.9514053621086302, 0.6193566680922502], 
+    PolygonBox[{{-0.25477635517126707`, 
+     1.2471361176005984`}, {-0.25723594945128053`, 
+     1.229721877390256}, {-0.24545065032373403`, 1.1935235910268427`}}]}, 
+   {RGBColor[0.380878437989167, 0.5508789742985392, 0.8430952259410935], 
+    PolygonBox[{{-0.10635843813511638`, 
+     1.1757935624052946`}, {-0.10767490209914597`, 
+     1.1663906674656195`}, {-0.07937947927061596, 1.2096282898384185`}}]}, 
+   {RGBColor[0.9791417364475161, 0.8319460542616863, 0.6983098096391656], 
+    PolygonBox[{{-0.10357698406421019`, 
+     1.1299660455814058`}, {-0.11215342199523176`, 
+     1.1207267843960333`}, {-0.11638799549398512`, 1.1569881423574158`}}]}, 
+   {RGBColor[0.414164816799655, 0.9257717898628555, 0.22988326244774493`], 
+    PolygonBox[{{-0.1685753252437488, 
+     0.597908244247367}, {-0.2676960322852213, 
+     0.6082430811202744}, {-0.29424820730576223`, 0.6167840617368467}}]}, 
+   {RGBColor[0.4162916679130322, 0.1251987057078161, 0.42282612893021576`], 
+    PolygonBox[{{-0.1807180960918207, 1.10825384388312}, {-0.1929983214251189,
+      1.1132567475697075`}, {-0.19856959619198336`, 1.1493992776379773`}}]}, 
+   {RGBColor[0.49937556228422664`, 0.7896020618215396, 0.31234014370054175`], 
+    PolygonBox[{{0.277940611068949, 0.7812518303398264}, {0.2688518551932612, 
+     0.8001724556585252}, {0.33913544795546485`, 0.8690915471434579}}]}, 
+   {RGBColor[0.671423223079251, 0.4529428468727279, 0.7076993628249264], 
+    PolygonBox[{{0.33913544795546485`, 0.8690915471434579}, {
+     0.3546184424109582, 0.8573830486925804}, {0.277940611068949, 
+     0.7812518303398264}}]}, 
+   {RGBColor[0.3874973414331513, 0.8453508857929048, 0.8817354479973791], 
+    PolygonBox[{{0.3719460755213007, 0.8719576332580304}, {0.3546184424109582,
+      0.8573830486925804}, {0.43008849213295214`, 0.9545499903566267}}]}, 
+   {RGBColor[0.43988197771392756`, 0.4532674328665709, 0.5426749545297977], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.25723594945128053`, 
+     1.229721877390256}, {-0.25477635517126707`, 1.2471361176005984`}}]}, 
+   {RGBColor[0.324757978364681, 0.5533307857492242, 0.3916814594555551], 
+    PolygonBox[{{0.12052258350825555`, 0.678867247114163}, {
+     0.041306032254755924`, 0.6365517828363915}, {0.05683766341012611, 
+     0.6489482391294207}}]}, 
+   {RGBColor[0.6414332765658946, 0.8630438650300896, 0.6111156602406205], 
+    PolygonBox[{{-0.25554118884338345`, 
+     1.0857957278034605`}, {-0.24209693351011033`, 
+     1.0690996999832196`}, {-0.31409582600342145`, 1.0244406055757334`}}]}, 
+   {RGBColor[0.6732119081481118, 0.6426355561066646, 0.41776315692315547`], 
+    PolygonBox[{{0.5725208178864806, 1.0709038218482043`}, {
+     0.5299204987321486, 1.0760596431018423`}, {0.43077545223969893`, 
+     1.0053601049149763`}}]}, 
+   {RGBColor[0.7407782406454315, 0.2488649145737054, 0.9042872579255532], 
+    PolygonBox[{{0.43008849213295214`, 0.9545499903566267}, {
+     0.44937291172340327`, 0.9684794602359853}, {0.3719460755213007, 
+     0.8719576332580304}}]}, 
+   {RGBColor[0.8975136012558731, 0.8823866436103951, 0.3784864542983126], 
+    PolygonBox[{{-0.06089086691610462, 
+     0.6065481979397536}, {-0.15800878593614712`, 
+     0.5974443530897737}, {-0.1685753252437488, 0.597908244247367}}]}, 
+   {RGBColor[0.3087213313738839, 0.8379479920139425, 0.1191716544019461], 
+    PolygonBox[{{0.027060325858137998`, 
+     0.6315194431436333}, {-0.06089086691610462, 
+     0.6065481979397536}, {-0.05843637246210363, 0.6082326181372832}}]}, 
+   {RGBColor[0.6881337635772276, 0.00880012247649864, 0.2979344102519794], 
+    PolygonBox[{{-0.0777810109743931, 
+     1.2471272678333887`}, {-0.07532141669437975, 
+     1.2645415080437312`}, {-0.07710723369654697, 1.2257411785962684`}}]}, 
+   {RGBColor[0.48262062485747426`, 0.012635070966099837`, 0.417755723994643], 
+    PolygonBox[{{0.5299204987321486, 1.0760596431018423`}, {
+     0.4818230555142661, 1.070908356736323}, {0.4055575672852047, 
+     1.0085069480319067`}}]}, 
+   {RGBColor[0.1743773793021084, 0.8839152704110045, 0.5321489618356225], 
+    PolygonBox[{{-0.04235455086916358, 
+     1.1064241732942655`}, {-0.06151128305270919, 
+     1.085786026308171}, {-0.11215342199523176`, 1.1207267843960333`}}]}, 
+   {RGBColor[0.8006622578599663, 0.9963779559925139, 0.015402676435456675`], 
+    PolygonBox[{{-0.19856959619198336`, 
+     1.1493992776379773`}, {-0.18609022851146312`, 
+     1.1443237113001254`}, {-0.1807180960918207, 1.10825384388312}}]}, 
+   {RGBColor[0.37863412103969774`, 0.3079553557816339, 0.10241689030774448`], 
+    PolygonBox[{{0.33941140823842003`, 0.9323074075081187}, {
+     0.3316739773779153, 0.8977434693584226}, {0.2698868877219246, 
+     0.8408169785307141}}]}, 
+   {RGBColor[0.14331924873284763`, 0.4149000156086049, 0.4938629304474762], 
+    PolygonBox[{{0.3856620785096914, 0.9944301794933417}, {0.4055575672852047,
+      1.0085069480319067`}, {0.4818230555142661, 1.070908356736323}}]}, 
+   {RGBColor[0.22218935668525042`, 0.2503126875201178, 0.31621232876216077`], 
+    PolygonBox[{{-0.05843637246210363, 0.6082326181372832}, {
+     0.041306032254755924`, 0.6365517828363915}, {0.027060325858137998`, 
+     0.6315194431436333}}]}, 
+   {RGBColor[0.5688250256332303, 0.45560007049341356`, 0.7694475072105507], 
+    PolygonBox[{{-0.06151128305270919, 
+     1.085786026308171}, {-0.04235455086916358, 1.1064241732942655`}, {
+     0.04204755692330072, 1.0909906290769085`}}]}, 
+   {RGBColor[0.6413702487809618, 0.7151653790784043, 0.16417075598144382`], 
+    PolygonBox[{{-0.24545065032373403`, 
+     1.1935235910268427`}, {-0.2350238188837482, 
+     1.1805255555555554`}, {-0.19856959619198336`, 1.1493992776379773`}}]}, 
+   {RGBColor[0.6752984486108318, 0.10636162705728802`, 0.8337013618449907], 
+    PolygonBox[{{-0.1929983214251189, 
+     1.1132567475697075`}, {-0.1807180960918207, 
+     1.10825384388312}, {-0.21466707726123596`, 1.057924479949401}}]}, 
+   {RGBColor[0.9614338579585064, 0.3930003632854322, 0.067447150957886], 
+    PolygonBox[{{-0.16321196621758213`, 
+     1.1064286467572872`}, {-0.1807180960918207, 
+     1.10825384388312}, {-0.18609022851146312`, 1.1443237113001254`}}]}, 
+   {RGBColor[0.8842307470275996, 0.5751864605737231, 0.7657742085045971], 
+    PolygonBox[{{-0.11215342199523176`, 
+     1.1207267843960333`}, {-0.12614408625640147`, 
+     1.113253404857949}, {-0.1305866988321232, 1.1493958784931093`}}]}, 
+   {RGBColor[0.8698565785461809, 0.9908022212597098, 0.3744025594690912], 
+    PolygonBox[{{-0.21466707726123596`, 
+     1.057924479949401}, {-0.24209693351011033`, 
+     1.0690996999832196`}, {-0.1929983214251189, 1.1132567475697075`}}]}, 
+   {RGBColor[0.9167719494448467, 0.856185703392147, 0.22320900563928658`], 
+    PolygonBox[{{-0.1305866988321232, 
+     1.1493958784931093`}, {-0.11638799549398512`, 
+     1.1569881423574158`}, {-0.11215342199523176`, 1.1207267843960333`}}]}, 
+   {RGBColor[0.1094718031515447, 0.8592622215124317, 0.8776826957279629], 
+    PolygonBox[{{0.3316739773779153, 0.8977434693584226}, {
+     0.33941140823842003`, 0.9323074075081187}, {0.3856620785096914, 
+     0.9944301794933417}}]}, 
+   {RGBColor[0.2066312585263561, 0.48879994510144, 0.574041071001842], 
+    PolygonBox[{{-0.07710723369654697, 
+     1.2257411785962684`}, {-0.07937947927061596, 
+     1.2096282898384185`}, {-0.0777810109743931, 1.2471272678333887`}}]}, 
+   {RGBColor[0.6800551765357343, 0.36870185456168225`, 0.7336730400392895], 
+    PolygonBox[{{-0.12614408625640147`, 
+     1.113253404857949}, {-0.11215342199523176`, 
+     1.1207267843960333`}, {-0.06151128305270919, 1.085786026308171}}]}, 
+   {RGBColor[0.6343117405507717, 0.0723103032640493, 0.7972587993810314], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.07532141669437975, 
+     1.2645415080437312`}, {-0.0777810109743931, 1.2471272678333887`}}]}, 
+   {RGBColor[0.862843523505288, 0.6788270815640625, 0.7687029629715081], 
+    PolygonBox[{{-0.2350238188837482, 
+     1.1805255555555554`}, {-0.24545065032373403`, 
+     1.1935235910268427`}, {-0.25723594945128053`, 1.229721877390256}}]}, 
+   {RGBColor[0.6950087510065235, 0.488626881503762, 0.9279859104590942], 
+    PolygonBox[{{0.44917647211363293`, 0.9903399528204031}, {
+     0.44937291172340327`, 0.9684794602359853}, {0.5848915048246952, 
+     1.055442217556772}}]}, 
+   {RGBColor[0.5103121655360339, 0.9737530550734277, 0.9075000169316307], 
+    PolygonBox[{{0.2688518551932612, 0.8001724556585252}, {0.2698868877219246,
+      0.8408169785307141}, {0.3316739773779153, 0.8977434693584226}}]}, 
+   {RGBColor[0.37763522105766656`, 0.3702525459460808, 0.18068705652727557`], 
+    PolygonBox[{{-0.18609022851146312`, 
+     1.1443237113001254`}, {-0.19856959619198336`, 
+     1.1493992776379773`}, {-0.2350238188837482, 1.1805255555555554`}}]}, 
+   {RGBColor[0.18733769801234046`, 0.24393950771076733`, 0.9146323236359473], 
+    PolygonBox[{{-0.33806550933607304`, 
+     1.0542099953179476`}, {-0.31409582600342145`, 
+     1.0244406055757334`}, {-0.3766299121269057, 0.9841965299469534}}]}, 
+   {RGBColor[0.12052008278346227`, 0.12197537507787337`, 0.996776792132525], 
+    PolygonBox[{{-0.10767490209914597`, 
+     1.1663906674656195`}, {-0.11638799549398512`, 
+     1.1569881423574158`}, {-0.09429397791150501, 1.1935160331932222`}}]}, 
+   {RGBColor[0.43313741513530735`, 0.3860200796219937, 0.21009210631007513`], 
+    PolygonBox[{{-0.12614408625640147`, 
+     1.113253404857949}, {-0.14375994495981842`, 
+     1.1082519959755635`}, {-0.148479194023342, 1.144321830748401}}]}, 
+   {RGBColor[0.4548202658542708, 0.024594715702747516`, 0.7091968917439766], 
+    PolygonBox[{{-0.14375994495981842`, 
+     1.1082519959755635`}, {-0.16321196621758213`, 
+     1.1064286467572872`}, {-0.16827082484891667`, 1.1424738080589245`}}]}, 
+   {RGBColor[
+    0.10617479847453448`, 0.007752186621354573, 0.23893873343118033`], 
+    PolygonBox[{{-0.4795124086418528, 
+     0.9907655718787681}, {-0.4373493244723005, 
+     0.9384019642679665}, {-0.4358719965725605, 0.8503600040954449}}]}, 
+   {RGBColor[0.12216576913919797`, 0.11836604119313332`, 0.8737373741345538], 
+    PolygonBox[{{-0.18609022851146312`, 
+     1.1443237113001254`}, {-0.16827082484891667`, 
+     1.1424738080589245`}, {-0.16321196621758213`, 1.1064286467572872`}}]}, 
+   {RGBColor[0.5031396282051968, 0.4468826983358509, 0.04954991674285525], 
+    PolygonBox[{{0.5848915048246952, 1.055442217556772}, {0.5725208178864806, 
+     1.0709038218482043`}, {0.44917647211363293`, 0.9903399528204031}}]}, 
+   {RGBColor[0.7295716381177964, 0.722283594059298, 0.5842993622563051], 
+    PolygonBox[{{-0.09429397791150501, 
+     1.1935160331932222`}, {-0.07937947927061596, 
+     1.2096282898384185`}, {-0.10767490209914597`, 1.1663906674656195`}}]}, 
+   {RGBColor[0.9173885477516055, 0.3734807553528441, 0.2541860348956173], 
+    PolygonBox[{{0.4818230555142661, 1.070908356736323}, {0.5299204987321486, 
+     1.0760596431018423`}, {0.5555302454579741, 1.0861344128838548`}}]}, 
+   {RGBColor[0.872204229800353, 0.7292124615299955, 0.09012609453869569], 
+    PolygonBox[{{-0.148479194023342, 1.144321830748401}, {-0.1305866988321232,
+      1.1493958784931093`}, {-0.12614408625640147`, 1.113253404857949}}]}, 
+   {RGBColor[
+    0.23710452076778843`, 0.40318297318652596`, 0.18995060221887483`], 
+    PolygonBox[{{0.14910727124930218`, 0.9044127091934644}, {
+     0.2111647008261305, 0.97126709917047}, {0.22593451804470063`, 
+     0.9009339197579525}}]}, 
+   {RGBColor[0.9634560623077069, 0.856962582362238, 0.20403496341639493`], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.24597192661567463`, 
+     1.2156769381858996`}, {-0.25723594945128053`, 1.229721877390256}}]}, 
+   {RGBColor[0.7200372561153754, 0.7322014762011255, 0.12677042703304053`], 
+    PolygonBox[{{-0.40976920420965807`, 
+     1.0253528597244084`}, {-0.3766299121269057, 
+     0.9841965299469534}, {-0.3977995179555829, 0.9540121688216767}}]}, 
+   {RGBColor[0.22955964302515763`, 0.9008352634647832, 0.9655327169770669], 
+    PolygonBox[{{0.23111225289839657`, 0.8423130016347679}, {
+     0.16855232368920825`, 0.7749182321202077}, {0.16289420932903884`, 
+     0.8330215689917939}}]}, 
+   {RGBColor[0.16170042449832, 0.7473898491259587, 0.20395408923502267`], 
+    PolygonBox[{{-0.16827082484891667`, 
+     1.1424738080589245`}, {-0.148479194023342, 
+     1.144321830748401}, {-0.14375994495981842`, 1.1082519959755635`}}]}, 
+   {RGBColor[0.18152698072593965`, 0.2831247530949319, 0.5727910704146211], 
+    PolygonBox[{{0.6026462610758907, 1.0823962402402403`}, {
+     0.5555302454579741, 1.0861344128838548`}, {0.5299204987321486, 
+     1.0760596431018423`}}]}, 
+   {RGBColor[0.23005878669646163`, 0.7477664148626058, 0.583216543698603], 
+    PolygonBox[{{0.5299204987321486, 1.0760596431018423`}, {
+     0.5725208178864806, 1.0709038218482043`}, {0.6026462610758907, 
+     1.0823962402402403`}}]}, 
+   {RGBColor[0.9458345141899163, 0.6999182574272169, 0.8737727931940995], 
     PolygonBox[{{-0.3315801751099264, 
-     0.6839001675479252}, {-0.20388539918451123`, 
-     0.670592496351779}, {-0.1940082748938522, 0.6283222539175892}}]}, 
-   {RGBColor[0.6216468916646873, 0.7135019632689819, 0.6132165799578742], 
-    PolygonBox[{{-0.1940082748938522, 
-     0.6283222539175892}, {-0.057375742660369336`, 
-     0.6411367209382769}, {-0.05648923164723632, 0.6167529025824127}}]}, 
-   {RGBColor[0.44685645762504533`, 0.7642288304779443, 0.5220933491414506], 
-    PolygonBox[{{-0.19546431867047906`, 
-     0.9972089513566588}, {-0.11799189959497977`, 
-     1.0044747691930052`}, {-0.10551282223746822`, 0.9566070731936991}}]}, 
-   {RGBColor[0.41110135362942923`, 0.7853883472829948, 0.12361956457521028`], 
-    PolygonBox[{{0.019555019233988554`, 0.9461609568649112}, {
-     0.11103410283946495`, 0.995030181281185}, {0.10925095303163398`, 
-     1.0118841115916113`}}]}, 
-   {RGBColor[0.9930759009736791, 0.08610987334535536, 0.2835170289259825], 
-    PolygonBox[{{0.09305093188315408, 0.9993456251434742}, {
-     0.00810639103178085, 0.9539668397300528}, {-0.008515334819059745, 
-     0.9841514544125627}}]}, 
-   {RGBColor[0.7166775523412541, 0.09048079047563884, 0.5293010603173298], 
-    PolygonBox[{{-0.21695247192154304`, 
-     0.912518261368224}, {-0.3232410670649206, 
-     0.9235951389798965}, {-0.3090130980086185, 0.9566070731936991}}]}, 
-   {RGBColor[0.28326293802441427`, 0.3512609756930676, 0.9220538428716971], 
-    PolygonBox[{{0.017597267017762295`, 0.9629218041900922}, {
-     0.10925095303163398`, 1.0118841115916113`}, {0.11400161968152642`, 
-     1.0163377287560558`}}]}, 
-   {RGBColor[0.07572318076147622, 0.7796096663101773, 0.09867505431243617], 
-    PolygonBox[{{0.031003647436196158`, 0.9383550739997696}, {
-     0.12901662880263762`, 0.9907151771869445}, {0.14910727124930218`, 
-     0.9043960473290981}}]}, 
-   {RGBColor[0.9247523213792486, 0.812711610034559, 0.1256981997120743], 
-    PolygonBox[{{0.020342397320337456`, 0.9663038556087462}, {
-     0.11400161968152642`, 1.0163377287560558`}, {0.12181253107388049`, 
-     1.0088697403780074`}}]}, 
-   {RGBColor[0.9267242369110409, 0.7515230500578403, 0.6267998373598012], 
-    PolygonBox[{{0.16289420932903884`, 0.8330075001689226}, {
-     0.06005770900746004, 0.778070827421038}, {0.0478728912033458, 
-     0.8503155354146719}}]}, 
-   {RGBColor[0.40193590395139056`, 0.36720946394956666`, 0.3583058596696378], 
-    PolygonBox[{{-0.21240478389152911`, 
-     0.7278925201018039}, {-0.34108025456028795`, 
-     0.7413023566596844}, {-0.34701535683924456`, 0.8141198152355407}}]}, 
-   {RGBColor[0.5543534910403216, 0.7783999858328969, 0.08664475183979237], 
-    PolygonBox[{{-0.061995773983206895`, 0.6839001675479252}, {
-     0.0664998908516867, 0.7203883433812953}, {0.06635964857164711, 
-     0.6762731627691948}}]}, 
-   {RGBColor[0.6570107529831948, 0.7519042628081192, 0.5218924255275763], 
-    PolygonBox[{{-0.008515334819059745, 
-     0.9841514544125627}, {-0.10551282223746822`, 
-     0.9566070731936991}, {-0.11799189959497977`, 1.0044747691930052`}}]}, 
-   {RGBColor[0.793898593441271, 0.7430393484307038, 0.018406465442530662`], 
-    PolygonBox[{{0.025594898178955067`, 0.9574694831778782}, {
-     0.12181253107388049`, 1.0088697403780074`}, {0.12901662880263762`, 
-     0.9907151771869445}}]}, 
-   {RGBColor[0.6848557014177925, 0.059596661765037195`, 0.3481383884866107], 
-    PolygonBox[{{-0.10551282223746822`, 
-     0.9566070731936991}, {-0.2126204238057018, 
-     0.9465618287887145}, {-0.19546431867047906`, 0.9972089513566588}}]}, 
-   {RGBColor[0.08904102875357567, 0.22927702014532914`, 0.3833609676523373], 
-    PolygonBox[{{0.06635964857164711, 
-     0.6762731627691948}, {-0.057375742660369336`, 
-     0.6411367209382769}, {-0.061995773983206895`, 0.6839001675479252}}]}, 
-   {RGBColor[0.24722264340419953`, 0.6017887756382894, 0.6248556312816789], 
-    PolygonBox[{{-0.057375742660369336`, 
-     0.6411367209382769}, {-0.1940082748938522, 
-     0.6283222539175892}, {-0.20388539918451123`, 0.670592496351779}}]}, 
-   {RGBColor[0.2371611813401615, 0.46463887499019774`, 0.5991466653231223], 
-    PolygonBox[{{-0.3090130980086185, 
-     0.9566070731936991}, {-0.2126204238057018, 
-     0.9465618287887145}, {-0.21695247192154304`, 0.912518261368224}}]}, 
-   {RGBColor[0.5947834447823261, 0.9774958951980846, 0.9345473689138108], 
+     0.6839349838944819}, {-0.4211551190558917, 
+     0.7204286114930717}, {-0.4313437489833355, 0.7781131431638849}}]}, 
+   {RGBColor[0.6591162361125966, 0.06919968894906559, 0.751722574384619], 
+    PolygonBox[{{-0.456926332108726, 
+     0.9950795617359579}, {-0.4175744212139416, 
+     0.9462070665448217}, {-0.42036325571156186`, 0.9629685002676561}}]}, 
+   {RGBColor[0.9295216111038327, 0.7625833764108352, 0.8748874364973218], 
+    PolygonBox[{{-0.1807180960918207, 
+     1.10825384388312}, {-0.16321196621758213`, 
+     1.1064286467572872`}, {-0.1755628618441475, 1.053847203500626}}]}, 
+   {RGBColor[0.2146093500165167, 0.9889290999694644, 0.1480373587595929], 
+    PolygonBox[{{0.3316739773779153, 0.8977434693584226}, {
+     0.33913544795546485`, 0.8690915471434579}, {0.2688518551932612, 
+     0.8001724556585252}}]}, 
+   {RGBColor[0.6536595123878663, 0.9120039723885833, 0.8477831075345974], 
+    PolygonBox[{{0.5555302454579741, 1.0861344128838548`}, {
+     0.5033114644736836, 1.080109989354136}, {0.4818230555142661, 
+     1.070908356736323}}]}, 
+   {RGBColor[0.31752352017048313`, 0.6326164925317574, 0.7296837905679097], 
+    PolygonBox[{{-0.14375994495981842`, 
+     1.1082519959755635`}, {-0.12614408625640147`, 
+     1.113253404857949}, {-0.09276344282316971, 1.0690922333086854`}}]}, 
+   {RGBColor[0.8337432299509935, 0.46106786383227427`, 0.3671806429564517], 
+    PolygonBox[{{-0.25723594945128053`, 
+     1.229721877390256}, {-0.24597192661567463`, 
+     1.2156769381858996`}, {-0.2350238188837482, 1.1805255555555554`}}]}, 
+   {RGBColor[0.5287358297384563, 0.5607733301021474, 0.1277322435683237], 
+    PolygonBox[{{0.5033114644736836, 1.080109989354136}, {0.5555302454579741, 
+     1.0861344128838548`}, {0.5636517609432626, 1.0875674451933348`}}]}, 
+   {RGBColor[0.9841885656450178, 0.9316027793895931, 0.46118803826208254`], 
+    PolygonBox[{{-0.1685753252437488, 
+     0.597908244247367}, {-0.05843637246210363, 
+     0.6082326181372832}, {-0.06089086691610462, 0.6065481979397536}}]}, 
+   {RGBColor[0.7079331015634014, 0.20874553751599478`, 0.34389834907786954`], 
+    PolygonBox[{{0.6087149291901947, 1.0852415672284195`}, {
+     0.5636517609432626, 1.0875674451933348`}, {0.5555302454579741, 
+     1.0861344128838548`}}]}, 
+   {RGBColor[0.3749122296687222, 0.035092536016423814`, 0.3120355539095572], 
+    PolygonBox[{{-0.16827082484891667`, 
+     1.1424738080589245`}, {-0.18609022851146312`, 
+     1.1443237113001254`}, {-0.21365887487778087`, 1.1718445255879122`}}]}, 
+   {RGBColor[0.06961325863454393, 0.9386977372594201, 0.5510734479729396], 
+    PolygonBox[{{-0.16321196621758213`, 
+     1.1064286467572872`}, {-0.14375994495981842`, 
+     1.1082519959755635`}, {-0.13211175302367875`, 1.057920352183189}}]}, 
+   {RGBColor[0.06305400524716442, 0.07175758886322825, 0.16971948536000503`], 
+    PolygonBox[{{-0.06151128305270919, 
+     1.085786026308171}, {-0.09276344282316971, 
+     1.0690922333086854`}, {-0.12614408625640147`, 1.113253404857949}}]}, 
+   {RGBColor[0.2825084985278965, 0.7438438006059429, 0.46229226153869396`], 
+    PolygonBox[{{-0.4597904804971464, 
+     1.0119340846919451`}, {-0.42036325571156186`, 
+     0.9629685002676561}, {-0.4272054383922027, 0.9663509839834822}}]}, 
+   {RGBColor[0.27737315715135424`, 0.7267735529387691, 0.4687853926413543], 
+    PolygonBox[{{0.5555302454579741, 1.0861344128838548`}, {
+     0.6026462610758907, 1.0823962402402403`}, {0.6087149291901947, 
+     1.0852415672284195`}}]}, 
+   {RGBColor[0.7157588995431448, 0.09233810617241112, 0.3808010804443087], 
+    PolygonBox[{{-0.4755673878339037, 
+     1.0089204219404757`}, {-0.4341766959524494, 
+     0.9575167245322272}, {-0.4373493244723005, 0.9384019642679665}}]}, 
+   {RGBColor[0.9887061540458937, 0.4928273366747775, 0.5246288495654805], 
+    PolygonBox[{{-0.2350238188837482, 
+     1.1805255555555554`}, {-0.21365887487778087`, 
+     1.1718445255879122`}, {-0.18609022851146312`, 1.1443237113001254`}}]}, 
+   {RGBColor[0.3353494089211453, 0.3754310444189084, 0.8410271952956367], 
+    PolygonBox[{{-0.11638799549398512`, 
+     1.1569881423574158`}, {-0.1305866988321232, 
+     1.1493958784931093`}, {-0.11858445472597715`, 1.1805197335873476`}}]}, 
+   {RGBColor[0.33999784623926343`, 0.2224363147691173, 0.274655713249915], 
+    PolygonBox[{{0.5636517609432626, 1.0875674451933348`}, {0.514289023108308,
+      1.0815347421918151`}, {0.5033114644736836, 1.080109989354136}}]}, 
+   {RGBColor[0.9341082159201752, 0.8674025055770758, 0.7328440243463632], 
+    PolygonBox[{{0.4818230555142661, 1.070908356736323}, {
+     0.45296109020258357`, 1.055448814077503}, {0.3856620785096914, 
+     0.9944301794933417}}]}, 
+   {RGBColor[0.7496881787002336, 0.9273337602929088, 0.6500691312479181], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.0777810109743931, 
+     1.2471272678333887`}, {-0.09389624210176266, 1.2297137104048883`}}]}, 
+   {RGBColor[0.8500999691423277, 0.36146816510352164`, 0.568141066678117], 
+    PolygonBox[{{0.007889970256088475, 1.0541926975439682`}, {
+     0.04204755692330072, 1.0909906290769085`}, {0.11574496325293374`, 
+     1.0762030096273278`}}]}, 
+   {RGBColor[0.25271245739968307`, 0.15277812686804038`, 0.6066736190668705], 
+    PolygonBox[{{-0.1755628618441475, 
+     1.053847203500626}, {-0.21466707726123596`, 
+     1.057924479949401}, {-0.1807180960918207, 1.10825384388312}}]}, 
+   {RGBColor[0.8700476983941159, 0.18914106448068613`, 0.2804134278710011], 
+    PolygonBox[{{-0.4674951960629281, 
+     1.0163882058552924`}, {-0.4272054383922027, 
+     0.9663509839834822}, {-0.4341766959524494, 0.9575167245322272}}]}, 
+   {RGBColor[
+    0.26724822059044184`, 0.20339953488353069`, 0.10534299263588776`], 
+    PolygonBox[{{0.514289023108308, 1.0815347421918151`}, {0.5636517609432626,
+      1.0875674451933348`}, {0.5536118359769442, 1.0810983820816722`}}]}, 
+   {RGBColor[0.12026799093443419`, 0.380711251877611, 0.6030990920103214], 
+    PolygonBox[{{0.5541033554595297, 1.0647203836008736`}, {
+     0.5255228182447449, 1.0678139921879604`}, {0.5536118359769442, 
+     1.0810983820816722`}}]}, 
+   {RGBColor[0.6353762399609315, 0.8586145735368722, 0.24333991539242605`], 
+    PolygonBox[{{0.5118597175512024, 1.0760332885448294`}, {
+     0.5536118359769442, 1.0810983820816722`}, {0.5255228182447449, 
+     1.0678139921879604`}}]}, 
+   {RGBColor[0.742306224740749, 0.36616179578241304`, 0.32580426676369645`], 
+    PolygonBox[{{0.5918017181842851, 1.0792642024552446`}, {
+     0.5536118359769442, 1.0810983820816722`}, {0.5636517609432626, 
+     1.0875674451933348`}}]}, 
+   {RGBColor[0.3410317786002055, 0.6857232199070558, 0.7144828762064324], 
+    PolygonBox[{{-0.09389624210176266, 
+     1.2297137104048883`}, {-0.0777810109743931, 
+     1.2471272678333887`}, {-0.07937947927061596, 1.2096282898384185`}}]}, 
+   {RGBColor[0.8386838500267706, 0.24917856457590992`, 0.9102793636022737], 
+    PolygonBox[{{0.5255228182447449, 1.0678139921879604`}, {
+     0.49364404411870333`, 1.0647234065664406`}, {0.5118597175512024, 
+     1.0760332885448294`}}]}, 
+   {RGBColor[0.746904133764239, 0.9671403179919691, 0.062120328519813306`], 
+    PolygonBox[{{0.45296109020258357`, 1.055448814077503}, {
+     0.4818230555142661, 1.070908356736323}, {0.5033114644736836, 
+     1.080109989354136}}]}, 
+   {RGBColor[
+    0.16623672669313105`, 0.42207995461771586`, 0.45027505617520336`], 
+    PolygonBox[{{0.5536118359769442, 1.0810983820816722`}, {
+     0.5118597175512024, 1.0760332885448294`}, {0.514289023108308, 
+     1.0815347421918151`}}]}, 
+   {RGBColor[0.3174066314525381, 0.5813326885805699, 0.7375800143756304], 
+    PolygonBox[{{0.04204755692330072, 1.0909906290769085`}, {
+     0.007889970256088475, 1.0541926975439682`}, {-0.06151128305270919, 
+     1.085786026308171}}]}, 
+   {RGBColor[0.38124041557244426`, 0.2734098531301319, 0.5994770152483666], 
+    PolygonBox[{{0.5636517609432626, 1.0875674451933348`}, {
+     0.6087149291901947, 1.0852415672284195`}, {0.5918017181842851, 
+     1.0792642024552446`}}]}, 
+   {RGBColor[0.8467155020868173, 0.9737062830957208, 0.28205162996799094`], 
+    PolygonBox[{{0.3546184424109582, 0.8573830486925804}, {
+     0.33913544795546485`, 0.8690915471434579}, {0.4050935307882798, 
+     0.9572065021935655}}]}, 
+   {RGBColor[0.1885923488426513, 0.06539140303186874, 0.8894657250332763], 
+    PolygonBox[{{0.3856620785096914, 0.9944301794933417}, {
+     0.38611948353746794`, 0.9720605410049004}, {0.3316739773779153, 
+     0.8977434693584226}}]}, 
+   {RGBColor[0.34209430607416924`, 0.8220161820609209, 0.2858809689848498], 
+    PolygonBox[{{0.5536118359769442, 1.0810983820816722`}, {
+     0.5918017181842851, 1.0792642024552446`}, {0.5541033554595297, 
+     1.0647203836008736`}}]}, 
+   {RGBColor[0.2592618086361811, 0.9610757929960205, 0.7751717975923862], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.2228855864094891, 
+     1.2062981955125538`}, {-0.24597192661567463`, 1.2156769381858996`}}]}, 
+   {RGBColor[0.19953386054981004`, 0.16919519728690502`, 0.6324774474367421], 
+    PolygonBox[{{-0.148479194023342, 
+     1.144321830748401}, {-0.16827082484891667`, 
+     1.1424738080589245`}, {-0.18311887938015142`, 1.1686825022427851`}}]}, 
+   {RGBColor[0.7344975894436281, 0.4315053153371011, 0.7318536882152156], 
+    PolygonBox[{{-0.11858445472597715`, 
+     1.1805197335873476`}, {-0.09429397791150501, 
+     1.1935160331932222`}, {-0.11638799549398512`, 1.1569881423574158`}}]}, 
+   {RGBColor[0.3585818998991195, 0.7052262717734337, 0.1352557413558908], 
+    PolygonBox[{{0.06635964857164711, 0.6762878787377733}, {
+     0.16463145372384555`, 0.7287823428880205}, {0.14684245009180416`, 
+     0.6970269023277393}}]}, 
+   {RGBColor[0.5995430464858307, 0.6506768097462488, 0.04943813513216644], 
+    PolygonBox[{{0.6174571565154766, 1.0682471889457532`}, {
+     0.6026462610758907, 1.0823962402402403`}, {0.5725208178864806, 
+     1.0709038218482043`}}]}, 
+   {RGBColor[0.5811301142475953, 0.5281574916712473, 0.3147457770497284], 
+    PolygonBox[{{-0.1305866988321232, 
+     1.1493958784931093`}, {-0.148479194023342, 
+     1.144321830748401}, {-0.1492077776769784, 1.171841303033052}}]}, 
+   {RGBColor[0.24180435966719904`, 0.2015876405618151, 0.563513955940308], 
+    PolygonBox[{{-0.21365887487778087`, 
+     1.1718445255879122`}, {-0.2350238188837482, 
+     1.1805255555555554`}, {-0.24597192661567463`, 1.2156769381858996`}}]}, 
+   {RGBColor[0.2815845601977429, 0.46857659719600786`, 0.54727778282829], 
+    PolygonBox[{{-0.07937947927061596, 
+     1.2096282898384185`}, {-0.09429397791150501, 
+     1.1935160331932222`}, {-0.09389624210176266, 1.2297137104048883`}}]}, 
+   {RGBColor[0.8300907137540359, 0.4383672912484793, 0.6585175803459475], 
+    PolygonBox[{{0.4729943201987931, 1.0649674755946041`}, {
+     0.5033114644736836, 1.080109989354136}, {0.514289023108308, 
+     1.0815347421918151`}}]}, 
+   {RGBColor[0.0356487167880255, 0.4246064896929318, 0.2680187749608194], 
+    PolygonBox[{{0.4050935307882798, 0.9572065021935655}, {
+     0.43008849213295214`, 0.9545499903566267}, {0.3546184424109582, 
+     0.8573830486925804}}]}, 
+   {RGBColor[0.473119929795623, 0.8200695852579691, 0.7221307482581438], 
+    PolygonBox[{{0.33913544795546485`, 0.8690915471434579}, {
+     0.3316739773779153, 0.8977434693584226}, {0.38611948353746794`, 
+     0.9720605410049004}}]}, 
+   {RGBColor[0.11284968109813542`, 0.9278242369440461, 0.5074105391182842], 
+    PolygonBox[{{-0.4211551190558917, 
+     0.7204286114930717}, {-0.3315801751099264, 
+     0.6839349838944819}, {-0.3169720423052681, 0.6411696665196173}}]}, 
+   {RGBColor[0.39273945637812013`, 0.3368446818338724, 0.6204757938497814], 
+    PolygonBox[{{-0.26518653205387555`, 
+     1.004514814513453}, {-0.31409582600342145`, 
+     1.0244406055757334`}, {-0.24209693351011033`, 1.0690996999832196`}}]}, 
+   {RGBColor[0.9667424530167918, 0.9641180882871427, 0.8725976619349929], 
+    PolygonBox[{{-0.09276344282316971, 
+     1.0690922333086854`}, {-0.13211175302367875`, 
+     1.057920352183189}, {-0.14375994495981842`, 1.1082519959755635`}}]}, 
+   {RGBColor[0.895848424642568, 0.8131737426422123, 0.46226078989008945`], 
+    PolygonBox[{{0.38611948353746794`, 0.9720605410049004}, {
+     0.3856620785096914, 0.9944301794933417}, {0.45296109020258357`, 
+     1.055448814077503}}]}, 
+   {RGBColor[0.8237862266496085, 0.7077408555205988, 0.6451171031198062], 
+    PolygonBox[{{-0.24209693351011033`, 
+     1.0690996999832196`}, {-0.21466707726123596`, 
+     1.057924479949401}, {-0.26518653205387555`, 1.004514814513453}}]}, 
+   {RGBColor[0.7466319884103045, 0.5200089374456238, 0.027017878161804676`], 
+    PolygonBox[{{0.488249911253106, 1.0649667128150515`}, {0.5118597175512024,
+      1.0760332885448294`}, {0.49364404411870333`, 1.0647234065664406`}}]}, 
+   {RGBColor[0.4273417729440805, 0.9918488822552542, 0.8670915995249278], 
+    PolygonBox[{{0.6235569125510252, 1.0735069035603837`}, {
+     0.6087149291901947, 1.0852415672284195`}, {0.6026462610758907, 
+     1.0823962402402403`}}]}, 
+   {RGBColor[0.8894406680953262, 0.036253988741456356`, 0.442461501469098], 
+    PolygonBox[{{-0.13211175302367875`, 
+     1.057920352183189}, {-0.1755628618441475, 
+     1.053847203500626}, {-0.16321196621758213`, 1.1064286467572872`}}]}, 
+   {RGBColor[0.6520864139435774, 0.2732056144883037, 0.7400540195010774], 
+    PolygonBox[{{0.5629031023876767, 1.0554433169768938`}, {
+     0.5541033554595297, 1.0647203836008736`}, {0.5918017181842851, 
+     1.0792642024552446`}}]}, 
+   {RGBColor[0.06283538697626434, 0.7728501983816676, 0.2221590462026315], 
+    PolygonBox[{{0.4862414802036295, 1.0681776759749084`}, {0.514289023108308,
+      1.0815347421918151`}, {0.5118597175512024, 1.0760332885448294`}}]}, 
+   {RGBColor[0.16980416722765335`, 0.7597891622150046, 0.6905958058773995], 
+    PolygonBox[{{-0.29424820730576223`, 
+     0.6167840617368467}, {-0.18162813577029646`, 
+     0.6050417122115856}, {-0.1685753252437488, 0.597908244247367}}]}, 
+   {RGBColor[0.4225800876332897, 0.2595252091392577, 0.19384640177549461`], 
+    PolygonBox[{{-0.21365887487778087`, 
+     1.1718445255879122`}, {-0.18311887938015142`, 
+     1.1686825022427851`}, {-0.16827082484891667`, 1.1424738080589245`}}]}, 
+   {RGBColor[0.5204698577482987, 0.5622735877393852, 0.7804146458251493], 
+    PolygonBox[{{0.5033114644736836, 1.080109989354136}, {0.4729943201987931, 
+     1.0649674755946041`}, {0.45296109020258357`, 1.055448814077503}}]}, 
+   {RGBColor[0.5638765047679035, 0.4778658395557316, 0.4901298974936448], 
+    PolygonBox[{{0.6044972283403646, 1.0696209266319099`}, {
+     0.5918017181842851, 1.0792642024552446`}, {0.6087149291901947, 
+     1.0852415672284195`}}]}, 
+   {RGBColor[0.7276044567152227, 0.03235056305215256, 0.9439836385448808], 
+    PolygonBox[{{0.5725208178864806, 1.0709038218482043`}, {
+     0.5848915048246952, 1.055442217556772}, {0.6174571565154766, 
+     1.0682471889457532`}}]}, 
+   {RGBColor[0.3531085037260264, 0.2743106342092856, 0.43581517408463233`], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.09389624210176266, 
+     1.2297137104048883`}, {-0.12014053320031041`, 1.2156706466162288`}}]}, 
+   {RGBColor[0.6680384718399115, 0.7625727714808621, 0.9973628001250343], 
+    PolygonBox[{{0.0685211043401446, 1.0253289452089809`}, {
+     0.11574496325293374`, 1.0762030096273278`}, {0.14512345608432284`, 
+     1.055464205959209}}]}, 
+   {RGBColor[0.15839221154676086`, 0.3535793374976792, 0.37492146491550793`], 
+    PolygonBox[{{0.49364404411870333`, 1.0647234065664406`}, {
+     0.4749494926396021, 1.055447714657381}, {0.488249911253106, 
+     1.0649667128150515`}}]}, 
+   {RGBColor[0.9227636955832776, 0.09483870868959876, 0.9267424868161638], 
+    PolygonBox[{{0.44937291172340327`, 0.9684794602359853}, {
+     0.43008849213295214`, 0.9545499903566267}, {0.5560295395130126, 
+     1.039982674897952}}]}, 
+   {RGBColor[0.11768643052004557`, 0.09607501429513321, 0.4012934249168725], 
+    PolygonBox[{{-0.1492077776769784, 
+     1.171841303033052}, {-0.11858445472597715`, 
+     1.1805197335873476`}, {-0.1305866988321232, 1.1493958784931093`}}]}, 
+   {RGBColor[0.3626705285037184, 0.7891779641955183, 0.3484566573762189], 
+    PolygonBox[{{0.514289023108308, 1.0815347421918151`}, {0.4862414802036295,
+      1.0681776759749084`}, {0.4729943201987931, 1.0649674755946041`}}]}, 
+   {RGBColor[0.30578135527327444`, 0.9099160417150374, 0.24106722880967224`], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.1898782562908769, 
+     1.2028824929331559`}, {-0.2228855864094891, 1.2062981955125538`}}]}, 
+   {RGBColor[0.2063703412446003, 0.1306941764082712, 0.7670928631053955], 
+    PolygonBox[{{-0.24597192661567463`, 
+     1.2156769381858996`}, {-0.2228855864094891, 
+     1.2062981955125538`}, {-0.21365887487778087`, 1.1718445255879122`}}]}, 
+   {RGBColor[0.5339612744625466, 0.6687464268878636, 0.851915839766715], 
+    PolygonBox[{{-0.09276344282316971, 
+     1.0690922333086854`}, {-0.06151128305270919, 1.085786026308171}, {
+     0.007889970256088475, 1.0541926975439682`}}]}, 
+   {RGBColor[0.2471870570686363, 0.2844114506319295, 0.018349125377416176`], 
+    PolygonBox[{{0.5560295395130126, 1.039982674897952}, {0.5848915048246952, 
+     1.055442217556772}, {0.44937291172340327`, 0.9684794602359853}}]}, 
+   {RGBColor[0.3918098895628155, 0.7727724891808507, 0.9824554209497136], 
+    PolygonBox[{{0.6026462610758907, 1.0823962402402403`}, {
+     0.6174571565154766, 1.0682471889457532`}, {0.6235569125510252, 
+     1.0735069035603837`}}]}, 
+   {RGBColor[0.08378791312702649, 0.5132564053311108, 0.25581388042882924`], 
+    PolygonBox[{{0.12901662880263762`, 0.9907351454268959}, {
+     0.1891002609583601, 1.0554620071189653`}, {0.2111647008261305, 
+     0.97126709917047}}]}, 
+   {RGBColor[0.6931259918663206, 0.03693613590504885, 0.3199488630998393], 
+    PolygonBox[{{0.5118597175512024, 1.0760332885448294`}, {0.488249911253106,
+      1.0649667128150515`}, {0.4862414802036295, 1.0681776759749084`}}]}, 
+   {RGBColor[0.9958518676018837, 0.33218613783608464`, 0.8236456774730334], 
+    PolygonBox[{{0.5918017181842851, 1.0792642024552446`}, {
+     0.6044972283403646, 1.0696209266319099`}, {0.5629031023876767, 
+     1.0554433169768938`}}]}, 
+   {RGBColor[0.7897658080581733, 0.4410024555114056, 0.7191856042632547], 
+    PolygonBox[{{-0.18311887938015142`, 
+     1.1686825022427851`}, {-0.1492077776769784, 
+     1.171841303033052}, {-0.148479194023342, 1.144321830748401}}]}, 
+   {RGBColor[0.02348874970524739, 0.049983980057323185`, 0.7333282792261648], 
+    PolygonBox[{{0.38611948353746794`, 0.9720605410049004}, {
+     0.4050935307882798, 0.9572065021935655}, {0.33913544795546485`, 
+     0.8690915471434579}}]}, 
+   {RGBColor[0.6650833435566998, 0.8729267985704245, 0.41221769506246075`], 
+    PolygonBox[{{0.6087149291901947, 1.0852415672284195`}, {
+     0.6235569125510252, 1.0735069035603837`}, {0.6044972283403646, 
+     1.0696209266319099`}}]}, 
+   {RGBColor[0.7208547231873088, 0.11935818172129475`, 0.8550874034669937], 
+    PolygonBox[{{-0.18162813577029646`, 
+     0.6050417122115856}, {-0.29424820730576223`, 
+     0.6167840617368467}, {-0.3169720423052681, 0.6411696665196173}}]}, 
+   {RGBColor[0.5161505868998182, 0.5982709123435728, 0.05853351012654229], 
+    PolygonBox[{{0.22593451804470063`, 0.9009339197579525}, {
+     0.16289420932903884`, 0.8330215689917939}, {0.14910727124930218`, 
+     0.9044127091934644}}]}, 
+   {RGBColor[0.5731531474968747, 0.8574961252821383, 0.5812624669531421], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.12014053320031041`, 
+     1.2156706466162288`}, {-0.15322936758674213`, 1.2062947127016128`}}]}, 
+   {RGBColor[0.5403132448235064, 0.041533357818923644`, 0.33760265729368855`],
+     PolygonBox[{{0.14684245009180416`, 0.6970269023277393}, {
+     0.05683766341012611, 0.6489482391294207}, {0.06635964857164711, 
+     0.6762878787377733}}]}, 
+   {RGBColor[0.7724248645201053, 0.7501012515340129, 0.15225293525566563`], 
+    PolygonBox[{{-0.1684299173640718, 
+     1.2632664877098794`}, {-0.15322936758674213`, 
+     1.2062947127016128`}, {-0.1898782562908769, 1.2028824929331559`}}]}, 
+   {RGBColor[0.028635714024499936`, 0.3588147689542882, 0.9583618102833282], 
+    PolygonBox[{{-0.12014053320031041`, 
+     1.2156706466162288`}, {-0.09389624210176266, 
+     1.2297137104048883`}, {-0.09429397791150501, 1.1935160331932222`}}]}, 
+   {RGBColor[0.2781194639049822, 0.2691545600483356, 0.2705137141341589], 
+    PolygonBox[{{0.11103410283946495`, 0.9950511637142104}, {
+     0.16711185852134147`, 1.0554631065390871`}, {0.16543473345648196`, 
+     1.0724322607873469`}}]}, 
+   {RGBColor[0.7781003494014058, 0.4704646455369812, 0.06944178444829086], 
     PolygonBox[{{-0.34108025456028795`, 
-     0.7413023566596844}, {-0.21240478389152911`, 
-     0.7278925201018039}, {-0.20388539918451123`, 0.670592496351779}}]}, 
-   {RGBColor[0.3706464587820668, 0.6245485228151741, 0.3806177139168563], 
-    PolygonBox[{{-0.22523462734727884`, 
-     0.9181999923143812}, {-0.3399160956817845, 
-     0.9301515764902281}, {-0.33728010498142874`, 0.9134532082398459}}]}, 
-   {RGBColor[0.3469408986913909, 0.7603951802442108, 0.6725585060741084], 
-    PolygonBox[{{0.10925095303163398`, 1.0118841115916113`}, {
-     0.017597267017762295`, 0.9629218041900922}, {0.019555019233988554`, 
-     0.9461609568649112}}]}, 
-   {RGBColor[0.7432378660877845, 0.5387074585889695, 0.19484679674596195`], 
-    PolygonBox[{{-0.10551282223746822`, 
-     0.9566070731936991}, {-0.008515334819059745, 0.9841514544125627}, {
-     0.00810639103178085, 0.9539668397300528}}]}, 
-   {RGBColor[0.4847362929915442, 0.3937437184433341, 0.6780405408082066], 
-    PolygonBox[{{0.14910727124930218`, 0.9043960473290981}, {
-     0.0478728912033458, 0.8503155354146719}, {0.031003647436196158`, 
-     0.9383550739997696}}]}, 
-   {RGBColor[0.8162666254095166, 0.027467221759047256`, 0.822045000931009], 
-    PolygonBox[{{-0.22034421701865106`, 
-     0.8009192897883399}, {-0.34701535683924456`, 
-     0.8141198152355407}, {-0.3513200224340342, 0.9033112774997955}}]}, 
-   {RGBColor[0.22897874276881525`, 0.35178061907963, 0.01738179956216679], 
-    PolygonBox[{{-0.2278048523358396, 
-     0.9206038584839207}, {-0.34499755610183885`, 
-     0.9328166106007677}, {-0.3399160956817845, 0.9301515764902281}}]}, 
-   {RGBColor[0.6277625779070952, 0.45969765105533544`, 0.7294654436973516], 
-    PolygonBox[{{0.11400161968152642`, 1.0163377287560558`}, {
-     0.020342397320337456`, 0.9663038556087462}, {0.017597267017762295`, 
-     0.9629218041900922}}]}, 
-   {RGBColor[0.9398590691562809, 0.5614974940394475, 0.28607687707165574`], 
-    PolygonBox[{{-0.20388539918451123`, 
-     0.670592496351779}, {-0.061995773983206895`, 
-     0.6839001675479252}, {-0.057375742660369336`, 0.6411367209382769}}]}, 
-   {RGBColor[0.620206537946939, 0.7935556365545691, 0.053665388471514364`], 
-    PolygonBox[{{-0.22933004936967505`, 
-     0.9105210760223884}, {-0.3497237198752786, 
-     0.9230678488220896}, {-0.34499755610183885`, 0.9328166106007677}}]}, 
-   {RGBColor[0.26698390065707756`, 0.5715417589959177, 0.581188327023205], 
-    PolygonBox[{{0.12181253107388049`, 1.0088697403780074`}, {
-     0.025594898178955067`, 0.9574694831778782}, {0.020342397320337456`, 
-     0.9663038556087462}}]}, 
-   {RGBColor[0.11223857369958057`, 0.38819902459159783`, 0.5701095316172362], 
-    PolygonBox[{{-0.22867938534499374`, 
-     0.890530298699254}, {-0.3513200224340342, 
-     0.9033112774997955}, {-0.3497237198752786, 0.9230678488220896}}]}, 
-   {RGBColor[0.6309432711547778, 0.05925943467415751, 0.2652870321755707], 
-    PolygonBox[{{0.12901662880263762`, 0.9907151771869445}, {
-     0.031003647436196158`, 0.9383550739997696}, {0.025594898178955067`, 
-     0.9574694831778782}}]}, 
-   {RGBColor[0.5235570459687986, 0.6719744874055886, 0.6751789262958456], 
-    PolygonBox[{{-0.06942548756103122, 0.7413023566596844}, {
-     0.06005770900746004, 0.778070827421038}, {0.0664998908516867, 
-     0.7203883433812953}}]}, 
-   {RGBColor[0.4442228165224211, 0.6186142765881024, 0.5563069485912733], 
-    PolygonBox[{{-0.2126204238057018, 
-     0.9465618287887145}, {-0.10551282223746822`, 
-     0.9566070731936991}, {-0.09884942019514568, 0.9235951389798965}}]}, 
-   {RGBColor[0.8726909020662557, 0.9322268194297794, 0.6351908298073032], 
+     0.7413391787352567}, {-0.4313437489833355, 
+     0.7781131431638849}, {-0.4358719965725605, 0.8503600040954449}}]}, 
+   {RGBColor[0.7965136198062484, 0.4201196174377928, 0.29621680708913267`], 
+    PolygonBox[{{-0.18311887938015142`, 
+     1.1686825022427851`}, {-0.21365887487778087`, 
+     1.1718445255879122`}, {-0.2228855864094891, 1.2062981955125538`}}]}, 
+   {RGBColor[0.9441384819515708, 0.08455229782952434, 0.6159999546452579], 
+    PolygonBox[{{-0.09429397791150501, 
+     1.1935160331932222`}, {-0.11858445472597715`, 
+     1.1805197335873476`}, {-0.12014053320031041`, 1.2156706466162288`}}]}, 
+   {RGBColor[0.337071544705952, 0.21065321124539893`, 0.4090777184162919], 
+    PolygonBox[{{-0.05843637246210363, 
+     0.6082326181372832}, {-0.1685753252437488, 
+     0.597908244247367}, {-0.18162813577029646`, 0.6050417122115856}}]}, 
+   {RGBColor[0.11639990841810732`, 0.9462882408753996, 0.7213687211175193], 
+    PolygonBox[{{0.041306032254755924`, 
+     0.6365517828363915}, {-0.05843637246210363, 
+     0.6082326181372832}, {-0.05648923164723632, 0.6167721737880639}}]}, 
+   {RGBColor[0.39578520531620964`, 0.14281238978869304`, 0.03931239470069059],
+     PolygonBox[{{0.5442085509085753, 1.0461676250678342`}, {
+     0.5629031023876767, 1.0554433169768938`}, {0.6044972283403646, 
+     1.0696209266319099`}}]}, 
+   {RGBColor[0.07203499073166908, 0.7230375541841774, 0.5701044942171376], 
+    PolygonBox[{{0.5008281876878089, 1.0553491700509665`}, {0.488249911253106,
+      1.0649667128150515`}, {0.4749494926396021, 1.055447714657381}}]}, 
+   {RGBColor[0.1608919941790441, 0.7667784441336942, 0.6472387239621569], 
+    PolygonBox[{{0.10925095303163398`, 1.011905632620269}, {
+     0.16543473345648196`, 1.0724322607873469`}, {0.17141519673380198`, 
+     1.0782105462741334`}}]}, 
+   {RGBColor[0.5292060208016485, 0.30047326198318225`, 0.19244883452813744`], 
+    PolygonBox[{{0.4653317771407981, 1.0399872097860705`}, {
+     0.45296109020258357`, 1.055448814077503}, {0.4729943201987931, 
+     1.0649674755946041`}}]}, 
+   {RGBColor[0.5804512226359724, 0.14149385142247728`, 0.8108049679870306], 
+    PolygonBox[{{0.45296109020258357`, 1.055448814077503}, {
+     0.4653317771407981, 1.0399872097860705`}, {0.38611948353746794`, 
+     0.9720605410049004}}]}, 
+   {RGBColor[0.9434412034939459, 0.46723409565014307`, 0.3089134953696495], 
+    PolygonBox[{{0.12181253107388049`, 1.0088905529445304`}, {
+     0.18079524707030462`, 1.0724314927616663`}, {0.1891002609583601, 
+     1.0554620071189653`}}]}, 
+   {RGBColor[0.4360923385719728, 0.9813496675388986, 0.9439315897109981], 
+    PolygonBox[{{0.11400161968152642`, 1.0163591310145053`}, {
+     0.17141519673380198`, 1.0782105462741334`}, {0.18079524707030462`, 
+     1.0724314927616663`}}]}, 
+   {RGBColor[0.3691981290623725, 0.9969068755075488, 0.39664113485650554`], 
+    PolygonBox[{{0.11574496325293374`, 1.0762030096273278`}, {
+     0.0685211043401446, 1.0253289452089809`}, {0.007889970256088475, 
+     1.0541926975439682`}}]}, 
+   {RGBColor[0.6054320989598654, 0.3428444538992561, 0.47425536619714403`], 
+    PolygonBox[{{-0.05648923164723632, 0.6167721737880639}, {
+     0.05683766341012611, 0.6489482391294207}, {0.041306032254755924`, 
+     0.6365517828363915}}]}, 
+   {RGBColor[0.8535342630805403, 0.8416285969845889, 0.6902052634724112], 
+    PolygonBox[{{0.5009264703262245, 1.0564799557254083`}, {
+     0.4862414802036295, 1.0681776759749084`}, {0.488249911253106, 
+     1.0649667128150515`}}]}, 
+   {RGBColor[0.36136038306013263`, 0.8100021559649322, 0.5978966293091683], 
+    PolygonBox[{{0.4877039236386419, 1.0508458502884328`}, {
+     0.4729943201987931, 1.0649674755946041`}, {0.4862414802036295, 
+     1.0681776759749084`}}]}, 
+   {RGBColor[0.516618389969151, 0.3985512610588784, 0.08346419449378328], 
+    PolygonBox[{{0.587005613020428, 1.0530700251362475`}, {0.6174571565154766,
+      1.0682471889457532`}, {0.5848915048246952, 1.055442217556772}}]}, 
+   {RGBColor[0.21458561567020062`, 0.9623756607052643, 0.18796658473186167`], 
+    PolygonBox[{{0.4749494926396021, 1.055447714657381}, {
+     0.48374923956774896`, 1.0461706480334012`}, {0.5008281876878089, 
+     1.0553491700509665`}}]}, 
+   {RGBColor[0.39622898010167074`, 0.21010769679788388`, 0.4934319130472513], 
+    PolygonBox[{{0.5807370246919957, 1.058517902157202}, {0.6044972283403646, 
+     1.0696209266319099`}, {0.6235569125510252, 1.0735069035603837`}}]}, 
+   {RGBColor[0.4589848161215815, 0.6867163198115152, 0.6677421884542782], 
+    PolygonBox[{{-0.2228855864094891, 
+     1.2062981955125538`}, {-0.1898782562908769, 
+     1.2028824929331559`}, {-0.18311887938015142`, 1.1686825022427851`}}]}, 
+   {RGBColor[0.820520999342448, 0.8041282211977054, 0.011722448253901563`], 
+    PolygonBox[{{0.4050935307882798, 0.9572065021935655}, {
+     0.38611948353746794`, 0.9720605410049004}, {0.4653317771407981, 
+     1.0399872097860705`}}]}, 
+   {RGBColor[0.7671817070063387, 0.38680003256467965`, 0.3195323307341582], 
+    PolygonBox[{{0.5953065206878334, 1.060100801286492}, {0.6235569125510252, 
+     1.0735069035603837`}, {0.6174571565154766, 1.0682471889457532`}}]}, 
+   {RGBColor[0.5635690270363569, 0.27717350561384047`, 0.2985760037578773], 
+    PolygonBox[{{-0.1492077776769784, 
+     1.171841303033052}, {-0.18311887938015142`, 
+     1.1686825022427851`}, {-0.1898782562908769, 1.2028824929331559`}}]}, 
+   {RGBColor[0.14143258586881324`, 0.6837880707065351, 0.9954022856085338], 
+    PolygonBox[{{-0.11858445472597715`, 
+     1.1805197335873476`}, {-0.1492077776769784, 
+     1.171841303033052}, {-0.15322936758674213`, 1.2062947127016128`}}]}, 
+   {RGBColor[0.6762391313264653, 0.17229205984616458`, 0.28880593866212045`], 
+    PolygonBox[{{0.43008849213295214`, 0.9545499903566267}, {
+     0.4050935307882798, 0.9572065021935655}, {0.50793209629513, 
+     1.0348313885324323`}}]}, 
+   {RGBColor[0.6541819596952712, 0.08630314997945754, 0.31491945837395363`], 
+    PolygonBox[{{0.6044972283403646, 1.0696209266319099`}, {
+     0.5807370246919957, 1.058517902157202}, {0.5442085509085753, 
+     1.0461676250678342`}}]}, 
+   {RGBColor[0.6669426292516316, 0.5730866850158944, 0.272592603716896], 
+    PolygonBox[{{-0.3090130980086185, 
+     0.9566480333705513}, {-0.3766299121269057, 
+     0.9841965299469534}, {-0.31409582600342145`, 1.0244406055757334`}}]}, 
+   {RGBColor[0.9378345668072281, 0.15809968136333752`, 0.3219104492790792], 
+    PolygonBox[{{-0.15322936758674213`, 
+     1.2062947127016128`}, {-0.12014053320031041`, 
+     1.2156706466162288`}, {-0.11858445472597715`, 1.1805197335873476`}}]}, 
+   {RGBColor[0.35226712363919255`, 0.3618517923035389, 0.25263547095369554`], 
+    PolygonBox[{{-0.21466707726123596`, 
+     1.057924479949401}, {-0.1755628618441475, 
+     1.053847203500626}, {-0.19546431867047906`, 0.9972453168112951}}]}, 
+   {RGBColor[0.5105268579339153, 0.8718737531028684, 0.1648520799765285], 
+    PolygonBox[{{0.488249911253106, 1.0649667128150515`}, {0.5008281876878089,
+      1.0553491700509665`}, {0.5009264703262245, 1.0564799557254083`}}]}, 
+   {RGBColor[0.08997387807141877, 0.23882170367003663`, 0.8613699493978124], 
+    PolygonBox[{{0.4729943201987931, 1.0649674755946041`}, {
+     0.4877039236386419, 1.0508458502884328`}, {0.4653317771407981, 
+     1.0399872097860705`}}]}, 
+   {RGBColor[0.9420093858471765, 0.4533981527552524, 0.3918830631744328], 
+    PolygonBox[{{-0.1898782562908769, 
+     1.2028824929331559`}, {-0.15322936758674213`, 
+     1.2062947127016128`}, {-0.1492077776769784, 1.171841303033052}}]}, 
+   {RGBColor[0.820027250024095, 0.9557240962602696, 0.6000149736656111], 
+    PolygonBox[{{0.5848915048246952, 1.055442217556772}, {0.5560295395130126, 
+     1.039982674897952}, {0.587005613020428, 1.0530700251362475`}}]}, 
+   {RGBColor[0.9632813221707384, 0.513356382756673, 0.12769133094341], 
+    PolygonBox[{{0.6235569125510252, 1.0735069035603837`}, {
+     0.5953065206878334, 1.060100801286492}, {0.5807370246919957, 
+     1.058517902157202}}]}, 
+   {RGBColor[0.8409443879062932, 0.9223671149387893, 0.36803809591533687`], 
+    PolygonBox[{{0.4862414802036295, 1.0681776759749084`}, {
+     0.5009264703262245, 1.0564799557254083`}, {0.4877039236386419, 
+     1.0508458502884328`}}]}, 
+   {RGBColor[0.6564800799918591, 0.5298583935523979, 0.5560999525814128], 
+    PolygonBox[{{-0.13211175302367875`, 
+     1.057920352183189}, {-0.09276344282316971, 
+     1.0690922333086854`}, {-0.047832512837763054`, 1.024427292410075}}]}, 
+   {RGBColor[0.2146454592903133, 0.02497377459688921, 0.21936485586902332`], 
+    PolygonBox[{{0.50793209629513, 1.0348313885324323`}, {0.5560295395130126, 
+     1.039982674897952}, {0.43008849213295214`, 0.9545499903566267}}]}, 
+   {RGBColor[0.7234191430340557, 0.8529965308328391, 0.8403235786560057], 
+    PolygonBox[{{0.5123297767825338, 1.0430770394463142`}, {
+     0.5442085509085753, 1.0461676250678342`}, {0.5807370246919957, 
+     1.058517902157202}}]}, 
+   {RGBColor[0.39820624027104956`, 0.15371815412489354`, 0.9413229417203253], 
+    PolygonBox[{{0.6174571565154766, 1.0682471889457532`}, {0.587005613020428,
+      1.0530700251362475`}, {0.5953065206878334, 1.060100801286492}}]}, 
+   {RGBColor[0.21946244367135637`, 0.6962758106496953, 0.9729175606442146], 
+    PolygonBox[{{-0.4313437489833355, 
+     0.7781131431638849}, {-0.34108025456028795`, 
+     0.7413391787352567}, {-0.3315801751099264, 0.6839349838944819}}]}, 
+   {RGBColor[0.9535443005302251, 0.37394979990996147`, 0.3753393382018837], 
+    PolygonBox[{{0.5388810443285845, 1.053478147740998}, {0.5008281876878089, 
+     1.0553491700509665`}, {0.48374923956774896`, 1.0461706480334012`}}]}, 
+   {RGBColor[0.2583337572129236, 0.08147201215015754, 0.9430074394057655], 
+    PolygonBox[{{0.48374923956774896`, 1.0461706480334012`}, {
+     0.5123297767825338, 1.0430770394463142`}, {0.5388810443285845, 
+     1.053478147740998}}]}, 
+   {RGBColor[0.6334717053721757, 0.9562031173405221, 0.9791585517413901], 
+    PolygonBox[{{0.007889970256088475, 
+     1.0541926975439682`}, {-0.047832512837763054`, 
+     1.024427292410075}, {-0.09276344282316971, 1.0690922333086854`}}]}, 
+   {RGBColor[0.7424745180271004, 0.5123231557598953, 0.2722173577432563], 
+    PolygonBox[{{0.14512345608432284`, 1.055464205959209}, {
+     0.09305093188315408, 0.9993676218135507}, {0.0685211043401446, 
+     1.0253289452089809`}}]}, 
+   {RGBColor[0.044457638097903596`, 0.970838837606244, 0.9745986201950676], 
+    PolygonBox[{{0.4653317771407981, 1.0399872097860705`}, {0.50793209629513, 
+     1.0348313885324323`}, {0.4050935307882798, 0.9572065021935655}}]}, 
+   {RGBColor[0.6777506602897314, 0.3768155730563374, 0.3958072852305321], 
+    PolygonBox[{{0.5807370246919957, 1.058517902157202}, {0.5388810443285845, 
+     1.053478147740998}, {0.5123297767825338, 1.0430770394463142`}}]}, 
+   {RGBColor[0.8267230722547261, 0.23352027815381504`, 0.8308132241255439], 
+    PolygonBox[{{0.0664998908516867, 0.7204042287425763}, {
+     0.16855232368920825`, 0.7749182321202077}, {0.16463145372384555`, 
+     0.7287823428880205}}]}, 
+   {RGBColor[0.9523780771683246, 0.8992481420497425, 0.6150998225288007], 
+    PolygonBox[{{-0.3232410670649206, 
+     0.9236359302369559}, {-0.3977995179555829, 
+     0.9540121688216767}, {-0.3766299121269057, 0.9841965299469534}}]}, 
+   {RGBColor[0.8419549610702548, 0.5625718761457275, 0.5849775456217288], 
+    PolygonBox[{{-0.19546431867047906`, 
+     0.9972453168112951}, {-0.26518653205387555`, 
+     1.004514814513453}, {-0.21466707726123596`, 1.057924479949401}}]}, 
+   {RGBColor[0.21133023194730782`, 0.5647366323716008, 0.22861740805450226`], 
+    PolygonBox[{{-0.31409582600342145`, 
+     1.0244406055757334`}, {-0.26518653205387555`, 
+     1.004514814513453}, {-0.3090130980086185, 0.9566480333705513}}]}, 
+   {RGBColor[0.40471105137528096`, 0.5649975721612979, 0.5180887721988074], 
+    PolygonBox[{{0.2111647008261305, 0.97126709917047}, {0.14910727124930218`,
+      0.9044127091934644}, {0.12901662880263762`, 0.9907351454268959}}]}, 
+   {RGBColor[0.3763947443721405, 0.5889219975786695, 0.4718602161301626], 
+    PolygonBox[{{0.5388810443285845, 1.053478147740998}, {0.5807370246919957, 
+     1.058517902157202}, {0.5953065206878334, 1.060100801286492}}]}, 
+   {RGBColor[0.9893617854567927, 0.9909785149842176, 0.7238952711348663], 
+    PolygonBox[{{-0.1755628618441475, 
+     1.053847203500626}, {-0.13211175302367875`, 
+     1.057920352183189}, {-0.11799189959497977`, 1.00450745478183}}]}, 
+   {RGBColor[0.4516521988100415, 0.3842457827349064, 0.14072857093425672`], 
+    PolygonBox[{{0.5458045137472881, 1.054103856700883}, {0.5009264703262245, 
+     1.0564799557254083`}, {0.5008281876878089, 1.0553491700509665`}}]}, 
+   {RGBColor[0.3145142629503359, 0.3184761113722687, 0.5777390965564186], 
+    PolygonBox[{{0.5008281876878089, 1.0553491700509665`}, {
+     0.5388810443285845, 1.053478147740998}, {0.5458045137472881, 
+     1.054103856700883}}]}, 
+   {RGBColor[0.2255214415466953, 0.1307746029296879, 0.8929832741671919], 
     PolygonBox[{{-0.34701535683924456`, 
-     0.8141198152355407}, {-0.22034421701865106`, 
-     0.8009192897883399}, {-0.21240478389152911`, 0.7278925201018039}}]}, 
-   {RGBColor[0.9327850932071244, 0.3617820577129396, 0.9528737983652742], 
-    PolygonBox[{{0.00810639103178085, 
-     0.9539668397300528}, {-0.09884942019514568, 
-     0.9235951389798965}, {-0.10551282223746822`, 0.9566070731936991}}]}, 
-   {RGBColor[0.21824739630091083`, 0.7878945157586001, 0.2494618921077374], 
-    PolygonBox[{{-0.33728010498142874`, 
-     0.9134532082398459}, {-0.22281581136178874`, 
-     0.9015244999177633}, {-0.22523462734727884`, 0.9181999923143812}}]}, 
-   {RGBColor[0.14323103554011585`, 0.3090922774408953, 0.2919708782230046], 
-    PolygonBox[{{-0.09884942019514568, 
-     0.9235951389798965}, {-0.21695247192154304`, 
-     0.912518261368224}, {-0.2126204238057018, 0.9465618287887145}}]}, 
-   {RGBColor[0.7459998561823884, 0.3570469249639616, 0.5658940367065945], 
-    PolygonBox[{{0.0664998908516867, 
-     0.7203883433812953}, {-0.061995773983206895`, 
-     0.6839001675479252}, {-0.06942548756103122, 0.7413023566596844}}]}, 
-   {RGBColor[0.49499957971449016`, 0.67542868712464, 0.10411375184643812`], 
-    PolygonBox[{{-0.061995773983206895`, 
-     0.6839001675479252}, {-0.20388539918451123`, 
-     0.670592496351779}, {-0.21240478389152911`, 0.7278925201018039}}]}, 
-   {RGBColor[0.42054382669630685`, 0.30487414531340407`, 0.5622826604163285], 
+     0.8141588758651223}, {-0.4358719965725605, 
+     0.8503600040954449}, {-0.4373493244723005, 0.9384019642679665}}]}, 
+   {RGBColor[0.3271780896660157, 0.9048820863728817, 0.6815834240317642], 
+    PolygonBox[{{-0.18162813577029646`, 
+     0.6050417122115856}, {-0.05648923164723632, 
+     0.6167721737880639}, {-0.05843637246210363, 0.6082326181372832}}]}, 
+   {RGBColor[0.5230749835854831, 0.8804633132254538, 0.6634813892615963], 
+    PolygonBox[{{0.50793209629513, 1.0348313885324323`}, {0.4653317771407981, 
+     1.0399872097860705`}, {0.4877039236386419, 1.0508458502884328`}}]}, 
+   {RGBColor[0.805070081666712, 0.506859160744682, 0.12577811500243086`], 
+    PolygonBox[{{0.5953065206878334, 1.060100801286492}, {0.5458045137472881, 
+     1.054103856700883}, {0.5388810443285845, 1.053478147740998}}]}, 
+   {RGBColor[0.7970412791934405, 0.5890952705210086, 0.5759850760760787], 
+    PolygonBox[{{0.5346981587170659, 1.047074250244652}, {0.4877039236386419, 
+     1.0508458502884328`}, {0.5009264703262245, 1.0564799557254083`}}]}, 
+   {RGBColor[0.4979290047142666, 0.2628027437386311, 0.4589882804061751], 
+    PolygonBox[{{0.5458045137472881, 1.054103856700883}, {0.5953065206878334, 
+     1.060100801286492}, {0.587005613020428, 1.0530700251362475`}}]}, 
+   {RGBColor[0.7057784200913317, 0.8358964115992917, 0.7220052528503893], 
+    PolygonBox[{{0.5346981587170659, 1.047074250244652}, {0.587005613020428, 
+     1.0530700251362475`}, {0.5560295395130126, 1.039982674897952}}]}, 
+   {RGBColor[0.2163018935518215, 0.9908955985719956, 0.6393610470542204], 
+    PolygonBox[{{0.5009264703262245, 1.0564799557254083`}, {
+     0.5458045137472881, 1.054103856700883}, {0.5346981587170659, 
+     1.047074250244652}}]}, 
+   {RGBColor[0.5617295854451874, 0.6813583832427315, 0.8809141922876655], 
+    PolygonBox[{{0.5560295395130126, 1.039982674897952}, {0.50793209629513, 
+     1.0348313885324323`}, {0.5346981587170659, 1.047074250244652}}]}, 
+   {RGBColor[0.09084222375393636, 0.9398681648416354, 0.135739895046888], 
+    PolygonBox[{{0.4877039236386419, 1.0508458502884328`}, {
+     0.5346981587170659, 1.047074250244652}, {0.50793209629513, 
+     1.0348313885324323`}}]}, 
+   {RGBColor[0.6131743731486845, 0.9075006865904978, 0.32467814668687867`], 
+    PolygonBox[{{0.587005613020428, 1.0530700251362475`}, {0.5346981587170659,
+      1.047074250244652}, {0.5458045137472881, 1.054103856700883}}]}, 
+   {RGBColor[0.19186836830069165`, 0.3849912654435317, 0.17031052401640867`], 
+    PolygonBox[{{0.16543473345648196`, 1.0724322607873469`}, {
+     0.10925095303163398`, 1.011905632620269}, {0.11103410283946495`, 
+     0.9950511637142104}}]}, 
+   {RGBColor[0.5356886195464643, 0.4132837760829451, 0.9808201789443896], 
     PolygonBox[{{-0.3399160956817845, 
-     0.9301515764902281}, {-0.22523462734727884`, 
-     0.9181999923143812}, {-0.2278048523358396, 0.9206038584839207}}]}, 
-   {RGBColor[0.23748045345222657`, 0.6155093780803447, 0.7213941693620805], 
+     0.9301933763370519}, {-0.42036325571156186`, 
+     0.9629685002676561}, {-0.4175744212139416, 0.9462070665448217}}]}, 
+   {RGBColor[0.8341710193893606, 0.08953609420830855, 0.9975824039166494], 
+    PolygonBox[{{-0.047832512837763054`, 1.024427292410075}, {
+     0.007889970256088475, 1.0541926975439682`}, {0.0685211043401446, 
+     1.0253289452089809`}}]}, 
+   {RGBColor[0.3678151244126382, 0.7990119908145401, 0.6754161096131899], 
+    PolygonBox[{{-0.3169720423052681, 
+     0.6411696665196173}, {-0.1940082748938522, 
+     0.6283487095914384}, {-0.18162813577029646`, 0.6050417122115856}}]}, 
+   {RGBColor[0.527338706930796, 0.8447045215147957, 0.1038335410533251], 
+    PolygonBox[{{0.17141519673380198`, 1.0782105462741334`}, {
+     0.11400161968152642`, 1.0163591310145053`}, {0.10925095303163398`, 
+     1.011905632620269}}]}, 
+   {RGBColor[0.7617169933430661, 0.885165889148007, 0.53173446823533], 
     PolygonBox[{{-0.34499755610183885`, 
-     0.9328166106007677}, {-0.2278048523358396, 
-     0.9206038584839207}, {-0.22933004936967505`, 0.9105210760223884}}]}, 
-   {RGBColor[0.1776142994069474, 0.9311031802576057, 0.4046902023750205], 
+     0.9328587355881889}, {-0.4272054383922027, 
+     0.9663509839834822}, {-0.42036325571156186`, 0.9629685002676561}}]}, 
+   {RGBColor[0.6641039808242191, 0.1888695381876775, 0.24576269230021275`], 
+    PolygonBox[{{0.1891002609583601, 1.0554620071189653`}, {
+     0.12901662880263762`, 0.9907351454268959}, {0.12181253107388049`, 
+     1.0088905529445304`}}]}, 
+   {RGBColor[0.8312250458950718, 0.3851251767861035, 0.768397191438142], 
+    PolygonBox[{{-0.1940082748938522, 
+     0.6283487095914384}, {-0.3169720423052681, 
+     0.6411696665196173}, {-0.3315801751099264, 0.6839349838944819}}]}, 
+   {RGBColor[
+    0.11090250119786593`, 0.12247063190990004`, 0.24408437796381688`], 
+    PolygonBox[{{0.16463145372384555`, 0.7287823428880205}, {
+     0.06635964857164711, 0.6762878787377733}, {0.0664998908516867, 
+     0.7204042287425763}}]}, 
+   {RGBColor[0.5217680875294162, 0.440169227723642, 0.7944767596273399], 
+    PolygonBox[{{0.18079524707030462`, 1.0724314927616663`}, {
+     0.12181253107388049`, 1.0088905529445304`}, {0.11400161968152642`, 
+     1.0163591310145053`}}]}, 
+   {RGBColor[0.3051056235062224, 0.25636251995025683`, 0.6972229082894781], 
     PolygonBox[{{-0.3513200224340342, 
-     0.9033112774997955}, {-0.22867938534499374`, 
-     0.890530298699254}, {-0.22034421701865106`, 0.8009192897883399}}]}, 
-   {RGBColor[0.9271712310816622, 0.7804919748941002, 0.3725265128388682], 
+     0.9033529318016503}, {-0.4373493244723005, 
+     0.9384019642679665}, {-0.4341766959524494, 0.9575167245322272}}]}, 
+   {RGBColor[0.9404976342330271, 0.07074655540287456, 0.7134706107633912], 
+    PolygonBox[{{-0.047832512837763054`, 
+     1.024427292410075}, {-0.11799189959497977`, 
+     1.00450745478183}, {-0.13211175302367875`, 1.057920352183189}}]}, 
+   {RGBColor[0.7727394164573858, 0.021094316804389557`, 0.6679152155793942], 
     PolygonBox[{{-0.3497237198752786, 
-     0.9230678488220896}, {-0.22933004936967505`, 
-     0.9105210760223884}, {-0.22867938534499374`, 0.890530298699254}}]}, 
-   {RGBColor[0.1392407777252611, 0.5739770847752783, 0.007097915797699805], 
-    PolygonBox[{{-0.09562756219859404, 0.9134532082398459}, {
-     0.019555019233988554`, 0.9461609568649112}, {0.017597267017762295`, 
-     0.9629218041900922}}]}, 
-   {RGBColor[0.7658865571967413, 0.9671226369605959, 0.3351556719793596], 
-    PolygonBox[{{-0.07959251672104327, 0.8141198152355407}, {
-     0.0478728912033458, 0.8503155354146719}, {0.06005770900746004, 
-     0.778070827421038}}]}, 
-   {RGBColor[0.1724007899731923, 0.5923800242301263, 0.7689498544447644], 
+     0.9231099501507185}, {-0.4341766959524494, 
+     0.9575167245322272}, {-0.4272054383922027, 0.9663509839834822}}]}, 
+   {RGBColor[0.043955233834133356`, 0.6627003582307338, 0.004047065791045634],
+     PolygonBox[{{-0.11799189959497977`, 
+     1.00450745478183}, {-0.19546431867047906`, 
+     0.9972453168112951}, {-0.1755628618441475, 1.053847203500626}}]}, 
+   {RGBColor[0.29590086843901076`, 0.5444430100953941, 0.5320637687647249], 
+    PolygonBox[{{-0.4358719965725605, 
+     0.8503600040954449}, {-0.34701535683924456`, 
+     0.8141588758651223}, {-0.34108025456028795`, 0.7413391787352567}}]}, 
+   {RGBColor[0.05708269443804248, 0.8148287799283747, 0.6237144966098633], 
+    PolygonBox[{{-0.3766299121269057, 
+     0.9841965299469534}, {-0.3090130980086185, 
+     0.9566480333705513}, {-0.3232410670649206, 0.9236359302369559}}]}, 
+   {RGBColor[0.1477488057879508, 0.4072649823201804, 0.17837698071449792`], 
+    PolygonBox[{{0.06005770900746004, 0.7780885730909854}, {
+     0.16289420932903884`, 0.8330215689917939}, {0.16855232368920825`, 
+     0.7749182321202077}}]}, 
+   {RGBColor[0.24371221644118912`, 0.4854297687748701, 0.7358061942211194], 
+    PolygonBox[{{0.05683766341012611, 
+     0.6489482391294207}, {-0.05648923164723632, 
+     0.6167721737880639}, {-0.057375742660369336`, 0.641156686704635}}]}, 
+   {RGBColor[0.2614828828929532, 0.4552133636276283, 0.946197743637843], 
+    PolygonBox[{{-0.05648923164723632, 
+     0.6167721737880639}, {-0.18162813577029646`, 
+     0.6050417122115856}, {-0.1940082748938522, 0.6283487095914384}}]}, 
+   {RGBColor[0.8420620142873767, 0.8496799896620479, 0.5667485449314875], 
+    PolygonBox[{{-0.057375742660369336`, 0.641156686704635}, {
+     0.06635964857164711, 0.6762878787377733}, {0.05683766341012611, 
+     0.6489482391294207}}]}, 
+   {RGBColor[0.8447107581616413, 0.6158376617707175, 0.33240266338726676`], 
+    PolygonBox[{{-0.4175744212139416, 
+     0.9462070665448217}, {-0.33728010498142874`, 
+     0.9134944309973146}, {-0.3399160956817845, 0.9301933763370519}}]}, 
+   {RGBColor[0.10433297022352717`, 0.776710099932225, 0.6157372345207142], 
+    PolygonBox[{{-0.4373493244723005, 
+     0.9384019642679665}, {-0.3513200224340342, 
+     0.9033529318016503}, {-0.34701535683924456`, 0.8141588758651223}}]}, 
+   {RGBColor[0.651627533957712, 0.6731339403788883, 0.2802441723971505], 
+    PolygonBox[{{0.0685211043401446, 
+     1.0253289452089809`}, {-0.008515334819059745, 
+     0.9841781242180881}, {-0.047832512837763054`, 1.024427292410075}}]}, 
+   {RGBColor[0.6975015851799771, 0.278730892418533, 0.8402870322213707], 
+    PolygonBox[{{-0.008515334819059745, 0.9841781242180881}, {
+     0.0685211043401446, 1.0253289452089809`}, {0.09305093188315408, 
+     0.9993676218135507}}]}, 
+   {RGBColor[0.041611356452790016`, 0.4203221189497084, 0.4759595388515432], 
+    PolygonBox[{{-0.42036325571156186`, 
+     0.9629685002676561}, {-0.3399160956817845, 
+     0.9301933763370519}, {-0.34499755610183885`, 0.9328587355881889}}]}, 
+   {RGBColor[0.2005563481876247, 0.021844916865300323`, 0.6525179574700486], 
+    PolygonBox[{{-0.26518653205387555`, 
+     1.004514814513453}, {-0.19546431867047906`, 
+     0.9972453168112951}, {-0.2126204238057018, 0.9465977014586725}}]}, 
+   {RGBColor[0.24045320900536504`, 0.26118850604533406`, 0.9752123709006391], 
+    PolygonBox[{{-0.2126204238057018, 
+     0.9465977014586725}, {-0.3090130980086185, 
+     0.9566480333705513}, {-0.26518653205387555`, 1.004514814513453}}]}, 
+   {RGBColor[0.2999736407205036, 0.7238351516703161, 0.8681257066255958], 
+    PolygonBox[{{-0.4272054383922027, 
+     0.9663509839834822}, {-0.34499755610183885`, 
+     0.9328587355881889}, {-0.3497237198752786, 0.9231099501507185}}]}, 
+   {RGBColor[0.5719133205184814, 0.6862496458883607, 0.10085987807227115`], 
+    PolygonBox[{{-0.4341766959524494, 
+     0.9575167245322272}, {-0.3497237198752786, 
+     0.9231099501507185}, {-0.3513200224340342, 0.9033529318016503}}]}, 
+   {RGBColor[0.5270690265602411, 0.7166846294614924, 0.4805359513457883], 
+    PolygonBox[{{0.16855232368920825`, 0.7749182321202077}, {
+     0.0664998908516867, 0.7204042287425763}, {0.06005770900746004, 
+     0.7780885730909854}}]}, 
+   {RGBColor[0.8517901545457183, 0.004346981055076027, 0.03131402039648501], 
+    PolygonBox[{{-0.20388539918451123`, 
+     0.6706205730883077}, {-0.3315801751099264, 
+     0.6839349838944819}, {-0.34108025456028795`, 0.7413391787352567}}]}, 
+   {RGBColor[0.7687438338113013, 0.9442468751036213, 0.7489261549161474], 
+    PolygonBox[{{-0.11799189959497977`, 
+     1.00450745478183}, {-0.047832512837763054`, 
+     1.024427292410075}, {-0.008515334819059745, 0.9841781242180881}}]}, 
+   {RGBColor[0.6487085402173356, 0.3700566638956342, 0.17739592794343118`], 
+    PolygonBox[{{0.0478728912033458, 0.8503358168510561}, {
+     0.14910727124930218`, 0.9044127091934644}, {0.16289420932903884`, 
+     0.8330215689917939}}]}, 
+   {RGBColor[0.9105371500002235, 0.2627829766383083, 0.8878861416438137], 
+    PolygonBox[{{-0.3315801751099264, 
+     0.6839349838944819}, {-0.20388539918451123`, 
+     0.6706205730883077}, {-0.1940082748938522, 0.6283487095914384}}]}, 
+   {RGBColor[0.8449006815206392, 0.3448599835544359, 0.6728901464884744], 
+    PolygonBox[{{-0.1940082748938522, 
+     0.6283487095914384}, {-0.057375742660369336`, 
+     0.641156686704635}, {-0.05648923164723632, 0.6167721737880639}}]}, 
+   {RGBColor[
+    0.40237185032296074`, 0.32095218128460856`, 0.29845398744586715`], 
+    PolygonBox[{{-0.19546431867047906`, 
+     0.9972453168112951}, {-0.11799189959497977`, 
+     1.00450745478183}, {-0.10551282223746822`, 0.9566378583567628}}]}, 
+   {RGBColor[0.089633782857923, 0.49935242622479525`, 0.5872802754449284], 
+    PolygonBox[{{0.019555019233988554`, 0.9461852100727993}, {
+     0.11103410283946495`, 0.9950511637142104}, {0.10925095303163398`, 
+     1.011905632620269}}]}, 
+   {RGBColor[0.09867934540998147, 0.7857424346938933, 0.01998821204201917], 
+    PolygonBox[{{0.09305093188315408, 0.9993676218135507}, {
+     0.00810639103178085, 0.9539918735262273}, {-0.008515334819059745, 
+     0.9841781242180881}}]}, 
+   {RGBColor[0.15015866484364504`, 0.8129732834132664, 0.8273114972845934], 
+    PolygonBox[{{-0.21695247192154304`, 
+     0.9125534428121232}, {-0.3232410670649206, 
+     0.9236359302369559}, {-0.3090130980086185, 0.9566480333705513}}]}, 
+   {RGBColor[0.6495071645972359, 0.22931068797906873`, 0.07146747528802444], 
+    PolygonBox[{{0.017597267017762295`, 0.9629466022415197}, {
+     0.10925095303163398`, 1.011905632620269}, {0.11400161968152642`, 
+     1.0163591310145053`}}]}, 
+   {RGBColor[0.7920412852422021, 0.3668754489299564, 0.8395418507880039], 
+    PolygonBox[{{0.031003647436196158`, 0.938378546619371}, {
+     0.12901662880263762`, 0.9907351454268959}, {0.14910727124930218`, 
+     0.9044127091934644}}]}, 
+   {RGBColor[0.4441412718242834, 0.9234451945383031, 0.6020804196803609], 
+    PolygonBox[{{0.020342397320337456`, 0.9663286065916965}, {
+     0.11400161968152642`, 1.0163591310145053`}, {0.12181253107388049`, 
+     1.0088905529445304`}}]}, 
+   {RGBColor[
+    0.19521394280800375`, 0.21706376180892972`, 0.27448119382626945`], 
+    PolygonBox[{{0.16289420932903884`, 0.8330215689917939}, {
+     0.06005770900746004, 0.7780885730909854}, {0.0478728912033458, 
+     0.8503358168510561}}]}, 
+   {RGBColor[0.5105542153170124, 0.18203787878007893`, 0.5169928683039273], 
     PolygonBox[{{-0.21240478389152911`, 
-     0.7278925201018039}, {-0.06942548756103122, 
-     0.7413023566596844}, {-0.061995773983206895`, 0.6839001675479252}}]}, 
-   {RGBColor[0.919525999657274, 0.100792269274806, 0.43263675728033], 
-    PolygonBox[{{-0.09780390888192418, 0.9301515764902281}, {
-     0.017597267017762295`, 0.9629218041900922}, {0.020342397320337456`, 
-     0.9663038556087462}}]}, 
-   {RGBColor[0.1568762675690376, 0.2644626326011088, 0.557912475494625], 
-    PolygonBox[{{0.06005770900746004, 
-     0.778070827421038}, {-0.06942548756103122, 
-     0.7413023566596844}, {-0.07959251672104327, 0.8141198152355407}}]}, 
-   {RGBColor[0.1273667451909377, 0.9855504600529295, 0.6161442217731299], 
-    PolygonBox[{{-0.06942548756103122, 
-     0.7413023566596844}, {-0.21240478389152911`, 
-     0.7278925201018039}, {-0.22034421701865106`, 0.8009192897883399}}]}, 
-   {RGBColor[0.5102260441609991, 0.41544103777479524`, 0.4978868196131767], 
-    PolygonBox[{{-0.09758521297853691, 0.9328166106007677}, {
-     0.020342397320337456`, 0.9663038556087462}, {0.025594898178955067`, 
-     0.9574694831778782}}]}, 
-   {RGBColor[0.5715804729942364, 0.2068928720686456, 0.6704497209956009], 
-    PolygonBox[{{0.017597267017762295`, 
-     0.9629218041900922}, {-0.09780390888192418, 
-     0.9301515764902281}, {-0.09562756219859404, 0.9134532082398459}}]}, 
-   {RGBColor[0.5689660594048018, 0.7686465719616942, 0.7536251684594693], 
-    PolygonBox[{{-0.09780390888192418, 
-     0.9301515764902281}, {-0.22523462734727884`, 
-     0.9181999923143812}, {-0.22281581136178874`, 0.9015244999177633}}]}, 
-   {RGBColor[0.036705580375268276`, 0.08635245177531492, 0.05112752064624937],
-     PolygonBox[{{-0.09240658373814, 0.9033112774997955}, {
-     0.031003647436196158`, 0.9383550739997696}, {0.0478728912033458, 
-     0.8503155354146719}}]}, 
-   {RGBColor[0.16564775994770642`, 0.5865711934937623, 0.11992319298239251`], 
-    PolygonBox[{{-0.09555315454439031, 0.9230678488220896}, {
-     0.025594898178955067`, 0.9574694831778782}, {0.031003647436196158`, 
-     0.9383550739997696}}]}, 
-   {RGBColor[0.5887662785438692, 0.8926049551818858, 0.18252407594123188`], 
-    PolygonBox[{{-0.22281581136178874`, 
-     0.9015244999177633}, {-0.09562756219859404, 
-     0.9134532082398459}, {-0.09780390888192418, 0.9301515764902281}}]}, 
-   {RGBColor[0.6734507147711797, 0.6953337908054213, 0.2836374460942266], 
-    PolygonBox[{{0.020342397320337456`, 
-     0.9663038556087462}, {-0.09758521297853691, 
-     0.9328166106007677}, {-0.09780390888192418, 0.9301515764902281}}]}, 
-   {RGBColor[0.6901989604969845, 0.9909814936647203, 0.9899547503973221], 
-    PolygonBox[{{-0.09758521297853691, 
-     0.9328166106007677}, {-0.2278048523358396, 
-     0.9206038584839207}, {-0.22523462734727884`, 0.9181999923143812}}]}, 
-   {RGBColor[0.4722969446764107, 0.054104459675406336`, 0.7151795957421789], 
+     0.7279225508082012}, {-0.34108025456028795`, 
+     0.7413391787352567}, {-0.34701535683924456`, 0.8141588758651223}}]}, 
+   {RGBColor[0.6395756283620782, 0.757075808569422, 0.48665587604713845`], 
+    PolygonBox[{{-0.061995773983206895`, 0.6839215046744256}, {
+     0.0664998908516867, 0.7204042287425763}, {0.06635964857164711, 
+     0.6762878787377733}}]}, 
+   {RGBColor[0.18433133639559096`, 0.07254093579558996, 0.29201279148329884`],
+     PolygonBox[{{-0.008515334819059745, 
+     0.9841781242180881}, {-0.10551282223746822`, 
+     0.9566378583567628}, {-0.11799189959497977`, 1.00450745478183}}]}, 
+   {RGBColor[0.43404620314850595`, 0.8116582093144225, 0.5654611195238597], 
+    PolygonBox[{{0.025594898178955067`, 0.9574937359525207}, {
+     0.12181253107388049`, 1.0088905529445304`}, {0.12901662880263762`, 
+     0.9907351454268959}}]}, 
+   {RGBColor[0.9122488039924299, 0.20630659538286844`, 0.5897142737395997], 
+    PolygonBox[{{-0.10551282223746822`, 
+     0.9566378583567628}, {-0.2126204238057018, 
+     0.9465977014586725}, {-0.19546431867047906`, 0.9972453168112951}}]}, 
+   {RGBColor[0.6837646143869629, 0.9269338188214904, 0.9155846691797243], 
+    PolygonBox[{{0.06635964857164711, 
+     0.6762878787377733}, {-0.057375742660369336`, 
+     0.641156686704635}, {-0.061995773983206895`, 0.6839215046744256}}]}, 
+   {RGBColor[0.5163077955916129, 0.1153938500536058, 0.07993466416798012], 
+    PolygonBox[{{-0.057375742660369336`, 
+     0.641156686704635}, {-0.1940082748938522, 
+     0.6283487095914384}, {-0.20388539918451123`, 0.6706205730883077}}]}, 
+   {RGBColor[0.3112051321202429, 0.3305285958058126, 0.14156725857284203`], 
+    PolygonBox[{{-0.3090130980086185, 
+     0.9566480333705513}, {-0.2126204238057018, 
+     0.9465977014586725}, {-0.21695247192154304`, 0.9125534428121232}}]}, 
+   {RGBColor[0.6847894768456113, 0.7249050004519273, 0.2371209562020451], 
+    PolygonBox[{{-0.34108025456028795`, 
+     0.7413391787352567}, {-0.21240478389152911`, 
+     0.7279225508082012}, {-0.20388539918451123`, 0.6706205730883077}}]}, 
+   {RGBColor[0.8763548170445186, 0.24096672754609005`, 0.24980350042608412`], 
     PolygonBox[{{-0.22523462734727884`, 
-     0.9181999923143812}, {-0.09780390888192418, 
-     0.9301515764902281}, {-0.09758521297853691, 0.9328166106007677}}]}, 
-   {RGBColor[0.5636033879380908, 0.8876170479556904, 0.3441342911970189], 
+     0.9182357393788769}, {-0.3399160956817845, 
+     0.9301933763370519}, {-0.33728010498142874`, 0.9134944309973146}}]}, 
+   {RGBColor[0.2709770071588049, 0.26749600408987884`, 0.21230465367344453`], 
+    PolygonBox[{{0.10925095303163398`, 1.011905632620269}, {
+     0.017597267017762295`, 0.9629466022415197}, {0.019555019233988554`, 
+     0.9461852100727993}}]}, 
+   {RGBColor[0.05413433213728713, 0.873523418162133, 0.5177939493955579], 
+    PolygonBox[{{-0.10551282223746822`, 
+     0.9566378583567628}, {-0.008515334819059745, 0.9841781242180881}, {
+     0.00810639103178085, 0.9539918735262273}}]}, 
+   {RGBColor[0.11140301188446333`, 0.6032306564767733, 0.22566293060832665`], 
+    PolygonBox[{{0.14910727124930218`, 0.9044127091934644}, {
+     0.0478728912033458, 0.8503358168510561}, {0.031003647436196158`, 
+     0.938378546619371}}]}, 
+   {RGBColor[0.8420166826837205, 0.5669018820632143, 0.6750286565148382], 
     PolygonBox[{{-0.22034421701865106`, 
-     0.8009192897883399}, {-0.07959251672104327, 
-     0.8141198152355407}, {-0.06942548756103122, 0.7413023566596844}}]}, 
-   {RGBColor[0.5074842400056994, 0.8336778224645041, 0.5324391629375231], 
-    PolygonBox[{{0.0478728912033458, 
-     0.8503155354146719}, {-0.07959251672104327, 
-     0.8141198152355407}, {-0.09240658373814, 0.9033112774997955}}]}, 
-   {RGBColor[0.5386672433177506, 0.887860322155319, 0.7353615061756016], 
-    PolygonBox[{{-0.07959251672104327, 
-     0.8141198152355407}, {-0.22034421701865106`, 
-     0.8009192897883399}, {-0.22867938534499374`, 0.890530298699254}}]}, 
-   {RGBColor[0.3018186474242599, 0.9961856650653369, 0.9384822991451494], 
-    PolygonBox[{{0.025594898178955067`, 
-     0.9574694831778782}, {-0.09555315454439031, 
-     0.9230678488220896}, {-0.09758521297853691, 0.9328166106007677}}]}, 
-   {RGBColor[0.17141906069115875`, 0.844212002124527, 0.7978289586548353], 
-    PolygonBox[{{-0.09555315454439031, 
-     0.9230678488220896}, {-0.22933004936967505`, 
-     0.9105210760223884}, {-0.2278048523358396, 0.9206038584839207}}]}, 
-   {RGBColor[0.9394164825006559, 0.859732721236014, 0.1806665809313841], 
-    PolygonBox[{{0.031003647436196158`, 
-     0.9383550739997696}, {-0.09240658373814, 
-     0.9033112774997955}, {-0.09555315454439031, 0.9230678488220896}}]}, 
-   {RGBColor[0.9252239873934676, 0.3656158160358258, 0.5367670306288512], 
+     0.8009516648469185}, {-0.34701535683924456`, 
+     0.8141588758651223}, {-0.3513200224340342, 0.9033529318016503}}]}, 
+   {RGBColor[0.35591818256425034`, 0.6859653196426574, 0.20529607457524945`], 
     PolygonBox[{{-0.2278048523358396, 
-     0.9206038584839207}, {-0.09758521297853691, 
-     0.9328166106007677}, {-0.09555315454439031, 0.9230678488220896}}]}, 
-   {RGBColor[0.9360543101279082, 0.8638037568015748, 0.4873468207550187], 
-    PolygonBox[{{-0.09240658373814, 
-     0.9033112774997955}, {-0.22867938534499374`, 
-     0.890530298699254}, {-0.22933004936967505`, 0.9105210760223884}}]}, 
-   {RGBColor[0.7213360723453388, 0.14830511347696373`, 0.4562116223407926], 
-    PolygonBox[{{-0.22867938534499374`, 
-     0.890530298699254}, {-0.09240658373814, 
-     0.9033112774997955}, {-0.07959251672104327, 0.8141198152355407}}]}, 
-   {RGBColor[0.335507568843304, 0.2614918675454254, 0.6717936284392754], 
+     0.9206397981627638}, {-0.34499755610183885`, 
+     0.9328587355881889}, {-0.3399160956817845, 0.9301933763370519}}]}, 
+   {RGBColor[0.275062064561582, 0.6899275602033947, 0.8915898674889595], 
+    PolygonBox[{{0.11400161968152642`, 1.0163591310145053`}, {
+     0.020342397320337456`, 0.9663286065916965}, {0.017597267017762295`, 
+     0.9629466022415197}}]}, 
+   {RGBColor[0.0927542700522983, 0.29933403260200153`, 0.8311373216442981], 
+    PolygonBox[{{-0.20388539918451123`, 
+     0.6706205730883077}, {-0.061995773983206895`, 
+     0.6839215046744256}, {-0.057375742660369336`, 0.641156686704635}}]}, 
+   {RGBColor[0.2839503784144384, 0.6767695598636909, 0.5702617874932141], 
     PolygonBox[{{-0.22933004936967505`, 
-     0.9105210760223884}, {-0.09555315454439031, 
-     0.9230678488220896}, {-0.09240658373814, 
-     0.9033112774997955}}]}}]], "Output"]
+     0.9105568230868842}, {-0.3497237198752786, 
+     0.9231099501507185}, {-0.34499755610183885`, 0.9328587355881889}}]}, 
+   {RGBColor[0.23425529570473302`, 0.5511195782325176, 0.7981448735559402], 
+    PolygonBox[{{0.12181253107388049`, 1.0088905529445304`}, {
+     0.025594898178955067`, 0.9574937359525207}, {0.020342397320337456`, 
+     0.9663286065916965}}]}, 
+   {RGBColor[0.1250667284739988, 0.8879221887930484, 0.6822603592797147], 
+    PolygonBox[{{-0.22867938534499374`, 
+     0.8905654801431533}, {-0.3513200224340342, 
+     0.9033529318016503}, {-0.3497237198752786, 0.9231099501507185}}]}, 
+   {RGBColor[0.4619088842659753, 0.2727361446171128, 0.02757687976432477], 
+    PolygonBox[{{0.12901662880263762`, 0.9907351454268959}, {
+     0.031003647436196158`, 0.938378546619371}, {0.025594898178955067`, 
+     0.9574937359525207}}]}, 
+   {RGBColor[0.6875647888950072, 0.7749444820484137, 0.49165579131087744`], 
+    PolygonBox[{{-0.06942548756103122, 0.7413255959969066}, {
+     0.06005770900746004, 0.7780885730909854}, {0.0664998908516867, 
+     0.7204042287425763}}]}, 
+   {RGBColor[0.941909636055811, 0.533191940969548, 0.09986213596616178], 
+    PolygonBox[{{-0.2126204238057018, 
+     0.9465977014586725}, {-0.10551282223746822`, 
+     0.9566378583567628}, {-0.09884942019514568, 0.9236247106546123}}]}, 
+   {RGBColor[0.9499760971858424, 0.18078430943418278`, 0.07424755775070846], 
+    PolygonBox[{{-0.34701535683924456`, 
+     0.8141588758651223}, {-0.22034421701865106`, 
+     0.8009516648469185}, {-0.21240478389152911`, 0.7279225508082012}}]}, 
+   {RGBColor[0.44049654347953693`, 0.25963666992316004`, 0.5946931791074759], 
+    PolygonBox[{{0.00810639103178085, 
+     0.9539918735262273}, {-0.09884942019514568, 
+     0.9236247106546123}, {-0.10551282223746822`, 0.9566378583567628}}]}, 
+   {RGBColor[0.9178055155959823, 0.9264414557001099, 0.8419069020727683], 
+    PolygonBox[{{-0.33728010498142874`, 
+     0.9134944309973146}, {-0.22281581136178874`, 
+     0.9015596813616626}, {-0.22523462734727884`, 0.9182357393788769}}]}, 
+   {RGBColor[0.5419107304435091, 0.8054487451405652, 0.5236899719292427], 
+    PolygonBox[{{-0.09884942019514568, 
+     0.9236247106546123}, {-0.21695247192154304`, 
+     0.9125534428121232}, {-0.2126204238057018, 0.9465977014586725}}]}, 
+   {RGBColor[0.5666188323242769, 0.7168065692672327, 0.2572807125642913], 
+    PolygonBox[{{0.0664998908516867, 
+     0.7204042287425763}, {-0.061995773983206895`, 
+     0.6839215046744256}, {-0.06942548756103122, 0.7413255959969066}}]}, 
+   {RGBColor[0.40050231462776464`, 0.8348913339253654, 0.6990152240396621], 
+    PolygonBox[{{-0.061995773983206895`, 
+     0.6839215046744256}, {-0.20388539918451123`, 
+     0.6706205730883077}, {-0.21240478389152911`, 0.7279225508082012}}]}, 
+   {RGBColor[0.3558196506967437, 0.3815787666496555, 0.18421905811397665`], 
+    PolygonBox[{{-0.3399160956817845, 
+     0.9301933763370519}, {-0.22523462734727884`, 
+     0.9182357393788769}, {-0.2278048523358396, 0.9206397981627638}}]}, 
+   {RGBColor[0.2131132849841757, 0.9875236293443919, 0.6958289134753339], 
+    PolygonBox[{{-0.34499755610183885`, 
+     0.9328587355881889}, {-0.2278048523358396, 
+     0.9206397981627638}, {-0.22933004936967505`, 0.9105568230868842}}]}, 
+   {RGBColor[0.522055103820876, 0.31377244437945606`, 0.15564079631429384`], 
+    PolygonBox[{{-0.3513200224340342, 
+     0.9033529318016503}, {-0.22867938534499374`, 
+     0.8905654801431533}, {-0.22034421701865106`, 0.8009516648469185}}]}, 
+   {RGBColor[0.6955534347750651, 0.16768361283682287`, 0.3563486227698349], 
+    PolygonBox[{{-0.3497237198752786, 
+     0.9231099501507185}, {-0.22933004936967505`, 
+     0.9105568230868842}, {-0.22867938534499374`, 0.8905654801431533}}]}, 
+   {RGBColor[0.598889015402309, 0.9947341489479888, 0.25613614784096783`], 
+    PolygonBox[{{-0.09562756219859404, 0.9134823483701755}, {
+     0.019555019233988554`, 0.9461852100727993}, {0.017597267017762295`, 
+     0.9629466022415197}}]}, 
+   {RGBColor[0.7043863851734196, 0.16763589359149567`, 0.8693992571255658], 
+    PolygonBox[{{-0.07959251672104327, 0.8141455047231164}, {
+     0.0478728912033458, 0.8503358168510561}, {0.06005770900746004, 
+     0.7780885730909854}}]}, 
+   {RGBColor[0.9527234429403333, 0.9351071994843216, 0.031408453156080984`], 
+    PolygonBox[{{-0.21240478389152911`, 
+     0.7279225508082012}, {-0.06942548756103122, 
+     0.7413255959969066}, {-0.061995773983206895`, 0.6839215046744256}}]}, 
+   {RGBColor[0.753584181350712, 0.36649378402101607`, 0.9849914205448216], 
+    PolygonBox[{{-0.09780390888192418, 0.930181270727712}, {
+     0.017597267017762295`, 0.9629466022415197}, {0.020342397320337456`, 
+     0.9663286065916965}}]}, 
+   {RGBColor[0.11615774873027807`, 0.3696708952429788, 0.6997178574438421], 
+    PolygonBox[{{0.06005770900746004, 
+     0.7780885730909854}, {-0.06942548756103122, 
+     0.7413255959969066}, {-0.07959251672104327, 0.8141455047231164}}]}, 
+   {RGBColor[0.9617723197981001, 0.2232187880226959, 0.17868485040331672`], 
+    PolygonBox[{{-0.06942548756103122, 
+     0.7413255959969066}, {-0.21240478389152911`, 
+     0.7279225508082012}, {-0.22034421701865106`, 0.8009516648469185}}]}, 
+   {RGBColor[0.8734806325971103, 0.7377490642926088, 0.6684574731457733], 
+    PolygonBox[{{-0.09758521297853691, 0.9328463649710326}, {
+     0.020342397320337456`, 0.9663286065916965}, {0.025594898178955067`, 
+     0.9574937359525207}}]}, 
+   {RGBColor[0.657369689354526, 0.4876762126377294, 0.6735422043000892], 
+    PolygonBox[{{0.017597267017762295`, 
+     0.9629466022415197}, {-0.09780390888192418, 
+     0.930181270727712}, {-0.09562756219859404, 0.9134823483701755}}]}, 
+   {RGBColor[0.3344576601320941, 0.5599525106071115, 0.3960814116301128], 
+    PolygonBox[{{-0.09780390888192418, 
+     0.930181270727712}, {-0.22523462734727884`, 
+     0.9182357393788769}, {-0.22281581136178874`, 0.9015596813616626}}]}, 
+   {RGBColor[0.4848186990064416, 0.49911773265481196`, 0.11913057147232076`], 
+    PolygonBox[{{-0.09240658373814, 0.9033399861297157}, {
+     0.031003647436196158`, 0.938378546619371}, {0.0478728912033458, 
+     0.8503358168510561}}]}, 
+   {RGBColor[0.6105334339444781, 0.10841420217752096`, 0.22391332403567477`], 
+    PolygonBox[{{-0.09555315454439031, 0.923097241622452}, {
+     0.025594898178955067`, 0.9574937359525207}, {0.031003647436196158`, 
+     0.938378546619371}}]}, 
+   {RGBColor[0.6338466353642966, 0.3822906595817921, 0.20992352718337437`], 
+    PolygonBox[{{-0.22281581136178874`, 
+     0.9015596813616626}, {-0.09562756219859404, 
+     0.9134823483701755}, {-0.09780390888192418, 0.930181270727712}}]}, 
+   {RGBColor[0.5135769743253387, 0.5066906946581393, 0.7639090817096614], 
+    PolygonBox[{{0.020342397320337456`, 
+     0.9663286065916965}, {-0.09758521297853691, 
+     0.9328463649710326}, {-0.09780390888192418, 0.930181270727712}}]}, 
+   {RGBColor[0.0003088629216911887, 0.6367312739957249, 0.12578755654113039`],
+     PolygonBox[{{-0.09758521297853691, 
+     0.9328463649710326}, {-0.2278048523358396, 
+     0.9206397981627638}, {-0.22523462734727884`, 0.9182357393788769}}]}, 
+   {RGBColor[0.11569137606952529`, 0.140539455392249, 0.8129350062576723], 
+    PolygonBox[{{-0.22523462734727884`, 
+     0.9182357393788769}, {-0.09780390888192418, 
+     0.930181270727712}, {-0.09758521297853691, 0.9328463649710326}}]}, 
+   {RGBColor[0.4836225186233356, 0.8060550897848515, 0.07423179517360201], 
+    PolygonBox[{{-0.22034421701865106`, 
+     0.8009516648469185}, {-0.07959251672104327, 
+     0.8141455047231164}, {-0.06942548756103122, 0.7413255959969066}}]}, 
+   {RGBColor[0.31615716105141933`, 0.5392162856485538, 0.9571410597627648], 
+    PolygonBox[{{0.0478728912033458, 
+     0.8503358168510561}, {-0.07959251672104327, 
+     0.8141455047231164}, {-0.09240658373814, 0.9033399861297157}}]}, 
+   {RGBColor[0.7832685522621035, 0.6876619161403732, 0.9240969854538459], 
+    PolygonBox[{{-0.07959251672104327, 
+     0.8141455047231164}, {-0.22034421701865106`, 
+     0.8009516648469185}, {-0.22867938534499374`, 0.8905654801431533}}]}, 
+   {RGBColor[0.209932986956348, 0.20277902740250742`, 0.9067858373259636], 
+    PolygonBox[{{0.025594898178955067`, 
+     0.9574937359525207}, {-0.09555315454439031, 
+     0.923097241622452}, {-0.09758521297853691, 0.9328463649710326}}]}, 
+   {RGBColor[0.12005011709042668`, 0.4002405057000351, 0.9450608478247262], 
+    PolygonBox[{{-0.09555315454439031, 
+     0.923097241622452}, {-0.22933004936967505`, 
+     0.9105568230868842}, {-0.2278048523358396, 0.9206397981627638}}]}, 
+   {RGBColor[0.27795580262348607`, 0.9787613694248343, 0.22475998743625247`], 
+    PolygonBox[{{0.031003647436196158`, 
+     0.938378546619371}, {-0.09240658373814, 
+     0.9033399861297157}, {-0.09555315454439031, 0.923097241622452}}]}, 
+   {RGBColor[0.43628492419996423`, 0.8150860316320927, 0.317689783169099], 
+    PolygonBox[{{-0.2278048523358396, 
+     0.9206397981627638}, {-0.09758521297853691, 
+     0.9328463649710326}, {-0.09555315454439031, 0.923097241622452}}]}, 
+   {RGBColor[0.9374034562275892, 0.6196239366374818, 0.7999074356164582], 
+    PolygonBox[{{-0.09240658373814, 
+     0.9033399861297157}, {-0.22867938534499374`, 
+     0.8905654801431533}, {-0.22933004936967505`, 0.9105568230868842}}]}, 
+   {RGBColor[0.9511672308518904, 0.07793291353634113, 0.6502250807447087], 
+    PolygonBox[{{-0.22867938534499374`, 
+     0.8905654801431533}, {-0.09240658373814, 
+     0.9033399861297157}, {-0.07959251672104327, 0.8141455047231164}}]}, 
+   {RGBColor[0.9746732061186434, 0.5717271563175781, 0.06002779226639876], 
+    PolygonBox[{{-0.22933004936967505`, 
+     0.9105568230868842}, {-0.09555315454439031, 
+     0.923097241622452}, {-0.09240658373814, 
+     0.9033399861297157}}]}}]], "Output"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -11332,11 +11348,18 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"Export", "[", "\[IndentingNewLine]", 
   RowBox[{
-  "\"\<~/LINQdoesGraphics/TEAPOT/teapot2d.csv\>\"", ",", 
+   RowBox[{
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringTake", "[", 
+        RowBox[{"$System", ",", "3"}], "]"}], "===", "\"\<Mic\>\""}], ",", 
+      "\"\<e:\>\"", ",", "\"\<~\>\""}], "]"}], "<>", "\[IndentingNewLine]", 
+    "\"\</LINQdoesGraphics/TEAPOT/teapot2d.csv\>\""}], ",", 
    "\[IndentingNewLine]", "triangles2d", ",", "\[IndentingNewLine]", 
    "\"\<CSV\>\""}], "]"}]], "Input"],
 
-Cell[BoxData["\<\"~/LINQdoesGraphics/TEAPOT/teapot2d.csv\"\>"], "Output"]
+Cell[BoxData["\<\"e:/LINQdoesGraphics/TEAPOT/teapot2d.csv\"\>"], "Output"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -11344,11 +11367,18 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"Export", "[", "\[IndentingNewLine]", 
   RowBox[{
-  "\"\<~/LINQdoesGraphics/TEAPOT/zOrderedTeapot2d.csv\>\"", ",", 
+   RowBox[{
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringTake", "[", 
+        RowBox[{"$System", ",", "3"}], "]"}], "===", "\"\<Mic\>\""}], ",", 
+      "\"\<e:\>\"", ",", "\"\<~\>\""}], "]"}], "<>", "\[IndentingNewLine]", 
+    "\"\</LINQdoesGraphics/TEAPOT/zOrderedTeapot2d.csv\>\""}], ",", 
    "\[IndentingNewLine]", "zOrderedTriangles", ",", "\[IndentingNewLine]", 
    "\"\<CSV\>\""}], "]"}]], "Input"],
 
-Cell[BoxData["\<\"~/LINQdoesGraphics/TEAPOT/zOrderedTeapot2d.csv\"\>"], \
+Cell[BoxData["\<\"e:/LINQdoesGraphics/TEAPOT/zOrderedTeapot2d.csv\"\>"], \
 "Output"]
 }, Open  ]],
 
@@ -11367,9 +11397,15 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"teapot2", "=", 
-  RowBox[{
-  "Import", "[", "\"\<~/LINQdoesGraphics/TEAPOT/teapot.off\>\"", 
-   "]"}]}]], "Input"],
+  RowBox[{"Import", "[", 
+   RowBox[{
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringTake", "[", 
+        RowBox[{"$System", ",", "3"}], "]"}], "===", "\"\<Mic\>\""}], ",", 
+      "\"\<e:\>\"", ",", "\"\<~\>\""}], "]"}], "<>", 
+    "\"\</LINQdoesGraphics/TEAPOT/teapot.off\>\""}], "]"}]}]], "Input"],
 
 Cell[BoxData[
  Graphics3DBox[
@@ -11657,17 +11693,2882 @@ Z4l7ssdekeOe/BWLHPfkB2z/nfkJW8f71l57ePEH5rdyeGXzgv2gG+99sPW6
       233}}]}]},
   Boxed->False]], "Output"]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["HORIZON", "Section"],
+
+Cell["Don\[CloseCurlyQuote]t look below this line.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"point", "=", 
+      RowBox[{"{", 
+       RowBox[{"1.3", ",", 
+        RowBox[{"-", "2.4"}], ",", "2"}], "}"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"angle", "=", 
+      RowBox[{"N", "[", 
+       RowBox[{"35", " ", "Degree"}], "]"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"vertical", "=", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"center", "=", "Automatic"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Grid", "[", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Framed", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Graphics3D", "[", 
+          RowBox[{
+           RowBox[{"{", "\[IndentingNewLine]", 
+            RowBox[{"(*", "Objects", "*)"}], "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"EdgeForm", "[", "]"}], ",", 
+             RowBox[{"Specularity", "[", 
+              RowBox[{"White", ",", "20"}], "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"FaceForm", "[", "Red", "]"}], ",", 
+             RowBox[{"Sphere", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "0.2"}], ",", 
+                 RowBox[{"-", "0.1"}], ",", 
+                 RowBox[{"-", "0.3"}]}], "}"}], ",", ".2"}], "]"}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{"FaceForm", "[", "Blue", "]"}], ",", 
+             RowBox[{"Cylinder", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"0.", ",", "0.3", ",", 
+                   RowBox[{"-", ".5"}]}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"0.", ",", "0.3", ",", "0."}], "}"}]}], "}"}], ",", 
+               ".1"}], "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"FaceForm", "[", "Green", "]"}], ",", 
+             RowBox[{"Cone", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"0.2", ",", "0.", ",", 
+                   RowBox[{"-", "0.5"}]}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"0.2", ",", "0.", ",", 
+                   RowBox[{"-", "0.1"}]}], "}"}]}], "}"}], ",", ".2"}], 
+              "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"Boxed", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"Lighting", "\[Rule]", "\"\<Neutral\>\""}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"RotationAction", "\[Rule]", "\"\<Clip\>\""}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"(*", 
+            RowBox[{"View", " ", "control"}], "*)"}], "\[IndentingNewLine]", 
+           RowBox[{"ViewPoint", "\[Rule]", 
+            RowBox[{"Dynamic", "[", "point", "]"}]}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ViewAngle", "\[Rule]", 
+            RowBox[{"Dynamic", "[", "angle", "]"}]}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ViewVertical", "\[Rule]", 
+            RowBox[{"Dynamic", "[", "vertical", "]"}]}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ViewCenter", "\[Rule]", 
+            RowBox[{"Dynamic", "[", "center", "]"}]}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"FrameStyle", "\[Rule]", "LightGray"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{"The", " ", "second", " ", "object"}], "*)"}], 
+       "\[IndentingNewLine]", 
+       RowBox[{"Framed", "[", 
+        RowBox[{
+         RowBox[{"Plot3D", "[", 
+          RowBox[{
+           RowBox[{"Sin", "[", 
+            RowBox[{"x", " ", "y"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "0", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"y", ",", "0", ",", "3"}], "}"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Axes", "\[Rule]", "False"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"(*", 
+            RowBox[{"View", " ", "control"}], "*)"}], "\[IndentingNewLine]", 
+           RowBox[{"ViewPoint", "\[Rule]", 
+            RowBox[{"Dynamic", "[", "point", "]"}]}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ViewAngle", "\[Rule]", 
+            RowBox[{"Dynamic", "[", "angle", "]"}]}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ViewVertical", "\[Rule]", 
+            RowBox[{"Dynamic", "[", "vertical", "]"}]}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ViewCenter", "\[Rule]", 
+            RowBox[{"Dynamic", "[", "center", "]"}]}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"FrameStyle", "\[Rule]", "LightGray"}]}], "]"}]}], "}"}], 
+     "}"}], "]"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`point$$ = {
+  0.6999061790483567, -2.89013294280502, 
+  1.6147021129122003`}, $CellContext`angle$$ = 
+  0.6108652381980153, $CellContext`vertical$$ = {
+  0.08776181769678587, -0.13502343218707719`, 
+  1.5825767370962114`}, $CellContext`center$$ = Automatic}, 
+  TagBox[GridBox[{
+     {
+      FrameBox[
+       Graphics3DBox[
+        {EdgeForm[None], Specularity[
+          GrayLevel[1], 20], FaceForm[RGBColor[1, 0, 0]], 
+         SphereBox[{-0.2, -0.1, -0.3}, 0.2], 
+         {FaceForm[RGBColor[0, 0, 1]], 
+          CylinderBox[{{0., 0.3, -0.5}, {0., 0.3, 0.}}, 0.1]}, 
+         {FaceForm[RGBColor[0, 1, 0]], 
+          ConeBox[{{0.2, 0., -0.5}, {0.2, 0., -0.1}}, 0.2]}},
+        Boxed->True,
+        ImageSize->{300., 300.},
+        Lighting->"Neutral",
+        RotationAction->"Clip",
+        ViewAngle->Dynamic[$CellContext`angle$$],
+        ViewCenter->Dynamic[$CellContext`center$$],
+        ViewPoint->Dynamic[$CellContext`point$$],
+        ViewVertical->Dynamic[$CellContext`vertical$$]],
+       FrameStyle->GrayLevel[0.85],
+       StripOnInput->False], 
+      FrameBox[
+       Graphics3DBox[GraphicsComplex3DBox[CompressedData["
+1:eJx1nXVY1svTxrG7PTYmeuzu4MFjYnfrsRs9djd2Y3djt4KN3Q0YIIq01GMn
+6utzznxmfZ/r+vkPFzfjfndnZ2dn454t0HNoqz6JHRwcCqZ2cEjy6+ebpNOy
+3Lm4wJmf72bdPzvnabFaG+oF9TnhdssC/qn8rmZfPfs7Jwq6OsXbLVDxRHGB
+U754jnVeO795X1ePMMVrBZeLrT5puvPRXafTervFKB57Y1SOL55znCNClnX0
+cHqj+KKjJ+t631/kPOLNjZKuHu8VX3x38onqkzycHf7991nxJpc2383pscJ5
+YfrKvl5u3xT/7n0x7LPnaudcjoM93QJ/KL5xX9jXx6fXOfv+8aCmh1MiF/DS
+W5Jn8r6/0Tnnv/KJFX/UaHmWW283O//tlCKjq0dSxdPW27Gx+qStzjtKbB3n
+5Jpc8UoWr2J7Umx3ji1fK/TnzxSKt6l27VhOjx2qX/SKPvmdn9mj//g2bepO
+C3oGX1Npilex8d4W9AxeNX7HkKPLLljQM7hjI9+1/t2vWdAz+Nf95YM7Frhj
+Qc/gG8cVuZZ5wAMLegYf+rJN1SxV/SzoGTym1KIaxRMeWdAz+I2Vjfc9PfrU
+gp7BnfI9zL6n6zMLegbv8/LB7BKfn1vQM3iihZOcvp0PtqBn8E0hix75J7y0
+oGfwPLMq9f5WOtTYpegP+9RyBUefKic/VyQLrmbTG3oGT7v5r/42/aBn7Z8t
+0w8X+6UH9AweXyRlv92/2ouewV3zjDv99Ve70DP4MeeHcV9/1R89g3sfOlBv
+1Yhw1TP4pbeb0sTMjVQ9g4+tOq33KLdXqmfwnV5PUxbKFaN6Bn+ZwzdD+wWx
+qmfwweNvnXp7Pk71DF6+/uGyXY7Hq57RE+MdPYNjn/x/cPTJ7/xMUeLApye/
+7Ac9g/tWHetp0xt6Bi/YY0zClXZhqmfw/cOqRUf/0g96Bt+5Y3H7sEbRqmfw
+IbsGxLf7pQf0DH4oxbbQlnXiVc/g932OpHDvZ1U9g+fMGejY+51V9QzeLayM
+V+Mwq+oZvFHSyindq1tVz+AhFy4trvslTvWMPvCf6Bmc8Y6e1R+IfVIuOPrk
+d37OuZCjgM3e0DP4omNrq9jsCj2D35teP9SmN/QMni46eXqbnaBn8Lxhp5NH
++1tVz+CfMtY6ZdMPegZPn6pM02TB8apn8Pp+B+s/eRCregZvWeLzn2NvvVI9
+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
+r+m8LTj/Hzxh5O4sjWf66rwP/uxQn/5Zq/rpeGS+bvi6z97YcaGKo9fZG6/t
+/7tHrI4H5Pc5Ns06olS44sgnGt7xfPrQOLVL5HcfC7pc51qE4sg/DCuyMrmD
+VfWD/P02c6q41TN2RnxXwS35Odu+Me1F/vrCNOPyeb5SHPlF7vt/2vY96F++
+28S/7qfBv8oHx166BJ86YKu/+l+Rn3z8U9Z0U41/IK68e6+l94lxcao38Pi3
+uY6XijL+BTz/gNV1T5035yaU73j6dnrbvgH6QX7d44hMdX+auA75sRuS57wb
+YfSG/O1sR6+v22riauRbrHAMte1Poh/kF5Qe4zt9n5kf0YPng7NdfuyNUZx4
+eVnox6W29QvxLfI+HSdnssXb6BP59pdXO9jaRdyLfLeFc2vb9IA+ka8580r8
+pp/mfAT598vvhNvqj56R95+TontRd3M+hfzGgo5VR/Yw8SHy71502GGL/9E/
+8l99vdbbcPSPvKX00VW1Bpv1GPKZJh1Y1eJWjOof/+0yJ8tpW/yA/pHfPnfD
+gi+/+THknzwMvLQ20yOdN8GnVW35eGgKcz4CfnnOxsc2e0ae9Urv6cO39Jkc
+r/sYyM89PN7Zpmf6EXn3hk0y2eyHfkQ+cxeX07b1Pv2I/MWr/r42u6IfkX+R
+bW6UzX7oR+SLvEvj1Ot4nPYj8pm6h66z7SvSj3pu/3P+3OTVorUfkV/mfGpQ
+0SFm/qbdTafs2fgm93OtBzh6o1xw9IM8ekWf/I78svT/5LLtL/E7fwdHzxrv
+dLlc22Zv6Bn5ZrdS57at69Ez8uNyXWxn26dCz8hnrbF+p00/6Bn5yS08J9j0
+gJ6Rn5IkRY6y7yLUrpB/UTYgUe7X93V+R77nPesa274rdkl9Ge/YPTjjHX2C
+Yz/oE31gb3wPefRA/ZBHb/yOfL+0bc/Yxhe/83dw9Mnfu7g1+fNtRLjqE/ll
+j4sV6dwlXMcp8qWSBWS4cv2lxhvIt17ruazjyijdz0R+6ty3/rb9E/SJ/Kpr
+BfL2uR3ng5/l+8wv6Bmc+UXPdwXHTyJP+/Cr6B95xiP6R57xi/6Rx67QP/LY
+Ie1BHr3RfuTRM+NR1ztVXzQeWitI40zkA7tPTW3bJ8HfIr/Xc8pQ2740/hb5
+YUl3lfqzbqzufyKfvMSGHCXzmvUL8nGdzyy27WPTX8iH9Qt36XjPrGuQr1J0
+7Ujb/iH9xXhifmdeBGd+p7/AmafoL8Yr8xr9pfsZ4g/pL+Txn/QX8oxr+gt5
+/AD+E/n8WWulqlbCnKeADxwU3LNz1giNVynnw+SAuj/Wmv1S5C/N+HDatUac
+9iPys3sW/sNm5/Qj8lkch/TdlGDWa8g/7rUhpvcXcy6D/N5BH3fWjY/TfkS+
+zYvSgypdjtV+RN6yqUTvPn+b9R3y9VK9L57LO8yH+E/jcYlj6V9w4lj6F5w4
+jf4FJ66gf9ErcQj9izzzF/2LPPMd7UGe/qI94PQL8pRDP/I78t8r3hhvTR+v
+/cvfwelf/h5bMSLH3pdm3arnSmWW17GNF/oX+XWpMntePR2j/Yv87voWvyO/
+1u/0L/Knd8686NQ7RPuX79QOO5M1ofp97S9w1hH0FzjrCPoLnPiZ/gInrqO/
+aDdxIOMIefv4AXniDfwI8vg3/Ag4/o1+BGe80I+Uz/hCj8ijf/So+77SX/yO
+/IY8ZXftW2r2T/S+oeD0I38/2HHIHNs+M/3Iz7QnfIJrn7up4wt5p4YHwkd7
+3ta4gvKzXCnZdFLbYN3npRzWd/QjOOs7+hGcdQ3y1Jd1EP2LPHE4/Ys8cTv9
+gjzzCP2IPPMO/YU8/or+Qh7/Rn9pe8X+6S/kGS/oC/lVfcZejPttfmR8MC74
+Xfd/EmYFlkvw1XUHeM5WlwKGLjf7Mnw366h84b3Lhui6A/mUU8o36rrL7G8j
+33v7oZC3DeK0HymPdTfrZ3DW3fQjOOtN+pH6sj5lfOk6SdZH9CPyrKeIN5An
+TiM+ASdOo9/BiQfod8onfqDfkWfeod+RZ56i3zVO7PM6YPX8YO135PF76B15
++hG9g9NfyOt5r/QvvyM/YcfEY/5L47Te/B2cfufvXfz7LMwxzqz3kS98rM7m
+b22sur/E39kvYn9J97PPOFtf3t7urPtEgrPfgp2As9+CvJ6j7n2y3XafCvtB
+nv0H7Ad59iuwH+RZL2M/yLO+xs8jzzqI+AqcdRB2BU48jx1SPvE/9oY88ST2
+hjzxJ/aGPHEL9oY8cQ7+AXn8MP4EHD+s59aCM66xK8rHD+i5rMhjD9gN8tgP
+vyMf0H3mhconw7U9/N0ex46wH8YL9vLQoVKDptPNuh48xeND4212Qv3BFxwb
+V/lCgDmvxb6wK/Sv96XbuJ5oMtHszzCfJM80qoztvg31BA/1j25pu9dEfYjv
+il6+m8W2DqJcvkP51I/20S6+q/f1xG8gz3doL98D57vq96X/mUcoh7+jH/4/
+dsG8TzupF3rAD6BX9oeRR0/oB/tB/+UfVH++5IuJjxnHKZPf2m2bL6g3+Fzf
+5962fRh+5/8hD87/Q57v8X2+Gz2vf15Xj6+WOn9f3e7k+tqS0jHj6GlXrJau
+E8s39nD6ZLnvljAm0OudZdDBwBfrXa36O38HzzXsUUpXjxQu4M4JfhU63431
+oVy+Q/l+A2pscgtM5gLec+jsK5em/xrvUg54g/Snbkwa/2sd2jnZbS+3xC5j
+/u2f75YGd2PrvlgU57Oo5+ZKHk5JFd+7IvPyIz9/xSFSPnjF3Z+bPWj/a93U
+ZmDPQC8HF37OC0j57lO2eC0f3HNlsecnHlm1fPA9A3v3e9Y8xody+X/UBzlw
+yuF3fnZZEJphvnu0lsN3qD/lgPNd9APerlbbNumTxql+aTf6pHxw9MDv/Iw/
+2m7ozbVx2o/gAUd7r0jWy9gDf6d/+S44/UX9wKkn5YJTPr/z8326gZvidoZb
+zv47Pn9avh5sN9rDKc6SbOnyh6nyWy3bZtw55hb42TK3b4/0Dg5vLUMerW6V
+bqrVkm3Uqpdebh/05/2CzfN1qmRVOf4f8mUj3KJ//kyq9tbbod6dR8njfUbH
+pWwT6JXcBfk1jarM9F0Ur/oH/+tst3Yex60qTzmn82ca8+lXP0Y/fzjVyZVz
+2ATLJY8cxWx6Qz/gjYtk6Vk6Ol7l6bcHf8w58bP/r3WN1BP5BzEtk0VHGzsH
+z3d7U76/rxl5yrk14lbuqCamnsgPKlKjmO/UeB/0i77R8/bHVbK7eiRyAZ9Y
+qsfNkR/j1J7BS59uurHXLqsP8tjvt9SJSx+8YPSAvF+RiA4l4o2dgAeOHth8
+92WjB8rpNX1onZRt47VdyEcUCNtfo1qsD7/zferJ/wenPsjTDvv689M6Ipf3
+hdtm/IIPLJHdKWP2eJXn7+DUn79XG7qn4ekTrHcSLPwde6CfwLXfRR49YSfU
+H3n0SXvB0RvylIOeqR/y1BM7Rt+MC+oDjh1Sf3DsDXnsFPukPsjTj2qfgtd4
+O9B31Wjjl8DbVcn2YeyveQR5yk+WpcC7y0+Nf+DvjF/aBc44RZ7vMK6pP/KM
+F+oBTj2pBzj1QV79oV39+fku97A7JVpY1S4XxSS0GhL43OJ57MLl+L2xat9t
+3I8luAWGWGLa3+4XeT1e7QC8hmv2VVe2mfgT/x0Q3D2/LT7ne7q+d/xSOW67
+8RvE6TsrT/vDdh/v/98bSbCcOJo0z5PvZt8YvQ7rnS/a57Hxk5Q/scWZ3DZ5
+vkv5Q3845HqywfgH4vobqeu16tfF3KPGvk5MivrLti7AjnWfL6j9ngvnTP3B
+V6Up/WRFrCmf9cTddyUL2O4nEP9RfoHaRxqOCTI4dto1LP72i1nG31J+wNam
+o4qEGXug/Akz7gXY7rHo+lfG5Y/RTbPa1tH0I3Fv+icbtmXJYvav+Ds48Rzl
+LJm+IX1CA+OX+H+Lx84Z/+i7/bzj4HLme4bLs3qb72q8+Vc6l6CfZj+T8i9t
+KT1g1G84/29axhPTMxWz+mBn4Ngh9qrxj9itruMEX3b0/o99v+wEPVJf+p36
+Id+96MNs2yoY/0a9qCf1AKee9B/6a7o0ImPPL0bPlI/ewKkPeqO94Iwv2oU9
+pj3nmtt3r/GH2BF2RX3AsSvGFfZe4OPSRrb78OiH8rFz3Q8Xu8POGY/IO+/q
+6Zd3qVn/I18g0fGKpWLNuRd2HT5g3b/7ddSHcc94131dGcf4DeqjcaOMCz2/
+EHxpkXqpmmQwfo/y+2WrmDwgiVlH83dwPdeQcu5cm9K9vVO8+mv+X8Ue7/Im
++WrK5/shx4tl6P/O7OdQTpZKjheDP5jzU8pbt/f2xLHb4nVe4PuNy/Vck/GD
+0QPy+Dfl1wjeccLOacevxms/8X30Tz10X0LqgzzfXVLzo1/ZH0Y/lE97lacj
++KTtfc4mHHhpqXey182zbnv1p9/4gdM8p/fTeoNnTLys6v28l7U+I+8u2efg
+8MTyuuWHOzHtYxRnfC8KSjS22Fejf+T/Gjh7QvzKWMWRb/R6zEbbeGH8Mp5K
+5vhnZp6S8YoHe0Tfc3KNsKSYkz2k5A0zDyJ/8Nrsvo3qGxz5MQ0qf+n/zarj
+BPnZ92es+xJscOQz13tdaPsYsw5FPlH6QguPfjE48l0f56192yVe9Uy7/qiX
+qKntPIX2Us7OykuHZFlicMq537J5nZtdYy34h8Fb8m8L9Hpl+b7AJ3cpq1Vx
+4vGUcUPqjDtq9IZ89K4kicveNzjyifOXbWmrJ/pBvsj0nu1bnDc48vd993XO
+ucvsC1HPAk/dF9n2k6k/44NxgX7wH/gNymHcMF40fhO/sr75iB7vC8b6UD/w
+4C1ei212Qv3Ae3RMtcTWL9Qfv8s88v/P3RIs+E9dh4o8/pn644+bJtl45M8B
+5t4C5VzMGrLBdh6EXpB3er6r589BVu0/8K3W89uS/jDnL+BJ2uYZfvOM6S/m
+N+IB5ietj8xTtBd55kHqw7yXPHLIpExfTH3AvU+VKJC8r9En+LOvlYYHZ49T
+ewPfcvZNvV7u5nwHvHLr0vUvDo3VeRmc+IF20Q7iE+rJvPn5bqefZe6beROc
+eIz60J/Ee9gPOH6VcYi/9J9xr/nkmfEWxiH4tOfHkuz6brVQH/Dm9UYvrPPW
+zIPgxL16viw4cZ2uuwVvsjK+f6LH5jwG/Oq7yE85Bhv/yd+ZB9XeRB4/T3uZ
+x15GdCwxNCJG/Th/x2/jf5Evuj1qeqXvMaof8DKJX7bY19Gq8rreEb+N3pBv
+633YJb+/0Rt44fHZstboHafylIPfY72h+9uy7tDzXylH439ZPyDPOoLxi/yr
+lCtnXu5mzi/BS124d6h4jRj185RD/IPekSceoF+Qt48rwJlP2ZenH5Y8Gvbn
+T8+GzvQf+sYO+R76pl/AkadfGP/oGz/DeANnvNNeynk6c9Xsr9/iFGc/2P2p
++4kMVUxcQb8xLsCRv5P3ZI+OS606Pvku4xe9IV/vH0fHZA9M3EX52A848qfa
+N64R9FucQ/mMR+WtUc9EtUvZ7iHQL5STa2L/vRd/mvIpB/vEn4BveXbrXLqQ
+eMU5B3M/trm9rb3oHz+KPwdHvswf1iYJIVadn5Bn/gLH7zJ/4SeVn5Vu4trX
+P03/Ug5+Gxz52steDkgeZerDPMP8wnyBfKWNKZ37rDP9SPntmk2Pahgcpzjy
+KTxeHp6fy3yX+jNfYFeU83h09iOrr8VqP4L3qrklWZuxMYpT/uLPXyIeTzH7
+1ZR/YsuIA+neWhXn3PLmi5S3iiUYfXKeMKHX7I2+xQ2OfNMHL4bv8DJxFPLO
+1dw/digXr3oDz/y2RKuUz2IVp5zh1YPuzypm/AD7yYNGJMQ3SR+p8xHnnJkb
+tegRVjta91FpB+3ie9SX+jOOiJe+lbm9wH9xrM4vus74VqydbV2MfmkfcSPf
+BSdu1PhYcOyf/qDd2DP1RB69oRdwtx4ep2x2gjzloM//vy+RYHkR/Wmzz55X
+Gs+wXiw67fqhrw9jdP2u9ZQ4BJx5mDiE8Y58/uyugSsqRiuu9xEKtZ086WCs
+rt8Zf6w70A846w70rPupEm9rnM05ksTbyusRnHGt99elHYxf5NDb+d3nmz6P
+idY4in2IErnqJu520Oxv83fkaRd6ZX1Eu/TcTNZHtEv9hKwLaBc46wLlAQmO
+P9F1iPgP/An9jTz9Tj3xH6zLqCc46zJdZwrOvKb3EsWvME9RH+TxS9QfPNO9
+Kjub9Y1XecrBX+n5o7TL3ftM8KTekYqzb3Mr9/AH3nOizTwu5ROf6P6IxCnE
+J3rPQ+TTW/0fp30drfEY4551N3rQ9besu9EnOOtW9AnOulXv6wrOfK33BqW+
+zMv4I+TxS3p+IzjrJsYh5TAekWPf4kPjkn2ruJt5gb8TP4MTrxE/K+9S5ClH
+793Jd5fuL5TP/12c6o1+Y/8B/YCzHkeeuIN1vcYZnE9KvEE5yLNeZp5AnvmC
+cQHO+hecclhvYh+0DzvRfWwpB/uk/eCsF8ApB/0gRzx792vih5PK7NB8Adhj
+pb15d3Z/EavrDv7+oMzoxHsmXFaccoiHkePvyKu9yv2LYqemP7LdD6c+4J8z
+HLpuu7eAv+P+yEiHsY1tvGn8C3iaFycOhj838TD4s78jE7Z8NPMs+J/bC2ax
+8YX5Lvje2FpXbXxn7Jn46uLycRG2+1TUR/PmZWuZ1cbLoD7gzS4mNJniZtql
+eSPCrw6x5TP5//elEyzXl47O3fu39Qjz3cdT0V1sfEm1Q8FLV3x12XZ/Bj/A
+uPwzU5Zjc/8x9wzBX3c7nrLPWpPPgfkooHXtZDGrzX4FeItqDV8+G2nksbuf
+AZXb2fihen9I/NvdLN0r2fImYTeM43uN8u1uuzPa3PMRvOqHkqtsdqX3ydnv
+rB1518YvRm/4gS5bYnrXTmrySfJ37FbvBYm9V6s19G7RX/LUB3vEnvVeNOdR
+lxJHVf5s/CryrDuI86jP3HUnAs/OC/dhnUs5H/8KHNi0ebTeiwPv4x3dJtvl
+WN2nQn/ojfZTX/QGTvvQG+WC017sA3vBTrAD2oedgKMP7AQ7AMdOsANw7IF6
+ar4Q6UfqqXnLRM/YPXaH/fNdcOyQca38QZnHGaeaL0LiUvqJfqO/qA/9Rn+B
+02/0F+USz7Me+f/8/QRdd1Bv6oXfoN7grDcph35g3aH3hMXf4Pf0Hprg+B/l
+gwtO3Kj3RcU/4Sf1fprg+CvqST+zHlQet8gTt1M+/YO/xf7A2X/QfAhiL6wH
+sWP8H/OC8okEx2+zLlJ/Kesj7B8c/6l5CTgXknWB5n8Tf8K8o/nfBGdewJ7A
+Wfdp3jb8lvh55fUITtyo+dYEx7/pvqX0Z51NZV/kfxinfow4KOkmb/9kiWJ0
+n03jhJ3HXmTYHuNDPINdzQ/6fuufgtHaL7rP7POw8/U3Jm7Rc7e1brvr7AjV
+e7zgG8q7+Hx3jvTh3iP1GZyQ7Phlx4ea3xl8/+Ysa7J2f2npfNgp+TKnB9rv
+cT/rvE04FGbJWGWnRyKH6/r/hhVIFDdsyXZtL/4+3+eTA3J5jHIGR3504b/m
+HJx/zHLIIbKBg0OIyq/sv3rdslJTncGRf+HoEz/06jm1Q+Sz+rdOnMtjpjM4
+8sXXn3GvO/6yZX0FpxIODmb+mVM7w4DNH+c5gyO/JMPjiinm3tD7Zsh/aRfe
+b1mpJc7gyDeynLy1YOFdS92jZVM4OHxQ+SLp6qx79MLD+ee//z4p3ljycyJP
+OavrN/F/e/GBBXnwIZK381STe59//vyq5fQd9yNR17qrncGR75T0z847tz2y
+jBI/hfzIMl0qbf641hlc21szz/24ZE8tOd5V/vBzioPGk2PCT/YP3bXBGVzz
+au+bYv3W1dzfRd7rTppmy0ptdlZ+jsjXdXh4L3pPkMXPkjz+55QkKr9316nI
+Y7O2OIMjv6Vd7SWPY15YyoudIb96xoBpj15sdQZHfmBIogdvMry0LFngH/Fz
+isnTPqFbjtyfq253Bkc+o3edObkKhajdan7f2t8Phc07pnYLHhJdpWD4mMtq
+n+BFGqX47Dn7rtqh+r/NIWk3lvdTewNfd3T5ipMOT9WuwNvvTTzojGeQ2g/4
+SpfLF06lf6n2oPmeJV8r/a5xU8Gjp5KUCNd+B7dsLZSrXdJI7V/w0+nnNMt+
+Nkr1gL9c1mRV4/EXz6kewDcPSjd2zvS7qgfwqEfh0+6uMnwE8HbNmheMXBuk
+etD4JNI7okjOENUDeL3wyCqLC4WrHsBLVg3LnjokUvUA7in5adEDeKdlL7u3
+aRiregA/N2h805nP47S9zJ+pfa/mOD3SnL+Aj+s58XO1Yn7aXvCtdXa+vb44
+SNsLXmrS9dCGuUK1veB7Js4d0OhNhLZX82Pvmrm1VKVobRd4WsmvS7vAS+ap
+MLPFKavWn/vyl6/eeVl60g2tP/jb4U1cB0Y/0fqDJ3bKM+1WihCtP/iT1KnW
+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
+U9+teDW9yYfAuV/6N33yTN1tcObf/h0Cl6R6Z9o10u6dO9pVRubZkBiPE1Gv
+TVxRX/7uZnk64OLmV9quHPLd6PJvJuSOD1H7cRX55j7v+5x0C/ah/iPrVVzs
+5PrFkv1Ioxlf95r1NfOm8y2faXk/m/ozz3afsy33xXXGrh5c6Bvg5fbZsjTo
++Oncl8w+ZCLZD+RdOeTPSDuGSP11v0jKuTC+cz5ruZdqV6Olntliy1/xWxOm
+cUI2qWdYjpmd9t6M1P0WT7ln16jMTedtZV4pHiH17yG8e9r73/l+gqVf8ceP
+3b2MHjxl3qzxfu7hfsuMHrifkGpuq/JdA2MVZ35vIXZFe7vdX7/fLfCbZV7G
+Cpkuhplzk0W8EydxCPKuMr+f61hzytMmJg5MKvVcGHev5ieHeNXDNqln+oOz
+3V2bWbW9FaWe9ySfgO5LSz1vSz4B2tug3P1crpkdXBonb9ztewdj5zllfNwQ
+P0B7Oe/O0+6wX+uwKMW5L5Gn5L2ds29G6PhqKOX3HDTyn0pvzX4RuGfOQmdS
+1rAqzv8bdq1fuTFDzH7aBfnuA8lvAE5ckf/RodCz3yJ0X/G1xC3+nbeO+5rC
+4FESn4QVbJ7n4wc/1cPCqoPcnW4kcvEdH7Sr1KUYs8/29UG3wMqJXZpErnZs
+lMas+3bI/ZrNcr+aei+ScjJ3rFGx3FnTLvCCXds9eFQgSvFuUn5o4NdTY8eF
+a318+X/ib3UfLJHbda+4JC4t/n5Tv2qWSB1HiSUOyTf/u8vqLVE6L8fY5cGg
+nnwfPaOfpFLOiZ3u3p17PjX7qw22tA+snMwla8T8YdmfmnmknPQDdqX71SL/
+4VmVMxObmnHKz3YNFg6ds/GlzoMP7e6v6v5ns5oXvOKSu+SfFXVr5yvz3TFy
+j6Kg3I/lu91F/lGJO551/36segZvuK7ooSblw3R8EZ/8VWPB9317I7U+Y8nr
+IPkowHPY5Z0gPtH7D86zqub26KPn3fV//hfnuNWbu7LVzKPqn2Mr//f/Eh8+
+P2vZsxc6XnbJfk6+E7MuFfkzRHE32d9Inmx07j7bY7T+yB+Zsbnu2PemXezD
+FD7+bMW3QDNfU07jNb5HFiaPV3yf6DtZ9k3ZIlpatb39JL76+Dpx6Yozwkzc
+IvHXZblfV97ufl01uV9He5tJ/DYpXWlL0Uizv9RE9mGeV8t6JG3RCMVdMjjm
+9nYLtwz8OOl50hBzjrxS4jonv8YZE5Ka80rOl5s+TX/s5A+rfpf9ojVfi+5p
+G2/ahXyM3K/DD9eU7+6eG3B1qIdZ768X+V2yL4R8JonTZrbbfsGljTkP4rz4
+59q3dyc9jdV2sa/Qd8KdE9enGv0jf7798Drbr5g4EPkcfQ4XzD0yRuvvcOi/
++O3k05lvIruHK+4i+zPxO8vsq5k8SMv5W+LG7Idq+/UvE6p4RokPk55bUOtt
+ypvqz+ExzPk4avbw6jGKs/+z9kdUha+5TNyi+df3FR6+dZKJ9zgXnr/tS45R
+j0y8av8uAOUgP7nIz+ntZpu4Dvn4DU6Xqr828Sr44ffjVjpWMfEquGPYy/Zh
+p01c10niPfdVvcq8yR+rOPs/Wec3W7s7yszv7P+cGZpv+4lvZn7UvOaz5+Ra
+5m/0gHyiVmMLDnxj4gfkyw9sm3bkfhMH2uftpxyV/+eD79OTRg/IN4r//KV2
+hTgdF+DXg1pcHbL1lfbvGeLquKsDu+bfo/gGiZ/7ey8NGnDgifp/vpsxS5aB
+c8oE6XzEvk2JVDf99z4w/Qve/0h84cKvTBzFufAen65HQiaZdiGfMkPBBk9e
+mnKQ7/R55PJkB4x+tHzJt085yP9T9e6xa24mTka+dvXRvl2PR+i4yCVx8ti4
+fWVmJX+s81Enic/zfPFdOrlXqIkrpPzTdU75NrwZ4cN8NEri0l5z29+7eTVK
+28s9yt1FrVPcn5h+B3defbJzuu/GfjiP/sM5X7OjwUY/yM/LeuRdwT5m3Gke
+/uBK/vFPzDhCfoXkyaccfWd4+MGz7R5GqR6QT5122+B6WWJ1ftT3f0c2ydBj
+dIzaA/KVnW7tXNDDxJPI7xZ+N/ohrq5evs38fEnMuR73RjPXXPR9jLOJr8Bf
+Orot67/S6A0818EZudLWN+OUc/A+f3zMM+qrWY8g/+5bZ+v8i2YdinyqDEfT
+9/3lt/EbxNVrwlrXyGgNNnGRlBP/asemaX1CVD/6nm2JPsnnvLeqfpDfcq1w
+lpfN4lQ/yI8Snjvyeh/gSdCsOoWifNjHIK6e+WZ6YMy0cNUb8fnj9nGH3kcZ
+PXCvNeTH9GuT08fbrVMcXAoMXdVwZpyJGzlnb9mocsoEPzOf+sh3vZbkvHih
+1UuNGynH/UaanblDzbgA3ze6v+O0/a9UP5Q/vN7AhCpXjf0gf/VSnwxrgoLN
+ek3i527VE9U6N+q54vVl3693TLKp91veVf0Qb2cu0a/myKaR5t6IxNUfwzJn
+/dY2XnH2m2+UGbBlXCcz7sCzvP/SolRLM764L7+hy64006eGKs497csv8n70
+vWLOc/Xcf/uYnllnm/XsGdmfrNi8y8KaO1+YfT/ePSvT5U37vqGqZ32n4ta4
+vp5fYlSf4JN8FsZtvh2h+gF/sXHF3Qs9TXzLz28lqm97vttP8e2yXljZtOLG
+3Lluab+ck3reWVtyboexVxUvLfulEUvSzj7z/b7OF7R3XfG4FvuW+ev+G+uL
+XccD+x59beJ21i/JJZ4E5x63+8tsH/wtZr4AT5M/eOuACWZdA163Rsb10anN
+uby+3xW4qknO7XHaXvAuP8Kd/No9UL3FSj33Pfp0ftSKneY8RfZ7Y24/vd6l
+rbnPRjm93HZHpy4ZqvLcc/hwqdL5XbPN+RH3tN988sqZ9pBpF+um5IebPNpU
+wtxLjJH92HHpIhpNLh+ifqzBzOqTnG4kdTnVbXeVpBfu++Dnu5NfXfaTkT8r
++73PS6XccaVdkMpTn+aSn1zXibz/9tK5/r4S5v4DeLmykWemFotXPYPnrds4
+olVAuPGH0q5Cn3YsC46/qnEX+8yV/AdvGDnKnFtRztCApe9zzA9Xee5RlF4W
+6/Dp0XPVP/JfunYIetzI7Jcif1/4jKy/Fsn/KyXrKeyT+/wl5nY5c+K9mY/A
+WzeuVPny7t/u1cg60Xtfloz7pwYqXk7WiTUnlE2Xq6y5P8x9/rAqF86mOr/X
+R+cdWSdaZyz/M8PKK9pfmp8qWeBNS4tQ7S/w5ZL3G3n24Wf2bdzq1JYI7Ufk
+t8xNFXyhtulH8A6zml388jrS7LcIPtchYz/3NBGqf8pv2jL/1HnFzboDed9D
+R//uv93oX/M2SX4VXc8K3uhMSLj/yGgtn/VgluOZ9q7ZY9YvrHeKbvTaW/tF
+lJYD3iTGpUXuDmYeJA5J9GFmpFOWV4YfJ/PLwrFNv+T5YdZBzEcHVt6YFTss
+VOcR/GfHr5OvlTgTafpR8MhEHm+KVQrR+qvfc+2bf2LDYC1H38c7tndS4pav
+1E6w2xHRJVa7Hw9RHH3mcA04/bNngLZX3yl2sLofc3ql8Qnr1n5jr8fuWh6r
+9QGfGry828YX5hw/QvbhF9bctTrCz8TPpezWF5TPT58ZOepcnB1r7gvJ/til
+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
+         "], {{
+           {EdgeForm[None], GraphicsGroup3DBox[{Polygon3DBox[CompressedData["
+1:eJxFnAfcV+P7x7/fs89jJTNChSh7700yQpIRUqFk7x2FskfIipARsleyosyU
+VVZ2pGTv+eP/efe5vP6v13Oe6zr3uc997u85933t62rf76jdj0wajcaqVaOR
+Ct5bNBoLCx6bNRq7qe1Z4ZuWjcbWwp8Rvonwl/JGY6Vmo7GeYFo3Gr9pgFd0
+/XLdmwh/R+0P6fwY4ZcJ7q3jZd27le79n9r+1L2vq8+iOj9H7ScLPq3nHSd8
+bcGndBwrfC3Bi3W0F/6HJveN7tlQ924jeJrG6ahjY52/zJzUZ0vBS9S/g/A/
+1f8y4SsI/1v4pcKXF/6X8OHCVxT+P+FXa87baIxdNOYiOm+tY3udv6HzzoIb
+Ci6uPnOFvyD8Hv2Wg/XccwX76bcvo3Ge0PUZura6+mwkeJ7msZzan1L7+cLb
+CX9S+DI6Mt37nvrsq/tfU/v2un6anlnoaNG1fdQ+We1bq32C+i2vMdcR3EHt
+j6t9A7VvK/wh3pXwdzO39xLcWe2T+CYtjcZzurau8AWEb6T2B3mfamtqzn34
+0IJP6PwBoWsKttX5NWqvBdvpuFtz7aB7l1Dbs5rXDprHnhpva8FugsupfVkd
+3XW+suCL6tNT+Dmax6Iac6bazhLeWvhHwp8u/B2HqO1sHYsI/0TtD+h4Wffu
+pXtvFb6JYFtdG6o+iwl+rrZXeC9q/1rnN2iufQWbgqP4PZrLT5rvhU0aG42j
+Bc5RW1N4i+DC6jOE96/xhulYXPhsjbmX7jlIeKbrf+o4QPi/muNvwnsJ/1X4
+qbr/b+Gp4PVq7yO8IfiCrnUSup/w8zXmksK/1pgTNM/12Rc6VtD58zrvAS64
+WdNr5UXd21lwf917qu7Vp2l8qb7XCF9LeC54rY61hReCbXVtku7fSfdfp/N1
+mALvWG1bqG1ZnffRb3lVsAtrKZv3aRtf6b6Ts3nTbcwSPkj4fMK/E36G8PmF
+/yD8TOELCP9J+OnC9ckb3wg/Qbj+Gh8Lv7/wd9xJgx2fmU58qH8nCdelxmfC
+TxSu19T4VPj5mte/wo/S8bjmebKO+XUM0/2t1Hafblpck3xYfRcT3Ji1ontO
+0rUBOj9dA40ULPRyhqj9KN13hu5fTcfZOt9V1/7S854UbFGfQbrvOPV5W9d3
+1nGO+swQPK/pa5XgRTrOFJ4IXqzjGOELVm47QffupDm9qfa9Ne5dOg5U+4q8
+M/UZ1vT4h6nPBcKHaH7zq/0M9Tle7Tsk/s383n00p0rXbxTcKHV/+q2iPkcL
+/6Xh8Y4QXF3jb6hjsPDFdc876rO7jit1fVGNP1Ttp2j8baBlTdPKXhp3QfUd
+Lbir+l7edL+zhK+pY4TO1wz6OT+0i/kLP1Xj3CS8m/oMEbxEY74n/Cr1nyl4
+He9I/ZbStQsFT1f/r4Rfq/alBS8VPF7t62jsobnf23yChdqv0XG6zheJftDz
+SzX++4nv/07tI9nXgpunfhbPmKPrE4Qvzt4QvoTg9Wp/VvAGweU1zjKl8SHw
+IN17n64tpGPb1O9ltPDLed+CwwWfy7zfNxZ8ScclwrcQ3CT1OrtC/c6OdTIi
+fvs9ggvyTN3/AHMQfF19L9dxt84f1bPXYHFrc4wXbKe2tQTPLc0r4ZkX6vxq
+tV8gOFww1XFiw+/4DuEL6Phc1+4SvJp7E3+/W3nv8d1vj3XLO+O93tD02uVd
+s5Z4h6WOVzO/k66CYzXWJLXdJXi3jiWFd4JeaZzeOl7UeTvN8zb1PxvaprbH
+1LaIjo+FP85a03Gb7nkKGiz4hY4nhd8i+Jf6LKhjbZ0/rPvHspYFN9e3fETX
+W+mdPMF97Be1T9ec7hbeHflBc95Vx8O6Pi3zvbsJvsKaYnydT216bh2h63rO
+yzpfim8KT9DxqPBN9ayH9axazzq36f1zpO4Zr7EOQ3aB9qjPIax56DRrTngP
+HQfovm8Fv1ef9TSXdXUcpOsHwzfU/rPab9exv/D20F1dX0tHP/W5Wefd1b6k
+4G069hPeTrC/rv0ofE8dY3TeW7BDZhq+lfCFoB+16Tz0formtLLw54W/Wpp3
+wENu4h0JX0LwysI8YofcMg+8IBPsWZh/fK32C3W+BjRM8CIda8KbBEfo2Jzf
+Lnijjl2hJ8hBvH+NOYc5Cd9S+GzhMzSHL5BbKst5rOEZ8Gg9Zx32hM4vKEyz
+P9RzPyh931OVZThkucP0+8br+imJ5ZYhIaf9rnEGZ5Z5fhPeGRoi/CDBzjrv
+lFpO6Ci4Ymr+iEyxrfq8i4ygtnYhV6wuuFpq2eAGjdlNfRYVHKVjF+GLCXbS
+uNcIX1rz2ltz/Qb+pfardGwhfAHBq3VsCb0X/FD9F9WYHwjeo/MBau8keG/m
+9dMZnqxrpwlvpTHryrTtQHhFbr5WCh6nOf3esAwxSfdcJriV4HLqNxw6qnsP
+zU3v/1D7Uer/q/B+Oo4R/lvDPKal9Bz6630ep/5/CP9H/U9k7/GtBceozxKC
+v6nPY7p2qtrXEzxebX8ik7Df9e4egrYK/lh4bX6LvF14ff4h/HYdi6rvr7Xp
+JPPcGv4DbWuabx2i42ed/oq8JDxTeyvofGHaeZ7wCbp2vvpsKvh14TV8sMb8
+Vtc2VZ/tBe/ILFMtL/imnrue8NfUd5rw9YW/Lvwr9fsH2pCbr8Hf0AluKc1b
+flHbUYXp4pU6fyHzt95W8Ga959207s4SbK3jbPgP9wrvgZwg2EbHBewvtV+U
+m3a2Fry1NM9thU6Tuc9mvE+9v7/VZxUd5+q5TY3ztvqfkFivWU3t3+r4oGl5
+q7/6f9a0jP6u8JmCz/NtNP4jgsshy2icj9T+VG7d6Rm1D1T7asLvEf6I4Dhd
+W4b1LviKjpWFbyB4uMb8umldq5fwN+ChOvYVvpzm87rwNzTvR6FFgnfo9+yr
+9qGC/QXf0vXloLWaw0+CUzXmXOi78GcFD9M4XwpfUcdY9UcRRM85RO2fC64A
+XVfbQHQ64Y/rnimC9wu+J9hexwTeu37P6/ByPXcO8oraPtYzD1K/H4T/mJmW
+QhtbodOpz3esHd33nfC91P4T66j2umX9bqA5rJ9a3vtM4wxFjhK8T/1XEPwf
+Mq+euW/Te/4atf+uMb9T+xfIc2qbrXG2V58D1ecrtZ2n6yup/V9+n853FP6F
++nxfms5/I/wq4buzd4SPQLYTPkv4tegJuv971mTu/YsMelhuvYD9cr/6dGRN
+q88aehc3sgbUdmTTe6qvjl+Cp/RRv4917Xvhlwl2jnnCtz4qDS8R/C3zfPqp
+/zT12VN95up8dGb+1kbw09L86ArBT0q/88sFb838Pttm1g1Ys700r/c11prw
+VcFTUuuk6K4LC+8S4xdqW4O1zjdT+3bCv2TvBT9hDy+Z+Ll8v81Kr/29NP6q
+6r837xw+lFhv411/m3lt9NRze8BvQva7J7c8sKrgvbnlidGCN+jefiHDXCPY
+NrGMMkXjjNE43TLLKeDt9fy70buhm3r/kzO//x3h79gg0AsEVyrdf5PKchN7
+cAW1HZfaLoHOv4zwnWNdLZEYsp4OEP682tvo+Fv479BxHXur/3NNy15jkVk1
+h6Ukq9yeW6ZdWXB2brn2jqCvRzS9Hlif8IbvoNm1dc3nar8j3tUeyAMaf3p8
++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
+XynfBnmJ6/hckUkmR3/wI2vHnxYttuEhF64d7/7oeP/4ZI+P70sMKzYDfLjo
+PfASaBQ+evzlyHP4SPGVEiNFzOOI2JvEWl6dOn/s2tT1H6Ab8C/yw9E7tq/8
+ffC3EwtITODdIf9eG/3x/RMD8GLI9VfFfmc8xif+k3V0RvwW9GD0YWolIKeh
+A68T7cQBoCPj78fvX4fvDH3jvzhV9MD/9PKhsRemBU9BZnk2+iO3zYnfC81D
+L7ky6NXVgaMbsb5YZ8QrII8fGt+O3DhiIIgDII+PNcraJn6JduzUxBXwbvEZ
+863xLSFzJ7Xb8Cffil06dW0Q4hf4LtBl5NRB8U6IdSHfHPmTWH70TOgdPjF8
+Y2NCNrgi+pCXi8yO33lG9Cdv/JLCMUebZ16n3Mv6v7Pw+NfkhoyDzELuJDn7
+5O5jq8G/xXq6TvMfpzGO1Py/IT4vc5we/lDsHo8Izi2ch7suMe/E82WO8ftZ
+7XurfYPatU6wj+O7J5cSv/zYwnUeyCWZr3Ss58ENx3ESa0jM4X7q+7P6PJQ5
+zvBLbERqX1ttcwrnAq8j/ITaNSl2Lp23Rd7RziFLIuch451Uuz7FLqVr02BX
+I96A94SfGx/3V4XzptdjfB0/ZY4XxQdOH+LAiBUn5wh/9o/YtAX3Zr9m/r29
+dL5M5thS8srJn8HWfbj6LK5nn6L2LYUvXLk+CbkJ5+b2dZV6fl66Bs5hpWvF
+4K/pLvhB7RgFcveq0vGxm6ltIeGHCt9c+B/4qoRvWDt/lvF5DrlO2KK2yp33
+SowcMdoz1H8z9V+9dlw9uSHEWxBLD0+gns17hfPK16gtL/M+kdU2yc0ryCO8
+gLwA5L/cOZz89vXV//3C+ddrCv+gcP71WsI/LJwHSj4oeRAnsfZr6zDIa/uG
+zoSeg5xGvSDiWtCV5+m3Deva6HPodcSpoKcSm4I+iu4KzUNXvbQwTyBm8rLC
+dXWeyx3Tw54ejg5YGy4revu2xhgd/BQ/PfQD2rNNGf0rx9hj/yBf/7bU+l+r
+2ji5++fVjrOHVvUonD+GXnZU9Lk97rkq9Mo9wqZ4R+rcNHTBMUHfyLFAF9og
+nsF95LsR088cmNvU0ve/VVq33yJoJLIucicyJ/ImOPImvtZHUvsY4Vf3B83E
+n0Uex8jKeh7t/+l66K7I2IMS64rI2ORsIFP3Kpyjgb5L/jc+MmwKxC4drzkf
+l7luDPEFj6aOQyBXndovIwvrd/xGZJ2FW2xjhbbgz0Lfo44UeXfI1PuzNmrr
+KNSEGV7aJtpa9x1Xe7zlWvw7mDOyHPUgDml4n5JX+GBqmXG6xiRO6C3BvwrX
+f9hYfX4rXOdhI+FDatcw2ktjnFq7Xs9upW1Q8NHt1fes2vWM9iY2o3b9o32E
+n1O7hlEvYjWF34esJPzC2nWp+gq/pHatn37CT65dT2dX4RfUrlfVR/hptWv6
+dBc+qHYdnx7CJ+nZS2ieK6rt5tr1s05S+02162edKHxo7ZpHK9SODebdU8Ng
+uM7vh+aqz5m1awD1FH5G7dpAewi/tHa9oQNZF7VrA+1een2PiLWPHRidjZyU
+YbVrIe2rPtNq56XvBKydr7uD4Ou183K3r52nhHyDbQeZBzsQvoj3GDN3HA42
+r/9i2V7Q+SO6dxPBd3S8nDuP/mXeT+76CS8Fz4I24jvrqvua8Gv4lto3Fbyj
+ds2soZrn+bXrhR1Q2gaIvQ4ZZmrtmg7bQJ8FO2q4f/R7X61dg2DbsHtjC0A/
+nVy7LgN0+JXa9RGg81Nq1xfYqrZNGL5Ort7lOn9A7f2xd9WujXJO6ZobyAPI
+3e3hnanjG6mbNLPhWh3YqnqG7QrZ6r2Q3+4K+gadeys1LYOOkd9InuNC8Ija
+9RR+0pi/C38+cywx75s6DNRjOKV23agOgku22BZwtPC2ws8SfmztmlkHNfwt
+itK8m3e7YItjROB3i7aYdr9ZuZ7YO6nrISzRYvss9BC+Oj146ymZ1/McnS+j
+Ps9mrkHUTvjRhWOwpxeui0KdFewK2BeIU+ddUX9h3dI16KDhVwhezTrLzE+v
+ifVzeBm2tYbroLxUuFbJSqylwnXbOtbmSfAmci6o4Tar4RonN6j98cwxbNfX
+rkFzTOkaHXXT+YzXxno7Qm0zatMa6qX0wa/cdC5Y1WLeSQ2xaYVruaxWu6Yc
+vHqw4OWZ88VqwXcyxwP2EZxcuNYKdWIuql3PbmX2jdpXV/sq7LvCtWJWrV2P
+7nPhyyOztJh/E59J7Ohr+CpabNvAJoLuwH6bHPoIPAVexHpDD8UGTd47udbk
+zZE7Ta5aj9z5gtSgm9N0viF2J+xIn1WOkcbnRIzGhqXXKntwv8xxxdSt+zZ1
+HjeyBLZ6bPgfV66bA2+Etlwa8Q/EQTxWuD90aZzwNg3TyccL58FBx8YXnic0
+84DMcc3Ur6BmHzlu0L0pheutQQdeiTXGu6VeCjm55OYemDkekLoZfeJb8O6w
+OWCnmF3ZVoA+T04osjCxnNRoIUcAXwVxOtT9Q5ZDpiNXmrxp8oLIiSamndoS
+2PDxEVBbkbwg6sCcnFsGJz+aOjHUKCPO68jcvh5sauTMnhW6BjoHeWjYG6hd
+RQ4dMTnE5lDrDFp3amFbIjW5yHvFzrO98J8r1xOBrlAHkNpA1Aj6LHPtQeLL
+ycklv45YA2ozkReGf4uYGnJz0DWpE7lq6Zhq6Bs1o7CHkMOHzR+7wwxsQYXr
+McIrny1csxEeSm0f6mWR30pdBWyc5H93EH51wzyF2GtisKkXsTL0tGG+83Dh
+Wn/w07dC5oRuPFq4Xh98nHhd/L7ExZDzdmvD9TveLpyDD1+m3gi6Pjkl1K4i
+TpYaDi9nzsPdQbBN6ZxHauqQ00cMykqCt9auQdYFHaF03je8r0PEFZBD0xae
+2jBPeS1zPYrdBW+rXedrx9o5WuQvUNvincJ1IeDLxC6TD8t6Olz4uw3LM+QD
+kBtFnPpHhfPRkLfJJ8eXSf23MbVrde0s+FbsQfbiq4VrQSCfPFO4ZiayzYTC
+dTWRhaYWrkOIfEK9F+ogkOt6dtiOsCEdljm+ldo+DxSu94iOVgdNg15QYJB9
+Te1NarKsRJ/ccdfYebAbfZC69uDnyFWZ7ZfUyXmocH3IXUIOxF5HPRVqy1Dv
+60PBBwvXouwm/P3UdQtnZuaj8FNy5KmzROw1cgL6HLZGaiixJ8i9x+5LbQ7i
+7omtJD/7ibAhEEtJPOSoyrZ4bPLYjbGFY5fHBo8dFLsq9pZ5eaWpbSPkt6B/
+/yq4WOmaTsgJ5B89ldq/S8wVMTrUL8G+OCHsGNgOsSESi4ctEpskvtR5+X2p
+bZLYVrGxYq/ZI+7FPklOCjla2IOxE2N3xhdKfZxf4zdiL8Y+gd+zR8wZOwnx
+PcT5EM9LHg7+9j8q2/Cw2aGbEQf3cmodErsI9hH8puRhYDfBZkLONnEoyBL4
+DLFnYcsixnrF0EGIBScG7vrKtrHJoQMSU01s9r+VbTCMSbwLuR08C5vL8TEm
++iD+xykhC2EDJCcc3ZX8FWxk6Ir9Y/7Ym7CJYjPFZrFPvENs1PhMifv/pGH7
+Dfdi88Lmyvj4N3kPb8Q4yCBvxnPvKCzjYHsh1paYbOJtyfHEB3FE4RqF5HhR
+56suXVsD+QH9Dj2wtd5VWboGIzIMtSPJ9SN+fLXM8ePUR6JmGbXLkEmoL0A7
+cuafoWtPql03FZ5CPQ3sL9hhsPNgn8eez5qkdtA8+3ruWkPsqb7CD88dZ/x9
+btsM9T2ok4qcRQ0B8j/JfaXGDbXE/kYebFjXwKZCzT1q7+Fjxd9NDgp124hf
+OaCwvvhZ7FPkrVmx98lJR7elDh71KLF1fV25LhPrlvX7e+F6gOhZl4S9C7vX
+9NI1fsm1py4HctqluW2b2CipfUv9L+xA1GakxiXvH7sYddyGB23fJHNeHXUm
+N8icy0C9R+qO0Y7+RQ42uRHUTiQujv38d/gO2J/Ux2gt/KyGdTTqzZLDS72F
+hWvbAfjW1C0iZ5G6jtS2oo7cXNZ+i2X9ZWrXKKCWAHV58fWwt9kX1HRjztSx
+xD9F7j11f7EhUGMX3e0tdJPcuQlLls7fR9+5N+RO5Elyj6Fh1Fchfpsc79aF
+658id1NvhDyIebkhuWsbzqulU9k30Cn2BDkCxAuSO0jeB7VQWT/URcR2tF9l
+mjIvxr5wbh45eujXxN8SL0VtBmpQw9PIwSIGvlPoF9RcxUdKTVZieYlhGxs4
+Mgl1S9Az0TfJ18Fuz/4n95R6r9A/cv/JmSHG8cTC9cGQ1ZHZ0TXJ5yI/Czkc
+XeaewnIS8hL6FDVp8UGRw90/d044ueEH6NpWTdd2IJYA+w4+emppUvNtg8p1
+mMkhIf+1r479mq7tQA4asvTzueOiiZGmpsf04NnwbmqUsadmls4pIIfwT2yc
+lfc48iN1aZBjLxbsnTn2mj7E+p8etOiu0HWxFUwK3YeagdRSoG4KNUGpT3Vg
+w7n45F9A08mx61455w1Zjph2YrCozXNnbb0OXZJcCWgx+V7TYj+yL8kjIE6X
+un3EWxLrQ/70qNr1dr+snEOIbZ4cYXINiC3GL0mNa2IeiSelxjW16fpXzk8h
+FpO8bXIK8PFQGwmdknxParWy9qmDRz08agGhM7OniI3H7kr8JLbB0aE7EzdC
+HAY2vd9L594j85ObgLxHPULqFGFzwPaAjkjNOmrXUZ8cnw854O/Wzo18u7Ld
+gvrG1DsmjpSYXmJ7yZEhDpV83Lmx96mfQ7w3uk+3wvYu7GDYw6hRCR+gVjG+
+Fnwy0LUvS9Nh6DF5HNj+iJWlHiNrkrVJbggx1tifidMe1nDNYGRU8hqoKfhh
+7Zqe6I/kSpAfQTwweWjkox1TOL8GHkxuOnWi8JlTP5IYFezy0HbyzLE7UvOZ
+un/Y+6nfQK086u6uVdnmQ7wTtgPiNonzIDaAGCfasCtQBwTZhxxk6hhQv4f6
+avfXrvuJzktuPjn1Nwk+UrvWKvZnagOyv9hn1B2hBgn1dajdQU0d6umyJ9mb
+1EEiZoaYCWyPT9Te2weH7YR6PtQefrx2vUt8B8/UtvVhh3+sdm1Z/BTP1ra5
+YVekLhK0DppHHRV4aKa2E2vX3UZeJdeU9UzNxYlhL8I+OaF2rVJ8K+Nq16XF
+JzK+di1afDFja9c6xDZ4d+26sdg0iFseFDIV9bjILb8O+bx2jVTsD0/XrouK
+DZ8cOmRW6OF9tevMYlu4p3b9WWwmxAvhT8UO/FptvQh9Bx8DvgZqUFMLghoC
+1Oegfjt68Y+l/ezYZA8tXFufWGZydakRgWxD3Qtyk8mrI++TGuzovz+UrpNA
+bvZjuePNkCOpkUBtDfKYqCdBTTp8/NivqIFJ/DS5F2+GroVuhe2CGnvU3fkw
+dAdqNw3ILKNSY+HB2vVn8ZUsnTm2gDkT84Efm9pZV8VeY89R9wbf6pe51zRr
+m/pR1GQh5xkeSqwdCgl0oH/QLr45ddWosUCNb3LHiLcj/5UYFWRFZB5qzpCr
+Sa3Eh2rXw8VHQ7wBMiv1bLCZoauwN8k9xv9MbVHiKIjnga5S2wE/0VnIb7Vr
+B+OvIXaQ/tz3f/dGWhk=
+               "]], Polygon3DBox[CompressedData["
+1:eJxFnAnUV9P3xu/9fu+9596XCFFpUIZMkRApopQiY0TmEIUoY8oQTQhpQBKV
+ikLGTFFoMA+JDBn7JTJnHir8n0/PXeu/1nvWe/aZ7nTOPns/+znfpqf363Z+
+JYqiF5Io0l90XBZFG1ejqL7SkWkU3SB5hPIvqlE75d9XWfM4ii5T2bWSP5V8
+lfJXKo2U/E4eRf+o7d9qc57yv4UoulD57TT4oiKKNlT7iuSrlXZTWUVl56nv
+EPVtWBNF3+v/qbqPmap7RnWr1X4njbeb2pyh/I0a70fVn6r8Z6rfUf/raazZ
+Sl3U91D1u0f1b0p+VHV7K+2g/AXqP0z1G6n/INU/rXavFa7vp7qf1eZ15X9X
+/cXKN1P9i6pP9QzXSL5cda9Kvj7zs26se/pcZYdJ/kv5BRqznvLvqSySvEz/
++mqMI1X2j/pfqj7DlX9T4/2t+iWqv135t9S+f9X3MFT17SS3VPu5atNW8nK1
+aai6rip7TvkDdX/TJI9TXWO9r80lX6+xnte1Xtf97an/l0quqn0tjVVX9SPL
+7/uG6htIvl3yS5LfkvyFxmyh8fpovHoar7HqJ6n+VdUvVv22kh+UvFjyO5JH
+8Q0k76c+fdWns8rvkjxf15uhuqDUmrkhebDyWygVyo9Saq22r0j+Ufm31Odj
+yfU1/mjlFyr/psafp/qtVX+6xrhC41+eOX8GcyxzIt+/4vc9VWl+1XPgV/Wd
+rjRP+e1Vv7PqXpT8Dd9W11ima0yUPFH5Q9XnQtV/puevq/zBvHO+jdKDyk9Q
+uy31Pj7PvRZWqc8NutcmKj+CtaF0sfrfqHSD8m/reu2VP593Ivk+jXGb2n6i
+/nUkt1H/D9S/ne7hBuXHqmyU2v6u1EfyQyp/Xs9foz6x+l6l1EJl+6ReH5nG
+/0j539S+t9o/qLrn1P4HjdlbbRtKnif5TP2/W+2/jv28P6n+HOXPUt9nVf+9
+5DMlN1DdXMk38Qxq/47G76h8prLxqp+v+kZ6/qZqP0PXe0PyEtXdnvre31aa
+yVpVaqT8D2rTQ3Uf63k3k9xZYzyj/E9K7SWfp3b1a/z+NlHd3UoXqexpye8p
+P0/939c1WrPeJZ+jPteofitdf7LqXlPd27r+7pJnS95d7b6QfJzKx6vtYvV5
+R/mDVX6P5OlKt6h/h8Lzj3n4P+U7qP9r6n+/6prqfg7U/yUVvwPeBe+Yd/2J
+2nyOflL7K9F3Kv9V/Qem/jZ8o0L5GXq+sWr/JDoit95Af/yp/g8of6/Kblb9
+pip7SGPtrPSA6t6lTuP9IfkS9JPG+lnyX5L/VX0q+RfJr+n/T6r/RekNyjTe
+FOVrlGYG61X06x88k/KXqM0gyf9JzpTfSO1vkDwE3VbOrwtUd5PKhjG2nvkC
+5c8njz7UmM+o/kONNVPyWZLPk7yL5LHML8l9JTeXPEbyUPSB+udKmynfS/Xn
+qn5n1Y9GP2v80Xr+J1S/ifJz1eZT5T9Hnynfk32BtaH3/wH51HOXOTy6XB/H
+q75/+X6u1P8hqk+UNlZ+U/U5XPnDlCYq/yB6WvkzWP/KT1J6WvJJkrdhL2C9
+Kr+ZyppK3l7ySMn38AzKT9T72k5yG8mL9Syb6pozdS+tJb8puZnqZ/D+1Xaa
+6u6RfKPa38scUX6q0rWSp6Pzle9XWLewl9atsV5Bv3RXm4bKn64xO+j5auve
+R7Ge1ed21WdK96juebVZqXxv3cNVuuY2Steo74Yq25I5rX4r1H8PyftLvlR9
+hkhuo/IpGm+Wyl5U3d4V68d7lZ6X/I3k7ZV/Wel7ye0kr1N+tvo3kvyU8ivU
+f47+L5Pclj1d+bnB+nleuf76J14rLVS2XPlJuv+r1Xa4yq5WfoDaD1W+LXpJ
+7bdRWin5C8mfKh/rebqo/VqVXaoxv5V8svL3qv5p1f+t/6dJPg+dwPzXeGsk
+/6fyH1k/+t9T8rmq78McUf3fkv9R+Q+qP0fpFclnSF6m/Ee6p0zvcje1P0r5
+XdR+rurfU/1S1Z+t9AL2heQPlN9e9U9KXiL5XcnLdX891fc03ls5HmvzbfYX
+5Y9SfaLxEz1TI+XfVbt/Vf8h95hYT6Ovf5Y8XfkTcu+FZ/MeNd6+an+F+hfq
+/zH7B3ZO5LLrNN543c/vkd/F52pfn/cT2yaaqvyrGu9b9B33oflWW+0O0Vhj
+VDaCPU1tzohtU01T/jel49S3j8rOVP25GvNVyb1U/pHyIzLbelW1/5C1Kfkk
+1d+j+qdUv0L386vkXyV/LXkzbB6N1UHpTuVXqf5k5U9R3+9U/5PKuqn9KbFt
+uC9Uf4LyJ7BPq/5LySexXpkLko/Mrf9eTf09Fuj6W6j/CI0zXPIBqv+I8SW/
+LzmRvE71s3k2yd+p/SmSZ0iegz2j//3Vfmc9z33Kr1Z9P8l9Nf5qxpO8uOI9
+nb39At3P5eq/l9reyfrU/0MkHx97vzsP/c36U/kE1rqu/5XqXmBfk7yT6u9H
+f5br6f0c48x724eSj5C8mrmr/h9LPkzt9lKTI1R2rPLH57Ynl6b+HucH23fY
+eXdI7ou9yn4o+XbJ/6r9SRp/kMZvoO/fI/f8eyf1/L+QZ0CfJLa3L5b8idpv
+ojGu1ViD1e9L1Z+tsquVf0apluoGq/1gtX1CMrc0SPIgyU9L3kDylZKvlDwb
+G0LyAMmXYV/k1i/omVq63iPZ+sePLmavUv2jmf2OS7BbJS9Tu13U/uJy/Tyl
+VMP8V/0Vql/HGtMAU1S2m/KPqR6T+1LVD1D9pZK7YX/xDlX2pGQVR5crfzn2
+PDas6m/TNS5U/81Vf66u9b7kk5kjkjdU+6uUv0ptf81tz2HX/S35GJU/rPoz
+2UNU9gY6WfLNKh+p+gskH6z2d6jsIOak5D2Uv0P5m1X/IN8dfyryfvebxu8i
+uZauf1/wN/hCdRcl/jYPqn6artWS+9KLeAAfo2ofDF/sArV5ILYt1kT19+n/
+UtWPKe3LqRrvH433OHaS2q7Nbbs+rj4Dld9SbS7U+LOVWmf+/uw1L6vP6erz
+nuTdlZ9Q7k8b597v2fcnS84lD8fWww+Q/E1u+3+S+k2S3Ftyk4p1aofcdg72
+zqW8f3wBpWaq34n3pXyVOV61z/ZSsD80UPVz2JM15jGp93r2/O7K/6H0ivKT
+Vb9r5vWJLVpX8grVva6yrSWPUvn1GnsT/FHJ88r9sUvu+X54uR7/DbafsKNu
+KWwP8y7xoeoz8ZWuUP0A1d+qukpuexC78DbWu/6fomvfqbSLxtxU412kbs+V
++99k1U+VfKLqN2at5LZnsGsmFl5zrL1tYu/3U1Q/TG23ZZ3h72Fvqu5axins
+z2JvzSn10/cq35a1o7Ku6FCVf4dtjk2kMdam3h/uV5s98UeVtlX9aPySwvZl
+J11/rMqaKH+I6n9S2/OU6nIPare36hqrTU/JXROvxW8r9r8PUlpZ8TvA3sN/
+qqe2J2W2f1Yl7ruV0mmZ/Xf6YqNgq2D/oyDWSV6CfcT9VW2jd8CX1njHVa1T
+0a2MwVjo7P2VP4f1Jrl7ZB/njdz+OX76ZjX2d8ESVrNm1f8z/KKK59hWavOv
+5Ar2qtI+klep/V5V2+TY5l9KbiW5F98HX0fv7DHJE/jWGr+X/u8keQulb/Bp
+Nd7DFa+xBqr7OjGWwjPxbOgffJ/fVXZo5jnOXB+gtJ/69sAOYn+V3JV3q2vu
+Tl9d/3/KP6G0iLaq20TXH4i9XHUf+uJ34X/dGdtfP5g1ovZ9lOoo/zZrTHW3
+Kn8da099UrXvoPrPlD+FZ1R+ue7lWtU/x3Nq7CGqu0by87xXyUMlDwHL0f+q
++rdXn08T70PsR+/Evv9jlDaSPAMdzJrT9buobmvlb1L/pug59S1U3035WGWn
+VUubM3h+7x97jO6Z9RdYykPqsxfzI/X+9qDkVpJfUKqj+mG6l6Eaaz7vXPJw
+ycMkn5h5fj6kdLvy/+l5T1V+Dnt+8PrZsepv2qt8R/iY+8V+d8cp3yVyG9ZX
+x2D7Dztwc32P/Qv7ivhay9mIlHqif7EZ1PZT9iDJx2PXqP3PkjtKnsoemNsf
+aFc1ZrAl35r7Vf563deIwv3oX0vpS5VNk7wQ/xx/hLWb2tbBZsTGwQ7DHjtV
+qafy8zXm0oqfYSXvnm9U8Z50S+pvxLcCEzw28ztcW/Wex7vlm6+pWscyF5gT
+f0tuGnmu8I7XVa1jePfMoU4at23subVn8H7Ivrh1jZ8Jg2D7yM/KN+RbNovt
+n2AzfFb1HMSW2AKbRPJd6IEa/0fuqj7VzHgUvvCT5Z7EN+Zbg1mcovxR+GNV
+YzQ9WEOF9dstuocvla+Vee08g82hfCelkfhHkifzvGr3l/JN+Calv3hf1WMw
+VufMvhaYE9jTHZl1yeOsSeWPUNkssK2K1wCYBdhFQ7Xpwr2nXovYRNhG6Bn0
+DTrubOXvQYcr/3Hk9dpQ11wieYXadwZ/Te37YbNguxyODxzZpx2f+Zl4to1j
++6PYWD9Krh/Z9upTeC0cn9ienZ/avn219Kmw+X5S+y0j24KH4GNWjcGgU3pn
+xhfxCfANdlB996p9UHzRF3JjT53xCdX2wMR7Dxgb+NB9qXU9fQYwvtqviu3T
+vRqMg4KHorPHZrbZfpHcILIth833fdVrBlsQm3Rl1ToAWxWbcUXVOgJbEhv3
+t/L9Y/s2KIx1zdI1f8e3xeesen89Hf2XG/s7SPKKzDbs8qp1IrbtDKXFVes0
+8PGT1H6Tir/BG7r/e1X2luo3qNi/w6b+VnLdyLZ2c6U7VPdSbHsTTBhsuFa5
+X32v9/W92m4h+UzJv6TGWuZpjLsz43XYh9iE2IY9c7fFh1mp6++ksnGSj68Y
+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
+N6aO/XLGg/Me/wdvFa3T
+               "]], Polygon3DBox[CompressedData["
+1:eJwt1nl0VsUdxvErCXl52VQMobiwE4ulKCBCAZEUEGSJGsAiAYFAAq3IXirW
+vaYFpYJAq1CleBSoFgWNIEpbFpXFKhwRrNVSRUGFoD0aT7Ei0M/vXP54cuf5
+3md+d/LembnTsmxqyZRaSZKsoNr0/WySPJSbJCdzkuQUPcu3prux43xzmbmZ
+JHmPBp6VJCPykuQT9+7nT2mfpP9p/8K9E67f0a3aMxU/JVei1lQaJVdKPdT7
+p8x8+sL94XLF8gf4S+SWYPWoL7Yvk45vEZ+lOjSffxg/rl2m7zi5o/xJmqM9
+q3b6jw2T+wH9Tq4+XQnv9fz22O/5BtQLewvrgD3G59Ng7D3sS5qp3lS1TuDX
+ynSmVdotaZTcZzIdsRV8k8hg/8Iuw/7IF1Ax9j52Kbacb0xD4jfApmGTXCdS
+P+ygaydspUwLKsWOYJdjq/lWNBo7ik2u47fxIi/TXm+Mvfg+tEl7uFyVXF++
+1O8yjz/mXTbFXpO/D3sbu47WYO356fQS354mY+fEO6W/8Z1oFnYeP4Ve5Hca
+U13tevHO1TxB3bHn3Fvk+g1/nH6kvQ57yPXbmCvUTXstttA1o38e9dTegC11
+rc3nUg/t9dgjrl3oT9qt6SZjqVYnK1OHrsymY1rm2os2anehOXJnu//DmDN8
+Q7oKe1vfK7Bn+HZUgdVgXbFn+UtoIvY1Nlv/v/IdaSbWiH/e77rWb/+m37qp
+zAL+NP5L82U2VivegVo/we7V799++/P03Sw7DLsT+xJrgL2M9ZXdHnOeHsYu
+lBlKd/D/kauPvSQ3HLsLq8EaYpuwEdivsA+xfGwLVoLdjn2O1cM2YuXGeIEx
+Hza2NrRWphm23JgX8vm0CrvaWHbpew0NoCf5ItoSa4jmqddYbjJWS91z9MtV
+o4la/bAdMv3incm1w86lB92vlKtHT+jbR+4VmSJaIPc9rIPcOrkZal4k92es
+v9zrMgNpuVwz7Ea6j//I/9YY2yo/QO7v2KCY92p0VGukXCV/SK5AbptcVcwF
+tZ+ibXJd5Qbruz/Wc6w3Ws1fQ2/EOqVV+rbS7y/USb8q2q1vd32HYD+X+SAn
+3Uuf94zB2CzsAOaSPIcVY7OZgxibVPkz0DP2xP5I19NKfhC9pX0DrY+9Wb9r
+Yx3yH+urmbyg7/Ux17BqrC72IpYTc8O4bjOQHLpBrQJjXIzluV+bbsGuok36
+dstN30u8n/o0T/tu/erQjbHusJ76fM63NW828N1jz5bbiXWhMXLXYbepdcRY
+2GSDPq005mCfYZ/SHL43bcZ60ly5Av1uyaRrfkc2XcexnktiHnheV3Wa0RT3
+nsaWYe1jb/XcjXJLsGpjqdD/QnxxrElaLdc59ky5V+U+jjmjfZAK3Bsrcxgr
+5T+iJtg4rJ3nLFarbuzR2BjscarUbqteU9lRMg9gBfz2+F08f5taO/gLYr/F
++tF4uavxA9iH6nXHxmbT9RrrtjdfRGXYo+oVesYXfH+agN2u71b9HuAf8Yzz
+ZWZgL8c8iD1HfjxWLlvBT4x3oe4x9UfJ3S/3Y+x8bDv2Vax/7TX4d7Hv6/eE
+/nPVKYyxy47GzqbHva/y2K9jrNn0Xd7KH8Y/oaey6ZrZd2bexvzdxw9VY4ix
+ltROv9PxvY69ZGfsudSb9vBt6De56VkjzhyVfFuai53mC43zlTPrY/eZPSj2
+or38RTEX3FuYl46z2Zl6v85N51nMt6f5I/63m2XuMZY74jvN5+NV7j+K/yG+
+7bGn4RXGPEHuq1jv2MU0XzuHLtV3p+w7csWuZTFXsf18DU3Flug7QN2v+WO0
+VL35WCMqjf0QO4Rt5jvTTVild/SuWiNpk3rd+GK8hi+XmSR/KNY5djI3PUvF
+meo0ViM7TbsNfha+nJ+QSb+nW7LpNze+vRWZ9Fu8LZue0eKs9t/oq0/zeLbn
+HueraXzMMezb+P7yhTHPtWtRB7ldeekZK85aTbFvYn/nyzPpt31rNv3+xzmg
+DFuK5VFnfd/BxmAPRn2/U2vsjTi/ZNJv+/Zs+v2Pc8CnNNr4zsX7xHvLpOfC
+OB82im8h/Zb/IPYJrCjOaTFX43+gZdoZulzff8S5CHtGe2i8S3U38GNpAX/C
+WNq496bcOGxhrA2sLbYbG4TNjO9MzAVsXZxdY3/RLsZeUK8nP4xexcbG/I7v
+Pj8izjDay/LSOVdfrfz4Vsg1wBvSSJlx1EP7fcpai/1lfkZVuek+Hvt5jnpD
+5U7npmfbOOPGh+BOeg1bhK3AWsg1z6bfjfh+rPHsFvx0mqY9nS72jJtjbcT6
+1W8/vStfpNY99Jh2f32b42viXEErscFYIbaOnxTrRvsotVTvCmwGdq/6T9Iu
+/2+xZ/w0zhEyr9MeNXrE/4bt5auptb69sf8DwrSOQw==
+               "]], 
+              Polygon3DBox[{{1899, 1204, 1284, 2391, 1796, 1797}, {2370, 1218,
+                1088, 1087, 1303, 1959}, {1803, 1802, 2406, 1403, 1404, 
+               2407}, {2123, 1474, 1115, 1116, 1475, 
+               2124}}]}]}, {}, {}, {}, {}}, {
+           {GrayLevel[0], Line3DBox[CompressedData["
+1:eJwl0jtMVFEUheGN48hjGIbC2EgUKcRGGx4Vxl6sKCiksxMVtCCohQoU0FEp
+DaCNSmdMgIZQYWM0FggyMjyGGCCEGGMIRjFGvhuSOfOvtfa+5+x7cs/d6G7r
+KomI11Z/KiLRldhIvDkRUc3P4ll8j5dwHi/jMl7DHezAP3hgddK50ogHeAqH
+sAZHsA5f4QWcwiZ8h+1lEb+dOersz3wf1h2z1/GIBf6v2rhske7Bf/yws17Q
+X2S9+F+2RN/yTB5v41fMpyNS9krpuSNblk3z6WTJumQF2UO6VNbNr/B3cRXv
+4Rqu2CejXqZvnZ+h12RZrJAVZet8js/wG8nd0VXWVe85z7+l9835yfse0HOy
+CSzKGvRM8ufxJdbiM6zXO6Fe1DfIP+f76aeyPN6Xjcke0QOyrOduyn65n+u4
+ja3Yobaop4U+bb6CvlbZR9lF2RPZSfoM/UGtWW1AluMfY3UyO1bxe5jFn1iJ
+PzCD37ECd7E8+TbQaLGFm8n90t/QSLGB6eTO0BXHKvpFwZ+j4opiQ8nRd3kI
+ODVYHQ==
+             "]]}, {
+            Line3DBox[{1711, 1926, 1138, 1710, 1927, 2420, 1867, 1712, 2421, 
+             1868, 1713, 2422, 1869, 1714, 2423, 1870, 1715, 2424, 1871, 1716,
+              2425, 2338, 2473, 1717, 2426, 1872, 1718, 2427, 1873, 1719, 
+             2428, 1874, 1720, 2429, 1875, 1721, 2430, 1876, 1722, 2431, 1877,
+              1723, 2402, 2432, 1878, 1995}], 
+            Line3DBox[{1725, 1928, 2339, 2525, 1724, 1929, 1153, 1726, 2433, 
+             1879, 1727, 2434, 1880, 1728, 2435, 1881, 1729, 2436, 1882, 1730,
+              2437, 2340, 2474, 1731, 2341, 2475, 1732, 2438, 1883, 1733, 
+             1996, 2140, 2568, 1884, 1734, 1998, 2141, 1885, 1735, 2403, 2439,
+              2142, 1886, 2320, 933, 2440, 2000, 704, 2152, 2570, 782, 2001, 
+             706, 896}], 
+            Line3DBox[{1737, 2342, 2476, 1736, 2343, 2477, 1738, 1165, 1739, 
+             2441, 1887, 1740, 2442, 1888, 1741, 2443, 1889, 1742, 2444, 2344,
+              2478, 1743, 2002, 2143, 2345, 2532, 1744, 2003, 2004, 2346, 
+             2533, 2321, 2322, 1997, 2005, 2577, 2229, 2230, 2153, 2203, 1999,
+              2006, 2231, 2232, 2154, 2204, 2404, 2445, 2008, 2233, 2267, 
+             2234, 2007, 2268, 2269, 2582, 1930, 2010, 2235, 2270, 2236, 2009,
+              2415, 2583, 2271, 1931, 2012, 2237, 2272, 2238, 2011}], 
+            Line3DBox[{1746, 2347, 2479, 1745, 2348, 2480, 1747, 2349, 2481, 
+             1748, 1176, 1749, 2446, 1890, 1750, 2447, 1891, 1751, 2535, 333, 
+             2534, 1752, 322, 1366, 335, 232, 1633, 799, 337, 801, 233, 1634, 
+             804, 339, 806, 234, 808, 341, 810, 1636, 235, 945, 343, 814, 
+             1638, 236, 345, 1368, 237, 347}], 
+            Line3DBox[{1754, 2350, 2482, 1753, 2351, 2483, 1755, 2352, 2484, 
+             1756, 2353, 2485, 1757, 1185, 1758, 2539, 2023, 2024, 1759, 2526,
+              1932, 2013, 1933, 2540, 1760, 1934, 2014, 1935, 2275, 2584, 
+             2416, 1761, 2273, 2276, 1936, 2015, 1937, 2578, 2323, 2239, 1762,
+              2174, 2277, 1938, 2016, 2486, 2381, 2240, 1763, 2274, 1939, 
+             2017, 1940, 2241, 1764, 2382, 2536, 2018, 1941, 1765, 2537, 2019,
+              2144, 2020, 1766, 2538, 2021, 2145, 2022, 1767}], 
+            Line3DBox[{1769, 2354, 2487, 1768, 2355, 2488, 1770, 2356, 2489, 
+             1771, 2357, 2490, 1772, 2405, 2491, 2032, 1773, 1269, 2025, 1942,
+              1774, 2527, 1943, 2026, 1944, 2543, 1775, 583, 2027, 1945, 2544,
+              1776, 1946, 2028, 2492, 2383, 1777, 1947, 2029, 2493, 2384, 
+             1778, 2030, 2146, 2031, 1779, 2358, 2494, 1780, 2359, 2495, 1781,
+              2545, 2038, 2039, 1782}], 
+            Line3DBox[{1786, 2448, 1892, 1784, 2449, 1893, 1788, 2450, 1894, 
+             1790, 2043, 2451, 1895, 2044, 2386, 2452, 2046, 1896, 2045, 2388,
+              2453, 2048, 2158, 1897, 2047, 2389, 2454, 2050, 1202, 2049, 
+             1952, 2052, 2548, 1898, 2051, 1954, 2455, 1899, 1797, 2456, 1900,
+              1799, 2457, 1901, 1801, 2458, 1902, 1803, 2407, 2459, 2054, 
+             1903, 2324, 2419, 2591, 2326, 2325, 2055, 2159, 2242, 1904, 
+             2205}], Line3DBox[{1805, 2278, 2279, 2040, 2546, 2392, 1804, 
+             2053, 2505, 2406, 1802, 2504, 2365, 1800, 2503, 2364, 1798, 2502,
+              2363, 1796, 2391, 2501, 2037, 1953, 1795, 2390, 2500, 2036, 
+             1951, 1794, 2547, 1950, 2035, 2175, 1536, 1793, 1949, 2034, 2542,
+              2387, 1792, 1948, 2033, 2541, 2385, 1791, 2042, 2499, 2041, 
+             1789, 2498, 2362, 1787, 2497, 2361, 1783, 2496, 2360, 1785}], 
+            Line3DBox[{1807, 2366, 2506, 1806, 2460, 1905, 1808, 2056, 2461, 
+             1906, 2147, 2057, 2059, 1907, 2058, 2280, 2281, 2462, 2061, 2160,
+              1908, 2060, 2393, 2463, 2063, 1909, 2062, 2549, 1955, 2065, 
+             2367, 2528, 2064, 1956, 1212, 1809, 2464, 1910, 1810, 2465, 1911,
+              1811, 2066, 2067, 1912, 1812, 2394, 2466, 2069, 1913, 2068, 
+             2176, 2206, 2574, 2412, 2071, 2161, 2243, 1914, 2070, 2413, 2571,
+              2208, 2177, 2072, 2162, 2309, 1915, 2207}], 
+            Line3DBox[CompressedData["
+1:eJwVzzlSAlEUBdBHleVAYqSADIoTLkMhNjEVEhaggWOAWAUrEXDahxm6CFIU
+cSqHzENw6t7/6nX/7mL9cO8gERG7LM5EbM9F9FnQd+QjKT0zGzGt55MRDecl
+5xHXesp8qD+T5YV9s4zdN/2VMTm+zW88U9AvZF7+mN3qZTkgrVfk0+Qd+sOU
+++Sy3SK/5k3nFf2DO31NHvHOMau0uKJqf9639PQTOpyyTpsuNTtdNvWzyX9x
+zgZ/5p/yi3t3bclLWZL/GL8ofA==
+             "]], 
+            Line3DBox[{1820, 2372, 2510, 1819, 2089, 2373, 2554, 2148, 2090, 
+             2155, 2417, 2592, 2331, 2293, 2091, 2294, 1962, 2298, 2295, 2296,
+              2092, 2297, 2586, 1963, 2094, 1920, 2093, 2555, 1964, 1921, 
+             1821, 2468, 2374, 2511, 1822, 2375, 2512, 1823, 2095, 2097, 2376,
+              2556, 2096, 2300, 1965, 2328, 1521, 2299, 2169, 2098, 2180, 
+             2214, 1966, 2217, 2170, 2215, 2171, 2099, 2181, 2216, 1314, 2101,
+              2172, 2173, 2100, 2557, 1967, 2149, 1922, 2102, 2558, 1968, 
+             1923, 1824}], 
+            Line3DBox[{1826, 2377, 2513, 1825, 444, 1510, 540, 445, 1445, 446,
+              278, 447, 1446, 279, 541, 1511, 449, 1827, 2469, 2378, 2514, 
+             1828, 451, 1451, 452, 280, 1452, 453, 281, 1581, 668, 455, 669, 
+             282, 457, 1453, 283, 459, 1454, 443, 1829, 2559, 461, 1830}], 
+            Line3DBox[{1832, 2379, 2515, 1831, 2107, 2108, 2569, 1833, 2109, 
+             2156, 2110, 2576, 2220, 2311, 2244, 1969, 2329, 1970, 2301, 1834,
+              2530, 1971, 2103, 1972, 1835, 2470, 1924, 1836, 2471, 2380, 
+             2516, 1837, 1973, 1974, 2560, 1838, 2182, 1975, 2218, 1976, 2572,
+              2221, 2183, 2245, 2184, 2222, 1977, 2219, 1329, 2185, 1839, 
+             2186, 1978, 2104, 1979, 1840, 1455, 2150, 2105, 1841, 2561, 2115,
+              2116, 1842, 2531, 1980, 2106, 1981, 2305, 2304, 1843}], 
+            Line3DBox[CompressedData["
+1:eJwNzU0uw1EYhfGXP9FWjMxUUrWGalUlVKIiDBoLIOkEE12FEcoyzOpjrvXV
+ljZm2A39DZ4855x7c2++0Tw4m4iIOlZmInLpiCUsZyIKel6upSJSvMOLnEYG
+Pf3JnT/Oun9o68uzPOCOswW5y/96kU/0b+zqJf1WPudVTHpjz76PRC7bnrGh
+v/AFT9k/+BL3eLW3+Y3nnF3Jn2jh3bbJP/44wppe1Y+xhYp+av9FXV/Xi9MR
+23JPTuxDeYR5b1/zA/rO7njAj3yDL4wBHy0n+A==
+             "]], Line3DBox[CompressedData["
+1:eJwVzksug2EUBuCjoUWKSc2q0YWoe/trgihtXSYYEpXYiUtR67AJTcT9UizG
+08GT97znfH/T4uFprTUQEXWqmYin4YjsSMSz3OSOe6bTESvut+ZHOtRoeZse
+jRiUN3riTU/+sMGQ24FbxX5P/zPvyrK+b/5lXe/qy6T0vG/O5Jr9NW2W3Cbt
+L81XrHLBOYtuBbdx30wwRoEpivYL7jv9/6QfM69v6z3zEXP6A1W7b76Y1T/k
+Z3/nTSLfeaPk9iJzfvtVntBkxj5jVzdv0eAflQQo1A==
+             "]]}, {
+            Line3DBox[{987, 1250, 1139, 2420, 988, 1252, 1153, 1016, 2477, 
+             1164, 1027, 2480, 1174, 1037, 2483, 1182, 1045, 2488, 1190, 1057,
+              2497, 1200, 2449, 1068, 1209, 2460, 1078, 2508, 1216, 1085, 
+             1431, 1508, 2554, 1223, 1093, 1443, 1510, 1229, 1102, 1460, 2569,
+              1513, 1234, 1111, 920, 2332, 977, 869, 1121, 2580, 765, 1488, 
+             767, 926}], 
+            Line3DBox[{989, 1140, 2421, 990, 1154, 2433, 1017, 1165, 1028, 
+             2481, 1175, 1038, 2484, 1183, 1046, 2489, 1191, 1058, 2498, 1201,
+              2450, 1069, 1406, 1507, 1210, 2461, 1079, 1418, 1419, 1217, 
+             2589, 1086, 1678, 1705, 1432, 1704, 2592, 1648, 1649, 1094, 1579,
+              1444, 1445, 1653, 1654, 1103, 1584, 1461, 2576, 1462, 1656, 
+             1699, 1657, 1112, 1611, 1658, 2587, 1331, 1471, 1662, 1664, 1663,
+              1122, 1614, 2520, 1665, 1336, 1489, 1615, 1669, 1616, 1679}], 
+            Line3DBox[{991, 1141, 2422, 992, 1155, 2434, 1018, 1166, 2441, 
+             1029, 1176, 1039, 2485, 1184, 1047, 2490, 1192, 1059, 2499, 375, 
+             2451, 1070, 390, 2059, 392, 262, 2327, 953, 410, 831, 270, 2298, 
+             845, 430, 846, 278, 854, 448, 960, 2329, 284, 862, 468, 964, 
+             2330, 292, 487, 2122, 299, 511}], 
+            Line3DBox[{993, 1142, 2423, 994, 1156, 2435, 1019, 1167, 2442, 
+             1030, 1177, 2446, 1040, 1185, 1048, 2491, 1382, 1383, 1385, 2541,
+              1277, 1395, 1278, 2452, 1397, 1286, 1407, 1287, 1694, 2462, 
+             1643, 1409, 1605, 1695, 1297, 1420, 1298, 2585, 1645, 1644, 1422,
+              1549, 1696, 1308, 1433, 2586, 1309, 1650, 1435, 1607, 1319, 
+             1446, 1320, 1655, 1449, 1325, 2530, 1463, 1326, 1113, 2517, 1472,
+              1514, 1473, 1123, 2521, 1490, 1515, 1491, 1131}], 
+            Line3DBox[{995, 1143, 2424, 996, 1157, 2436, 1020, 1168, 2443, 
+             1031, 1178, 2447, 1041, 1373, 2539, 1374, 1376, 1269, 1384, 1270,
+              1387, 2542, 1279, 1396, 1280, 2453, 1399, 585, 1408, 1288, 2463,
+              1411, 1299, 1421, 2550, 1300, 1424, 1310, 1434, 2555, 1311, 
+             1095, 1447, 1511, 1448, 1104, 1235, 2470, 1114, 1240, 2472, 1124,
+              2522, 1492, 1493, 1132}], 
+            Line3DBox[{997, 1144, 2425, 999, 1158, 2437, 1021, 1169, 2444, 
+             1032, 1362, 2535, 1364, 1365, 1262, 2526, 1375, 1264, 1378, 1271,
+              2527, 1386, 1273, 1389, 1536, 1537, 1398, 1282, 2454, 1401, 
+             1289, 1410, 2549, 1291, 1413, 1301, 1423, 2551, 1303, 1087, 1224,
+              2468, 1096, 1230, 2469, 1105, 1236, 2471, 1115, 1474, 2562, 
+             1476, 1680, 1706, 2593, 1707, 1494, 1671, 1670, 1496}], 
+            Line3DBox[{1001, 1146, 2426, 1002, 2475, 1160, 1023, 1356, 2532, 
+             1171, 1034, 1357, 1366, 1180, 1043, 1639, 1640, 2584, 1379, 1519,
+              1187, 1050, 1274, 2544, 1390, 1194, 1061, 2500, 1283, 1402, 
+             1203, 2548, 1072, 1292, 1212, 1081, 2509, 1219, 1089, 2512, 1226,
+              1098, 1450, 1451, 1232, 1107, 1327, 2560, 1464, 1238, 1117, 
+             1557, 1612, 2564, 1558, 1478, 1531, 1588, 1242, 1126, 1564, 2581,
+              1617, 1565, 1497, 1535, 1701, 1246, 1134}], 
+            Line3DBox[CompressedData["
+1:eJwVzz1LQmEchvF/ZEJviw0NtbQIQYP2MuiSOUVRg/gBqkVqyA/Q1hAEjYEI
+BhFtNjbWZjT0DVycwsEWKTDQoJ/DxXXf93nOwzkrJ9XS+UREHKA3GXGRwHTE
+l3wtX8nBh1MRtWTEp36rz+JI7/Ixb6OAG+ygb0/NRNTlU5xhyfbi/SFX3dfk
+NN5sCf1ZrslZfsW9nOcWimg4c4eR/UPfx657V21P+MaD/sNlzxbkNWT0Od+S
+lQfyOv/yHi9iA5v6vDPv4/uxZfvjinuW7Zf6I3K2Njrjf8A/qv8pMw==
+             "]], 
+            Line3DBox[{1005, 1148, 2428, 1006, 1346, 1162, 2568, 1025, 1347, 
+             1517, 1596, 2577, 1597, 1675, 1598, 1256, 1634, 1602, 1603, 1677,
+              1604, 2486, 1266, 1380, 1188, 1052, 2493, 1276, 1196, 1063, 
+             2502, 1205, 2456, 1074, 1214, 2465, 1083, 1425, 1426, 1221, 2552,
+              1091, 1651, 1312, 1652, 1521, 1697, 1522, 1606, 1553, 1577, 
+             1322, 1581, 1525, 1582, 1526, 1609, 1556, 1583, 1329, 1465, 1529,
+              1530, 1118, 2518, 1333, 1480, 1243, 1128, 2523, 1338, 1248, 
+             1136}], 
+            Line3DBox[{1007, 1149, 2429, 1008, 313, 2141, 530, 314, 2006, 326,
+              234, 342, 2017, 242, 536, 2146, 361, 1064, 2503, 1206, 2457, 
+             1075, 399, 2067, 400, 266, 2083, 419, 274, 2217, 661, 439, 662, 
+             282, 458, 2104, 289, 544, 2151, 476, 1129, 2524, 520, 1137}], 
+            Line3DBox[{1009, 1150, 2430, 1010, 1348, 1349, 2439, 1504, 1350, 
+             1518, 1351, 2445, 1570, 1359, 1626, 1257, 1636, 1258, 1635, 1367,
+              2536, 1267, 1381, 1268, 1053, 2494, 1197, 1065, 2504, 1207, 
+             2458, 1076, 1293, 1294, 2466, 1415, 1543, 1304, 1573, 1305, 2575,
+              1575, 1544, 1427, 1550, 1576, 1313, 1578, 1314, 1551, 1439, 
+             1554, 1323, 1453, 1324, 1512, 1455, 1466, 1456, 1119, 2519, 1481,
+              1482, 1484, 2565, 1339, 1499, 1340, 1702, 1672, 1500}], 
+            Line3DBox[CompressedData["
+1:eJwVzb9KgmEUgPFj/gEdtKmhwAijwQtQKGquBqEiyKAlqFEvoMQhidpzCoR0
+9waSnCPoEoIGhcit1qCfw8PzvOd7v/OunTcPG4mIqOEnGdFOIRvxq3fTEQ+Z
+iD2+M+vqfX3EE/fqvJSLmOoTfeDbGX87X/KML/jTvI4vO065aD7WQy7jVV+Z
+X+NRt7iAWyxiwY68d+51VpewrDd4hQf+yenu/P78O/fwZ77OEzxhiD6OvfnM
+CTtH/IIK3lBFx44bvOuMO0VdxbbzJu/wFq/iQ/8DV/0mIw==
+             "]], Line3DBox[CompressedData["
+1:eJwVzr1KQmEYwPEn9Aiam0NlgwnZBThEo80lhNgHKAVdgFZrBY3ZHBF9QFtz
+NncJXUIItkUNBQUt2c/hx/887+N5j+XdbqMzERFNvlMRtSRimZNsxI95xfM7
+65mIXM7v9IINNlmzm3Le9tzikm122LL7SEcMtcWbO9tacrann+Z9PeDLc6JX
+3rvhmpJ7bzVFmlP7jCZM2s2PS55zu67+uqcz/o/mCnf8OVvQVd990JG5r49U
+eTU/6ZH3DjlmmjoF35nRZ/tZXaTIEnM0KPNif6b39BiY/wHIMCi6
+             "]], 
+            Line3DBox[{1130, 1244, 2567, 1487, 1120, 1239, 1709, 2594, 1708, 
+             1110, 1233, 2515, 1101, 1228, 2513, 1092, 1222, 2510, 1084, 1215,
+              2507, 1077, 1208, 2506, 1067, 2448, 1199, 2496, 1056, 1189, 
+             2487, 1044, 1181, 2482, 1036, 1173, 2479, 1026, 1163, 2476, 1015,
+              1152, 2525, 1251, 986, 1138, 1249, 1343}], 
+            Line3DBox[{1133, 1245, 1593, 1534, 1495, 1682, 1683, 2590, 1681, 
+             1125, 1241, 1477, 2563, 1475, 1116, 1237, 2516, 1106, 1231, 2514,
+              1097, 1225, 2511, 1088, 1218, 2529, 1302, 1080, 1211, 2528, 
+             1412, 1290, 1071, 1202, 1400, 2547, 1281, 1060, 1193, 1520, 1388,
+              2543, 1272, 1049, 1186, 1377, 2540, 1263, 1042, 1179, 2534, 
+             1363, 1033, 1170, 2478, 1022, 1159, 2474, 1000, 1145, 2473, 
+             998}]}, {}, {}}},
+         VertexNormals->CompressedData["
+1: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
+nuTRkWn/ud13qCH/4nNswrNqKh3hbrTkRAEtfb47MGi7jHhPbw+eNriCNH+e
+mD/QJ5fh6xTnlaY9htfT8qYvrY4a79i1sbygs57p7LHq0Nr9VxtI2DY7JOxw
+PGtxnMJPe5vEfn1zr7i/tpFSufXAPu455yVuPdB3/6yYkHXRxDMw2Pd9ZQy5
+3NQp0gxopOlKv1yt2uXQJlfhKa/2pdSji+Waom+19PqLy+3pl4pJKehdP5sd
+QpI88VlzfoeIjq2zPF4jKqU3y/S/WvSQ0lateyZv51RTIy94/Y3CAmZv/OTs
+mOL37FQ31bBg3Xpi195l14zJZ6MG/ug/5HgGG6IeqNTFp560pnwU6LUPZYqv
+Qn6+DQ1k/bJj7MorGunw+c8rftmF0cY04YXbA4Po9A6z+b1KGuk4t34o/Oec
+u+xdCreSl5TRKF5R+PLVxZQ0/auK7lwZjS7ba7PmWyWphyu+SRYJaMrxM7pu
+4QLyHGjBc9haTYt459OW14pp/yU98Zz1lfS4+7CAstElFOUT5bO/TUYJEoM2
+9y1FNNcy+eO6+Yx19zg8PKZHKNvlM6SX+otG6nB6auB4v2B2SH/EoE0vH7GZ
+Z8MC9WoaSVr508bnWinpuztVt6rnkmzWZN1eAbX0Ynf9obNPK+mpc5vUaGMp
+fVQxKD2RKaWwf55D4ly5/tx/9wju/2Mq99+vn3uwbUMXAdkJxpi26yqisl/P
+eXzXCnJsezjHUv752SPyktL6FVJa3EW5eO+4MnIqWb94eMzvc79WqsmeSyiy
+RWdejXYFad0v/LoktYx6d3N/8d5BQg9vfk9zCKumeZy3v8r5+1jO3X+w/dLJ
+Le0NxZ8JfaOhFUNl65REx6c3kki5xOBaUw5dlM02PLo8kfRFQ82yNzeQavPZ
+uVfrqmms1p62+/cKyLtH0ZzFMunf6ymau75quOtq59r4PcMShHRoWNthvaVV
+pNLy5oquP5+0/lmH4Dy4xmdpK1bpSchV9YRap+YqStax2Pr0UiWlpEZ5qnSW
+/3wHqTddCOGR2fZtB7vNl1DArkPpu+7l0/iWXl9sp5fRaDuLnF29aunsxz8d
+gaojf7oCpVxPwIvrCPhxXYFTXE9AlKwTsmdgNSUMmMf7ODKTEky3xATfkpEy
+9/ufxd0PUrj7wP39SqH+C8S07MKU+G8rS+heYNicupECaqgfamkqX9d/Du/g
+skO+fjrdtL34rfzzY7LoTEBoCp822XY2rZXvGweUpVXrr+JRjULPVT/rc1m7
+4dPX7WkqZLfVe6vFra6jEOFeiupcwep3bFD+pC//nBIfi+z/RkzDua7Bcq5z
+IOT6Br0L7WuGGPNZrmpoka+ihG157Lm23qCEfqp1qdnCqln8TmHXo6pSduep
+d9KbqyVkHaHv/mQ/nz3dtie93wkpm1EbO+GiVS5ZTlVi77eK6dn9Ftl7YS6N
+e9QW1JgnpLu9DujvlK9/3GY55cRuz6NLouosDQsBLeXmqn25OeuO3Hz1rkNG
+i3rVZJOWR/CvbeuyqP2QSZ8zS+opMuwuP8pawA65nbM4aSJiEveP22yeltHT
+1QFWuv8JWac1x2aXBYrY3e1xBy78KiJr7j47mbvvhnL3216bTqtYzZbvj0dq
+RH15l0fBO0fnSZMqaR37ZKGmKCGFg1823l5YTcUOnZX6GleSJ9fBiOU6GPe4
+DgZ+vvh5//057486ZMMETO/egpFlSyVskPLHrlZqeaT71G5VUY8MJo6vq1lm
++ISdSmyzNlzWSGHc9eTDXV/HuetK0+2Uuu1wCZv4/HKFoD2fmdj75dieK6H7
+F13KDpiKGL4mruYlXttQQMXc/Grnf+ZX378cd27v7DiKyg1xVxjhSf19+xg9
+e9tIC7n52PvcfOxHbj7Wu9piq3+xlCXN/Rbykcdjk2cbpfZ9nEsLu8Z1nlMt
+Zv5u7h3VDgvYq3ZHF3QcUEjfHiY8UuOJ2YDn5W8S+guYj+ubvQeXFlEB16NQ
+43oU87kexWWuO7GF6044cd2JDqu37R883+X1FLeYF3Nd0tiWI46LxhxupGD3
+qz7tck6zIxqjB57XbGCG9q/rFQILaFfA6Jg1DkEsyOW64PzJenahyuJ8y4Vi
+Uhip6qcznbEq2faa/BW1bOJn3f6LplSTuN1rUbN6KpP6DLarcxCzIQ8mxxX3
+FtOobRv6S9Ni2Hs7x6AhRbVs/JoFbcUFlRTxbNWPWfdfs0eTr+R+EMmY9xr3
+8oHSamoY7WZ37MdrtnN38RFhIZ/1Wjdn41i3Guoy3f/wUp1otuDde7dE5zJm
+v/1V7sXIOrLPa/d6e3Mku3Bj3FneujqmecFhqJtGBZlw83XG3HzdPG6+zpOb
+r/vMzde5cvN14XZdu/7wD2ODr6S1OyisY0881G2yVcoo6tHc9UO6ZLCOpz1u
++Q2XMv8Ef5uMDwLadP+ouCpVvk7ITJjaasBnjdvaTVdfUkOdH694pG/6hp3Q
+j32/+7WEtewPvujjKqTaTj6qUbo7WM2rM5kWQ5zYiPud1jxra6Rid3W3abO9
+WfO5gp4PbqeyaJtBnVyPN9Igbr6ukJuve8TN141ZlqyUH5nHNqU833hki4B9
+PVa+mewlf99313HPhUZzz4UOTszIaPuWx66tDn894UkVG/3ja2Bccw0F67jZ
+arnlMa3/Hg/VllSwjm8F4586y6giYsOzktHpTOPWQxXdOeVMayk7tEOpjvZP
+6+XYNyybxlu+jhDGSyj6SvsjTUxARd2fp3bb/JZOjNizOcqvhm4de7tkfQmP
+xvzo8HWNfy4ZJYRrh/BkVHTui0LWggpqt3qCx1iHAiqL6LllUnAtBXo99T+f
+U0RuD64PW3Ajh4RXX4/s+amW9Jc77hvzuoQaiyVqWv0LqEFYsrLrtjoKNXma
+bhCWT/32PPVvn1rEIiImZz+0qGAePQMORWXX0O2Jhw97CgrZtlkvVFKMS9hX
+U0uFNJVaGtB+zIDTXtns4jx3HePTheysb0v5Uvn6M83ebZDGmgL2Or6lXG1h
+IRs6xFTteOc6Iq7PPvefcwF0jEKL119IYceqRNe/9s9gc14P6/mwvIHiIrda
+9L7znC5eDzsxe9VLcl0pOv81s5HGXnYZNcM0l1IPLb1z+76ADgw01T9wTUIG
+R1OenQzMpxu+GyP+GyyjY1bHTq68U0mvwh/7Pe1bzg6kmBuY5xeyy1s9r57b
+IaPL2vtuFAeUsauO4dNaTxSwR7uKZxqlyWhTuYaXa3U2m9xfW7KpOosNt21R
+1c2tp8uN7oqHLEvYLzftvqesctmlD4UhL6tr6dytAreMpruMCV47WPncY5H5
+c5Yt+d5I/gW9HVeGJbGpbzyLZryLZ4+/L/d8YdZI+7ju/M8Dfzr0NVx/XvRM
+O3HbwUR64mDrun1QEvWcU9olUH6/NbWe9HLMxiL68P28Iz+xmlw3iDd18ZZS
+s+00a7PeZTQpYl8/f2cRiem9f/puAfVyeX7vv26FdGFYiE+pYR15Jvo5KB/N
+p7Lvuzql+RaTep1joeLlWtpwZUKU88oCuv3rh2ybYgmJ4o2tQ9bU0uW6jsEk
+K6DElvSSp2ML2G27R896//eOlQ5u2xW5vp7Kq4Jma107wjY4nB/+RTiOJeRY
+8fjy37se7kp7XsS9ZxZHb0iDDBNZT+WJ4wrTG2jewsndXgzOp7bEGD5P/rnC
+hNdTmwvq6INe86tBK1PIPTqxwftUPPWMsGEbjBrJluvsx3LdfXuut+9uOSA8
+ZEwF7emtPOTJ3RLK2DV+8njLGtJ7Zrb7eFcepXyxbR3nKyTTtHPLX5/h0fdU
+wbvAqWWk0PtWi1ewjEbl12eePFlIZ74tPrP8SDmNT9Xba5hXQwN0Qs98qyim
+wmyL4raAcrqzJftqbJ8aSmgfMN38UhldC3C+kCMRsWftdE+3085ie8xOLyv+
+KV9P5jTcmrM2mtV0HPhinPQ5O/R6ctez8s+p8+3nPRh2uIA6ae59mnc0k5yc
+V+8LGyn/uT275WT4JYjOpa+Id1zvQ68eJdoMlTXSnbenfIqaeXR3XVu6wdYK
+sj/WvfhUZzEZVig5NsjX22a1pc3H5+fTmIlJM6QTZH87+WKuk5/DdfK3nt33
+w2mLkNbMrbyRMr2KXvrEjP2pIaDvIr7Fmt1lJL0UapRvLqYH1klT95vz6Y1h
++OgTDyrp9nnTxPvxIkpSmOt+PZ1Hex93Htvkkk1K6wdYtqstp+XMcfh8k1ry
+51z3Sc5591Dw+B/fvXuP+i29WyKWmX536f2PGexh4Nyd83zE9DC7cs6nzSKW
+rDBC1X5qBnv/5cAkRZGYbnRynbaxXSYdaCgTLi1idNVW9eiM0gbaFmHwwbOS
+T5P21Q85aVFEeZ3i/e53kZD+50nv164oIZtRB1Yad0wnrctbosKi6shyRcaO
+c9piWt6lZ9ZWQRWtCph+PYrJP+/O/3h38YiIBufFjdjWv4SWOpfrmOsLaaeR
+JOrHIgF9NF80vG6EmFZZ9XzcdU0Jra0d2mO4mYBy32SbufNFFDSxTbnDiFLS
+GMGfM1rLg3p6vH/ScOEORby9WWP2Q/45YlukujGhjKnbF7Dnh0RskPG4hTwj
+Ac3kfPtDzrs7c869T94MrbF21WxCVqKDewcpW6HYrST2RCmZ2DQmqnWSsaDW
+qnfkn8QGN42mvp94lOWQvmGHrZBV+3x316hIZYlRQ/ep1Eto5MrBR9u1VFO0
+nf7SpjtZpO0f21fpUw3ZWeuH/DSRkJrWz/N6OfL/X7f8ct8wHn2rP9WzfpWQ
+Zpn8TO0vzaGjU5bp/uokoQPrebkWK0Q0rb7lw+VhQnq8bfuB/m4lFBorY9dM
+RHTl4LkvmQ8E9Ey9OvnBkDJasL4tfP9mHpO0r0m2tBCzQfYrlbb6VtDK3Zva
+UkN4zGpjs55UX8gql//6aXGER/deeXl+i+ex17wOXonnpazgQ53a1ch82txP
+McDbXMCWBfSMnTNIwkbRy+ll+wuIlxHkq0pC1n3qrrMCFQnrbLnFzFa+75z/
+bWvG9lky9sTpeVzXigSWOu/dzg1JPHK69EsjWr4+4xcteO9ukMj2Ru+5cK+1
+hs65xSp6L+KxmcO/vurPi2cquWe0HD1l5Ghj1KSfJaaXSxI/56vmkdNxc+WF
+K4WUYKCkc1u7huY+27g4I66EhmvN5TUNq6TO80c13NeWUdkQXlzTpRLqOXnc
+Bse4UqoYMDDa+66UDBbkNT3xziOLbfUdND/wKKBzkbvBUgkNVT0b0WEgn5w+
+bzQNii6mdNH9+YdWSWhG++006ASPnoufPZq9s5TO9hmw7muQgAx/rN48c2M1
+GcSapqlMFNBh2rWitVzAlkSfbp54XsTKlyQZFqSVUP/YNcfPVwrYlR52qqdH
+y9c/qU8qVcbm0es5aoKdV0QMX8eXWCuNP5VHtZlBHr0/iljG5/bnze1EzNy1
+dPqKjrn0jB90o4rxWer63HuXlkuZY7rG5J69c+nUW2WvAh8Bszctm/o+TMKs
+nctki07mUODjxuaMWAH7Hqv5y+qyhI0fo754e2MO5bY0VI+dLmMHKrsrSQ3i
+mfaDLhn2fPn6hFtHtkz7s648za0nuyWc2TVoRAm75e/TxS09gjlsLqouWFJP
+J3V6hCrW1dDpdMc+Gol51GgRnblEUkXpoSEPTLXE9LzymdK2WZXU++5CIe80
+j7QeNgsejeUzv0FFQ56ermQVJsNzJx4VEUl7+/ZLE7GOsiGiL5dEzMbgfUHa
++Vz6aexpeTFNyOxCDfI8H4rZOXOtU69qcsgnItJ6zwIR671lgonWGDE79cS2
+OCw3h/bKTAP5XwXsYUTLDPM3YnZtVIe1OXfzae6qBQFDd4lYNW9TiWOhiH3q
+1TlgniCXys4kb75cnsJ6ebYf1L/5PrtjbedacKaRDKcpR1/bXEsrJu7wMtqY
+R4tfLBhxVFJKd3940qWMWuq6PHGM1qI86mM5devq8SV0KSBJ7W2RjB4/VVNd
+pVlG8wOse+kICmjrP3MaeJ6cNzbj1UKNWnKaN9u7Nb2EJH4bThyeUEhd/umT
+87g+eWCHlPN68uuoY+a0L/N7ZtMDt+tD80fU0WnNs+eK9/HYFavOeZtdi9lB
+SczGSxUS6tO08Ub0Xgm7Zl3Q8VYnPiv+dmk6X75PabE5Y68o/zk+yI2YnPNW
+yNq79muXVZxDVw7oVOUUidnUfd6mze5Ctn2keWpoTA5tWhT7SnOffH/3sTT9
+RYuQ7f18zH3M5kLy2DjwW1WrmO2+f1hLWUv+56jOtklSzyOXLXGSo/xqdtxX
+u/VCJI9tu14w99p9IR3iPOMxdEE4zxjI7aM8uH3VdW4/Ff5yb0/rz1J2j+9c
+aW8dzTQb1737nCqguYyXK6bXlNll+S2FqLtkfzl668Yk+ef1jgtVq63k6+DM
+0duXeeVS82Hhq/bPC8nfuFV4LbiO3gTHfulllUuNSjkvHS4UkMuXvc3vJ9VR
++5fNV9zNCqlxsY7x2w359KuP/hwT+Z9TMKz66ceYAvLpULQkMCSPEgTCyW/b
+1VJRZ8nU0SeLycQ2YePSLsXUk+t+r+O63+247veQZYeb98bJqHVjWmHzhiI6
+b286+5dRKU3wDLniOKaEma9a4JDSO5MpLfXTGyL/950rfZXD2yhl4/30Q5q8
+qtj0SI0bxpWl5H54s/CGTMxo+H9BC5YJmGpd53t37QrpsJOewhVFMTtpX9fl
+dAWPbblduOhzWAXd2rS1XO2dfB2x6HWBu3k19XLsOvTJGxENnfCnq5Kr/6ez
+osD1Vap3NrW8miyibM+Iop5CAUXf+qy6+aX8PnnLRffQ/AQ2MjisIslZyiqt
+rs6d3ltI6kGtg8eOzyHN1HK/LatkFGCf8/NMp2rqIVZ9uOCr/Lqc2zmSl19L
+B/I69Jv1uJSqxrUpuOSLWPQ2lb7j9mcyz7JboTaDxJTqWLTTsYeMXRg2eIxv
+/yR2wrao9pL8c/OFxr5RX+v47PrXqXt1x0pY5sTa2MRnheTqqp02e7yMFSa+
+vrXQPIG5DIzos76CR7nd9jZfeFFDr6McLywNKaHSLVNWzDMsJ3GMpomtkohl
+NU/bUx0jYrda/zOLacunvOmuCefUZOxw8qo+Bg6MlSndNlulwac+M3QOd/KS
+/15f/fjE0yyPCmVzA5s+l9CxfvyVeu7y+5/14+T5F3LJavAG7X5dCsl6pXd6
+kGE0410y/c/rTi0TmXgZvouvouX1uzNsKZX9t35rzN6dInaXPz7qzWAJOXxL
+2Gza8TVTFgyxPN+Dx3Z63zRalS2jxlDr3ttHRNOxZu08zbnydXRW3JxPOxvJ
+jttfKHHnXEm5/cU1vfr9VQ94f7+OuRzc21NFSDV7mUDXqJr2G+jsL46rohdm
+t1/EnRXTCK7PPIbrM7f++NNn1ue+r8t9Xxnd5mKzKwd971H3E+Of7Ltxh1rn
+Dfr4Xr4PChyyadL4Jxls353DvbwfpLEdF3y1vOIaaJ3Dn25z1PQ/3ebPXLe5
+2unP97fN/N8955LdJ0x7mAlY5O7Dz1crVbPU6g33ThUJKO7d2xX3VonYzdu3
+u5bKP/87nakSRFlWU/kdg++lPwtJujpg40LXd2TxYfZOg7Y6quZ6zp/r/vSc
+L3A95wbu+8pc59mK+34P7vfUnPs9VeJ+Tx+YeqUPUK5mRvsnOjRdz2XnK+qs
+7frLf2+VQzW6rnvz9+sNo4zN9TkNdHa339F18vvi7PoeRmad5fvywIOB653r
+SYV7Xr2Fe179kXtenVX2WHo1Ur6Pv5A2e3O5iNboK3YlXSE5pV472GlBPukQ
+3/dpbz5N3z+txXGblELW34pffSSA7VS9U3V5VBSLPjJv69OcRlKLTMjo1ZRE
+jj6e/U8Z5VBh3Y/Tr3Y30KejHR63SivIq9904aUPQrLLzS3OaS8gdY34+NlW
+jCZMtPuuMjuZniV0sf5m3khnuV7tNq5fG889Z+ZxzwGVXf48F1zDPQ98tctf
+cFQjmw1t0W9RayhhTl88Bi8aJN/3bT/2cf6OEvZd0VRSXi1gu88LSf+hiH5V
+h2ZuGlJO3h21orb1fUvht/2rZjbU0h3vwdPezoph/W1aDELnxDNPXkrQQNdG
+ctK//HpPXDXTSdhUd2KBgC0yHj/x1xIBDfinb9zKPTf+kHlYVWlaCQkm3Q56
+/7WIPJMN92WXyWhlza/pdZf47Fui8wurPCFLfjf4kvqeKgrjnqPmcs9RXbnn
+qIrqvHFV64uZ7e7Y+G1qBUzh9twLvZ7W0rkvm3v/+sSnyVZrhZWexXSmb/ip
+WX5ikhWdbuoxsZIynqrE+o/OI7ci/e7PL8rIHs/luZ/fde7nVvGhXP/oSAEL
+KnhVejheyKympPv17FlJXc5OXfh9Jp8JOlVsNlgrYP2NfvTrnsWjRPOaITaH
+sljhAYM6YYdstqvrSJtrX+spOdpn/d2LZSxsn4+S6GE523M2btEOtRrqo/bn
++ji/4c/1EsldJ9Ysc49GZi67+PRU2DmjVBYzO9p8f58Gauaei07jnosqcs9F
+hUV/nou+MfnzXDSKey5qMLRV8c3B13+/KkzLfrnLuZFmvS9fcVOhgiZVzUna
+fLScQuLHxYteSmmRakC/sat8WLl4/pN70iSmN9ph1k6PRrL59Od6u3r0z/WW
+yV1v584bX+jTPZXdOH6/1XZoLtturpgaPraBdqomf4rvX0wGkT+/mGlWU+WN
+oAe9BFI6vfpP33N4hz+9z0Ku81nWfcR6PZ9MyrPzbe5Wkkfr1Oqnz7SqJ7ez
+CerOt9+yNUfTSy275rBHTY0qHXs1UKdVRj/8PhbQ21mN8+9czifhgo+t/f+r
+o35j/2uYqFTCWo6Hfpv5q4JlDm56+N28hnqf/Lnr4VM+a78zv2MdJbF59lQX
+eaWGfLnr6g13Xd3irqu8Cev7urgkkfbb7OJhMQmUqTlhjeLKRjp5zn/+x6II
+Nu7bgf7h38KYTmhOfq90+f3w3sv2k6dXsldHvk2ylpYwu6sfzxzrUUNnOgcq
+prpUMNtFKkZj78Uy4Zb9C2+PqiPG9VRNuZ5qKddTTXb8c78VzPjf9+Gb3PV5
+g7s+z3HXp/satYGf9LNp+83Lt6zjksg6Md3s4o0GknD3z1/cfdWeu3/qqWQO
+nB9QxBbtMR5is6SYPWKnzCIG11INd12N4q4rTe660gh1fbyulx+7qDgr0Xix
+L9M7Enf4Q10jLeP6iYFcT3EZ11HM4rqgwVwXlMd1QfW45/aK3HP7R9z1+VEv
+fn/xrRTGWz/HeHiFgF17y88d5Siljy7Ty2Kck9ilct2fly2rWf+Ot/T6ta+l
+25KDMaer4tiG6FvLl1gWsuIhXstGxNfTzCl/+kEJXE+ohusIeXFdoR9H/3y/
+jvv+Re79e8beP+/fbbn37/a+Tz5+D7lDYxKfdV9fEUyme2Qqe2vl69KnW++5
+esZR1fUJH2Z65NBGkezTkmsN1KvdIoMc8zd0TaXP7WVLyuly3YeK9G519CUo
+t7jOP4YuzvmhHTQ8kO4qPVHumdpIz0boWU5IqKDXdi5fvDzL6fkRK0PLI1J6
+s9KLt8JIRL1Vp7X23ZdLute1Ant1F9Ny7j1XAPeeS4l7z2USsCE4OjmPKVps
+mxG5JYcZ695XGzpSfp/heoMfRv/pDW7neoMXrsckbbHOZgLF4+2VAp+zYGuv
+XSerG+im6pbrW3fzaP+q4sFDVhWSeufUgr37peQsNlY5WcVnIQkDvgRMEbKR
+64wnB/evpg7J4VfNJnpTyMXkxq5Rp2mPxrcYlR+NtJJnYP4x/Q3VeXrU56s8
+JjsHqz6nNjVSS8DSwM6+OZTXK2if85PnVLbuWOWTiAZaNLTfXpWxGWx9qJ3u
+oNuMZYvn2iX1lq9PpBdadorzqGT6ljfN7/OoybZ5YUhCHTlw8ySvuXmSndw8
+yawh59Z8fxHLvKvUFR4ZS1n5gQ8blzgJqWqf8yTvrTHMfdKajwOjZCzf1GNB
+3DIeBVwye/T920vm03vsvMCjAtZl+MWTQyfX0OalFwZ9GBLMvMsqV/crL2T3
+Hs1bppdbT+tvc325C3/mVQq5eZXhXK9nKtfvec91e/or+VCr5DHVbAndPm9p
+IvGqYnS/PG6knMvbdhgXRFLnV605eT4lZN8jPHrymHoKufLn5zg748/PdQf3
+84zhOnJPuHmVTG5eZc68sAdZG5PoyGq3Hh4GQgqa/2Cq00opTdl45pbyxHQS
+CVteTLWW0g31OU/1/AU0hJurWcvN1Uzh5moknNs/xTl+T87v+6r+mHFmuSuL
+s1WeHCvyZbtyZx1u+9xI1/Vz2Cb5/XnU0sQnddZimvl9guH74yJ6NNbjrs+R
+ZNpoN6a82Vu+zlNQXioolZEbN1ejz83V3OTmalo5J7+Pc/OVnJfPko57NSow
+hB3ZrLBrR98ENphnUazk00hPevntmbzgMjVsfHPNRNODRvR+fmev/H5YyvW8
+Cri+VyHX9Wrkvi/kvp/Ofb/z5j//vFTlz5+HP+eTmknOYpUicqnUbx1TlEoJ
+g+LOzllaT8s0ikzsbsk/V/q9VrSLSaYR+ay7Vmk9Has/fn5VD/k6Z9iNdsde
+SdgLncNz636fz3677W3VzApmYjnu9OBZYtbfaoJpUjKPSrn7Wj13n7vJ3d9K
+PK1ijxwXsF2CeYv7+SSzkKpX0oYyKYmf1yTzowS0dvRU74cOOfT5sWFE6CMJ
+efZ51Gm1toAOjj+0KmCEkHzthmw0le8P3nvlLC5bx6cOs9eVWHjw6VO1wQVH
+ez7ZDPr2VL6IY6YtrwZseBHPUuPGrhFlyEit92b/PKpmPSe8VB2mx1j857uP
+Li6upYKO95NXrZBSkpPO95838uj4jdiUUxv5ZODi8NMkoYitdmjnsVo7gpW3
+K62J8KynLYZXbjtrFLD7N5MzDi4JZdvc54R7D2ygQY94xQP93jOJXvGiG86+
+rCx9t+5atUYKvb//sm+5gE06PrLp+ycRS3o1NclnSTENXP9D/XyTgN0Jm/rd
+7IyYrYx+cSmjsoAU5sZeG+grYJMtvnV7e0rE1t4dvbinYyltEJgf8X71mr2c
+s3lkcuQttq3HkUCnxEbaOrPjkg7Pn7MH2rt2dAlzYpOn+g4K/tRIznPDvLP8
+ItnuuZcV5gRdZ3lNLiavKxvJ8oqNocbgUAo44TX40aHr5PG434WNskaazb3X
+vsO91+4+iOs+ce/Hf/X/8368R+mf9+OF3PeVuffm9dx7863Pfi58/us9hf5M
+KbMUPKPInGfPouX3N+FK9eDYRhndtglQuJNWREGSe/WXe5VQzYGwqJVtMppx
+dtk8g3nF9OCa7+FZq4ppncseve2rxCzKdl/QkGV8FuAt7dxyt4w+TTBLKkkW
+UpOwaPr9JwKy2f5tqG58OUUV69x43sYj1dPOGwvMeNRtqvJV/VYBbRhRk3zW
+L4H18A4NqF9RzhSzJM5m6+vo8+o/XY/d/3SBBnjv9PB8lETreh1VUX1WRLal
+DcPcVtXT2fHNl0fFCJlO17JFGulprNQhOz/lsYQqZg50lXbPp5l7zV9mKAZR
+7TK367dXNVDUwIpd8X1qaZbxg00lDiUUbHB9afrTwv/TB/Xi9nfruf2dAre/
+a891TNpzXZMPXM+kfIt9sEH3WGafc3+t9+/9e+7n+1W+VbSDez9O3PvxTdz7
+cavW0pTwk7FseNy3pV1dxGzmtC0+I+X3M8fHTXmT96ez7v2PqNdPEzPWZYqJ
+vY6YHAJixht+ZVR2ZPV/o07yyHzYgMx7DjKy5Totu7lOSwDXaXHMtLdPqi2h
+AZsnXOs1XP73qeEbOGxSKd13fak18H4JlVm89uh2VP75yjfcfnhUNc1M2d60
+vLqEnHOWezX61JBA8UxC6fRyaltXPmhCvxKyDImOn+MkoXauP9sCX/Lo7tNN
+wo+7brE12zY7j2y9wIxzwncvld/HRkZt/5qrlkSHdkjU5l4Lp869Nao8LjVS
+XJbFwhHLK+lQVviuDqnvyGz72Mv7/qulAZ3iT2Vo88i+YqvZKEE1Xfe4/vmx
+loiGc88ThnPPExS45wlRhddyzZ0K2ddtvrsDXoex9n65hs7y++H8f+ZA2rg5
+kKX+IS+2Z/HYbiv/kIVH8pnmurXPFS5L6a3Qo3pwqJi1yxKsvZ7CZ+o/3Mwu
+K5dQovbTyAtFAgqw2t7V8yOfilIHDjtzrJrmfVdqNh0nZA8iF1mPm5XKMn95
+5tpOkJKOQUjp4LtC9tnge/L1VWlsXFNA0exUCZn3WVzjrFZLMgq0KF9YQi7h
+uz9Ny5Ova+jWaGuNWjp9tFf0m9ximtxhx8SSeUU0u/bU6TSDejb43qHnryTB
+TDowa+HJoBLyv1A6mWdaz6bFXp0+bnsw8wm+LbCbXULoeqDzgb4H5k4wh4L5
+E/QU0FdAVwF9AfQG0BmAw4fLh8eHb4d3h3OH64bzhu+Gc4Z7hneGB4YPhguG
+v4XHhcOFa4VzhW+FC4UThQ+Fq4SzhK+EP4RHhENE9wQdFPRP0ElBNwW9FHQo
+0KVAjwJdBnQa0GdAvwA9A3QM0AVAJwB9AHh4+Hi4ePhweHE4cThquGp4arhl
+OGb4ZXhg+GC4YHha+Fq4WnRe0H1B7wVdGHRi0IdBjwN9DnQ50KdArwKdCnQc
+0HVAzwF9BPQS0ElAFwCdAPQB4OTh5uHl4cnhy+HK0aNBnwZdGvRr0LNBxwY9
+EfRF0BVBXwO9DXQ20KFAlwI9CvQd0HtA5wFdA3QO0DeA84f7h/dHHwe9HHRy
+0NNBXwddHXRP0EFB/wQdEHRB0ANBLwP9DHQz0KFAlwI9CszBYC4G8zCY/8A8
+COZAMPeAOQjMP+C9Pt7z4/0+3lvjPTbeX+P9K97H4j0sXDScNHw0/DA8MRwx
+XC6cLnwuukLoDKEvhA4RukToEaEjg64MejLoqqCzgr4K+iPokaBDgnkpzE9h
+bgrzQ5gnwhwR5mYwR4P5GcyLYH4EcyOYh8B8BOYi4P/RA0AHAH4enh6OHs4c
+7hzeHB4bPhsuG84Z7hneGd0ldJjQX4LvRYcJzhddJ3Se0HdC1wmdJ/Sd0PFB
+1wc9H3R80PVBzwe9G/Rv0L1B7wbzgPChmPPD3B/m/TDHhrk2zLNhrgtzXpjv
+wjwT5psw14Q5Hsz1YJ4HvQn0J9CdgB+DJ0N3Ah0HdB3Qc0DHAa4LPQf0EdBL
+QCcBfQS4K3QS0BdAbwCdAby3hotCZwDrcqzTsT7H+068/8R7T3S10NlCXwsd
+LnS50ONCjwl9JnSZ0A1BRwT9EPQ40OdAlwM9C/Qt0LVADwJ9CHQh0PNC3wtd
+L/S/0ANDBwx9KPSi0IlCnwW9FnRa0DdB7wSdE3RD0BFBPwS9MPTD0A1DXwy9
+MXTG0MFBFwc9HHRh0IlBHwZdFXRW0FdBdwAdAvQH0CNDnwxdMvTL0DNDxwz9
+HfR40OFBjwZ9GnRp0GVApwF9BvQO0D9A9wC9M/TP0D1DHw29NHTS8D4b77fx
+Xhvzu5jnxRwvOkroKqGnhH4QekLoCKGng74OujqYz8O8Hub0MHeFOSzMX+G9
+Nd5j4/01Oh3odqDXgTkMzGVgHgPzAZgXwJzAnK/MyVq9njU/cI5VaxfG6trV
+G3aZWkroxKEbh14c3vfj/T/e+6Mnhb4UulLoKKGrhJ4S5jIxp4n5TLzvx/t/
+vPdHhwVdFvRYMMeDuR7M86BPh14dOnXYt2Mfj/079ufYr2OfjjkGzDVgngGd
+LHSz0MvC3C3mcDF/i3049uXYj+O9F96D4f0X5gsxb4g5Q3R20N1BbwdzXZjz
+wnwXnn/heRieg+F9DN7P4L0M5j8wD4I5EMOL/k/yklJYVMesprU7iliKyTBn
+kVE9JR2zOx6bnsSm6nwLTDxQzYTnXelzO/n+eYhfg5F8vXV3VHKdvbJ8H7o4
+bc2da1La2Lax/ph8H2rV29rJ/omY6f303Db0PzEdG5YSvkC+DzUMeOtwxEXK
+NPqvuLRlspBi/o8eyED/meeNb0SwswEj+/122++CJ3296VRFK6f1mzj3XRgL
+3Kn2ddWyOnZvzfmPv330cM3Der7zQlnQnYQXC1gdm7NeIeX2qzLarLzBtqkx
+mG2LUxlmr1bPtti6NPw0LiXFYw4LPlwOYicnfe7XZ0M98xxhT7P15X9vnLOF
+u4W37X0osX9K5zxW6yGMnq1ZyRbJspfzbspo7KAR0xzl64wbW2eafbjJZwsv
+dstW9ZSSq3/G7snJmUzDaNbHy3oi5v6jPt82QUwfJn5//sD5LYve91r7d+fA
+w1KjQ68pIoI/h0eHQ2+/9Iiw2/VEpugl2FTbVcZuLGs1X6zAJ7hrOGz4a7ho
+OGn46A0XhV/DhxYzrfDp8yYnV7MlLVPH9z8kpUkB/BWdDhew2sJrl373IcZ/
+mbXGX75PiVZtucMT5bKKTOPPKx2FTOP59A7zX4hpevJit9+diIN7Dsz19a5m
+Wv0n6gzRllLuJ4Ndh/0K2PcdRSl1E3ns6mrtiY8ipX/Xhzr/rg+5dR26JuiZ
+oOsh+Wf9hi4GOhnoY6BDgS4FehToPqADgf4DXB96A+gM/Lseg+uf9M+6C45e
+9M/6Cp79/T/rKMwBwoHDheN5Jvw2PDcc9whxmH1YuZQVJcSGxdqmMUm3Dgfr
+5wtoywSZmv5PAXt8pahvXZf37N3lO+6jaiSEPgh6IeiEoMeBPge6HOhfoIeB
+DsbmQz0Dd/oJKEFFFDdnuJhOz9VVqxhXTD5X9G797gUYL+TX/u4H7O4y7n+6
+AXD7cPzw+/Dz8PRw9HDvcPDw7/Dq8Otw6+vH6rkuDBGwe31W0ZMTb5hwnEZS
+92PSv50OdDvQ6/CfYWa3SMAnK4NNL1q6iWjHodbHdU3yz0HOvcPBw7+jS4JO
+Cfok6H2g/4HuB3w+vD6cPvw8PD0cfXf1YTNK78moKuDqilnaJXQ8dtT38YNK
+/nYDqrluwGeuGwBvD38Pdw9XD2cPXw+HD5cPjw9vD38Pdw8fOJjzgg6cE4Tf
+g+eD4yt40354Ztl75ppS1v9ISQGbtm+xn2xwPcFXw1vDWcMtwzHDL8MtwzHD
+L8P3wvvC+cL3wvvC+cLB/nWxnIeFC4UThQ+FC4UThQ+Fz4TXhNOEe4eDh39f
+qx4ntNd9wfQnVr6xWRjKLk0db1ZS3vjXjcORw48fNN3crkI9l0TD3PzcrpXS
+52Equv0Dav/6ZHhlOGV4XfhduF10AdAJQB8Arh7OHr4eLh1OHT4dDhwuHB4c
+DjzsHw8OFw0nDR+N+yecNHw03PsYzo/Dv8ONw5HDj6PjgK4Deg7w2ugBoAPQ
+3fnBB+NaMdnuP//f8a3VNH7Xq5Pz11f+9b3wvnC+eN8Ahwp/ik4EuhHoRXTi
+PHUB56kTOU8dMf0/9X09pLTvlRmVikqpVmT2KWtO9V8vDT8NNw1XDGcMXzyt
+LmqfuD2fTarwTzsyXMJWWtRsOXKuhDyOyjw+83jsY48nen7FUjZysJHGbw+L
+bgU6FuhXoFuBjgX6FUc5jzyD88joP6D7gA4E+g9w+3D88PsLZp7+JnwuoSFf
+LSRjY6rI/sXDiI/aFX99O7w7nPs4zrfDu8O5w43DkcOPw1fDW8NZw1fDW8NZ
+H18fd27AYQFbcdl+7pJqMTPubPFfhlYhwQPDB8MFoyeCvgi6Iuh6oPOBvge6
+Huh8oO+BTgG6BegVoFOAbgF6BfD88P1w/f7cXNYdbi4Lrh9OHm4eXv6vr/7n
+nE04Z7hneGc4Z7hneGd0SdApQZ8E3h7+Hu4ePUT0EdFFhHeCf4J7gneCf4J7
+gv+BB4IDgv+BB4ID0j354H6IbRwrXNkafCqyhn39YuN1K5JP8ADwAXABcH1w
+fvB98GzwbXBt8GzwbXBtpfMO9uxSnMIGRfXcrdZOyEw/ph4+vklK8EjwSXBJ
+6Hui94nOJ5wM3Ay8DPqY6GWikwl/Ao8Ch4L34nhPjvfj8A/wEHAQcJ5wn/Ce
+8I3wjnCO8HvwfHB88GnwanBq8FfwWHBY8D/wQHBAm/drOv3YkEe3Bkny122u
+JcsYL/5ZaelfPwNPA0czUP2i2hSvXHq4q9J6iVUd3T12bszS54V//QY8BxxH
+5LxHMz3yC5nu4pNerX3L2fdfuY5bd8gIHhg+GC4YHhg+GC4YDhYuFh4W/hMe
+FA4UvhHeEc4Rfg+eD44PPg1eDU4NPg1eDU4NThtuG14bThtuG14bbhmOGX4Z
+Xhd+F24XThVuFV4VDhMuEx7zftIH1d9OJtPRXzlzUh1FjvC3++1l4GTgZuBl
+4GTgZuBl4PPh9eH04fDh8uHx6/55bg+/j847uu/ovaOr7vbPvg9eHX4dbh39
+cfTI0SGH64bzhu/Guij0n143nDPcM7wz1kXoYaODDfcLBwz/Cw8GHwYXBg8G
+HwYXBs8A3wB/hC4DOg3oM6DLgE4D+gzo46OXj04+egfoH6B7gE49uvXo1cP5
+w/3D+6Pnjr7736475+Hh4+Hi0T1HBx39c/hweHE4cbhNOE74TbhNOE74TfSR
+0UtGJxleEX4RbhHdYXSI0R+Gx4PPg8uD74L3gvNC/wI9DHQwcL4CzlvAOQuY
+r8K8FeascB4AzgfAuQDo46OXj04++gLoDaAzAD8MTwxHjN43+t/ofsMVwxnD
+F6Ojja42etrwsfCycLKYM8bcMeaN0XH+23Xmes7wjfCOcI7oJqOjjH4yHB1c
+HTwd+izotaDTgj4Lei3otGDuDXNwmH/DfBvm3TDnhvMYcD4DzmVA5wLdC/Qu
+4Njh2uHZ0YtHPx7dePh2eHc4d8yFY04c8+GY88bcN+a90QFHFxw9cLhcOF34
+XHS00dVGTxudDnQ70OuAf4aHhoOGZ4ZvhmuGb4R3hHNEHwe9HHRybBPnngoX
+yZhMqNSn/v5rpt/+rN0JaTWhj4NeDjo5Rpxr7sr1co5zrhk9BfQV0FWAk4eb
+h5eHe4eDh3+He4eDh3+/orn6f5wtX3T9f9xt5Bh3pd/eFs4W7hbeFs4W7hbe
+dhh3blQbd25U59w/50ah44OuD3o+6Oago4N+Dvoy6M2gM4NODbo16NUcE1bq
+3guWkdcWcUvA1DIqn8RfZHey8G93Ax0O9DfQm0B/At2Jv50FrruA3gL6AugN
+oDMA1w3nDd8N1w3nDd8Nbwx/DHcMBwsXCw+LrhM6T+g7BXMeeT/nkS9xHhnn
+IeF8JJyLhC4SOknoI6HLg04P+jzotqDjgn4LPD98P1w/PD98P1w/3CwcLfws
+fCy8LJwsvCv8K9wrXC6cLnwuHCxcLDwsHCxcLDws/C08LhwuzhPC+UI4Vwjn
+J+E8JZyjBK8Ovw63ji4AOgHoA6CngL4Cugo4nwDnFeCcApyfgfM0cI4Gzp/A
+eRQ4hwKOF64XnheOF64XnhceGD4YLhiOF64Xnvff9RtcKjwwfDBcMBwsXCw8
+LPwqPCscK9wvHDD8L9wvHDD8LxwvXC8cGRwvXC88L/wtPC4cLvwtPC4cLnwy
+vDKcMrwx/DHcMbwx/DHcMfwwPDEcMfwwPDEcMTwqfCpcKhwvXC88L/wnPCgc
+KFwlnCV8JXwpvCmcKVwonCh8KPwqPCscKzwqfCpcKnwvvC+cL3wvvC+cL5wt
+3C28LZwt3C28LdwsHC387GbuuVZP7rnWJ+65FvwwPDEcMfwwPDEcMRwvXC88
+LzwqfCpcKjwqfCpcKhw1XDU8NRw1XDU89QrOUd/kXHUM52ThqOGq4anhnOGe
+4Z3hnOGe4Z3he+F94XzheOF64XnheOF64XnhaeFr4WrhTuFQ4U/hQuFE4UNx
+7gjOIcH5I3B6cHvwejiPBOeT4FwS+Dp4Ozg7eFf4V7hXuFM4VNw34E7hUOFP
+4VfhWeFY4U7hUOFP4XXhd+F24Wnha+Fq4Wnha+Fq4XLhdOFz4Y3hj+GO4YHh
+g+GC4ZzhnuGd4ZDhkuGR4ZDhkuGR4Znhm+Ga4WDhYuFh4ajhquGp4W/hceFw
+4WbhaOFn4SThJuEl6zhvVsL5Mw/OncGbwZ/BncGJwY3Bi8GJwY3Bi8GDwYfB
+hcGDwYfBhcFrwW/BbcFrwW/BbcGRwpXCk8KRwpXCk8LvwfPB8cHRwdXB08G5
+wb3Bu/31zJxvhmuGr4a3hrOG84T7hPdEpwzdMvTK4FfhWeFY4UvhTeFM4T/h
+QeFA0X1DBw79N/TO0D9D9wxuDY4Nfg0dH3R90POBD4cXhxNHdwYdGvRn4NDg
+0uDR4NDg0uDR4HXhd+F24XXhd+F24XXhd+F24XXhd+F24WzhbuFtJZyznXb1
+j7uFt4Wnha+Fq4Wnha+Fq4VjhGuEZ4RjhGuEZ4SbgqOCn4LHhs+Gy4afhKeE
+o4RjhGuEZ4RjhGuEZ4Q/hEeEQ4RLh1OHT4c/h0eHQ4c3gz+DO4M3gz+DO4M3
+gz+DO4N7hIOEf4R7hIOEf4QHhg+GC67jPHB4r//teeH/0QNABwD+Hz0AdADg
+/9EDQAcAXhp+Gm4a3hj+GO4Y3hj+GO4YPhBeEE4Qvg7eDs4Ozh/uH94fHhU+
+tQfnUvEeHA4P/g7dBHQU0E9ANwEdBfQT0DtA/wDdA/QO0D9A9wC9A/QP0D2A
+G4cjhx+HM4Q7hDeEZ4ZvhmuGM4c7hzeHt4e/h7uHM4c7hzeHm4WjhZ+FP4RH
+hEOE64bzhu+G74X3hfNFHwG9BHQS4B7hIOEf4UvhTeFM0U1GRxn9ZLhWOFf4
+VrhWOFf4VnSf0YFG/xmdZXSX0VuGt4S/hLus+G4Q5jlaRkniNQ+uNZTQ8/I6
+k9kDS6mU86vwrC6cY4VfhWeFY8V5ijhfEecq4vxOnOeJczzhiuGM4Yvh8OHy
+4fHhh6/+M3cHPwxP/NcRc34YnhiOGB0EdBHQQ4Crh7OHr0fvAP0DdA/QNUDn
+AH0DUdRD2fYdfNZuYOOHGR1TWGmMjyY9q6FF8Mnc3+Ny7u9xNedYaznHepdz
+rHGPDytmucioqmj3tVUZJTTacoFoeHQxWW8ZLxqbU89S/ts7bG4fN7Z8Wsrg
+iIlFdGKK/Mo8WM++m2wc8k0SwDasyd43paKYxnLPIUu555AN3Pn1g72K2y53
+iGHXRplomjTWsGNNN9Oaj/BJanQrVFerkFld1db8XpbI2m/M7mTkW08HrWJe
+zot6w/yObvMbP1HKCnc+nfr7fKvcdmsnHKBU1jBtZtaIzjXsjNlmnZ26Aho9
+bb3t/uxKdtHr6eBmizj2SdO4ZWSufH89fo7OfKpgMttmy9ufcpj4sJFHWrta
+Sr6/ovK4QzbbqLo8oscIEbv/TPlX/8tiGnW1n7bVy/dsYEHz4q4hIpbZbdGi
+vSZiOvfoW3An63Tm+rrrJ3EvEdv1s8eZqwYSmnR03gi/Bj4TZZ46b3sinBX5
+j51Q8LyGlvvtXXytJ5+Na++wOdk2k71cZ7nVaEkNGfBebAv0rGanTrXvEH2j
+iNU/XnlGNURKy3n9+Jn+Ita63ibB5dpzdlKrLWXuCQm5FMQ/X5oqZM3NNUZK
+nulsbeTt8DR7+fXV98LJ3+fhDSxxfqTjlM8292juMOmqhLqOPabZN6OazXqz
+TBjxpoRt+jnR9FKbhEKnnFjikSRhpRcDC00dHzLx9AHT+btF5KEtu7tCKmbj
+/Y7d+bU9hb3tfCwtPUREGvfGhLkoi9iZbUO6tM/JYfvSVk39vE9M3WzEx37o
+8lln+/npGxYWssOxXfZtF0po8oRQ/4yYYhLvn2ZSfF5GI9qm+sznlfw93whz
+i1+5eUXz0DEatZtrmJa6uWtV8hW2qSV4XNJJAWUtObsw0EvKmm0MNg4qTGCb
+HRUEv88x7CbtFaN5R8yqNTXXuKllMavPLeEdF4oo6kjzkegbVbRm8aDm9ucl
+pN2zRrEiqYLMfN96KByppLCXN5R/nytlf6jorLtGCd2IPK349l05fTW5uctw
+jIxC1SeYSKSFNIybIw/j5sofcvPkf89F485Jw/loTXO8NX6fN0l7j3drPhXK
+DFJNEnW9qwjnJmpyc9k4PxHnqOFcNZyn9tV6eXZsDzEdqBeHmFwUUPYzpaKE
+7/L7f59c5d/nVpo9ejvKalkAi6xdU65hV0GL3VIzMs7ImEsnDU/X9wlMueF0
+uPs6HomGtd3YryUlxwN6D1/drKY3w+4/XCMsoZHWNka/zzPbvd27nf0SPplP
+6PP997lmz/a+VZfIP/dSrntdrzCU/3t76M06GFNGek7DRzhX1bFdbzOvhQof
+s9LX4c4/bMtoya7lK3+f6+bbpqIh1K2iO733hm6fW0zFieZjgo3r2ZZOgX3H
+97jH0l1a7Qa6l5DREfX1D+pqyGRZ/YwXbeV03HZAQFhmEWVyc3I4hwTnj0zl
+5s+suHm0MG4OLfqf831wDsub7nPENkqlZHlsyL5V2lJa1xi1OO33uarT2pfO
+Dy9jxvW5Jitv5bLqHwML05bXEs5PwnlKOEfJfmjaqFT/JPbqqKeZink8c3Hr
+6pq7rvHvuUQ4pwjnE+FcH5zzg/N9hnPzizgPB+fgdLjTy7pPcxU933dq6ko9
+CVlvM+P5XKokH+4cn2juHJ8A7hwf93P3vZ+3LyUVU/vnN9rl0NNVqRGZ32rp
+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
+          "]],
+        BoxRatios->{1, 1, 0.4},
+        ImageSize->300,
+        Method->{"RotationControl" -> "Globe"},
+        PlotRange->{{0, 3}, {0, 3}, {-0.9999959302449705, 0.9999926583554124}},
+        PlotRangePadding->{
+          Scaled[0.02], 
+          Scaled[0.02], 
+          Scaled[0.02]},
+        ViewAngle->Dynamic[$CellContext`angle$$],
+        ViewCenter->Dynamic[$CellContext`center$$],
+        ViewPoint->Dynamic[$CellContext`point$$],
+        ViewVertical->Dynamic[$CellContext`vertical$$]],
+       FrameStyle->GrayLevel[0.85],
+       StripOnInput->False]}
+    },
+    AutoDelete->False,
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"],
+  DynamicModuleValues:>{}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "tt", ",", "pp", ",", "bb", ",", "gr", ",", "center", ",", "scale", ",", 
+     "v1", ",", "vv", ",", "theta", ",", "phi", ",", "alpha", ",", "vert", 
+     ",", "viewAngle"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"gr", "=", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Cuboid", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", 
+           RowBox[{"-", "1"}], ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Cuboid", "[", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"Red", ",", 
+         RowBox[{"Cuboid", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"Blue", ",", 
+         RowBox[{"Cuboid", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"2", ",", "0", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1", ",", "2"}], "}"}]}], "]"}]}], "}"}]}], 
+      "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"bb", "=", 
+     RowBox[{"PlotRange", "[", 
+      RowBox[{"Graphics3D", "[", "gr", "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"scale", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"1", "/", 
+        RowBox[{"Abs", "[", 
+         RowBox[{"#1", "-", "#2"}], "]"}]}], "&"}], "@@@", "bb"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"center", "=", 
+     RowBox[{"Mean", "/@", "bb"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"vv", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"6", ",", "5", ",", "2"}], "}"}], ",", 
+       RowBox[{"Mean", "/@", "bb"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"v1", "=", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"vv", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "-", "center"}], ")"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"vert", "=", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "1"}], "}"}], "-", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "1"}], "}"}], ".", "v1"}], " ", 
+       "v1"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"viewAngle", "=", 
+     RowBox[{"50", " ", "Degree"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"theta", "[", "v1_", "]"}], ":=", 
+     RowBox[{"ArcTan", "[", 
+      RowBox[{
+       RowBox[{"v1", "[", 
+        RowBox[{"[", "3", "]"}], "]"}], ",", 
+       RowBox[{"Norm", "[", 
+        RowBox[{"v1", "[", 
+         RowBox[{"[", 
+          RowBox[{";;", "2"}], "]"}], "]"}], "]"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"phi", "[", "v1_", "]"}], ":=", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Norm", "[", 
+         RowBox[{"v1", "[", 
+          RowBox[{"[", 
+           RowBox[{";;", "2"}], "]"}], "]"}], "]"}], ">", ".0001"}], ",", 
+       RowBox[{"ArcTan", "[", 
+        RowBox[{
+         RowBox[{"v1", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"v1", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ",", "0"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"alpha", "[", 
+      RowBox[{"vert_", ",", "v1_"}], "]"}], ":=", 
+     RowBox[{"ArcTan", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"phi", "[", "v1", "]"}], "]"}]}], ",", 
+          RowBox[{"Cos", "[", 
+           RowBox[{"phi", "[", "v1", "]"}], "]"}], ",", "0"}], "}"}], ".", 
+        "vert"}], ",", 
+       RowBox[{
+        RowBox[{"Cross", "[", 
+         RowBox[{
+          RowBox[{"v1", "/", 
+           RowBox[{"Norm", "[", "v1", "]"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", 
+             RowBox[{"Sin", "[", 
+              RowBox[{"phi", "[", "v1", "]"}], "]"}]}], ",", 
+            RowBox[{"Cos", "[", 
+             RowBox[{"phi", "[", "v1", "]"}], "]"}], ",", "0"}], "}"}]}], 
+         "]"}], ".", "vert"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"tt", "[", 
+      RowBox[{"v1_", ",", "vert_", ",", "center_", ",", "r_"}], "]"}], ":=", 
+     RowBox[{"TransformationMatrix", "[", 
+      RowBox[{
+       RowBox[{"RotationTransform", "[", 
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{"alpha", "[", 
+           RowBox[{
+            RowBox[{"vert", "/", "scale"}], ",", "v1"}], "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ".", 
+       RowBox[{"RotationTransform", "[", 
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{"theta", "[", "v1", "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "]"}], ".", 
+       RowBox[{"RotationTransform", "[", 
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{"phi", "[", "v1", "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ".", 
+       RowBox[{"ScalingTransform", "[", 
+        RowBox[{"r", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "]"}], ".", 
+       RowBox[{"TranslationTransform", "[", 
+        RowBox[{"-", "center"}], "]"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"pp", "[", "ang_", "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0", ",", 
+         RowBox[{"-", 
+          RowBox[{"Tan", "[", "ang", "]"}]}], ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1", ",", 
+         RowBox[{"-", 
+          RowBox[{"Tan", "[", "ang", "]"}]}], ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", 
+         RowBox[{"-", 
+          RowBox[{"Tan", "[", "ang", "]"}]}], ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", 
+         RowBox[{
+          RowBox[{"-", "2"}], " ", 
+          RowBox[{"Tan", "[", "ang", "]"}]}], ",", "2"}], "}"}]}], "}"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Panel", "[", 
+     RowBox[{"Column", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Labeled", "[", 
+            RowBox[{"#", ",", 
+             RowBox[{"Style", "[", 
+              RowBox[{
+              "\"\<Transforming ViewVector/ViewVertical/ViewAngle to \
+ViewMatrix\>\"", ",", "15", ",", 
+               RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", 
+               "Bold"}], "]"}], ",", "Top", ",", 
+             RowBox[{"Background", "\[Rule]", "White"}], ",", 
+             RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+             RowBox[{"FrameStyle", "\[Rule]", "Gray"}]}], "]"}], "&"}], "@", 
+          RowBox[{"Grid", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Labeled", "[", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "@", 
+                   RowBox[{"Graphics3D", "[", 
+                    RowBox[{
+                    RowBox[{"{", "gr", "}"}], ",", 
+                    RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+                    RowBox[{"AxesLabel", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}],
+                     "}"}]}], ",", 
+                    RowBox[{"ViewAngle", "\[Rule]", 
+                    RowBox[{"Dynamic", "[", "viewAngle", "]"}]}], ",", 
+                    RowBox[{"ViewVector", "\[Rule]", 
+                    RowBox[{"Dynamic", "[", 
+                    RowBox[{"vv", ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"vv", "=", "#"}], ";", 
+                    RowBox[{"center", "=", 
+                    RowBox[{"vv", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}]}], ";", 
+                    RowBox[{"v1", "=", 
+                    RowBox[{
+                    RowBox[{"vv", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], "-", "center"}]}]}], 
+                    ")"}], "&"}]}], "]"}]}], ",", 
+                    RowBox[{"ViewVertical", "\[Rule]", 
+                    RowBox[{"Dynamic", "[", "vert", "]"}]}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "270"}]}], "]"}]}], ",", 
+                  RowBox[{"Style", "[", 
+                   RowBox[{"\"\<ViewVector, ViewVertical, ViewAngle\>\"", ",", 
+                    RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], 
+                    ",", "Bold"}], "]"}], ",", "Top", ",", 
+                  RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}], ",", 
+                RowBox[{"Labeled", "[", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "@", 
+                   RowBox[{"Graphics3D", "[", 
+                    RowBox[{
+                    RowBox[{"{", "gr", "}"}], ",", 
+                    RowBox[{"ViewMatrix", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"tt", "[", 
+                    RowBox[{"v1", ",", "vert", ",", "center", ",", 
+                    RowBox[{
+                    RowBox[{"Cot", "[", 
+                    RowBox[{"viewAngle", "/", "2"}], "]"}], "/", 
+                    RowBox[{"Norm", "[", "v1", "]"}]}]}], "]"}], ",", 
+                    RowBox[{"pp", "[", 
+                    RowBox[{"viewAngle", "/", "2"}], "]"}]}], "}"}]}], ",", 
+                    RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+                    RowBox[{"AxesLabel", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}],
+                     "}"}]}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "270"}]}], "]"}]}], ",", 
+                  RowBox[{"Style", "[", 
+                   RowBox[{"\"\<ViewMatrix\>\"", ",", "Bold", ",", 
+                    RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}]}], 
+                   "]"}], ",", "Top", ",", 
+                  RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Dynamic", "@", 
+                 RowBox[{"Labeled", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"N", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"tt", "[", 
+                    RowBox[{"v1", ",", "vert", ",", "center", ",", 
+                    RowBox[{
+                    RowBox[{"Cot", "[", 
+                    RowBox[{"viewAngle", "/", "2"}], "]"}], "/", 
+                    RowBox[{"Norm", "[", "v1", "]"}]}]}], "]"}], ",", 
+                    RowBox[{"pp", "[", 
+                    RowBox[{"viewAngle", "/", "2"}], "]"}]}], "}"}], "]"}], "/.", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"a_", "?", "NumericQ"}], "\[RuleDelayed]", 
+                    RowBox[{"NumberForm", "[", 
+                    RowBox[{"a", ",", "3"}], "]"}]}], "}"}]}], "//", 
+                    RowBox[{
+                    RowBox[{"MatrixForm", "[", 
+                    RowBox[{"#", ",", 
+                    RowBox[{"TableDirections", "\[Rule]", "Row"}]}], "]"}], 
+                    "&"}]}], ",", 
+                   RowBox[{"Style", "[", 
+                    RowBox[{"\"\<ViewMatrix\>\"", ",", "12", ",", 
+                    RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], 
+                    ",", "Bold"}], "]"}], ",", "Left"}], "]"}]}], ",", 
+                "SpanFromLeft"}], "}"}]}], "}"}], ",", 
+            RowBox[{"Spacings", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", "2"}], "}"}]}]}], "]"}]}], ",", 
+         RowBox[{"Button", "[", 
+          RowBox[{"\"\<Print ViewMatrix\>\"", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{"N", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"tt", "[", 
+                RowBox[{"v1", ",", "vert", ",", "center", ",", 
+                 RowBox[{
+                  RowBox[{"Cot", "[", 
+                   RowBox[{"viewAngle", "/", "2"}], "]"}], "/", 
+                  RowBox[{"Norm", "[", "v1", "]"}]}]}], "]"}], ",", 
+               RowBox[{"pp", "[", 
+                RowBox[{"viewAngle", "/", "2"}], "]"}]}], "}"}], "]"}], "]"}],
+            ",", 
+           RowBox[{"ImageSize", "\[Rule]", "150"}]}], "]"}]}], "}"}], ",", 
+       RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}], "]"}]}]}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`tt$$, $CellContext`pp$$, $CellContext`bb$$ = \
+{{-1., 3.}, {-1., 1.}, {-1., 2.}}, $CellContext`gr$$ = {
+   Cuboid[{-1, -1, -1}, {0, 0, 0}], 
+   Cuboid[{0, 0, 0}], {
+    RGBColor[1, 0, 0], 
+    Cuboid[{-1, 0, 0}, {0, 1, 1}]}, {
+    RGBColor[0, 0, 1], 
+    Cuboid[{2, 0, 1}, {3, 1, 2}]}}, $CellContext`center$$ = {
+  0.9999999999999998, 0., 0.5}, $CellContext`scale$$ = {0.25, 0.5, 
+  0.3333333333333333}, $CellContext`v1$$ = {4.990603557524345, 
+  4.8344822105877325`, -1.9929018759427537`}, $CellContext`vv$$ = {{
+  5.990603557524345, 4.8344822105877325`, -1.4929018759427537`}, {
+  0.9999999999999998, 0., 
+  0.5}}, $CellContext`theta$$, $CellContext`phi$$, $CellContext`alpha$$, \
+$CellContext`vert$$ = {-0.8781791858601652, -0.7936322307657163, 
+  0.3561230451388904}, $CellContext`viewAngle$$ = 0.8683445041230013}, 
+  PanelBox[
+   TagBox[GridBox[{
+      {
+       TemplateBox[{TagBox[
+          GridBox[{{
+             TemplateBox[{
+               DynamicBox[
+                ToBoxes[
+                 
+                 Graphics3D[{$CellContext`gr$$}, Axes -> True, 
+                  AxesLabel -> {"x", "y", "z"}, ViewAngle -> 
+                  Dynamic[$CellContext`viewAngle$$], ViewVector -> 
+                  Dynamic[$CellContext`vv$$, ($CellContext`vv$$ = #; \
+$CellContext`center$$ = Part[$CellContext`vv$$, 2]; $CellContext`v1$$ = 
+                    Part[$CellContext`vv$$, 1] - $CellContext`center$$)& ], 
+                  ViewVertical -> Dynamic[$CellContext`vert$$], ImageSize -> 
+                  270], StandardForm], 
+                ImageSizeCache -> {405., {198., 207.}}], 
+               StyleBox[
+               "\"ViewVector, ViewVertical, ViewAngle\"", StripOnInput -> 
+                False, FontFamily -> "Helvetica", FontWeight -> Bold]}, 
+              "Labeled", DisplayFunction -> (GridBox[{{
+                  ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                  TagBox[
+                   ItemBox[
+                    FrameBox[
+                    PaneBox[
+                    TagBox[#, "SkipImageSizeLevel"], 
+                    Alignment -> {Center, Baseline}, BaselinePosition -> 
+                    Baseline], FrameMargins -> 4, FrameStyle -> Automatic], 
+                    DefaultBaseStyle -> "Labeled"], "SkipImageSizeLevel"]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                BaselinePosition -> {2, 1}]& ), 
+              InterpretationFunction -> (RowBox[{"Labeled", "[", 
+                 RowBox[{#, ",", #2, ",", "Top", ",", 
+                   RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]& )], 
+             TemplateBox[{
+               DynamicBox[
+                ToBoxes[
+                 Graphics3D[{$CellContext`gr$$}, ViewMatrix -> {
+                    $CellContext`tt$$[$CellContext`v1$$, $CellContext`vert$$, \
+$CellContext`center$$, Cot[$CellContext`viewAngle$$/2]/
+                    Norm[$CellContext`v1$$]], 
+                    $CellContext`pp$$[$CellContext`viewAngle$$/2]}, Axes -> 
+                  True, AxesLabel -> {"x", "y", "z"}, ImageSize -> 270], 
+                 StandardForm], ImageSizeCache -> {405., {198., 207.}}], 
+               StyleBox[
+               "\"ViewMatrix\"", StripOnInput -> False, FontFamily -> 
+                "Helvetica", FontWeight -> Bold]}, "Labeled", 
+              DisplayFunction -> (GridBox[{{
+                  ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                  TagBox[
+                   ItemBox[
+                    FrameBox[
+                    PaneBox[
+                    TagBox[#, "SkipImageSizeLevel"], 
+                    Alignment -> {Center, Baseline}, BaselinePosition -> 
+                    Baseline], FrameMargins -> 4, FrameStyle -> Automatic], 
+                    DefaultBaseStyle -> "Labeled"], "SkipImageSizeLevel"]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                BaselinePosition -> {2, 1}]& ), 
+              InterpretationFunction -> (RowBox[{"Labeled", "[", 
+                 RowBox[{#, ",", #2, ",", "Top", ",", 
+                   RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]& )]}, {
+             DynamicBox[
+              ToBoxes[
+               Labeled[
+                (MatrixForm[#, TableDirections -> Row]& )[
+                 ReplaceAll[
+                  N[{
+                    $CellContext`tt$$[$CellContext`v1$$, $CellContext`vert$$, \
+$CellContext`center$$, Cot[$CellContext`viewAngle$$/2]/
+                    Norm[$CellContext`v1$$]], 
+                    $CellContext`pp$$[$CellContext`viewAngle$$/2]}], {
+                  PatternTest[
+                    Pattern[$CellContext`a, 
+                    Blank[]], NumericQ] :> NumberForm[$CellContext`a, 3]}]], 
+                Style["ViewMatrix", 12, FontFamily -> "Helvetica", Bold], 
+                Left], StandardForm], ImageSizeCache -> {883., {62., 76.}}], 
+             "\[SpanFromLeft]"}}, AutoDelete -> False, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           GridBoxSpacings -> {"Columns" -> {{1}}, "Rows" -> {{2}}}], "Grid"],
+         StyleBox[
+         "\"Transforming ViewVector/ViewVertical/ViewAngle to ViewMatrix\"", 
+          StripOnInput -> False, FontFamily -> "Helvetica", FontSize -> 15, 
+          FontWeight -> Bold]},
+        "Labeled",
+        DisplayFunction->(GridBox[{{
+            ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+            TagBox[
+             ItemBox[
+              FrameBox[
+               PaneBox[
+                TagBox[#, "SkipImageSizeLevel"], 
+                Alignment -> {Center, Baseline}, BaselinePosition -> 
+                Baseline], Background -> GrayLevel[1], FrameMargins -> 4, 
+               FrameStyle -> GrayLevel[0.5]], DefaultBaseStyle -> "Labeled"], 
+             "SkipImageSizeLevel"]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+           AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {2, 1}]& ),
+        InterpretationFunction->(RowBox[{"Labeled", "[", 
+           RowBox[{#, ",", #2, ",", "Top", ",", 
+             RowBox[{"Background", "\[Rule]", 
+               RowBox[{"GrayLevel", "[", "1", "]"}]}], ",", 
+             RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+             RowBox[{"FrameStyle", "\[Rule]", 
+               RowBox[{"GrayLevel", "[", "0.5`", "]"}]}]}], "]"}]& )]},
+      {
+       ButtonBox["\<\"Print ViewMatrix\"\>",
+        Appearance->Automatic,
+        ButtonFunction:>Print[
+          N[{
+            $CellContext`tt$$[$CellContext`v1$$, $CellContext`vert$$, \
+$CellContext`center$$, Cot[$CellContext`viewAngle$$/2]/
+             Norm[$CellContext`v1$$]], 
+            $CellContext`pp$$[$CellContext`viewAngle$$/2]}]],
+        Evaluator->Automatic,
+        ImageSize->150,
+        Method->"Preemptive"]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]],
+  DynamicModuleValues:>{{DownValues[$CellContext`tt$$] = {HoldPattern[
+         $CellContext`tt$$[
+          Pattern[$CellContext`v1$, 
+           Blank[]], 
+          Pattern[$CellContext`vert$, 
+           Blank[]], 
+          Pattern[$CellContext`center$, 
+           Blank[]], 
+          Pattern[$CellContext`r$, 
+           Blank[]]]] :> TransformationMatrix[
+         Dot[
+          
+          RotationTransform[-$CellContext`alpha$$[$CellContext`vert$/$\
+CellContext`scale$$, $CellContext`v1$], {0, 0, 1}], 
+          
+          RotationTransform[-$CellContext`theta$$[$CellContext`v1$], {0, 1, 
+           0}], 
+          RotationTransform[-$CellContext`phi$$[$CellContext`v1$], {0, 0, 1}], 
+          ScalingTransform[$CellContext`r$ {1, 1, 1}], 
+          TranslationTransform[-$CellContext`center$]]]}}, {
+    DownValues[$CellContext`pp$$] = {HoldPattern[
+         $CellContext`pp$$[
+          Pattern[$CellContext`ang, 
+           Blank[]]]] :> {{1, 0, -Tan[$CellContext`ang], 1}, {
+         0, 1, -Tan[$CellContext`ang], 1}, {
+         0, 0, -Tan[$CellContext`ang], 0}, {
+         0, 0, (-2) Tan[$CellContext`ang], 2}}}}, {
+    DownValues[$CellContext`theta$$] = {HoldPattern[
+         $CellContext`theta$$[
+          Pattern[$CellContext`v1, 
+           Blank[]]]] :> ArcTan[
+         Part[$CellContext`v1, 3], 
+         Norm[
+          Part[$CellContext`v1, 
+           Span[1, 2]]]]}}, {DownValues[$CellContext`phi$$] = {HoldPattern[
+         $CellContext`phi$$[
+          Pattern[$CellContext`v1, 
+           Blank[]]]] :> If[Norm[
+           Part[$CellContext`v1, 
+            Span[1, 2]]] > 0.0001, 
+         ArcTan[
+          Part[$CellContext`v1, 1], 
+          Part[$CellContext`v1, 2]], 0]}}, {
+    DownValues[$CellContext`alpha$$] = {HoldPattern[
+         $CellContext`alpha$$[
+          Pattern[$CellContext`vert$, 
+           Blank[]], 
+          Pattern[$CellContext`v1$, 
+           Blank[]]]] :> ArcTan[
+         Dot[{-Sin[
+             $CellContext`phi$$[$CellContext`v1$]], 
+           Cos[
+            $CellContext`phi$$[$CellContext`v1$]], 0}, $CellContext`vert$], 
+         Dot[
+          Cross[$CellContext`v1$/Norm[$CellContext`v1$], {-Sin[
+              $CellContext`phi$$[$CellContext`v1$]], 
+            Cos[
+             $CellContext`phi$$[$CellContext`v1$]], 
+            0}], $CellContext`vert$]]}}}]], "Output"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{942, 799},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1262, 1510},
+WindowMargins->{{0, Automatic}, {-1, Automatic}},
 ShowSelection->True,
 Magnification->1.5,
-FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 22, \
-2012)",
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
 StyleDefinitions->FrontEnd`FileName[{"Creative"}, "NaturalColor.nb", 
-  CharacterEncoding -> "UTF-8"]
+  CharacterEncoding -> "WindowsANSI"]
 ]
 (* End of Notebook Content *)
 
@@ -11681,99 +14582,110 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1257, 32, 37, 0, 90, "Title"],
-Cell[1297, 34, 174094, 4374, 16133, "Input"],
+Cell[1257, 32, 37, 0, 98, "Title"],
+Cell[1297, 34, 174094, 4374, 17150, "Input"],
 Cell[CellGroupData[{
-Cell[175416, 4412, 130, 2, 79, "Input"],
+Cell[175416, 4412, 130, 2, 86, "Input"],
 Cell[175549, 4416, 16507, 242, 625, "Output"]
 }, Open  ]],
-Cell[192071, 4661, 587, 16, 125, "Input"],
+Cell[192071, 4661, 587, 16, 140, "Input"],
 Cell[CellGroupData[{
-Cell[192683, 4681, 99, 2, 55, "Input"],
+Cell[192683, 4681, 99, 2, 58, "Input"],
 Cell[192785, 4685, 66271, 1068, 472, "Output"]
 }, Open  ]],
-Cell[259071, 5756, 59, 2, 39, "Text"],
-Cell[259133, 5760, 176, 5, 55, "Input"],
-Cell[259312, 5767, 45, 0, 39, "Text"],
-Cell[259360, 5769, 1458, 42, 149, "Input"],
-Cell[260821, 5813, 192, 4, 62, "Text"],
-Cell[261016, 5819, 396, 12, 80, "Input"],
-Cell[261415, 5833, 547, 13, 150, "Input"],
+Cell[259071, 5756, 59, 2, 42, "Text"],
+Cell[259133, 5760, 176, 5, 58, "Input"],
+Cell[259312, 5767, 45, 0, 42, "Text"],
+Cell[259360, 5769, 2132, 57, 302, "Input"],
+Cell[261495, 5828, 192, 4, 68, "Text"],
+Cell[261690, 5834, 396, 12, 86, "Input"],
+Cell[262089, 5848, 547, 13, 167, "Input"],
 Cell[CellGroupData[{
-Cell[261987, 5850, 309, 9, 79, "Input"],
-Cell[262299, 5861, 10251, 275, 399, "Output"]
+Cell[262661, 5865, 309, 9, 58, "Input"],
+Cell[262973, 5876, 10251, 275, 352, "Output"]
 }, Open  ]],
-Cell[272565, 6139, 59, 2, 39, "Text"],
-Cell[272627, 6143, 320, 9, 80, "Input"],
-Cell[272950, 6154, 156, 3, 39, "Text"],
+Cell[273239, 6154, 59, 2, 42, "Text"],
+Cell[273301, 6158, 320, 9, 86, "Input"],
+Cell[273624, 6169, 156, 3, 42, "Text"],
 Cell[CellGroupData[{
-Cell[273131, 6161, 633, 19, 125, "Input"],
-Cell[273767, 6182, 1124, 37, 166, "Output"]
+Cell[273805, 6176, 633, 19, 58, "Input"],
+Cell[274441, 6197, 1124, 37, 133, "Output"]
 }, Open  ]],
-Cell[274906, 6222, 153, 3, 39, "Text"],
+Cell[275580, 6237, 153, 3, 42, "Text"],
 Cell[CellGroupData[{
-Cell[275084, 6229, 592, 18, 125, "Input"],
-Cell[275679, 6249, 681, 21, 128, "Output"]
+Cell[275758, 6244, 592, 18, 58, "Input"],
+Cell[276353, 6264, 627, 20, 92, "Output"]
 }, Open  ]],
-Cell[276375, 6273, 80, 2, 39, "Text"],
-Cell[276458, 6277, 1310, 37, 194, "Input"],
-Cell[277771, 6316, 97, 2, 39, "Text"],
+Cell[276995, 6287, 80, 2, 42, "Text"],
+Cell[277078, 6291, 1310, 37, 167, "Input"],
+Cell[278391, 6330, 97, 2, 42, "Text"],
 Cell[CellGroupData[{
-Cell[277893, 6322, 170, 5, 55, "Input"],
-Cell[278066, 6329, 10986, 337, 374, "Output"]
+Cell[278513, 6336, 170, 5, 58, "Input"],
+Cell[278686, 6343, 13017, 371, 377, 11051, 337, "CachedBoxData", "BoxData", \
+"Output"]
 }, Open  ]],
-Cell[289067, 6669, 45, 0, 39, "Text"],
-Cell[289115, 6671, 2084, 47, 195, "Input"],
+Cell[291718, 6717, 45, 0, 42, "Text"],
+Cell[291766, 6719, 2084, 47, 167, "Input"],
 Cell[CellGroupData[{
-Cell[291224, 6722, 111, 2, 55, "Input"],
-Cell[291338, 6726, 7843, 237, 374, "Output"]
+Cell[293875, 6770, 111, 2, 58, "Input"],
+Cell[293989, 6774, 7834, 237, 377, "Output"]
 }, Open  ]],
-Cell[299196, 6966, 102, 2, 39, "Text"],
+Cell[301838, 7014, 102, 2, 42, "Text"],
 Cell[CellGroupData[{
-Cell[299323, 6972, 2535, 53, 240, "Input"],
-Cell[301861, 7027, 754, 22, 163, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[302652, 7054, 147, 4, 79, "Input"],
-Cell[302802, 7060, 434, 10, 32, "Message"],
-Cell[303239, 7072, 442, 10, 32, "Message"],
-Cell[303684, 7084, 34, 0, 55, "Output"]
-}, Open  ]],
-Cell[303733, 7087, 632, 14, 266, "Input"],
-Cell[CellGroupData[{
-Cell[304390, 7105, 625, 15, 194, "Input"],
-Cell[305018, 7122, 10230, 260, 283, "Output"]
-}, Open  ]],
-Cell[315263, 7385, 289, 8, 80, "Input"],
-Cell[CellGroupData[{
-Cell[315577, 7397, 364, 11, 79, "Input"],
-Cell[315944, 7410, 4498, 100, 349, "Output"]
+Cell[301965, 7020, 2535, 53, 221, "Input"],
+Cell[304503, 7075, 754, 22, 137, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[320479, 7515, 669, 20, 79, "Input"],
-Cell[321151, 7537, 10631, 275, 283, "Output"]
+Cell[305294, 7102, 147, 4, 58, "Input"],
+Cell[305444, 7108, 83, 1, 57, "Output"]
+}, Open  ]],
+Cell[305542, 7112, 632, 14, 302, "Input"],
+Cell[CellGroupData[{
+Cell[306199, 7130, 625, 15, 221, "Input"],
+Cell[306827, 7147, 10227, 260, 242, "Output"]
+}, Open  ]],
+Cell[317069, 7410, 289, 8, 58, "Input"],
+Cell[CellGroupData[{
+Cell[317383, 7422, 364, 11, 58, "Input"],
+Cell[317750, 7435, 4489, 100, 302, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[331819, 7817, 250, 8, 55, "Input"],
-Cell[332072, 7827, 211253, 3499, 326, "Output"]
+Cell[322276, 7540, 669, 20, 86, "Input"],
+Cell[322948, 7562, 10631, 275, 242, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[543362, 11331, 237, 5, 125, "Input"],
-Cell[543602, 11338, 73, 0, 55, "Output"]
+Cell[333616, 7842, 250, 8, 58, "Input"],
+Cell[333869, 7852, 211040, 3490, 326, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[543712, 11343, 251, 5, 125, "Input"],
-Cell[543966, 11350, 83, 1, 55, "Output"]
+Cell[544946, 11347, 493, 12, 167, "Input"],
+Cell[545442, 11361, 74, 0, 57, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[544086, 11356, 49, 0, 108, "Section"],
-Cell[544138, 11358, 69, 0, 39, "Text"],
-Cell[544210, 11360, 107, 3, 28, "Input",
+Cell[545553, 11366, 507, 12, 167, "Input"],
+Cell[546063, 11380, 84, 1, 57, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[546184, 11386, 49, 0, 113, "Section"],
+Cell[546236, 11388, 69, 0, 42, "Text"],
+Cell[546308, 11390, 107, 3, 28, "Input",
  CellOpen->False,
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[544342, 11367, 138, 4, 55, "Input"],
-Cell[544483, 11373, 19353, 284, 472, "Output"]
+Cell[546440, 11397, 367, 10, 86, "Input"],
+Cell[546810, 11409, 19353, 284, 472, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[566212, 11699, 26, 0, 113, "Section"],
+Cell[566241, 11701, 60, 0, 42, "Text"],
+Cell[CellGroupData[{
+Cell[566326, 11705, 5124, 118, 896, "Input"],
+Cell[571453, 11825, 133932, 2193, 505, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[705422, 14023, 13100, 326, 1274, "Input"],
+Cell[718525, 14351, 9809, 208, 838, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -11783,4 +14695,4 @@ Cell[544483, 11373, 19353, 284, 472, "Output"]
 
 (* End of internal cache information *)
 
-(* NotebookSignature kxTUT5V68CjPTB1AVDveE0LA *)
+(* NotebookSignature QwpTu2jkfI5OZD1UXR6PI1s# *)
