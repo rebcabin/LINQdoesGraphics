@@ -20,10 +20,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       835,         17]
-NotebookDataLength[    929086,      18534]
-NotebookOptionsPosition[    925774,      18415]
-NotebookOutlinePosition[    926235,      18433]
-CellTagsIndexPosition[    926192,      18430]
+NotebookDataLength[   1408327,      27038]
+NotebookOptionsPosition[   1402592,      26841]
+NotebookOutlinePosition[   1403067,      26859]
+CellTagsIndexPosition[   1403024,      26856]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -4680,6 +4680,378 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
+ RowBox[{
+  RowBox[{"faces3d", "//", 
+   RowBox[{
+    RowBox[{"Take", "[", 
+     RowBox[{"#", ",", "5"}], "]"}], "&"}]}], "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.85`"},
+          {"0"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.822875`"},
+          {"0.137375`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.818371`"},
+          {"0.135459`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.845117`"},
+          {"0"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]},
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.822875`"},
+          {"0.137375`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.7485`"},
+          {"0.2485`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.745033`"},
+          {"0.245034`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.818371`"},
+          {"0.135459`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]},
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.7485`"},
+          {"0.2485`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.637375`"},
+          {"0.322875`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.635459`"},
+          {"0.318373`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.745033`"},
+          {"0.245034`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]},
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.637375`"},
+          {"0.322875`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.5`"},
+          {"0.35`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.5`"},
+          {"0.34512`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.635459`"},
+          {"0.318373`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]},
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.845117`"},
+          {"0"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.818371`"},
+          {"0.135459`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.823596`"},
+          {"0.137682`"},
+          {"0.887024`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.850781`"},
+          {"0"},
+          {"0.887024`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
  RowBox[{"Graphics3D", "[", 
   RowBox[{"Polygon", "/@", "faces3d"}], "]"}]], "Input"],
 
@@ -5751,8 +6123,17 @@ Cell[BoxData[
     0.884945}, {0.799812, -0.127562, 0.863037}, {0.73075, -0.23075, 
     0.863037}}], 
    Polygon3DBox[{{0.76666, -0.113457, 0.884945}, {0.789062, 0, 0.884945}, {
-     0.825, 0, 0.863037}, {0.799812, -0.127562, 0.863037}}]}]], "Output"]
+     0.825, 0, 0.863037}, {0.799812, -0.127562, 0.863037}}]},
+  AutomaticImageSize->True,
+  ImageSize->{356.0413171709199, 283.7499144536163},
+  ViewPoint->{1.8853560593830314`, -2.242305997149577, 1.6933683428287916`},
+  ViewVertical->{0.0912860046029559, -0.10403593416414669`, 
+   2.12924376604888}]], "Output"]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["AD-HOC TRANSFORM", "Section"],
 
 Cell["Default ViewPoint is 1.3, -2.4, 2.0", "Text"],
 
@@ -5858,6 +6239,10 @@ Cell[BoxData[
     RowBox[{"Throw", "[", 
      RowBox[{"\"\<bad face\>\"", "<>", 
       RowBox[{"ToString", "@", "face"}]}], "]"}]}], "]"}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell["triangles3d", "Subsection"],
 
 Cell[CellGroupData[{
 
@@ -6354,8 +6739,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{-0.7, 0.}, {-0.6, 1.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{24.74999999999997, 57.67959183673466}, {
-         139.93059270944124`, 143.16774812475848`}}],
+        ImageSizeCache->{{24.50000023841855, 57.094125005566326`}, {
+         130.09080281200613`, 133.0501361592933}}],
        StatusArea[#, 1.]& ,
        TagBoxNote->"1."],
       StyleBox["1.`", {
@@ -6373,15 +6758,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.6, 0.}, {-0.5, 8.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{56.17959183673466, 89.10918367346935}, {
-         127.77050480222053`, 143.16774812475848`}}],
-       StatusArea[#, 8.]& ,
-       TagBoxNote->"8."],
-      StyleBox["8.`", {
+         RectangleBox[{-0.6, 0.}, {-0.5, 13.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{55.694124910198894`, 88.28824967734664}, {
+         111.37880378896959`, 133.0501361592933}}],
+       StatusArea[#, 13.]& ,
+       TagBoxNote->"13."],
+      StyleBox["13.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[8., {
+      Style[13., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6393,15 +6778,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.5, 0.}, {-0.4, 26.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{87.60918367346935, 120.53877551020403`}, {
-         96.50170732651013, 143.16774812475848`}}],
-       StatusArea[#, 26.]& ,
-       TagBoxNote->"26."],
-      StyleBox["26.`", {
+         RectangleBox[{-0.5, 0.}, {-0.4, 20.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{86.88824958197921, 119.48237434912697`}, {
+         100.4634710255316, 133.0501361592933}}],
+       StatusArea[#, 20.]& ,
+       TagBoxNote->"20."],
+      StyleBox["20.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[26., {
+      Style[20., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6413,149 +6798,9 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.4, 0.}, {-0.3, 63.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{119.03877551020403`, 151.96836734693872`}, {
-         32.226956959772096`, 143.16774812475848`}}],
-       StatusArea[#, 63.]& ,
-       TagBoxNote->"63."],
-      StyleBox["63.`", {
-        GrayLevel[0]}, StripOnInput -> False]],
-     Annotation[#, 
-      Style[63., {
-        GrayLevel[0]}], "Tooltip"]& ], 
-    TagBox[
-     TooltipBox[
-      TagBox[
-       DynamicBox[{
-         FEPrivate`If[
-          CurrentValue["MouseOver"], 
-          EdgeForm[{
-            GrayLevel[0.5], 
-            AbsoluteThickness[1.5], 
-            Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.3, 0.}, {-0.2, 91.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{150.46836734693872`, 
-         183.3979591836734}, {-16.413394669110744`, 143.16774812475848`}}],
-       StatusArea[#, 91.]& ,
-       TagBoxNote->"91."],
-      StyleBox["91.`", {
-        GrayLevel[0]}, StripOnInput -> False]],
-     Annotation[#, 
-      Style[91., {
-        GrayLevel[0]}], "Tooltip"]& ], 
-    TagBox[
-     TooltipBox[
-      TagBox[
-       DynamicBox[{
-         FEPrivate`If[
-          CurrentValue["MouseOver"], 
-          EdgeForm[{
-            GrayLevel[0.5], 
-            AbsoluteThickness[1.5], 
-            Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.2, 0.}, {-0.1, 146.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{181.8979591836734, 
-         214.8275510204081}, {-111.95694251155916`, 143.16774812475848`}}],
-       StatusArea[#, 146.]& ,
-       TagBoxNote->"146."],
-      StyleBox["146.`", {
-        GrayLevel[0]}, StripOnInput -> False]],
-     Annotation[#, 
-      Style[146., {
-        GrayLevel[0]}], "Tooltip"]& ], 
-    TagBox[
-     TooltipBox[
-      TagBox[
-       DynamicBox[{
-         FEPrivate`If[
-          CurrentValue["MouseOver"], 
-          EdgeForm[{
-            GrayLevel[0.5], 
-            AbsoluteThickness[1.5], 
-            Opacity[0.66]}], {}, {}], 
-         RectangleBox[{-0.1, 0.}, {0., 164.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{213.3275510204081, 
-         246.25714285714278`}, {-143.22573998726955`, 143.16774812475848`}}],
-       StatusArea[#, 164.]& ,
-       TagBoxNote->"164."],
-      StyleBox["164.`", {
-        GrayLevel[0]}, StripOnInput -> False]],
-     Annotation[#, 
-      Style[164., {
-        GrayLevel[0]}], "Tooltip"]& ], 
-    TagBox[
-     TooltipBox[
-      TagBox[
-       DynamicBox[{
-         FEPrivate`If[
-          CurrentValue["MouseOver"], 
-          EdgeForm[{
-            GrayLevel[0.5], 
-            AbsoluteThickness[1.5], 
-            Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0., 0.}, {0.1, 145.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{244.75714285714278`, 
-         277.6867346938775}, {-110.21978709624193`, 143.16774812475848`}}],
-       StatusArea[#, 145.]& ,
-       TagBoxNote->"145."],
-      StyleBox["145.`", {
-        GrayLevel[0]}, StripOnInput -> False]],
-     Annotation[#, 
-      Style[145., {
-        GrayLevel[0]}], "Tooltip"]& ], 
-    TagBox[
-     TooltipBox[
-      TagBox[
-       DynamicBox[{
-         FEPrivate`If[
-          CurrentValue["MouseOver"], 
-          EdgeForm[{
-            GrayLevel[0.5], 
-            AbsoluteThickness[1.5], 
-            Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.1, 0.}, {0.2, 131.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{276.1867346938775, 
-         309.1163265306121}, {-85.8996112818005, 143.16774812475848`}}],
-       StatusArea[#, 131.]& ,
-       TagBoxNote->"131."],
-      StyleBox["131.`", {
-        GrayLevel[0]}, StripOnInput -> False]],
-     Annotation[#, 
-      Style[131., {
-        GrayLevel[0]}], "Tooltip"]& ], 
-    TagBox[
-     TooltipBox[
-      TagBox[
-       DynamicBox[{
-         FEPrivate`If[
-          CurrentValue["MouseOver"], 
-          EdgeForm[{
-            GrayLevel[0.5], 
-            AbsoluteThickness[1.5], 
-            Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.2, 0.}, {0.3, 112.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{307.6163265306121, 
-         340.54591836734687`}, {-52.893658390772885`, 143.16774812475848`}}],
-       StatusArea[#, 112.]& ,
-       TagBoxNote->"112."],
-      StyleBox["112.`", {
-        GrayLevel[0]}, StripOnInput -> False]],
-     Annotation[#, 
-      Style[112., {
-        GrayLevel[0]}], "Tooltip"]& ], 
-    TagBox[
-     TooltipBox[
-      TagBox[
-       DynamicBox[{
-         FEPrivate`If[
-          CurrentValue["MouseOver"], 
-          EdgeForm[{
-            GrayLevel[0.5], 
-            AbsoluteThickness[1.5], 
-            Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.3, 0.}, {0.4, 69.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{339.04591836734687`, 371.9755102040815}, {
-         21.80402446786863, 143.16774812475848`}}],
+         RectangleBox[{-0.4, 0.}, {-0.3, 69.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{118.08237425375954`, 150.67649902090733`}, {
+         24.05614168146569, 133.0501361592933}}],
        StatusArea[#, 69.]& ,
        TagBoxNote->"69."],
       StyleBox["69.`", {
@@ -6573,15 +6818,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.4, 0.}, {0.5, 29.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{370.4755102040815, 403.40510204081625`}, {
-         91.29024108055839, 143.16774812475848`}}],
-       StatusArea[#, 29.]& ,
-       TagBoxNote->"29."],
-      StyleBox["29.`", {
+         RectangleBox[{-0.3, 0.}, {-0.2, 87.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{149.2764989255399, 
+         181.87062369268764`}, {-4.011856853089142, 133.0501361592933}}],
+       StatusArea[#, 87.]& ,
+       TagBoxNote->"87."],
+      StyleBox["87.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[29., {
+      Style[87., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6593,15 +6838,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.5, 0.}, {0.6, 9.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{401.90510204081625`, 434.8346938775509}, {
-         126.03334938690328`, 143.16774812475848`}}],
-       StatusArea[#, 9.]& ,
-       TagBoxNote->"9."],
-      StyleBox["9.`", {
+         RectangleBox[{-0.2, 0.}, {-0.1, 123.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{180.4706235973202, 
+         213.06474836446796`}, {-60.14785392219878, 133.0501361592933}}],
+       StatusArea[#, 123.]& ,
+       TagBoxNote->"123."],
+      StyleBox["123.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[9., {
+      Style[123., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6613,15 +6858,15 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.6, 0.}, {0.7, 3.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{433.3346938775509, 466.2642857142856}, {
-         136.45628187880675`, 143.16774812475848`}}],
-       StatusArea[#, 3.]& ,
-       TagBoxNote->"3."],
-      StyleBox["3.`", {
+         RectangleBox[{-0.1, 0.}, {0., 169.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{211.66474826910053`, 
+         244.2588730362483}, {-131.87718351050557`, 133.0501361592933}}],
+       StatusArea[#, 169.]& ,
+       TagBoxNote->"169."],
+      StyleBox["169.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[3., {
+      Style[169., {
         GrayLevel[0]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
@@ -6633,9 +6878,129 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.7, 0.}, {0.8, 2.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{464.7642857142856, 497.69387755102025`}, {
-         138.19343729412398`, 143.16774812475848`}}],
+         RectangleBox[{0., 0.}, {0.1, 170.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{242.85887294088087`, 
+         275.45299770802865`}, {-133.43651676242524`, 133.0501361592933}}],
+       StatusArea[#, 170.]& ,
+       TagBoxNote->"170."],
+      StyleBox["170.`", {
+        GrayLevel[0]}, StripOnInput -> False]],
+     Annotation[#, 
+      Style[170., {
+        GrayLevel[0]}], "Tooltip"]& ], 
+    TagBox[
+     TooltipBox[
+      TagBox[
+       DynamicBox[{
+         FEPrivate`If[
+          CurrentValue["MouseOver"], 
+          EdgeForm[{
+            GrayLevel[0.5], 
+            AbsoluteThickness[1.5], 
+            Opacity[0.66]}], {}, {}], 
+         RectangleBox[{0.1, 0.}, {0.2, 148.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{274.0529976126612, 
+         306.647122379809}, {-99.13118522019158, 133.0501361592933}}],
+       StatusArea[#, 148.]& ,
+       TagBoxNote->"148."],
+      StyleBox["148.`", {
+        GrayLevel[0]}, StripOnInput -> False]],
+     Annotation[#, 
+      Style[148., {
+        GrayLevel[0]}], "Tooltip"]& ], 
+    TagBox[
+     TooltipBox[
+      TagBox[
+       DynamicBox[{
+         FEPrivate`If[
+          CurrentValue["MouseOver"], 
+          EdgeForm[{
+            GrayLevel[0.5], 
+            AbsoluteThickness[1.5], 
+            Opacity[0.66]}], {}, {}], 
+         RectangleBox[{0.2, 0.}, {0.3, 105.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{305.24712228444156`, 
+         337.8412470515893}, {-32.07985538764396, 133.0501361592933}}],
+       StatusArea[#, 105.]& ,
+       TagBoxNote->"105."],
+      StyleBox["105.`", {
+        GrayLevel[0]}, StripOnInput -> False]],
+     Annotation[#, 
+      Style[105., {
+        GrayLevel[0]}], "Tooltip"]& ], 
+    TagBox[
+     TooltipBox[
+      TagBox[
+       DynamicBox[{
+         FEPrivate`If[
+          CurrentValue["MouseOver"], 
+          EdgeForm[{
+            GrayLevel[0.5], 
+            AbsoluteThickness[1.5], 
+            Opacity[0.66]}], {}, {}], 
+         RectangleBox[{0.3, 0.}, {0.4, 51.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{336.44124695622185`, 369.0353717233696}, {
+         52.12414021602052, 133.0501361592933}}],
+       StatusArea[#, 51.]& ,
+       TagBoxNote->"51."],
+      StyleBox["51.`", {
+        GrayLevel[0]}, StripOnInput -> False]],
+     Annotation[#, 
+      Style[51., {
+        GrayLevel[0]}], "Tooltip"]& ], 
+    TagBox[
+     TooltipBox[
+      TagBox[
+       DynamicBox[{
+         FEPrivate`If[
+          CurrentValue["MouseOver"], 
+          EdgeForm[{
+            GrayLevel[0.5], 
+            AbsoluteThickness[1.5], 
+            Opacity[0.66]}], {}, {}], 
+         RectangleBox[{0.4, 0.}, {0.5, 30.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{367.6353716280022, 400.22949639514997`}, {
+         84.87013850633448, 133.0501361592933}}],
+       StatusArea[#, 30.]& ,
+       TagBoxNote->"30."],
+      StyleBox["30.`", {
+        GrayLevel[0]}, StripOnInput -> False]],
+     Annotation[#, 
+      Style[30., {
+        GrayLevel[0]}], "Tooltip"]& ], 
+    TagBox[
+     TooltipBox[
+      TagBox[
+       DynamicBox[{
+         FEPrivate`If[
+          CurrentValue["MouseOver"], 
+          EdgeForm[{
+            GrayLevel[0.5], 
+            AbsoluteThickness[1.5], 
+            Opacity[0.66]}], {}, {}], 
+         RectangleBox[{0.5, 0.}, {0.6, 10.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{398.82949629978253`, 431.4236210669303}, {
+         116.05680354472874`, 133.0501361592933}}],
+       StatusArea[#, 10.]& ,
+       TagBoxNote->"10."],
+      StyleBox["10.`", {
+        GrayLevel[0]}, StripOnInput -> False]],
+     Annotation[#, 
+      Style[10., {
+        GrayLevel[0]}], "Tooltip"]& ], 
+    TagBox[
+     TooltipBox[
+      TagBox[
+       DynamicBox[{
+         FEPrivate`If[
+          CurrentValue["MouseOver"], 
+          EdgeForm[{
+            GrayLevel[0.5], 
+            AbsoluteThickness[1.5], 
+            Opacity[0.66]}], {}, {}], 
+         RectangleBox[{0.6, 0.}, {0.7, 2.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{430.0236209715629, 462.6177457387106}, {
+         128.53146956008644`, 133.0501361592933}}],
        StatusArea[#, 2.]& ,
        TagBoxNote->"2."],
       StyleBox["2.`", {
@@ -6653,22 +7018,22 @@ Cell[BoxData[
             GrayLevel[0.5], 
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
-         RectangleBox[{0.8, 0.}, {0.9, 1.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{496.19387755102025`, 529.123469387755}, {
-         139.93059270944124`, 143.16774812475848`}}],
-       StatusArea[#, 1.]& ,
-       TagBoxNote->"1."],
-      StyleBox["1.`", {
+         RectangleBox[{0.7, 0.}, {0.8, 2.}, "RoundingRadius" -> 0]},
+        ImageSizeCache->{{461.21774564334316`, 493.811870410491}, {
+         128.53146956008644`, 133.0501361592933}}],
+       StatusArea[#, 2.]& ,
+       TagBoxNote->"2."],
+      StyleBox["2.`", {
         GrayLevel[0]}, StripOnInput -> False]],
      Annotation[#, 
-      Style[1., {
+      Style[2., {
         GrayLevel[0]}], "Tooltip"]& ]}, {}, {}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesOrigin->{-0.7, 0.},
   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
   GridLines->{None, None},
-  PlotRange->{{-0.7, 0.9}, {All, All}},
+  PlotRange->{{-0.7, 0.8}, {All, All}},
   PlotRangePadding->{{
      Scaled[0.02], 
      Scaled[0.02]}, {
@@ -6751,8 +7116,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0., 0.}, {0.0002, 280.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{24.750000000000004`, 
-         71.96576994434136}, {-143.2257399872695, 143.16774812475848`}}],
+        ImageSizeCache->{{24.500000238418576`, 
+         68.43744306803191}, {-133.4365167624253, 133.0501361592933}}],
        StatusArea[#, 280.]& ,
        TagBoxNote->"280."],
       StyleBox["280.`", {
@@ -6771,8 +7136,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0002, 0.}, {0.0004, 185.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{70.46576994434136, 
-         117.68153988868272`}, {-46.56544937783141, 143.16774812475848`}}],
+        ImageSizeCache->{{67.03744297266448, 
+         110.97488580227781`}, {-43.49640241062761, 133.0501361592933}}],
        StatusArea[#, 185.]& ,
        TagBoxNote->"185."],
       StyleBox["185.`", {
@@ -6791,8 +7156,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0004, 0.}, {0.0006, 135.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{116.18153988868272`, 163.39730983302405`}, {
-         4.308387785030703, 143.16774812475848`}}],
+        ImageSizeCache->{{109.57488570691038`, 153.51232853652368`}, {
+         3.840499879792276, 133.0501361592933}}],
        StatusArea[#, 135.]& ,
        TagBoxNote->"135."],
       StyleBox["135.`", {
@@ -6811,8 +7176,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0006, 0.}, {0.0008, 95.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{161.89730983302405`, 209.11307977736544`}, {
-         45.007457515320425`, 143.16774812475848`}}],
+        ImageSizeCache->{{152.11232844115625`, 196.0497712707696}, {
+         41.71002171212814, 133.0501361592933}}],
        StatusArea[#, 95.]& ,
        TagBoxNote->"95."],
       StyleBox["95.`", {
@@ -6831,8 +7196,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0008, 0.}, {0.001, 67.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{207.61307977736544`, 254.8288497217068}, {
-         73.49680632652321, 143.16774812475848`}}],
+        ImageSizeCache->{{194.64977117540218`, 238.5872140050155}, {
+         68.21868699476326, 133.0501361592933}}],
        StatusArea[#, 67.]& ,
        TagBoxNote->"67."],
       StyleBox["67.`", {
@@ -6851,8 +7216,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.001, 0.}, {0.0012, 56.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{253.3288497217068, 300.5446196660481}, {
-         84.68905050235288, 143.16774812475848`}}],
+        ImageSizeCache->{{237.18721390964808`, 281.12465673926135`}, {
+         78.63280549865561, 133.0501361592933}}],
        StatusArea[#, 56.]& ,
        TagBoxNote->"56."],
       StyleBox["56.`", {
@@ -6871,8 +7236,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0012, 0.}, {0.0014, 28.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{299.0446196660481, 346.2603896103895}, {
-         113.17839931355567`, 143.16774812475848`}}],
+        ImageSizeCache->{{279.7246566438939, 323.6620994735073}, {
+         105.14147078129074`, 133.0501361592933}}],
        StatusArea[#, 28.]& ,
        TagBoxNote->"28."],
       StyleBox["28.`", {
@@ -6891,8 +7256,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0014, 0.}, {0.0016, 13.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{344.7603896103895, 391.9761595547309}, {
-         128.4405504624143, 143.16774812475848`}}],
+        ImageSizeCache->{{322.26209937813985`, 366.1995422077532}, {
+         119.3425414684167, 133.0501361592933}}],
        StatusArea[#, 13.]& ,
        TagBoxNote->"13."],
       StyleBox["13.`", {
@@ -6911,8 +7276,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0016, 0.}, {0.0018, 14.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{390.4761595547309, 437.6919294990722}, {
-         127.42307371915709`, 143.16774812475848`}}],
+        ImageSizeCache->{{364.7995421123858, 408.7369849419991}, {
+         118.3958034226083, 133.0501361592933}}],
        StatusArea[#, 14.]& ,
        TagBoxNote->"14."],
       StyleBox["14.`", {
@@ -6931,8 +7296,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.0018, 0.}, {0.002, 5.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{436.1919294990722, 483.4076994434136}, {
-         136.58036440847226`, 143.16774812475848`}}],
+        ImageSizeCache->{{407.33698484663165`, 451.274427676245}, {
+         126.91644583488387`, 133.0501361592933}}],
        StatusArea[#, 5.]& ,
        TagBoxNote->"5."],
       StyleBox["5.`", {
@@ -6951,8 +7316,8 @@ Cell[BoxData[
             AbsoluteThickness[1.5], 
             Opacity[0.66]}], {}, {}], 
          RectangleBox[{0.002, 0.}, {0.0022, 2.}, "RoundingRadius" -> 0]},
-        ImageSizeCache->{{481.9076994434136, 529.123469387755}, {
-         139.63279463824398`, 143.16774812475848`}}],
+        ImageSizeCache->{{449.8744275808776, 493.81187041049094`}, {
+         129.75665997230905`, 133.0501361592933}}],
        StatusArea[#, 2.]& ,
        TagBoxNote->"2."],
       StyleBox["2.`", {
@@ -6976,7 +7341,12 @@ Cell[BoxData[
 
 Cell["\<\
 Not such a big deal for us that we\[CloseCurlyQuote]re going to worry about it\
-\>", "Text"],
+\>", "Text"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["zorders", "Subsection"],
 
 Cell[CellGroupData[{
 
@@ -7113,7 +7483,16 @@ Cell[BoxData[
         "-", 
         RowBox[{
         "triangle3d", "\[LeftDoubleBracket]", "1", 
-         "\[RightDoubleBracket]"}]}]}], "]"}], "]"}]}], "}"}]}]], "Input"],
+         "\[RightDoubleBracket]"}]}]}], "]"}], "]"}]}], "}"}]}]], "Input"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["triangle2d ", "Subsection"],
+
+Cell["\<\
+is a triple of 2d points and an oriented normal vector\
+\>", "Text"],
 
 Cell[CellGroupData[{
 
@@ -7887,3492 +8266,3496 @@ Cell[BoxData[
 
 Cell[BoxData[
  GraphicsBox[{
-   {RGBColor[0.6033410690593148, 0.5876110428686658, 0.34263341693922156`], 
+   {RGBColor[0.7640670224809625, 0.6883394506346578, 0.11346349322037441`], 
     PolygonBox[{{-0.020093304571218048`, 
      0.9079195207098577}, {-0.1452322086942782, 
      0.8961890591333793}, {-0.13654231697644925`, 0.854156297324222}}]}, 
-   {RGBColor[0.9884639839916305, 0.22262920368833106`, 0.7102575076970927], 
+   {RGBColor[0.5636756530366265, 0.1738761815375054, 0.31277655963217943`], 
     PolygonBox[{{-0.01763711589944114, 
      0.9590446327059591}, {-0.15426964813292393`, 
      0.9462366555927625}, {-0.1452322086942782, 0.8961890591333793}}]}, 
-   {RGBColor[0.46284265732593655`, 0.8053649042012987, 0.7650065708573015], 
+   {RGBColor[0.3918966826352577, 0.9978352104389792, 0.04134701013189801], 
     PolygonBox[{{-0.25855910375164054`, 
      0.8640129937920227}, {-0.1452322086942782, 
      0.8961890591333793}, {-0.15426964813292393`, 0.9462366555927625}}]}, 
-   {RGBColor[0.8169340285565792, 0.352987334727872, 0.22557044939632487`], 
+   {RGBColor[0.694578959265892, 0.6768715570123736, 0.900051813836946], 
     PolygonBox[{{-0.1452322086942782, 
      0.8961890591333793}, {-0.020093304571218048`, 
      0.9079195207098577}, {-0.01763711589944114, 0.9590446327059591}}]}, 
-   {RGBColor[0.9313612130415807, 0.36432570457752633`, 0.8497262590415264], 
+   {RGBColor[0.4717887636063032, 0.6720482668287253, 0.9900838360913919], 
     PolygonBox[{{-0.23628472169330866`, 
      0.8258371326251137}, {-0.13654231697644925`, 
      0.854156297324222}, {-0.1452322086942782, 0.8961890591333793}}]}, 
-   {RGBColor[0.18924617700425417`, 0.3009101120505955, 0.42409734835554813`], 
+   {RGBColor[0.08842891092867311, 0.5414195660847736, 0.513263346648958], 
     PolygonBox[{{-0.13654231697644925`, 
      0.854156297324222}, {-0.026403364194804088`, 
      0.8644806712141384}, {-0.020093304571218048`, 0.9079195207098577}}]}, 
-   {RGBColor[0.26298116370207714`, 0.5404922784557544, 0.6162451988575672], 
+   {RGBColor[0.11404700788072497`, 0.37314787343176614`, 0.7864325748583627], 
     PolygonBox[{{-0.026403364194804088`, 
      0.8644806712141384}, {-0.13654231697644925`, 
      0.854156297324222}, {-0.12976295448948635`, 0.823398657503396}}]}, 
-   {RGBColor[0.20986178144344314`, 0.9163986233493109, 0.5159106162345002], 
+   {RGBColor[0.6793464109152911, 0.894132232714099, 0.8226281165104594], 
     PolygonBox[{{-0.1452322086942782, 
      0.8961890591333793}, {-0.25855910375164054`, 
      0.8640129937920227}, {-0.23628472169330866`, 0.8258371326251137}}]}, 
-   {RGBColor[0.1178540019178762, 0.8493670143503582, 0.22022198184680564`], 
+   {RGBColor[0.7581196038856679, 0.7970534501806807, 0.30549459883854935`], 
     PolygonBox[{{-0.21771355147239896`, 
      0.7984274122697267}, {-0.12976295448948635`, 
      0.823398657503396}, {-0.13654231697644925`, 0.854156297324222}}]}, 
-   {RGBColor[0.7114427813446358, 0.561803476768796, 0.6078520380608783], 
+   {RGBColor[0.08330288437952293, 0.5243426896479799, 0.7398860020344029], 
     PolygonBox[{{-0.12976295448948635`, 
      0.823398657503396}, {-0.03264443967811379, 
      0.8325025023235862}, {-0.026403364194804088`, 0.8644806712141384}}]}, 
-   {RGBColor[0.1055461379363618, 0.881950805084643, 0.4956108901915808], 
+   {RGBColor[0.8476351603631307, 0.7436623250813141, 0.47508685535295014`], 
     PolygonBox[{{-0.15426964813292393`, 
      0.9462366555927625}, {-0.2780050393649405, 
      0.9111054635596242}, {-0.25855910375164054`, 0.8640129937920227}}]}, 
-   {RGBColor[0.8125708504337119, 0.3142658317236178, 0.8206418074243014], 
+   {RGBColor[0.5994861136208647, 0.07264235393603746, 0.22563709283018607`], 
     PolygonBox[{{-0.03264443967811379, 
      0.8325025023235862}, {-0.12976295448948635`, 
      0.823398657503396}, {-0.12643784046324472`, 0.8076796680610205}}]}, 
-   {RGBColor[0.535028383853758, 0.6742370703714236, 0.22932656731447443`], 
+   {RGBColor[0.8197443092832455, 0.07327309580216368, 0.1650340633653875], 
     PolygonBox[{{-0.13654231697644925`, 
      0.854156297324222}, {-0.23628472169330866`, 
      0.8258371326251137}, {-0.21771355147239896`, 0.7984274122697267}}]}, 
-   {RGBColor[0.30144938277033395`, 0.13947434382082768`, 0.2389206061967073], 
+   {RGBColor[0.9558276416676754, 0.4244394160360969, 0.8991665803033517], 
     PolygonBox[{{-0.20897661167880732`, 
      0.7842451414776072}, {-0.12643784046324472`, 
      0.8076796680610205}, {-0.12976295448948635`, 0.823398657503396}}]}, 
-   {RGBColor[0.6784801169563772, 0.16096388939840622`, 0.8762747635828199], 
+   {RGBColor[0.43220193819673103`, 0.3010477714300428, 0.7353478487631366], 
     PolygonBox[{{-0.12643784046324472`, 
      0.8076796680610205}, {-0.03529513497741997, 
      0.816223526442821}, {-0.03264443967811379, 0.8325025023235862}}]}, 
-   {RGBColor[0.9236525662747406, 0.22294388492701445`, 0.1410186084992946], 
+   {RGBColor[0.988179913970527, 0.409418913389467, 0.9317783604656769], 
     PolygonBox[{{-0.2780050393649405, 
      0.9111054635596242}, {-0.15426964813292393`, 
      0.9462366555927625}, {-0.1626181182456439, 1.0007388405150115`}}]}, 
-   {RGBColor[0.7911838131138811, 0.2687522926454242, 0.14657290687256808`], 
+   {RGBColor[0.5915115974615268, 0.4224704370733372, 0.2253401869959959], 
     PolygonBox[{{-0.15426964813292393`, 
      0.9462366555927625}, {-0.01763711589944114, 
      0.9590446327059591}, {-0.020728493044339547`, 1.0140397721011296`}}]}, 
-   {RGBColor[0.6519212974350861, 0.8057629818856036, 0.6055955045889461], 
+   {RGBColor[0.7536625209924162, 0.7458737204070616, 0.9276471740177927], 
     PolygonBox[{{0.09252676696424773, 
      0.8961771711845964}, {-0.020093304571218048`, 
      0.9079195207098577}, {-0.026403364194804088`, 0.8644806712141384}}]}, 
-   {RGBColor[0.8395270859539161, 0.0478233665009713, 0.8437373833375461], 
+   {RGBColor[0.5743879880998632, 0.24440899067038857`, 0.3619387105988603], 
     PolygonBox[{{-0.12976295448948635`, 
      0.823398657503396}, {-0.21771355147239896`, 
      0.7984274122697267}, {-0.20897661167880732`, 0.7842451414776072}}]}, 
-   {RGBColor[0.20633594742912287`, 0.9846953574084627, 0.5734720714788126], 
+   {RGBColor[0.8880544547078102, 0.6235702903323819, 0.8460516113498839], 
     PolygonBox[{{0.10532665151197483`, 
      0.9462236757777803}, {-0.01763711589944114, 
      0.9590446327059591}, {-0.020093304571218048`, 0.9079195207098577}}]}, 
-   {RGBColor[0.18057671995952007`, 0.3096789644684266, 0.46482801173907484`], 
+   {RGBColor[0.9687370497182712, 0.8097222422191219, 0.9278112157161613], 
     PolygonBox[{{-0.020728493044339547`, 
      1.0140397721011296`}, {-0.1626181182456439, 
      1.0007388405150115`}, {-0.15426964813292393`, 0.9462366555927625}}]}, 
-   {RGBColor[0.9269048496100936, 0.18704830285657903`, 0.3797292661813523], 
+   {RGBColor[0.9610844862298071, 0.5220118184950202, 0.6016363092846899], 
     PolygonBox[{{0.07271734284666848, 
      0.8541458343412309}, {-0.026403364194804088`, 
      0.8644806712141384}, {-0.03264443967811379, 0.8325025023235862}}]}, 
-   {RGBColor[0.1722915741760005, 0.011508385040210678`, 0.9364043152562089], 
+   {RGBColor[0.9024234564744646, 0.9151551682986352, 0.49347662944736914`], 
     PolygonBox[{{0.05475779096462585, 
      0.8233894314661232}, {-0.03264443967811379, 
      0.8325025023235862}, {-0.03529513497741997, 0.816223526442821}}]}, 
-   {RGBColor[0.11384266061211679`, 0.5539868934059364, 0.9222281756290933], 
+   {RGBColor[0.9236503684596027, 0.3691420987131844, 0.9069597718847107], 
     PolygonBox[{{-0.3155010901542871, 
      0.7835216683382027}, {-0.23628472169330866`, 
      0.8258371326251137}, {-0.25855910375164054`, 0.8640129937920227}}]}, 
-   {RGBColor[0.12546169732540569`, 0.674464825331657, 0.16784719655837343`], 
+   {RGBColor[0.4448859603770883, 0.5223336342476395, 0.16160679593410077`], 
     PolygonBox[{{-0.026403364194804088`, 0.8644806712141384}, {
      0.07271734284666848, 0.8541458343412309}, {0.09252676696424773, 
      0.8961771711845964}}]}, 
-   {RGBColor[0.6192969392597272, 0.5167470415800173, 0.598866684234669], 
+   {RGBColor[0.6941246076183081, 0.20204828744830605`, 0.8165542207112537], 
     PolygonBox[{{-0.3485641425851192, 
      0.8159343306063117}, {-0.25855910375164054`, 
      0.8640129937920227}, {-0.2780050393649405, 0.9111054635596242}}]}, 
-   {RGBColor[0.6040120994580864, 0.3321576209817283, 0.5364856483588056], 
+   {RGBColor[0.328028162415815, 0.11700691520751882`, 0.8672076079035687], 
     PolygonBox[{{-0.020093304571218048`, 0.9079195207098577}, {
      0.09252676696424773, 0.8961771711845964}, {0.10532665151197483`, 
      0.9462236757777803}}]}, 
-   {RGBColor[0.5892029628873969, 0.39814632603008016`, 0.34762438843311094`], 
+   {RGBColor[0.12930470419908802`, 0.0509225268408795, 0.8285656860096022], 
     PolygonBox[{{-0.1626181182456439, 
      1.0007388405150115`}, {-0.2911137830805374, 
      0.9642561164468609}, {-0.2780050393649405, 0.9111054635596242}}]}, 
-   {RGBColor[0.07338733877247905, 0.23705770472193244`, 0.35745728922034337`],
-     PolygonBox[{{-0.2875651597117959, 
+   {RGBColor[0.7454650596163606, 0.3836118528193566, 0.848888986667538], 
+    PolygonBox[{{-0.2875651597117959, 
      0.7611143071840519}, {-0.21771355147239896`, 
      0.7984274122697267}, {-0.23628472169330866`, 0.8258371326251137}}]}, 
-   {RGBColor[0.8442898489885879, 0.0573248973364171, 0.5845838497879459], 
+   {RGBColor[0.6562342096905358, 0.0868009183078926, 0.805658722850416], 
     PolygonBox[{{-0.03264443967811379, 0.8325025023235862}, {
      0.05475779096462585, 0.8233894314661232}, {0.07271734284666848, 
      0.8541458343412309}}]}, 
-   {RGBColor[0.7150898953925182, 0.8348067661694505, 0.4381098746103964], 
+   {RGBColor[0.7181339345850786, 0.3964649671537708, 0.5755852600774198], 
     PolygonBox[{{-0.27453034430600265`, 
      0.7492279465113995}, {-0.20897661167880732`, 
      0.7842451414776072}, {-0.21771355147239896`, 0.7984274122697267}}]}, 
-   {RGBColor[0.7759335556385059, 0.3273157831803841, 0.37508169068036423`], 
-    PolygonBox[{{-0.03529513497741997, 0.816223526442821}, {
+   {RGBColor[0.11686291477835709`, 0.6466367676146647, 0.031966609570940996`],
+     PolygonBox[{{-0.03529513497741997, 0.816223526442821}, {
      0.04672891551972181, 0.8076710097232215}, {0.05475779096462585, 
      0.8233894314661232}}]}, 
-   {RGBColor[0.6922607968709278, 0.7029807153011542, 0.8549032658803895], 
+   {RGBColor[0.8211575167361522, 0.8561183059855726, 0.5545781419485714], 
     PolygonBox[{{0.1069662828810756, 
      1.0007253612949554`}, {-0.020728493044339547`, 
      1.0140397721011296`}, {-0.01763711589944114, 0.9590446327059591}}]}, 
-   {RGBColor[0.3049462939361318, 0.5230423351864937, 0.9609982221888396], 
+   {RGBColor[0.12966100929973745`, 0.1840114677165885, 0.2797817894501382], 
     PolygonBox[{{-0.25855910375164054`, 
      0.8640129937920227}, {-0.3485641425851192, 
      0.8159343306063117}, {-0.3155010901542871, 0.7835216683382027}}]}, 
-   {RGBColor[0.4599947361123371, 0.21365971508091497`, 0.48944080491525654`], 
+   {RGBColor[0.7303562528379894, 0.6613104298792549, 0.9929196622998757], 
     PolygonBox[{{-0.1626181182456439, 
      1.0007388405150115`}, {-0.020728493044339547`, 
      1.0140397721011296`}, {-0.02784086728680082, 1.0739798944420669`}}]}, 
-   {RGBColor[0.11396678866386867`, 0.8084802101214068, 0.7310947028482804], 
-    PolygonBox[{{-0.2911137830805374, 
+   {RGBColor[0.6111325817613349, 0.48079512503181787`, 0.028301567639895886`],
+     PolygonBox[{{-0.2911137830805374, 
      0.9642561164468609}, {-0.1626181182456439, 
      1.0007388405150115`}, {-0.17082016361729874`, 1.0605768492533614`}}]}, 
-   {RGBColor[0.5818897279446045, 0.45762017302865576`, 0.6157922705574752], 
+   {RGBColor[0.6330780143923578, 0.17144797877194584`, 0.7371659558323849], 
     PolygonBox[{{-0.23628472169330866`, 
      0.8258371326251137}, {-0.3155010901542871, 
      0.7835216683382027}, {-0.2875651597117959, 0.7611143071840519}}]}, 
-   {RGBColor[0.15462128801332664`, 0.6097148629706644, 0.471435145350362], 
+   {RGBColor[0.11140996629092714`, 0.06895999972362499, 0.4717550042839329], 
     PolygonBox[{{-0.3762768445171387, 
      0.8586109994093771}, {-0.2780050393649405, 
      0.9111054635596242}, {-0.2911137830805374, 0.9642561164468609}}]}, 
-   {RGBColor[0.09265189023276466, 0.9193410228303986, 0.01824045777722083], 
+   {RGBColor[0.8402227320122446, 0.551815175892185, 0.0919329246042504], 
     PolygonBox[{{-0.01763711589944114, 0.9590446327059591}, {
      0.10532665151197483`, 0.9462236757777803}, {0.1069662828810756, 
      1.0007253612949554`}}]}, 
-   {RGBColor[0.8711501206835588, 0.525963138938381, 0.5967931874636518], 
+   {RGBColor[0.796325958494956, 0.20913080515958682`, 0.6650373777569016], 
     PolygonBox[{{-0.2780050393649405, 
      0.9111054635596242}, {-0.3762768445171387, 
      0.8586109994093771}, {-0.3485641425851192, 0.8159343306063117}}]}, 
-   {RGBColor[0.2422529071788504, 0.4413717514780906, 0.49679729088215874`], 
+   {RGBColor[0.09296044814512827, 0.7841681212448828, 0.3683052801488136], 
     PolygonBox[{{-0.21771355147239896`, 
      0.7984274122697267}, {-0.2875651597117959, 
      0.7611143071840519}, {-0.27453034430600265`, 0.7492279465113995}}]}, 
-   {RGBColor[0.41546529411639166`, 0.6720067323245604, 0.8438207755371736], 
+   {RGBColor[0.5753847790553464, 0.20005587343687758`, 0.524778659517221], 
     PolygonBox[{{-0.02784086728680082, 
      1.0739798944420669`}, {-0.17082016361729874`, 
      1.0605768492533614`}, {-0.1626181182456439, 1.0007388405150115`}}]}, 
-   {RGBColor[0.7984474426167472, 0.8238168272049762, 0.3900372166573738], 
+   {RGBColor[0.49248114659676556`, 0.12688483898067893`, 0.5785568580055913], 
     PolygonBox[{{0.17152739692349586`, 0.863991489466989}, {
      0.09252676696424773, 0.8961771711845964}, {0.07271734284666848, 
      0.8541458343412309}}]}, 
-   {RGBColor[0.3724057799824405, 0.8303615315358306, 0.3201624039452462], 
+   {RGBColor[0.5161493370864041, 0.7310643874242653, 0.9847875272403697], 
     PolygonBox[{{0.14224812459950667`, 0.8258182059827991}, {
      0.07271734284666848, 0.8541458343412309}, {0.05475779096462585, 
      0.8233894314661232}}]}, 
-   {RGBColor[0.9693843135503204, 0.5330735000538518, 0.6282966026483592], 
+   {RGBColor[0.6164894587583019, 0.8973008951359402, 0.4882879777824607], 
     PolygonBox[{{-0.17082016361729874`, 
      1.0605768492533614`}, {-0.30030336018579007`, 
      1.0238138721592827`}, {-0.2911137830805374, 0.9642561164468609}}]}, 
-   {RGBColor[0.44985310601647566`, 0.8255056646787418, 0.7846406223880984], 
+   {RGBColor[0.769762003087409, 0.4453838224089406, 0.10722866258635078`], 
     PolygonBox[{{0.11606900852378792`, 0.7984107231417269}, {
      0.05475779096462585, 0.8233894314661232}, {0.04672891551972181, 
      0.8076710097232215}}]}, 
-   {RGBColor[0.19258905467910203`, 0.6729545960684757, 0.10945049431915166`], 
+   {RGBColor[0.5012588567487868, 0.6205826402308052, 0.3016714116537631], 
     PolygonBox[{{0.1915831714576789, 0.911081984149083}, {
      0.10532665151197483`, 0.9462236757777803}, {0.09252676696424773, 
      0.8961771711845964}}]}, 
-   {RGBColor[0.3657719552281333, 0.20445709859328187`, 0.1079019559907155], 
+   {RGBColor[0.45676042960967855`, 0.535452812638137, 0.731178213979365], 
     PolygonBox[{{-0.2911137830805374, 
      0.9642561164468609}, {-0.3931664264935831, 
      0.9097421130797583}, {-0.3762768445171387, 0.8586109994093771}}]}, 
-   {RGBColor[
-    0.43496685645250843`, 0.32896591052769386`, 0.10276807327053894`], 
+   {RGBColor[0.7252984995102387, 0.9865659876719746, 0.6992134402775694], 
     PolygonBox[{{0.10083460338195802`, 
      1.0605632665150115`}, {-0.02784086728680082, 
      1.0739798944420669`}, {-0.020728493044339547`, 1.0140397721011296`}}]}, 
-   {RGBColor[0.04702230609783187, 0.0821598609529095, 0.30891186909100044`], 
+   {RGBColor[0.43682008772377023`, 0.9005733841980375, 0.25393119201356606`], 
     PolygonBox[{{-0.3931664264935831, 
      0.9097421130797583}, {-0.2911137830805374, 
      0.9642561164468609}, {-0.30030336018579007`, 1.0238138721592827`}}]}, 
-   {RGBColor[0.7705061017745716, 0.4003225720274044, 0.1498554265300145], 
+   {RGBColor[0.6749448629512909, 0.7757772323037939, 0.1504226585170405], 
     PolygonBox[{{-0.020728493044339547`, 1.0140397721011296`}, {
      0.1069662828810756, 1.0007253612949554`}, {0.10083460338195802`, 
      1.0605632665150115`}}]}, 
-   {RGBColor[
-    0.31754327629913726`, 0.17054911909428827`, 0.006594470135357966], 
+   {RGBColor[0.5461228056702534, 0.7112892633356118, 0.9620024195292558], 
     PolygonBox[{{-0.36406177168604775`, 
      0.731207786352101}, {-0.3155010901542871, 
      0.7835216683382027}, {-0.3485641425851192, 0.8159343306063117}}]}, 
-   {RGBColor[0.19645207464715253`, 0.23488661635427688`, 0.3264432957500336], 
+   {RGBColor[0.8054384628495685, 0.47756666611089593`, 0.31296127585244204`], 
     PolygonBox[{{0.07271734284666848, 0.8541458343412309}, {
      0.14224812459950667`, 0.8258182059827991}, {0.17152739692349586`, 
      0.863991489466989}}]}, 
-   {RGBColor[0.6169026884724551, 0.6975746790500166, 0.5053362813516957], 
+   {RGBColor[0.39503862568748116`, 0.4411142275842337, 0.7272778621573985], 
     PolygonBox[{{-0.3303847620409428, 
      0.7149851806141416}, {-0.2875651597117959, 
      0.7611143071840519}, {-0.3155010901542871, 0.7835216683382027}}]}, 
-   {RGBColor[0.35328691099010623`, 0.7406234602373845, 0.08899827205905542], 
+   {RGBColor[0.33163043128859493`, 0.9512447845569048, 0.3003677233456392], 
     PolygonBox[{{-0.17082016361729874`, 
      1.0605768492533614`}, {-0.02784086728680082, 
      1.0739798944420669`}, {-0.03865625161032207, 1.1416165999875354`}}]}, 
-   {RGBColor[0.02340132500767922, 0.18191701959798334`, 0.7476512484673294], 
+   {RGBColor[0.2762577471550305, 0.9161838275499321, 0.6607632502942946], 
     PolygonBox[{{-0.30030336018579007`, 
      1.0238138721592827`}, {-0.17082016361729874`, 
      1.0605768492533614`}, {-0.17940795190792969`, 1.1284227601113377`}}]}, 
-   {RGBColor[0.2949742553516974, 0.28143229509200784`, 0.09041770262860815], 
+   {RGBColor[0.63624635356062, 0.29627392779680894`, 0.292704038024727], 
     PolygonBox[{{0.05475779096462585, 0.8233894314661232}, {
      0.11606900852378792`, 0.7984107231417269}, {0.14224812459950667`, 
      0.8258182059827991}}]}, 
-   {RGBColor[0.813752203311676, 0.8171197562196084, 0.7269346355562598], 
+   {RGBColor[0.42624911089756745`, 0.6316576403374126, 0.21057634557703686`], 
     PolygonBox[{{-0.31471495354866114`, 
      0.7059372593680641}, {-0.27453034430600265`, 
      0.7492279465113995}, {-0.2875651597117959, 0.7611143071840519}}]}, 
-   {RGBColor[0.7901162309739966, 0.3106865712409159, 0.0028948177511003426`], 
-    PolygonBox[{{0.04672891551972181, 0.8076710097232215}, {
+   {RGBColor[0.04733759393715675, 0.03361526272069737, 0.023305110936048035`],
+     PolygonBox[{{0.04672891551972181, 0.8076710097232215}, {
      0.10426771124579468`, 0.7842294792614609}, {0.11606900852378792`, 
      0.7984107231417269}}]}, 
-   {RGBColor[0.4888682686189698, 0.09052881670424284, 0.15680766894989473`], 
+   {RGBColor[0.666648173118557, 0.6821359955529247, 0.128373740926643], 
     PolygonBox[{{-0.4037384025931291, 
      0.7564957603448428}, {-0.3485641425851192, 
      0.8159343306063117}, {-0.3762768445171387, 0.8586109994093771}}]}, 
-   {RGBColor[0.3370123187800824, 0.5629433077036832, 0.20589027127060344`], 
+   {RGBColor[0.5612678525914583, 0.6520873193787624, 0.10322986036487558`], 
     PolygonBox[{{0.09252676696424773, 0.8961771711845964}, {
      0.17152739692349586`, 0.863991489466989}, {0.1915831714576789, 
      0.911081984149083}}]}, 
-   {RGBColor[0.10256707702644108`, 0.7891496471553372, 0.1544377191857822], 
+   {RGBColor[0.5965619102264181, 0.42472989026031804`, 0.10090580992027376`], 
     PolygonBox[{{0.19654122682704098`, 0.9642317336963656}, {
      0.1069662828810756, 1.0007253612949554`}, {0.10532665151197483`, 
      0.9462236757777803}}]}, 
-   {RGBColor[0.989550149868722, 0.9310509697177634, 0.06435383164954378], 
+   {RGBColor[0.05412100736347547, 0.6192999728746018, 0.17679412764377522`], 
     PolygonBox[{{-0.03865625161032207, 
      1.1416165999875354`}, {-0.17940795190792969`, 
      1.1284227601113377`}, {-0.17082016361729874`, 1.0605768492533614`}}]}, 
-   {RGBColor[0.5702535696583262, 0.81626425111335, 0.0954657028496193], 
+   {RGBColor[0.8205565669049881, 0.33389546651833957`, 0.4661767421956522], 
     PolygonBox[{{-0.3155010901542871, 
      0.7835216683382027}, {-0.36406177168604775`, 
      0.731207786352101}, {-0.3303847620409428, 0.7149851806141416}}]}, 
-   {RGBColor[0.23843740809551228`, 0.3471658320650197, 0.7182255295766107], 
+   {RGBColor[0.038615679238302114`, 0.1915467183425259, 0.9162889566120938], 
     PolygonBox[{{-0.2875651597117959, 
      0.7611143071840519}, {-0.3303847620409428, 
      0.7149851806141416}, {-0.31471495354866114`, 0.7059372593680641}}]}, 
-   {RGBColor[0.6987694563747466, 0.01604130385310576, 0.27870466833906815`], 
+   {RGBColor[0.9557927017200105, 0.5664485460547337, 0.3285200777566084], 
     PolygonBox[{{-0.17940795190792969`, 
      1.1284227601113377`}, {-0.3068733598323188, 
      1.092232447983398}, {-0.30030336018579007`, 1.0238138721592827`}}]}, 
-   {RGBColor[0.7650740478470426, 0.29340963667425823`, 0.63125119823857], 
+   {RGBColor[0.3406093930405154, 0.8014018771484883, 0.9918450088721444], 
     PolygonBox[{{-0.30030336018579007`, 
      1.0238138721592827`}, {-0.4031397103538368, 
      0.9688808762509664}, {-0.3931664264935831, 0.9097421130797583}}]}, 
-   {RGBColor[0.45244757557796067`, 0.4391496203052314, 0.9669778122214456], 
+   {RGBColor[0.2791302551829915, 0.46368301818166113`, 0.5940324807005273], 
     PolygonBox[{{0.10532665151197483`, 0.9462236757777803}, {
      0.1915831714576789, 0.911081984149083}, {0.19654122682704098`, 
      0.9642317336963656}}]}, 
-   {RGBColor[0.9849000495470968, 0.8346615811287081, 0.7340878243395028], 
+   {RGBColor[0.4066487159726013, 0.7918343077057117, 0.05586451383936897], 
     PolygonBox[{{-0.3485641425851192, 
      0.8159343306063117}, {-0.4037384025931291, 
      0.7564957603448428}, {-0.36406177168604775`, 0.731207786352101}}]}, 
-   {RGBColor[0.11083073979659908`, 0.8938673450587846, 0.08614962237890511], 
+   {RGBColor[0.10654908443726385`, 0.9525017648381711, 0.6460837499061896], 
     PolygonBox[{{-0.4365186185111673, 
      0.7937132059448545}, {-0.3762768445171387, 
      0.8586109994093771}, {-0.3931664264935831, 0.9097421130797583}}]}, 
-   {RGBColor[0.021572980239504158`, 0.11504281044823306`, 0.5624777241477623],
-     PolygonBox[{{-0.5643773622715922, 
+   {RGBColor[0.7701656194160889, 0.054554823676371544`, 0.9474867368191155], 
+    PolygonBox[{{-0.5643773622715922, 
      0.8625842374139573}, {-0.5720872384017818, 
      0.8478394951431236}, {-0.4917581907849245, 0.8080536266320196}}]}, 
-   {RGBColor[0.7562333877777416, 0.6760298959171114, 0.11540184154190714`], 
+   {RGBColor[0.6869705697620885, 0.9878148007412535, 0.9348700772716412], 
     PolygonBox[{{-0.4917581907849245, 
      0.8080536266320196}, {-0.4920435736043516, 
      0.8238097091567887}, {-0.5643773622715922, 0.8625842374139573}}]}, 
-   {RGBColor[0.7944801236052961, 0.33104855730198124`, 0.005991681254467807], 
+   {RGBColor[0.9281327284548748, 0.45197613094379596`, 0.7700001905652738], 
     PolygonBox[{{-0.5720872384017818, 
      0.8478394951431236}, {-0.5643773622715922, 
      0.8625842374139573}, {-0.6235470743513488, 0.9070548684578816}}]}, 
-   {RGBColor[0.42921650828655844`, 0.9606594146949148, 0.39018078209378415`], 
+   {RGBColor[0.6400288470508857, 0.24685250659182056`, 0.05574285416341351], 
     PolygonBox[{{-0.6235470743513488, 
      0.9070548684578816}, {-0.6385394811075372, 
      0.8947416069400586}, {-0.5720872384017818, 0.8478394951431236}}]}, 
-   {RGBColor[0.7599973134862255, 0.03474381513394165, 0.38363127868593194`], 
+   {RGBColor[0.4494790798425674, 0.7285860702312199, 0.19074483743475823`], 
     PolygonBox[{{-0.4920435736043516, 
      0.8238097091567887}, {-0.4917581907849245, 
      0.8080536266320196}, {-0.39846041430850493`, 0.7752384900930229}}]}, 
-   {RGBColor[0.8358187077063357, 0.705944238875061, 0.31959114473027306`], 
-    PolygonBox[{{-0.4979087800065768, 
+   {RGBColor[0.17476978623763273`, 0.0003007338487590605, 0.6616480181824662],
+     PolygonBox[{{-0.4979087800065768, 
      0.7892600154653076}, {-0.4917581907849245, 
      0.8080536266320196}, {-0.5720872384017818, 0.8478394951431236}}]}, 
-   {RGBColor[0.22891860737393976`, 0.4829101170295824, 0.6951141169114334], 
+   {RGBColor[0.4936318216660369, 0.07313718635020439, 0.8869839458197528], 
     PolygonBox[{{-0.02784086728680082, 1.0739798944420669`}, {
      0.10083460338195802`, 1.0605632665150115`}, {0.08801488821027162, 
      1.1284093889693319`}}]}, 
-   {RGBColor[0.021525060522073147`, 0.4838289476600208, 0.38181676030383493`],
-     PolygonBox[{{-0.4031397103538368, 
+   {RGBColor[0.4126858973110539, 0.36294695511359865`, 0.19954515027900932`], 
+    PolygonBox[{{-0.4031397103538368, 
      0.9688808762509664}, {-0.30030336018579007`, 
      1.0238138721592827`}, {-0.3068733598323188, 1.092232447983398}}]}, 
-   {RGBColor[0.2751425916188701, 0.924743478264463, 0.9138106214215058], 
+   {RGBColor[0.35368507537187055`, 0.837104356121132, 0.7239924396051334], 
     PolygonBox[{{-0.5821268601306107, 
      0.8288863843792198}, {-0.5720872384017818, 
      0.8478394951431236}, {-0.6385394811075372, 0.8947416069400586}}]}, 
-   {RGBColor[0.2531858471786179, 0.6507510157936851, 0.5926000421806612], 
+   {RGBColor[0.36348897367690114`, 0.910916854205988, 0.08618016150126984], 
     PolygonBox[{{0.08801488821027162, 
      1.1284093889693319`}, {-0.03865625161032207, 
      1.1416165999875354`}, {-0.02784086728680082, 1.0739798944420669`}}]}, 
-   {RGBColor[0.3990881039948513, 0.5222465267594893, 0.945268756570425], 
+   {RGBColor[0.03964844816766111, 0.5896815411459098, 0.9888273453145731], 
     PolygonBox[{{-0.5618154184806048, 
      0.867682031868943}, {-0.5643773622715922, 
      0.8625842374139573}, {-0.4920435736043516, 0.8238097091567887}}]}, 
-   {RGBColor[0.4596913780134162, 0.7880925486469659, 0.219322441635605], 
+   {RGBColor[0.39990325306809704`, 0.4275003846742229, 0.6153791366735593], 
     PolygonBox[{{-0.39846041430850493`, 
      0.7752384900930229}, {-0.4082121249475887, 
      0.7926673944569614}, {-0.4920435736043516, 0.8238097091567887}}]}, 
-   {RGBColor[0.2890960634356845, 0.08498705305952514, 0.0744687282391936], 
+   {RGBColor[0.1807058265723842, 0.15325140361734846`, 0.09386818996281021], 
     PolygonBox[{{-0.4974376369430304, 
      0.8304396639106918}, {-0.4920435736043516, 
      0.8238097091567887}, {-0.4082121249475887, 0.7926673944569614}}]}, 
-   {RGBColor[0.8190469343404276, 0.4329076302948345, 0.6488313269548545], 
+   {RGBColor[0.6502246378525909, 0.7158583118416213, 0.20296851335521504`], 
     PolygonBox[{{-0.5720872384017818, 
      0.8478394951431236}, {-0.5821268601306107, 
      0.8288863843792198}, {-0.4979087800065768, 0.7892600154653076}}]}, 
-   {RGBColor[0.32731041101017144`, 0.2011403944513266, 0.013234124264124958`],
-     PolygonBox[{{-0.6138978334327172, 
+   {RGBColor[0.688215767548729, 0.19899478044625707`, 0.4004156028053689], 
+    PolygonBox[{{-0.6138978334327172, 
      0.9090960719568636}, {-0.6235470743513488, 
      0.9070548684578816}, {-0.5643773622715922, 0.8625842374139573}}]}, 
-   {RGBColor[0.34295837249824745`, 0.538152233352988, 0.5730798144599931], 
+   {RGBColor[0.8705601613170268, 0.0743270524592905, 0.3724008547133446], 
     PolygonBox[{{-0.4920435736043516, 
      0.8238097091567887}, {-0.4974376369430304, 
      0.8304396639106918}, {-0.5618154184806048, 0.867682031868943}}]}, 
-   {RGBColor[0.023974825570472147`, 0.47202778155357095`, 0.6262095432671524],
-     PolygonBox[{{-0.3762768445171387, 
+   {RGBColor[0.8915789502298372, 0.38418930268185014`, 0.9313809930618517], 
+    PolygonBox[{{-0.3762768445171387, 
      0.8586109994093771}, {-0.4365186185111673, 
      0.7937132059448545}, {-0.4037384025931291, 0.7564957603448428}}]}, 
-   {RGBColor[0.45430379174109325`, 0.25385508710868554`, 0.7637471667226363], 
+   {RGBColor[0.745043995518218, 0.10945962441215307`, 0.12730381052289363`], 
     PolygonBox[{{-0.6385394811075372, 
      0.8947416069400586}, {-0.6235470743513488, 
      0.9070548684578816}, {-0.6662215761576267, 0.9542323338582823}}]}, 
-   {RGBColor[0.4958691810815803, 0.029234766605920948`, 0.1337570336900018], 
+   {RGBColor[0.006253474096362011, 0.5615696082216339, 0.14336769011368578`], 
     PolygonBox[{{-0.6385394811075372, 
      0.8947416069400586}, {-0.6522448252499767, 
      0.8761423216142185}, {-0.5821268601306107, 0.8288863843792198}}]}, 
-   {RGBColor[0.31381804743841624`, 0.015787754985209013`, 0.5368818246585567],
-     PolygonBox[{{-0.40014770806735594`, 
+   {RGBColor[0.8042583632108558, 0.7507643911294446, 0.1782221208199526], 
+    PolygonBox[{{-0.40014770806735594`, 
      0.7562248174759313}, {-0.39846041430850493`, 
      0.7752384900930229}, {-0.4917581907849245, 0.8080536266320196}}]}, 
-   {RGBColor[0.4132709314958314, 0.053175039297860716`, 0.9605019231887688], 
+   {RGBColor[
+    0.018332879182070938`, 0.14104281512785377`, 0.02279674650713881], 
     PolygonBox[{{-0.5643773622715922, 
      0.8625842374139573}, {-0.5618154184806048, 
      0.867682031868943}, {-0.6138978334327172, 0.9090960719568636}}]}, 
-   {RGBColor[0.5796618940873457, 0.9617171038208008, 0.22904705034537853`], 
+   {RGBColor[
+    0.14431762916166702`, 0.29829845778994546`, 0.28496067642521794`], 
     PolygonBox[{{-0.6522448252499767, 
      0.8761423216142185}, {-0.6385394811075372, 
      0.8947416069400586}, {-0.6891652843698552, 0.9487704336229489}}]}, 
-   {RGBColor[0.21065989971559107`, 0.022190197185661065`, 0.1904061321086914],
-     PolygonBox[{{-0.6662215761576267, 
+   {RGBColor[0.42687447178903715`, 0.24894701992952983`, 0.8631365306904495], 
+    PolygonBox[{{-0.6662215761576267, 
      0.9542323338582823}, {-0.6891652843698552, 
      0.9487704336229489}, {-0.6385394811075372, 0.8947416069400586}}]}, 
-   {RGBColor[0.8852962662794988, 0.928877862316815, 0.14066147652460148`], 
+   {RGBColor[0.25786021487930944`, 0.4950706702269807, 0.28166220178692747`], 
     PolygonBox[{{-0.4917581907849245, 
      0.8080536266320196}, {-0.4979087800065768, 
      0.7892600154653076}, {-0.40014770806735594`, 0.7562248174759313}}]}, 
-   {RGBColor[0.013241167922050101`, 0.35852055149756135`, 0.6959647245145568],
-     PolygonBox[{{-0.4082121249475887, 
+   {RGBColor[0.7763861965480796, 0.3879710344103131, 0.9596369059315546], 
+    PolygonBox[{{-0.4082121249475887, 
      0.7926673944569614}, {-0.4232162457323549, 
      0.801456777950861}, {-0.4974376369430304, 0.8304396639106918}}]}, 
-   {RGBColor[0.4432062346328609, 0.863192297651237, 0.7882586881052922], 
+   {RGBColor[0.3399576439732659, 0.16771072150823496`, 0.9070038237174947], 
     PolygonBox[{{0.19109809780500547`, 1.023789302086383}, {
      0.10083460338195802`, 1.0605632665150115`}, {0.1069662828810756, 
      1.0007253612949554`}}]}, 
-   {RGBColor[0.4057663003515548, 0.2034076431735441, 0.0758095870973905], 
+   {RGBColor[0.9490019463215384, 0.16897272338712854`, 0.6197903279675279], 
     PolygonBox[{{0.14611730734094355`, 0.7610926230606992}, {
      0.11606900852378792`, 0.7984107231417269}, {0.10426771124579468`, 
      0.7842294792614609}}]}, 
-   {RGBColor[0.5392963529555366, 0.5132714072721305, 0.7443367582193869], 
+   {RGBColor[0.2349324856588595, 0.08226715569778209, 0.5742928044726536], 
     PolygonBox[{{0.17632515946108698`, 0.7834970770257219}, {
      0.14224812459950667`, 0.8258182059827991}, {0.11606900852378792`, 
      0.7984107231417269}}]}, 
-   {RGBColor[0.7182679277015915, 0.3953676767742287, 0.3268200211693051], 
+   {RGBColor[0.19213079254913423`, 0.793607046732747, 0.998565448401582], 
     PolygonBox[{{-0.17940795190792969`, 
      1.1284227601113377`}, {-0.03865625161032207, 
      1.1416165999875354`}, {-0.05277216584884473, 1.2203915166984327`}}]}, 
-   {RGBColor[0.6341467470742137, 0.9432179956127742, 0.6027491763858326], 
+   {RGBColor[0.08301737217189586, 0.13729873241736956`, 0.5511732328206076], 
     PolygonBox[{{-0.3068733598323188, 
      1.092232447983398}, {-0.17940795190792969`, 
      1.1284227601113377`}, {-0.189045846991796, 1.2076170107558468`}}]}, 
-   {RGBColor[0.20716151700628704`, 0.9082165932890178, 0.5998122924099647], 
+   {RGBColor[0.4827595591837086, 0.6417492204456396, 0.43458585546843764`], 
     PolygonBox[{{-0.6491049631383201, 
      0.9487684306068872}, {-0.6662215761576267, 
      0.9542323338582823}, {-0.6235470743513488, 0.9070548684578816}}]}, 
-   {RGBColor[0.21507729665900532`, 0.5710287527143298, 0.21415132202001863`], 
+   {RGBColor[0.16496978303125132`, 0.8652750667289706, 0.33924018183049043`], 
     PolygonBox[{{-0.6235470743513488, 
      0.9070548684578816}, {-0.6138978334327172, 
      0.9090960719568636}, {-0.6491049631383201, 0.9487684306068872}}]}, 
-   {RGBColor[0.530764753103258, 0.6785809857183935, 0.3200530632053946], 
+   {RGBColor[0.17301595180241414`, 0.9022426418833598, 0.5528855147070775], 
     PolygonBox[{{-0.5066468286659773, 
      0.7801374306050456}, {-0.4979087800065768, 
      0.7892600154653076}, {-0.5821268601306107, 0.8288863843792198}}]}, 
-   {RGBColor[0.03757100894688481, 0.12778587726266966`, 0.5102279734143691], 
+   {RGBColor[0.17071118576752164`, 0.6976761789450392, 0.04009959785013262], 
     PolygonBox[{{-0.5877088915102037, 
      0.8185488955648327}, {-0.5821268601306107, 
      0.8288863843792198}, {-0.6522448252499767, 0.8761423216142185}}]}, 
-   {RGBColor[0.3275376281280806, 0.7514854808952447, 0.3452398116270159], 
+   {RGBColor[0.4728420968481928, 0.9370769055040069, 0.5719559093723694], 
     PolygonBox[{{0.21024484360074447`, 0.8159063901570024}, {
      0.17152739692349586`, 0.863991489466989}, {0.14224812459950667`, 
      0.8258182059827991}}]}, 
-   {RGBColor[0.1407034595258394, 0.4702911703550481, 0.5464960936909422], 
+   {RGBColor[0.3337518465671192, 0.21750281152764273`, 0.40471776940113524`], 
     PolygonBox[{{-0.5674504358162213, 
      0.857254092607911}, {-0.5618154184806048, 
      0.867682031868943}, {-0.4974376369430304, 0.8304396639106918}}]}, 
-   {RGBColor[0.6046509132125739, 0.5879908248236885, 0.5435148573078552], 
+   {RGBColor[0.7604199682691106, 0.906603404380649, 0.2276467439466907], 
     PolygonBox[{{-0.5064716135509288, 
      0.8212658701564352}, {-0.4974376369430304, 
      0.8304396639106918}, {-0.4232162457323549, 0.801456777950861}}]}, 
-   {RGBColor[0.7370977917152197, 0.9546878736397506, 0.1493993256547843], 
+   {RGBColor[0.14502352272435326`, 0.030670416424955382`, 0.658198471824786], 
     PolygonBox[{{-0.6891652843698552, 
      0.9487704336229489}, {-0.7070108281427603, 
      0.9323821836379047}, {-0.6522448252499767, 0.8761423216142185}}]}, 
-   {RGBColor[0.5795154106464264, 0.21394869850915477`, 0.8980054287888808], 
+   {RGBColor[0.21963987842802069`, 0.29361312803080764`, 0.8824278456835473], 
     PolygonBox[{{-0.6891652843698552, 
      0.9487704336229489}, {-0.6662215761576267, 
      0.9542323338582823}, {-0.6755041737822154, 0.9916954828681818}}]}, 
-   {RGBColor[0.7183565181306357, 0.22919770368573134`, 0.728246445243192], 
+   {RGBColor[0.08821117632104936, 0.4190651010670978, 0.06218728175895838], 
     PolygonBox[{{0.1069662828810756, 1.0007253612949554`}, {
      0.19654122682704098`, 0.9642317336963656}, {0.19109809780500547`, 
      1.023789302086383}}]}, 
-   {RGBColor[0.4548962786601556, 0.8083459615578874, 0.9634246791374912], 
+   {RGBColor[0.8142211690801242, 0.6871772101345417, 0.7325459615981369], 
     PolygonBox[{{-0.4557260047435647, 
      0.8423473435476501}, {-0.3931664264935831, 
      0.9097421130797583}, {-0.4031397103538368, 0.9688808762509664}}]}, 
-   {RGBColor[0.9218387137953148, 0.634073267065999, 0.7329016094337684], 
+   {RGBColor[0.312114684841438, 0.9125149522781735, 0.5825173879782974], 
     PolygonBox[{{-0.6165921611143034, 
      0.8966617540323034}, {-0.6138978334327172, 
      0.9090960719568636}, {-0.5618154184806048, 0.867682031868943}}]}, 
-   {RGBColor[0.8668952015853757, 0.28474787717062044`, 0.5298577734051098], 
+   {RGBColor[0.8701419783279614, 0.8965263461796487, 0.17037357001835596`], 
     PolygonBox[{{-0.5821268601306107, 
      0.8288863843792198}, {-0.5877088915102037, 
      0.8185488955648327}, {-0.5066468286659773, 0.7801374306050456}}]}, 
-   {RGBColor[0.23561639827032188`, 0.09143385155164285, 0.2830399729740296], 
+   {RGBColor[0.5106828621740509, 0.8793228058049807, 0.09766343233395958], 
     PolygonBox[{{-0.4974376369430304, 
      0.8304396639106918}, {-0.5064716135509288, 
      0.8212658701564352}, {-0.5674504358162213, 0.857254092607911}}]}, 
-   {RGBColor[0.1577881946614521, 0.20677575716615682`, 0.04199942487171726], 
+   {RGBColor[0.10997949705251475`, 0.5440785633519987, 0.19595292593601465`], 
     PolygonBox[{{-0.4127444907100863, 
      0.748455846840058}, {-0.40014770806735594`, 
      0.7562248174759313}, {-0.4979087800065768, 0.7892600154653076}}]}, 
-   {RGBColor[0.16843916547589521`, 0.32410267782132474`, 0.6441497554173392], 
+   {RGBColor[0.4483352680479089, 0.5094961255444665, 0.9489171189217014], 
     PolygonBox[{{-0.05277216584884473, 
      1.2203915166984327`}, {-0.189045846991796, 
      1.2076170107558468`}, {-0.17940795190792969`, 1.1284227601113377`}}]}, 
-   {RGBColor[0.8011586530329677, 0.39601171191140727`, 0.33322307095407067`], 
+   {RGBColor[0.5071562556468723, 0.15136566789776373`, 0.8132340645374216], 
     PolygonBox[{{-0.7070108281427603, 
      0.9323821836379047}, {-0.6891652843698552, 
      0.9487704336229489}, {-0.7042565149200531, 0.9949443583664325}}]}, 
-   {RGBColor[0.8957110542106983, 0.8326576175275735, 0.9030669490241563], 
+   {RGBColor[0.10007395734935076`, 0.23162594339249343`, 0.8023882705763485], 
     PolygonBox[{{-0.6755041737822154, 
      0.9916954828681818}, {-0.7042565149200531, 
      0.9949443583664325}, {-0.6891652843698552, 0.9487704336229489}}]}, 
-   {RGBColor[0.9586351863023521, 0.8671939554353756, 0.2660059758765312], 
+   {RGBColor[0.8672996678729574, 0.513861616147107, 0.8219853180478665], 
     PolygonBox[{{-0.6550252852003547, 
      0.8638307242660257}, {-0.6522448252499767, 
      0.8761423216142185}, {-0.7070108281427603, 0.9323821836379047}}]}, 
-   {RGBColor[0.43660458892730003`, 0.9697352378904935, 0.9673077139762902], 
+   {RGBColor[0.49674000845923016`, 0.3087827349235355, 0.38228348770673826`], 
     PolygonBox[{{-0.6522448252499767, 
      0.8761423216142185}, {-0.6550252852003547, 
      0.8638307242660257}, {-0.5877088915102037, 0.8185488955648327}}]}, 
-   {RGBColor[0.5847603343849559, 0.8080866517371954, 0.9008219124392804], 
+   {RGBColor[0.14551825535480467`, 0.3303316304089319, 0.8029241974301171], 
     PolygonBox[{{-0.5618154184806048, 
      0.867682031868943}, {-0.5674504358162213, 
      0.857254092607911}, {-0.6165921611143034, 0.8966617540323034}}]}, 
-   {RGBColor[0.13930970684089972`, 0.03876780503666444, 0.5282463516855893], 
+   {RGBColor[0.9198983771585751, 0.928372685183021, 0.385347174448873], 
     PolygonBox[{{-0.4232162457323549, 
      0.801456777950861}, {-0.4365186185111673, 
      0.7937132059448545}, {-0.5064716135509288, 0.8212658701564352}}]}, 
-   {RGBColor[0.025213706767991617`, 0.216603333554924, 0.5653644563002027], 
+   {RGBColor[0.2374044338530048, 0.7534527053385496, 0.4276480249336885], 
     PolygonBox[{{-0.6662215761576267, 
      0.9542323338582823}, {-0.6491049631383201, 
      0.9487684306068872}, {-0.6532638068623781, 0.9772497897720545}}]}, 
-   {RGBColor[0.355961998572228, 0.4369983237182282, 0.03555948337991399], 
+   {RGBColor[0.4628707686630067, 0.17472891748906716`, 0.23915012222115206`], 
     PolygonBox[{{-0.4979087800065768, 
      0.7892600154653076}, {-0.5066468286659773, 
      0.7801374306050456}, {-0.4127444907100863, 0.748455846840058}}]}, 
-   {RGBColor[0.2889300271313575, 0.38211661434207267`, 0.5932371747105332], 
+   {RGBColor[0.8822478869494617, 0.7583743009503101, 0.42696569748328006`], 
     PolygonBox[{{-0.3931664264935831, 
      0.9097421130797583}, {-0.4557260047435647, 
      0.8423473435476501}, {-0.4365186185111673, 0.7937132059448545}}]}, 
-   {RGBColor[0.8984503448268288, 0.1877405755068562, 0.5502584601862766], 
+   {RGBColor[0.5997632457370274, 0.11830088996596766`, 0.05032829683400064], 
     PolygonBox[{{-0.3068733598323188, 
      1.092232447983398}, {-0.40810773987827526`, 
      1.0381555556409896`}, {-0.4031397103538368, 0.9688808762509664}}]}, 
-   {RGBColor[0.44167795518974273`, 0.03566208593152154, 0.19606639920426971`],
-     PolygonBox[{{-0.6532638068623781, 
+   {RGBColor[0.2578298847899587, 0.5629709161947376, 0.835879735433884], 
+    PolygonBox[{{-0.6532638068623781, 
      0.9772497897720545}, {-0.6755041737822154, 
      0.9916954828681818}, {-0.6662215761576267, 0.9542323338582823}}]}, 
-   {RGBColor[0.2425873173231532, 0.8521476753849191, 0.22615941765885395`], 
+   {RGBColor[0.7222071176328668, 0.07893480408145703, 0.3798691114273718], 
     PolygonBox[{{0.2338571336291519, 0.8585804927104699}, {0.1915831714576789,
       0.911081984149083}, {0.17152739692349586`, 0.863991489466989}}]}, 
-   {RGBColor[0.9030948592976273, 0.4775805097037902, 0.9522385027273885], 
+   {RGBColor[0.36091931215957573`, 0.37859179663111786`, 0.3129039568718759], 
     PolygonBox[{{0.10426771124579468`, 0.7842294792614609}, {
      0.1324666809023711, 0.749207596660139}, {0.14611730734094355`, 
      0.7610926230606992}}]}, 
-   {RGBColor[0.3743325894577654, 0.43308129774462656`, 0.4095937429158092], 
+   {RGBColor[0.6288314942880051, 0.31268878591942406`, 0.6661735680235641], 
     PolygonBox[{{-0.6487407049441811, 
      0.9323792701317449}, {-0.6491049631383201, 
      0.9487684306068872}, {-0.6138978334327172, 0.9090960719568636}}]}, 
-   {RGBColor[0.8529690497397133, 0.8528464684439407, 0.5144707831240496], 
+   {RGBColor[0.32123218094418093`, 0.5063562605438181, 0.4922219305389506], 
     PolygonBox[{{-0.32070798903419384`, 
      0.6626448626460408}, {-0.31471495354866114`, 
      0.7059372593680641}, {-0.3303847620409428, 0.7149851806141416}}]}, 
-   {RGBColor[0.001486278549591713, 0.020520626734064962`, 0.4527495995047912],
-     PolygonBox[{{-0.189045846991796, 
+   {RGBColor[0.23623777364634235`, 0.9149490090957788, 0.23160062078893828`], 
+    PolygonBox[{{-0.189045846991796, 
      1.2076170107558468`}, {-0.31245519863003474`, 
      1.1725784502222147`}, {-0.3068733598323188, 1.092232447983398}}]}, 
-   {RGBColor[0.4296195232438411, 0.2975837822527898, 0.788947303642306], 
+   {RGBColor[0.5508118755384379, 0.16168169110898045`, 0.4401151422229348], 
     PolygonBox[{{0.11606900852378792`, 0.7984107231417269}, {
      0.14611730734094355`, 0.7610926230606992}, {0.17632515946108698`, 
      0.7834970770257219}}]}, 
-   {RGBColor[0.38565236139900216`, 0.21846309562727928`, 0.6183122302350443], 
+   {RGBColor[0.24396022615476642`, 0.22716244467774427`, 0.6142864193713264], 
     PolygonBox[{{-0.5121663116171834, 
      0.786079575382729}, {-0.5066468286659773, 
      0.7801374306050456}, {-0.5877088915102037, 0.8185488955648327}}]}, 
-   {RGBColor[0.47777453745001375`, 0.3047989011203427, 0.21094918736416157`], 
+   {RGBColor[0.6386454438777867, 0.2388156535286694, 0.25224459920326425`], 
     PolygonBox[{{-0.6138978334327172, 
      0.9090960719568636}, {-0.6165921611143034, 
      0.8966617540323034}, {-0.6487407049441811, 0.9323792701317449}}]}, 
-   {RGBColor[0.9071303687054078, 0.6833469680811948, 0.8373147041073099], 
+   {RGBColor[0.8076626431122709, 0.8323927944481608, 0.8304906363461271], 
     PolygonBox[{{-0.5854471638928669, 
      0.8230783593740671}, {-0.5877088915102037, 
      0.8185488955648327}, {-0.6550252852003547, 0.8638307242660257}}]}, 
-   {RGBColor[0.009397586682378778, 0.8300469032446713, 0.658772456483903], 
+   {RGBColor[0.19184251006849729`, 0.4537008319928115, 0.5472607891411794], 
     PolygonBox[{{-0.5778026970510641, 
      0.8377058845493319}, {-0.5674504358162213, 
      0.857254092607911}, {-0.5064716135509288, 0.8212658701564352}}]}, 
-   {RGBColor[0.6788018108294105, 0.40759681689988847`, 0.15193411401070223`], 
+   {RGBColor[0.3366839861057198, 0.00989604795700516, 0.05319668221099749], 
     PolygonBox[{{-0.33677053295520454`, 
      0.6688542323526607}, {-0.3303847620409428, 
      0.7149851806141416}, {-0.36406177168604775`, 0.731207786352101}}]}, 
-   {RGBColor[0.3979020180890207, 0.8161313655326148, 0.4399678539054721], 
+   {RGBColor[0.45213783898316384`, 0.5711850393867635, 0.5113318028260705], 
     PolygonBox[{{-0.7042565149200531, 
      0.9949443583664325}, {-0.7253085106731112, 
      0.9817988750118627}, {-0.7070108281427603, 0.9323821836379047}}]}, 
-   {RGBColor[0.7445129427131696, 0.03385687992458375, 0.08322569454126216], 
-    PolygonBox[{{-0.5127387518004057, 
+   {RGBColor[0.16697571468052308`, 0.03294012046142836, 0.41406358252475695`],
+     PolygonBox[{{-0.5127387518004057, 
      0.8017500735531131}, {-0.5064716135509288, 
      0.8212658701564352}, {-0.4365186185111673, 0.7937132059448545}}]}, 
-   {RGBColor[0.8780954789809721, 0.9632533100699501, 0.6801044049839797], 
+   {RGBColor[0.7195209625635393, 0.5832701891612289, 0.3719882341507823], 
     PolygonBox[{{-0.7070108281427603, 
      0.9323821836379047}, {-0.7066465699486214, 
      0.9159930231627624}, {-0.6550252852003547, 0.8638307242660257}}]}, 
-   {RGBColor[0.23461768934441407`, 0.6115102293680394, 0.028062257988834993`],
-     PolygonBox[{{-0.7042565149200531, 
+   {RGBColor[0.569356375831628, 0.294634017880286, 0.9666025576030572], 
+    PolygonBox[{{-0.7042565149200531, 
      0.9949443583664325}, {-0.6755041737822154, 
      0.9916954828681818}, {-0.6383828368696143, 1.0120978086815502`}}]}, 
-   {RGBColor[0.6807497039364532, 0.8229619948602407, 0.3404968055283466], 
+   {RGBColor[0.6571030797214978, 0.12306927105193233`, 0.459759275630673], 
     PolygonBox[{{-0.5877088915102037, 
      0.8185488955648327}, {-0.5854471638928669, 
      0.8230783593740671}, {-0.5121663116171834, 0.786079575382729}}]}, 
-   {RGBColor[0.9954298100157317, 0.5220611745759343, 0.3023210949443125], 
+   {RGBColor[0.7970727063438419, 0.4463877186131828, 0.8990301597332202], 
     PolygonBox[{{0.14224812459950667`, 0.8258182059827991}, {
      0.17632515946108698`, 0.7834970770257219}, {0.21024484360074447`, 
      0.8159063901570024}}]}, 
-   {RGBColor[0.6160393208389314, 0.2577966635922344, 0.41585307851202225`], 
+   {RGBColor[0.43224384667398374`, 0.7692292578909015, 0.041805230378547], 
     PolygonBox[{{-0.03865625161032207, 1.1416165999875354`}, {
      0.08801488821027162, 1.1284093889693319`}, {0.0698675917040982, 
      1.2076040650839122`}}]}, 
-   {RGBColor[0.22772162593973455`, 0.39792215955660315`, 0.9200345069380975], 
+   {RGBColor[0.04806965564639043, 0.8202768891837915, 0.2329614941535747], 
     PolygonBox[{{-0.40810773987827526`, 
      1.0381555556409896`}, {-0.3068733598323188, 
      1.092232447983398}, {-0.31245519863003474`, 1.1725784502222147`}}]}, 
-   {RGBColor[0.8936863066357812, 0.1630450107859105, 0.5266225310709944], 
+   {RGBColor[0.5866210141323942, 0.08122366046515528, 0.7334070067202929], 
     PolygonBox[{{-0.5064716135509288, 
      0.8212658701564352}, {-0.5127387518004057, 
      0.8017500735531131}, {-0.5778026970510641, 0.8377058845493319}}]}, 
-   {RGBColor[0.9503461635921553, 0.45801652343008037`, 0.3515515852205926], 
+   {RGBColor[0.7970814400467479, 0.26427933723837094`, 0.40210142583713004`], 
     PolygonBox[{{-0.630648153731509, 
      0.8776892213966291}, {-0.6165921611143034, 
      0.8966617540323034}, {-0.5674504358162213, 0.857254092607911}}]}, 
-   {RGBColor[0.9177703528626997, 0.770080882041797, 0.6351247476977993], 
+   {RGBColor[0.6298906912933289, 0.21073577114742714`, 0.01646655861894586], 
     PolygonBox[{{-0.427574246765012, 
      0.7563634160492927}, {-0.4127444907100863, 
      0.748455846840058}, {-0.5066468286659773, 0.7801374306050456}}]}, 
-   {RGBColor[0.24623932760042733`, 0.6615903356429971, 0.15691658658481056`], 
+   {RGBColor[0.46403544916271033`, 0.9457094307761158, 0.3373507093257564], 
     PolygonBox[{{0.0698675917040982, 
      1.2076040650839122`}, {-0.05277216584884473, 
      1.2203915166984327`}, {-0.03865625161032207, 1.1416165999875354`}}]}, 
-   {RGBColor[0.2572935232176088, 0.9014364840919311, 0.013728273009479208`], 
+   {RGBColor[0.4018505212877508, 0.39902898380572793`, 0.2872408788347116], 
     PolygonBox[{{-0.37130366610711857`, 
      0.6788918384266438}, {-0.36406177168604775`, 
      0.731207786352101}, {-0.4037384025931291, 0.7564957603448428}}]}, 
-   {RGBColor[0.7915221459704804, 0.1772775072056212, 0.6896923689302421], 
+   {RGBColor[0.6045135289045798, 0.7211989420691645, 0.10569902630123962`], 
     PolygonBox[{{-0.7066465699486214, 
      0.9159930231627624}, {-0.7070108281427603, 
      0.9323821836379047}, {-0.7253085106731112, 0.9817988750118627}}]}, 
-   {RGBColor[0.24514611790065444`, 0.8204781328997666, 0.2542797299528823], 
+   {RGBColor[0.5365836647619662, 0.20780058597508178`, 0.12473619274812942`], 
     PolygonBox[{{-0.5066468286659773, 
      0.7801374306050456}, {-0.5121663116171834, 
      0.786079575382729}, {-0.427574246765012, 0.7563634160492927}}]}, 
-   {RGBColor[0.248532363954028, 0.29602220435590776`, 0.49294577622596525`], 
+   {RGBColor[0.3414096675196492, 0.7103194241632635, 0.32671391701096764`], 
     PolygonBox[{{-0.6508935588205756, 
      0.9565031347886175}, {-0.6532638068623781, 
      0.9772497897720545}, {-0.6491049631383201, 0.9487684306068872}}]}, 
-   {RGBColor[0.07237874495972285, 0.598014599071035, 0.284393281119393], 
+   {RGBColor[0.3350678924318231, 0.6694823828570085, 0.9810187506275494], 
     PolygonBox[{{-0.6550252852003547, 
      0.8638307242660257}, {-0.6457030953244323, 
      0.8655123291333501}, {-0.5854471638928669, 0.8230783593740671}}]}, 
-   {RGBColor[0.7451227547015347, 0.7758863015613571, 0.8840310168639891], 
+   {RGBColor[0.9038536269752004, 0.999621988306727, 0.038492197440675335`], 
     PolygonBox[{{-0.6755041737822154, 
      0.9916954828681818}, {-0.6532638068623781, 
      0.9772497897720545}, {-0.6178623656053813, 0.9925488577879792}}]}, 
-   {RGBColor[0.4048030913819489, 0.4165246570997245, 0.37723858987804815`], 
+   {RGBColor[0.09760703884557054, 0.3300588927197703, 0.9025989266581183], 
     PolygonBox[{{-0.5674504358162213, 
      0.857254092607911}, {-0.5778026970510641, 
      0.8377058845493319}, {-0.630648153731509, 0.8776892213966291}}]}, 
-   {RGBColor[0.5736480619892603, 0.9989212785375403, 0.9090031499769871], 
+   {RGBColor[0.8818465591021134, 0.5210026593959329, 0.9693325463075904], 
     PolygonBox[{{-0.4365186185111673, 
      0.7937132059448545}, {-0.4379833940856116, 
      0.7737683747885046}, {-0.5127387518004057, 0.8017500735531131}}]}, 
-   {RGBColor[0.2364381672401381, 0.47682017548716127`, 0.7331595025795159], 
+   {RGBColor[0.20439728306521165`, 0.9029228226425297, 0.40809108454171783`], 
     PolygonBox[{{-0.5127387518004057, 
      0.8017500735531131}, {-0.5121663116171834, 
      0.786079575382729}, {-0.5854471638928669, 0.8230783593740671}}]}, 
-   {RGBColor[0.4878930701711044, 0.528026962230626, 0.3629168847900843], 
+   {RGBColor[0.7478110238312223, 0.15450370625442322`, 0.44066091141174724`], 
     PolygonBox[{{-0.5854471638928669, 
      0.8230783593740671}, {-0.5778026970510641, 
      0.8377058845493319}, {-0.5127387518004057, 0.8017500735531131}}]}, 
-   {RGBColor[0.9946062198635539, 0.5891634874803258, 0.15854860681272576`], 
+   {RGBColor[0.8371949305940389, 0.46987515919957, 0.600615363441922], 
     PolygonBox[{{-0.6457030953244323, 
      0.8655123291333501}, {-0.6550252852003547, 
      0.8638307242660257}, {-0.7066465699486214, 0.9159930231627624}}]}, 
-   {RGBColor[0.13610537159886738`, 0.5055790961176099, 0.41013817662522256`], 
+   {RGBColor[0.47145362751022235`, 0.8471126246224248, 0.1515170620825259], 
     PolygonBox[{{0.17687152794358751`, 1.0922082607390091`}, {
      0.08801488821027162, 1.1284093889693319`}, {0.10083460338195802`, 
      1.0605632665150115`}}]}, 
-   {RGBColor[0.8077967202812986, 0.9518019234230706, 0.6794618135486501], 
+   {RGBColor[0.5947286486920476, 0.20420282829624825`, 0.27093001405661266`], 
     PolygonBox[{{-0.6491049631383201, 
      0.9487684306068872}, {-0.6487407049441811, 
      0.9323792701317449}, {-0.6508935588205756, 0.9565031347886175}}]}, 
-   {RGBColor[0.4390236194920858, 0.7625583642917189, 0.26460395452993657`], 
+   {RGBColor[0.001276379042247422, 0.24616360991563524`, 0.9800228429743003], 
     PolygonBox[{{-0.189045846991796, 
      1.2076170107558468`}, {-0.05277216584884473, 
      1.2203915166984327`}, {-0.05664527502748805, 1.2343407749784847`}}]}, 
-   {RGBColor[0.1164145539650423, 0.3175618594556888, 0.41127316285885085`], 
+   {RGBColor[0.7708270390746779, 0.1693198450531952, 0.42990326492348574`], 
     PolygonBox[{{-0.31245519863003474`, 
      1.1725784502222147`}, {-0.189045846991796, 
      1.2076170107558468`}, {-0.19042216985277277`, 1.2218003564429167`}}]}, 
-   {RGBColor[0.8168406730881705, 0.24594471551895314`, 0.16119030076938845`], 
+   {RGBColor[0.7665873821865319, 0.9538065748140587, 0.2889935652829161], 
     PolygonBox[{{-0.05664527502748805, 
      1.2343407749784847`}, {-0.19042216985277277`, 
      1.2218003564429167`}, {-0.189045846991796, 1.2076170107558468`}}]}, 
-   {RGBColor[0.9929570765794333, 0.6617958953103904, 0.543785973363123], 
+   {RGBColor[
+    0.014716908049198452`, 0.3095710002865144, 0.031293636218252985`], 
     PolygonBox[{{-0.7253085106731112, 
      0.9817988750118627}, {-0.7042565149200531, 
      0.9949443583664325}, {-0.665746502882928, 1.0204449297651879`}}]}, 
-   {RGBColor[0.1460078660759132, 0.8301795095589777, 0.584452067583124], 
+   {RGBColor[0.5518535448886925, 0.5070207265188069, 0.11437301691644275`], 
     PolygonBox[{{-0.5778026970510641, 
      0.8377058845493319}, {-0.5854471638928669, 
      0.8230783593740671}, {-0.6457030953244323, 0.8655123291333501}}]}, 
-   {RGBColor[0.6236379865957236, 0.7146373818604701, 0.33124531121887646`], 
+   {RGBColor[0.9554011213235363, 0.5355311670863026, 0.31808486385582135`], 
     PolygonBox[{{-0.5121663116171834, 
      0.786079575382729}, {-0.5127387518004057, 
      0.8017500735531131}, {-0.4379833940856116, 0.7737683747885046}}]}, 
-   {RGBColor[0.786592915409551, 0.9704996730216038, 0.5944638687040187], 
+   {RGBColor[0.9258407790348167, 0.7166283633655106, 0.3924879267416863], 
     PolygonBox[{{-0.6178623656053813, 
      0.9925488577879792}, {-0.6383828368696143, 
      1.0120978086815502`}, {-0.6755041737822154, 0.9916954828681818}}]}, 
-   {RGBColor[0.4273815029192294, 0.3865670369992438, 0.2984266445854189], 
+   {RGBColor[0.6692196155038395, 0.5397219738431414, 0.9880363582985066], 
     PolygonBox[{{-0.6383828368696143, 
      1.0120978086815502`}, {-0.665746502882928, 
      1.0204449297651879`}, {-0.7042565149200531, 0.9949443583664325}}]}, 
-   {RGBColor[0.6246222663710281, 0.026194231811557778`, 0.7222565129435976], 
+   {RGBColor[0.8589827635882272, 0.4761680853953816, 0.16917159492919143`], 
     PolygonBox[{{-0.4379833940856116, 
      0.7737683747885046}, {-0.427574246765012, 
      0.7563634160492927}, {-0.5121663116171834, 0.786079575382729}}]}, 
-   {RGBColor[0.8720402009839001, 0.8120014855645776, 0.9042875000759154], 
+   {RGBColor[0.4776794679190317, 0.7193922881817232, 0.5845533175693267], 
     PolygonBox[{{-0.6457030953244323, 
      0.8655123291333501}, {-0.630648153731509, 
      0.8776892213966291}, {-0.5778026970510641, 0.8377058845493319}}]}, 
-   {RGBColor[
-    0.054108644616717605`, 0.00042945120069282083`, 0.6423702688108366], 
+   {RGBColor[0.6161664075605988, 0.1326387905875599, 0.8535270460599103], 
     PolygonBox[{{-0.6665862487170863, 
      0.9159910201467008}, {-0.6487407049441811, 
      0.9323792701317449}, {-0.6165921611143034, 0.8966617540323034}}]}, 
-   {RGBColor[0.5856448067787148, 0.9451801306222609, 0.5721091481372298], 
+   {RGBColor[0.647124517153475, 0.16794873037550517`, 0.05769611413292042], 
     PolygonBox[{{0.17152739692349586`, 0.863991489466989}, {
      0.21024484360074447`, 0.8159063901570024}, {0.2338571336291519, 
      0.8585804927104699}}]}, 
-   {RGBColor[0.7409689048224231, 0.3638377310512817, 0.7012481798539829], 
+   {RGBColor[0.9114227285759895, 0.08732150410282036, 0.05696869595332532], 
     PolygonBox[{{0.24044149732300005`, 0.9097104326835674}, {
      0.19654122682704098`, 0.9642317336963656}, {0.1915831714576789, 
      0.911081984149083}}]}, 
-   {RGBColor[0.6421005551781132, 0.4322217504870185, 0.0210461084618081], 
+   {RGBColor[0.5253724538348743, 0.3519199232613872, 0.6177368912789509], 
     PolygonBox[{{-0.6165921611143034, 
      0.8966617540323034}, {-0.630648153731509, 
      0.8776892213966291}, {-0.6665862487170863, 0.9159910201467008}}]}, 
-   {RGBColor[0.2791084240739208, 0.9208823994357298, 0.48660355996047433`], 
+   {RGBColor[0.5878664163625833, 0.3840257421648767, 0.6396862575698605], 
     PolygonBox[{{0.10083460338195802`, 1.0605632665150115`}, {
      0.19109809780500547`, 1.023789302086383}, {0.17687152794358751`, 
      1.0922082607390091`}}]}, 
-   {RGBColor[0.9457392360995176, 0.1341895332612577, 0.5128680708815074], 
+   {RGBColor[0.17278197118280691`, 0.6707824642892328, 0.13782530350490374`], 
     PolygonBox[{{-0.7066465699486214, 
      0.9159930231627624}, {-0.6895299569293146, 
      0.9105291199113673}, {-0.6457030953244323, 0.8655123291333501}}]}, 
-   {RGBColor[0.4393459602981642, 0.09786057885351274, 0.659777574149431], 
+   {RGBColor[0.8369489923782489, 0.46614364370860173`, 0.7654972416943904], 
     PolygonBox[{{-0.05863573983204974, 
      1.2093973154799234`}, {-0.18582398899524435`, 
      1.1974746484714103`}, {-0.1881712367799165, 1.2147149867780545`}}]}, 
-   {RGBColor[0.5195137733934998, 0.8155263247972184, 0.990448679970179], 
+   {RGBColor[0.8427288691472954, 0.02911124920791841, 0.6103325153447436], 
     PolygonBox[{{-0.05971138041910461, 
      1.2358150580066418`}, {-0.18993125937426633`, 
      1.2236080419523874`}, {-0.19042216985277277`, 1.2218003564429167`}}]}, 
-   {RGBColor[0.024215429590492832`, 0.06872401933002292, 0.3189898743773718], 
+   {RGBColor[0.5826938706599303, 0.9341308377782822, 0.5166926324807315], 
     PolygonBox[{{-0.4119665360940595, 
      0.6970548427770487}, {-0.4037384025931291, 
      0.7564957603448428}, {-0.4365186185111673, 0.7937132059448545}}]}, 
-   {RGBColor[0.9911570963129448, 0.9182582789861926, 0.9502417889871326], 
+   {RGBColor[0.02688903389251407, 0.4681277918376685, 0.1075055988349547], 
     PolygonBox[{{-0.19042216985277277`, 
      1.2218003564429167`}, {-0.31157069920364483`, 
      1.1874029684362357`}, {-0.31245519863003474`, 1.1725784502222147`}}]}, 
-   {RGBColor[0.5892841935740354, 0.1390989049695024, 0.46848965014162514`], 
+   {RGBColor[0.7922273642038389, 0.10727971465109154`, 0.9014888290623224], 
     PolygonBox[{{-0.19042216985277277`, 
      1.2218003564429167`}, {-0.05664527502748805, 
      1.2343407749784847`}, {-0.05971138041910461, 1.2358150580066418`}}]}, 
-   {RGBColor[0.15636105631580222`, 0.6483544119857327, 0.1976066542021977], 
+   {RGBColor[0.21110154586232888`, 0.7652955382265032, 0.8270913980974837], 
     PolygonBox[{{-0.31157069920364483`, 
      1.1874029684362357`}, {-0.19042216985277277`, 
      1.2218003564429167`}, {-0.18993125937426633`, 1.2236080419523874`}}]}, 
-   {RGBColor[0.7171728025075277, 0.1346155365306687, 0.22986744437572226`], 
+   {RGBColor[0.3446278463686667, 0.3919741823067111, 0.12606679593268977`], 
     PolygonBox[{{-0.630648153731509, 
      0.8776892213966291}, {-0.6457030953244323, 
      0.8655123291333501}, {-0.6895299569293146, 0.9105291199113673}}]}, 
-   {RGBColor[0.18130197141265358`, 0.8135584892761671, 0.07636880503582266], 
+   {RGBColor[0.7834745072404903, 0.7215018724239566, 0.04454022848607808], 
     PolygonBox[{{-0.46617979383920055`, 
      0.9009685254735466}, {-0.4031397103538368, 
      0.9688808762509664}, {-0.40810773987827526`, 1.0381555556409896`}}]}, 
-   {RGBColor[0.06789380768630271, 0.4662956458325791, 0.6366205384455146], 
+   {RGBColor[0.9528630899410386, 0.7151585225185437, 0.1227769338784499], 
     PolygonBox[{{-0.7253085106731112, 
      0.9817988750118627}, {-0.7225885813219272, 
      0.9605717338629187}, {-0.7066465699486214, 0.9159930231627624}}]}, 
-   {RGBColor[0.3443800317546719, 0.7927409621439352, 0.884682180385846], 
+   {RGBColor[
+    0.15534101045033677`, 0.38012526408838077`, 0.16222005291030595`], 
     PolygonBox[{{-0.4031397103538368, 
      0.9688808762509664}, {-0.46617979383920055`, 
      0.9009685254735466}, {-0.4557260047435647, 0.8423473435476501}}]}, 
-   {RGBColor[0.7473804931518262, 0.13319389012509042`, 0.5311201887347075], 
+   {RGBColor[0.9703161601450729, 0.6053152583367274, 0.6218935782658763], 
     PolygonBox[{{-0.3303847620409428, 
      0.7149851806141416}, {-0.33677053295520454`, 
      0.6688542323526607}, {-0.32070798903419384`, 0.6626448626460408}}]}, 
-   {RGBColor[0.5417597954318012, 0.15366665307285987`, 0.35138461560006196`], 
+   {RGBColor[0.8960813878428857, 0.8659220138483452, 0.3762846895888228], 
     PolygonBox[{{-0.060741411991174075`, 
      1.2266605181715735`}, {-0.1881712367799165, 
      1.2147149867780545`}, {-0.18993125937426633`, 1.2236080419523874`}}]}, 
-   {RGBColor[0.2847642835223654, 0.618312412347475, 0.4114834222516319], 
+   {RGBColor[
+    0.06017472083164588, 0.010889167536001665`, 0.14926549271918965`], 
     PolygonBox[{{-0.30357354466997877`, 
      1.1819492084706242`}, {-0.1881712367799165, 
      1.2147149867780545`}, {-0.18582398899524435`, 1.1974746484714103`}}]}, 
-   {RGBColor[0.7267362016578207, 0.9420880707402026, 0.8271446542325067], 
+   {RGBColor[0.5974813637954477, 0.6062636303457272, 0.19175748714723428`], 
     PolygonBox[{{-0.1881712367799165, 
      1.2147149867780545`}, {-0.060741411991174075`, 
      1.2266605181715735`}, {-0.05863573983204974, 1.2093973154799234`}}]}, 
-   {RGBColor[0.02914685090659086, 0.012651658273460153`, 0.721934070838278], 
-    PolygonBox[{{-0.6164295592160106, 
+   {RGBColor[0.01587210422456975, 0.20330398861461751`, 0.19649680504742406`],
+     PolygonBox[{{-0.6164295592160106, 
      0.9693807927213453}, {-0.6178623656053813, 
      0.9925488577879792}, {-0.6532638068623781, 0.9772497897720545}}]}, 
-   {RGBColor[0.15473799101043673`, 0.5137790852466015, 0.8157401932369623], 
+   {RGBColor[0.442856379533203, 0.5937500674950444, 0.8014308223060826], 
     PolygonBox[{{-0.6895299569293146, 
      0.9105291199113673}, {-0.6665862487170863, 
      0.9159910201467008}, {-0.630648153731509, 0.8776892213966291}}]}, 
-   {RGBColor[0.7422749846515493, 0.6827069730543311, 0.48279277022492506`], 
+   {RGBColor[0.04545311200623314, 0.7391243666431762, 0.24648379069813653`], 
     PolygonBox[{{-0.30785934886885863`, 
      1.1901249018397522`}, {-0.18993125937426633`, 
      1.2236080419523874`}, {-0.1881712367799165, 1.2147149867780545`}}]}, 
-   {RGBColor[0.9767080174365523, 0.5015137893059345, 0.6980474543990316], 
+   {RGBColor[0.7320359777336294, 0.2647266786577849, 0.502145887752673], 
     PolygonBox[{{-0.18993125937426633`, 
      1.2236080419523874`}, {-0.05971138041910461, 
      1.2358150580066418`}, {-0.060741411991174075`, 1.2266605181715735`}}]}, 
-   {RGBColor[0.9508843122605088, 0.6731200332615721, 0.8010528548523965], 
+   {RGBColor[0.21118172137525382`, 0.10363201433832869`, 0.3827716876317171], 
     PolygonBox[{{-0.6532638068623781, 
      0.9772497897720545}, {-0.6508935588205756, 
      0.9565031347886175}, {-0.6164295592160106, 0.9693807927213453}}]}, 
-   {RGBColor[0.3938075953793385, 0.24383056304161865`, 0.8813118660714525], 
-    PolygonBox[{{-0.6895299569293146, 
+   {RGBColor[0.1090372714598069, 0.42315781278554954`, 0.050179193595981664`],
+     PolygonBox[{{-0.6895299569293146, 
      0.9105291199113673}, {-0.7066465699486214, 
      0.9159930231627624}, {-0.7225885813219272, 0.9605717338629187}}]}, 
-   {RGBColor[0.36842673422028227`, 0.8818144908948937, 0.20149939084378254`], 
+   {RGBColor[
+    0.28622161765331366`, 0.17749109151840692`, 0.12804539284278849`], 
     PolygonBox[{{-0.665746502882928, 
      1.0204449297651879`}, {-0.6864683526525642, 
      1.0092643266891326`}, {-0.7253085106731112, 0.9817988750118627}}]}, 
-   {RGBColor[0.1350972849335088, 0.956959019026167, 0.7279989347195945], 
+   {RGBColor[0.30004787255217935`, 0.06329503001861547, 0.8220105559127577], 
     PolygonBox[{{-0.6712698824260004, 
      0.9434883980902627}, {-0.6508935588205756, 
      0.9565031347886175}, {-0.6487407049441811, 0.9323792701317449}}]}, 
-   {RGBColor[0.42859157846618845`, 0.0761281658619759, 0.7577155855313142], 
+   {RGBColor[0.10090882671406476`, 0.7013098455607139, 0.2855608832142362], 
     PolygonBox[{{-0.18582398899524435`, 
      1.1974746484714103`}, {-0.30100657042782697`, 
      1.1647717867687868`}, {-0.30357354466997877`, 1.1819492084706242`}}]}, 
-   {RGBColor[0.1196075522161355, 0.940159306153936, 0.2888229402170279], 
+   {RGBColor[0.20770957606923757`, 0.6019138286115358, 0.8685798478974351], 
     PolygonBox[{{-0.18993125937426633`, 
      1.2236080419523874`}, {-0.30785934886885863`, 
      1.1901249018397522`}, {-0.31157069920364483`, 1.1874029684362357`}}]}, 
-   {RGBColor[0.5552649378353021, 0.7874878805834589, 0.7324431124024806], 
-    PolygonBox[{{0.0637483954781155, 
+   {RGBColor[0.872893158432247, 0.34464989303401383`, 0.0012476744855429711`],
+     PolygonBox[{{0.0637483954781155, 
      1.2217876479146503`}, {-0.05664527502748805, 
      1.2343407749784847`}, {-0.05277216584884473, 1.2203915166984327`}}]}, 
-   {RGBColor[0.2542541467959556, 0.851908395304223, 0.3238001063103877], 
+   {RGBColor[0.07366766580466577, 0.5459232618912468, 0.9135835294173482], 
     PolygonBox[{{-0.6487407049441811, 
      0.9323792701317449}, {-0.6665862487170863, 
      0.9159910201467008}, {-0.6712698824260004, 0.9434883980902627}}]}, 
-   {RGBColor[0.34501552668999524`, 0.9309239001915777, 0.73073604543698], 
+   {RGBColor[0.8394311063850577, 0.6274238185673506, 0.3777897910339245], 
     PolygonBox[{{-0.36406177168604775`, 
      0.731207786352101}, {-0.37130366610711857`, 
      0.6788918384266438}, {-0.33677053295520454`, 0.6688542323526607}}]}, 
-   {RGBColor[0.832840370943889, 0.5329225304749114, 0.366481853228372], 
+   {RGBColor[0.3688589764012542, 0.9593013429893718, 0.4133667900170164], 
     PolygonBox[{{-0.665746502882928, 
      1.0204449297651879`}, {-0.6383828368696143, 
      1.0120978086815502`}, {-0.558764417231233, 1.0198243456540097`}}]}, 
-   {RGBColor[0.16820902891571032`, 0.561899874851898, 0.14504693627788212`], 
+   {RGBColor[0.5832708096391692, 0.9473356845720293, 0.7187295793592177], 
     PolygonBox[{{-0.7225885813219272, 
      0.9605717338629187}, {-0.7253085106731112, 
      0.9817988750118627}, {-0.6864683526525642, 1.0092643266891326`}}]}, 
-   {RGBColor[0.6553484015657178, 0.07530739407988518, 0.2445278287923185], 
+   {RGBColor[0.7487296104169203, 0.3107329580656075, 0.7637515804950588], 
     PolygonBox[{{-0.6383828368696143, 
      1.0120978086815502`}, {-0.6178623656053813, 
      0.9925488577879792}, {-0.5469314890433972, 0.9983037305137608}}]}, 
-   {RGBColor[0.3746372071678228, 0.14872014868304895`, 0.9700725671443353], 
+   {RGBColor[0.6681207767585218, 0.7117826160840075, 0.12779466722896737`], 
     PolygonBox[{{-0.1881712367799165, 
      1.2147149867780545`}, {-0.30357354466997877`, 
      1.1819492084706242`}, {-0.30785934886885863`, 1.1901249018397522`}}]}, 
-   {RGBColor[0.9818036084506931, 0.3114173443575381, 0.43447201292705895`], 
-    PolygonBox[{{-0.31245519863003474`, 
+   {RGBColor[0.6545236790769957, 0.016978801894302453`, 0.31667292031349836`],
+     PolygonBox[{{-0.31245519863003474`, 
      1.1725784502222147`}, {-0.4104690595325736, 
      1.1202218514586666`}, {-0.40810773987827526`, 1.0381555556409896`}}]}, 
-   {RGBColor[0.6555963340211268, 0.083151098386683, 0.6694590870655319], 
+   {RGBColor[0.8558696649562167, 0.3644120626022529, 0.782540416512532], 
     PolygonBox[{{-0.6665862487170863, 
      0.9159910201467008}, {-0.6895299569293146, 
      0.9105291199113673}, {-0.699727661887979, 0.946276442669875}}]}, 
-   {RGBColor[0.5265235554880119, 0.9002372769566724, 0.05557617248800928], 
+   {RGBColor[0.22221575077893396`, 0.8804655258198752, 0.920245630011153], 
     PolygonBox[{{0.1915831714576789, 0.911081984149083}, {0.2338571336291519, 
      0.8585804927104699}, {0.24044149732300005`, 0.9097104326835674}}]}, 
-   {RGBColor[0.9308977823208622, 0.9296891899801447, 0.13901449701423796`], 
+   {RGBColor[0.8079769681651401, 0.869692109102493, 0.7949263449904849], 
     PolygonBox[{{0.05582855378759033, 
      1.1974625658442712`}, {-0.05863573983204974, 
      1.2093973154799234`}, {-0.060741411991174075`, 1.2266605181715735`}}]}, 
-   {RGBColor[0.7681590928226671, 0.43827337417417156`, 0.28682825120172994`], 
+   {RGBColor[0.9719910867950099, 0.17939967166952253`, 0.7697222537614041], 
     PolygonBox[{{0.05748108374903559, 
      1.223595671335231}, {-0.05971138041910461, 
      1.2358150580066418`}, {-0.05664527502748805, 1.2343407749784847`}}]}, 
-   {RGBColor[0.5543094487816724, 0.6124646884670151, 0.4021779230606526], 
+   {RGBColor[0.5152672646942584, 0.06566353176672668, 0.724063126715738], 
     PolygonBox[{{-0.7225885813219272, 
      0.9605717338629187}, {-0.699727661887979, 
      0.946276442669875}, {-0.6895299569293146, 0.9105291199113673}}]}, 
-   {RGBColor[0.71219387143473, 0.40300006939342614`, 0.9648198466459108], 
+   {RGBColor[0.4003128690796607, 0.5535959908637351, 0.3339634393245652], 
     PolygonBox[{{-0.4104690595325736, 
      1.1202218514586666`}, {-0.31245519863003474`, 
      1.1725784502222147`}, {-0.31157069920364483`, 1.1874029684362357`}}]}, 
-   {RGBColor[0.21895280888074087`, 0.22546149947006966`, 0.6380812462211356], 
+   {RGBColor[0.8702279491390128, 0.9927942301494439, 0.7458256640630843], 
     PolygonBox[{{-0.05277216584884473, 1.2203915166984327`}, {
      0.0698675917040982, 1.2076040650839122`}, {0.0637483954781155, 
      1.2217876479146503`}}]}, 
-   {RGBColor[0.8384918548224947, 0.6028333599410018, 0.8012420508325908], 
+   {RGBColor[0.3574925380146061, 0.9444920102110144, 0.3128911636869409], 
     PolygonBox[{{-0.5469314890433972, 
      0.9983037305137608}, {-0.558764417231233, 
      1.0198243456540097`}, {-0.6383828368696143, 1.0120978086815502`}}]}, 
-   {RGBColor[0.89709030898133, 0.8957519168870163, 0.35055954225463104`], 
+   {RGBColor[0.5716679503845321, 0.3690180740185731, 0.47395583300562105`], 
     PolygonBox[{{-0.699727661887979, 0.946276442669875}, {-0.6712698824260004,
       0.9434883980902627}, {-0.6665862487170863, 0.9159910201467008}}]}, 
-   {RGBColor[0.0825389937131007, 0.8224775728896798, 0.4507660043042965], 
+   {RGBColor[0.3987412614706356, 0.9507610673352964, 0.8887462553115975], 
     PolygonBox[{{-0.4037384025931291, 
      0.7564957603448428}, {-0.4119665360940595, 
      0.6970548427770487}, {-0.37130366610711857`, 0.6788918384266438}}]}, 
-   {RGBColor[0.06895372068061723, 0.021174422707575635`, 0.658534509217529], 
+   {RGBColor[0.4132099736453245, 0.5213799283323035, 0.35358597257129665`], 
     PolygonBox[{{0.053940950019943784`, 
      1.2147028811687144`}, {-0.060741411991174075`, 
      1.2266605181715735`}, {-0.05971138041910461, 1.2358150580066418`}}]}, 
-   {RGBColor[0.4228388932875433, 0.3386538339394798, 0.42858323478403704`], 
+   {RGBColor[0.6467316751522949, 0.740059945798416, 0.19808479634650356`], 
     PolygonBox[{{-0.6864683526525642, 
      1.0092643266891326`}, {-0.665746502882928, 
      1.0204449297651879`}, {-0.5773021067168103, 1.0301686007622752`}}]}, 
-   {RGBColor[0.7981397119445084, 0.18043396884738772`, 0.6311671001245442], 
+   {RGBColor[0.8079162575125112, 0.14186033233871687`, 0.7846949300543848], 
     PolygonBox[{{-0.1826030105347903, 
      1.1873322862309503`}, {-0.06449907927229534, 
      1.1984035540294626`}, {-0.07436093585817147, 1.2058342413602918`}}]}, 
-   {RGBColor[0.650687972721588, 0.6576212875742178, 0.9542288197806184], 
+   {RGBColor[0.22826281346915267`, 0.7011349971626069, 0.44206489023540785`], 
     PolygonBox[{{-0.28955794222561926`, 
      1.1569651233153586`}, {-0.1826030105347903, 
      1.1873322862309503`}, {-0.18146853742640495`, 1.1957940844622015`}}]}, 
-   {RGBColor[0.6598284496542279, 0.39409287259633285`, 0.2177404211893863], 
+   {RGBColor[0.44666795350134114`, 0.3117648762012535, 0.9262121932044571], 
     PolygonBox[{{-0.4455025244224451, 
      0.7288128495869277}, {-0.4365186185111673, 
      0.7937132059448545}, {-0.4557260047435647, 0.8423473435476501}}]}, 
-   {RGBColor[0.6803099415810072, 0.07981428076446861, 0.006712784345575873], 
+   {RGBColor[0.4853915936362265, 0.3248732425211833, 0.836479676701978], 
     PolygonBox[{{-0.558764417231233, 
      1.0198243456540097`}, {-0.5773021067168103, 
      1.0301686007622752`}, {-0.665746502882928, 1.0204449297651879`}}]}, 
-   {RGBColor[0.3964071446246804, 0.1273366509747511, 0.8568368485863589], 
+   {RGBColor[0.9328513209260574, 0.6969319136680774, 0.0894827670911893], 
     PolygonBox[{{0.13973153642668187`, 0.7149616747992183}, {
      0.14611730734094355`, 0.7610926230606992}, {0.1324666809023711, 
      0.749207596660139}}]}, 
-   {RGBColor[0.24178007348892128`, 0.08128556156556033, 0.35254910289438546`],
-     PolygonBox[{{-0.6508935588205756, 
+   {RGBColor[0.24651116547859764`, 0.6687524755101566, 0.31796027589313525`], 
+    PolygonBox[{{-0.6508935588205756, 
      0.9565031347886175}, {-0.6712698824260004, 
      0.9434883980902627}, {-0.6361503724198022, 0.9582588450109399}}]}, 
-   {RGBColor[0.41731648614777184`, 0.2557225535706529, 0.8819285449245982], 
+   {RGBColor[0.627777014334691, 0.14213312106500653`, 0.7454725674915781], 
     PolygonBox[{{-0.6361503724198022, 
      0.9582588450109399}, {-0.6164295592160106, 
      0.9693807927213453}, {-0.6508935588205756, 0.9565031347886175}}]}, 
-   {RGBColor[0.6641284939213565, 0.5782805552200163, 0.9324894054647179], 
+   {RGBColor[0.6406554971327996, 0.043903811374772506`, 0.3263101817716363], 
     PolygonBox[{{-0.4077888087260967, 
      1.1360052577676139`}, {-0.31157069920364483`, 
      1.1874029684362357`}, {-0.30785934886885863`, 1.1901249018397522`}}]}, 
-   {RGBColor[0.010794874633395901`, 0.5928332769380167, 0.26459245563324907`],
-     PolygonBox[{{0.23533548052884068`, 0.9688489524914223}, {
+   {RGBColor[0.6967923907944698, 0.07430294310046004, 0.3378417948538581], 
+    PolygonBox[{{0.23533548052884068`, 0.9688489524914223}, {
      0.19109809780500547`, 1.023789302086383}, {0.19654122682704098`, 
      0.9642317336963656}}]}, 
-   {RGBColor[0.5158506281652899, 0.7453579236919694, 0.49536359151051035`], 
-    PolygonBox[{{-0.05664527502748805, 1.2343407749784847`}, {
+   {RGBColor[0.010596198241271004`, 0.8973447612220753, 0.16938184255694289`],
+     PolygonBox[{{-0.05664527502748805, 1.2343407749784847`}, {
      0.0637483954781155, 1.2217876479146503`}, {0.05748108374903559, 
      1.223595671335231}}]}, 
-   {RGBColor[0.9406009637349761, 0.9940349268336788, 0.6624306261980029], 
+   {RGBColor[0.11743571273667519`, 0.6232600451977062, 0.25390867516851867`], 
     PolygonBox[{{-0.6864683526525642, 
      1.0092643266891326`}, {-0.6845484749728421, 
      0.9851912320965991}, {-0.7225885813219272, 0.9605717338629187}}]}, 
-   {RGBColor[
-    0.036676089109667576`, 0.000013405400250743327`, 0.5101766359499986], 
+   {RGBColor[0.5661455057277196, 0.6487066050407508, 0.8913065693662161], 
     PolygonBox[{{-0.6178623656053813, 
      0.9925488577879792}, {-0.6164295592160106, 
      0.9693807927213453}, {-0.5494221624017521, 0.9742106808587844}}]}, 
-   {RGBColor[0.7001371859949377, 0.409379055876939, 0.5701246055793234], 
+   {RGBColor[
+    0.26242375721067535`, 0.26695780850361905`, 0.007720159255947268], 
     PolygonBox[{{-0.07436093585817147, 
      1.2058342413602918`}, {-0.18146853742640495`, 
      1.1957940844622015`}, {-0.1826030105347903, 1.1873322862309503`}}]}, 
-   {RGBColor[0.9736607425548145, 0.18228108077670724`, 0.44994918755839564`], 
-    PolygonBox[{{-0.699727661887979, 0.946276442669875}, {-0.7225885813219272,
-      0.9605717338629187}, {-0.6845484749728421, 0.9851912320965991}}]}, 
-   {RGBColor[0.5240667376144357, 0.47739747091612106`, 0.8152445811567615], 
+   {RGBColor[0.011101317367176788`, 0.6051509210390156, 0.15075107253065423`],
+     PolygonBox[{{-0.699727661887979, 
+     0.946276442669875}, {-0.7225885813219272, 
+     0.9605717338629187}, {-0.6845484749728421, 0.9851912320965991}}]}, 
+   {RGBColor[0.9791869608049577, 0.6714239759000975, 0.37273631651401473`], 
     PolygonBox[{{-0.5494221624017521, 
      0.9742106808587844}, {-0.5469314890433972, 
      0.9983037305137608}, {-0.6178623656053813, 0.9925488577879792}}]}, 
-   {RGBColor[0.32046043956258985`, 0.5615925555915833, 0.9741355873213633], 
+   {RGBColor[0.8772289786792591, 0.9129704671023229, 0.17365755335342192`], 
     PolygonBox[{{-0.3952272306838503, 
      1.1329901780918752`}, {-0.30357354466997877`, 
      1.1819492084706242`}, {-0.30100657042782697`, 1.1647717867687868`}}]}, 
-   {RGBColor[0.3050441332832856, 0.6917909813886371, 0.48965323342489886`], 
+   {RGBColor[0.6256542546826749, 0.6388767033361515, 0.13740253151575055`], 
     PolygonBox[{{-0.060741411991174075`, 1.2266605181715735`}, {
      0.053940950019943784`, 1.2147028811687144`}, {0.05582855378759033, 
      1.1974625658442712`}}]}, 
-   {RGBColor[0.86548839932079, 0.6487758831502513, 0.8783222065600105], 
+   {RGBColor[0.3002395064992447, 0.7284170735429254, 0.9247643532729295], 
     PolygonBox[{{0.15589777327846194`, 1.1725550325736191`}, {
      0.0698675917040982, 1.2076040650839122`}, {0.08801488821027162, 
      1.1284093889693319`}}]}, 
-   {RGBColor[0.7109708176286933, 0.872078752034495, 0.5113026322594223], 
+   {RGBColor[
+    0.017731374002228018`, 0.25790656411510415`, 0.13029514554102617`], 
     PolygonBox[{{-0.4015188108279065, 
      1.140093928170958}, {-0.30785934886885863`, 
      1.1901249018397522`}, {-0.30357354466997877`, 1.1819492084706242`}}]}, 
-   {RGBColor[0.022335056999414737`, 0.7096285364741131, 0.5415249334503849], 
+   {RGBColor[0.9900518771876916, 0.7358881538270516, 0.5274772901242444], 
     PolygonBox[{{-0.05971138041910461, 1.2358150580066418`}, {
      0.05748108374903559, 1.223595671335231}, {0.053940950019943784`, 
      1.2147028811687144`}}]}, 
-   {RGBColor[0.3441801496638426, 0.8837606638621134, 0.012337799694109641`], 
+   {RGBColor[0.026415743910091605`, 0.3334993969945481, 0.9786102839872044], 
     PolygonBox[{{0.16908308224749496`, 0.7311811291094044}, {
      0.17632515946108698`, 0.7834970770257219}, {0.14611730734094355`, 
      0.7610926230606992}}]}, 
-   {RGBColor[0.6022547699567737, 0.1416333901695297, 0.13782671971746696`], 
+   {RGBColor[0.3603653808601537, 0.8689782696740787, 0.587768788933908], 
     PolygonBox[{{-0.6712698824260004, 
      0.9434883980902627}, {-0.699727661887979, 
      0.946276442669875}, {-0.6631047413741009, 0.9657442377356377}}]}, 
-   {RGBColor[0.1138858020710174, 0.3393184571071184, 0.15080655929411546`], 
+   {RGBColor[0.9696671193939672, 0.4559114470068675, 0.6705984883341745], 
     PolygonBox[{{-0.31157069920364483`, 
      1.1874029684362357`}, {-0.4077888087260967, 
      1.1360052577676139`}, {-0.4104690595325736, 1.1202218514586666`}}]}, 
-   {RGBColor[0.3874375804671353, 0.6723624168385627, 0.892639010075083], 
+   {RGBColor[0.37262186795977237`, 0.2537064399632645, 0.6455387260468783], 
     PolygonBox[{{-0.18146853742640495`, 
      1.1957940844622015`}, {-0.27846602484481364`, 
      1.1682538186008762`}, {-0.28955794222561926`, 1.1569651233153586`}}]}, 
-   {RGBColor[0.7705347632522874, 0.6703009440368708, 0.548953013774458], 
+   {RGBColor[0.2320187060507819, 0.1885732119251562, 0.04017384007501845], 
     PolygonBox[{{0.08801488821027162, 1.1284093889693319`}, {
      0.17687152794358751`, 1.0922082607390091`}, {0.15589777327846194`, 
      1.1725550325736191`}}]}, 
-   {RGBColor[0.788601773666586, 0.6884833385419338, 0.07610852806588952], 
+   {RGBColor[0.8372871195698806, 0.8370586209331172, 0.8076172565508324], 
     PolygonBox[{{-0.40810773987827526`, 
      1.0381555556409896`}, {-0.4701654932056893, 
      0.9713011656801716}, {-0.46617979383920055`, 0.9009685254735466}}]}, 
-   {RGBColor[0.04730196134477338, 0.6575853780322778, 0.38695204505328507`], 
+   {RGBColor[0.8701815819087675, 0.49678239785845935`, 0.9443933216736711], 
     PolygonBox[{{-0.4365186185111673, 
      0.7937132059448545}, {-0.4455025244224451, 
      0.7288128495869277}, {-0.4119665360940595, 0.6970548427770487}}]}, 
-   {RGBColor[0.11511320100765565`, 0.7396730077933145, 0.9196219985822034], 
+   {RGBColor[0.8580911467312773, 0.12596862869201475`, 0.13241991649346763`], 
     PolygonBox[{{-0.5773021067168103, 
      1.0301686007622752`}, {-0.5940367946974847, 
      1.0197713741714818`}, {-0.6864683526525642, 1.0092643266891326`}}]}, 
-   {RGBColor[0.4380763396999823, 0.5113386571727425, 0.25414035216096265`], 
+   {RGBColor[0.18852265210733887`, 0.5300106022062367, 0.25826897218194755`], 
     PolygonBox[{{-0.4701654932056893, 
      0.9713011656801716}, {-0.40810773987827526`, 
      1.0381555556409896`}, {-0.4104690595325736, 1.1202218514586666`}}]}, 
-   {RGBColor[0.8157084732751798, 0.11776256949711872`, 0.6442966324382688], 
-    PolygonBox[{{-0.6631047413741009, 
+   {RGBColor[0.12837055044566448`, 0.8154214001627405, 0.057267160902801484`],
+     PolygonBox[{{-0.6631047413741009, 
      0.9657442377356377}, {-0.6361503724198022, 
      0.9582588450109399}, {-0.6712698824260004, 0.9434883980902627}}]}, 
-   {RGBColor[
-    0.11931535760361056`, 0.20284488327354078`, 0.36468127652466853`], 
+   {RGBColor[0.4957101691016441, 0.47413862066913914`, 0.3268086536673347], 
     PolygonBox[{{-0.6845484749728421, 
      0.9851912320965991}, {-0.6631047413741009, 
      0.9657442377356377}, {-0.699727661887979, 0.946276442669875}}]}, 
-   {RGBColor[0.8209519692041904, 0.20657070575982206`, 0.7677741559025046], 
+   {RGBColor[0.2139399900718746, 0.12255020446117992`, 0.38261832746565516`], 
     PolygonBox[{{-0.558764417231233, 
      1.0198243456540097`}, {-0.5469314890433972, 
      0.9983037305137608}, {-0.445781769418133, 0.9991268802450621}}]}, 
-   {RGBColor[0.1718982038902206, 0.4980611693131929, 0.2066172154073036], 
+   {RGBColor[0.42734323994650714`, 0.09678704998801058, 0.8367197210694852], 
     PolygonBox[{{-0.30100657042782697`, 
      1.1647717867687868`}, {-0.39248565403330343`, 
      1.1159058331273752`}, {-0.3952272306838503, 1.1329901780918752`}}]}, 
-   {RGBColor[0.8881740562289262, 0.02058497451117014, 0.9220822214691831], 
+   {RGBColor[0.9558798379487614, 0.002023310360098174, 0.18503914021250045`], 
     PolygonBox[{{-0.6845484749728421, 
      0.9851912320965991}, {-0.6864683526525642, 
      1.0092643266891326`}, {-0.5940367946974847, 1.0197713741714818`}}]}, 
-   {RGBColor[0.3381304868296471, 0.5235751676761911, 0.9357439178196614], 
+   {RGBColor[0.7265267406221463, 0.8942732966164819, 0.862922287618296], 
     PolygonBox[{{0.022031738344745325`, 
      1.195783909448413}, {-0.07436093585817147, 
      1.2058342413602918`}, {-0.06449907927229534, 1.1984035540294626`}}]}, 
-   {RGBColor[0.07768804341314595, 0.932036872245708, 0.2852556729787519], 
+   {RGBColor[0.7665099599745051, 0.9178259796675832, 0.5057692442176263], 
     PolygonBox[{{-0.30785934886885863`, 
      1.1901249018397522`}, {-0.4015188108279065, 
      1.140093928170958}, {-0.4077888087260967, 1.1360052577676139`}}]}, 
-   {RGBColor[0.0009621057073503358, 0.4712420747472972, 0.03345091611418649], 
-    PolygonBox[{{-0.5773021067168103, 
+   {RGBColor[0.48002590426595115`, 0.6270943491723153, 0.022002635840256524`],
+     PolygonBox[{{-0.5773021067168103, 
      1.0301686007622752`}, {-0.558764417231233, 
      1.0198243456540097`}, {-0.4426421103410937, 1.0209324290961868`}}]}, 
-   {RGBColor[0.8057637421746366, 0.0300594778143084, 0.0414009622631506], 
+   {RGBColor[0.20127149808965195`, 0.3937853577227304, 0.283078836487175], 
     PolygonBox[{{-0.06449907927229534, 1.1984035540294626`}, {
      0.04178863633498465, 1.1873210666486067`}, {0.022031738344745325`, 
      1.195783909448413}}]}, 
-   {RGBColor[0.7910081113097924, 0.9411717723777382, 0.526869571023312], 
+   {RGBColor[0.9974724788353184, 0.3336619021743148, 0.8048301531930833], 
     PolygonBox[{{-0.30357354466997877`, 
      1.1819492084706242`}, {-0.3952272306838503, 
      1.1329901780918752`}, {-0.4015188108279065, 1.140093928170958}}]}, 
-   {RGBColor[0.4684270261979031, 0.5308859420079421, 0.14527818909345958`], 
+   {RGBColor[0.7322747988530645, 0.13131255243738482`, 0.9439904401417027], 
     PolygonBox[{{0.19654122682704098`, 0.9642317336963656}, {
      0.24044149732300005`, 0.9097104326835674}, {0.23533548052884068`, 
      0.9688489524914223}}]}, 
-   {RGBColor[0.4150968913392472, 0.5337549972624422, 0.11402923884759586`], 
+   {RGBColor[0.3704389736218816, 0.09633722934988187, 0.6083951585092191], 
     PolygonBox[{{-0.37450336261309014`, 
      1.111589375072012}, {-0.28955794222561926`, 
      1.1569651233153586`}, {-0.27846602484481364`, 1.1682538186008762`}}]}, 
-   {RGBColor[0.8893739104112397, 0.34938697968764276`, 0.525621957260626], 
+   {RGBColor[0.315945415605259, 0.20467938431709531`, 0.48042208360801064`], 
     PolygonBox[{{0.20201708832751494`, 0.7564654725702968}, {
      0.21024484360074447`, 0.8159063901570024}, {0.17632515946108698`, 
      0.7834970770257219}}]}, 
-   {RGBColor[0.025679542422684776`, 0.5934297902520751, 0.8771693179167046], 
+   {RGBColor[0.08785172609225844, 0.3383585527636561, 0.7979748986656572], 
     PolygonBox[{{0.1324666809023711, 0.749207596660139}, {
      0.12647423366908808`, 0.7059151999087033}, {0.13973153642668187`, 
      0.7149616747992183}}]}, 
-   {RGBColor[0.09093455848629683, 0.9916625599391655, 0.8725871976658806], 
+   {RGBColor[0.02702962808907472, 0.8598381948241927, 0.7286755238936118], 
     PolygonBox[{{-0.6164295592160106, 
      0.9693807927213453}, {-0.6361503724198022, 
      0.9582588450109399}, {-0.5653255997416687, 0.9638147729545017}}]}, 
-   {RGBColor[0.9750925498384286, 0.46248878517716463`, 0.3203109633983876], 
+   {RGBColor[0.09969501894437705, 0.8406408357399793, 0.8388534770130356], 
     PolygonBox[{{-0.5653255997416687, 
      0.9638147729545017}, {-0.5494221624017521, 
      0.9742106808587844}, {-0.6164295592160106, 0.9693807927213453}}]}, 
-   {RGBColor[0.014857108942724295`, 0.8643156391031885, 0.407850777388828], 
+   {RGBColor[0.5759296542197259, 0.2152814750843377, 0.23802485533647366`], 
     PolygonBox[{{-0.29250843112536784`, 
      0.6276229800153064}, {-0.32070798903419384`, 
      0.6626448626460408}, {-0.33677053295520454`, 0.6688542323526607}}]}, 
-   {RGBColor[0.2034929533688079, 0.8160787428145149, 0.0485861171916917], 
+   {RGBColor[0.8676444321125549, 0.5257107866770894, 0.8321592389706334], 
     PolygonBox[{{-0.46505560012737485`, 
      0.7749499125163986}, {-0.4557260047435647, 
      0.8423473435476501}, {-0.46617979383920055`, 0.9009685254735466}}]}, 
-   {RGBColor[0.7730980045899403, 0.8123088691335378, 0.20458183219280213`], 
-    PolygonBox[{{0.14820089492775965`, 1.1873799798565292`}, {
+   {RGBColor[0.37483609832711307`, 0.059277993379384775`, 0.7706386868391666],
+     PolygonBox[{{0.14820089492775965`, 1.1873799798565292`}, {
      0.0637483954781155, 1.2217876479146503`}, {0.0698675917040982, 
      1.2076040650839122`}}]}, 
-   {RGBColor[0.26056754722550957`, 0.984423173057982, 0.9880970101791202], 
+   {RGBColor[0.8237439908905786, 0.3083983514009969, 0.8550997796573401], 
     PolygonBox[{{-0.445781769418133, 
      0.9991268802450621}, {-0.4426421103410937, 
      1.0209324290961868`}, {-0.558764417231233, 1.0198243456540097`}}]}, 
-   {RGBColor[0.7296659942818957, 0.5303563576667609, 0.2889931268004591], 
+   {RGBColor[0.009193237696787149, 0.9969140076102276, 0.3189018094815763], 
     PolygonBox[{{-0.18146853742640495`, 
      1.1957940844622015`}, {-0.07436093585817147, 
      1.2058342413602918`}, {-0.09545931842046657, 1.1847546922800685`}}]}, 
-   {RGBColor[0.9339645346821908, 0.8726427706529947, 0.8882666547613427], 
+   {RGBColor[0.577683691493518, 0.031408769593155084`, 0.911297118353767], 
     PolygonBox[{{-0.5469314890433972, 
      0.9983037305137608}, {-0.5494221624017521, 
      0.9742106808587844}, {-0.45493059465115343`, 0.9749000168161843}}]}, 
-   {RGBColor[0.15371926960994986`, 0.1888249886002349, 0.07366780570970755], 
+   {RGBColor[0.3804357106895804, 0.9746092928399412, 0.3425389775715546], 
     PolygonBox[{{-0.27846602484481364`, 
      1.1682538186008762`}, {-0.18146853742640495`, 
      1.1957940844622015`}, {-0.17293173749596583`, 1.1774925543095336`}}]}, 
-   {RGBColor[0.35910726395743975`, 0.4060196568374459, 0.968953956160322], 
+   {RGBColor[0.9222681219897737, 0.6535404032372567, 0.5115666970644672], 
     PolygonBox[{{0.14611730734094355`, 0.7610926230606992}, {
      0.13973153642668187`, 0.7149616747992183}, {0.16908308224749496`, 
      0.7311811291094044}}]}, 
-   {RGBColor[0.503498434074884, 0.16757684536439976`, 0.9831084601677895], 
+   {RGBColor[0.549460419749487, 0.03935164518914247, 0.8760118244107225], 
     PolygonBox[{{-0.6631047413741009, 
      0.9657442377356377}, {-0.6845484749728421, 
      0.9851912320965991}, {-0.596283327385969, 0.9945788120076026}}]}, 
-   {RGBColor[0.7680309602647384, 0.7866906934879918, 0.8552319228563212], 
+   {RGBColor[0.9089219589550674, 0.8704680849656745, 0.794164288201032], 
     PolygonBox[{{-0.5940367946974847, 
      1.0197713741714818`}, {-0.5773021067168103, 
      1.0301686007622752`}, {-0.44573621054498924`, 1.0315665389407707`}}]}, 
-   {RGBColor[0.20008514699100988`, 0.6981395775089656, 0.06890767114223051], 
+   {RGBColor[0.1363939241029024, 0.8356703098577059, 0.7052207686146283], 
     PolygonBox[{{0.1361228700201032, 1.1647499302967643`}, {
      0.05582855378759033, 1.1974625658442712`}, {0.053940950019943784`, 
      1.2147028811687144`}}]}, 
-   {RGBColor[0.8621302578047285, 0.7305969063568036, 0.09377053733944196], 
+   {RGBColor[0.07582909614885613, 0.1672148684680974, 0.6605424036281999], 
     PolygonBox[{{0.13968848684368151`, 1.1901025244479666`}, {
      0.05748108374903559, 1.223595671335231}, {0.0637483954781155, 
      1.2217876479146503`}}]}, 
-   {RGBColor[0.8230247218233777, 0.8533257758849371, 0.6734411767187645], 
+   {RGBColor[0.29059911696783436`, 0.6752748804715618, 0.1971609401486496], 
     PolygonBox[{{-0.45493059465115343`, 
      0.9749000168161843}, {-0.445781769418133, 
      0.9991268802450621}, {-0.5469314890433972, 0.9983037305137608}}]}, 
-   {RGBColor[0.5499649979980916, 0.1605589762261317, 0.3952487126254758], 
+   {RGBColor[0.44326949737141486`, 0.11665636486606634`, 0.849253918932886], 
     PolygonBox[{{-0.4426421103410937, 
      1.0209324290961868`}, {-0.44573621054498924`, 
      1.0315665389407707`}, {-0.5773021067168103, 1.0301686007622752`}}]}, 
-   {RGBColor[0.1494620487682785, 0.908565317864094, 0.6154544198448473], 
-    PolygonBox[{{-0.3067222341380489, 
+   {RGBColor[0.062072290670534214`, 0.6965830201592682, 0.15668882347787116`],
+     PolygonBox[{{-0.3067222341380489, 
      0.6315361322716331}, {-0.33677053295520454`, 
      0.6688542323526607}, {-0.37130366610711857`, 0.6788918384266438}}]}, 
-   {RGBColor[0.34193870398335924`, 0.013795409371793799`, 0.4411013547226279],
-     PolygonBox[{{-0.6361503724198022, 
+   {RGBColor[0.6765153607773753, 0.9567396054518194, 0.40436007608460645`], 
+    PolygonBox[{{-0.6361503724198022, 
      0.9582588450109399}, {-0.6631047413741009, 
      0.9657442377356377}, {-0.5836751564026195, 0.9731167097076601}}]}, 
-   {RGBColor[0.010809655005658003`, 0.44725474547086197`, 0.5819006846953085],
-     PolygonBox[{{-0.5940367946974847, 
+   {RGBColor[0.9713480057609696, 0.14907090011456825`, 0.12690795024468216`], 
+    PolygonBox[{{-0.5940367946974847, 
      1.0197713741714818`}, {-0.596283327385969, 
      0.9945788120076026}, {-0.6845484749728421, 0.9851912320965991}}]}, 
-   {RGBColor[0.573607019805374, 0.7158070057163326, 0.713925555652132], 
+   {RGBColor[0.23494423647936724`, 0.771736100884562, 0.771711586003627], 
     PolygonBox[{{0.2204200286141559, 1.038124129252565}, {
      0.17687152794358751`, 1.0922082607390091`}, {0.19109809780500547`, 
      1.023789302086383}}]}, 
-   {RGBColor[0.5439975887040474, 0.5460258233168382, 0.0522840745976485], 
+   {RGBColor[0.8798832812233202, 0.26659580621973933`, 0.5150536257630118], 
     PolygonBox[{{0.13438697805934532`, 1.1819273104444878`}, {
      0.053940950019943784`, 1.2147028811687144`}, {0.05748108374903559, 
      1.223595671335231}}]}, 
-   {RGBColor[0.6627857608491337, 0.9863207701906491, 0.2870694967141716], 
+   {RGBColor[0.46003676763115786`, 0.6808005960304335, 0.6962358128976287], 
     PolygonBox[{{-0.4557260047435647, 
      0.8423473435476501}, {-0.46505560012737485`, 
      0.7749499125163986}, {-0.4455025244224451, 0.7288128495869277}}]}, 
-   {RGBColor[0.5269149450845547, 0.5424421320201465, 0.9488990734455434], 
+   {RGBColor[0.7699662271981473, 0.39519395451590666`, 0.10164908099345538`], 
     PolygonBox[{{-0.27846602484481364`, 
      1.1682538186008762`}, {-0.35550246400401797`, 
      1.1271029976099836`}, {-0.37450336261309014`, 1.111589375072012}}]}, 
-   {RGBColor[0.0755351168761682, 0.09176425029206747, 0.7713987753321832], 
+   {RGBColor[0.3421560598359257, 0.9591704884993748, 0.6387273591445211], 
     PolygonBox[{{0.22487322771787405`, 0.7936801363525431}, {
      0.2338571336291519, 0.8585804927104699}, {0.21024484360074447`, 
      0.8159063901570024}}]}, 
-   {RGBColor[0.11840967268852687`, 0.29862066079054794`, 0.5947567840960672], 
+   {RGBColor[0.07711689098256547, 0.06493474905432373, 0.37223475811244167`], 
     PolygonBox[{{-0.5836751564026195, 
      0.9731167097076601}, {-0.5653255997416687, 
      0.9638147729545017}, {-0.6361503724198022, 0.9582588450109399}}]}, 
-   {RGBColor[0.05180728004045054, 0.7178405949210496, 0.39096140646465427`], 
+   {RGBColor[0.6303953497736989, 0.3853222976236821, 0.7478142958937446], 
     PolygonBox[{{0.0698675917040982, 1.2076040650839122`}, {
      0.15589777327846194`, 1.1725550325736191`}, {0.14820089492775965`, 
      1.1873799798565292`}}]}, 
-   {RGBColor[0.2900086373024704, 0.9496419436202725, 0.6185584794893089], 
+   {RGBColor[0.8812843683948337, 0.8643176683493323, 0.5351283500087911], 
     PolygonBox[{{-0.09545931842046657, 
      1.1847546922800685`}, {-0.17293173749596583`, 
      1.1774925543095336`}, {-0.18146853742640495`, 1.1957940844622015`}}]}, 
-   {RGBColor[0.6161785208619663, 0.664453349365766, 0.9064670226974396], 
+   {RGBColor[0.29804428908764913`, 0.700090340394693, 0.615713331545809], 
     PolygonBox[{{-0.4705518121521985, 
      1.0554949897226207`}, {-0.4104690595325736, 
      1.1202218514586666`}, {-0.4077888087260967, 1.1360052577676139`}}]}, 
-   {RGBColor[0.7782819140470771, 0.6369564132530416, 0.4682431257349795], 
+   {RGBColor[0.9951685393601721, 0.14188127989048027`, 0.947489751824768], 
     PolygonBox[{{-0.596283327385969, 
      0.9945788120076026}, {-0.5836751564026195, 
      0.9731167097076601}, {-0.6631047413741009, 0.9657442377356377}}]}, 
-   {RGBColor[0.9311821325268408, 0.5520658913900505, 0.08131052768552549], 
+   {RGBColor[0.008447410007991651, 0.6856462584812599, 0.3600468072769549], 
     PolygonBox[{{0.17632515946108698`, 0.7834970770257219}, {
      0.16908308224749496`, 0.7311811291094044}, {0.20201708832751494`, 
      0.7564654725702968}}]}, 
-   {RGBColor[0.08488077744831801, 0.5926391522731458, 0.08116537640383936], 
+   {RGBColor[0.4947524660050817, 0.94107753636326, 0.6352983364337661], 
     PolygonBox[{{-0.07436093585817147, 1.2058342413602918`}, {
      0.022031738344745325`, 1.195783909448413}, {-0.025737105037070072`, 
      1.1774851945779106`}}]}, 
-   {RGBColor[0.24243233909632123`, 0.254424934098723, 0.4307238241170315], 
+   {RGBColor[
+    0.046083847785566734`, 0.006094222676187089, 0.48121364142603107`], 
     PolygonBox[{{-0.3372268140380594, 
      0.6365707094787061}, {-0.37130366610711857`, 
      0.6788918384266438}, {-0.4119665360940595, 0.6970548427770487}}]}, 
-   {RGBColor[0.34737282112602386`, 0.8600853358011245, 0.4982443637259], 
+   {RGBColor[0.103093284350523, 0.8146974934435369, 0.6019980665927771], 
     PolygonBox[{{-0.35550246400401797`, 
      1.1271029976099836`}, {-0.27846602484481364`, 
      1.1682538186008762`}, {-0.24309203338954838`, 1.157572716726745}}]}, 
-   {RGBColor[0.3200030554109998, 0.41385427751298565`, 0.03203874915409388], 
+   {RGBColor[
+    0.29833600133909033`, 0.22939280932134642`, 0.22209592327398897`], 
     PolygonBox[{{-0.17293173749596583`, 
      1.1774925543095336`}, {-0.24309203338954838`, 
      1.157572716726745}, {-0.27846602484481364`, 1.1682538186008762`}}]}, 
-   {RGBColor[0.5605702403167936, 0.8459232880504672, 0.7657835713148535], 
+   {RGBColor[0.8563371615308515, 0.42852254197761974`, 0.6645705131706019], 
     PolygonBox[{{0.0637483954781155, 1.2217876479146503`}, {
      0.14820089492775965`, 1.1873799798565292`}, {0.13968848684368151`, 
      1.1901025244479666`}}]}, 
-   {RGBColor[0.9310773646170667, 0.5427215526858615, 0.4891470704383172], 
+   {RGBColor[0.6950049109781546, 0.054926310595975414`, 0.9998450476408367], 
     PolygonBox[{{-0.4667717630362841, 
      1.0724638711121717`}, {-0.4077888087260967, 
      1.1360052577676139`}, {-0.4015188108279065, 1.140093928170958}}]}, 
-   {RGBColor[0.014618821900084233`, 0.2578555150146029, 0.22075910896952067`],
-     PolygonBox[{{-0.5494221624017521, 
+   {RGBColor[0.530862962672523, 0.6232270682391248, 0.11865624797007879`], 
+    PolygonBox[{{-0.5494221624017521, 
      0.9742106808587844}, {-0.5653255997416687, 
      0.9638147729545017}, {-0.464191140554777, 0.9646093093638547}}]}, 
-   {RGBColor[0.7755090918717138, 0.648194687929571, 0.519219805300644], 
+   {RGBColor[0.3578176431159428, 0.22824185786521234`, 0.5524168795075706], 
     PolygonBox[{{-0.4104690595325736, 
      1.1202218514586666`}, {-0.4705518121521985, 
      1.0554949897226207`}, {-0.4701654932056893, 0.9713011656801716}}]}, 
-   {RGBColor[0.41066642031229494`, 0.3831775359174012, 0.7069569140320642], 
+   {RGBColor[0.8974838388377524, 0.17989922192696306`, 0.7304995964624581], 
     PolygonBox[{{0.19109809780500547`, 1.023789302086383}, {
      0.23533548052884068`, 0.9688489524914223}, {0.2204200286141559, 
      1.038124129252565}}]}, 
-   {RGBColor[
-    0.36400927852210785`, 0.11773942434025031`, 0.20773612984034817`], 
+   {RGBColor[0.6867190129769383, 0.4556744446357892, 0.7057097535841159], 
     PolygonBox[{{-0.33677053295520454`, 
      0.6688542323526607}, {-0.3067222341380489, 
      0.6315361322716331}, {-0.29250843112536784`, 0.6276229800153064}}]}, 
-   {RGBColor[0.9073620466238785, 0.33686919041032537`, 0.14101845566747606`], 
+   {RGBColor[0.5473111942313815, 0.4981784291633846, 0.4431029575344547], 
     PolygonBox[{{0.053940950019943784`, 1.2147028811687144`}, {
      0.13438697805934532`, 1.1819273104444878`}, {0.1361228700201032, 
      1.1647499302967643`}}]}, 
-   {RGBColor[0.7661303035083158, 0.35938753617762753`, 0.9385697916744831], 
+   {RGBColor[0.4886841645953104, 0.8124675295186825, 0.11273972577814284`], 
     PolygonBox[{{0.08964855246303237, 1.168235412872011}, {
      0.022031738344745325`, 1.195783909448413}, {0.04178863633498465, 
      1.1873210666486067`}}]}, 
-   {RGBColor[0.09351238291493313, 0.5697060064774517, 0.11316608616194967`], 
+   {RGBColor[0.6874340460100052, 0.7306665852013279, 0.2690255790315965], 
     PolygonBox[{{-0.4514112494224614, 
      1.0724631030864908`}, {-0.3952272306838503, 
      1.1329901780918752`}, {-0.39248565403330343`, 1.1159058331273752`}}]}, 
-   {RGBColor[0.2274624805506138, 0.33096519172710637`, 0.18730646496491543`], 
+   {RGBColor[
+    0.47214361714009345`, 0.12094049022268938`, 0.20789032638446137`], 
     PolygonBox[{{-0.464191140554777, 
      0.9646093093638547}, {-0.45493059465115343`, 
      0.9749000168161843}, {-0.5494221624017521, 0.9742106808587844}}]}, 
-   {RGBColor[0.42885749094284, 0.6153547830183996, 0.17175859074636812`], 
+   {RGBColor[0.6870828795566677, 0.5277789634540719, 0.6824206376296884], 
     PolygonBox[{{0.05748108374903559, 1.223595671335231}, {
      0.13968848684368151`, 1.1901025244479666`}, {0.13438697805934532`, 
      1.1819273104444878`}}]}, 
-   {RGBColor[0.09881177914392802, 0.6760614437119354, 0.27897138827783063`], 
+   {RGBColor[0.8830423917766037, 0.32586577411221773`, 0.32612393344139323`], 
     PolygonBox[{{-0.44573621054498924`, 
      1.0315665389407707`}, {-0.4553001619506931, 
      1.0212840060286847`}, {-0.5940367946974847, 1.0197713741714818`}}]}, 
-   {RGBColor[0.15307007500299585`, 0.0738571291026322, 0.22145767413160167`], 
+   {RGBColor[0.342236271350818, 0.8155528126175406, 0.4302827048570539], 
     PolygonBox[{{-0.596283327385969, 
      0.9945788120076026}, {-0.5940367946974847, 
      1.0197713741714818`}, {-0.4553001619506931, 1.0212840060286847`}}]}, 
-   {RGBColor[0.8799298479042921, 0.7935060461624388, 0.023329636910498053`], 
+   {RGBColor[0.2999736307128851, 0.9213072960750444, 0.0851917300927898], 
     PolygonBox[{{-0.025737105037070072`, 
      1.1774851945779106`}, {-0.09545931842046657, 
      1.1847546922800685`}, {-0.07436093585817147, 1.2058342413602918`}}]}, 
-   {RGBColor[0.20150593767487668`, 0.9462474512744645, 0.7881029770729366], 
+   {RGBColor[0.3477629371055455, 0.050844834286911, 0.9901765072024147], 
     PolygonBox[{{-0.4589326274780409, 
      1.078242063665344}, {-0.4015188108279065, 
      1.140093928170958}, {-0.3952272306838503, 1.1329901780918752`}}]}, 
-   {RGBColor[0.7029320750184815, 0.3723632168934863, 0.43231569669988335`], 
+   {RGBColor[0.6169361375329756, 0.8231707839870628, 0.5812179392567873], 
     PolygonBox[{{-0.47558098155363865`, 
      0.833053492751338}, {-0.46617979383920055`, 
      0.9009685254735466}, {-0.4701654932056893, 0.9713011656801716}}]}, 
-   {RGBColor[0.5082625391489095, 0.8687739666011445, 0.042193519114613665`], 
+   {RGBColor[0.4959767115871849, 0.30536859110595604`, 0.5481667205537861], 
     PolygonBox[{{0.04178863633498465, 1.1873210666486067`}, {
      0.1163479667617445, 1.1569448280199093`}, {0.08964855246303237, 
      1.168235412872011}}]}, 
-   {RGBColor[0.9587664835724634, 0.10387934038047941`, 0.9883099581797179], 
+   {RGBColor[0.046667987945683054`, 0.4173772347443405, 0.2654546475720121], 
     PolygonBox[{{-0.4265750072781612, 
      1.055492790882377}, {-0.37450336261309014`, 
      1.111589375072012}, {-0.35550246400401797`, 1.1271029976099836`}}]}, 
-   {RGBColor[0.5452219734635726, 0.22830555102086092`, 0.5801532938947578], 
+   {RGBColor[0.47189657290578824`, 0.7535067881550248, 0.15269424192569758`], 
     PolygonBox[{{0.20080758719567507`, 0.8503278955855388}, {
      0.18636375096799754`, 0.8016854734762238}, {0.3080919380498636, 
      0.8377855684290413}}]}, 
-   {RGBColor[0.04389036503726307, 0.7905206305463903, 0.6653575990405096], 
+   {RGBColor[0.10908337544556557`, 0.8284522129523975, 0.22512778560683522`], 
     PolygonBox[{{0.23111225289839657`, 0.8423130016347679}, {
      0.24044149732300005`, 0.9097104326835674}, {0.2338571336291519, 
      0.8585804927104699}}]}, 
-   {RGBColor[0.5152163842969635, 0.34353611929312633`, 0.5199615196940215], 
+   {RGBColor[0.46937634060267697`, 0.9122236681786173, 0.6865033324567646], 
     PolygonBox[{{-0.37130366610711857`, 
      0.6788918384266438}, {-0.3372268140380594, 
      0.6365707094787061}, {-0.3067222341380489, 0.6315361322716331}}]}, 
-   {RGBColor[0.5372553504557396, 0.13957524021135037`, 0.010511555197683764`],
-     PolygonBox[{{-0.5653255997416687, 
+   {RGBColor[0.9330595655543374, 0.5924548287184455, 0.6972844720841263], 
+    PolygonBox[{{-0.5653255997416687, 
      0.9638147729545017}, {-0.5836751564026195, 
      0.9731167097076601}, {-0.4675800586809287, 0.9741737759589959}}]}, 
-   {RGBColor[0.09446657118194457, 0.7812505582175326, 0.27198680287080723`], 
+   {RGBColor[0.9876730464958463, 0.20081952247812285`, 0.7280806024746196], 
     PolygonBox[{{0.21024484360074447`, 0.8159063901570024}, {
      0.20201708832751494`, 0.7564654725702968}, {0.22487322771787405`, 
      0.7936801363525431}}]}, 
-   {RGBColor[0.31770983124347274`, 0.8084217044945066, 0.9327356225747008], 
+   {RGBColor[0.8730589343405704, 0.8620895784413198, 0.8171836601642204], 
     PolygonBox[{{-0.5836751564026195, 
      0.9731167097076601}, {-0.596283327385969, 
      0.9945788120076026}, {-0.46474331065184993`, 0.9959282262404068}}]}, 
-   {RGBColor[0.9311086848755881, 0.873084755925265, 0.7869753319649311], 
+   {RGBColor[0.6581262558700636, 0.0775404997160829, 0.23345272649864035`], 
     PolygonBox[{{-0.4077888087260967, 
      1.1360052577676139`}, {-0.4667717630362841, 
      1.0724638711121717`}, {-0.4705518121521985, 1.0554949897226207`}}]}, 
-   {RGBColor[0.008438030217198245, 0.29411698275827103`, 0.8933512291366308], 
+   {RGBColor[0.8176764110152293, 0.5553372362614233, 0.8830756443054855], 
     PolygonBox[{{-0.46617979383920055`, 
      0.9009685254735466}, {-0.47558098155363865`, 
      0.833053492751338}, {-0.46505560012737485`, 0.7749499125163986}}]}, 
-   {RGBColor[0.5958156767661387, 0.6637371828898102, 0.46370762549344713`], 
+   {RGBColor[0.39202096830100586`, 0.5024510288527324, 0.24425166842432788`], 
     PolygonBox[{{-0.3732488372650103, 
      0.6489697434544544}, {-0.4119665360940595, 
      0.6970548427770487}, {-0.4455025244224451, 0.7288128495869277}}]}, 
-   {RGBColor[0.834582204956972, 0.9039184991428901, 0.6725161546374063], 
+   {RGBColor[0.5548484559438924, 0.3509441431937772, 0.39275925820393986`], 
     PolygonBox[{{0.1980599779119168, 1.1201914250067946`}, {
      0.15589777327846194`, 1.1725550325736191`}, {0.17687152794358751`, 
      1.0922082607390091`}}]}, 
-   {RGBColor[0.3465700537190848, 0.7226405166863128, 0.7752295980257828], 
+   {RGBColor[0.7931018167124662, 0.6472660534295065, 0.7003623977669902], 
     PolygonBox[{{-0.39248565403330343`, 
      1.1159058331273752`}, {-0.44856340971517994`, 
      1.0554938903024988`}, {-0.4514112494224614, 1.0724631030864908`}}]}, 
-   {RGBColor[0.911983838241208, 0.15791022837631252`, 0.023072770520608632`], 
+   {RGBColor[0.7517444139164537, 0.7364955759225233, 0.6335664178685807], 
     PolygonBox[{{-0.24309203338954838`, 
      1.157572716726745}, {-0.2988136073470341, 
      1.1278073115473957`}, {-0.35550246400401797`, 1.1271029976099836`}}]}, 
-   {RGBColor[0.5758501075830855, 0.9195632296277743, 0.7016190942324969], 
+   {RGBColor[0.4581865012891715, 0.8758503870831353, 0.9837435388177593], 
     PolygonBox[{{-0.4675800586809287, 
      0.9741737759589959}, {-0.464191140554777, 
      0.9646093093638547}, {-0.5653255997416687, 0.9638147729545017}}]}, 
-   {RGBColor[0.27392322664255997`, 0.9029947191625654, 0.9717784907073226], 
+   {RGBColor[0.01678419072697701, 0.9119901750655524, 0.11877935561387831`], 
     PolygonBox[{{-0.4015188108279065, 
      1.140093928170958}, {-0.4589326274780409, 
      1.078242063665344}, {-0.4667717630362841, 1.0724638711121717`}}]}, 
-   {RGBColor[0.48430936304436956`, 0.45827871756630656`, 0.7744119991088403], 
+   {RGBColor[0.940794565770726, 0.3134239086392494, 0.6075067499653715], 
     PolygonBox[{{0.09691193409753496, 0.6688325482293082}, {
      0.13973153642668187`, 0.7149616747992183}, {0.12647423366908808`, 
      0.7059151999087033}}]}, 
-   {RGBColor[0.3887390673377915, 0.8827372423633586, 0.6023061339972267], 
+   {RGBColor[0.32091764455862104`, 0.32866865101185594`, 0.9063001139777189], 
     PolygonBox[{{-0.4553001619506931, 
      1.0212840060286847`}, {-0.46474331065184993`, 
      0.9959282262404068}, {-0.596283327385969, 0.9945788120076026}}]}, 
-   {RGBColor[0.6188325696746277, 0.0947419126767044, 0.22090076807280612`], 
+   {RGBColor[0.8237316584417551, 0.6360708957416414, 0.6722089545091141], 
     PolygonBox[{{-0.3952272306838503, 
      1.1329901780918752`}, {-0.4514112494224614, 
      1.0724631030864908`}, {-0.4589326274780409, 1.078242063665344}}]}, 
-   {RGBColor[0.5971036339301721, 0.5345262046780903, 0.7835378036426346], 
+   {RGBColor[0.6998278439950341, 0.9400142263974418, 0.9715177244604869], 
     PolygonBox[{{0.3080919380498636, 0.8377855684290413}, {
      0.31052989236543105`, 0.8783187753563437}, {0.20080758719567507`, 
      0.8503278955855388}}]}, 
-   {RGBColor[0.19897905501188107`, 0.33423742640597554`, 0.6038903369753765], 
+   {RGBColor[0.48076448703687547`, 0.2881485825309156, 0.9398332594566507], 
     PolygonBox[{{-0.17293173749596583`, 
      1.1774925543095336`}, {-0.09545931842046657, 
      1.1847546922800685`}, {-0.11947515195994377`, 1.159011659533508}}]}, 
-   {RGBColor[0.16233129234071986`, 0.19501676636206433`, 0.7099353213559749], 
+   {RGBColor[0.94528679820943, 0.358315085315132, 0.7837532953713353], 
     PolygonBox[{{0.20502225348166156`, 0.8819492068703466}, {
      0.20080758719567507`, 0.8503278955855388}, {0.31052989236543105`, 
      0.8783187753563437}}]}, 
-   {RGBColor[0.15514249838105787`, 0.67638179033444, 0.10191445214382266`], 
+   {RGBColor[0.6908701438692977, 0.7256901408796572, 0.34891467211958926`], 
     PolygonBox[{{-0.24309203338954838`, 
      1.157572716726745}, {-0.17293173749596583`, 
      1.1774925543095336`}, {-0.16292626078041247`, 1.154938510850945}}]}, 
-   {RGBColor[0.7457893936556155, 0.5151727469713152, 0.42290346767888787`], 
+   {RGBColor[0.7779094730866705, 0.9899639276738934, 0.03288683847136853], 
     PolygonBox[{{-0.46474331065184993`, 
      0.9959282262404068}, {-0.4675800586809287, 
      0.9741737759589959}, {-0.5836751564026195, 0.9731167097076601}}]}, 
-   {RGBColor[0.6623110780154082, 0.1322316101467771, 0.14445473153271537`], 
+   {RGBColor[0.2792889561128078, 0.7585906966748772, 0.8336677249872533], 
     PolygonBox[{{0.023171279776109988`, 
      1.157559403561087}, {-0.025737105037070072`, 1.1774851945779106`}, {
      0.022031738344745325`, 1.195783909448413}}]}, 
-   {RGBColor[0.7162293139871159, 0.17592866592090384`, 0.6281174602587238], 
-    PolygonBox[{{0.022031738344745325`, 1.195783909448413}, {
+   {RGBColor[0.026599031469151768`, 0.8103620220584229, 0.24303949906409827`],
+     PolygonBox[{{0.022031738344745325`, 1.195783909448413}, {
      0.08964855246303237, 1.168235412872011}, {0.023171279776109988`, 
      1.157559403561087}}]}, 
-   {RGBColor[0.31266970564410346`, 0.7835866277726691, 0.8599931379326087], 
+   {RGBColor[
+    0.21948926619087294`, 0.13184690784552644`, 0.022177506291220617`], 
     PolygonBox[{{0.17687152794358751`, 1.0922082607390091`}, {
      0.2204200286141559, 1.038124129252565}, {0.1980599779119168, 
      1.1201914250067946`}}]}, 
-   {RGBColor[0.5320126955569366, 0.5927415384608892, 0.3585461999287336], 
+   {RGBColor[0.20177796810762394`, 0.40011847664070666`, 0.668781562176646], 
     PolygonBox[{{-0.4119665360940595, 
      0.6970548427770487}, {-0.3732488372650103, 
      0.6489697434544544}, {-0.3372268140380594, 0.6365707094787061}}]}, 
-   {RGBColor[0.0702129110783245, 0.9906930220434824, 0.30142518087208847`], 
-    PolygonBox[{{0.18636375096799754`, 0.8016854734762238}, {
+   {RGBColor[0.8481773435143629, 0.29842219659530245`, 0.047142547127313916`],
+     PolygonBox[{{0.18636375096799754`, 0.8016854734762238}, {
      0.16699077580763672`, 0.7561964605517375}, {0.29445487143159693`, 
      0.7966917803990197}}]}, 
-   {RGBColor[0.6946992995852521, 0.5496309485391402, 0.8565604241049434], 
+   {RGBColor[0.36288903118194527`, 0.4350198386681732, 0.18238990839224112`], 
     PolygonBox[{{-0.4027263229168068, 
      1.0762289331916364`}, {-0.35550246400401797`, 
      1.1271029976099836`}, {-0.2988136073470341, 1.1278073115473957`}}]}, 
-   {RGBColor[0.6247010596789926, 0.7117533703063925, 0.6944936085803279], 
+   {RGBColor[0.3935026063350242, 0.9114224741501615, 0.4203751879954649], 
     PolygonBox[{{0.29445487143159693`, 0.7966917803990197}, {
      0.3080919380498636, 0.8377855684290413}, {0.18636375096799754`, 
      0.8016854734762238}}]}, 
-   {RGBColor[0.4951925453573294, 0.6783529000139126, 0.6667326402704852], 
+   {RGBColor[0.786886411884206, 0.6392074705454212, 0.24561406145131004`], 
     PolygonBox[{{0.18959111018168745`, 1.1359753887716684`}, {
      0.14820089492775965`, 1.1873799798565292`}, {0.15589777327846194`, 
      1.1725550325736191`}}]}, 
-   {RGBColor[0.7732398462673262, 0.4539199964526337, 0.948746409560649], 
+   {RGBColor[0.9547396001358994, 0.7675894489768202, 0.11048010164072686`], 
     PolygonBox[{{-0.35550246400401797`, 
      1.1271029976099836`}, {-0.4027263229168068, 
      1.0762289331916364`}, {-0.4265750072781612, 1.055492790882377}}]}, 
-   {RGBColor[0.04056776164342479, 0.5272755709407084, 0.8931600321446203], 
+   {RGBColor[0.5366165204297129, 0.027491184037523597`, 0.6930615152188744], 
     PolygonBox[{{0.2338571336291519, 0.8585804927104699}, {
      0.22487322771787405`, 0.7936801363525431}, {0.23111225289839657`, 
      0.8423130016347679}}]}, 
-   {RGBColor[0.5602047502725092, 0.9754564794970704, 0.5482009161479651], 
+   {RGBColor[0.3155451757602692, 0.2601341457254627, 0.621956565763371], 
     PolygonBox[{{0.12052258350825555`, 0.678867247114163}, {
      0.16908308224749496`, 0.7311811291094044}, {0.13973153642668187`, 
      0.7149616747992183}}]}, 
-   {RGBColor[0.34032997616969274`, 0.18716206723938522`, 0.8174635939624506], 
+   {RGBColor[0.6117379013160564, 0.8404180943115773, 0.9609098077249358], 
     PolygonBox[{{-0.47942049724312896`, 
      0.9044441355818891}, {-0.4701654932056893, 
      0.9713011656801716}, {-0.4705518121521985, 1.0554949897226207`}}]}, 
-   {RGBColor[0.357558574609409, 0.38299657259936404`, 0.0649220240683388], 
+   {RGBColor[0.7018807958117566, 0.8883407090137827, 0.9246445227006856], 
     PolygonBox[{{0.17547478091488755`, 1.1158774351056278`}, {
      0.1361228700201032, 1.1647499302967643`}, {0.13438697805934532`, 
      1.1819273104444878`}}]}, 
-   {RGBColor[0.6649466897052063, 0.28151650720236865`, 0.5139371802157118], 
+   {RGBColor[0.6995263560452392, 0.7253771493164742, 0.914574484283285], 
     PolygonBox[{{-0.09545931842046657, 
      1.1847546922800685`}, {-0.025737105037070072`, 
      1.1774851945779106`}, {-0.08037093654285529, 1.154934383084733}}]}, 
-   {RGBColor[0.48414024099364417`, 0.8437617367994954, 0.3577728857042035], 
+   {RGBColor[0.5841405479378514, 0.7054185244869582, 0.8394331079627049], 
     PolygonBox[{{0.22593451804470063`, 0.9009339197579525}, {
      0.23533548052884068`, 0.9688489524914223}, {0.24044149732300005`, 
      0.9097104326835674}}]}, 
-   {RGBColor[
-    0.20582306964371577`, 0.48519978542958886`, 0.20797580038176244`], 
+   {RGBColor[0.8257098321071423, 0.0306668877320444, 0.35226827183404263`], 
     PolygonBox[{{0.179978004916548, 1.1400648533301707`}, {
      0.13968848684368151`, 1.1901025244479666`}, {0.14820089492775965`, 
      1.1873799798565292`}}]}, 
-   {RGBColor[0.349434435882481, 0.0890341813323976, 0.9360987201447333], 
+   {RGBColor[0.42950954914994965`, 0.6940474515560182, 0.39276274497677144`], 
     PolygonBox[{{-0.23497022365154455`, 
      0.6041814495829584}, {-0.29250843112536784`, 
      0.6276229800153064}, {-0.3067222341380489, 0.6315361322716331}}]}, 
-   {RGBColor[0.09573506685329769, 0.20918646431209265`, 0.4443720582832942], 
+   {RGBColor[0.11393503529596982`, 0.7242561049351859, 0.3691038299256264], 
     PolygonBox[{{-0.2988136073470341, 
      1.1278073115473957`}, {-0.24309203338954838`, 
      1.157572716726745}, {-0.20227457098092153`, 1.1437666297254487`}}]}, 
-   {RGBColor[0.014762745870724236`, 0.6553984024877826, 0.23907021174171117`],
-     PolygonBox[{{0.12647423366908808`, 0.7059151999087033}, {
+   {RGBColor[0.28172794744480245`, 0.6548502715239086, 0.9316411994422111], 
+    PolygonBox[{{0.12647423366908808`, 0.7059151999087033}, {
      0.08628903617417989, 0.6626245127947804}, {0.09691193409753496, 
      0.6688325482293082}}]}, 
-   {RGBColor[0.641581627518401, 0.783215944348959, 0.0303548503146156], 
+   {RGBColor[0.9156246802947294, 0.5707893336505536, 0.5079173076762296], 
     PolygonBox[{{0.17381420284493007`, 1.132961726020199}, {
      0.13438697805934532`, 1.1819273104444878`}, {0.13968848684368151`, 
      1.1901025244479666`}}]}, 
-   {RGBColor[0.7912689473663612, 0.9164523619861424, 0.5206326965117691], 
+   {RGBColor[0.910617687049746, 0.17152772558484997`, 0.41793602130935104`], 
     PolygonBox[{{-0.11947515195994377`, 
      1.159011659533508}, {-0.16292626078041247`, 
      1.154938510850945}, {-0.17293173749596583`, 1.1774925543095336`}}]}, 
-   {RGBColor[0.43264791064483643`, 0.3883794478442997, 0.5169020774287039], 
+   {RGBColor[0.4134347435380141, 0.3482952631716978, 0.44985361204832985`], 
     PolygonBox[{{-0.4032285622509722, 
      0.6763113581483146}, {-0.4455025244224451, 
      0.7288128495869277}, {-0.46505560012737485`, 0.7749499125163986}}]}, 
-   {RGBColor[0.8987189633934398, 0.1812584231105614, 0.18162572801706234`], 
+   {RGBColor[0.11389869461890911`, 0.19760404674474663`, 0.800480037130473], 
     PolygonBox[{{-0.4701654932056893, 
      0.9713011656801716}, {-0.47942049724312896`, 
      0.9044441355818891}, {-0.47558098155363865`, 0.833053492751338}}]}, 
-   {RGBColor[0.6058411237752046, 0.24577987580690586`, 0.9091408577951097], 
+   {RGBColor[0.6832469809941675, 0.15437726957164277`, 0.7102323438453502], 
     PolygonBox[{{0.31052989236543105`, 0.8783187753563437}, {
      0.30233699225742705`, 0.9016609245347813}, {0.20502225348166156`, 
      0.8819492068703466}}]}, 
-   {RGBColor[0.22056817699443987`, 0.4210859226849659, 0.187925684670752], 
+   {RGBColor[0.6186006351857831, 0.11531026967336633`, 0.5145161053166523], 
     PolygonBox[{{-0.16292626078041247`, 
      1.154938510850945}, {-0.20227457098092153`, 
      1.1437666297254487`}, {-0.24309203338954838`, 1.157572716726745}}]}, 
-   {RGBColor[0.02711530008898877, 0.1063490518120831, 0.4344638566826562], 
+   {RGBColor[0.9589596444909587, 0.7766128441777322, 0.4253613652792858], 
     PolygonBox[{{-0.08037093654285529, 
      1.154934383084733}, {-0.11947515195994377`, 
      1.159011659533508}, {-0.09545931842046657, 1.1847546922800685`}}]}, 
-   {RGBColor[0.08452195558256115, 0.6907088443922067, 0.7318229559786948], 
+   {RGBColor[0.35018114898427655`, 0.911518210953495, 0.053708016754288046`], 
     PolygonBox[{{0.12278784454578466`, 1.1270790830945558`}, {
      0.08964855246303237, 1.168235412872011}, {0.1163479667617445, 
      1.1569448280199093`}}]}, 
-   {RGBColor[0.0179057049456115, 0.716067083382629, 0.897594254857996], 
+   {RGBColor[0.4517911189217736, 0.35383998089317137`, 0.8347512803581789], 
     PolygonBox[{{0.31052989236543105`, 0.8783187753563437}, {
      0.3080919380498636, 0.8377855684290413}, {0.3796680814288364, 
      0.904351121851102}}]}, 
-   {RGBColor[0.9525683260445572, 0.9353273019534742, 0.2800340166242228], 
+   {RGBColor[
+    0.41239281034000075`, 0.13769819589406174`, 0.22146773165611555`], 
     PolygonBox[{{-0.2454116123702168, 
      0.6065574239770264}, {-0.3067222341380489, 
      0.6315361322716331}, {-0.3372268140380594, 0.6365707094787061}}]}, 
-   {RGBColor[0.11379517586662957`, 0.7850609647759048, 0.030683379422386636`],
-     PolygonBox[{{0.15589777327846194`, 1.1725550325736191`}, {
+   {RGBColor[0.4154843362558114, 0.637309375037082, 0.7098856354590037], 
+    PolygonBox[{{0.15589777327846194`, 1.1725550325736191`}, {
      0.1980599779119168, 1.1201914250067946`}, {0.18959111018168745`, 
      1.1359753887716684`}}]}, 
-   {RGBColor[0.5436903898563341, 0.41285536647300947`, 0.29528604921541235`], 
+   {RGBColor[0.5552203052304152, 0.8758336663988435, 0.47614934927389596`], 
     PolygonBox[{{0.13973153642668187`, 0.7149616747992183}, {
      0.09691193409753496, 0.6688325482293082}, {0.12052258350825555`, 
      0.678867247114163}}]}, 
-   {RGBColor[0.10196780463410349`, 0.49880155902996326`, 0.8049278127261501], 
+   {RGBColor[0.6749040306910175, 0.44729122527379706`, 0.08931018975502725], 
     PolygonBox[{{-0.4455025244224451, 
      0.7288128495869277}, {-0.4032285622509722, 
      0.6763113581483146}, {-0.3732488372650103, 0.6489697434544544}}]}, 
-   {RGBColor[0.0917826477298136, 0.7304408601761392, 0.4511673633394895], 
+   {RGBColor[0.4202516681347126, 0.13105619591486373`, 0.9553918323987303], 
     PolygonBox[{{-0.2988136073470341, 
      1.1278073115473957`}, {-0.33297119401424624`, 
      1.0910093800144551`}, {-0.4027263229168068, 1.0762289331916364`}}]}, 
-   {RGBColor[0.3701824229855657, 0.6855965453242316, 0.5367610502343709], 
+   {RGBColor[0.6756888652547182, 0.26001056262932454`, 0.940595227669301], 
     PolygonBox[{{0.30233699225742705`, 0.9016609245347813}, {
      0.31052989236543105`, 0.8783187753563437}, {0.37330297568985543`, 
      0.9331556616454404}}]}, 
-   {RGBColor[0.4918332434464985, 0.7698367209511419, 0.12848500215888214`], 
+   {RGBColor[0.12410264026685325`, 0.31078447695318445`, 0.3591931667044175], 
     PolygonBox[{{0.14684245009180416`, 0.6970269023277393}, {
      0.20201708832751494`, 0.7564654725702968}, {0.16908308224749496`, 
      0.7311811291094044}}]}, 
-   {RGBColor[0.6698306659429449, 0.5799843132314604, 0.9385012258295857], 
+   {RGBColor[0.3239018652621808, 0.6388410228022094, 0.17570363797619137`], 
     PolygonBox[{{-0.4795124086418528, 
      0.9907655718787681}, {-0.4705518121521985, 
      1.0554949897226207`}, {-0.4667717630362841, 1.0724638711121717`}}]}, 
-   {RGBColor[0.7253394518047811, 0.08737269321655927, 0.5542456990549709], 
+   {RGBColor[0.5532548175140855, 0.9338391530202452, 0.38749527103426673`], 
     PolygonBox[{{0.14820089492775965`, 1.1873799798565292`}, {
      0.18959111018168745`, 1.1359753887716684`}, {0.179978004916548, 
      1.1400648533301707`}}]}, 
-   {RGBColor[0.24468332165928564`, 0.7588350717908876, 0.6344404766656473], 
+   {RGBColor[0.406201767327077, 0.23749240321347065`, 0.3807621109579793], 
     PolygonBox[{{-0.20227457098092153`, 
      1.1437666297254487`}, {-0.23352673075138206`, 
      1.127072836725963}, {-0.2988136073470341, 1.1278073115473957`}}]}, 
-   {RGBColor[0.04484596036214894, 0.21804654709740046`, 0.5071074237443192], 
+   {RGBColor[0.35740825920035135`, 0.9129210085799679, 0.7579248234195852], 
     PolygonBox[{{0.13438697805934532`, 1.1819273104444878`}, {
      0.17381420284493007`, 1.132961726020199}, {0.17547478091488755`, 
      1.1158774351056278`}}]}, 
-   {RGBColor[0.9948138404011946, 0.5377132559675939, 0.6871013361306009], 
+   {RGBColor[0.02391835060053915, 0.7070217799861873, 0.2443167929842045], 
     PolygonBox[{{-0.025737105037070072`, 1.1774851945779106`}, {
      0.023171279776109988`, 1.157559403561087}, {-0.052941080293980924`, 
      1.1437591630509145`}}]}, 
-   {RGBColor[0.5190592862689845, 0.18861912193102226`, 0.15663860296917043`], 
+   {RGBColor[0.8650476625386463, 0.4558372196094671, 0.5630929340552926], 
     PolygonBox[{{0.24044149732300005`, 0.9097104326835674}, {
      0.23111225289839657`, 0.8423130016347679}, {0.22593451804470063`, 
      0.9009339197579525}}]}, 
-   {RGBColor[0.01094990542985208, 0.448766797517808, 0.3019564363974645], 
+   {RGBColor[0.7310965422999001, 0.5833125607458496, 0.17479025993436936`], 
     PolygonBox[{{0.13968848684368151`, 1.1901025244479666`}, {
      0.179978004916548, 1.1400648533301707`}, {0.17381420284493007`, 
      1.132961726020199}}]}, 
-   {RGBColor[0.018396419413382326`, 0.6437921816716936, 0.07409195628310039], 
+   {RGBColor[0.7188394141434644, 0.7420151523875573, 0.5698885620156426], 
     PolygonBox[{{-0.3067222341380489, 
      0.6315361322716331}, {-0.2454116123702168, 
      0.6065574239770264}, {-0.23497022365154455`, 0.6041814495829584}}]}, 
-   {RGBColor[0.08508498511525131, 0.4913812016371595, 0.4926902797113024], 
+   {RGBColor[0.4802644033602046, 0.8820245141323007, 0.9160671472231712], 
     PolygonBox[{{0.3796680814288364, 0.904351121851102}, {
      0.37330297568985543`, 0.9331556616454404}, {0.31052989236543105`, 
      0.8783187753563437}}]}, 
-   {RGBColor[0.7408922348125455, 0.9215298080711127, 0.08186956582634264], 
+   {RGBColor[0.17275579577457534`, 0.1757879945099874, 0.6145488857569772], 
     PolygonBox[{{-0.4597904804971464, 
      1.0119340846919451`}, {-0.4514112494224614, 
      1.0724631030864908`}, {-0.44856340971517994`, 1.0554938903024988`}}]}, 
-   {RGBColor[0.4065275836463258, 0.5140695250809659, 0.5595904239412985], 
+   {RGBColor[0.8962635761473172, 0.38922538457251, 0.46617324161354023`], 
     PolygonBox[{{-0.4755673878339037, 
      1.0089204219404757`}, {-0.4667717630362841, 
      1.0724638711121717`}, {-0.4589326274780409, 1.078242063665344}}]}, 
-   {RGBColor[0.10276582328888173`, 0.23562956340118246`, 0.9116869222933099], 
+   {RGBColor[0.07652488850816708, 0.3301043950609108, 0.9705959362319414], 
     PolygonBox[{{0.1163479667617445, 1.1569448280199093`}, {
      0.1528884698388015, 1.1115630054803896`}, {0.12278784454578466`, 
      1.1270790830945558`}}]}, 
-   {RGBColor[0.8595956712203987, 0.5003585522219336, 0.19089745201409403`], 
+   {RGBColor[0.770896475257016, 0.4149857292661414, 0.5373279098686006], 
     PolygonBox[{{-0.052941080293980924`, 
      1.1437591630509145`}, {-0.08037093654285529, 
      1.154934383084733}, {-0.025737105037070072`, 1.1774851945779106`}}]}, 
-   {RGBColor[0.9727338200249451, 0.20993927962825087`, 0.6211936917863203], 
+   {RGBColor[0.08296727513591629, 0.3691911160090071, 0.8523551366418021], 
     PolygonBox[{{-0.33297119401424624`, 
      1.0910093800144551`}, {-0.2988136073470341, 
      1.1278073115473957`}, {-0.23352673075138206`, 1.127072836725963}}]}, 
-   {RGBColor[0.4928061696908357, 0.7184687552603384, 0.11749186932531974`], 
+   {RGBColor[0.7870026131210095, 0.7512487146810132, 0.40643893489463], 
     PolygonBox[{{0.19187548511915106`, 0.8688836973899141}, {
      0.20502225348166156`, 0.8819492068703466}, {0.30233699225742705`, 
      0.9016609245347813}}]}, 
-   {RGBColor[0.512936000926816, 0.23728374666813545`, 0.06872498775712343], 
+   {RGBColor[0.5703355272999591, 0.15734067220256587`, 0.4464861133732674], 
     PolygonBox[{{0.2111647008261305, 0.97126709917047}, {0.2204200286141559, 
      1.038124129252565}, {0.23533548052884068`, 0.9688489524914223}}]}, 
-   {RGBColor[0.643544317363991, 0.4273952479563523, 0.8716465860780862], 
+   {RGBColor[0.07389884136896008, 0.5524906029787708, 0.6366555961164642], 
     PolygonBox[{{-0.4674951960629281, 
      1.0163882058552924`}, {-0.4589326274780409, 
      1.078242063665344}, {-0.4514112494224614, 1.0724631030864908`}}]}, 
-   {RGBColor[0.6912866228968473, 0.9446427791628609, 0.04664537883742348], 
+   {RGBColor[0.8278210224922848, 0.26728474211061526`, 0.2425126372469062], 
     PolygonBox[{{0.04714187224512742, 1.127790013773416}, {
      0.023171279776109988`, 1.157559403561087}, {0.08964855246303237, 
      1.168235412872011}}]}, 
-   {RGBColor[0.04644746927462773, 0.872557487375893, 0.82201638512546], 
+   {RGBColor[0.28085250238066384`, 0.05095435510470869, 0.4800071120654221], 
     PolygonBox[{{-0.4211551190558917, 
      0.7204286114930717}, {-0.46505560012737485`, 
      0.7749499125163986}, {-0.47558098155363865`, 0.833053492751338}}]}, 
-   {RGBColor[0.7904202477470237, 0.7314962381751038, 0.9718441248343821], 
+   {RGBColor[0.7716392257148477, 0.520028354084386, 0.3860559253964979], 
     PolygonBox[{{-0.4343409005687376, 
      0.9993939914051732}, {-0.4265750072781612, 
      1.055492790882377}, {-0.4027263229168068, 1.0762289331916364`}}]}, 
-   {RGBColor[0.7293140886275569, 0.014587964406800769`, 0.26077602392323196`],
-     PolygonBox[{{0.3080919380498636, 0.8377855684290413}, {
+   {RGBColor[0.39460542471788984`, 0.11589792596328241`, 0.7037569087452273], 
+    PolygonBox[{{0.3080919380498636, 0.8377855684290413}, {
      0.29445487143159693`, 0.7966917803990197}, {0.3719460755213007, 
      0.8719576332580304}}]}, 
-   {RGBColor[0.6489712275221029, 0.9730469148593359, 0.11834797869054126`], 
+   {RGBColor[0.8889924163602185, 0.4733612574916142, 0.28581781821288277`], 
     PolygonBox[{{-0.16292626078041247`, 
      1.154938510850945}, {-0.11947515195994377`, 
      1.159011659533508}, {-0.13810289651466592`, 1.153508152450255}}]}, 
-   {RGBColor[0.525254760222114, 0.4741555829780142, 0.9258794913713977], 
+   {RGBColor[0.1854847907729993, 0.6746542155278876, 0.9632250228557657], 
     PolygonBox[{{0.277940611068949, 0.7812518303398264}, {
      0.29445487143159693`, 0.7966917803990197}, {0.16699077580763672`, 
      0.7561964605517375}}]}, 
-   {RGBColor[0.22212956609908097`, 0.061331273340875514`, 0.2632318011146275],
-     PolygonBox[{{-0.20227457098092153`, 
+   {RGBColor[0.48863485937571194`, 0.12262208729633817`, 0.6686552969779636], 
+    PolygonBox[{{-0.20227457098092153`, 
      1.1437666297254487`}, {-0.16292626078041247`, 
      1.154938510850945}, {-0.1575549177724295, 1.1516848032319786`}}]}, 
-   {RGBColor[0.22460795290934654`, 0.9937707404811336, 0.5007164320477884], 
+   {RGBColor[0.2419161530514793, 0.021578269214875156`, 0.4759430142454504], 
     PolygonBox[{{-0.4705518121521985, 
      1.0554949897226207`}, {-0.4795124086418528, 
      0.9907655718787681}, {-0.47942049724312896`, 0.9044441355818891}}]}, 
-   {RGBColor[0.6675326683674241, 0.002446205782080435, 0.6332415596525311], 
+   {RGBColor[0.2632466255431294, 0.2969603375086116, 0.120578345951325], 
     PolygonBox[{{0.3719460755213007, 0.8719576332580304}, {0.3796680814288364,
       0.904351121851102}, {0.3080919380498636, 0.8377855684290413}}]}, 
-   {RGBColor[0.10664328798402467`, 0.22925204326013904`, 0.4873628322865573], 
+   {RGBColor[0.7689823445554766, 0.3268451631705118, 0.9845852387158682], 
     PolygonBox[{{0.08964855246303237, 1.168235412872011}, {
      0.12278784454578466`, 1.1270790830945558`}, {0.04714187224512742, 
      1.127790013773416}}]}, 
-   {RGBColor[0.919223579971733, 0.3745956901839089, 0.19091912775306308`], 
+   {RGBColor[0.5641513458864342, 0.10426465996828416`, 0.7367002350210092], 
     PolygonBox[{{-0.2676960322852213, 
      0.6082430811202744}, {-0.3372268140380594, 
      0.6365707094787061}, {-0.3732488372650103, 0.6489697434544544}}]}, 
-   {RGBColor[0.9917408026461143, 0.1452393109564034, 0.3586975084882025], 
+   {RGBColor[0.4867664566523138, 0.765991187054764, 0.12084718409510486`], 
     PolygonBox[{{0.16908308224749496`, 0.7311811291094044}, {
      0.12052258350825555`, 0.678867247114163}, {0.14684245009180416`, 
      0.6970269023277393}}]}, 
-   {RGBColor[0.25345994500737823`, 0.8279856794711635, 0.7642662987490922], 
+   {RGBColor[0.9912630744197686, 0.14361699347893353`, 0.07382585682715526], 
     PolygonBox[{{0.37330297568985543`, 0.9331556616454404}, {
      0.3579027443541505, 0.9469224074388634}, {0.30233699225742705`, 
      0.9016609245347813}}]}, 
-   {RGBColor[0.8152593513730622, 0.7915196846064723, 0.351494019579202], 
+   {RGBColor[0.9750948366466332, 0.6158808037293177, 0.5252992632440592], 
     PolygonBox[{{-0.11947515195994377`, 
      1.159011659533508}, {-0.08037093654285529, 
      1.154934383084733}, {-0.12059676664042722`, 1.1516829553244219`}}]}, 
-   {RGBColor[0.8836148466004174, 0.05211372397593439, 0.9842872411752779], 
+   {RGBColor[0.6791646482185334, 0.12351359163486708`, 0.0598022926518984], 
     PolygonBox[{{0.16699077580763672`, 0.7561964605517375}, {
      0.15452575195078844`, 0.7419892253189567}, {0.277940611068949, 
      0.7812518303398264}}]}, 
-   {RGBColor[0.2494931556344524, 0.9897198353372023, 0.9837850679048896], 
+   {RGBColor[0.22303760739540213`, 0.5469153592430149, 0.8411368210652648], 
     PolygonBox[{{-0.23352673075138206`, 
      1.127072836725963}, {-0.20227457098092153`, 
      1.1437666297254487`}, {-0.17517077647584658`, 1.1466833943495929`}}]}, 
-   {RGBColor[0.08469254905038914, 0.3315755475957487, 0.10180507587717891`], 
+   {RGBColor[0.15066239328915887`, 0.05900214149551419, 0.05262132243449624], 
     PolygonBox[{{-0.46505560012737485`, 
      0.7749499125163986}, {-0.4211551190558917, 
      0.7204286114930717}, {-0.4032285622509722, 0.6763113581483146}}]}, 
-   {RGBColor[0.9678722163375792, 0.191670015436193, 0.9676956637414864], 
+   {RGBColor[0.7035748516908527, 0.9887913972049731, 0.6007082664439147], 
     PolygonBox[{{0.027060325858137998`, 0.6315194431436333}, {
      0.09691193409753496, 0.6688325482293082}, {0.08628903617417989, 
      0.6626245127947804}}]}, 
-   {RGBColor[0.7965593542523941, 0.6439760190765311, 0.15349042240242938`], 
+   {RGBColor[
+    0.08130417006576018, 0.010246902204426922`, 0.14513997465464934`], 
     PolygonBox[{{-0.3372268140380594, 
      0.6365707094787061}, {-0.2676960322852213, 
      0.6082430811202744}, {-0.2454116123702168, 0.6065574239770264}}]}, 
-   {RGBColor[0.7917886698323251, 0.48701515790008476`, 0.9630685229670637], 
+   {RGBColor[0.8728373735431636, 0.06358909857165096, 0.29903427429610385`], 
     PolygonBox[{{-0.40976920420965807`, 
      1.0253528597244084`}, {-0.4027263229168068, 
      1.0762289331916364`}, {-0.33297119401424624`, 1.0910093800144551`}}]}, 
-   {RGBColor[0.5242611372334962, 0.26401413508765637`, 0.22065496274874774`], 
+   {RGBColor[0.9394973328494047, 0.4311013969136661, 0.809967276564564], 
     PolygonBox[{{0.16463145372384555`, 0.7287823428880205}, {
      0.22487322771787405`, 0.7936801363525431}, {0.20201708832751494`, 
      0.7564654725702968}}]}, 
-   {RGBColor[0.0367093750750036, 0.7591379080978109, 0.022729327697057045`], 
+   {RGBColor[0.3546436946027425, 0.784523575475597, 0.42600897987809483`], 
     PolygonBox[{{-0.23352673075138206`, 
      1.127072836725963}, {-0.25268346293492755`, 
      1.1064346897398687`}, {-0.33297119401424624`, 1.0910093800144551`}}]}, 
-   {RGBColor[0.7528187231253192, 0.0944138821842393, 0.32696147293824507`], 
+   {RGBColor[0.8810804624233939, 0.9778627041632613, 0.5648927841617208], 
     PolygonBox[{{-0.13810289651466592`, 
      1.153508152450255}, {-0.1575549177724295, 
      1.1516848032319786`}, {-0.16292626078041247`, 1.154938510850945}}]}, 
-   {RGBColor[0.8255520500971927, 0.42112859633813793`, 0.7862994066895481], 
+   {RGBColor[0.37238179155583273`, 0.6843263722226332, 0.7220210581772124], 
     PolygonBox[{{-0.44856340971517994`, 
      1.0554938903024988`}, {-0.456926332108726, 
      0.9950795617359579}, {-0.4597904804971464, 1.0119340846919451`}}]}, 
-   {RGBColor[0.8944896223574355, 0.9370738563630003, 0.6989444092415318], 
+   {RGBColor[0.8204869413901916, 0.2430857459310436, 0.2524452875057952], 
     PolygonBox[{{-0.4667717630362841, 
      1.0724638711121717`}, {-0.4755673878339037, 
      1.0089204219404757`}, {-0.4795124086418528, 0.9907655718787681}}]}, 
-   {RGBColor[0.4473141795346496, 0.5554281974124282, 0.9511981141362884], 
+   {RGBColor[0.3535088271929643, 0.8233933226034169, 0.33138378951611025`], 
     PolygonBox[{{-0.1575549177724295, 
      1.1516848032319786`}, {-0.17517077647584658`, 
      1.1466833943495929`}, {-0.20227457098092153`, 1.1437666297254487`}}]}, 
-   {RGBColor[
-    0.42026236436234643`, 0.025572013416398587`, 0.41417442019957473`], 
-    PolygonBox[{{0.23533548052884068`, 0.9688489524914223}, {
+   {RGBColor[0.022654960290842796`, 0.48911487206519033`, 0.9065361657697362],
+     PolygonBox[{{0.23533548052884068`, 0.9688489524914223}, {
      0.22593451804470063`, 0.9009339197579525}, {0.2111647008261305, 
      0.97126709917047}}]}, 
-   {RGBColor[0.44926843651297865`, 0.4639676472571872, 0.6907393327191231], 
+   {RGBColor[0.6003654804551004, 0.08714812661057136, 0.4753396377937684], 
     PolygonBox[{{-0.12059676664042722`, 
      1.1516829553244219`}, {-0.13810289651466592`, 
      1.153508152450255}, {-0.11947515195994377`, 1.159011659533508}}]}, 
-   {RGBColor[0.47232767141128074`, 0.8614836447238727, 0.6743729458822456], 
+   {RGBColor[0.7390789229730128, 0.2592144093318238, 0.5172328884982806], 
     PolygonBox[{{-0.039496824960707805`, 
      1.1270631352306735`}, {-0.052941080293980924`, 1.1437591630509145`}, {
      0.023171279776109988`, 1.157559403561087}}]}, 
-   {RGBColor[0.18669337470740777`, 0.3701642478345639, 0.7935752327411345], 
+   {RGBColor[0.3341451110515614, 0.7008227582526434, 0.06490293768854194], 
     PolygonBox[{{0.30233699225742705`, 0.9016609245347813}, {
      0.2843892524327723, 0.8866017094976937}, {0.19187548511915106`, 
      0.8688836973899141}}]}, 
-   {RGBColor[0.25803388595732635`, 0.4622901378530033, 0.290047338608004], 
+   {RGBColor[0.8080306061492184, 0.05827902387152273, 0.5626845526775139], 
     PolygonBox[{{0.2843892524327723, 0.8866017094976937}, {
      0.30233699225742705`, 0.9016609245347813}, {0.3579027443541505, 
      0.9469224074388634}}]}, 
-   {RGBColor[0.48135412368304986`, 0.256555616256259, 0.5097756351407883], 
-    PolygonBox[{{-0.4589326274780409, 
+   {RGBColor[0.3103394768548493, 0.32905868460658616`, 0.049102859724396986`],
+     PolygonBox[{{-0.4589326274780409, 
      1.078242063665344}, {-0.4674951960629281, 
      1.0163882058552924`}, {-0.4755673878339037, 1.0089204219404757`}}]}, 
-   {RGBColor[0.47981117251455596`, 0.6402582066674702, 0.5405838775888736], 
+   {RGBColor[0.8700870961920157, 0.7267174691662461, 0.156931199572516], 
     PolygonBox[{{-0.4514112494224614, 
      1.0724631030864908`}, {-0.4597904804971464, 
      1.0119340846919451`}, {-0.4674951960629281, 1.0163882058552924`}}]}, 
-   {RGBColor[0.850189148280811, 0.6565085479341868, 0.18050158259997717`], 
+   {RGBColor[0.8078091355546548, 0.4243641599245438, 0.04327703380782366], 
     PolygonBox[{{-0.08037093654285529, 
      1.154934383084733}, {-0.052941080293980924`, 
      1.1437591630509145`}, {-0.10831654130712913`, 1.1466800516378346`}}]}, 
-   {RGBColor[
-    0.49848488802783075`, 0.27428588068499127`, 0.10532789023378819`], 
+   {RGBColor[0.8947943211777647, 0.10351674534090982`, 0.1472987477934944], 
     PolygonBox[{{-0.15294558490215313`, 
      0.5956289328339464}, {-0.23497022365154455`, 
      0.6041814495829584}, {-0.2454116123702168, 0.6065574239770264}}]}, 
-   {RGBColor[0.9913538213138287, 0.6044552153904199, 0.9708455830499643], 
+   {RGBColor[0.6105397887067472, 0.5263676221146458, 0.6447722672159228], 
     PolygonBox[{{0.023171279776109988`, 1.157559403561087}, {
      0.04714187224512742, 1.127790013773416}, {-0.039496824960707805`, 
      1.1270631352306735`}}]}, 
-   {RGBColor[0.9279407836143478, 0.39732603541212264`, 0.35977042109949187`], 
+   {RGBColor[0.7289479679249586, 0.5968375837614397, 0.27583162779229653`], 
     PolygonBox[{{0.1891002609583601, 1.0554620071189653`}, {
      0.1980599779119168, 1.1201914250067946`}, {0.2204200286141559, 
      1.038124129252565}}]}, 
-   {RGBColor[0.5724465595253885, 0.5524555937471964, 0.9368631833038017], 
-    PolygonBox[{{0.08628903617417989, 0.6626245127947804}, {
+   {RGBColor[0.23320792465524098`, 0.07030298640307087, 0.14972041644900624`],
+     PolygonBox[{{0.08628903617417989, 0.6626245127947804}, {
      0.02073589179923415, 0.62760731779916}, {0.027060325858137998`, 
      0.6315194431436333}}]}, 
-   {RGBColor[0.22698040556621724`, 0.0181685061049377, 0.28850681545447276`], 
+   {RGBColor[0.5099807685588065, 0.4509525927059015, 0.25079524789305774`], 
     PolygonBox[{{-0.4027263229168068, 
      1.0762289331916364`}, {-0.40976920420965807`, 
      1.0253528597244084`}, {-0.4343409005687376, 0.9993939914051732}}]}, 
-   {RGBColor[0.29269091968990457`, 0.09207963109677153, 0.28494593867522733`],
-     PolygonBox[{{-0.4313437489833355, 
+   {RGBColor[0.12171176092267211`, 0.9110161366091731, 0.1305538929464185], 
+    PolygonBox[{{-0.4313437489833355, 
      0.7781131431638849}, {-0.47558098155363865`, 
      0.833053492751338}, {-0.47942049724312896`, 0.9044441355818891}}]}, 
-   {RGBColor[0.1022091268194063, 0.17138983771605099`, 0.29214157166199195`], 
+   {RGBColor[0.3357418152035352, 0.7988026700983104, 0.8242321935591252], 
     PolygonBox[{{-0.25268346293492755`, 
      1.1064346897398687`}, {-0.23352673075138206`, 
      1.127072836725963}, {-0.18916144073701627`, 1.1392100148115087`}}]}, 
-   {RGBColor[0.521330093217206, 0.6683212133566756, 0.31520474447081126`], 
+   {RGBColor[0.09229755130446371, 0.8616621398613165, 0.6720886841698923], 
     PolygonBox[{{-0.17517077647584658`, 
      1.1466833943495929`}, {-0.18916144073701627`, 
      1.1392100148115087`}, {-0.23352673075138206`, 1.127072836725963}}]}, 
-   {RGBColor[0.20599171295591945`, 0.8848522570168638, 0.9650073488320181], 
+   {RGBColor[0.5247806246443025, 0.6167056494211571, 0.13282763710829992`], 
     PolygonBox[{{0.37330297568985543`, 0.9331556616454404}, {
      0.3796680814288364, 0.904351121851102}, {0.44917647211363293`, 
      0.9903399528204031}}]}, 
-   {RGBColor[0.5684758208658582, 0.2716431080079833, 0.16097790390170919`], 
+   {RGBColor[0.6284790109620646, 0.14270082146568952`, 0.3910707276418304], 
     PolygonBox[{{-0.10831654130712913`, 
      1.1466800516378346`}, {-0.12059676664042722`, 
      1.1516829553244219`}, {-0.08037093654285529, 1.154934383084733}}]}, 
-   {RGBColor[0.9301866474878471, 0.422663865504193, 0.7188611824008], 
+   {RGBColor[0.285178412301863, 0.16198140480800705`, 0.9379814546629603], 
     PolygonBox[{{0.3579027443541505, 0.9469224074388634}, {
      0.37330297568985543`, 0.9331556616454404}, {0.43077545223969893`, 
      1.0053601049149763`}}]}, 
-   {RGBColor[0.6910229098222787, 0.838955465846748, 0.7931640783852942], 
+   {RGBColor[0.8940536007766726, 0.7809842096570467, 0.842399878225736], 
     PolygonBox[{{-0.20397342929430384`, 
      1.2387450360357637`}, {-0.17335010634330258`, 
      1.247423466590059}, {-0.17932799855891815`, 1.2879686727323743`}}]}, 
-   {RGBColor[0.8235499924251193, 0.07128703807489734, 0.5930643995353135], 
+   {RGBColor[0.1807494876450333, 0.6021312521254552, 0.932404124971939], 
     PolygonBox[{{-0.17335010634330258`, 
      1.247423466590059}, {-0.13943900464012957`, 
      1.250582267380326}, {-0.14267910985478327`, 1.2913808925008314`}}]}, 
-   {RGBColor[0.0388206027547815, 0.9321579848052741, 0.12378997183220064`], 
+   {RGBColor[0.21433245474838203`, 0.1186367952445262, 0.7366519792039214], 
     PolygonBox[{{-0.33806550933607304`, 
      1.0542099953179476`}, {-0.33297119401424624`, 
      1.0910093800144551`}, {-0.25268346293492755`, 1.1064346897398687`}}]}, 
-   {RGBColor[0.43313690057745147`, 0.5795434554834142, 0.9954242373298543], 
+   {RGBColor[0.7143988615271033, 0.07399181471304517, 0.4348420061973599], 
     PolygonBox[{{-0.14267910985478327`, 
      1.2913808925008314`}, {-0.17932799855891815`, 
      1.2879686727323743`}, {-0.17335010634330258`, 1.247423466590059}}]}, 
-   {RGBColor[0.9838424178420957, 0.09581511752371186, 0.5229693291754802], 
+   {RGBColor[0.6454838754572654, 0.28099263715240297`, 0.329740594631706], 
     PolygonBox[{{-0.13943900464012957`, 
      1.250582267380326}, {-0.17335010634330258`, 
      1.247423466590059}, {-0.16254858756128635`, 1.1884642880817071`}}]}, 
-   {RGBColor[0.5514055544667709, 0.8959554160325367, 0.9078859550322063], 
+   {RGBColor[0.95461451870746, 0.8066890444593982, 0.9112583819027444], 
     PolygonBox[{{-0.1575549177724295, 
      1.1516848032319786`}, {-0.13810289651466592`, 
      1.153508152450255}, {-0.1427569567357118, 1.1903123107711837`}}]}, 
-   {RGBColor[0.740106468986643, 0.8668344788192366, 0.3026958236597461], 
+   {RGBColor[0.4251898734607764, 0.7391574091181232, 0.16798628145251393`], 
     PolygonBox[{{-0.17517077647584658`, 
      1.1466833943495929`}, {-0.1575549177724295, 
      1.1516848032319786`}, {-0.16254858756128635`, 1.1884642880817071`}}]}, 
-   {RGBColor[0.28133974757702007`, 0.5988106210799582, 0.8441461061433719], 
+   {RGBColor[0.27129552066454954`, 0.20996153704055454`, 0.516454980160419], 
     PolygonBox[{{-0.17335010634330258`, 
      1.247423466590059}, {-0.20397342929430384`, 
      1.2387450360357637`}, {-0.18044108275250526`, 1.183390240336999}}]}, 
-   {RGBColor[0.8515957565744079, 0.19270435590524393`, 0.19062306003631635`], 
+   {RGBColor[0.8697530804815168, 0.5714533566344777, 0.3451369582689119], 
     PolygonBox[{{-0.17932799855891815`, 
      1.2879686727323743`}, {-0.21241683294534988`, 
      1.2785927388177585`}, {-0.20397342929430384`, 1.2387450360357637`}}]}, 
-   {RGBColor[0.3425673743662403, 0.05710344016652025, 0.13071970550574297`], 
+   {RGBColor[0.8881885488214711, 0.435714066810607, 0.14116482002132003`], 
     PolygonBox[{{-0.18044108275250526`, 
      1.183390240336999}, {-0.16254858756128635`, 
      1.1884642880817071`}, {-0.17335010634330258`, 1.247423466590059}}]}, 
-   {RGBColor[0.9457817273690585, 0.26940677292861515`, 0.9979469232705442], 
+   {RGBColor[0.7271054148393143, 0.3165826505293923, 0.8324002160075619], 
     PolygonBox[{{-0.1427569567357118, 
      1.1903123107711837`}, {-0.16254858756128635`, 
      1.1884642880817071`}, {-0.1575549177724295, 1.1516848032319786`}}]}, 
-   {RGBColor[0.8851445876283466, 0.39309564368787964`, 0.24352516920688205`], 
+   {RGBColor[0.4495252914557384, 0.588362526323126, 0.8217822579572183], 
     PolygonBox[{{-0.16254858756128635`, 
      1.1884642880817071`}, {-0.1427569567357118, 
      1.1903123107711837`}, {-0.13943900464012957`, 1.250582267380326}}]}, 
-   {RGBColor[0.5898554418890585, 0.13842825470768672`, 0.9537437515821132], 
+   {RGBColor[0.775945073585466, 0.254891305898705, 0.5148432018940152], 
     PolygonBox[{{-0.10967177973617119`, 
      1.287965189921433}, {-0.14267910985478327`, 
      1.2913808925008314`}, {-0.13943900464012957`, 1.250582267380326}}]}, 
-   {RGBColor[0.3756826800018862, 0.5624312252103878, 0.6356048173689826], 
-    PolygonBox[{{-0.10889900914250011`, 
+   {RGBColor[0.028779924432647874`, 0.9475149119415427, 0.26717909495532544`],
+     PolygonBox[{{-0.10889900914250011`, 
      1.247420244035199}, {-0.13943900464012957`, 
      1.250582267380326}, {-0.1427569567357118, 1.1903123107711837`}}]}, 
-   {RGBColor[0.2509938152831419, 0.29161369300041695`, 0.4838038112870906], 
+   {RGBColor[0.8872362453957405, 0.5575114836376358, 0.9521563275333524], 
     PolygonBox[{{-0.29424820730576223`, 
      0.6167840617368467}, {-0.3732488372650103, 
      0.6489697434544544}, {-0.4032285622509722, 0.6763113581483146}}]}, 
-   {RGBColor[0.31605831217296165`, 0.9919151280096474, 0.29782383869394535`], 
+   {RGBColor[0.6057504425734161, 0.5768657674489877, 0.9134759650357696], 
     PolygonBox[{{-0.16254858756128635`, 
      1.1884642880817071`}, {-0.18044108275250526`, 
      1.183390240336999}, {-0.17517077647584658`, 1.1466833943495929`}}]}, 
-   {RGBColor[0.6284330773079811, 0.058124239609978146`, 0.48800765629332177`],
-     PolygonBox[{{-0.33297119401424624`, 
+   {RGBColor[0.07372193497724044, 0.1588889766361712, 0.5373552719912476], 
+    PolygonBox[{{-0.33297119401424624`, 
      1.0910093800144551`}, {-0.33806550933607304`, 
      1.0542099953179476`}, {-0.40976920420965807`, 1.0253528597244084`}}]}, 
-   {RGBColor[0.05540980384938621, 0.29644119099678967`, 0.7189997137192212], 
+   {RGBColor[0.39314863918466636`, 0.14379235464057283`, 0.7672305594764812], 
     PolygonBox[{{-0.22826390610877598`, 
      1.225748736429889}, {-0.20397342929430384`, 
      1.2387450360357637`}, {-0.21241683294534988`, 1.2785927388177585`}}]}, 
-   {RGBColor[0.8754776941855631, 0.3773817244550468, 0.46319009415131385`], 
+   {RGBColor[0.2225023596847655, 0.9090224103426574, 0.475645245507613], 
     PolygonBox[{{0.041306032254755924`, 0.6365517828363915}, {
      0.12052258350825555`, 0.678867247114163}, {0.09691193409753496, 
      0.6688325482293082}}]}, 
-   {RGBColor[0.881410839214581, 0.8350910301561199, 0.30949945236412724`], 
+   {RGBColor[0.20869686529252474`, 0.09395757671676797, 0.7470012441860234], 
     PolygonBox[{{0.20201708832751494`, 0.7564654725702968}, {
      0.14684245009180416`, 0.6970269023277393}, {0.16463145372384555`, 
      0.7287823428880205}}]}, 
-   {RGBColor[0.11194307314438645`, 0.8331579588598508, 0.4241788331417322], 
+   {RGBColor[0.8223152020507662, 0.8583853740769369, 0.8484667800604024], 
     PolygonBox[{{-0.18916144073701627`, 
      1.1392100148115087`}, {-0.17517077647584658`, 
      1.1466833943495929`}, {-0.18044108275250526`, 1.183390240336999}}]}, 
-   {RGBColor[0.8223287369346575, 0.597839581805073, 0.03750508340764802], 
+   {RGBColor[0.4656046834620884, 0.5237837111460706, 0.5692723351318767], 
     PolygonBox[{{-0.13810289651466592`, 
      1.153508152450255}, {-0.12059676664042722`, 
      1.1516829553244219`}, {-0.12493755307316523`, 1.1884624075299826`}}]}, 
-   {RGBColor[0.2782449706665726, 0.13392586586386002`, 0.08167563390453147], 
+   {RGBColor[0.342681243429072, 0.6444309789959664, 0.9012108015041003], 
     PolygonBox[{{-0.13943900464012957`, 
      1.250582267380326}, {-0.10889900914250011`, 
      1.247420244035199}, {-0.10967177973617119`, 1.287965189921433}}]}, 
-   {RGBColor[0.5912018716388838, 0.6162666737510538, 0.9047887225517179], 
+   {RGBColor[0.9531328418944025, 0.2801523618564301, 0.6550091152837205], 
     PolygonBox[{{-0.12493755307316523`, 
      1.1884624075299826`}, {-0.1427569567357118, 
      1.1903123107711837`}, {-0.13810289651466592`, 1.153508152450255}}]}, 
-   {RGBColor[0.6759349479247465, 0.9504626504148106, 0.9821204512693522], 
+   {RGBColor[0.13556877856601202`, 0.07846821882206179, 0.6755070527022395], 
     PolygonBox[{{0.16711185852134147`, 1.0554631065390871`}, {
      0.17547478091488755`, 1.1158774351056278`}, {0.17381420284493007`, 
      1.132961726020199}}]}, 
-   {RGBColor[0.9237085387400632, 0.2989668051051415, 0.9879322427757835], 
+   {RGBColor[0.4217579321957876, 0.9032675003109483, 0.47396503147647384`], 
     PolygonBox[{{0.18079524707030462`, 1.0724314927616663`}, {
      0.18959111018168745`, 1.1359753887716684`}, {0.1980599779119168, 
      1.1201914250067946`}}]}, 
-   {RGBColor[0.2557282555750937, 0.5913945610511271, 0.27971682426424804`], 
+   {RGBColor[0.08098147340957662, 0.04066883213434824, 0.21149758661072604`], 
     PolygonBox[{{-0.18916144073701627`, 
      1.1392100148115087`}, {-0.19773787866803774`, 
      1.129970753626136}, {-0.25268346293492755`, 1.1064346897398687`}}]}, 
-   {RGBColor[0.4546673209213059, 0.8414676836977288, 0.12263538724891432`], 
+   {RGBColor[0.951891420097851, 0.6260724463486702, 0.9817540211318692], 
     PolygonBox[{{-0.47558098155363865`, 
      0.833053492751338}, {-0.4313437489833355, 
      0.7781131431638849}, {-0.4211551190558917, 0.7204286114930717}}]}, 
-   {RGBColor[0.9965619133690513, 0.14211018310534373`, 0.5063085368863416], 
+   {RGBColor[0.9428146243886888, 0.10651319372423917`, 0.4796014464101743], 
     PolygonBox[{{-0.19463978609064334`, 
      1.1757979764726925`}, {-0.18044108275250526`, 
      1.183390240336999}, {-0.20397342929430384`, 1.2387450360357637`}}]}, 
-   {RGBColor[0.13408962672436453`, 0.22256845880126552`, 0.1914476961801066], 
+   {RGBColor[0.020914390910921954`, 0.5084280564950103, 0.4244388822884262], 
     PolygonBox[{{0.3546184424109582, 0.8573830486925804}, {0.3719460755213007,
       0.8719576332580304}, {0.29445487143159693`, 0.7966917803990197}}]}, 
-   {RGBColor[0.04626681197921001, 0.36813678949271056`, 0.6601429186508778], 
+   {RGBColor[0.9791870968663297, 0.3250612673366695, 0.46778679168493986`], 
     PolygonBox[{{-0.20397342929430384`, 
      1.2387450360357637`}, {-0.22826390610877598`, 
      1.225748736429889}, {-0.19463978609064334`, 1.1757979764726925`}}]}, 
-   {RGBColor[0.7468543484270767, 0.8699146055696239, 0.7839618668898087], 
+   {RGBColor[0.8821413003779728, 0.580301535847616, 0.45510059104776546`], 
     PolygonBox[{{-0.1427569567357118, 
      1.1903123107711837`}, {-0.12493755307316523`, 
      1.1884624075299826`}, {-0.10889900914250011`, 1.247420244035199}}]}, 
-   {RGBColor[0.9666240938888393, 0.12300730967288165`, 0.2697956415512923], 
+   {RGBColor[0.9094101069447569, 0.6843430922978617, 0.0444810628024086], 
     PolygonBox[{{-0.10229801546498549`, 
      1.139205671640245}, {-0.10831654130712913`, 
      1.1466800516378346`}, {-0.052941080293980924`, 1.1437591630509145`}}]}, 
-   {RGBColor[0.17659614799446843`, 0.9962262349938724, 0.25161221437339254`], 
+   {RGBColor[0.9058213718301904, 0.3350165728165231, 0.0674254841983386], 
     PolygonBox[{{0.44917647211363293`, 0.9903399528204031}, {
      0.43077545223969893`, 1.0053601049149763`}, {0.37330297568985543`, 
      0.9331556616454404}}]}, 
-   {RGBColor[0.574211428641692, 0.011618072979196592`, 0.4417853628141959], 
+   {RGBColor[0.07855998547991283, 0.753763807594831, 0.6615767166447906], 
     PolygonBox[{{-0.052941080293980924`, 
      1.1437591630509145`}, {-0.039496824960707805`, 
      1.1270631352306735`}, {-0.10229801546498549`, 1.139205671640245}}]}, 
-   {RGBColor[0.9524253693257707, 0.6623686703535714, 0.6621091429462866], 
+   {RGBColor[0.676148723688921, 0.14629895372376578`, 0.4090216430767919], 
     PolygonBox[{{0.11574496325293374`, 1.0762030096273278`}, {
      0.12278784454578466`, 1.1270790830945558`}, {0.1528884698388015, 
      1.1115630054803896`}}]}, 
-   {RGBColor[0.8494150357601493, 0.06145586552246973, 0.36667612483702827`], 
+   {RGBColor[0.33485896876565313`, 0.8865046100052365, 0.5785809295170266], 
     PolygonBox[{{0.17141519673380198`, 1.0782105462741334`}, {
      0.179978004916548, 1.1400648533301707`}, {0.18959111018168745`, 
      1.1359753887716684`}}]}, 
-   {RGBColor[0.9784191044064336, 0.9758466762265081, 0.6666700116784094], 
+   {RGBColor[0.12966771821774215`, 0.839618430276019, 0.23310662573734864`], 
     PolygonBox[{{0.16543473345648196`, 1.0724322607873469`}, {
      0.17381420284493007`, 1.132961726020199}, {0.179978004916548, 
      1.1400648533301707`}}]}, 
-   {RGBColor[0.6912493473360597, 0.24951941266470512`, 0.13496456270402257`], 
+   {RGBColor[0.49868362151052836`, 0.8204941153122338, 0.3523342376351575], 
     PolygonBox[{{0.16855232368920825`, 0.7749182321202077}, {
      0.23111225289839657`, 0.8423130016347679}, {0.22487322771787405`, 
      0.7936801363525431}}]}, 
-   {RGBColor[0.789416155060928, 0.7324773002175244, 0.261607987951584], 
+   {RGBColor[0.9084852200871862, 0.2658290923670654, 0.08954356471594105], 
     PolygonBox[{{-0.18044108275250526`, 
      1.183390240336999}, {-0.19463978609064334`, 
      1.1757979764726925`}, {-0.18916144073701627`, 1.1392100148115087`}}]}, 
-   {RGBColor[0.2514466056789655, 0.3136481996154894, 0.13001535059840919`], 
+   {RGBColor[0.4295354733936614, 0.7488453954594487, 0.4653683605528043], 
     PolygonBox[{{-0.21241683294534988`, 
      1.2785927388177585`}, {-0.23866112404389764`, 
      1.2645496750290988`}, {-0.22826390610877598`, 1.225748736429889}}]}, 
-   {RGBColor[0.18337073647334234`, 0.17656179187509036`, 0.4863819014635973], 
+   {RGBColor[0.8796250003653197, 0.45090403060873663`, 0.9951349305409043], 
     PolygonBox[{{0.29445487143159693`, 0.7966917803990197}, {
      0.277940611068949, 0.7812518303398264}, {0.3546184424109582, 
      0.8573830486925804}}]}, 
-   {RGBColor[0.8104960871122999, 0.17852777522383478`, 0.32376333710835903`], 
+   {RGBColor[0.5190934952055681, 0.7736408764718361, 0.2996945544214442], 
     PolygonBox[{{-0.3732488372650103, 
      0.6489697434544544}, {-0.29424820730576223`, 
      0.6167840617368467}, {-0.2676960322852213, 0.6082430811202744}}]}, 
-   {RGBColor[0.5413297517611166, 0.412794274317519, 0.27884683237315944`], 
+   {RGBColor[0.4245018304883803, 0.8699858850377524, 0.9380067290444993], 
     PolygonBox[{{-0.2454116123702168, 
      0.6065574239770264}, {-0.15800878593614712`, 
      0.5974443530897737}, {-0.15294558490215313`, 0.5956289328339464}}]}, 
-   {RGBColor[0.801630219387049, 0.9598262915063405, 0.9511760342466142], 
+   {RGBColor[0.962712833194173, 0.8825428866318696, 0.06753473386634123], 
     PolygonBox[{{-0.15800878593614712`, 
      0.5974443530897737}, {-0.2454116123702168, 
      0.6065574239770264}, {-0.2676960322852213, 0.6082430811202744}}]}, 
-   {RGBColor[0.6623579013580749, 0.22648692317519492`, 0.25401638981679], 
+   {RGBColor[
+    0.05246357132147317, 0.11975418546788719`, 0.019421425200912834`], 
     PolygonBox[{{-0.11245818539264511`, 
      1.183386841192131}, {-0.12493755307316523`, 
      1.1884624075299826`}, {-0.12059676664042722`, 1.1516829553244219`}}]}, 
-   {RGBColor[0.24491212846350985`, 0.34355105733084046`, 0.8583204446077439], 
+   {RGBColor[0.7598026346633113, 0.8711503034422443, 0.6964991452275493], 
     PolygonBox[{{-0.12059676664042722`, 
      1.1516829553244219`}, {-0.10831654130712913`, 
      1.1466800516378346`}, {-0.11245818539264511`, 1.183386841192131}}]}, 
-   {RGBColor[0.36776632383206165`, 0.6957658340155417, 0.19802464352355087`], 
+   {RGBColor[0.5574585611199132, 0.378226739303132, 0.7556382893106017], 
     PolygonBox[{{-0.19773787866803774`, 
      1.129970753626136}, {-0.18916144073701627`, 
      1.1392100148115087`}, {-0.19463978609064334`, 1.1757979764726925`}}]}, 
-   {RGBColor[0.8967679079962292, 0.2863826526382196, 0.3951247942072529], 
+   {RGBColor[0.016597396787289664`, 0.5353875169760938, 0.7525789656977235], 
     PolygonBox[{{-0.08753406513653277, 
      1.2387392140675557`}, {-0.10889900914250011`, 
      1.247420244035199}, {-0.12493755307316523`, 1.1884624075299826`}}]}, 
-   {RGBColor[0.822745699590832, 0.35753855620083286`, 0.768603205612844], 
+   {RGBColor[0.6751084858348755, 0.8512080311952648, 0.15086264586080933`], 
     PolygonBox[{{-0.25554118884338345`, 
      1.0857957278034605`}, {-0.25268346293492755`, 
      1.1064346897398687`}, {-0.19773787866803774`, 1.129970753626136}}]}, 
-   {RGBColor[0.6117217965428816, 0.3456690221316876, 0.6480951051206367], 
+   {RGBColor[0.8955936984517425, 0.41688546197971466`, 0.26573089011096473`], 
     PolygonBox[{{0.2204200286141559, 1.038124129252565}, {0.2111647008261305, 
      0.97126709917047}, {0.1891002609583601, 1.0554620071189653`}}]}, 
-   {RGBColor[0.7223053940004773, 0.9111145641962908, 0.7024748605409405], 
+   {RGBColor[0.12483139432420787`, 0.8414334558352656, 0.3697197724712311], 
     PolygonBox[{{0.09691193409753496, 0.6688325482293082}, {
      0.027060325858137998`, 0.6315194431436333}, {0.041306032254755924`, 
      0.6365517828363915}}]}, 
-   {RGBColor[0.6320435165907174, 0.01649322878909154, 0.6181256598049052], 
+   {RGBColor[0.25814555526478267`, 0.8863767281229982, 0.267936950388586], 
     PolygonBox[{{0.16999667436045124`, 0.8162762460180772}, {
      0.19187548511915106`, 0.8688836973899141}, {0.2843892524327723, 
      0.8866017094976937}}]}, 
-   {RGBColor[0.7033820393628414, 0.43211465306228924`, 0.20805587275005144`], 
+   {RGBColor[0.8878598918941678, 0.49628669963068295`, 0.7568728382600984], 
     PolygonBox[{{0.3579027443541505, 0.9469224074388634}, {
      0.33941140823842003`, 0.9323074075081187}, {0.2843892524327723, 
      0.8866017094976937}}]}, 
-   {RGBColor[0.33637038012580756`, 0.47825180989248417`, 0.07687065635664214],
-     PolygonBox[{{0.3796680814288364, 0.904351121851102}, {0.3719460755213007,
-      0.8719576332580304}, {0.44937291172340327`, 0.9684794602359853}}]}, 
-   {RGBColor[0.20354073881365053`, 0.1326809116527108, 0.8824197080215461], 
+   {RGBColor[0.9367851617563234, 0.8842658091680178, 0.31351893374360684`], 
+    PolygonBox[{{0.3796680814288364, 0.904351121851102}, {0.3719460755213007, 
+     0.8719576332580304}, {0.44937291172340327`, 0.9684794602359853}}]}, 
+   {RGBColor[0.26181581979969915`, 0.3523912541081924, 0.7566257820426465], 
     PolygonBox[{{0.04204755692330072, 1.0909906290769085`}, {
      0.04714187224512742, 1.127790013773416}, {0.12278784454578466`, 
      1.1270790830945558`}}]}, 
-   {RGBColor[0.7005885074251634, 0.5296693891068305, 0.9895752540116964], 
+   {RGBColor[0.40195112600920635`, 0.7861241307508791, 0.6636303814658508], 
     PolygonBox[{{-0.08658543952998565, 
      1.2785864472480877`}, {-0.10967177973617119`, 
      1.287965189921433}, {-0.10889900914250011`, 1.247420244035199}}]}, 
-   {RGBColor[0.6548163682945662, 0.4856761251413211, 0.6136484097715853], 
+   {RGBColor[0.17287456605981943`, 0.2613254285507407, 0.6027420515719248], 
     PolygonBox[{{-0.25268346293492755`, 
      1.1064346897398687`}, {-0.25554118884338345`, 
      1.0857957278034605`}, {-0.33806550933607304`, 1.0542099953179476`}}]}, 
-   {RGBColor[0.966071028363956, 0.5619637523325685, 0.3702305785437554], 
+   {RGBColor[0.596963398588926, 0.465529771867077, 0.2768665362293605], 
     PolygonBox[{{-0.20335287948548236`, 
      1.1663954513644887`}, {-0.19463978609064334`, 
      1.1757979764726925`}, {-0.22826390610877598`, 1.225748736429889}}]}, 
-   {RGBColor[0.7665658276878831, 0.5050339595872206, 0.21678007816984945`], 
-    PolygonBox[{{0.43077545223969893`, 1.0053601049149763`}, {
+   {RGBColor[0.08325953696736121, 0.11303103947095017`, 0.11341844454364547`],
+     PolygonBox[{{0.43077545223969893`, 1.0053601049149763`}, {
      0.4055575672852047, 1.0085069480319067`}, {0.3579027443541505, 
      0.9469224074388634}}]}, 
-   {RGBColor[0.5790144479321766, 0.7710327154495276, 0.21815919817345208`], 
+   {RGBColor[0.7034052497730894, 0.7630539258280253, 0.2838580015806016], 
     PolygonBox[{{-0.2431784047496649, 
      1.2096364797846926`}, {-0.22826390610877598`, 
      1.225748736429889}, {-0.23866112404389764`, 1.2645496750290988`}}]}, 
-   {RGBColor[0.9654343370123719, 0.7749065256588454, 0.24888631762057623`], 
+   {RGBColor[0.8121370340058993, 0.6943320901107592, 0.3054763156179843], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.17932799855891815`, 
      1.2879686727323743`}, {-0.14267910985478327`, 1.2913808925008314`}}]}, 
-   {RGBColor[0.8843677323926131, 0.4470365971451771, 0.9777761809686578], 
-    PolygonBox[{{-0.10889900914250011`, 
+   {RGBColor[0.025380136851558266`, 0.6260905241326056, 0.44596299132320816`],
+     PolygonBox[{{-0.10889900914250011`, 
      1.247420244035199}, {-0.08753406513653277, 
      1.2387392140675557`}, {-0.08658543952998565, 1.2785864472480877`}}]}, 
-   {RGBColor[0.3581446033416058, 0.0828434564797087, 0.7234996003334133], 
+   {RGBColor[0.9186945675891129, 0.3281270055282963, 0.4669888873266317], 
     PolygonBox[{{-0.12493755307316523`, 
      1.1884624075299826`}, {-0.11245818539264511`, 
      1.183386841192131}, {-0.08753406513653277, 1.2387392140675557`}}]}, 
-   {RGBColor[0.7137111946334971, 0.4370096421786587, 0.091614928212161], 
+   {RGBColor[0.7434475642011935, 0.39030595177209193`, 0.8439171110049597], 
     PolygonBox[{{0.2688518551932612, 0.8001724556585252}, {0.277940611068949, 
      0.7812518303398264}, {0.15452575195078844`, 0.7419892253189567}}]}, 
-   {RGBColor[0.6717618897779225, 0.8582984230302153, 0.4587865597325458], 
+   {RGBColor[0.37969216656397964`, 0.41134665655641345`, 0.3389312932656572], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.21241683294534988`, 
      1.2785927388177585`}, {-0.17932799855891815`, 1.2879686727323743`}}]}, 
-   {RGBColor[0.8377415361268614, 0.7589606131257693, 0.6744193699926329], 
+   {RGBColor[0.9429599681264975, 0.514965750722433, 0.6143749924139292], 
     PolygonBox[{{-0.19463978609064334`, 
      1.1757979764726925`}, {-0.20335287948548236`, 
      1.1663954513644887`}, {-0.19773787866803774`, 1.129970753626136}}]}, 
-   {RGBColor[0.7794756575631026, 0.19363983476428093`, 0.39311843653182454`], 
+   {RGBColor[0.4324038002152397, 0.8131006740987183, 0.5553364618716414], 
     PolygonBox[{{-0.04235455086916358, 
      1.1064241732942655`}, {-0.039496824960707805`, 1.1270631352306735`}, {
      0.04714187224512742, 1.127790013773416}}]}, 
-   {RGBColor[0.1689500915810156, 0.6166400329661459, 0.2722172045962816], 
+   {RGBColor[0.9736314251177973, 0.47817247258893514`, 0.249851724178499], 
     PolygonBox[{{0.44937291172340327`, 0.9684794602359853}, {
      0.44917647211363293`, 0.9903399528204031}, {0.3796680814288364, 
      0.904351121851102}}]}, 
-   {RGBColor[0.797383124688654, 0.0376662902188416, 0.23536035906262653`], 
+   {RGBColor[0.7329399925948294, 0.6231880086890296, 0.00627475297267166], 
     PolygonBox[{{-0.4358719965725605, 
      0.8503600040954449}, {-0.47942049724312896`, 
      0.9044441355818891}, {-0.4795124086418528, 0.9907655718787681}}]}, 
-   {RGBColor[0.16387909322992722`, 0.5272007360435753, 0.5600497212527842], 
+   {RGBColor[0.3171919540414312, 0.7190169209038046, 0.17336813457546385`], 
     PolygonBox[{{-0.22826390610877598`, 
      1.225748736429889}, {-0.2431784047496649, 
      1.2096364797846926`}, {-0.20335287948548236`, 1.1663954513644887`}}]}, 
-   {RGBColor[0.806628973888291, 0.6398814724534281, 0.17148804357512493`], 
+   {RGBColor[0.2126320738769636, 0.5586366816452066, 0.6711635266173919], 
     PolygonBox[{{0.33941140823842003`, 0.9323074075081187}, {
      0.3579027443541505, 0.9469224074388634}, {0.4055575672852047, 
      1.0085069480319067`}}]}, 
-   {RGBColor[0.8882629953864345, 0.20939152466326494`, 0.4071376931802917], 
+   {RGBColor[0.3253158312080153, 0.20044560596761718`, 0.13400877737204575`], 
     PolygonBox[{{0.15452575195078844`, 0.7419892253189567}, {
      0.1563331039995939, 0.7669382395928865}, {0.2688518551932612, 
      0.8001724556585252}}]}, 
-   {RGBColor[0.7939414390298318, 0.6599580098389535, 0.1014478566110586], 
+   {RGBColor[0.8689842817267397, 0.024725421994377994`, 0.282798926521143], 
     PolygonBox[{{-0.10635843813511638`, 
      1.1757935624052946`}, {-0.11245818539264511`, 
      1.183386841192131}, {-0.10831654130712913`, 1.1466800516378346`}}]}, 
-   {RGBColor[0.4226158765410082, 0.024190556826817255`, 0.6737201465076792], 
+   {RGBColor[0.5302972228846516, 0.07644531874077254, 0.6514280624416624], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.14267910985478327`, 
      1.2913808925008314`}, {-0.10967177973617119`, 1.287965189921433}}]}, 
-   {RGBColor[0.7778489417576735, 0.6137983737257044, 0.7739307984373014], 
+   {RGBColor[0.46364295121536925`, 0.5760808677532048, 0.5852518034115819], 
     PolygonBox[{{-0.10831654130712913`, 
      1.1466800516378346`}, {-0.10229801546498549`, 
      1.139205671640245}, {-0.10635843813511638`, 1.1757935624052946`}}]}, 
-   {RGBColor[
-    0.40612073578274543`, 0.046822756598561055`, 0.22616940625385618`], 
+   {RGBColor[0.7188207253187844, 0.8043452392337729, 0.7153758013288785], 
     PolygonBox[{{-0.06089086691610462, 0.6065481979397536}, {
      0.027060325858137998`, 0.6315194431436333}, {0.02073589179923415, 
      0.62760731779916}}]}, 
-   {RGBColor[0.722362131076026, 0.2716148539117331, 0.3994496958669005], 
+   {RGBColor[0.08721801373896332, 0.4827234744136739, 0.6830581668550744], 
     PolygonBox[{{-0.19773787866803774`, 
      1.129970753626136}, {-0.19901684726726254`, 
      1.1207311275672969`}, {-0.25554118884338345`, 1.0857957278034605`}}]}, 
-   {RGBColor[0.6308639774381588, 0.4442602342062465, 0.21665804836892555`], 
-    PolygonBox[{{-0.19901684726726254`, 
+   {RGBColor[0.8245123560570129, 0.048456461196912715`, 0.30910141150695103`],
+     PolygonBox[{{-0.19901684726726254`, 
      1.1207311275672969`}, {-0.19773787866803774`, 
      1.129970753626136}, {-0.20335287948548236`, 1.1663954513644887`}}]}, 
-   {RGBColor[0.9205802772518481, 0.11168314558153569`, 0.046290974265986495`],
-     PolygonBox[{{-0.1684299173640718, 
+   {RGBColor[0.5029424243582328, 0.4226185356451142, 0.8258469872071275], 
+    PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.23866112404389764`, 
      1.2645496750290988`}, {-0.21241683294534988`, 1.2785927388177585`}}]}, 
-   {RGBColor[0.7175578091461057, 0.6215437037766716, 0.46964222722202753`], 
+   {RGBColor[0.8833655115208334, 0.41757460419678294`, 0.9542009164521865], 
     PolygonBox[{{-0.10357698406421019`, 
      1.1299660455814058`}, {-0.10229801546498549`, 
      1.139205671640245}, {-0.039496824960707805`, 1.1270631352306735`}}]}, 
-   {RGBColor[0.07558830946024298, 0.8996482031600308, 0.47119149259027626`], 
+   {RGBColor[0.2395171006933421, 0.3402249618539437, 0.31834918996009076`], 
     PolygonBox[{{-0.06180346766857801, 
      0.6041727912451593}, {-0.15294558490215313`, 
      0.5956289328339464}, {-0.15800878593614712`, 0.5974443530897737}}]}, 
-   {RGBColor[0.9238360019479626, 0.007690529639205357, 0.7822302632465168], 
+   {RGBColor[0.32976093327859735`, 0.5274245959591017, 0.5775191124928623], 
     PolygonBox[{{0.02073589179923415, 
      0.62760731779916}, {-0.06180346766857801, 
      0.6041727912451593}, {-0.06089086691610462, 0.6065481979397536}}]}, 
-   {RGBColor[0.8891948758008765, 0.12428148652821602`, 0.3247691781603226], 
+   {RGBColor[0.4781828265198276, 0.04413393110955144, 0.08367302357870421], 
     PolygonBox[{{-0.23866112404389764`, 
      1.2645496750290988`}, {-0.25477635517126707`, 
      1.2471361176005984`}, {-0.2431784047496649, 1.2096364797846926`}}]}, 
-   {RGBColor[0.3748900683604508, 0.3760573859893164, 0.534990779936503], 
-    PolygonBox[{{-0.07710723369654697, 
+   {RGBColor[0.2578892820521712, 0.20613408392167343`, 0.023824500402979787`],
+     PolygonBox[{{-0.07710723369654697, 
      1.2257411785962684`}, {-0.08753406513653277, 
      1.2387392140675557`}, {-0.11245818539264511`, 1.183386841192131}}]}, 
-   {RGBColor[0.09720211313584093, 0.38796054479709574`, 0.3792260602675577], 
+   {RGBColor[0.9785640768002901, 0.6296751880039171, 0.8231892703095331], 
     PolygonBox[{{-0.20466934344951207`, 
      1.1569925564248136`}, {-0.20335287948548236`, 
      1.1663954513644887`}, {-0.2431784047496649, 1.2096364797846926`}}]}, 
-   {RGBColor[0.22094435148114977`, 0.8020080395362459, 0.6618934736521955], 
+   {RGBColor[0.8987208311406947, 0.5370506212837862, 0.7909448096254406], 
     PolygonBox[{{-0.20335287948548236`, 
      1.1663954513644887`}, {-0.20466934344951207`, 
      1.1569925564248136`}, {-0.19901684726726254`, 1.1207311275672969`}}]}, 
-   {RGBColor[0.012847198750468802`, 0.7953274738172453, 0.5722162137470468], 
+   {RGBColor[0.28431496286013314`, 0.7370931116422179, 0.904658180526221], 
     PolygonBox[{{-0.039496824960707805`, 
      1.1270631352306735`}, {-0.04235455086916358, 
      1.1064241732942655`}, {-0.10357698406421019`, 1.1299660455814058`}}]}, 
-   {RGBColor[0.7092738924077764, 0.9956356828458495, 0.9444390198725956], 
+   {RGBColor[0.8824338673624688, 0.49048359668015795`, 0.7838516752958984], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.10967177973617119`, 
      1.287965189921433}, {-0.08658543952998565, 1.2785864472480877`}}]}, 
-   {RGBColor[0.5446487603060566, 0.1840726983411589, 0.1437852514047646], 
+   {RGBColor[0.589278110388918, 0.23365083399737796`, 0.4624768054817161], 
     PolygonBox[{{-0.11245818539264511`, 
      1.183386841192131}, {-0.10635843813511638`, 
      1.1757935624052946`}, {-0.07710723369654697, 1.2257411785962684`}}]}, 
    {RGBColor[
-    0.11920593699427151`, 0.11643643209591037`, 0.23717167671111072`], 
+    0.48128821995195237`, 0.015296004328636092`, 0.15159292613646458`], 
     PolygonBox[{{-0.07532141669437975, 
      1.2645415080437312`}, {-0.08658543952998565, 
      1.2785864472480877`}, {-0.08753406513653277, 1.2387392140675557`}}]}, 
-   {RGBColor[0.23951967927747364`, 0.9157427076538109, 0.8078327917559074], 
+   {RGBColor[0.27117219386178726`, 0.9934894831404661, 0.8646114179095707], 
     PolygonBox[{{0.1528884698388015, 1.1115630054803896`}, {
      0.14512345608432284`, 1.055464205959209}, {0.11574496325293374`, 
      1.0762030096273278`}}]}, 
-   {RGBColor[0.7420638828590609, 0.49461145183413713`, 0.6765985641088696], 
+   {RGBColor[0.0314279592244866, 0.4289289552441251, 0.14470797831271076`], 
     PolygonBox[{{0.04714187224512742, 1.127790013773416}, {
      0.04204755692330072, 1.0909906290769085`}, {-0.04235455086916358, 
      1.1064241732942655`}}]}, 
-   {RGBColor[0.10546379973996256`, 0.6266823366441099, 0.7498260664505518], 
+   {RGBColor[0.05663709041564835, 0.6510540330781491, 0.5181371313080159], 
     PolygonBox[{{0.2698868877219246, 0.8408169785307141}, {0.2843892524327723,
       0.8866017094976937}, {0.33941140823842003`, 0.9323074075081187}}]}, 
-   {RGBColor[0.6848245429860047, 0.8476410882321779, 0.9043455545804184], 
+   {RGBColor[0.5607404918193912, 0.6375157545090668, 0.07742542948535336], 
     PolygonBox[{{0.2843892524327723, 0.8866017094976937}, {0.2698868877219246,
       0.8408169785307141}, {0.16999667436045124`, 0.8162762460180772}}]}, 
-   {RGBColor[0.32818625951912583`, 0.7844793400429959, 0.5030686621123588], 
+   {RGBColor[0.924243966037247, 0.8031302607863995, 0.5729918291677356], 
     PolygonBox[{{0.12278784454578466`, 1.1270790830945558`}, {
      0.11574496325293374`, 1.0762030096273278`}, {0.04204755692330072, 
      1.0909906290769085`}}]}, 
-   {RGBColor[0.5443823548838698, 0.7283076820810663, 0.41022671878161465`], 
+   {RGBColor[0.3995738352492806, 0.6615871687857406, 0.6214313831843408], 
     PolygonBox[{{-0.10767490209914597`, 
      1.1663906674656195`}, {-0.10635843813511638`, 
      1.1757935624052946`}, {-0.10229801546498549`, 1.139205671640245}}]}, 
-   {RGBColor[0.2277876655313693, 0.655777333230638, 0.4530431447994787], 
+   {RGBColor[0.31630335621908845`, 0.46844997254358467`, 0.2085719830213184], 
     PolygonBox[{{0.1980599779119168, 1.1201914250067946`}, {
      0.1891002609583601, 1.0554620071189653`}, {0.18079524707030462`, 
      1.0724314927616663`}}]}, 
-   {RGBColor[0.3769455465283167, 0.9324305698889361, 0.6367761009118214], 
+   {RGBColor[0.1522548901727574, 0.24984588503203198`, 0.7911343904472854], 
     PolygonBox[{{-0.47942049724312896`, 
      0.9044441355818891}, {-0.4358719965725605, 
      0.8503600040954449}, {-0.4313437489833355, 0.7781131431638849}}]}, 
-   {RGBColor[0.6431295574781917, 0.22719927475940138`, 0.9046733556236002], 
+   {RGBColor[0.7097935250233751, 0.7495815964188552, 0.18722171054657633`], 
     PolygonBox[{{0.22487322771787405`, 0.7936801363525431}, {
      0.16463145372384555`, 0.7287823428880205}, {0.16855232368920825`, 
      0.7749182321202077}}]}, 
-   {RGBColor[0.6161787941543702, 0.9590525212147261, 0.8287395223742544], 
+   {RGBColor[0.9348271400809185, 0.15341164821717146`, 0.162295984923722], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.25477635517126707`, 
      1.2471361176005984`}, {-0.23866112404389764`, 1.2645496750290988`}}]}, 
-   {RGBColor[0.45241964495867437`, 0.20510791187019484`, 0.8372194227655749], 
-    PolygonBox[{{-0.10229801546498549`, 
+   {RGBColor[0.14368687309441053`, 0.8918817961494327, 0.025001747104640426`],
+     PolygonBox[{{-0.10229801546498549`, 
      1.139205671640245}, {-0.10357698406421019`, 
      1.1299660455814058`}, {-0.10767490209914597`, 1.1663906674656195`}}]}, 
-   {RGBColor[0.5666114768704578, 0.6874031876457067, 0.7834124323605831], 
+   {RGBColor[0.7857486043892006, 0.7125996971680792, 0.38756158833412924`], 
     PolygonBox[{{-0.24209693351011033`, 
      1.0690996999832196`}, {-0.25554118884338345`, 
      1.0857957278034605`}, {-0.19901684726726254`, 1.1207311275672969`}}]}, 
-   {RGBColor[0.507070958802758, 0.17740927759883052`, 0.04585351498241552], 
+   {RGBColor[0.9431689786786639, 0.3247954665585022, 0.5005735213406821], 
     PolygonBox[{{-0.15800878593614712`, 
      0.5974443530897737}, {-0.06089086691610462, 
      0.6065481979397536}, {-0.06180346766857801, 0.6041727912451593}}]}, 
-   {RGBColor[0.3315084467179301, 0.09862680756357567, 0.7141592003071291], 
+   {RGBColor[0.830149311784613, 0.7168939087772725, 0.6528139912879385], 
     PolygonBox[{{0.17381420284493007`, 1.132961726020199}, {
      0.16543473345648196`, 1.0724322607873469`}, {0.16711185852134147`, 
      1.0554631065390871`}}]}, 
-   {RGBColor[0.024804582165631084`, 0.3703745607917215, 0.11477753608529095`],
-     PolygonBox[{{-0.3169720423052681, 
+   {RGBColor[0.9595228350539466, 0.7612483562544154, 0.25265548978118524`], 
+    PolygonBox[{{-0.3169720423052681, 
      0.6411696665196173}, {-0.4032285622509722, 
      0.6763113581483146}, {-0.4211551190558917, 0.7204286114930717}}]}, 
-   {RGBColor[
-    0.018851493746540493`, 0.048703101574234964`, 0.6606579669783588], 
+   {RGBColor[0.4814979912570998, 0.5331010653207422, 0.5339592804228945], 
     PolygonBox[{{-0.08753406513653277, 
      1.2387392140675557`}, {-0.07710723369654697, 
      1.2257411785962684`}, {-0.07532141669437975, 1.2645415080437312`}}]}, 
-   {RGBColor[0.034270615015322914`, 0.8078122890182526, 0.31890596647145264`],
-     PolygonBox[{{-0.1929983214251189, 
+   {RGBColor[0.6478229072213302, 0.4452362969739898, 0.6597177063581519], 
+    PolygonBox[{{-0.1929983214251189, 
      1.1132567475697075`}, {-0.19901684726726254`, 
      1.1207311275672969`}, {-0.20466934344951207`, 1.1569925564248136`}}]}, 
-   {RGBColor[0.5638813581694984, 0.8110902672524583, 0.7933324672457067], 
+   {RGBColor[0.855663729319583, 0.50757279863649, 0.9210559017266722], 
     PolygonBox[{{-0.24545065032373403`, 
      1.1935235910268427`}, {-0.2431784047496649, 
      1.2096364797846926`}, {-0.25477635517126707`, 1.2471361176005984`}}]}, 
-   {RGBColor[0.3481248817112701, 0.42362820810369417`, 0.7686354463697378], 
+   {RGBColor[0.44527166465593315`, 0.47501761368864326`, 0.7522726634633445], 
     PolygonBox[{{0.16289420932903884`, 0.8330215689917939}, {
      0.22593451804470063`, 0.9009339197579525}, {0.23111225289839657`, 
      0.8423130016347679}}]}, 
-   {RGBColor[0.8287242876507281, 0.8207504196402917, 0.1566083426987479], 
+   {RGBColor[0.2732383228150874, 0.6040761027867998, 0.7997042200622964], 
     PolygonBox[{{-0.3977995179555829, 
      0.9540121688216767}, {-0.4343409005687376, 
      0.9993939914051732}, {-0.40976920420965807`, 1.0253528597244084`}}]}, 
-   {RGBColor[0.42918962887129375`, 0.5439523243422537, 0.5830701578538913], 
+   {RGBColor[0.1226007539820968, 0.9458313966442153, 0.5839503663780803], 
     PolygonBox[{{0.18959111018168745`, 1.1359753887716684`}, {
      0.18079524707030462`, 1.0724314927616663`}, {0.17141519673380198`, 
      1.0782105462741334`}}]}, 
-   {RGBColor[0.3295524854000329, 0.8665973643928446, 0.11696083610433705`], 
+   {RGBColor[0.44719366189807985`, 0.23316161490484943`, 0.2621549587242613], 
     PolygonBox[{{-0.2431784047496649, 
      1.2096364797846926`}, {-0.24545065032373403`, 
      1.1935235910268427`}, {-0.20466934344951207`, 1.1569925564248136`}}]}, 
-   {RGBColor[0.009714070547889087, 0.45767331930281463`, 0.9289306252491427], 
+   {RGBColor[0.5304831738436524, 0.07564854196813897, 0.27927020748076936`], 
     PolygonBox[{{0.179978004916548, 1.1400648533301707`}, {
      0.17141519673380198`, 1.0782105462741334`}, {0.16543473345648196`, 
      1.0724322607873469`}}]}, 
-   {RGBColor[0.321592199750234, 0.3775808400900067, 0.5200037038565648], 
+   {RGBColor[0.1632633028345043, 0.5315320676166397, 0.4898233731258035], 
     PolygonBox[{{0.4055575672852047, 1.0085069480319067`}, {
      0.43077545223969893`, 1.0053601049149763`}, {0.5299204987321486, 
      1.0760596431018423`}}]}, 
-   {RGBColor[0.3480006229125141, 0.928995426550197, 0.4189309302845339], 
+   {RGBColor[0.7757438757425912, 0.35293111251642517`, 0.909526070537257], 
     PolygonBox[{{0.05683766341012611, 0.6489482391294207}, {
      0.14684245009180416`, 0.6970269023277393}, {0.12052258350825555`, 
      0.678867247114163}}]}, 
-   {RGBColor[0.5149214881508593, 0.7580978936470761, 0.29162754965044524`], 
+   {RGBColor[0.03614754288435851, 0.6580870115866628, 0.08337450520989198], 
     PolygonBox[{{0.1563331039995939, 0.7669382395928865}, {
      0.16999667436045124`, 0.8162762460180772}, {0.2698868877219246, 
      0.8408169785307141}}]}, 
-   {RGBColor[0.5252969957669937, 0.7599726096762447, 0.8582141619233596], 
+   {RGBColor[0.07716813962076241, 0.4933947784432029, 0.7713063802885003], 
     PolygonBox[{{-0.31409582600342145`, 
      1.0244406055757334`}, {-0.33806550933607304`, 
      1.0542099953179476`}, {-0.25554118884338345`, 1.0857957278034605`}}]}, 
-   {RGBColor[0.4282508442381703, 0.20512027617080086`, 0.743609713413685], 
+   {RGBColor[0.7428139555064845, 0.8533963712355777, 0.1680115959521733], 
     PolygonBox[{{-0.4373493244723005, 
      0.9384019642679665}, {-0.4795124086418528, 
      0.9907655718787681}, {-0.4755673878339037, 1.0089204219404757`}}]}, 
-   {RGBColor[0.2480881750268109, 0.11027696300936363`, 0.09369614866519016], 
+   {RGBColor[0.04765455391017959, 0.8682575855389623, 0.6080139560698279], 
     PolygonBox[{{-0.42036325571156186`, 
      0.9629685002676561}, {-0.4597904804971464, 
      1.0119340846919451`}, {-0.456926332108726, 0.9950795617359579}}]}, 
-   {RGBColor[0.027268336799215254`, 0.5857678685319798, 0.6000998486905615], 
+   {RGBColor[0.40125650048575223`, 0.08304528535185596, 0.0808437400871298], 
     PolygonBox[{{0.43077545223969893`, 1.0053601049149763`}, {
      0.44917647211363293`, 0.9903399528204031}, {0.5725208178864806, 
      1.0709038218482043`}}]}, 
-   {RGBColor[0.8711876414353024, 0.8826048499563408, 0.10810373114286187`], 
+   {RGBColor[0.9332622542399953, 0.8147908823751211, 0.8288107563999687], 
     PolygonBox[{{-0.2676960322852213, 
      0.6082430811202744}, {-0.1685753252437488, 
      0.597908244247367}, {-0.15800878593614712`, 0.5974443530897737}}]}, 
-   {RGBColor[0.36335554524750724`, 0.2146301672134665, 0.26827238964755673`], 
+   {RGBColor[0.6466230961085075, 0.1901333724976524, 0.7837591473291159], 
     PolygonBox[{{-0.19901684726726254`, 
      1.1207311275672969`}, {-0.1929983214251189, 
      1.1132567475697075`}, {-0.24209693351011033`, 1.0690996999832196`}}]}, 
-   {RGBColor[0.30699548187505643`, 0.042206032899919865`, 0.6901795070446957],
-     PolygonBox[{{-0.3766299121269057, 
+   {RGBColor[0.8884309138992639, 0.7643132038901619, 0.5778013703667102], 
+    PolygonBox[{{-0.3766299121269057, 
      0.9841965299469534}, {-0.40976920420965807`, 
      1.0253528597244084`}, {-0.33806550933607304`, 1.0542099953179476`}}]}, 
-   {RGBColor[0.82703187435978, 0.8391640579908854, 0.14370783847478075`], 
-    PolygonBox[{{-0.11215342199523176`, 
+   {RGBColor[0.4931286707827982, 0.027894814175744687`, 0.26205850285745025`],
+     PolygonBox[{{-0.11215342199523176`, 
      1.1207267843960333`}, {-0.10357698406421019`, 
      1.1299660455814058`}, {-0.04235455086916358, 1.1064241732942655`}}]}, 
-   {RGBColor[0.3014715934823473, 0.10382665289074477`, 0.14149557318317152`], 
+   {RGBColor[0.4924575119947512, 0.9207153095351484, 0.7586515546435122], 
     PolygonBox[{{-0.20466934344951207`, 
      1.1569925564248136`}, {-0.19856959619198336`, 
      1.1493992776379773`}, {-0.1929983214251189, 1.1132567475697075`}}]}, 
-   {RGBColor[0.7559698707077618, 0.8053272841313237, 0.46812300364761117`], 
+   {RGBColor[0.8328778323835226, 0.9153464069419548, 0.6712524685006289], 
     PolygonBox[{{-0.4272054383922027, 
      0.9663509839834822}, {-0.4674951960629281, 
      1.0163882058552924`}, {-0.4597904804971464, 1.0119340846919451`}}]}, 
-   {RGBColor[0.7223241747567191, 0.9066256552413812, 0.470643493049286], 
+   {RGBColor[0.1317162686258584, 0.7284182247423707, 0.9475927616854445], 
     PolygonBox[{{-0.4341766959524494, 
      0.9575167245322272}, {-0.4755673878339037, 
      1.0089204219404757`}, {-0.4674951960629281, 1.0163882058552924`}}]}, 
-   {RGBColor[0.41208842090408226`, 0.2383017672631791, 0.7779381832028429], 
+   {RGBColor[0.7746713201598512, 0.6644265902765885, 0.5528822616446241], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.08658543952998565, 
      1.2785864472480877`}, {-0.07532141669437975, 1.2645415080437312`}}]}, 
-   {RGBColor[0.8159124056345852, 0.6455328044637207, 0.2619363620455972], 
+   {RGBColor[0.19649874875895512`, 0.2622008528156823, 0.7805986029792884], 
     PolygonBox[{{0.4055575672852047, 1.0085069480319067`}, {
      0.3856620785096914, 0.9944301794933417}, {0.33941140823842003`, 
      0.9323074075081187}}]}, 
-   {RGBColor[0.5447170194620228, 0.6672848561935754, 0.4077737739182463], 
+   {RGBColor[0.596627644278563, 0.7196188287081318, 0.7934818638156655], 
     PolygonBox[{{-0.07937947927061596, 
      1.2096282898384185`}, {-0.07710723369654697, 
      1.2257411785962684`}, {-0.10635843813511638`, 1.1757935624052946`}}]}, 
-   {RGBColor[0.5788970351405149, 0.009901483022737079, 0.0832398949882942], 
+   {RGBColor[
+    0.12756687155962032`, 0.028571145788247376`, 0.44488747239506665`], 
     PolygonBox[{{0.2698868877219246, 0.8408169785307141}, {0.2688518551932612,
       0.8001724556585252}, {0.1563331039995939, 0.7669382395928865}}]}, 
-   {RGBColor[0.32977678864395754`, 0.1022129342640794, 0.03878006436813841], 
+   {RGBColor[0.7048973140753678, 0.55048724304487, 0.9249489476921782], 
     PolygonBox[{{-0.19856959619198336`, 
      1.1493992776379773`}, {-0.20466934344951207`, 
      1.1569925564248136`}, {-0.24545065032373403`, 1.1935235910268427`}}]}, 
-   {RGBColor[0.4580849482145535, 0.25539761372309133`, 0.8351888943789527], 
+   {RGBColor[0.9917013721103853, 0.6872626651062903, 0.9708704718473722], 
     PolygonBox[{{-0.4032285622509722, 
      0.6763113581483146}, {-0.3169720423052681, 
      0.6411696665196173}, {-0.29424820730576223`, 0.6167840617368467}}]}, 
-   {RGBColor[0.16373997765378556`, 0.6075473982151487, 0.7852919006288805], 
+   {RGBColor[0.6351457822008351, 0.1327157919174764, 0.2126028869498504], 
     PolygonBox[{{-0.11638799549398512`, 
      1.1569881423574158`}, {-0.10767490209914597`, 
      1.1663906674656195`}, {-0.10357698406421019`, 1.1299660455814058`}}]}, 
-   {RGBColor[0.17727072781916742`, 0.9174279475529918, 0.08336688173563278], 
+   {RGBColor[0.25913677484377917`, 0.6653325093585132, 0.08062304081267513], 
     PolygonBox[{{-0.25477635517126707`, 
      1.2471361176005984`}, {-0.25723594945128053`, 
      1.229721877390256}, {-0.24545065032373403`, 1.1935235910268427`}}]}, 
-   {RGBColor[0.637256968645755, 0.20575024660787844`, 0.5573528435969033], 
+   {RGBColor[0.7129054722328729, 0.7975123869774892, 0.4450061539030772], 
     PolygonBox[{{-0.10635843813511638`, 
      1.1757935624052946`}, {-0.10767490209914597`, 
      1.1663906674656195`}, {-0.07937947927061596, 1.2096282898384185`}}]}, 
-   {RGBColor[0.1043900451949098, 0.7628062631276493, 0.3022785935529395], 
+   {RGBColor[0.28014172636321444`, 0.08309546586165939, 0.8935829269997757], 
     PolygonBox[{{-0.10357698406421019`, 
      1.1299660455814058`}, {-0.11215342199523176`, 
      1.1207267843960333`}, {-0.11638799549398512`, 1.1569881423574158`}}]}, 
-   {RGBColor[0.6307837259541684, 0.7639826116341779, 0.12269072711798024`], 
+   {RGBColor[0.5649659133825404, 0.8365018794022003, 0.7607251086733173], 
     PolygonBox[{{-0.1685753252437488, 
      0.597908244247367}, {-0.2676960322852213, 
      0.6082430811202744}, {-0.29424820730576223`, 0.6167840617368467}}]}, 
-   {RGBColor[0.7559345930572678, 0.8313208822221143, 0.7051695555071318], 
+   {RGBColor[0.78288235845642, 0.5812611556960525, 0.12615596934586737`], 
     PolygonBox[{{-0.1807180960918207, 1.10825384388312}, {-0.1929983214251189,
       1.1132567475697075`}, {-0.19856959619198336`, 1.1493992776379773`}}]}, 
-   {RGBColor[0.2872425589727472, 0.47638427458394594`, 0.5642916194805943], 
+   {RGBColor[0.798515971044464, 0.9613769848102491, 0.10298369124566076`], 
     PolygonBox[{{0.277940611068949, 0.7812518303398264}, {0.2688518551932612, 
      0.8001724556585252}, {0.33913544795546485`, 0.8690915471434579}}]}, 
-   {RGBColor[0.309331029156817, 0.05377231196367682, 0.8678471680981195], 
+   {RGBColor[0.09554103750695209, 0.6591782412128586, 0.8345819809386192], 
     PolygonBox[{{0.33913544795546485`, 0.8690915471434579}, {
      0.3546184424109582, 0.8573830486925804}, {0.277940611068949, 
      0.7812518303398264}}]}, 
-   {RGBColor[0.6309778974659321, 0.7590480783299569, 0.6860963486656013], 
+   {RGBColor[0.6173479747353807, 0.45662386268645316`, 0.08965523911716033], 
     PolygonBox[{{0.3719460755213007, 0.8719576332580304}, {0.3546184424109582,
       0.8573830486925804}, {0.43008849213295214`, 0.9545499903566267}}]}, 
-   {RGBColor[0.7445110250468792, 0.5495482125958477, 0.4934022289023774], 
+   {RGBColor[0.02232123755628357, 0.8826145402565448, 0.5325434855109572], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.25723594945128053`, 
      1.229721877390256}, {-0.25477635517126707`, 1.2471361176005984`}}]}, 
-   {RGBColor[0.5011135170597476, 0.7853029614894433, 0.6681930492333732], 
+   {RGBColor[0.9212462756082265, 0.5419373241847816, 0.42015997852829323`], 
     PolygonBox[{{0.12052258350825555`, 0.678867247114163}, {
      0.041306032254755924`, 0.6365517828363915}, {0.05683766341012611, 
      0.6489482391294207}}]}, 
-   {RGBColor[0.5765130391083957, 0.44483358914627646`, 0.6245141489240926], 
+   {RGBColor[0.6918994465854669, 0.39696380532562814`, 0.5886347900925271], 
     PolygonBox[{{-0.25554118884338345`, 
      1.0857957278034605`}, {-0.24209693351011033`, 
      1.0690996999832196`}, {-0.31409582600342145`, 1.0244406055757334`}}]}, 
-   {RGBColor[0.8151543579737577, 0.5994012566031117, 0.47150794402076524`], 
+   {RGBColor[0.385392618912624, 0.6571725217907469, 0.5112617891785949], 
     PolygonBox[{{0.5725208178864806, 1.0709038218482043`}, {
      0.5299204987321486, 1.0760596431018423`}, {0.43077545223969893`, 
      1.0053601049149763`}}]}, 
-   {RGBColor[0.5383088645206202, 0.9267555014551729, 0.7872988970050472], 
+   {RGBColor[0.2482245671945167, 0.16376019817093912`, 0.9609597666910907], 
     PolygonBox[{{0.43008849213295214`, 0.9545499903566267}, {
      0.44937291172340327`, 0.9684794602359853}, {0.3719460755213007, 
      0.8719576332580304}}]}, 
-   {RGBColor[0.8095046147936122, 0.6709156948583994, 0.9402038324762809], 
+   {RGBColor[0.6214066493767909, 0.59203261239878, 0.646601465232503], 
     PolygonBox[{{-0.06089086691610462, 
      0.6065481979397536}, {-0.15800878593614712`, 
      0.5974443530897737}, {-0.1685753252437488, 0.597908244247367}}]}, 
-   {RGBColor[0.08632564816065114, 0.11999699158744281`, 0.7561919565456954], 
+   {RGBColor[0.8981190335738272, 0.3813733286984622, 0.7656326746735402], 
     PolygonBox[{{0.027060325858137998`, 
      0.6315194431436333}, {-0.06089086691610462, 
      0.6065481979397536}, {-0.05843637246210363, 0.6082326181372832}}]}, 
-   {RGBColor[0.40263714958511687`, 0.5632071502836329, 0.04009968426231669], 
-    PolygonBox[{{-0.0777810109743931, 
+   {RGBColor[0.49267925167442606`, 0.7101553763354236, 0.011256029312352922`],
+     PolygonBox[{{-0.0777810109743931, 
      1.2471272678333887`}, {-0.07532141669437975, 
      1.2645415080437312`}, {-0.07710723369654697, 1.2257411785962684`}}]}, 
-   {RGBColor[0.5066327683818619, 0.31598131292428944`, 0.5481858871706162], 
+   {RGBColor[0.039760008482147446`, 0.8444131502262757, 0.9936441884347773], 
     PolygonBox[{{0.5299204987321486, 1.0760596431018423`}, {
      0.4818230555142661, 1.070908356736323}, {0.4055575672852047, 
      1.0085069480319067`}}]}, 
-   {RGBColor[0.04644104550632622, 0.9225245225016339, 0.09481011366641279], 
+   {RGBColor[0.10628527834723256`, 0.08155291054843161, 0.1903456215579833], 
     PolygonBox[{{-0.04235455086916358, 
      1.1064241732942655`}, {-0.06151128305270919, 
      1.085786026308171}, {-0.11215342199523176`, 1.1207267843960333`}}]}, 
-   {RGBColor[0.1734832818289591, 0.06324507108152333, 0.5964144068532538], 
+   {RGBColor[0.38842936305543696`, 0.08018258756704033, 0.49553613097239], 
     PolygonBox[{{-0.19856959619198336`, 
      1.1493992776379773`}, {-0.18609022851146312`, 
      1.1443237113001254`}, {-0.1807180960918207, 1.10825384388312}}]}, 
-   {RGBColor[0.6706537237568115, 0.587424718683778, 0.4271948601397053], 
+   {RGBColor[0.7628221352974138, 0.4871537344728545, 0.9088737230446171], 
     PolygonBox[{{0.33941140823842003`, 0.9323074075081187}, {
      0.3316739773779153, 0.8977434693584226}, {0.2698868877219246, 
      0.8408169785307141}}]}, 
-   {RGBColor[0.7585971294395799, 0.9920585938905342, 0.15395933691388475`], 
+   {RGBColor[
+    0.23235725283094477`, 0.31841562947047564`, 0.050629113862545205`], 
     PolygonBox[{{0.3856620785096914, 0.9944301794933417}, {0.4055575672852047,
       1.0085069480319067`}, {0.4818230555142661, 1.070908356736323}}]}, 
-   {RGBColor[0.868259919946595, 0.7944302247491737, 0.5430745140926614], 
+   {RGBColor[0.9249256620328601, 0.7254608910919671, 0.38738570614711354`], 
     PolygonBox[{{-0.05843637246210363, 0.6082326181372832}, {
      0.041306032254755924`, 0.6365517828363915}, {0.027060325858137998`, 
      0.6315194431436333}}]}, 
-   {RGBColor[0.5523345539285582, 0.8059007496740465, 0.657181556674435], 
+   {RGBColor[0.8786020188069723, 0.8169996543281475, 0.5999508577773838], 
     PolygonBox[{{-0.06151128305270919, 
      1.085786026308171}, {-0.04235455086916358, 1.1064241732942655`}, {
      0.04204755692330072, 1.0909906290769085`}}]}, 
-   {RGBColor[0.710911352766707, 0.9208400012347981, 0.3394682154803941], 
+   {RGBColor[0.04864445568622222, 0.376212143163309, 0.3535539109933976], 
     PolygonBox[{{-0.24545065032373403`, 
      1.1935235910268427`}, {-0.2350238188837482, 
      1.1805255555555554`}, {-0.19856959619198336`, 1.1493992776379773`}}]}, 
-   {RGBColor[0.43082367986591263`, 0.9498415397574185, 0.304621566040957], 
+   {RGBColor[0.31066238665334045`, 0.09916857087122266, 0.9393829369055795], 
     PolygonBox[{{-0.1929983214251189, 
      1.1132567475697075`}, {-0.1807180960918207, 
      1.10825384388312}, {-0.21466707726123596`, 1.057924479949401}}]}, 
-   {RGBColor[0.3700509266571854, 0.1368590066495683, 0.9549741286235136], 
+   {RGBColor[0.21372772293398423`, 0.4038812049302125, 0.8761226949619487], 
     PolygonBox[{{-0.16321196621758213`, 
      1.1064286467572872`}, {-0.1807180960918207, 
      1.10825384388312}, {-0.18609022851146312`, 1.1443237113001254`}}]}, 
-   {RGBColor[0.33814760947365685`, 0.11470034679369934`, 0.06632392308488244],
-     PolygonBox[{{-0.11215342199523176`, 
+   {RGBColor[0.5708132635963759, 0.9645810264970314, 0.34850229408043387`], 
+    PolygonBox[{{-0.11215342199523176`, 
      1.1207267843960333`}, {-0.12614408625640147`, 
      1.113253404857949}, {-0.1305866988321232, 1.1493958784931093`}}]}, 
-   {RGBColor[0.003818882479786234, 0.6197253115298842, 0.3883880657979324], 
+   {RGBColor[0.39506610293285993`, 0.9515962906082349, 0.02165996776718604], 
     PolygonBox[{{-0.21466707726123596`, 
      1.057924479949401}, {-0.24209693351011033`, 
      1.0690996999832196`}, {-0.1929983214251189, 1.1132567475697075`}}]}, 
-   {RGBColor[0.7811648704654879, 0.7533205598080253, 0.09007214586606782], 
+   {RGBColor[0.8572251370733548, 0.20139601009842867`, 0.9766745920122841], 
     PolygonBox[{{-0.1305866988321232, 
      1.1493958784931093`}, {-0.11638799549398512`, 
      1.1569881423574158`}, {-0.11215342199523176`, 1.1207267843960333`}}]}, 
-   {RGBColor[0.33384947737878723`, 0.7587481653420451, 0.19401893865372943`], 
+   {RGBColor[
+    0.26341892282494417`, 0.46382737250876094`, 0.16851267576620588`], 
     PolygonBox[{{0.3316739773779153, 0.8977434693584226}, {
      0.33941140823842003`, 0.9323074075081187}, {0.3856620785096914, 
      0.9944301794933417}}]}, 
-   {RGBColor[0.2676289927909743, 0.670822895226244, 0.7474842855428849], 
+   {RGBColor[0.45077827920727187`, 0.02823106645551854, 0.8534485607725437], 
     PolygonBox[{{-0.07710723369654697, 
      1.2257411785962684`}, {-0.07937947927061596, 
      1.2096282898384185`}, {-0.0777810109743931, 1.2471272678333887`}}]}, 
-   {RGBColor[
-    0.27878887247934125`, 0.8488101271789077, 0.0014491352622347797`], 
+   {RGBColor[0.2999569748402282, 0.1256323279291125, 0.08434386616176948], 
     PolygonBox[{{-0.12614408625640147`, 
      1.113253404857949}, {-0.11215342199523176`, 
      1.1207267843960333`}, {-0.06151128305270919, 1.085786026308171}}]}, 
-   {RGBColor[0.9017003110348571, 0.7465115494043917, 0.1476691015975069], 
+   {RGBColor[0.4904187129572688, 0.1636443552073521, 0.14883250602584597`], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.07532141669437975, 
      1.2645415080437312`}, {-0.0777810109743931, 1.2471272678333887`}}]}, 
-   {RGBColor[0.14384235683496138`, 0.17781727145585502`, 0.9394142564384287], 
+   {RGBColor[0.14839343041019482`, 0.21365869730743658`, 0.7822551664692001], 
     PolygonBox[{{-0.2350238188837482, 
      1.1805255555555554`}, {-0.24545065032373403`, 
      1.1935235910268427`}, {-0.25723594945128053`, 1.229721877390256}}]}, 
-   {RGBColor[0.22026576165733291`, 0.5967297497755677, 0.25703321349531305`], 
+   {RGBColor[0.5029623706227608, 0.5370672199405104, 0.7647076410569515], 
     PolygonBox[{{0.44917647211363293`, 0.9903399528204031}, {
      0.44937291172340327`, 0.9684794602359853}, {0.5848915048246952, 
      1.055442217556772}}]}, 
-   {RGBColor[0.24599771906645373`, 0.2792427287132724, 0.875438279630463], 
+   {RGBColor[0.3595586230042729, 0.22003724616947373`, 0.4253048628975771], 
     PolygonBox[{{0.2688518551932612, 0.8001724556585252}, {0.2698868877219246,
       0.8408169785307141}, {0.3316739773779153, 0.8977434693584226}}]}, 
-   {RGBColor[0.1286685953405713, 0.05575221771158767, 0.39178351519902876`], 
+   {RGBColor[0.5829669622180589, 0.8225555484127465, 0.8428950875922367], 
     PolygonBox[{{-0.18609022851146312`, 
      1.1443237113001254`}, {-0.19856959619198336`, 
      1.1493992776379773`}, {-0.2350238188837482, 1.1805255555555554`}}]}, 
-   {RGBColor[0.33117973837096515`, 0.32309528555063616`, 0.3770704537715781], 
+   {RGBColor[0.19680630283188782`, 0.299403157864254, 0.46242775470265807`], 
     PolygonBox[{{-0.33806550933607304`, 
      1.0542099953179476`}, {-0.31409582600342145`, 
      1.0244406055757334`}, {-0.3766299121269057, 0.9841965299469534}}]}, 
-   {RGBColor[0.7416456837145826, 0.6941739359867038, 0.1880449491434879], 
+   {RGBColor[0.0907751879209513, 0.4769000372561196, 0.14712505810676735`], 
     PolygonBox[{{-0.10767490209914597`, 
      1.1663906674656195`}, {-0.11638799549398512`, 
      1.1569881423574158`}, {-0.09429397791150501, 1.1935160331932222`}}]}, 
-   {RGBColor[0.8105836914194393, 0.09300142215505125, 0.6423205343596974], 
+   {RGBColor[0.7857814118366941, 0.9845648326490928, 0.8583526689160283], 
     PolygonBox[{{-0.12614408625640147`, 
      1.113253404857949}, {-0.14375994495981842`, 
      1.1082519959755635`}, {-0.148479194023342, 1.144321830748401}}]}, 
-   {RGBColor[0.6505302224938696, 0.1950646687104043, 0.6475042802249669], 
+   {RGBColor[0.5345108805028729, 0.695984388789274, 0.4295769863764334], 
     PolygonBox[{{-0.14375994495981842`, 
      1.1082519959755635`}, {-0.16321196621758213`, 
      1.1064286467572872`}, {-0.16827082484891667`, 1.1424738080589245`}}]}, 
-   {RGBColor[0.5666667396490224, 0.8720506732715927, 0.056365220143212325`], 
+   {RGBColor[0.8321725487339153, 0.710117371280899, 0.3403911934174355], 
     PolygonBox[{{-0.4795124086418528, 
      0.9907655718787681}, {-0.4373493244723005, 
      0.9384019642679665}, {-0.4358719965725605, 0.8503600040954449}}]}, 
-   {RGBColor[0.5287493733793498, 0.42151681743203473`, 0.1592790083995248], 
+   {RGBColor[0.12533531381776908`, 0.7394879714229463, 0.32088369865032673`], 
     PolygonBox[{{-0.18609022851146312`, 
      1.1443237113001254`}, {-0.16827082484891667`, 
      1.1424738080589245`}, {-0.16321196621758213`, 1.1064286467572872`}}]}, 
-   {RGBColor[0.08154934651405754, 0.3886532548113901, 0.28341605338073883`], 
+   {RGBColor[0.17849429759894164`, 0.01807090059060279, 0.775256163277322], 
     PolygonBox[{{0.5848915048246952, 1.055442217556772}, {0.5725208178864806, 
      1.0709038218482043`}, {0.44917647211363293`, 0.9903399528204031}}]}, 
-   {RGBColor[0.19195733000634618`, 0.25465959582819053`, 0.8946950208562945], 
+   {RGBColor[0.3196574214146537, 0.4024222725463338, 0.0902411625118078], 
     PolygonBox[{{-0.09429397791150501, 
      1.1935160331932222`}, {-0.07937947927061596, 
      1.2096282898384185`}, {-0.10767490209914597`, 1.1663906674656195`}}]}, 
-   {RGBColor[0.6587519264377186, 0.9855171598783723, 0.48118690246013074`], 
+   {RGBColor[0.47789279108107996`, 0.8691943166496123, 0.3865886763194546], 
     PolygonBox[{{0.4818230555142661, 1.070908356736323}, {0.5299204987321486, 
      1.0760596431018423`}, {0.5555302454579741, 1.0861344128838548`}}]}, 
-   {RGBColor[0.7328214703956577, 0.09353329502808094, 0.4579567368782431], 
+   {RGBColor[0.925737978992029, 0.5597035147201055, 0.8513370654516168], 
     PolygonBox[{{-0.148479194023342, 1.144321830748401}, {-0.1305866988321232,
       1.1493958784931093`}, {-0.12614408625640147`, 1.113253404857949}}]}, 
-   {RGBColor[0.969455184848776, 0.6085264935016921, 0.9597218909755219], 
+   {RGBColor[0.25718797741916233`, 0.8816434396200159, 0.1096254751443888], 
     PolygonBox[{{0.14910727124930218`, 0.9044127091934644}, {
      0.2111647008261305, 0.97126709917047}, {0.22593451804470063`, 
      0.9009339197579525}}]}, 
-   {RGBColor[0.40631779249133904`, 0.6574720846242388, 0.6109694077640999], 
+   {RGBColor[0.24820362129230666`, 0.10406532463049833`, 0.8201521095104463], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.24597192661567463`, 
      1.2156769381858996`}, {-0.25723594945128053`, 1.229721877390256}}]}, 
-   {RGBColor[0.18156055249280212`, 0.254302165480915, 0.9979007142320422], 
+   {RGBColor[0.33913047353299675`, 0.06775876313812379, 0.991688376956545], 
     PolygonBox[{{-0.40976920420965807`, 
      1.0253528597244084`}, {-0.3766299121269057, 
      0.9841965299469534}, {-0.3977995179555829, 0.9540121688216767}}]}, 
-   {RGBColor[0.14333973691958324`, 0.8696485655726431, 0.2692830112457161], 
+   {RGBColor[0.8888203711144622, 0.14517677418841668`, 0.3466397520004698], 
     PolygonBox[{{0.23111225289839657`, 0.8423130016347679}, {
      0.16855232368920825`, 0.7749182321202077}, {0.16289420932903884`, 
      0.8330215689917939}}]}, 
-   {RGBColor[
-    0.24723239235358352`, 0.14066080704153094`, 0.19932930046411945`], 
-    PolygonBox[{{-0.16827082484891667`, 
+   {RGBColor[0.19726716786702858`, 0.36217492888869973`, 0.06024013161967168],
+     PolygonBox[{{-0.16827082484891667`, 
      1.1424738080589245`}, {-0.148479194023342, 
      1.144321830748401}, {-0.14375994495981842`, 1.1082519959755635`}}]}, 
-   {RGBColor[0.02524814351735949, 0.09539073140169618, 0.6745618703196306], 
+   {RGBColor[0.33921052478139924`, 0.44311346884783887`, 0.7801719092119945], 
     PolygonBox[{{0.6026462610758907, 1.0823962402402403`}, {
      0.5555302454579741, 1.0861344128838548`}, {0.5299204987321486, 
      1.0760596431018423`}}]}, 
-   {RGBColor[0.40426181666144534`, 0.8932821457761821, 0.7905920092794725], 
+   {RGBColor[0.0886011812710219, 0.9149289653887707, 0.6564150868017706], 
     PolygonBox[{{0.5299204987321486, 1.0760596431018423`}, {
      0.5725208178864806, 1.0709038218482043`}, {0.6026462610758907, 
      1.0823962402402403`}}]}, 
-   {RGBColor[0.6784582262808321, 0.46633608379835123`, 0.05795615760690054], 
+   {RGBColor[0.9226353938506968, 0.6281261302031884, 0.6052588157195067], 
     PolygonBox[{{-0.3315801751099264, 
      0.6839349838944819}, {-0.4211551190558917, 
      0.7204286114930717}, {-0.4313437489833355, 0.7781131431638849}}]}, 
-   {RGBColor[0.7455828003538623, 0.5813904510763506, 0.02184970859905011], 
+   {RGBColor[0.4178830526083037, 0.33795718425861465`, 0.8397600898587292], 
     PolygonBox[{{-0.456926332108726, 
      0.9950795617359579}, {-0.4175744212139416, 
      0.9462070665448217}, {-0.42036325571156186`, 0.9629685002676561}}]}, 
-   {RGBColor[0.09287376942126246, 0.41129769323138143`, 0.11026596662538357`],
-     PolygonBox[{{-0.1807180960918207, 
+   {RGBColor[0.7077957047235022, 0.8255511891662874, 0.9020970309996237], 
+    PolygonBox[{{-0.1807180960918207, 
      1.10825384388312}, {-0.16321196621758213`, 
      1.1064286467572872`}, {-0.1755628618441475, 1.053847203500626}}]}, 
-   {RGBColor[0.1810104669020356, 0.8482677806219667, 0.3814690157878864], 
+   {RGBColor[0.32290524251632946`, 0.9664135585619515, 0.6082675327171443], 
     PolygonBox[{{0.3316739773779153, 0.8977434693584226}, {
      0.33913544795546485`, 0.8690915471434579}, {0.2688518551932612, 
      0.8001724556585252}}]}, 
-   {RGBColor[0.5880313874048939, 0.29427397711938186`, 0.7178456402853219], 
+   {RGBColor[0.6884765914955746, 0.5755835586874649, 0.2441910511176304], 
     PolygonBox[{{0.5555302454579741, 1.0861344128838548`}, {
      0.5033114644736836, 1.080109989354136}, {0.4818230555142661, 
      1.070908356736323}}]}, 
-   {RGBColor[0.25869103816478867`, 0.9553050310311912, 0.3219531913535383], 
+   {RGBColor[0.8588617972541575, 0.09330209030923942, 0.021773469893463737`], 
     PolygonBox[{{-0.14375994495981842`, 
      1.1082519959755635`}, {-0.12614408625640147`, 
      1.113253404857949}, {-0.09276344282316971, 1.0690922333086854`}}]}, 
-   {RGBColor[0.1934075527257213, 0.0612292608962659, 0.7071734886082308], 
+   {RGBColor[0.20903679949812082`, 0.09054997156614153, 0.5780596572202727], 
     PolygonBox[{{-0.25723594945128053`, 
      1.229721877390256}, {-0.24597192661567463`, 
      1.2156769381858996`}, {-0.2350238188837482, 1.1805255555555554`}}]}, 
-   {RGBColor[0.8795990757059726, 0.22376049059620295`, 0.21280949914591152`], 
+   {RGBColor[0.14261009300995586`, 0.8763895572716152, 0.9502533767413215], 
     PolygonBox[{{0.5033114644736836, 1.080109989354136}, {0.5555302454579741, 
      1.0861344128838548`}, {0.5636517609432626, 1.0875674451933348`}}]}, 
-   {RGBColor[0.20718963466995932`, 0.424911471642641, 0.8170299846953282], 
+   {RGBColor[0.9067190527803741, 0.5069875826403387, 0.8757582118811107], 
     PolygonBox[{{-0.1685753252437488, 
      0.597908244247367}, {-0.05843637246210363, 
      0.6082326181372832}, {-0.06089086691610462, 0.6065481979397536}}]}, 
-   {RGBColor[0.7725447802692531, 0.24064466147161245`, 0.669785520264714], 
+   {RGBColor[0.6371779594546869, 0.30692569184758045`, 0.35701213356044326`], 
     PolygonBox[{{0.6087149291901947, 1.0852415672284195`}, {
      0.5636517609432626, 1.0875674451933348`}, {0.5555302454579741, 
      1.0861344128838548`}}]}, 
-   {RGBColor[0.4489348341709283, 0.01989863842851647, 0.0634213420105103], 
+   {RGBColor[0.2422208973508042, 0.22178758597000447`, 0.16815156933700304`], 
     PolygonBox[{{-0.16827082484891667`, 
      1.1424738080589245`}, {-0.18609022851146312`, 
      1.1443237113001254`}, {-0.21365887487778087`, 1.1718445255879122`}}]}, 
-   {RGBColor[0.6202796695476336, 0.5201243113817238, 0.7112866779639997], 
+   {RGBColor[0.9347133786701443, 0.7899620529956131, 0.5755725497887505], 
     PolygonBox[{{-0.16321196621758213`, 
      1.1064286467572872`}, {-0.14375994495981842`, 
      1.1082519959755635`}, {-0.13211175302367875`, 1.057920352183189}}]}, 
-   {RGBColor[0.7401699813971014, 0.7824586520432157, 0.0035660904653680436`], 
+   {RGBColor[0.9756527121057244, 0.29755211895319555`, 0.4960758948442594], 
     PolygonBox[{{-0.06151128305270919, 
      1.085786026308171}, {-0.09276344282316971, 
      1.0690922333086854`}, {-0.12614408625640147`, 1.113253404857949}}]}, 
-   {RGBColor[0.8365387776220623, 0.9188754845159448, 0.0720666687421665], 
+   {RGBColor[0.6880532146576588, 0.13765853756987667`, 0.3881961249093955], 
     PolygonBox[{{-0.4597904804971464, 
      1.0119340846919451`}, {-0.42036325571156186`, 
      0.9629685002676561}, {-0.4272054383922027, 0.9663509839834822}}]}, 
-   {RGBColor[0.06921519688957112, 0.9690999364275605, 0.9820356603204852], 
+   {RGBColor[0.6173297866185778, 0.9542547522080289, 0.7067179980949199], 
     PolygonBox[{{0.5555302454579741, 1.0861344128838548`}, {
      0.6026462610758907, 1.0823962402402403`}, {0.6087149291901947, 
      1.0852415672284195`}}]}, 
-   {RGBColor[0.6989373558681149, 0.5144346223030125, 0.5540038520810988], 
+   {RGBColor[0.6922616496543517, 0.2857203780221098, 0.39541074101042795`], 
     PolygonBox[{{-0.4755673878339037, 
      1.0089204219404757`}, {-0.4341766959524494, 
      0.9575167245322272}, {-0.4373493244723005, 0.9384019642679665}}]}, 
-   {RGBColor[0.8983245128589421, 0.6689732704183329, 0.8147421294205519], 
+   {RGBColor[0.8916484267732485, 0.6751284552490517, 0.7031730142602917], 
     PolygonBox[{{-0.2350238188837482, 
      1.1805255555555554`}, {-0.21365887487778087`, 
      1.1718445255879122`}, {-0.18609022851146312`, 1.1443237113001254`}}]}, 
-   {RGBColor[0.7626393092676191, 0.7148854291964624, 0.10474294393053496`], 
+   {RGBColor[0.020175297551708216`, 0.8171701097707946, 0.4008347019370795], 
     PolygonBox[{{-0.11638799549398512`, 
      1.1569881423574158`}, {-0.1305866988321232, 
      1.1493958784931093`}, {-0.11858445472597715`, 1.1805197335873476`}}]}, 
-   {RGBColor[
-    0.47311624604091707`, 0.36556405631680366`, 0.062455213784905705`], 
+   {RGBColor[0.902592044447756, 0.9988304011287501, 0.6205671191371833], 
     PolygonBox[{{0.5636517609432626, 1.0875674451933348`}, {0.514289023108308,
       1.0815347421918151`}, {0.5033114644736836, 1.080109989354136}}]}, 
-   {RGBColor[0.9980736178775167, 0.1800324450623223, 0.20553146738942396`], 
+   {RGBColor[0.7815215699400988, 0.4152318486781481, 0.5489252434749898], 
     PolygonBox[{{0.4818230555142661, 1.070908356736323}, {
      0.45296109020258357`, 1.055448814077503}, {0.3856620785096914, 
      0.9944301794933417}}]}, 
-   {RGBColor[0.33706248881284884`, 0.912042109176785, 0.5769778964495571], 
+   {RGBColor[0.8522240095438613, 0.9572508352749574, 0.31343671994228495`], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.0777810109743931, 
      1.2471272678333887`}, {-0.09389624210176266, 1.2297137104048883`}}]}, 
-   {RGBColor[0.3937878550952574, 0.3600810562008778, 0.19761086140324102`], 
+   {RGBColor[0.36392019601799297`, 0.6543702093630201, 0.34823309175956796`], 
     PolygonBox[{{0.007889970256088475, 1.0541926975439682`}, {
      0.04204755692330072, 1.0909906290769085`}, {0.11574496325293374`, 
      1.0762030096273278`}}]}, 
-   {RGBColor[0.07456763917013975, 0.3523904708981771, 0.1573398086343467], 
+   {RGBColor[0.6629867506545306, 0.3733088738307131, 0.9216113158590344], 
     PolygonBox[{{-0.1755628618441475, 
      1.053847203500626}, {-0.21466707726123596`, 
      1.057924479949401}, {-0.1807180960918207, 1.10825384388312}}]}, 
-   {RGBColor[0.14071406526664343`, 0.7121374663440152, 0.20107484082461258`], 
+   {RGBColor[0.7772665218667243, 0.8343948690689411, 0.08353377960604846], 
     PolygonBox[{{-0.4674951960629281, 
      1.0163882058552924`}, {-0.4272054383922027, 
      0.9663509839834822}, {-0.4341766959524494, 0.9575167245322272}}]}, 
-   {RGBColor[0.1394376833422477, 0.9751150508456101, 0.15261542383562232`], 
+   {RGBColor[0.7584687102186922, 0.5066579994925153, 0.1942493204110438], 
     PolygonBox[{{0.514289023108308, 1.0815347421918151`}, {0.5636517609432626,
       1.0875674451933348`}, {0.5536118359769442, 1.0810983820816722`}}]}, 
-   {RGBColor[0.5899164424362369, 0.9964220772544279, 0.5304276142502677], 
+   {RGBColor[0.6759607489220649, 0.7896078298647178, 0.9838313373567951], 
     PolygonBox[{{0.5541033554595297, 1.0647203836008736`}, {
      0.5255228182447449, 1.0678139921879604`}, {0.5536118359769442, 
      1.0810983820816722`}}]}, 
-   {RGBColor[0.37320849991389426`, 0.9733569408594795, 0.38101726246221257`], 
+   {RGBColor[0.08161139634313774, 0.9991811053479867, 0.4765008513932305], 
     PolygonBox[{{0.5118597175512024, 1.0760332885448294`}, {
      0.5536118359769442, 1.0810983820816722`}, {0.5255228182447449, 
      1.0678139921879604`}}]}, 
-   {RGBColor[0.8700987004076315, 0.5171095821811302, 0.4865392854090669], 
+   {RGBColor[0.2548155854674463, 0.11998653701272377`, 0.21009843110919646`], 
     PolygonBox[{{0.5918017181842851, 1.0792642024552446`}, {
      0.5536118359769442, 1.0810983820816722`}, {0.5636517609432626, 
      1.0875674451933348`}}]}, 
-   {RGBColor[0.13621991154510504`, 0.31444300261738967`, 0.4643096852920048], 
+   {RGBColor[0.027263430634785424`, 0.6062410608768001, 0.4104297607036407], 
     PolygonBox[{{-0.09389624210176266, 
      1.2297137104048883`}, {-0.0777810109743931, 
      1.2471272678333887`}, {-0.07937947927061596, 1.2096282898384185`}}]}, 
-   {RGBColor[0.9425673455770722, 0.7640032879238805, 0.8948577335185439], 
+   {RGBColor[0.806557003035566, 0.7328004373725017, 0.10519902226982358`], 
     PolygonBox[{{0.5255228182447449, 1.0678139921879604`}, {
      0.49364404411870333`, 1.0647234065664406`}, {0.5118597175512024, 
      1.0760332885448294`}}]}, 
-   {RGBColor[0.9091484713680686, 0.04440682361955495, 0.993677215428991], 
+   {RGBColor[0.09978328583306273, 0.5400086672301432, 0.07688939343829837], 
     PolygonBox[{{0.45296109020258357`, 1.055448814077503}, {
      0.4818230555142661, 1.070908356736323}, {0.5033114644736836, 
      1.080109989354136}}]}, 
-   {RGBColor[0.09881158372446075, 0.912711398745987, 0.8995641539695034], 
+   {RGBColor[0.6144084924597184, 0.9190237471591176, 0.4084091313725078], 
     PolygonBox[{{0.5536118359769442, 1.0810983820816722`}, {
      0.5118597175512024, 1.0760332885448294`}, {0.514289023108308, 
      1.0815347421918151`}}]}, 
-   {RGBColor[0.870735123867477, 0.6500405755235485, 0.22250072130284382`], 
+   {RGBColor[0.6121442258472665, 0.3074804965873319, 0.7990466078979439], 
     PolygonBox[{{0.04204755692330072, 1.0909906290769085`}, {
      0.007889970256088475, 1.0541926975439682`}, {-0.06151128305270919, 
      1.085786026308171}}]}, 
-   {RGBColor[0.9084191100704115, 0.5298448817369323, 0.8365676341471073], 
+   {RGBColor[0.8154284525712405, 0.21001077843511085`, 0.3930654813610399], 
     PolygonBox[{{0.5636517609432626, 1.0875674451933348`}, {
      0.6087149291901947, 1.0852415672284195`}, {0.5918017181842851, 
      1.0792642024552446`}}]}, 
-   {RGBColor[0.04439058611858826, 0.7039100944506689, 0.7985439365534361], 
+   {RGBColor[0.2838539107284024, 0.6302210494657314, 0.38417312950192195`], 
     PolygonBox[{{0.3546184424109582, 0.8573830486925804}, {
      0.33913544795546485`, 0.8690915471434579}, {0.4050935307882798, 
      0.9572065021935655}}]}, 
-   {RGBColor[0.16763695621815655`, 0.46559827902281326`, 0.7301018809394595], 
+   {RGBColor[0.5239958093377206, 0.48987711935094214`, 0.04226352052390148], 
     PolygonBox[{{0.3856620785096914, 0.9944301794933417}, {
      0.38611948353746794`, 0.9720605410049004}, {0.3316739773779153, 
      0.8977434693584226}}]}, 
-   {RGBColor[0.36405519474366077`, 0.22179259973392873`, 0.8500121403515379], 
+   {RGBColor[0.061539055771876905`, 0.5247381943594962, 0.6135032835868599], 
     PolygonBox[{{0.5536118359769442, 1.0810983820816722`}, {
      0.5918017181842851, 1.0792642024552446`}, {0.5541033554595297, 
      1.0647203836008736`}}]}, 
-   {RGBColor[0.5420381491068542, 0.9879547735337151, 0.18664990801794734`], 
+   {RGBColor[0.39879728136492165`, 0.7335714544959024, 0.6302000214195005], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.2228855864094891, 
      1.2062981955125538`}, {-0.24597192661567463`, 1.2156769381858996`}}]}, 
-   {RGBColor[0.08080236229847126, 0.4474226968852657, 0.6409955897939832], 
+   {RGBColor[0.28716888741517765`, 0.27260323760811955`, 0.8289774372199354], 
     PolygonBox[{{-0.148479194023342, 
      1.144321830748401}, {-0.16827082484891667`, 
      1.1424738080589245`}, {-0.18311887938015142`, 1.1686825022427851`}}]}, 
-   {RGBColor[0.04462375828470422, 0.7456267221548847, 0.30873973858195436`], 
+   {RGBColor[0.9029430724648368, 0.2500488491361996, 0.29622491222775205`], 
     PolygonBox[{{-0.11858445472597715`, 
      1.1805197335873476`}, {-0.09429397791150501, 
      1.1935160331932222`}, {-0.11638799549398512`, 1.1569881423574158`}}]}, 
-   {RGBColor[0.09748287444343484, 0.9352642308565544, 0.5867411631338726], 
+   {RGBColor[0.9012921940250438, 0.6271017664281062, 0.3303495053171308], 
     PolygonBox[{{0.06635964857164711, 0.6762878787377733}, {
      0.16463145372384555`, 0.7287823428880205}, {0.14684245009180416`, 
      0.6970269023277393}}]}, 
-   {RGBColor[0.7312789217594822, 0.6546615248411611, 0.30095301586855894`], 
+   {RGBColor[0.9812185194652188, 0.7141310897446917, 0.21300980960497062`], 
     PolygonBox[{{0.6174571565154766, 1.0682471889457532`}, {
      0.6026462610758907, 1.0823962402402403`}, {0.5725208178864806, 
      1.0709038218482043`}}]}, 
-   {RGBColor[0.6274589517396088, 0.8469105450816596, 0.021678320733945045`], 
+   {RGBColor[0.727696723062423, 0.35705924764809804`, 0.38805624053614785`], 
     PolygonBox[{{-0.1305866988321232, 
      1.1493958784931093`}, {-0.148479194023342, 
      1.144321830748401}, {-0.1492077776769784, 1.171841303033052}}]}, 
-   {RGBColor[0.5790402256482656, 0.12451719870032085`, 0.6688581296541674], 
+   {RGBColor[0.6222209573956121, 0.44563996702619524`, 0.5244328341687317], 
     PolygonBox[{{-0.21365887487778087`, 
      1.1718445255879122`}, {-0.2350238188837482, 
      1.1805255555555554`}, {-0.24597192661567463`, 1.2156769381858996`}}]}, 
-   {RGBColor[0.9861975545652204, 0.4619344480167942, 0.26760703330661295`], 
+   {RGBColor[0.43045020818291424`, 0.8875296882667736, 0.9463939555364413], 
     PolygonBox[{{-0.07937947927061596, 
      1.2096282898384185`}, {-0.09429397791150501, 
      1.1935160331932222`}, {-0.09389624210176266, 1.2297137104048883`}}]}, 
-   {RGBColor[0.08897438943936353, 0.19222461727127782`, 0.3474124483079992], 
+   {RGBColor[0.6760562778953125, 0.7672993879959398, 0.4824115262316546], 
     PolygonBox[{{0.4729943201987931, 1.0649674755946041`}, {
      0.5033114644736836, 1.080109989354136}, {0.514289023108308, 
      1.0815347421918151`}}]}, 
-   {RGBColor[0.22717816007649283`, 0.5959809183407025, 0.015955865093601362`],
-     PolygonBox[{{0.4050935307882798, 0.9572065021935655}, {
+   {RGBColor[0.9309079328689243, 0.49179085664239497`, 0.6607587171351808], 
+    PolygonBox[{{0.4050935307882798, 0.9572065021935655}, {
      0.43008849213295214`, 0.9545499903566267}, {0.3546184424109582, 
      0.8573830486925804}}]}, 
-   {RGBColor[0.8039094081512892, 0.21813415565184813`, 0.26341833802217485`], 
+   {RGBColor[0.24480570639202415`, 0.5528214315298041, 0.47135962345521487`], 
     PolygonBox[{{0.33913544795546485`, 0.8690915471434579}, {
      0.3316739773779153, 0.8977434693584226}, {0.38611948353746794`, 
      0.9720605410049004}}]}, 
-   {RGBColor[0.5535524686537265, 0.5386239107381618, 0.4508425655863735], 
+   {RGBColor[0.3230923748632122, 0.5624552058684726, 0.41338723879224215`], 
     PolygonBox[{{-0.4211551190558917, 
      0.7204286114930717}, {-0.3315801751099264, 
      0.6839349838944819}, {-0.3169720423052681, 0.6411696665196173}}]}, 
-   {RGBColor[0.2540681623330312, 0.9532366151985965, 0.9758106858456714], 
+   {RGBColor[0.36721943409980207`, 0.7631541161110087, 0.618646268373811], 
     PolygonBox[{{-0.26518653205387555`, 
      1.004514814513453}, {-0.31409582600342145`, 
      1.0244406055757334`}, {-0.24209693351011033`, 1.0690996999832196`}}]}, 
-   {RGBColor[0.2004691111746182, 0.4132203406303232, 0.3853277111047826], 
+   {RGBColor[0.23918165645342992`, 0.3127696404027871, 0.6423085307596936], 
     PolygonBox[{{-0.09276344282316971, 
      1.0690922333086854`}, {-0.13211175302367875`, 
      1.057920352183189}, {-0.14375994495981842`, 1.1082519959755635`}}]}, 
-   {RGBColor[
-    0.42447786933706166`, 0.0031508594531488576`, 0.25920556749951307`], 
+   {RGBColor[0.04194793970873745, 0.25114381659081975`, 0.5763190524323731], 
     PolygonBox[{{0.38611948353746794`, 0.9720605410049004}, {
      0.3856620785096914, 0.9944301794933417}, {0.45296109020258357`, 
      1.055448814077503}}]}, 
-   {RGBColor[0.08954418522374352, 0.6920711486363254, 0.26773566199488275`], 
-    PolygonBox[{{-0.24209693351011033`, 
+   {RGBColor[0.9473407994729592, 0.35281084030750365`, 0.046499969379658834`],
+     PolygonBox[{{-0.24209693351011033`, 
      1.0690996999832196`}, {-0.21466707726123596`, 
      1.057924479949401}, {-0.26518653205387555`, 1.004514814513453}}]}, 
-   {RGBColor[0.5411358369381045, 0.19565173355857213`, 0.6422310437003775], 
+   {RGBColor[0.9506839064240125, 0.021492631981334, 0.5118057138141925], 
     PolygonBox[{{0.488249911253106, 1.0649667128150515`}, {0.5118597175512024,
       1.0760332885448294`}, {0.49364404411870333`, 1.0647234065664406`}}]}, 
-   {RGBColor[0.6441047652883238, 0.5012342389960365, 0.7445112382885293], 
+   {RGBColor[0.9648731842000284, 0.2020329042895932, 0.09013636910811917], 
     PolygonBox[{{0.6235569125510252, 1.0735069035603837`}, {
      0.6087149291901947, 1.0852415672284195`}, {0.6026462610758907, 
      1.0823962402402403`}}]}, 
-   {RGBColor[0.868374748899255, 0.169121139000167, 0.37285086981811033`], 
+   {RGBColor[0.41518354502233423`, 0.6791490482463325, 0.6080370036869254], 
     PolygonBox[{{-0.13211175302367875`, 
      1.057920352183189}, {-0.1755628618441475, 
      1.053847203500626}, {-0.16321196621758213`, 1.1064286467572872`}}]}, 
-   {RGBColor[0.26974852119320114`, 0.6966430238414838, 0.8541359716838706], 
+   {RGBColor[0.5429384762423513, 0.7737892595351303, 0.2958000170308639], 
     PolygonBox[{{0.5629031023876767, 1.0554433169768938`}, {
      0.5541033554595297, 1.0647203836008736`}, {0.5918017181842851, 
      1.0792642024552446`}}]}, 
-   {RGBColor[0.9277842750460066, 0.2690658148934062, 0.6478682282723922], 
+   {RGBColor[0.5485121462872107, 0.5174595761204712, 0.15871793832419123`], 
     PolygonBox[{{0.4862414802036295, 1.0681776759749084`}, {0.514289023108308,
       1.0815347421918151`}, {0.5118597175512024, 1.0760332885448294`}}]}, 
-   {RGBColor[0.6870566373093989, 0.831304339546501, 0.10351024116011676`], 
+   {RGBColor[0.04040100581448636, 0.8596478922867195, 0.5557404015304714], 
     PolygonBox[{{-0.29424820730576223`, 
      0.6167840617368467}, {-0.18162813577029646`, 
      0.6050417122115856}, {-0.1685753252437488, 0.597908244247367}}]}, 
-   {RGBColor[0.9846769778869096, 0.14781055658916897`, 0.18015224801987806`], 
+   {RGBColor[0.1958969946849085, 0.028722251136877652`, 0.7893594329903326], 
     PolygonBox[{{-0.21365887487778087`, 
      1.1718445255879122`}, {-0.18311887938015142`, 
      1.1686825022427851`}, {-0.16827082484891667`, 1.1424738080589245`}}]}, 
-   {RGBColor[0.5285934794040281, 0.9479664542294297, 0.48485564441497675`], 
+   {RGBColor[0.17259195476013756`, 0.1498417992714165, 0.008280325366091024], 
     PolygonBox[{{0.5033114644736836, 1.080109989354136}, {0.4729943201987931, 
      1.0649674755946041`}, {0.45296109020258357`, 1.055448814077503}}]}, 
-   {RGBColor[0.10805065194289765`, 0.5039036928209961, 0.8827747117185658], 
+   {RGBColor[0.2574913401709382, 0.6741745785611359, 0.33700155002279075`], 
     PolygonBox[{{0.6044972283403646, 1.0696209266319099`}, {
      0.5918017181842851, 1.0792642024552446`}, {0.6087149291901947, 
      1.0852415672284195`}}]}, 
-   {RGBColor[0.46778537873894366`, 0.07712116604657626, 0.9317343374332119], 
+   {RGBColor[0.3401382977992007, 0.46288560138162427`, 0.4781305474187514], 
     PolygonBox[{{0.5725208178864806, 1.0709038218482043`}, {
      0.5848915048246952, 1.055442217556772}, {0.6174571565154766, 
      1.0682471889457532`}}]}, 
-   {RGBColor[0.9268146295263775, 0.5520125734961945, 0.043106309597439774`], 
+   {RGBColor[0.326832825900637, 0.501987211758643, 0.5197811876330372], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.09389624210176266, 
      1.2297137104048883`}, {-0.12014053320031041`, 1.2156706466162288`}}]}, 
-   {RGBColor[0.950655951845953, 0.9276289904346331, 0.47911382934291824`], 
+   {RGBColor[0.5242572151510476, 0.8747577975741203, 0.13451147059621782`], 
     PolygonBox[{{0.0685211043401446, 1.0253289452089809`}, {
      0.11574496325293374`, 1.0762030096273278`}, {0.14512345608432284`, 
      1.055464205959209}}]}, 
-   {RGBColor[0.5360044530427381, 0.6203606048828121, 0.26760109265792087`], 
+   {RGBColor[0.8307997470353796, 0.10531362532745048`, 0.6945110072021821], 
     PolygonBox[{{0.49364404411870333`, 1.0647234065664406`}, {
      0.4749494926396021, 1.055447714657381}, {0.488249911253106, 
      1.0649667128150515`}}]}, 
-   {RGBColor[0.25279539558634756`, 0.32788735395547564`, 0.04147900455102427],
+   {RGBColor[0.060464727094586834`, 0.38520777737984235`, 0.5620178034428824],
      PolygonBox[{{0.44937291172340327`, 0.9684794602359853}, {
      0.43008849213295214`, 0.9545499903566267}, {0.5560295395130126, 
      1.039982674897952}}]}, 
-   {RGBColor[0.4783524563617647, 0.8873531258017431, 0.3092883856978521], 
+   {RGBColor[0.2712581050486653, 0.3015012855273478, 0.43420169817111365`], 
     PolygonBox[{{-0.1492077776769784, 
      1.171841303033052}, {-0.11858445472597715`, 
      1.1805197335873476`}, {-0.1305866988321232, 1.1493958784931093`}}]}, 
-   {RGBColor[0.5343830024142664, 0.8806175940063266, 0.012665129014449494`], 
+   {RGBColor[0.27676630933397006`, 0.2776960669225501, 0.62335260997184], 
     PolygonBox[{{0.514289023108308, 1.0815347421918151`}, {0.4862414802036295,
       1.0681776759749084`}, {0.4729943201987931, 1.0649674755946041`}}]}, 
-   {RGBColor[0.4251065204663136, 0.9654372899867767, 0.8230141387050895], 
+   {RGBColor[0.5251385528352743, 0.47767796249013506`, 0.9106963802744212], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.1898782562908769, 
      1.2028824929331559`}, {-0.2228855864094891, 1.2062981955125538`}}]}, 
-   {RGBColor[0.49370346555983047`, 0.14180728035119294`, 0.9724464571217382], 
+   {RGBColor[0.8955453374833358, 0.18479297328657363`, 0.554940912985491], 
     PolygonBox[{{-0.24597192661567463`, 
      1.2156769381858996`}, {-0.2228855864094891, 
      1.2062981955125538`}, {-0.21365887487778087`, 1.1718445255879122`}}]}, 
-   {RGBColor[0.5002739903218989, 0.5938513168329906, 0.7077851640582138], 
+   {RGBColor[0.08620891809985043, 0.44170144871494244`, 0.9860034785618481], 
     PolygonBox[{{-0.09276344282316971, 
      1.0690922333086854`}, {-0.06151128305270919, 1.085786026308171}, {
      0.007889970256088475, 1.0541926975439682`}}]}, 
-   {RGBColor[0.3127119883217624, 0.39099543789006197`, 0.582621335168682], 
+   {RGBColor[0.8109975517554346, 0.18799986825957227`, 0.7254164355301669], 
     PolygonBox[{{0.5560295395130126, 1.039982674897952}, {0.5848915048246952, 
      1.055442217556772}, {0.44937291172340327`, 0.9684794602359853}}]}, 
-   {RGBColor[
-    0.14205069134320492`, 0.17697967309179696`, 0.40721107709920656`], 
+   {RGBColor[0.6027502357490293, 0.15612109955574915`, 0.9902342545826734], 
     PolygonBox[{{0.6026462610758907, 1.0823962402402403`}, {
      0.6174571565154766, 1.0682471889457532`}, {0.6235569125510252, 
      1.0735069035603837`}}]}, 
-   {RGBColor[0.5569576025273304, 0.54946988791268, 0.5998060019056743], 
+   {RGBColor[0.3532160687375172, 0.11558511596941634`, 0.22390553695054427`], 
     PolygonBox[{{0.12901662880263762`, 0.9907351454268959}, {
      0.1891002609583601, 1.0554620071189653`}, {0.2111647008261305, 
      0.97126709917047}}]}, 
-   {RGBColor[0.7774965659222759, 0.43863723390038656`, 0.07776020835109976], 
+   {RGBColor[0.5155365866054669, 0.5278175718183993, 0.8531885849060239], 
     PolygonBox[{{0.5118597175512024, 1.0760332885448294`}, {0.488249911253106,
       1.0649667128150515`}, {0.4862414802036295, 1.0681776759749084`}}]}, 
-   {RGBColor[0.9080873195199728, 0.01291724774111258, 0.29831246893335517`], 
+   {RGBColor[0.7895559175501448, 0.9714800496867029, 0.21694624004735252`], 
     PolygonBox[{{0.5918017181842851, 1.0792642024552446`}, {
      0.6044972283403646, 1.0696209266319099`}, {0.5629031023876767, 
      1.0554433169768938`}}]}, 
-   {RGBColor[0.9814913780581984, 0.5706825453382272, 0.266285335273277], 
+   {RGBColor[0.5243036145620195, 0.10849202886582776`, 0.8833102301128839], 
     PolygonBox[{{-0.18311887938015142`, 
      1.1686825022427851`}, {-0.1492077776769784, 
      1.171841303033052}, {-0.148479194023342, 1.144321830748401}}]}, 
-   {RGBColor[0.6047691466008318, 0.3243107762235484, 0.5848407867861316], 
+   {RGBColor[0.49545388713889804`, 0.38251961011279834`, 0.8175535173978594], 
     PolygonBox[{{0.38611948353746794`, 0.9720605410049004}, {
      0.4050935307882798, 0.9572065021935655}, {0.33913544795546485`, 
      0.8690915471434579}}]}, 
-   {RGBColor[0.08459228812682329, 0.7862305749407816, 0.8682865978053127], 
+   {RGBColor[0.6111167121012668, 0.08253968496807595, 0.3950252923277915], 
     PolygonBox[{{0.6087149291901947, 1.0852415672284195`}, {
      0.6235569125510252, 1.0735069035603837`}, {0.6044972283403646, 
      1.0696209266319099`}}]}, 
-   {RGBColor[0.32074279630680347`, 0.07113337546509313, 0.9572088094130509], 
+   {RGBColor[0.20093031711123932`, 0.17637230422355188`, 0.7496860652628257], 
     PolygonBox[{{-0.18162813577029646`, 
      0.6050417122115856}, {-0.29424820730576223`, 
      0.6167840617368467}, {-0.3169720423052681, 0.6411696665196173}}]}, 
-   {RGBColor[0.6486433047629192, 0.9244151360585688, 0.9375629428512047], 
+   {RGBColor[
+    0.16964132817254152`, 0.45563893659867327`, 0.20976192262193272`], 
     PolygonBox[{{0.22593451804470063`, 0.9009339197579525}, {
      0.16289420932903884`, 0.8330215689917939}, {0.14910727124930218`, 
      0.9044127091934644}}]}, 
-   {RGBColor[0.20168125089632327`, 0.10699224649717354`, 0.7493929005473678], 
+   {RGBColor[0.3529196439324638, 0.7459628635486126, 0.10941554777993234`], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.12014053320031041`, 
      1.2156706466162288`}, {-0.15322936758674213`, 1.2062947127016128`}}]}, 
-   {RGBColor[0.4344084728069202, 0.3295301165057378, 0.033231987395721196`], 
+   {RGBColor[0.07503649066206597, 0.4028050674106374, 0.2560144027486988], 
     PolygonBox[{{0.14684245009180416`, 0.6970269023277393}, {
      0.05683766341012611, 0.6489482391294207}, {0.06635964857164711, 
      0.6762878787377733}}]}, 
-   {RGBColor[0.11451484651427002`, 0.638868460930393, 0.9289548595662207], 
+   {RGBColor[0.3282440630016725, 0.24583018082635144`, 0.7691317995334455], 
     PolygonBox[{{-0.1684299173640718, 
      1.2632664877098794`}, {-0.15322936758674213`, 
      1.2062947127016128`}, {-0.1898782562908769, 1.2028824929331559`}}]}, 
-   {RGBColor[0.40139961810481384`, 0.23418272297658493`, 0.08939348529633584],
-     PolygonBox[{{-0.12014053320031041`, 
+   {RGBColor[0.6430790170778151, 0.499123773671998, 0.6182124032850118], 
+    PolygonBox[{{-0.12014053320031041`, 
      1.2156706466162288`}, {-0.09389624210176266, 
      1.2297137104048883`}, {-0.09429397791150501, 1.1935160331932222`}}]}, 
-   {RGBColor[0.9791885490111725, 0.011051178554816632`, 0.05160842646285979], 
+   {RGBColor[0.39856834290731613`, 0.5792009877892876, 0.2584841816089618], 
     PolygonBox[{{0.11103410283946495`, 0.9950511637142104}, {
      0.16711185852134147`, 1.0554631065390871`}, {0.16543473345648196`, 
      1.0724322607873469`}}]}, 
-   {RGBColor[0.9932469348662583, 0.8852213486741025, 0.3356128109812526], 
+   {RGBColor[0.8660872362858021, 0.06600291070549225, 0.10028494748758465`], 
     PolygonBox[{{-0.34108025456028795`, 
      0.7413391787352567}, {-0.4313437489833355, 
      0.7781131431638849}, {-0.4358719965725605, 0.8503600040954449}}]}, 
-   {RGBColor[0.7454730850210485, 0.11374746515829925`, 0.3318224893326278], 
+   {RGBColor[0.32531814643091606`, 0.6526642603251167, 0.2781415332314474], 
     PolygonBox[{{-0.18311887938015142`, 
      1.1686825022427851`}, {-0.21365887487778087`, 
      1.1718445255879122`}, {-0.2228855864094891, 1.2062981955125538`}}]}, 
-   {RGBColor[
-    0.38129277023089214`, 0.0061806910951753835`, 0.4533030779271241], 
+   {RGBColor[0.34461014175424176`, 0.12226720317798656`, 0.2825336531363878], 
     PolygonBox[{{-0.09429397791150501, 
      1.1935160331932222`}, {-0.11858445472597715`, 
      1.1805197335873476`}, {-0.12014053320031041`, 1.2156706466162288`}}]}, 
-   {RGBColor[0.1191542183006149, 0.36521694793577497`, 0.7911433082092392], 
+   {RGBColor[0.8744355343971151, 0.6018054467077065, 0.9517570032815128], 
     PolygonBox[{{-0.05843637246210363, 
      0.6082326181372832}, {-0.1685753252437488, 
      0.597908244247367}, {-0.18162813577029646`, 0.6050417122115856}}]}, 
-   {RGBColor[0.8524935946690508, 0.5642034525904731, 0.44956755819745897`], 
+   {RGBColor[0.3905050833536676, 0.6079413980295665, 0.15087007981627187`], 
     PolygonBox[{{0.041306032254755924`, 
      0.6365517828363915}, {-0.05843637246210363, 
      0.6082326181372832}, {-0.05648923164723632, 0.6167721737880639}}]}, 
-   {RGBColor[0.3717054495645393, 0.2603139628298319, 0.3090639873147436], 
+   {RGBColor[0.02477550349472102, 0.3549185269733166, 0.16891847829871054`], 
     PolygonBox[{{0.5442085509085753, 1.0461676250678342`}, {
      0.5629031023876767, 1.0554433169768938`}, {0.6044972283403646, 
      1.0696209266319099`}}]}, 
-   {RGBColor[0.7308625890154219, 0.17936816503107744`, 0.8195725050176454], 
+   {RGBColor[0.15122727531687907`, 0.9954339740274272, 0.9876940194130537], 
     PolygonBox[{{0.5008281876878089, 1.0553491700509665`}, {0.488249911253106,
       1.0649667128150515`}, {0.4749494926396021, 1.055447714657381}}]}, 
-   {RGBColor[0.19741308586904793`, 0.24485183671997834`, 0.736377511856589], 
+   {RGBColor[0.8066980412514679, 0.36434010261781924`, 0.9182518547444547], 
     PolygonBox[{{0.10925095303163398`, 1.011905632620269}, {
      0.16543473345648196`, 1.0724322607873469`}, {0.17141519673380198`, 
      1.0782105462741334`}}]}, 
-   {RGBColor[0.002147828659264217, 0.5695307837472898, 0.4318165389118054], 
+   {RGBColor[0.3059678057055597, 0.6448657246649321, 0.9588484050432851], 
     PolygonBox[{{0.4653317771407981, 1.0399872097860705`}, {
      0.45296109020258357`, 1.055448814077503}, {0.4729943201987931, 
      1.0649674755946041`}}]}, 
-   {RGBColor[0.7753584804473985, 0.25586206440689363`, 0.2574349027516327], 
+   {RGBColor[0.46387530678470723`, 0.6809828012445001, 0.6250900737419252], 
     PolygonBox[{{0.45296109020258357`, 1.055448814077503}, {
      0.4653317771407981, 1.0399872097860705`}, {0.38611948353746794`, 
      0.9720605410049004}}]}, 
-   {RGBColor[0.9658585311880097, 0.1163287512298945, 0.13316183506601487`], 
+   {RGBColor[0.44643850087014925`, 0.7306262382510038, 0.09684528069998555], 
     PolygonBox[{{0.12181253107388049`, 1.0088905529445304`}, {
      0.18079524707030462`, 1.0724314927616663`}, {0.1891002609583601, 
      1.0554620071189653`}}]}, 
-   {RGBColor[0.5400799114702843, 0.002052238600459555, 0.8871604657897831], 
+   {RGBColor[0.2659386629213356, 0.28720330999821675`, 0.3612060416541063], 
     PolygonBox[{{0.11400161968152642`, 1.0163591310145053`}, {
      0.17141519673380198`, 1.0782105462741334`}, {0.18079524707030462`, 
      1.0724314927616663`}}]}, 
-   {RGBColor[0.7147526985816617, 0.9509364133371401, 0.6303040239107032], 
+   {RGBColor[0.4708197785484476, 0.1893633980398166, 0.777961109471675], 
     PolygonBox[{{0.11574496325293374`, 1.0762030096273278`}, {
      0.0685211043401446, 1.0253289452089809`}, {0.007889970256088475, 
      1.0541926975439682`}}]}, 
-   {RGBColor[0.5794504547799824, 0.17168302190945317`, 0.45940906455228325`], 
+   {RGBColor[0.8267566121016232, 0.9466578917079633, 0.3619692105545087], 
     PolygonBox[{{-0.05648923164723632, 0.6167721737880639}, {
      0.05683766341012611, 0.6489482391294207}, {0.041306032254755924`, 
      0.6365517828363915}}]}, 
-   {RGBColor[0.06360683469835471, 0.9052424190553963, 0.04258124968458721], 
+   {RGBColor[0.359562674183302, 0.6863808883401423, 0.6387549406549873], 
     PolygonBox[{{0.5009264703262245, 1.0564799557254083`}, {
      0.4862414802036295, 1.0681776759749084`}, {0.488249911253106, 
      1.0649667128150515`}}]}, 
-   {RGBColor[0.23306417157924209`, 0.6596106504498884, 0.2982506490483332], 
+   {RGBColor[0.011996525130536062`, 0.9125619844413932, 0.5192417260656128], 
     PolygonBox[{{0.4877039236386419, 1.0508458502884328`}, {
      0.4729943201987931, 1.0649674755946041`}, {0.4862414802036295, 
      1.0681776759749084`}}]}, 
-   {RGBColor[0.7439173479066958, 0.24176740636703165`, 0.5293993530674972], 
+   {RGBColor[0.18568078444095093`, 0.7477301727498957, 0.7071179864057542], 
     PolygonBox[{{0.587005613020428, 1.0530700251362475`}, {0.6174571565154766,
       1.0682471889457532`}, {0.5848915048246952, 1.055442217556772}}]}, 
-   {RGBColor[0.7620251408393142, 0.9549279872902363, 0.13706269315392716`], 
+   {RGBColor[0.0842696113010395, 0.46613821072257133`, 0.02231453210342127], 
     PolygonBox[{{0.4749494926396021, 1.055447714657381}, {
      0.48374923956774896`, 1.0461706480334012`}, {0.5008281876878089, 
      1.0553491700509665`}}]}, 
-   {RGBColor[0.26303782032359946`, 0.09289120922512306, 0.30502156959577653`],
-     PolygonBox[{{0.5807370246919957, 1.058517902157202}, {0.6044972283403646,
-      1.0696209266319099`}, {0.6235569125510252, 1.0735069035603837`}}]}, 
-   {RGBColor[0.5429104341621962, 0.5314135148161436, 0.5558109874693662], 
+   {RGBColor[0.4071238771637282, 0.07075550813940934, 0.8214391334824409], 
+    PolygonBox[{{0.5807370246919957, 1.058517902157202}, {0.6044972283403646, 
+     1.0696209266319099`}, {0.6235569125510252, 1.0735069035603837`}}]}, 
+   {RGBColor[0.21676210950518393`, 0.8481459992296254, 0.28241257589728486`], 
     PolygonBox[{{-0.2228855864094891, 
      1.2062981955125538`}, {-0.1898782562908769, 
      1.2028824929331559`}, {-0.18311887938015142`, 1.1686825022427851`}}]}, 
-   {RGBColor[0.02261282838554335, 0.45266447000112664`, 0.25128413306720954`],
+   {RGBColor[0.2865915287933447, 0.46483283121176777`, 0.055800346468379614`],
      PolygonBox[{{0.4050935307882798, 0.9572065021935655}, {
      0.38611948353746794`, 0.9720605410049004}, {0.4653317771407981, 
      1.0399872097860705`}}]}, 
-   {RGBColor[0.9973012814134665, 0.15757257413236836`, 0.052346059092747144`],
-     PolygonBox[{{0.5953065206878334, 1.060100801286492}, {0.6235569125510252,
-      1.0735069035603837`}, {0.6174571565154766, 1.0682471889457532`}}]}, 
-   {RGBColor[0.4806040579632336, 0.6314035525745616, 0.2202317494342081], 
+   {RGBColor[0.8908513658411978, 0.05414863788467028, 0.8185666095070767], 
+    PolygonBox[{{0.5953065206878334, 1.060100801286492}, {0.6235569125510252, 
+     1.0735069035603837`}, {0.6174571565154766, 1.0682471889457532`}}]}, 
+   {RGBColor[0.9999219320259654, 0.6219844797987519, 0.31284537765579756`], 
     PolygonBox[{{-0.1492077776769784, 
      1.171841303033052}, {-0.18311887938015142`, 
      1.1686825022427851`}, {-0.1898782562908769, 1.2028824929331559`}}]}, 
-   {RGBColor[0.2705568847386408, 0.5075172807300614, 0.4204416844692971], 
-    PolygonBox[{{-0.11858445472597715`, 
+   {RGBColor[0.13436599329409593`, 0.3719178921054649, 0.017554039354736872`],
+     PolygonBox[{{-0.11858445472597715`, 
      1.1805197335873476`}, {-0.1492077776769784, 
      1.171841303033052}, {-0.15322936758674213`, 1.2062947127016128`}}]}, 
-   {RGBColor[0.0717176653602074, 0.4971044228033894, 0.534882408192006], 
+   {RGBColor[0.40587263388020167`, 0.527176663713254, 0.4561036190788532], 
     PolygonBox[{{0.43008849213295214`, 0.9545499903566267}, {
      0.4050935307882798, 0.9572065021935655}, {0.50793209629513, 
      1.0348313885324323`}}]}, 
-   {RGBColor[0.6077878925828688, 0.5069728767167556, 0.6003823797721854], 
+   {RGBColor[0.7168786124118014, 0.6535975089316064, 0.14330422159185385`], 
     PolygonBox[{{0.6044972283403646, 1.0696209266319099`}, {
      0.5807370246919957, 1.058517902157202}, {0.5442085509085753, 
      1.0461676250678342`}}]}, 
-   {RGBColor[0.2725518337963091, 0.022871530025563303`, 0.7512605893315261], 
+   {RGBColor[0.696898449511179, 0.8459971680487746, 0.8519596593439682], 
     PolygonBox[{{-0.3090130980086185, 
      0.9566480333705513}, {-0.3766299121269057, 
      0.9841965299469534}, {-0.31409582600342145`, 1.0244406055757334`}}]}, 
-   {RGBColor[0.8058888068826431, 0.19366798514879946`, 0.9885964556721056], 
+   {RGBColor[0.2025002391155959, 0.57814672869715, 0.8896109449194134], 
     PolygonBox[{{-0.15322936758674213`, 
      1.2062947127016128`}, {-0.12014053320031041`, 
      1.2156706466162288`}, {-0.11858445472597715`, 1.1805197335873476`}}]}, 
-   {RGBColor[0.20338864780860133`, 0.049082109880916214`, 0.7507215900402422],
-     PolygonBox[{{-0.21466707726123596`, 
+   {RGBColor[0.19634876580856364`, 0.6756319545819507, 0.3409637294871226], 
+    PolygonBox[{{-0.21466707726123596`, 
      1.057924479949401}, {-0.1755628618441475, 
      1.053847203500626}, {-0.19546431867047906`, 0.9972453168112951}}]}, 
-   {RGBColor[0.773234702718355, 0.5085119957539745, 0.7867444949297584], 
+   {RGBColor[0.4181866060271777, 0.9649167270796435, 0.40378526948335924`], 
     PolygonBox[{{0.488249911253106, 1.0649667128150515`}, {0.5008281876878089,
       1.0553491700509665`}, {0.5009264703262245, 1.0564799557254083`}}]}, 
-   {RGBColor[0.7857233454288937, 0.3303725497832528, 0.45616787174926565`], 
+   {RGBColor[0.004084801544494976, 0.5934843842634585, 0.6885835840076062], 
     PolygonBox[{{0.4729943201987931, 1.0649674755946041`}, {
      0.4877039236386419, 1.0508458502884328`}, {0.4653317771407981, 
      1.0399872097860705`}}]}, 
-   {RGBColor[0.7956906957716714, 0.7145724808073435, 0.46671107004540047`], 
+   {RGBColor[0.5360597890796852, 0.8020812942810787, 0.17817652436758213`], 
     PolygonBox[{{-0.1898782562908769, 
      1.2028824929331559`}, {-0.15322936758674213`, 
      1.2062947127016128`}, {-0.1492077776769784, 1.171841303033052}}]}, 
-   {RGBColor[0.10862019289253633`, 0.3951171003760996, 0.7881818181211522], 
+   {RGBColor[0.37931760181835106`, 0.9380751965312604, 0.39566984111020664`], 
     PolygonBox[{{0.5848915048246952, 1.055442217556772}, {0.5560295395130126, 
      1.039982674897952}, {0.587005613020428, 1.0530700251362475`}}]}, 
-   {RGBColor[0.9702353195609974, 0.7604903428154113, 0.20564764450437067`], 
+   {RGBColor[0.1037952038266019, 0.1855387646494766, 0.07136691832621933], 
     PolygonBox[{{0.6235569125510252, 1.0735069035603837`}, {
      0.5953065206878334, 1.060100801286492}, {0.5807370246919957, 
      1.058517902157202}}]}, 
-   {RGBColor[0.5417923134433618, 0.6430988623896055, 0.28923861164681175`], 
+   {RGBColor[0.10811598484365814`, 0.23081923250013592`, 0.800677515702175], 
     PolygonBox[{{0.4862414802036295, 1.0681776759749084`}, {
      0.5009264703262245, 1.0564799557254083`}, {0.4877039236386419, 
      1.0508458502884328`}}]}, 
-   {RGBColor[0.539952127039319, 0.28575348115615506`, 0.9625126607264831], 
+   {RGBColor[0.17289712939151825`, 0.3028922789527351, 0.44444765196182034`], 
     PolygonBox[{{-0.13211175302367875`, 
      1.057920352183189}, {-0.09276344282316971, 
      1.0690922333086854`}, {-0.047832512837763054`, 1.024427292410075}}]}, 
-   {RGBColor[0.7333330695376132, 0.6777360419594247, 0.32442829643103743`], 
+   {RGBColor[0.8094980213782399, 0.7331087676719761, 0.18266744676350966`], 
     PolygonBox[{{0.50793209629513, 1.0348313885324323`}, {0.5560295395130126, 
      1.039982674897952}, {0.43008849213295214`, 0.9545499903566267}}]}, 
-   {RGBColor[0.4294991839388347, 0.8515129493595708, 0.09383339001198632], 
+   {RGBColor[0.0867909349820506, 0.2267088458365396, 0.6343448942689773], 
     PolygonBox[{{0.5123297767825338, 1.0430770394463142`}, {
      0.5442085509085753, 1.0461676250678342`}, {0.5807370246919957, 
      1.058517902157202}}]}, 
-   {RGBColor[0.23645715549433732`, 0.12690132621202044`, 0.5063588461584727], 
-    PolygonBox[{{0.6174571565154766, 1.0682471889457532`}, {0.587005613020428,
-      1.0530700251362475`}, {0.5953065206878334, 1.060100801286492}}]}, 
-   {RGBColor[0.5185221781514084, 0.7164783266186003, 0.6946169392066106], 
+   {RGBColor[0.36081055859697253`, 0.6630353822422959, 0.033624384870606594`],
+     PolygonBox[{{0.6174571565154766, 1.0682471889457532`}, {
+     0.587005613020428, 1.0530700251362475`}, {0.5953065206878334, 
+     1.060100801286492}}]}, 
+   {RGBColor[0.901182635460329, 0.2415275004677786, 0.5287082866065993], 
     PolygonBox[{{-0.4313437489833355, 
      0.7781131431638849}, {-0.34108025456028795`, 
      0.7413391787352567}, {-0.3315801751099264, 0.6839349838944819}}]}, 
-   {RGBColor[0.3517507196533365, 0.9573651403195071, 0.38513445596654616`], 
+   {RGBColor[0.9934682795655176, 0.8278652058070306, 0.8560484885533957], 
     PolygonBox[{{0.5388810443285845, 1.053478147740998}, {0.5008281876878089, 
      1.0553491700509665`}, {0.48374923956774896`, 1.0461706480334012`}}]}, 
-   {RGBColor[0.23481336942764353`, 0.4763141186819697, 0.8854621768450248], 
+   {RGBColor[0.683535720993351, 0.505264023917142, 0.41303366739453207`], 
     PolygonBox[{{0.48374923956774896`, 1.0461706480334012`}, {
      0.5123297767825338, 1.0430770394463142`}, {0.5388810443285845, 
      1.053478147740998}}]}, 
-   {RGBColor[0.8048187074952711, 0.5426118461061467, 0.7223249476533178], 
+   {RGBColor[0.9432199605486664, 0.9314928099758162, 0.004877684183651532], 
     PolygonBox[{{0.007889970256088475, 
      1.0541926975439682`}, {-0.047832512837763054`, 
      1.024427292410075}, {-0.09276344282316971, 1.0690922333086854`}}]}, 
-   {RGBColor[0.9588787044530644, 0.9402374514007459, 0.11980612511014632`], 
+   {RGBColor[0.45342604593623337`, 0.3072997669559052, 0.7756704260698803], 
     PolygonBox[{{0.14512345608432284`, 1.055464205959209}, {
      0.09305093188315408, 0.9993676218135507}, {0.0685211043401446, 
      1.0253289452089809`}}]}, 
-   {RGBColor[0.1649900605150858, 0.5971574385552942, 0.5253177833392957], 
+   {RGBColor[0.8371747165353254, 0.5336201198815176, 0.12047089582504777`], 
     PolygonBox[{{0.4653317771407981, 1.0399872097860705`}, {0.50793209629513, 
      1.0348313885324323`}, {0.4050935307882798, 0.9572065021935655}}]}, 
-   {RGBColor[0.9034197619534619, 0.3404152382314545, 0.11730582263004163`], 
+   {RGBColor[0.20667125536802744`, 0.7484224089002747, 0.6912426829010163], 
     PolygonBox[{{0.5807370246919957, 1.058517902157202}, {0.5388810443285845, 
      1.053478147740998}, {0.5123297767825338, 1.0430770394463142`}}]}, 
-   {RGBColor[0.41189427595563743`, 0.2563776555395294, 0.05421269024293274], 
+   {RGBColor[0.7258002894184026, 0.4321076269305335, 0.8126560892231183], 
     PolygonBox[{{0.0664998908516867, 0.7204042287425763}, {
      0.16855232368920825`, 0.7749182321202077}, {0.16463145372384555`, 
      0.7287823428880205}}]}, 
-   {RGBColor[0.5364618743140506, 0.20087017901584514`, 0.43551128937477857`], 
+   {RGBColor[0.3404796204057996, 0.036982377774087416`, 0.8700576645981677], 
     PolygonBox[{{-0.3232410670649206, 
      0.9236359302369559}, {-0.3977995179555829, 
      0.9540121688216767}, {-0.3766299121269057, 0.9841965299469534}}]}, 
-   {RGBColor[0.39668119290702064`, 0.21857650584141752`, 0.918993762177841], 
+   {RGBColor[0.4433758664438199, 0.5809470819582723, 0.04422526933932436], 
     PolygonBox[{{-0.19546431867047906`, 
      0.9972453168112951}, {-0.26518653205387555`, 
      1.004514814513453}, {-0.21466707726123596`, 1.057924479949401}}]}, 
-   {RGBColor[0.7204948589297342, 0.5986796140040502, 0.10263446841944823`], 
+   {RGBColor[0.6270022681202796, 0.6605696293744294, 0.9504726146465887], 
     PolygonBox[{{-0.31409582600342145`, 
      1.0244406055757334`}, {-0.26518653205387555`, 
      1.004514814513453}, {-0.3090130980086185, 0.9566480333705513}}]}, 
-   {RGBColor[0.1358029760785464, 0.1852134866750652, 0.08433610584943163], 
+   {RGBColor[0.6555325395030083, 0.2005867222867912, 0.3963079929071638], 
     PolygonBox[{{0.2111647008261305, 0.97126709917047}, {0.14910727124930218`,
       0.9044127091934644}, {0.12901662880263762`, 0.9907351454268959}}]}, 
-   {RGBColor[0.8438865638234003, 0.8327577098394852, 0.3227597090602816], 
+   {RGBColor[0.5048045836323278, 0.24847141653204297`, 0.0281548303000696], 
     PolygonBox[{{0.5388810443285845, 1.053478147740998}, {0.5807370246919957, 
      1.058517902157202}, {0.5953065206878334, 1.060100801286492}}]}, 
-   {RGBColor[0.7402992556075343, 0.5824964249286309, 0.6805397022338937], 
+   {RGBColor[0.710581473983648, 0.9804231486949715, 0.10874591235723496`], 
     PolygonBox[{{-0.1755628618441475, 
      1.053847203500626}, {-0.13211175302367875`, 
      1.057920352183189}, {-0.11799189959497977`, 1.00450745478183}}]}, 
-   {RGBColor[0.9924627647233466, 0.7311889758645871, 0.7504696997311044], 
+   {RGBColor[0.42527151972058674`, 0.2530675614681268, 0.8022999812203975], 
     PolygonBox[{{0.5458045137472881, 1.054103856700883}, {0.5009264703262245, 
      1.0564799557254083`}, {0.5008281876878089, 1.0553491700509665`}}]}, 
-   {RGBColor[0.5751767286353298, 0.4307203036665186, 0.3821191272436786], 
+   {RGBColor[0.2558300529838402, 0.052837769633266696`, 0.6573903636007488], 
     PolygonBox[{{0.5008281876878089, 1.0553491700509665`}, {
      0.5388810443285845, 1.053478147740998}, {0.5458045137472881, 
      1.054103856700883}}]}, 
-   {RGBColor[0.12007211558635045`, 0.7650551301814859, 0.4846227214836003], 
+   {RGBColor[0.35943331313405924`, 0.8809447673441857, 0.20875490724641588`], 
     PolygonBox[{{-0.34701535683924456`, 
      0.8141588758651223}, {-0.4358719965725605, 
      0.8503600040954449}, {-0.4373493244723005, 0.9384019642679665}}]}, 
-   {RGBColor[0.7205083669698795, 0.2370263765114029, 0.3794495789341379], 
+   {RGBColor[0.7185102174122933, 0.7691282081048607, 0.08213401163414358], 
     PolygonBox[{{-0.18162813577029646`, 
      0.6050417122115856}, {-0.05648923164723632, 
      0.6167721737880639}, {-0.05843637246210363, 0.6082326181372832}}]}, 
-   {RGBColor[0.58857995062884, 0.11598233722665152`, 0.38316110428786065`], 
+   {RGBColor[0.8684942359224639, 0.9767186860676935, 0.19736294442974978`], 
     PolygonBox[{{0.50793209629513, 1.0348313885324323`}, {0.4653317771407981, 
      1.0399872097860705`}, {0.4877039236386419, 1.0508458502884328`}}]}, 
-   {RGBColor[0.790787879856111, 0.6425418657678863, 0.1662924142026705], 
+   {RGBColor[0.6257547355386925, 0.23007347503610465`, 0.2793846934337554], 
     PolygonBox[{{0.5953065206878334, 1.060100801286492}, {0.5458045137472881, 
      1.054103856700883}, {0.5388810443285845, 1.053478147740998}}]}, 
-   {RGBColor[0.009929480717611128, 0.5296371762398577, 0.7881005511982719], 
+   {RGBColor[0.6975349361543226, 0.1765078027984721, 0.5407227631559643], 
     PolygonBox[{{0.5346981587170659, 1.047074250244652}, {0.4877039236386419, 
      1.0508458502884328`}, {0.5009264703262245, 1.0564799557254083`}}]}, 
-   {RGBColor[0.021443493121516832`, 0.26683501257869824`, 0.7805643723809843],
-     PolygonBox[{{0.5458045137472881, 1.054103856700883}, {0.5953065206878334,
-      1.060100801286492}, {0.587005613020428, 1.0530700251362475`}}]}, 
-   {RGBColor[0.32261145654307133`, 0.9834965082249678, 0.33427793734347966`], 
+   {RGBColor[0.46683604381840427`, 0.8725164833693846, 0.2325573064516684], 
+    PolygonBox[{{0.5458045137472881, 1.054103856700883}, {0.5953065206878334, 
+     1.060100801286492}, {0.587005613020428, 1.0530700251362475`}}]}, 
+   {RGBColor[0.5548385469361679, 0.12870376572187214`, 0.1494258571557332], 
     PolygonBox[{{0.5346981587170659, 1.047074250244652}, {0.587005613020428, 
      1.0530700251362475`}, {0.5560295395130126, 1.039982674897952}}]}, 
-   {RGBColor[0.23013377625573317`, 0.8903966519868276, 0.6846099617106478], 
+   {RGBColor[0.3258478420831332, 0.11011510020477755`, 0.2911834636069295], 
     PolygonBox[{{0.5009264703262245, 1.0564799557254083`}, {
      0.5458045137472881, 1.054103856700883}, {0.5346981587170659, 
      1.047074250244652}}]}, 
-   {RGBColor[
-    0.10838800044686847`, 0.46614769533004874`, 0.006528266564320484], 
+   {RGBColor[0.46654578803817026`, 0.3628084478999183, 0.8593144083072057], 
     PolygonBox[{{0.5560295395130126, 1.039982674897952}, {0.50793209629513, 
      1.0348313885324323`}, {0.5346981587170659, 1.047074250244652}}]}, 
-   {RGBColor[0.9214233973706782, 0.18430285885558906`, 0.5419063049875246], 
+   {RGBColor[0.02803972848598324, 0.9750566361846955, 0.3129500545415689], 
     PolygonBox[{{0.4877039236386419, 1.0508458502884328`}, {
      0.5346981587170659, 1.047074250244652}, {0.50793209629513, 
      1.0348313885324323`}}]}, 
-   {RGBColor[0.40995886159933614`, 0.8141686365185472, 0.6537253846440096], 
+   {RGBColor[0.23679971376083886`, 0.5523255724947658, 0.39478269269505706`], 
     PolygonBox[{{0.587005613020428, 1.0530700251362475`}, {0.5346981587170659,
       1.047074250244652}, {0.5458045137472881, 1.054103856700883}}]}, 
-   {RGBColor[0.4719716704203454, 0.8520376917579957, 0.8722126951905402], 
+   {RGBColor[0.5576593989794227, 0.02792044790612791, 0.962961882413431], 
     PolygonBox[{{0.16543473345648196`, 1.0724322607873469`}, {
      0.10925095303163398`, 1.011905632620269}, {0.11103410283946495`, 
      0.9950511637142104}}]}, 
-   {RGBColor[0.7524827218666184, 0.27190546588895836`, 0.3735588375201957], 
+   {RGBColor[0.4669682290476538, 0.4594385991234411, 0.6325497424339876], 
     PolygonBox[{{-0.3399160956817845, 
      0.9301933763370519}, {-0.42036325571156186`, 
      0.9629685002676561}, {-0.4175744212139416, 0.9462070665448217}}]}, 
-   {RGBColor[0.45773857617466085`, 0.8225563262503486, 0.4032836702552305], 
+   {RGBColor[0.49350226425542676`, 0.893901382395724, 0.7184171804253758], 
     PolygonBox[{{-0.047832512837763054`, 1.024427292410075}, {
      0.007889970256088475, 1.0541926975439682`}, {0.0685211043401446, 
      1.0253289452089809`}}]}, 
-   {RGBColor[0.3216385495873104, 0.8332184866224241, 0.8958523391380255], 
+   {RGBColor[0.7982366183076073, 0.8462176625723721, 0.07312145740529385], 
     PolygonBox[{{-0.3169720423052681, 
      0.6411696665196173}, {-0.1940082748938522, 
      0.6283487095914384}, {-0.18162813577029646`, 0.6050417122115856}}]}, 
-   {RGBColor[0.2767002628029893, 0.8401053450412805, 0.8256949984086108], 
+   {RGBColor[0.8760108981825081, 0.4812500498265475, 0.44561690417785593`], 
     PolygonBox[{{0.17141519673380198`, 1.0782105462741334`}, {
      0.11400161968152642`, 1.0163591310145053`}, {0.10925095303163398`, 
      1.011905632620269}}]}, 
-   {RGBColor[0.26895568669156966`, 0.1469280533045354, 0.24502576629149986`], 
+   {RGBColor[0.44183966491511817`, 0.5457918359417699, 0.6179877207972839], 
     PolygonBox[{{-0.34499755610183885`, 
      0.9328587355881889}, {-0.4272054383922027, 
      0.9663509839834822}, {-0.42036325571156186`, 0.9629685002676561}}]}, 
-   {RGBColor[0.5303923461904383, 0.2879567688744489, 0.3813680309329104], 
+   {RGBColor[0.6454946715229506, 0.8635489204921059, 0.2410269398094791], 
     PolygonBox[{{0.1891002609583601, 1.0554620071189653`}, {
      0.12901662880263762`, 0.9907351454268959}, {0.12181253107388049`, 
      1.0088905529445304`}}]}, 
-   {RGBColor[0.8585859593424774, 0.8510104905554825, 0.6636968330091637], 
+   {RGBColor[0.12287780586469688`, 0.3927556544998152, 0.13096336650130525`], 
     PolygonBox[{{-0.1940082748938522, 
      0.6283487095914384}, {-0.3169720423052681, 
      0.6411696665196173}, {-0.3315801751099264, 0.6839349838944819}}]}, 
-   {RGBColor[0.08522711664448823, 0.6118040945114824, 0.8402321831829291], 
+   {RGBColor[0.6703652624724481, 0.10982400134308423`, 0.5901843484179321], 
     PolygonBox[{{0.16463145372384555`, 0.7287823428880205}, {
      0.06635964857164711, 0.6762878787377733}, {0.0664998908516867, 
      0.7204042287425763}}]}, 
-   {RGBColor[0.04128954378340688, 0.3755429735472795, 0.8733530508580196], 
+   {RGBColor[0.6707035442741094, 0.4444566074531855, 0.7504370246223044], 
     PolygonBox[{{0.18079524707030462`, 1.0724314927616663`}, {
      0.12181253107388049`, 1.0088905529445304`}, {0.11400161968152642`, 
      1.0163591310145053`}}]}, 
-   {RGBColor[0.7319253156780534, 0.8672029824728416, 0.5380742148414555], 
+   {RGBColor[0.7427972092761357, 0.7510982051878841, 0.39758934895882936`], 
     PolygonBox[{{-0.3513200224340342, 
      0.9033529318016503}, {-0.4373493244723005, 
      0.9384019642679665}, {-0.4341766959524494, 0.9575167245322272}}]}, 
-   {RGBColor[0.6596889763569904, 0.38987292589644795`, 0.29282035419970764`], 
+   {RGBColor[0.4372259016828728, 0.41091685288821855`, 0.415795209948119], 
     PolygonBox[{{-0.047832512837763054`, 
      1.024427292410075}, {-0.11799189959497977`, 
      1.00450745478183}, {-0.13211175302367875`, 1.057920352183189}}]}, 
-   {RGBColor[0.06443677512301771, 0.7045481595375926, 0.69029212524701], 
+   {RGBColor[0.3153555974545894, 0.49688892933452444`, 0.7891494780271424], 
     PolygonBox[{{-0.3497237198752786, 
      0.9231099501507185}, {-0.4341766959524494, 
      0.9575167245322272}, {-0.4272054383922027, 0.9663509839834822}}]}, 
-   {RGBColor[0.22929402070010818`, 0.34758667144553934`, 0.5237132637473718], 
+   {RGBColor[0.8558485856367966, 0.5705691373501596, 0.5813168267004272], 
     PolygonBox[{{-0.11799189959497977`, 
      1.00450745478183}, {-0.19546431867047906`, 
      0.9972453168112951}, {-0.1755628618441475, 1.053847203500626}}]}, 
-   {RGBColor[0.4285667016821222, 0.900021109810577, 0.9921948691103211], 
+   {RGBColor[0.012604301931058437`, 0.5552513742120289, 0.5080792966938812], 
     PolygonBox[{{-0.4358719965725605, 
      0.8503600040954449}, {-0.34701535683924456`, 
      0.8141588758651223}, {-0.34108025456028795`, 0.7413391787352567}}]}, 
-   {RGBColor[0.5560934472917627, 0.357310085707069, 0.38454536159160946`], 
+   {RGBColor[0.06682688968277928, 0.008832529201513672, 0.7392470646524929], 
     PolygonBox[{{-0.3766299121269057, 
      0.9841965299469534}, {-0.3090130980086185, 
      0.9566480333705513}, {-0.3232410670649206, 0.9236359302369559}}]}, 
-   {RGBColor[0.4680003300189559, 0.12921796991263768`, 0.5960071707542394], 
+   {RGBColor[0.23937334364258822`, 0.8581692379163148, 0.05675679115219601], 
     PolygonBox[{{0.06005770900746004, 0.7780885730909854}, {
      0.16289420932903884`, 0.8330215689917939}, {0.16855232368920825`, 
      0.7749182321202077}}]}, 
-   {RGBColor[0.2666193200080593, 0.5796592765856154, 0.08979853799577198], 
+   {RGBColor[0.24713062776979822`, 0.6051656003083614, 0.6290823416298985], 
     PolygonBox[{{0.05683766341012611, 
      0.6489482391294207}, {-0.05648923164723632, 
      0.6167721737880639}, {-0.057375742660369336`, 0.641156686704635}}]}, 
-   {RGBColor[0.26813564890428654`, 0.189879390783126, 0.39878377009796107`], 
+   {RGBColor[0.5857345800721794, 0.5120522142950092, 0.41993033850828043`], 
     PolygonBox[{{-0.05648923164723632, 
      0.6167721737880639}, {-0.18162813577029646`, 
      0.6050417122115856}, {-0.1940082748938522, 0.6283487095914384}}]}, 
-   {RGBColor[0.19345331225848428`, 0.9579709036961856, 0.07774979776089563], 
+   {RGBColor[0.126819874071739, 0.012244977816058489`, 0.25834636821364776`], 
     PolygonBox[{{-0.057375742660369336`, 0.641156686704635}, {
      0.06635964857164711, 0.6762878787377733}, {0.05683766341012611, 
      0.6489482391294207}}]}, 
-   {RGBColor[0.9197870520208677, 0.9848417561586809, 0.7020617566171272], 
+   {RGBColor[0.451252202644846, 0.10892258999308813`, 0.3940381488602802], 
     PolygonBox[{{-0.4175744212139416, 
      0.9462070665448217}, {-0.33728010498142874`, 
      0.9134944309973146}, {-0.3399160956817845, 0.9301933763370519}}]}, 
-   {RGBColor[0.0969362857670042, 0.022476119380836046`, 0.271136316616823], 
+   {RGBColor[0.7819296405641962, 0.14778223495578913`, 0.8201350488717543], 
     PolygonBox[{{-0.4373493244723005, 
      0.9384019642679665}, {-0.3513200224340342, 
      0.9033529318016503}, {-0.34701535683924456`, 0.8141588758651223}}]}, 
-   {RGBColor[0.03195269500760212, 0.3204886997990779, 0.5960574597334267], 
+   {RGBColor[0.8020927010532453, 0.8781096784928999, 0.4977016374599985], 
     PolygonBox[{{0.0685211043401446, 
      1.0253289452089809`}, {-0.008515334819059745, 
      0.9841781242180881}, {-0.047832512837763054`, 1.024427292410075}}]}, 
-   {RGBColor[0.890849378283888, 0.12647538077310316`, 0.9371453488528834], 
+   {RGBColor[0.16493949096468952`, 0.6651929257507556, 0.770042517598513], 
     PolygonBox[{{-0.008515334819059745, 0.9841781242180881}, {
      0.0685211043401446, 1.0253289452089809`}, {0.09305093188315408, 
      0.9993676218135507}}]}, 
-   {RGBColor[0.2693250021814606, 0.21185894652655501`, 0.7838771783252194], 
+   {RGBColor[0.1341329367351609, 0.9853579889198327, 0.09356158016283644], 
     PolygonBox[{{-0.42036325571156186`, 
      0.9629685002676561}, {-0.3399160956817845, 
      0.9301933763370519}, {-0.34499755610183885`, 0.9328587355881889}}]}, 
-   {RGBColor[0.23114916684497255`, 0.4989798461767281, 0.7311081402882431], 
+   {RGBColor[0.31498631653093057`, 0.5751684287081034, 0.6452440107476789], 
     PolygonBox[{{-0.26518653205387555`, 
      1.004514814513453}, {-0.19546431867047906`, 
      0.9972453168112951}, {-0.2126204238057018, 0.9465977014586725}}]}, 
-   {RGBColor[0.13239872226482308`, 0.22545198945114397`, 0.9619943498350192], 
+   {RGBColor[0.16556533366423265`, 0.20483143253871527`, 0.5715504066421808], 
     PolygonBox[{{-0.2126204238057018, 
      0.9465977014586725}, {-0.3090130980086185, 
      0.9566480333705513}, {-0.26518653205387555`, 1.004514814513453}}]}, 
-   {RGBColor[0.9897001294219272, 0.3746798856038345, 0.14953144783024097`], 
+   {RGBColor[0.34413688541616994`, 0.3607326586710191, 0.9429231771393844], 
     PolygonBox[{{-0.4272054383922027, 
      0.9663509839834822}, {-0.34499755610183885`, 
      0.9328587355881889}, {-0.3497237198752786, 0.9231099501507185}}]}, 
-   {RGBColor[0.10236018372709377`, 0.5875907102338369, 0.26536035883924547`], 
+   {RGBColor[0.983184366274251, 0.8803949406696931, 0.12405320920432672`], 
     PolygonBox[{{-0.4341766959524494, 
      0.9575167245322272}, {-0.3497237198752786, 
      0.9231099501507185}, {-0.3513200224340342, 0.9033529318016503}}]}, 
-   {RGBColor[0.783510540076247, 0.6295608792016509, 0.29418046511828266`], 
+   {RGBColor[
+    0.34068927320532905`, 0.013649965563745425`, 0.06614710247666644], 
     PolygonBox[{{0.16855232368920825`, 0.7749182321202077}, {
      0.0664998908516867, 0.7204042287425763}, {0.06005770900746004, 
      0.7780885730909854}}]}, 
-   {RGBColor[0.2945395663748924, 0.5054245078910207, 0.30085830446959205`], 
+   {RGBColor[0.524311430866579, 0.07409881877140356, 0.601358908996986], 
     PolygonBox[{{-0.20388539918451123`, 
      0.6706205730883077}, {-0.3315801751099264, 
      0.6839349838944819}, {-0.34108025456028795`, 0.7413391787352567}}]}, 
-   {RGBColor[0.4556236846827739, 0.6053057818638032, 0.7872417219534242], 
+   {RGBColor[0.7270873908719144, 0.43626776808413803`, 0.407054928109402], 
     PolygonBox[{{-0.11799189959497977`, 
      1.00450745478183}, {-0.047832512837763054`, 
      1.024427292410075}, {-0.008515334819059745, 0.9841781242180881}}]}, 
-   {RGBColor[0.500487692888641, 0.1796191694378133, 0.11196323047128254`], 
+   {RGBColor[
+    0.12717045928852966`, 0.22640484137937844`, 0.18512874302894677`], 
     PolygonBox[{{0.0478728912033458, 0.8503358168510561}, {
      0.14910727124930218`, 0.9044127091934644}, {0.16289420932903884`, 
      0.8330215689917939}}]}, 
-   {RGBColor[0.7235856138864041, 0.6009397213369967, 0.00478179585714722], 
+   {RGBColor[0.5905819511602393, 0.8761937608857537, 0.11230645628348301`], 
     PolygonBox[{{-0.3315801751099264, 
      0.6839349838944819}, {-0.20388539918451123`, 
      0.6706205730883077}, {-0.1940082748938522, 0.6283487095914384}}]}, 
-   {RGBColor[0.9452147583077015, 0.8194732947562666, 0.6159517829157266], 
+   {RGBColor[0.09641469750314702, 0.32941158067772713`, 0.536427547579049], 
     PolygonBox[{{-0.1940082748938522, 
      0.6283487095914384}, {-0.057375742660369336`, 
      0.641156686704635}, {-0.05648923164723632, 0.6167721737880639}}]}, 
-   {RGBColor[0.8431918625435075, 0.9407156294622685, 0.7924179145957937], 
+   {RGBColor[0.8221769228873894, 0.19658547799016612`, 0.18692084625161143`], 
     PolygonBox[{{-0.19546431867047906`, 
      0.9972453168112951}, {-0.11799189959497977`, 
      1.00450745478183}, {-0.10551282223746822`, 0.9566378583567628}}]}, 
-   {RGBColor[0.16668283774657588`, 0.11123278602293496`, 0.4477979283778031], 
+   {RGBColor[0.8457060584627472, 0.8635500470454487, 0.5871388523164691], 
     PolygonBox[{{0.019555019233988554`, 0.9461852100727993}, {
      0.11103410283946495`, 0.9950511637142104}, {0.10925095303163398`, 
      1.011905632620269}}]}, 
-   {RGBColor[0.5311461150994574, 0.5704660675849922, 0.8328065105412652], 
+   {RGBColor[0.022768738870017957`, 0.07900087348964324, 0.7720440912504187], 
     PolygonBox[{{0.09305093188315408, 0.9993676218135507}, {
      0.00810639103178085, 0.9539918735262273}, {-0.008515334819059745, 
      0.9841781242180881}}]}, 
-   {RGBColor[0.9582625546166639, 0.8553525875295431, 0.010772392869483394`], 
+   {RGBColor[0.2378897278480927, 0.6605861011337169, 0.16113493222863107`], 
     PolygonBox[{{-0.21695247192154304`, 
      0.9125534428121232}, {-0.3232410670649206, 
      0.9236359302369559}, {-0.3090130980086185, 0.9566480333705513}}]}, 
-   {RGBColor[0.30429442285581865`, 0.931879484746694, 0.894755754416767], 
+   {RGBColor[0.9403245792224613, 0.2916723428345629, 0.23865210213074928`], 
     PolygonBox[{{0.017597267017762295`, 0.9629466022415197}, {
      0.10925095303163398`, 1.011905632620269}, {0.11400161968152642`, 
      1.0163591310145053`}}]}, 
-   {RGBColor[0.9106886802426324, 0.8606354898968076, 0.3384867176104438], 
+   {RGBColor[0.3237023440848761, 0.23610917440738977`, 0.532679956852125], 
     PolygonBox[{{0.031003647436196158`, 0.938378546619371}, {
      0.12901662880263762`, 0.9907351454268959}, {0.14910727124930218`, 
      0.9044127091934644}}]}, 
-   {RGBColor[0.5894446539434335, 0.4382677176168184, 0.5783126397293303], 
+   {RGBColor[0.520825359832088, 0.17075999342758275`, 0.3567617357165831], 
     PolygonBox[{{0.020342397320337456`, 0.9663286065916965}, {
      0.11400161968152642`, 1.0163591310145053`}, {0.12181253107388049`, 
      1.0088905529445304`}}]}, 
-   {RGBColor[0.12753818144960882`, 0.2853478735121484, 0.955640621598185], 
+   {RGBColor[0.15966941050731576`, 0.6479965636880025, 0.7837997244374644], 
     PolygonBox[{{0.16289420932903884`, 0.8330215689917939}, {
      0.06005770900746004, 0.7780885730909854}, {0.0478728912033458, 
      0.8503358168510561}}]}, 
-   {RGBColor[0.698783158243826, 0.23337801095897137`, 0.349776728146759], 
+   {RGBColor[0.543063584778511, 0.3589276037900444, 0.26654708082807055`], 
     PolygonBox[{{-0.21240478389152911`, 
      0.7279225508082012}, {-0.34108025456028795`, 
      0.7413391787352567}, {-0.34701535683924456`, 0.8141588758651223}}]}, 
-   {RGBColor[0.5818127577677414, 0.036151758379878496`, 0.21522672022494183`],
-     PolygonBox[{{-0.061995773983206895`, 0.6839215046744256}, {
+   {RGBColor[0.44671979248467086`, 0.1725529708904372, 0.7563765459528013], 
+    PolygonBox[{{-0.061995773983206895`, 0.6839215046744256}, {
      0.0664998908516867, 0.7204042287425763}, {0.06635964857164711, 
      0.6762878787377733}}]}, 
-   {RGBColor[0.004083472839043534, 0.9773183744064253, 0.18245958815643593`], 
+   {RGBColor[0.8556079489713633, 0.4090658120129911, 0.9174969524495205], 
     PolygonBox[{{-0.008515334819059745, 
      0.9841781242180881}, {-0.10551282223746822`, 
      0.9566378583567628}, {-0.11799189959497977`, 1.00450745478183}}]}, 
-   {RGBColor[0.4424965345023488, 0.06142018142614858, 0.42734424017172], 
+   {RGBColor[0.03643194879795231, 0.07856168697053989, 0.8423687556863075], 
     PolygonBox[{{0.025594898178955067`, 0.9574937359525207}, {
      0.12181253107388049`, 1.0088905529445304`}, {0.12901662880263762`, 
      0.9907351454268959}}]}, 
-   {RGBColor[0.22433544629122637`, 0.8607257329669291, 0.8315257659721897], 
+   {RGBColor[0.22866223050249235`, 0.2197954412287415, 0.7827600311466156], 
     PolygonBox[{{-0.10551282223746822`, 
      0.9566378583567628}, {-0.2126204238057018, 
      0.9465977014586725}, {-0.19546431867047906`, 0.9972453168112951}}]}, 
-   {RGBColor[0.14421939818283214`, 0.7601883123797728, 0.42653288157459346`], 
+   {RGBColor[0.43958918959578086`, 0.8636258698569499, 0.8647127868368727], 
     PolygonBox[{{0.06635964857164711, 
      0.6762878787377733}, {-0.057375742660369336`, 
      0.641156686704635}, {-0.061995773983206895`, 0.6839215046744256}}]}, 
-   {RGBColor[0.18070730355036657`, 0.9564381229156327, 0.2639394646374973], 
+   {RGBColor[0.6406152542539103, 0.3794652534552887, 0.5826489391603233], 
     PolygonBox[{{-0.057375742660369336`, 
      0.641156686704635}, {-0.1940082748938522, 
      0.6283487095914384}, {-0.20388539918451123`, 0.6706205730883077}}]}, 
-   {RGBColor[0.3446221556106288, 0.24480824148862101`, 0.6950033280092023], 
+   {RGBColor[0.684096993576218, 0.9530039165418998, 0.6580110274660858], 
     PolygonBox[{{-0.3090130980086185, 
      0.9566480333705513}, {-0.2126204238057018, 
      0.9465977014586725}, {-0.21695247192154304`, 0.9125534428121232}}]}, 
-   {RGBColor[0.8609535908951571, 0.37043915832515006`, 0.28417064122274205`], 
+   {RGBColor[0.20758313477261603`, 0.6740854670845329, 0.7549910657000989], 
     PolygonBox[{{-0.34108025456028795`, 
      0.7413391787352567}, {-0.21240478389152911`, 
      0.7279225508082012}, {-0.20388539918451123`, 0.6706205730883077}}]}, 
-   {RGBColor[0.9281527069304358, 0.8785527832120061, 0.9839448072867047], 
+   {RGBColor[0.41953223956232, 0.11221775512253163`, 0.7868001661682753], 
     PolygonBox[{{-0.22523462734727884`, 
      0.9182357393788769}, {-0.3399160956817845, 
      0.9301933763370519}, {-0.33728010498142874`, 0.9134944309973146}}]}, 
-   {RGBColor[0.8015491516301156, 0.32945757877415094`, 0.5942456486304153], 
+   {RGBColor[0.0995746161327864, 0.5389552135039055, 0.11991752178010295`], 
     PolygonBox[{{0.10925095303163398`, 1.011905632620269}, {
      0.017597267017762295`, 0.9629466022415197}, {0.019555019233988554`, 
      0.9461852100727993}}]}, 
-   {RGBColor[0.8900946416722835, 0.9277638036555129, 0.7274187666285783], 
+   {RGBColor[0.5068941089986994, 0.8347635971931657, 0.15917483160769486`], 
     PolygonBox[{{-0.10551282223746822`, 
      0.9566378583567628}, {-0.008515334819059745, 0.9841781242180881}, {
      0.00810639103178085, 0.9539918735262273}}]}, 
-   {RGBColor[0.7304834270679819, 0.3600850088275076, 0.3600613849691112], 
+   {RGBColor[0.6830443802027475, 0.6028970094155879, 0.5654880046071724], 
     PolygonBox[{{0.14910727124930218`, 0.9044127091934644}, {
      0.0478728912033458, 0.8503358168510561}, {0.031003647436196158`, 
      0.938378546619371}}]}, 
-   {RGBColor[0.6657900702426804, 0.7261813517069744, 0.9621126201171672], 
+   {RGBColor[0.09930988123459894, 0.8410424421682903, 0.8587586547889703], 
     PolygonBox[{{-0.22034421701865106`, 
      0.8009516648469185}, {-0.34701535683924456`, 
      0.8141588758651223}, {-0.3513200224340342, 0.9033529318016503}}]}, 
-   {RGBColor[0.43420055674459457`, 0.6865194574659432, 0.5838689776401043], 
+   {RGBColor[0.33441118705511896`, 0.20565638448782964`, 0.6571261291407993], 
     PolygonBox[{{-0.2278048523358396, 
      0.9206397981627638}, {-0.34499755610183885`, 
      0.9328587355881889}, {-0.3399160956817845, 0.9301933763370519}}]}, 
-   {RGBColor[0.4285803299847275, 0.2820177128750856, 0.8051806744098187], 
+   {RGBColor[0.9888252125610042, 0.37992522843738485`, 0.4831422121348419], 
     PolygonBox[{{0.11400161968152642`, 1.0163591310145053`}, {
      0.020342397320337456`, 0.9663286065916965}, {0.017597267017762295`, 
      0.9629466022415197}}]}, 
-   {RGBColor[0.8669958569054965, 0.5275502311937685, 0.021860203444189708`], 
+   {RGBColor[0.4234159001963258, 0.9988775823235718, 0.8304086910569863], 
     PolygonBox[{{-0.20388539918451123`, 
      0.6706205730883077}, {-0.061995773983206895`, 
      0.6839215046744256}, {-0.057375742660369336`, 0.641156686704635}}]}, 
-   {RGBColor[0.7355038112755168, 0.6813444290673338, 0.8352922937002496], 
+   {RGBColor[0.5341570467814474, 0.37054435652384266`, 0.5763895703615176], 
     PolygonBox[{{-0.22933004936967505`, 
      0.9105568230868842}, {-0.3497237198752786, 
      0.9231099501507185}, {-0.34499755610183885`, 0.9328587355881889}}]}, 
-   {RGBColor[0.46265076389242443`, 0.6772773841592101, 0.18135484945067626`], 
+   {RGBColor[0.28581384499540063`, 0.8688032254549307, 0.48710050837058283`], 
     PolygonBox[{{0.12181253107388049`, 1.0088905529445304`}, {
      0.025594898178955067`, 0.9574937359525207}, {0.020342397320337456`, 
      0.9663286065916965}}]}, 
-   {RGBColor[0.17876584643877025`, 0.07059536796859867, 0.7561743483783887], 
+   {RGBColor[0.07707493966705492, 0.7472197782579943, 0.2578090768072776], 
     PolygonBox[{{-0.22867938534499374`, 
      0.8905654801431533}, {-0.3513200224340342, 
      0.9033529318016503}, {-0.3497237198752786, 0.9231099501507185}}]}, 
-   {RGBColor[0.756191356617836, 0.48989115110525305`, 0.5426023181365007], 
+   {RGBColor[0.6610813427221385, 0.9668141973794608, 0.245258391065015], 
     PolygonBox[{{0.12901662880263762`, 0.9907351454268959}, {
      0.031003647436196158`, 0.938378546619371}, {0.025594898178955067`, 
      0.9574937359525207}}]}, 
-   {RGBColor[
-    0.024047301877242466`, 0.9547516338965207, 0.014448651013462932`], 
+   {RGBColor[0.15893482010428417`, 0.5323512623028539, 0.02160332686647992], 
     PolygonBox[{{-0.06942548756103122, 0.7413255959969066}, {
      0.06005770900746004, 0.7780885730909854}, {0.0664998908516867, 
      0.7204042287425763}}]}, 
-   {RGBColor[0.21382806785816566`, 0.5066875839936598, 0.9103195029909579], 
+   {RGBColor[0.8536959377778184, 0.6195498539760309, 0.4868853688521346], 
     PolygonBox[{{-0.2126204238057018, 
      0.9465977014586725}, {-0.10551282223746822`, 
      0.9566378583567628}, {-0.09884942019514568, 0.9236247106546123}}]}, 
-   {RGBColor[0.30694033762364414`, 0.17958307055723965`, 0.2630325904064974], 
+   {RGBColor[0.44383477870560784`, 0.218583460728216, 0.2754186620176704], 
     PolygonBox[{{-0.34701535683924456`, 
      0.8141588758651223}, {-0.22034421701865106`, 
      0.8009516648469185}, {-0.21240478389152911`, 0.7279225508082012}}]}, 
-   {RGBColor[0.24621193480972536`, 0.9308065427345571, 0.0098287737472611], 
+   {RGBColor[0.3824121264189504, 0.33832349425674724`, 0.870958952486736], 
     PolygonBox[{{0.00810639103178085, 
      0.9539918735262273}, {-0.09884942019514568, 
      0.9236247106546123}, {-0.10551282223746822`, 0.9566378583567628}}]}, 
-   {RGBColor[0.0397539585525728, 0.3504450293509358, 0.7364255598871359], 
+   {RGBColor[0.8720525594411663, 0.09613207220542819, 0.5511986348628242], 
     PolygonBox[{{-0.33728010498142874`, 
      0.9134944309973146}, {-0.22281581136178874`, 
      0.9015596813616626}, {-0.22523462734727884`, 0.9182357393788769}}]}, 
-   {RGBColor[0.23179102676701158`, 0.1363747074502002, 0.029722731991617346`],
-     PolygonBox[{{-0.09884942019514568, 
+   {RGBColor[0.2969849554464694, 0.02455548785032069, 0.2905605906276074], 
+    PolygonBox[{{-0.09884942019514568, 
      0.9236247106546123}, {-0.21695247192154304`, 
      0.9125534428121232}, {-0.2126204238057018, 0.9465977014586725}}]}, 
-   {RGBColor[0.5892010623845372, 0.881564470795557, 0.6851532656180694], 
-    PolygonBox[{{0.0664998908516867, 
+   {RGBColor[0.5529504161092536, 0.006684236198515103, 0.024758823261403773`],
+     PolygonBox[{{0.0664998908516867, 
      0.7204042287425763}, {-0.061995773983206895`, 
      0.6839215046744256}, {-0.06942548756103122, 0.7413255959969066}}]}, 
-   {RGBColor[0.6914342610978039, 0.3029815590536684, 0.7161384221910194], 
+   {RGBColor[0.602529234468568, 0.7977616342376908, 0.825842283516838], 
     PolygonBox[{{-0.061995773983206895`, 
      0.6839215046744256}, {-0.20388539918451123`, 
      0.6706205730883077}, {-0.21240478389152911`, 0.7279225508082012}}]}, 
-   {RGBColor[0.3625393070901666, 0.5392338318439469, 0.3645742425619436], 
+   {RGBColor[0.7837568332597176, 0.9046479028666934, 0.5538279458516966], 
     PolygonBox[{{-0.3399160956817845, 
      0.9301933763370519}, {-0.22523462734727884`, 
      0.9182357393788769}, {-0.2278048523358396, 0.9206397981627638}}]}, 
-   {RGBColor[0.9435756356494831, 0.8601847527739914, 0.7924709795980307], 
+   {RGBColor[0.16874460828225346`, 0.33086090715813965`, 0.7696460511246725], 
     PolygonBox[{{-0.34499755610183885`, 
      0.9328587355881889}, {-0.2278048523358396, 
      0.9206397981627638}, {-0.22933004936967505`, 0.9105568230868842}}]}, 
-   {RGBColor[0.03629358030603824, 0.6234887473589126, 0.13090098158358465`], 
+   {RGBColor[0.5731031627994199, 0.9376852052289657, 0.06028083806650808], 
     PolygonBox[{{-0.3513200224340342, 
      0.9033529318016503}, {-0.22867938534499374`, 
      0.8905654801431533}, {-0.22034421701865106`, 0.8009516648469185}}]}, 
-   {RGBColor[0.03639464576923057, 0.779745445868796, 0.056405235784528385`], 
+   {RGBColor[0.2970992429875363, 0.9577466479657595, 0.13254906374498332`], 
     PolygonBox[{{-0.3497237198752786, 
      0.9231099501507185}, {-0.22933004936967505`, 
      0.9105568230868842}, {-0.22867938534499374`, 0.8905654801431533}}]}, 
-   {RGBColor[0.7364245996065617, 0.1214378518257262, 0.27018833108605556`], 
+   {RGBColor[0.23235661802367846`, 0.901350399631472, 0.09926793641611797], 
     PolygonBox[{{-0.09562756219859404, 0.9134823483701755}, {
      0.019555019233988554`, 0.9461852100727993}, {0.017597267017762295`, 
      0.9629466022415197}}]}, 
-   {RGBColor[0.7629015586228756, 0.6293525990134154, 0.9799601885403855], 
+   {RGBColor[0.7554196392113111, 0.21568924405225753`, 0.5467523011797251], 
     PolygonBox[{{-0.07959251672104327, 0.8141455047231164}, {
      0.0478728912033458, 0.8503358168510561}, {0.06005770900746004, 
      0.7780885730909854}}]}, 
-   {RGBColor[0.5134481983019241, 0.9352951634300601, 0.5047500498822624], 
+   {RGBColor[0.5832775013475695, 0.373415994056312, 0.48850363742918534`], 
     PolygonBox[{{-0.21240478389152911`, 
      0.7279225508082012}, {-0.06942548756103122, 
      0.7413255959969066}, {-0.061995773983206895`, 0.6839215046744256}}]}, 
-   {RGBColor[0.05843279531936951, 0.7564455724337074, 0.5725534932034231], 
+   {RGBColor[0.478454000899196, 0.5245871785374792, 0.8083496777065828], 
     PolygonBox[{{-0.09780390888192418, 0.930181270727712}, {
      0.017597267017762295`, 0.9629466022415197}, {0.020342397320337456`, 
      0.9663286065916965}}]}, 
-   {RGBColor[0.98693663044003, 0.8113697667585822, 0.4921255619168112], 
+   {RGBColor[0.13987426209275444`, 0.10807947518587468`, 0.3396130746916961], 
     PolygonBox[{{0.06005770900746004, 
      0.7780885730909854}, {-0.06942548756103122, 
      0.7413255959969066}, {-0.07959251672104327, 0.8141455047231164}}]}, 
-   {RGBColor[0.7798877074014579, 0.9219395841857314, 0.48445217656975137`], 
+   {RGBColor[0.05204278740096657, 0.17435452292455866`, 0.817239242505444], 
     PolygonBox[{{-0.06942548756103122, 
      0.7413255959969066}, {-0.21240478389152911`, 
      0.7279225508082012}, {-0.22034421701865106`, 0.8009516648469185}}]}, 
-   {RGBColor[0.7213429349207012, 0.8561958560876244, 0.28027742562974645`], 
+   {RGBColor[0.4673014765245507, 0.957957359050319, 0.10815896057661378`], 
     PolygonBox[{{-0.09758521297853691, 0.9328463649710326}, {
      0.020342397320337456`, 0.9663286065916965}, {0.025594898178955067`, 
      0.9574937359525207}}]}, 
-   {RGBColor[0.4782273558886472, 0.8572282686055828, 0.39558734557037134`], 
+   {RGBColor[0.4478674907075608, 0.8125869212969401, 0.026020955528316847`], 
     PolygonBox[{{0.017597267017762295`, 
      0.9629466022415197}, {-0.09780390888192418, 
      0.930181270727712}, {-0.09562756219859404, 0.9134823483701755}}]}, 
-   {RGBColor[0.9197736118182371, 0.9841621230100841, 0.10404976335597538`], 
+   {RGBColor[0.21353632756641328`, 0.8884320940671873, 0.8514023767906438], 
     PolygonBox[{{-0.09780390888192418, 
      0.930181270727712}, {-0.22523462734727884`, 
      0.9182357393788769}, {-0.22281581136178874`, 0.9015596813616626}}]}, 
-   {RGBColor[0.04889554864286616, 0.8605257290747794, 0.9073738946145558], 
+   {RGBColor[0.6956979229282332, 0.6392134858129905, 0.6173847699464146], 
     PolygonBox[{{-0.09240658373814, 0.9033399861297157}, {
      0.031003647436196158`, 0.938378546619371}, {0.0478728912033458, 
      0.8503358168510561}}]}, 
-   {RGBColor[0.15765234976400078`, 0.2266938437201167, 0.33017238124459336`], 
+   {RGBColor[0.7944585554274972, 0.6908701797713308, 0.6700531847027305], 
     PolygonBox[{{-0.09555315454439031, 0.923097241622452}, {
      0.025594898178955067`, 0.9574937359525207}, {0.031003647436196158`, 
      0.938378546619371}}]}, 
-   {RGBColor[0.9884575941719405, 0.5637733058057677, 0.4867796970611824], 
+   {RGBColor[0.8423987667059838, 0.7650683059727093, 0.017062569125615212`], 
     PolygonBox[{{-0.22281581136178874`, 
      0.9015596813616626}, {-0.09562756219859404, 
      0.9134823483701755}, {-0.09780390888192418, 0.930181270727712}}]}, 
-   {RGBColor[0.8797381867584917, 0.19868785312846726`, 0.8025651124428315], 
+   {RGBColor[0.770330490770408, 0.8766325588445725, 0.22959790334762809`], 
     PolygonBox[{{0.020342397320337456`, 
      0.9663286065916965}, {-0.09758521297853691, 
      0.9328463649710326}, {-0.09780390888192418, 0.930181270727712}}]}, 
-   {RGBColor[0.45406579405043845`, 0.6015847013867719, 0.02110895731667295], 
+   {RGBColor[0.9247616821416289, 0.10349301679027989`, 0.8157961489586514], 
     PolygonBox[{{-0.09758521297853691, 
      0.9328463649710326}, {-0.2278048523358396, 
      0.9206397981627638}, {-0.22523462734727884`, 0.9182357393788769}}]}, 
-   {RGBColor[0.12384428243474588`, 0.563416199151803, 0.31556070332582986`], 
+   {RGBColor[0.6995792578464173, 0.25934498282535823`, 0.36804837704279514`], 
     PolygonBox[{{-0.22523462734727884`, 
      0.9182357393788769}, {-0.09780390888192418, 
      0.930181270727712}, {-0.09758521297853691, 0.9328463649710326}}]}, 
-   {RGBColor[0.29239841096877983`, 0.3844425551283026, 0.556700578201069], 
+   {RGBColor[0.2841192766434715, 0.2729521929749532, 0.7088048021250177], 
     PolygonBox[{{-0.22034421701865106`, 
      0.8009516648469185}, {-0.07959251672104327, 
      0.8141455047231164}, {-0.06942548756103122, 0.7413255959969066}}]}, 
-   {RGBColor[0.3416905362657152, 0.08910393640163727, 0.12306712307052403`], 
+   {RGBColor[0.2924539508094135, 0.5897727728908286, 0.24432149985246387`], 
     PolygonBox[{{0.0478728912033458, 
      0.8503358168510561}, {-0.07959251672104327, 
      0.8141455047231164}, {-0.09240658373814, 0.9033399861297157}}]}, 
-   {RGBColor[0.35357252069841905`, 0.2681654373788016, 0.1613465174562907], 
+   {RGBColor[0.8755114813150804, 0.7078183997810377, 0.10745038600852141`], 
     PolygonBox[{{-0.07959251672104327, 
      0.8141455047231164}, {-0.22034421701865106`, 
      0.8009516648469185}, {-0.22867938534499374`, 0.8905654801431533}}]}, 
-   {RGBColor[0.8413949012183215, 0.08001093516769076, 0.21414699286630734`], 
+   {RGBColor[0.6465420275040392, 0.6984144860992461, 0.4408053931373572], 
     PolygonBox[{{0.025594898178955067`, 
      0.9574937359525207}, {-0.09555315454439031, 
      0.923097241622452}, {-0.09758521297853691, 0.9328463649710326}}]}, 
-   {RGBColor[0.15413329588818625`, 0.8133886965950767, 0.7966805202005143], 
+   {RGBColor[0.9768407477068131, 0.47024135847451376`, 0.04655825389223911], 
     PolygonBox[{{-0.09555315454439031, 
      0.923097241622452}, {-0.22933004936967505`, 
      0.9105568230868842}, {-0.2278048523358396, 0.9206397981627638}}]}, 
-   {RGBColor[0.5610921512627782, 0.6318970226905012, 0.032345639941695925`], 
+   {RGBColor[0.9034970431372662, 0.9852418493172954, 0.7764688945761098], 
     PolygonBox[{{0.031003647436196158`, 
      0.938378546619371}, {-0.09240658373814, 
      0.9033399861297157}, {-0.09555315454439031, 0.923097241622452}}]}, 
-   {RGBColor[0.834829558947604, 0.9950393167790252, 0.3626022265710358], 
+   {RGBColor[0.10048559827563786`, 0.7818189349239575, 0.4396143387125757], 
     PolygonBox[{{-0.2278048523358396, 
      0.9206397981627638}, {-0.09758521297853691, 
      0.9328463649710326}, {-0.09555315454439031, 0.923097241622452}}]}, 
-   {RGBColor[0.9374100548337816, 0.6331644573050825, 0.41824529340339245`], 
+   {RGBColor[0.7569776946728959, 0.8324455675893083, 0.09533197587878761], 
     PolygonBox[{{-0.09240658373814, 
      0.9033399861297157}, {-0.22867938534499374`, 
      0.8905654801431533}, {-0.22933004936967505`, 0.9105568230868842}}]}, 
-   {RGBColor[0.06704920016659321, 0.9554052216423574, 0.9549139328082159], 
+   {RGBColor[0.9971635530937089, 0.20434007726658376`, 0.773218381498346], 
     PolygonBox[{{-0.22867938534499374`, 
      0.8905654801431533}, {-0.09240658373814, 
      0.9033399861297157}, {-0.07959251672104327, 0.8141455047231164}}]}, 
-   {RGBColor[0.935587178724822, 0.9664855057341084, 0.8315378754332423], 
+   {RGBColor[0.24814006300085834`, 0.1397915529888334, 0.06800968725029888], 
     PolygonBox[{{-0.22933004936967505`, 
      0.9105568230868842}, {-0.09555315454439031, 
      0.923097241622452}, {-0.09240658373814, 
@@ -14919,6 +15302,7953 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"e:/LINQdoesGraphics/TEAPOT/zOrderedTeapot2dWithNormals.csv\"\
 \>"], "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["PRINCIPLED TRANSFORM", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"Polygon", "/@", "faces3d"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   Polygon3DBox[{{0.85, 0, 0.863037}, {0.822875, 0.137375, 0.863037}, {
+     0.818371, 0.135459, 0.881027}, {0.845117, 0, 0.881027}}], 
+   Polygon3DBox[{{0.822875, 0.137375, 0.863037}, {0.7485, 0.2485, 0.863037}, {
+    0.745033, 0.245034, 0.881027}, {0.818371, 0.135459, 0.881027}}], 
+   Polygon3DBox[{{0.7485, 0.2485, 0.863037}, {0.637375, 0.322875, 0.863037}, {
+    0.635459, 0.318373, 0.881027}, {0.745033, 0.245034, 0.881027}}], 
+   Polygon3DBox[{{0.637375, 0.322875, 0.863037}, {0.5, 0.35, 0.863037}, {0.5, 
+    0.34512, 0.881027}, {0.635459, 0.318373, 0.881027}}], 
+   Polygon3DBox[{{0.845117, 0, 0.881027}, {0.818371, 0.135459, 0.881027}, {
+     0.823596, 0.137682, 0.887024}, {0.850781, 0, 0.887024}}], 
+   Polygon3DBox[{{0.818371, 0.135459, 0.881027}, {0.745033, 0.245034, 
+    0.881027}, {0.749055, 0.249056, 0.887024}, {0.823596, 0.137682, 
+    0.887024}}], 
+   Polygon3DBox[{{0.745033, 0.245034, 0.881027}, {0.635459, 0.318373, 
+    0.881027}, {0.637682, 0.323599, 0.887024}, {0.749055, 0.249056, 
+    0.887024}}], 
+   Polygon3DBox[{{0.635459, 0.318373, 0.881027}, {0.5, 0.34512, 0.881027}, {
+    0.5, 0.350785, 0.887024}, {0.637682, 0.323599, 0.887024}}], 
+   Polygon3DBox[{{0.850781, 0, 0.887024}, {0.823596, 0.137682, 0.887024}, {
+     0.834226, 0.142205, 0.881027}, {0.862305, 0, 0.881027}}], 
+   Polygon3DBox[{{0.823596, 0.137682, 0.887024}, {0.749055, 0.249056, 
+    0.887024}, {0.757236, 0.257238, 0.881027}, {0.834226, 0.142205, 
+    0.881027}}], 
+   Polygon3DBox[{{0.749055, 0.249056, 0.887024}, {0.637682, 0.323599, 
+    0.887024}, {0.642205, 0.334229, 0.881027}, {0.757236, 0.257238, 
+    0.881027}}], 
+   Polygon3DBox[{{0.637682, 0.323599, 0.887024}, {0.5, 0.350785, 0.887024}, {
+    0.5, 0.362308, 0.881027}, {0.642205, 0.334229, 0.881027}}], 
+   Polygon3DBox[{{0.862305, 0, 0.881027}, {0.834226, 0.142205, 0.881027}, {
+     0.845937, 0.147187, 0.863037}, {0.875, 0, 0.863037}}], 
+   Polygon3DBox[{{0.834226, 0.142205, 0.881027}, {0.757236, 0.257238, 
+    0.881027}, {0.76625, 0.26625, 0.863037}, {0.845937, 0.147187, 0.863037}}],
+    Polygon3DBox[{{0.757236, 0.257238, 0.881027}, {0.642205, 0.334229, 
+    0.881027}, {0.647187, 0.345937, 0.863037}, {0.76625, 0.26625, 0.863037}}],
+    Polygon3DBox[{{0.642205, 0.334229, 0.881027}, {0.5, 0.362308, 0.881027}, {
+    0.5, 0.375, 0.863037}, {0.647187, 0.345937, 0.863037}}], 
+   Polygon3DBox[{{0.5, 0.35, 0.863037}, {0.362625, 0.322875, 0.863037}, {
+    0.364542, 0.318373, 0.881027}, {0.5, 0.34512, 0.881027}}], 
+   Polygon3DBox[{{0.362625, 0.322875, 0.863037}, {0.2515, 0.2485, 0.863037}, {
+    0.254967, 0.245034, 0.881027}, {0.364542, 0.318373, 0.881027}}], 
+   Polygon3DBox[{{0.2515, 0.2485, 0.863037}, {0.177125, 0.137375, 0.863037}, {
+    0.181629, 0.135459, 0.881027}, {0.254967, 0.245034, 0.881027}}], 
+   Polygon3DBox[{{0.177125, 0.137375, 0.863037}, {0.15, 0, 0.863037}, {
+     0.154883, 0, 0.881027}, {0.181629, 0.135459, 0.881027}}], 
+   Polygon3DBox[{{0.5, 0.34512, 0.881027}, {0.364542, 0.318373, 0.881027}, {
+    0.362318, 0.323599, 0.887024}, {0.5, 0.350785, 0.887024}}], 
+   Polygon3DBox[{{0.364542, 0.318373, 0.881027}, {0.254967, 0.245034, 
+    0.881027}, {0.250945, 0.249056, 0.887024}, {0.362318, 0.323599, 
+    0.887024}}], 
+   Polygon3DBox[{{0.254967, 0.245034, 0.881027}, {0.181629, 0.135459, 
+    0.881027}, {0.176404, 0.137682, 0.887024}, {0.250945, 0.249056, 
+    0.887024}}], 
+   Polygon3DBox[{{0.181629, 0.135459, 0.881027}, {0.154883, 0, 0.881027}, {
+     0.149219, 0, 0.887024}, {0.176404, 0.137682, 0.887024}}], 
+   Polygon3DBox[{{0.5, 0.350785, 0.887024}, {0.362318, 0.323599, 0.887024}, {
+    0.357795, 0.334229, 0.881027}, {0.5, 0.362308, 0.881027}}], 
+   Polygon3DBox[{{0.362318, 0.323599, 0.887024}, {0.250945, 0.249056, 
+    0.887024}, {0.242764, 0.257238, 0.881027}, {0.357795, 0.334229, 
+    0.881027}}], 
+   Polygon3DBox[{{0.250945, 0.249056, 0.887024}, {0.176404, 0.137682, 
+    0.887024}, {0.165774, 0.142205, 0.881027}, {0.242764, 0.257238, 
+    0.881027}}], 
+   Polygon3DBox[{{0.176404, 0.137682, 0.887024}, {0.149219, 0, 0.887024}, {
+     0.137695, 0, 0.881027}, {0.165774, 0.142205, 0.881027}}], 
+   Polygon3DBox[{{0.5, 0.362308, 0.881027}, {0.357795, 0.334229, 0.881027}, {
+    0.352812, 0.345937, 0.863037}, {0.5, 0.375, 0.863037}}], 
+   Polygon3DBox[{{0.357795, 0.334229, 0.881027}, {0.242764, 0.257238, 
+    0.881027}, {0.23375, 0.26625, 0.863037}, {0.352812, 0.345937, 0.863037}}],
+    Polygon3DBox[{{0.242764, 0.257238, 0.881027}, {0.165774, 0.142205, 
+    0.881027}, {0.154062, 0.147187, 0.863037}, {0.23375, 0.26625, 0.863037}}],
+    Polygon3DBox[{{0.165774, 0.142205, 0.881027}, {0.137695, 0, 0.881027}, {
+     0.125, 0, 0.863037}, {0.154062, 0.147187, 0.863037}}], 
+   Polygon3DBox[{{0.15, 0, 0.863037}, {0.177125, -0.137375, 0.863037}, {
+     0.181629, -0.135458, 0.881027}, {0.154883, 0, 0.881027}}], 
+   Polygon3DBox[{{0.177125, -0.137375, 0.863037}, {0.2515, -0.2485, 
+    0.863037}, {0.254967, -0.245033, 0.881027}, {0.181629, -0.135458, 
+    0.881027}}], 
+   Polygon3DBox[{{0.2515, -0.2485, 0.863037}, {0.362625, -0.322875, 
+    0.863037}, {0.364542, -0.318371, 0.881027}, {0.254967, -0.245033, 
+    0.881027}}], 
+   Polygon3DBox[{{0.362625, -0.322875, 0.863037}, {0.5, -0.35, 0.863037}, {
+    0.5, -0.345118, 0.881027}, {0.364542, -0.318371, 0.881027}}], 
+   Polygon3DBox[{{0.154883, 0, 0.881027}, {0.181629, -0.135458, 0.881027}, {
+     0.176404, -0.137681, 0.887024}, {0.149219, 0, 0.887024}}], 
+   Polygon3DBox[{{0.181629, -0.135458, 0.881027}, {0.254967, -0.245033, 
+    0.881027}, {0.250945, -0.249054, 0.887024}, {0.176404, -0.137681, 
+    0.887024}}], 
+   Polygon3DBox[{{0.254967, -0.245033, 0.881027}, {0.364542, -0.318371, 
+    0.881027}, {0.362318, -0.323595, 0.887024}, {0.250945, -0.249054, 
+    0.887024}}], 
+   Polygon3DBox[{{0.364542, -0.318371, 0.881027}, {0.5, -0.345118, 
+    0.881027}, {0.5, -0.35078, 0.887024}, {0.362318, -0.323595, 0.887024}}], 
+   Polygon3DBox[{{0.149219, 0, 0.887024}, {0.176404, -0.137681, 0.887024}, {
+     0.165774, -0.142204, 0.881027}, {0.137695, 0, 0.881027}}], 
+   Polygon3DBox[{{0.176404, -0.137681, 0.887024}, {0.250945, -0.249054, 
+    0.887024}, {0.242764, -0.257235, 0.881027}, {0.165774, -0.142204, 
+    0.881027}}], 
+   Polygon3DBox[{{0.250945, -0.249054, 0.887024}, {0.362318, -0.323595, 
+    0.887024}, {0.357795, -0.334224, 0.881027}, {0.242764, -0.257235, 
+    0.881027}}], 
+   Polygon3DBox[{{0.362318, -0.323595, 0.887024}, {0.5, -0.35078, 0.887024}, {
+    0.5, -0.362303, 0.881027}, {0.357795, -0.334224, 0.881027}}], 
+   Polygon3DBox[{{0.137695, 0, 0.881027}, {0.165774, -0.142204, 0.881027}, {
+     0.154062, -0.147187, 0.863037}, {0.125, 0, 0.863037}}], 
+   Polygon3DBox[{{0.165774, -0.142204, 0.881027}, {0.242764, -0.257235, 
+    0.881027}, {0.23375, -0.26625, 0.863037}, {0.154062, -0.147187, 
+    0.863037}}], 
+   Polygon3DBox[{{0.242764, -0.257235, 0.881027}, {0.357795, -0.334224, 
+    0.881027}, {0.352812, -0.345937, 0.863037}, {0.23375, -0.26625, 
+    0.863037}}], 
+   Polygon3DBox[{{0.357795, -0.334224, 0.881027}, {0.5, -0.362303, 
+    0.881027}, {0.5, -0.375, 0.863037}, {0.352812, -0.345937, 0.863037}}], 
+   Polygon3DBox[{{0.5, -0.35, 0.863037}, {0.637375, -0.322875, 0.863037}, {
+    0.635459, -0.318371, 0.881027}, {0.5, -0.345118, 0.881027}}], 
+   Polygon3DBox[{{0.637375, -0.322875, 0.863037}, {0.7485, -0.2485, 
+    0.863037}, {0.745033, -0.245033, 0.881027}, {0.635459, -0.318371, 
+    0.881027}}], 
+   Polygon3DBox[{{0.7485, -0.2485, 0.863037}, {0.822875, -0.137375, 
+    0.863037}, {0.818371, -0.135458, 0.881027}, {0.745033, -0.245033, 
+    0.881027}}], 
+   Polygon3DBox[{{0.822875, -0.137375, 0.863037}, {0.85, 0, 0.863037}, {
+     0.845117, 0, 0.881027}, {0.818371, -0.135458, 0.881027}}], 
+   Polygon3DBox[{{0.5, -0.345118, 0.881027}, {0.635459, -0.318371, 
+    0.881027}, {0.637682, -0.323595, 0.887024}, {0.5, -0.35078, 0.887024}}], 
+   Polygon3DBox[{{0.635459, -0.318371, 0.881027}, {0.745033, -0.245033, 
+    0.881027}, {0.749055, -0.249054, 0.887024}, {0.637682, -0.323595, 
+    0.887024}}], 
+   Polygon3DBox[{{0.745033, -0.245033, 0.881027}, {0.818371, -0.135458, 
+    0.881027}, {0.823596, -0.137681, 0.887024}, {0.749055, -0.249054, 
+    0.887024}}], 
+   Polygon3DBox[{{0.818371, -0.135458, 0.881027}, {0.845117, 0, 0.881027}, {
+     0.850781, 0, 0.887024}, {0.823596, -0.137681, 0.887024}}], 
+   Polygon3DBox[{{0.5, -0.35078, 0.887024}, {0.637682, -0.323595, 0.887024}, {
+    0.642205, -0.334224, 0.881027}, {0.5, -0.362303, 0.881027}}], 
+   Polygon3DBox[{{0.637682, -0.323595, 0.887024}, {0.749055, -0.249054, 
+    0.887024}, {0.757236, -0.257235, 0.881027}, {0.642205, -0.334224, 
+    0.881027}}], 
+   Polygon3DBox[{{0.749055, -0.249054, 0.887024}, {0.823596, -0.137681, 
+    0.887024}, {0.834226, -0.142204, 0.881027}, {0.757236, -0.257235, 
+    0.881027}}], 
+   Polygon3DBox[{{0.823596, -0.137681, 0.887024}, {0.850781, 0, 0.887024}, {
+     0.862305, 0, 0.881027}, {0.834226, -0.142204, 0.881027}}], 
+   Polygon3DBox[{{0.5, -0.362303, 0.881027}, {0.642205, -0.334224, 
+    0.881027}, {0.647187, -0.345937, 0.863037}, {0.5, -0.375, 0.863037}}], 
+   Polygon3DBox[{{0.642205, -0.334224, 0.881027}, {0.757236, -0.257235, 
+    0.881027}, {0.76625, -0.26625, 0.863037}, {0.647187, -0.345937, 
+    0.863037}}], 
+   Polygon3DBox[{{0.757236, -0.257235, 0.881027}, {0.834226, -0.142204, 
+    0.881027}, {0.845937, -0.147187, 0.863037}, {0.76625, -0.26625, 
+    0.863037}}], 
+   Polygon3DBox[{{0.834226, -0.142204, 0.881027}, {0.862305, 0, 0.881027}, {
+     0.875, 0, 0.863037}, {0.845937, -0.147187, 0.863037}}], 
+   Polygon3DBox[{{0.875, 0, 0.863037}, {0.845937, 0.147187, 0.863037}, {
+     0.888279, 0.165203, 0.764481}, {0.920898, 0, 0.764481}}], 
+   Polygon3DBox[{{0.845937, 0.147187, 0.863037}, {0.76625, 0.26625, 
+    0.863037}, {0.798838, 0.298838, 0.764481}, {0.888279, 0.165203, 
+    0.764481}}], 
+   Polygon3DBox[{{0.76625, 0.26625, 0.863037}, {0.647187, 0.345937, 
+    0.863037}, {0.665203, 0.388279, 0.764481}, {0.798838, 0.298838, 
+    0.764481}}], 
+   Polygon3DBox[{{0.647187, 0.345937, 0.863037}, {0.5, 0.375, 0.863037}, {0.5,
+     0.420898, 0.764481}, {0.665203, 0.388279, 0.764481}}], 
+   Polygon3DBox[{{0.920898, 0, 0.764481}, {0.888279, 0.165203, 0.764481}, {
+     0.925215, 0.180918, 0.66803}, {0.960938, 0, 0.66803}}], 
+   Polygon3DBox[{{0.888279, 0.165203, 0.764481}, {0.798838, 0.298838, 
+    0.764481}, {0.827266, 0.327266, 0.66803}, {0.925215, 0.180918, 0.66803}}],
+    Polygon3DBox[{{0.798838, 0.298838, 0.764481}, {0.665203, 0.388279, 
+    0.764481}, {0.680918, 0.425215, 0.66803}, {0.827266, 0.327266, 0.66803}}],
+    Polygon3DBox[{{0.665203, 0.388279, 0.764481}, {0.5, 0.420898, 0.764481}, {
+    0.5, 0.460938, 0.66803}, {0.680918, 0.425215, 0.66803}}], 
+   Polygon3DBox[{{0.960938, 0, 0.66803}, {0.925215, 0.180918, 0.66803}, {
+     0.95134, 0.192034, 0.575333}, {0.989258, 0, 0.575333}}], 
+   Polygon3DBox[{{0.925215, 0.180918, 0.66803}, {0.827266, 0.327266, 
+    0.66803}, {0.847373, 0.347373, 0.575333}, {0.95134, 0.192034, 0.575333}}],
+    Polygon3DBox[{{0.827266, 0.327266, 0.66803}, {0.680918, 0.425215, 
+    0.66803}, {0.692034, 0.45134, 0.575333}, {0.847373, 0.347373, 0.575333}}],
+    Polygon3DBox[{{0.680918, 0.425215, 0.66803}, {0.5, 0.460938, 0.66803}, {
+    0.5, 0.489258, 0.575333}, {0.692034, 0.45134, 0.575333}}], 
+   Polygon3DBox[{{0.989258, 0, 0.575333}, {0.95134, 0.192034, 0.575333}, {
+     0.96125, 0.19625, 0.488037}, {1, 0, 0.488037}}], 
+   Polygon3DBox[{{0.95134, 0.192034, 0.575333}, {0.847373, 0.347373, 
+    0.575333}, {0.855, 0.355, 0.488037}, {0.96125, 0.19625, 0.488037}}], 
+   Polygon3DBox[{{0.847373, 0.347373, 0.575333}, {0.692034, 0.45134, 
+    0.575333}, {0.69625, 0.46125, 0.488037}, {0.855, 0.355, 0.488037}}], 
+   Polygon3DBox[{{0.692034, 0.45134, 0.575333}, {0.5, 0.489258, 0.575333}, {
+    0.5, 0.5, 0.488037}, {0.69625, 0.46125, 0.488037}}], 
+   Polygon3DBox[{{0.5, 0.375, 0.863037}, {0.352812, 0.345937, 0.863037}, {
+    0.334797, 0.388279, 0.764481}, {0.5, 0.420898, 0.764481}}], 
+   Polygon3DBox[{{0.352812, 0.345937, 0.863037}, {0.23375, 0.26625, 
+    0.863037}, {0.201162, 0.298838, 0.764481}, {0.334797, 0.388279, 
+    0.764481}}], 
+   Polygon3DBox[{{0.23375, 0.26625, 0.863037}, {0.154062, 0.147187, 
+    0.863037}, {0.111721, 0.165203, 0.764481}, {0.201162, 0.298838, 
+    0.764481}}], 
+   Polygon3DBox[{{0.154062, 0.147187, 0.863037}, {0.125, 0, 0.863037}, {
+     0.0791016, 0, 0.764481}, {0.111721, 0.165203, 0.764481}}], 
+   Polygon3DBox[{{0.5, 0.420898, 0.764481}, {0.334797, 0.388279, 0.764481}, {
+    0.319082, 0.425215, 0.66803}, {0.5, 0.460938, 0.66803}}], 
+   Polygon3DBox[{{0.334797, 0.388279, 0.764481}, {0.201162, 0.298838, 
+    0.764481}, {0.172734, 0.327266, 0.66803}, {0.319082, 0.425215, 0.66803}}],
+    Polygon3DBox[{{0.201162, 0.298838, 0.764481}, {0.111721, 0.165203, 
+    0.764481}, {0.0747852, 0.180918, 0.66803}, {0.172734, 0.327266, 
+    0.66803}}], 
+   Polygon3DBox[{{0.111721, 0.165203, 0.764481}, {0.0791016, 0, 0.764481}, {
+     0.0390625, 0, 0.66803}, {0.0747852, 0.180918, 0.66803}}], 
+   Polygon3DBox[{{0.5, 0.460938, 0.66803}, {0.319082, 0.425215, 0.66803}, {
+    0.307966, 0.45134, 0.575333}, {0.5, 0.489258, 0.575333}}], 
+   Polygon3DBox[{{0.319082, 0.425215, 0.66803}, {0.172734, 0.327266, 
+    0.66803}, {0.152627, 0.347373, 0.575333}, {0.307966, 0.45134, 0.575333}}],
+    Polygon3DBox[{{0.172734, 0.327266, 0.66803}, {0.0747852, 0.180918, 
+    0.66803}, {0.0486597, 0.192034, 0.575333}, {0.152627, 0.347373, 
+    0.575333}}], 
+   Polygon3DBox[{{0.0747852, 0.180918, 0.66803}, {0.0390625, 0, 0.66803}, {
+     0.0107422, 0, 0.575333}, {0.0486597, 0.192034, 0.575333}}], 
+   Polygon3DBox[{{0.5, 0.489258, 0.575333}, {0.307966, 0.45134, 0.575333}, {
+    0.30375, 0.46125, 0.488037}, {0.5, 0.5, 0.488037}}], 
+   Polygon3DBox[{{0.307966, 0.45134, 0.575333}, {0.152627, 0.347373, 
+    0.575333}, {0.145, 0.355, 0.488037}, {0.30375, 0.46125, 0.488037}}], 
+   Polygon3DBox[{{0.152627, 0.347373, 0.575333}, {0.0486597, 0.192034, 
+    0.575333}, {0.03875, 0.19625, 0.488037}, {0.145, 0.355, 0.488037}}], 
+   Polygon3DBox[{{0.0486597, 0.192034, 0.575333}, {0.0107422, 0, 0.575333}, {
+     0, 0, 0.488037}, {0.03875, 0.19625, 0.488037}}], 
+   Polygon3DBox[{{0.125, 0, 0.863037}, {0.154062, -0.147187, 0.863037}, {
+     0.111721, -0.165203, 0.764481}, {0.0791016, 0, 0.764481}}], 
+   Polygon3DBox[{{0.154062, -0.147187, 0.863037}, {0.23375, -0.26625, 
+    0.863037}, {0.201162, -0.298838, 0.764481}, {0.111721, -0.165203, 
+    0.764481}}], 
+   Polygon3DBox[{{0.23375, -0.26625, 0.863037}, {0.352812, -0.345937, 
+    0.863037}, {0.334797, -0.388279, 0.764481}, {0.201162, -0.298838, 
+    0.764481}}], 
+   Polygon3DBox[{{0.352812, -0.345937, 0.863037}, {0.5, -0.375, 0.863037}, {
+    0.5, -0.420898, 0.764481}, {0.334797, -0.388279, 0.764481}}], 
+   Polygon3DBox[{{0.0791016, 0, 0.764481}, {0.111721, -0.165203, 0.764481}, {
+     0.0747852, -0.180918, 0.66803}, {0.0390625, 0, 0.66803}}], 
+   Polygon3DBox[{{0.111721, -0.165203, 0.764481}, {0.201162, -0.298838, 
+    0.764481}, {0.172734, -0.327266, 0.66803}, {0.0747852, -0.180918, 
+    0.66803}}], 
+   Polygon3DBox[{{0.201162, -0.298838, 0.764481}, {0.334797, -0.388279, 
+    0.764481}, {0.319082, -0.425215, 0.66803}, {0.172734, -0.327266, 
+    0.66803}}], 
+   Polygon3DBox[{{0.334797, -0.388279, 0.764481}, {0.5, -0.420898, 
+    0.764481}, {0.5, -0.460938, 0.66803}, {0.319082, -0.425215, 0.66803}}], 
+   Polygon3DBox[{{0.0390625, 0, 0.66803}, {0.0747852, -0.180918, 0.66803}, {
+     0.0486597, -0.192034, 0.575333}, {0.0107422, 0, 0.575333}}], 
+   Polygon3DBox[{{0.0747852, -0.180918, 0.66803}, {0.172734, -0.327266, 
+    0.66803}, {0.152627, -0.347373, 0.575333}, {0.0486597, -0.192034, 
+    0.575333}}], 
+   Polygon3DBox[{{0.172734, -0.327266, 0.66803}, {0.319082, -0.425215, 
+    0.66803}, {0.307966, -0.45134, 0.575333}, {0.152627, -0.347373, 
+    0.575333}}], 
+   Polygon3DBox[{{0.319082, -0.425215, 0.66803}, {0.5, -0.460938, 0.66803}, {
+    0.5, -0.489258, 0.575333}, {0.307966, -0.45134, 0.575333}}], 
+   Polygon3DBox[{{0.0107422, 0, 0.575333}, {0.0486597, -0.192034, 0.575333}, {
+     0.03875, -0.19625, 0.488037}, {0, 0, 0.488037}}], 
+   Polygon3DBox[{{0.0486597, -0.192034, 0.575333}, {0.152627, -0.347373, 
+    0.575333}, {0.145, -0.355, 0.488037}, {0.03875, -0.19625, 0.488037}}], 
+   Polygon3DBox[{{0.152627, -0.347373, 0.575333}, {0.307966, -0.45134, 
+    0.575333}, {0.30375, -0.46125, 0.488037}, {0.145, -0.355, 0.488037}}], 
+   Polygon3DBox[{{0.307966, -0.45134, 0.575333}, {0.5, -0.489258, 0.575333}, {
+    0.5, -0.5, 0.488037}, {0.30375, -0.46125, 0.488037}}], 
+   Polygon3DBox[{{0.5, -0.375, 0.863037}, {0.647187, -0.345937, 0.863037}, {
+    0.665203, -0.388279, 0.764481}, {0.5, -0.420898, 0.764481}}], 
+   Polygon3DBox[{{0.647187, -0.345937, 0.863037}, {0.76625, -0.26625, 
+    0.863037}, {0.798838, -0.298838, 0.764481}, {0.665203, -0.388279, 
+    0.764481}}], 
+   Polygon3DBox[{{0.76625, -0.26625, 0.863037}, {0.845937, -0.147187, 
+    0.863037}, {0.888279, -0.165203, 0.764481}, {0.798838, -0.298838, 
+    0.764481}}], 
+   Polygon3DBox[{{0.845937, -0.147187, 0.863037}, {0.875, 0, 0.863037}, {
+     0.920898, 0, 0.764481}, {0.888279, -0.165203, 0.764481}}], 
+   Polygon3DBox[{{0.5, -0.420898, 0.764481}, {0.665203, -0.388279, 
+    0.764481}, {0.680918, -0.425215, 0.66803}, {0.5, -0.460938, 0.66803}}], 
+   Polygon3DBox[{{0.665203, -0.388279, 0.764481}, {0.798838, -0.298838, 
+    0.764481}, {0.827266, -0.327266, 0.66803}, {0.680918, -0.425215, 
+    0.66803}}], 
+   Polygon3DBox[{{0.798838, -0.298838, 0.764481}, {0.888279, -0.165203, 
+    0.764481}, {0.925215, -0.180918, 0.66803}, {0.827266, -0.327266, 
+    0.66803}}], 
+   Polygon3DBox[{{0.888279, -0.165203, 0.764481}, {0.920898, 0, 0.764481}, {
+     0.960938, 0, 0.66803}, {0.925215, -0.180918, 0.66803}}], 
+   Polygon3DBox[{{0.5, -0.460938, 0.66803}, {0.680918, -0.425215, 0.66803}, {
+    0.692034, -0.45134, 0.575333}, {0.5, -0.489258, 0.575333}}], 
+   Polygon3DBox[{{0.680918, -0.425215, 0.66803}, {0.827266, -0.327266, 
+    0.66803}, {0.847373, -0.347373, 0.575333}, {0.692034, -0.45134, 
+    0.575333}}], 
+   Polygon3DBox[{{0.827266, -0.327266, 0.66803}, {0.925215, -0.180918, 
+    0.66803}, {0.95134, -0.192034, 0.575333}, {0.847373, -0.347373, 
+    0.575333}}], 
+   Polygon3DBox[{{0.925215, -0.180918, 0.66803}, {0.960938, 0, 0.66803}, {
+     0.989258, 0, 0.575333}, {0.95134, -0.192034, 0.575333}}], 
+   Polygon3DBox[{{0.5, -0.489258, 0.575333}, {0.692034, -0.45134, 0.575333}, {
+    0.69625, -0.46125, 0.488037}, {0.5, -0.5, 0.488037}}], 
+   Polygon3DBox[{{0.692034, -0.45134, 0.575333}, {0.847373, -0.347373, 
+    0.575333}, {0.855, -0.355, 0.488037}, {0.69625, -0.46125, 0.488037}}], 
+   Polygon3DBox[{{0.847373, -0.347373, 0.575333}, {0.95134, -0.192034, 
+    0.575333}, {0.96125, -0.19625, 0.488037}, {0.855, -0.355, 0.488037}}], 
+   Polygon3DBox[{{0.95134, -0.192034, 0.575333}, {0.989258, 0, 0.575333}, {
+     1, 0, 0.488037}, {0.96125, -0.19625, 0.488037}}], 
+   Polygon3DBox[{{1, 0, 0.488037}, {0.96125, 0.19625, 0.488037}, {0.943232, 
+     0.188584, 0.413654}, {0.980469, 0, 0.413654}}], 
+   Polygon3DBox[{{0.96125, 0.19625, 0.488037}, {0.855, 0.355, 0.488037}, {
+    0.841133, 0.341133, 0.413654}, {0.943232, 0.188584, 0.413654}}], 
+   Polygon3DBox[{{0.855, 0.355, 0.488037}, {0.69625, 0.46125, 0.488037}, {
+    0.688584, 0.443233, 0.413654}, {0.841133, 0.341133, 0.413654}}], 
+   Polygon3DBox[{{0.69625, 0.46125, 0.488037}, {0.5, 0.5, 0.488037}, {0.5, 
+    0.480469, 0.413654}, {0.688584, 0.443233, 0.413654}}], 
+   Polygon3DBox[{{0.980469, 0, 0.413654}, {0.943232, 0.188584, 0.413654}, {
+     0.903594, 0.171719, 0.358795}, {0.9375, 0, 0.358795}}], 
+   Polygon3DBox[{{0.943232, 0.188584, 0.413654}, {0.841133, 0.341133, 
+    0.413654}, {0.810625, 0.310625, 0.358795}, {0.903594, 0.171719, 
+    0.358795}}], 
+   Polygon3DBox[{{0.841133, 0.341133, 0.413654}, {0.688584, 0.443233, 
+    0.413654}, {0.671719, 0.403594, 0.358795}, {0.810625, 0.310625, 
+    0.358795}}], 
+   Polygon3DBox[{{0.688584, 0.443233, 0.413654}, {0.5, 0.480469, 0.413654}, {
+    0.5, 0.4375, 0.358795}, {0.671719, 0.403594, 0.358795}}], 
+   Polygon3DBox[{{0.9375, 0, 0.358795}, {0.903594, 0.171719, 0.358795}, {
+     0.863955, 0.154853, 0.32156}, {0.894531, 0, 0.32156}}], 
+   Polygon3DBox[{{0.903594, 0.171719, 0.358795}, {0.810625, 0.310625, 
+    0.358795}, {0.780117, 0.280117, 0.32156}, {0.863955, 0.154853, 0.32156}}],
+    Polygon3DBox[{{0.810625, 0.310625, 0.358795}, {0.671719, 0.403594, 
+    0.358795}, {0.654853, 0.363955, 0.32156}, {0.780117, 0.280117, 0.32156}}],
+    Polygon3DBox[{{0.671719, 0.403594, 0.358795}, {0.5, 0.4375, 0.358795}, {
+    0.5, 0.394531, 0.32156}, {0.654853, 0.363955, 0.32156}}], 
+   Polygon3DBox[{{0.894531, 0, 0.32156}, {0.863955, 0.154853, 0.32156}, {
+     0.845937, 0.147187, 0.300049}, {0.875, 0, 0.300049}}], 
+   Polygon3DBox[{{0.863955, 0.154853, 0.32156}, {0.780117, 0.280117, 
+    0.32156}, {0.76625, 0.26625, 0.300049}, {0.845937, 0.147187, 0.300049}}], 
+   Polygon3DBox[{{0.780117, 0.280117, 0.32156}, {0.654853, 0.363955, 
+    0.32156}, {0.647187, 0.345937, 0.300049}, {0.76625, 0.26625, 0.300049}}], 
+   Polygon3DBox[{{0.654853, 0.363955, 0.32156}, {0.5, 0.394531, 0.32156}, {
+    0.5, 0.375, 0.300049}, {0.647187, 0.345937, 0.300049}}], 
+   Polygon3DBox[{{0.5, 0.5, 0.488037}, {0.30375, 0.46125, 0.488037}, {
+    0.311416, 0.443233, 0.413654}, {0.5, 0.480469, 0.413654}}], 
+   Polygon3DBox[{{0.30375, 0.46125, 0.488037}, {0.145, 0.355, 0.488037}, {
+    0.158867, 0.341133, 0.413654}, {0.311416, 0.443233, 0.413654}}], 
+   Polygon3DBox[{{0.145, 0.355, 0.488037}, {0.03875, 0.19625, 0.488037}, {
+    0.0567676, 0.188584, 0.413654}, {0.158867, 0.341133, 0.413654}}], 
+   Polygon3DBox[{{0.03875, 0.19625, 0.488037}, {0, 0, 0.488037}, {
+     0.0195312, 0, 0.413654}, {0.0567676, 0.188584, 0.413654}}], 
+   Polygon3DBox[{{0.5, 0.480469, 0.413654}, {0.311416, 0.443233, 0.413654}, {
+    0.328281, 0.403594, 0.358795}, {0.5, 0.4375, 0.358795}}], 
+   Polygon3DBox[{{0.311416, 0.443233, 0.413654}, {0.158867, 0.341133, 
+    0.413654}, {0.189375, 0.310625, 0.358795}, {0.328281, 0.403594, 
+    0.358795}}], 
+   Polygon3DBox[{{0.158867, 0.341133, 0.413654}, {0.0567676, 0.188584, 
+    0.413654}, {0.0964063, 0.171719, 0.358795}, {0.189375, 0.310625, 
+    0.358795}}], 
+   Polygon3DBox[{{0.0567676, 0.188584, 0.413654}, {0.0195312, 0, 0.413654}, {
+     0.0625, 0, 0.358795}, {0.0964063, 0.171719, 0.358795}}], 
+   Polygon3DBox[{{0.5, 0.4375, 0.358795}, {0.328281, 0.403594, 0.358795}, {
+    0.345146, 0.363955, 0.32156}, {0.5, 0.394531, 0.32156}}], 
+   Polygon3DBox[{{0.328281, 0.403594, 0.358795}, {0.189375, 0.310625, 
+    0.358795}, {0.219883, 0.280117, 0.32156}, {0.345146, 0.363955, 0.32156}}],
+    Polygon3DBox[{{0.189375, 0.310625, 0.358795}, {0.0964063, 0.171719, 
+    0.358795}, {0.136045, 0.154853, 0.32156}, {0.219883, 0.280117, 0.32156}}],
+    Polygon3DBox[{{0.0964063, 0.171719, 0.358795}, {0.0625, 0, 0.358795}, {
+     0.105469, 0, 0.32156}, {0.136045, 0.154853, 0.32156}}], 
+   Polygon3DBox[{{0.5, 0.394531, 0.32156}, {0.345146, 0.363955, 0.32156}, {
+    0.352812, 0.345937, 0.300049}, {0.5, 0.375, 0.300049}}], 
+   Polygon3DBox[{{0.345146, 0.363955, 0.32156}, {0.219883, 0.280117, 
+    0.32156}, {0.23375, 0.26625, 0.300049}, {0.352812, 0.345937, 0.300049}}], 
+   Polygon3DBox[{{0.219883, 0.280117, 0.32156}, {0.136045, 0.154853, 
+    0.32156}, {0.154062, 0.147187, 0.300049}, {0.23375, 0.26625, 0.300049}}], 
+   Polygon3DBox[{{0.136045, 0.154853, 0.32156}, {0.105469, 0, 0.32156}, {
+     0.125, 0, 0.300049}, {0.154062, 0.147187, 0.300049}}], 
+   Polygon3DBox[{{0, 0, 0.488037}, {0.03875, -0.19625, 0.488037}, {
+     0.0567676, -0.188584, 0.413654}, {0.0195312, 0, 0.413654}}], 
+   Polygon3DBox[{{0.03875, -0.19625, 0.488037}, {0.145, -0.355, 0.488037}, {
+    0.158867, -0.341133, 0.413654}, {0.0567676, -0.188584, 0.413654}}], 
+   Polygon3DBox[{{0.145, -0.355, 0.488037}, {0.30375, -0.46125, 0.488037}, {
+    0.311416, -0.443233, 0.413654}, {0.158867, -0.341133, 0.413654}}], 
+   Polygon3DBox[{{0.30375, -0.46125, 0.488037}, {0.5, -0.5, 0.488037}, {
+    0.5, -0.480469, 0.413654}, {0.311416, -0.443233, 0.413654}}], 
+   Polygon3DBox[{{0.0195312, 0, 0.413654}, {0.0567676, -0.188584, 0.413654}, {
+     0.0964063, -0.171719, 0.358795}, {0.0625, 0, 0.358795}}], 
+   Polygon3DBox[{{0.0567676, -0.188584, 0.413654}, {0.158867, -0.341133, 
+    0.413654}, {0.189375, -0.310625, 0.358795}, {0.0964063, -0.171719, 
+    0.358795}}], 
+   Polygon3DBox[{{0.158867, -0.341133, 0.413654}, {0.311416, -0.443233, 
+    0.413654}, {0.328281, -0.403594, 0.358795}, {0.189375, -0.310625, 
+    0.358795}}], 
+   Polygon3DBox[{{0.311416, -0.443233, 0.413654}, {0.5, -0.480469, 
+    0.413654}, {0.5, -0.4375, 0.358795}, {0.328281, -0.403594, 0.358795}}], 
+   Polygon3DBox[{{0.0625, 0, 0.358795}, {0.0964063, -0.171719, 0.358795}, {
+     0.136045, -0.154853, 0.32156}, {0.105469, 0, 0.32156}}], 
+   Polygon3DBox[{{0.0964063, -0.171719, 0.358795}, {0.189375, -0.310625, 
+    0.358795}, {0.219883, -0.280117, 0.32156}, {0.136045, -0.154853, 
+    0.32156}}], 
+   Polygon3DBox[{{0.189375, -0.310625, 0.358795}, {0.328281, -0.403594, 
+    0.358795}, {0.345146, -0.363955, 0.32156}, {0.219883, -0.280117, 
+    0.32156}}], 
+   Polygon3DBox[{{0.328281, -0.403594, 0.358795}, {0.5, -0.4375, 0.358795}, {
+    0.5, -0.394531, 0.32156}, {0.345146, -0.363955, 0.32156}}], 
+   Polygon3DBox[{{0.105469, 0, 0.32156}, {0.136045, -0.154853, 0.32156}, {
+     0.154062, -0.147187, 0.300049}, {0.125, 0, 0.300049}}], 
+   Polygon3DBox[{{0.136045, -0.154853, 0.32156}, {0.219883, -0.280117, 
+    0.32156}, {0.23375, -0.26625, 0.300049}, {0.154062, -0.147187, 
+    0.300049}}], 
+   Polygon3DBox[{{0.219883, -0.280117, 0.32156}, {0.345146, -0.363955, 
+    0.32156}, {0.352812, -0.345937, 0.300049}, {0.23375, -0.26625, 
+    0.300049}}], 
+   Polygon3DBox[{{0.345146, -0.363955, 0.32156}, {0.5, -0.394531, 0.32156}, {
+    0.5, -0.375, 0.300049}, {0.352812, -0.345937, 0.300049}}], 
+   Polygon3DBox[{{0.5, -0.5, 0.488037}, {0.69625, -0.46125, 0.488037}, {
+    0.688584, -0.443233, 0.413654}, {0.5, -0.480469, 0.413654}}], 
+   Polygon3DBox[{{0.69625, -0.46125, 0.488037}, {0.855, -0.355, 0.488037}, {
+    0.841133, -0.341133, 0.413654}, {0.688584, -0.443233, 0.413654}}], 
+   Polygon3DBox[{{0.855, -0.355, 0.488037}, {0.96125, -0.19625, 0.488037}, {
+    0.943232, -0.188584, 0.413654}, {0.841133, -0.341133, 0.413654}}], 
+   Polygon3DBox[{{0.96125, -0.19625, 0.488037}, {1, 0, 0.488037}, {
+     0.980469, 0, 0.413654}, {0.943232, -0.188584, 0.413654}}], 
+   Polygon3DBox[{{0.5, -0.480469, 0.413654}, {0.688584, -0.443233, 
+    0.413654}, {0.671719, -0.403594, 0.358795}, {0.5, -0.4375, 0.358795}}], 
+   Polygon3DBox[{{0.688584, -0.443233, 0.413654}, {0.841133, -0.341133, 
+    0.413654}, {0.810625, -0.310625, 0.358795}, {0.671719, -0.403594, 
+    0.358795}}], 
+   Polygon3DBox[{{0.841133, -0.341133, 0.413654}, {0.943232, -0.188584, 
+    0.413654}, {0.903594, -0.171719, 0.358795}, {0.810625, -0.310625, 
+    0.358795}}], 
+   Polygon3DBox[{{0.943232, -0.188584, 0.413654}, {0.980469, 0, 0.413654}, {
+     0.9375, 0, 0.358795}, {0.903594, -0.171719, 0.358795}}], 
+   Polygon3DBox[{{0.5, -0.4375, 0.358795}, {0.671719, -0.403594, 0.358795}, {
+    0.654853, -0.363955, 0.32156}, {0.5, -0.394531, 0.32156}}], 
+   Polygon3DBox[{{0.671719, -0.403594, 0.358795}, {0.810625, -0.310625, 
+    0.358795}, {0.780117, -0.280117, 0.32156}, {0.654853, -0.363955, 
+    0.32156}}], 
+   Polygon3DBox[{{0.810625, -0.310625, 0.358795}, {0.903594, -0.171719, 
+    0.358795}, {0.863955, -0.154853, 0.32156}, {0.780117, -0.280117, 
+    0.32156}}], 
+   Polygon3DBox[{{0.903594, -0.171719, 0.358795}, {0.9375, 0, 0.358795}, {
+     0.894531, 0, 0.32156}, {0.863955, -0.154853, 0.32156}}], 
+   Polygon3DBox[{{0.5, -0.394531, 0.32156}, {0.654853, -0.363955, 0.32156}, {
+    0.647187, -0.345937, 0.300049}, {0.5, -0.375, 0.300049}}], 
+   Polygon3DBox[{{0.654853, -0.363955, 0.32156}, {0.780117, -0.280117, 
+    0.32156}, {0.76625, -0.26625, 0.300049}, {0.647187, -0.345937, 
+    0.300049}}], 
+   Polygon3DBox[{{0.780117, -0.280117, 0.32156}, {0.863955, -0.154853, 
+    0.32156}, {0.845937, -0.147187, 0.300049}, {0.76625, -0.26625, 
+    0.300049}}], 
+   Polygon3DBox[{{0.863955, -0.154853, 0.32156}, {0.894531, 0, 0.32156}, {
+     0.875, 0, 0.300049}, {0.845937, -0.147187, 0.300049}}], 
+   Polygon3DBox[{{0.1, 0, 0.769043}, {0.103906, 0.0421881, 
+     0.777779}, {-0.0202759, 0.0421881, 
+     0.776765}, {-0.0167969, 0, 0.768166}}], 
+   Polygon3DBox[{{0.103906, 0.0421881, 0.777779}, {0.1125, 0.0562508, 
+    0.796997}, {-0.0279297, 0.0562508, 0.795683}, {-0.0202759, 0.0421881, 
+    0.776765}}], 
+   Polygon3DBox[{{0.1125, 0.0562508, 0.796997}, {0.121094, 0.0421881, 
+    0.816215}, {-0.0355835, 0.0421881, 0.814601}, {-0.0279297, 0.0562508, 
+    0.795683}}], 
+   Polygon3DBox[{{0.121094, 0.0421881, 0.816215}, {
+     0.125, 0, 0.824951}, {-0.0390625, 0, 0.8232}, {-0.0355835, 0.0421881, 
+     0.814601}}], 
+   Polygon3DBox[{{-0.0167969, 0, 0.768166}, {-0.0202759, 0.0421881, 
+     0.776765}, {-0.111426, 0.0421881, 0.769668}, {-0.103125, 0, 0.762024}}], 
+   Polygon3DBox[{{-0.0202759, 0.0421881, 0.776765}, {-0.0279297, 0.0562508, 
+    0.795683}, {-0.129688, 0.0562508, 0.786484}, {-0.111426, 0.0421881, 
+    0.769668}}], 
+   Polygon3DBox[{{-0.0279297, 0.0562508, 0.795683}, {-0.0355835, 0.0421881, 
+    0.814601}, {-0.147949, 0.0421881, 0.8033}, {-0.129688, 0.0562508, 
+    0.786484}}], 
+   Polygon3DBox[{{-0.0355835, 0.0421881, 
+     0.814601}, {-0.0390625, 0, 0.8232}, {-0.15625, 0, 0.810943}, {-0.147949, 
+     0.0421881, 0.8033}}], 
+   Polygon3DBox[{{-0.103125, 0, 0.762024}, {-0.111426, 0.0421881, 
+     0.769668}, {-0.167566, 0.0421881, 0.750404}, {-0.156641, 0, 0.745354}}], 
+   Polygon3DBox[{{-0.111426, 0.0421881, 0.769668}, {-0.129688, 0.0562508, 
+    0.786484}, {-0.191602, 0.0562508, 0.761515}, {-0.167566, 0.0421881, 
+    0.750404}}], 
+   Polygon3DBox[{{-0.129688, 0.0562508, 0.786484}, {-0.147949, 0.0421881, 
+    0.8033}, {-0.215637, 0.0421881, 0.772625}, {-0.191602, 0.0562508, 
+    0.761515}}], 
+   Polygon3DBox[{{-0.147949, 0.0421881, 
+     0.8033}, {-0.15625, 0, 0.810943}, {-0.226562, 0, 0.777676}, {-0.215637, 
+     0.0421881, 0.772625}}], 
+   Polygon3DBox[{{-0.156641, 0, 0.745354}, {-0.167566, 0.0421881, 
+     0.750404}, {-0.186719, 0.0421881, 0.712891}, {-0.175, 0, 0.712891}}], 
+   Polygon3DBox[{{-0.167566, 0.0421881, 0.750404}, {-0.191602, 0.0562508, 
+    0.761515}, {-0.2125, 0.0562508, 0.712891}, {-0.186719, 0.0421881, 
+    0.712891}}], 
+   Polygon3DBox[{{-0.191602, 0.0562508, 0.761515}, {-0.215637, 0.0421881, 
+    0.772625}, {-0.238281, 0.0421881, 0.712891}, {-0.2125, 0.0562508, 
+    0.712891}}], 
+   Polygon3DBox[{{-0.215637, 0.0421881, 
+     0.772625}, {-0.226562, 0, 0.777676}, {-0.25, 0, 0.712891}, {-0.238281, 
+     0.0421881, 0.712891}}], 
+   Polygon3DBox[{{0.125, 0, 0.824951}, {0.121094, -0.0421881, 
+     0.816215}, {-0.0355835, -0.0421881, 0.814601}, {-0.0390625, 0, 0.8232}}],
+    Polygon3DBox[{{0.121094, -0.0421881, 0.816215}, {0.1125, -0.0562508, 
+    0.796997}, {-0.0279297, -0.0562508, 0.795683}, {-0.0355835, -0.0421881, 
+    0.814601}}], 
+   Polygon3DBox[{{0.1125, -0.0562508, 0.796997}, {0.103906, -0.0421881, 
+    0.777779}, {-0.0202759, -0.0421881, 0.776765}, {-0.0279297, -0.0562508, 
+    0.795683}}], 
+   Polygon3DBox[{{0.103906, -0.0421881, 0.777779}, {
+     0.1, 0, 0.769043}, {-0.0167969, 0, 0.768166}, {-0.0202759, -0.0421881, 
+     0.776765}}], 
+   Polygon3DBox[{{-0.0390625, 0, 0.8232}, {-0.0355835, -0.0421881, 
+     0.814601}, {-0.147949, -0.0421881, 0.8033}, {-0.15625, 0, 0.810943}}], 
+   Polygon3DBox[{{-0.0355835, -0.0421881, 0.814601}, {-0.0279297, -0.0562508, 
+    0.795683}, {-0.129688, -0.0562508, 0.786484}, {-0.147949, -0.0421881, 
+    0.8033}}], 
+   Polygon3DBox[{{-0.0279297, -0.0562508, 0.795683}, {-0.0202759, -0.0421881, 
+    0.776765}, {-0.111426, -0.0421881, 0.769668}, {-0.129688, -0.0562508, 
+    0.786484}}], 
+   Polygon3DBox[{{-0.0202759, -0.0421881, 
+     0.776765}, {-0.0167969, 0, 0.768166}, {-0.103125, 0, 
+      0.762024}, {-0.111426, -0.0421881, 0.769668}}], 
+   Polygon3DBox[{{-0.15625, 0, 0.810943}, {-0.147949, -0.0421881, 
+     0.8033}, {-0.215637, -0.0421881, 0.772625}, {-0.226562, 0, 0.777676}}], 
+   Polygon3DBox[{{-0.147949, -0.0421881, 0.8033}, {-0.129688, -0.0562508, 
+    0.786484}, {-0.191602, -0.0562508, 0.761515}, {-0.215637, -0.0421881, 
+    0.772625}}], 
+   Polygon3DBox[{{-0.129688, -0.0562508, 0.786484}, {-0.111426, -0.0421881, 
+    0.769668}, {-0.167566, -0.0421881, 0.750404}, {-0.191602, -0.0562508, 
+    0.761515}}], 
+   Polygon3DBox[{{-0.111426, -0.0421881, 
+     0.769668}, {-0.103125, 0, 0.762024}, {-0.156641, 0, 
+      0.745354}, {-0.167566, -0.0421881, 0.750404}}], 
+   Polygon3DBox[{{-0.226562, 0, 0.777676}, {-0.215637, -0.0421881, 
+     0.772625}, {-0.238281, -0.0421881, 0.712891}, {-0.25, 0, 0.712891}}], 
+   Polygon3DBox[{{-0.215637, -0.0421881, 0.772625}, {-0.191602, -0.0562508, 
+    0.761515}, {-0.2125, -0.0562508, 0.712891}, {-0.238281, -0.0421881, 
+    0.712891}}], 
+   Polygon3DBox[{{-0.191602, -0.0562508, 0.761515}, {-0.167566, -0.0421881, 
+    0.750404}, {-0.186719, -0.0421881, 0.712891}, {-0.2125, -0.0562508, 
+    0.712891}}], 
+   Polygon3DBox[{{-0.167566, -0.0421881, 
+     0.750404}, {-0.156641, 0, 0.745354}, {-0.175, 0, 
+      0.712891}, {-0.186719, -0.0421881, 0.712891}}], 
+   Polygon3DBox[{{-0.175, 0, 0.712891}, {-0.186719, 0.0421881, 
+     0.712891}, {-0.175885, 0.0421881, 0.656723}, {-0.165234, 0, 0.661621}}], 
+   Polygon3DBox[{{-0.186719, 0.0421881, 0.712891}, {-0.2125, 0.0562508, 
+    0.712891}, {-0.199316, 0.0562508, 0.645947}, {-0.175885, 0.0421881, 
+    0.656723}}], 
+   Polygon3DBox[{{-0.2125, 0.0562508, 0.712891}, {-0.238281, 0.0421881, 
+    0.712891}, {-0.222748, 0.0421881, 0.63517}, {-0.199316, 0.0562508, 
+    0.645947}}], 
+   Polygon3DBox[{{-0.238281, 0.0421881, 
+     0.712891}, {-0.25, 0, 0.712891}, {-0.233398, 0, 0.630272}, {-0.222748, 
+     0.0421881, 0.63517}}], 
+   Polygon3DBox[{{-0.165234, 0, 0.661621}, {-0.175885, 0.0421881, 
+     0.656723}, {-0.141943, 0.0421881, 0.592611}, {-0.134375, 0, 0.600098}}], 
+   Polygon3DBox[{{-0.175885, 0.0421881, 0.656723}, {-0.199316, 0.0562508, 
+    0.645947}, {-0.158594, 0.0562508, 0.576141}, {-0.141943, 0.0421881, 
+    0.592611}}], 
+   Polygon3DBox[{{-0.199316, 0.0562508, 0.645947}, {-0.222748, 0.0421881, 
+    0.63517}, {-0.175244, 0.0421881, 0.559671}, {-0.158594, 0.0562508, 
+    0.576141}}], 
+   Polygon3DBox[{{-0.222748, 0.0421881, 
+     0.63517}, {-0.233398, 0, 0.630272}, {-0.182812, 0, 0.552185}, {-0.175244,
+      0.0421881, 0.559671}}], 
+   Polygon3DBox[{{-0.134375, 0, 0.600098}, {-0.141943, 0.0421881, 
+     0.592611}, {-0.0827332, 0.0421881, 
+     0.529498}, {-0.0800781, 0, 0.538757}}], 
+   Polygon3DBox[{{-0.141943, 0.0421881, 0.592611}, {-0.158594, 0.0562508, 
+    0.576141}, {-0.0885742, 0.0562508, 0.509128}, {-0.0827332, 0.0421881, 
+    0.529498}}], 
+   Polygon3DBox[{{-0.158594, 0.0562508, 0.576141}, {-0.175244, 0.0421881, 
+    0.559671}, {-0.0944153, 0.0421881, 0.488759}, {-0.0885742, 0.0562508, 
+    0.509128}}], 
+   Polygon3DBox[{{-0.175244, 0.0421881, 
+     0.559671}, {-0.182812, 0, 0.552185}, {-0.0970703, 0, 
+      0.4795}, {-0.0944153, 0.0421881, 0.488759}}], 
+   Polygon3DBox[{{-0.0800781, 0, 0.538757}, {-0.0827332, 0.0421881, 
+     0.529498}, {0.00390625, 0.0421881, 0.476326}, {0, 0, 0.488037}}], 
+   Polygon3DBox[{{-0.0827332, 0.0421881, 0.529498}, {-0.0885742, 0.0562508, 
+    0.509128}, {0.0125, 0.0562508, 0.450561}, {0.00390625, 0.0421881, 
+    0.476326}}], 
+   Polygon3DBox[{{-0.0885742, 0.0562508, 0.509128}, {-0.0944153, 0.0421881, 
+    0.488759}, {0.0210938, 0.0421881, 0.424797}, {0.0125, 0.0562508, 
+    0.450561}}], 
+   Polygon3DBox[{{-0.0944153, 0.0421881, 0.488759}, {-0.0970703, 0, 0.4795}, {
+     0.025, 0, 0.413086}, {0.0210938, 0.0421881, 0.424797}}], 
+   Polygon3DBox[{{-0.25, 0, 0.712891}, {-0.238281, -0.0421881, 
+     0.712891}, {-0.222748, -0.0421881, 0.63517}, {-0.233398, 0, 0.630272}}], 
+   Polygon3DBox[{{-0.238281, -0.0421881, 0.712891}, {-0.2125, -0.0562508, 
+    0.712891}, {-0.199316, -0.0562508, 0.645947}, {-0.222748, -0.0421881, 
+    0.63517}}], 
+   Polygon3DBox[{{-0.2125, -0.0562508, 0.712891}, {-0.186719, -0.0421881, 
+    0.712891}, {-0.175885, -0.0421881, 0.656723}, {-0.199316, -0.0562508, 
+    0.645947}}], 
+   Polygon3DBox[{{-0.186719, -0.0421881, 
+     0.712891}, {-0.175, 0, 0.712891}, {-0.165234, 0, 
+      0.661621}, {-0.175885, -0.0421881, 0.656723}}], 
+   Polygon3DBox[{{-0.233398, 0, 0.630272}, {-0.222748, -0.0421881, 
+     0.63517}, {-0.175244, -0.0421881, 0.559671}, {-0.182812, 0, 0.552185}}], 
+   Polygon3DBox[{{-0.222748, -0.0421881, 0.63517}, {-0.199316, -0.0562508, 
+    0.645947}, {-0.158594, -0.0562508, 0.576141}, {-0.175244, -0.0421881, 
+    0.559671}}], 
+   Polygon3DBox[{{-0.199316, -0.0562508, 0.645947}, {-0.175885, -0.0421881, 
+    0.656723}, {-0.141943, -0.0421881, 0.592611}, {-0.158594, -0.0562508, 
+    0.576141}}], 
+   Polygon3DBox[{{-0.175885, -0.0421881, 
+     0.656723}, {-0.165234, 0, 0.661621}, {-0.134375, 0, 
+      0.600098}, {-0.141943, -0.0421881, 0.592611}}], 
+   Polygon3DBox[{{-0.182812, 0, 0.552185}, {-0.175244, -0.0421881, 
+     0.559671}, {-0.0944153, -0.0421881, 0.488759}, {-0.0970703, 0, 0.4795}}],
+    Polygon3DBox[{{-0.175244, -0.0421881, 0.559671}, {-0.158594, -0.0562508, 
+    0.576141}, {-0.0885742, -0.0562508, 0.509128}, {-0.0944153, -0.0421881, 
+    0.488759}}], 
+   Polygon3DBox[{{-0.158594, -0.0562508, 0.576141}, {-0.141943, -0.0421881, 
+    0.592611}, {-0.0827332, -0.0421881, 0.529498}, {-0.0885742, -0.0562508, 
+    0.509128}}], 
+   Polygon3DBox[{{-0.141943, -0.0421881, 
+     0.592611}, {-0.134375, 0, 0.600098}, {-0.0800781, 0, 
+      0.538757}, {-0.0827332, -0.0421881, 0.529498}}], 
+   Polygon3DBox[{{-0.0970703, 0, 0.4795}, {-0.0944153, -0.0421881, 
+     0.488759}, {0.0210938, -0.0421881, 0.424797}, {0.025, 0, 0.413086}}], 
+   Polygon3DBox[{{-0.0944153, -0.0421881, 0.488759}, {-0.0885742, -0.0562508, 
+    0.509128}, {0.0125, -0.0562508, 0.450561}, {0.0210938, -0.0421881, 
+    0.424797}}], 
+   Polygon3DBox[{{-0.0885742, -0.0562508, 0.509128}, {-0.0827332, -0.0421881, 
+    0.529498}, {0.00390625, -0.0421881, 0.476326}, {0.0125, -0.0562508, 
+    0.450561}}], 
+   Polygon3DBox[{{-0.0827332, -0.0421881, 
+     0.529498}, {-0.0800781, 0, 0.538757}, {0, 0, 0.488037}, {
+     0.00390625, -0.0421881, 0.476326}}], 
+   Polygon3DBox[{{0.925, 0, 0.618896}, {0.925, 0.0928131, 0.586738}, {1.05408,
+      0.0838042, 0.622637}, {1.04492, 0, 0.646503}}], 
+   Polygon3DBox[{{0.925, 0.0928131, 0.586738}, {0.925, 0.123751, 0.515991}, {
+    1.07422, 0.111739, 0.570131}, {1.05408, 0.0838042, 0.622637}}], 
+   Polygon3DBox[{{0.925, 0.123751, 0.515991}, {0.925, 0.0928131, 0.445244}, {
+    1.09436, 0.0838042, 0.517625}, {1.07422, 0.111739, 0.570131}}], 
+   Polygon3DBox[{{0.925, 0.0928131, 0.445244}, {0.925, 0, 0.413086}, {
+     1.10352, 0, 0.493759}, {1.09436, 0.0838042, 0.517625}}], 
+   Polygon3DBox[{{1.04492, 0, 0.646503}, {1.05408, 0.0838042, 0.622637}, {
+     1.10859, 0.0639847, 0.698941}, {1.09687, 0, 0.71286}}], 
+   Polygon3DBox[{{1.05408, 0.0838042, 0.622637}, {1.07422, 0.111739, 
+    0.570131}, {1.13437, 0.0853129, 0.66832}, {1.10859, 0.0639847, 
+    0.698941}}], 
+   Polygon3DBox[{{1.07422, 0.111739, 0.570131}, {1.09436, 0.0838042, 
+    0.517625}, {1.16016, 0.0639847, 0.637698}, {1.13437, 0.0853129, 
+    0.66832}}], 
+   Polygon3DBox[{{1.09436, 0.0838042, 0.517625}, {1.10352, 0, 0.493759}, {
+     1.17188, 0, 0.623779}, {1.16016, 0.0639847, 0.637698}}], 
+   Polygon3DBox[{{1.09687, 0, 0.71286}, {1.10859, 0.0639847, 0.698941}, {
+     1.13967, 0.0441651, 0.788218}, {1.12539, 0, 0.79327}}], 
+   Polygon3DBox[{{1.10859, 0.0639847, 0.698941}, {1.13437, 0.0853129, 
+    0.66832}, {1.17109, 0.0588868, 0.777105}, {1.13967, 0.0441651, 
+    0.788218}}], 
+   Polygon3DBox[{{1.13437, 0.0853129, 0.66832}, {1.16016, 0.0639847, 
+    0.637698}, {1.20251, 0.0441651, 0.765992}, {1.17109, 0.0588868, 
+    0.777105}}], 
+   Polygon3DBox[{{1.16016, 0.0639847, 0.637698}, {1.17188, 0, 0.623779}, {
+     1.2168, 0, 0.76094}, {1.20251, 0.0441651, 0.765992}}], 
+   Polygon3DBox[{{1.12539, 0, 0.79327}, {1.13967, 0.0441651, 0.788218}, {
+     1.19844, 0.0351562, 0.863037}, {1.175, 0, 0.863037}}], 
+   Polygon3DBox[{{1.13967, 0.0441651, 0.788218}, {1.17109, 0.0588868, 
+    0.777105}, {1.25, 0.046875, 0.863037}, {1.19844, 0.0351562, 0.863037}}], 
+   Polygon3DBox[{{1.17109, 0.0588868, 0.777105}, {1.20251, 0.0441651, 
+    0.765992}, {1.30156, 0.0351562, 0.863037}, {1.25, 0.046875, 0.863037}}], 
+   Polygon3DBox[{{1.20251, 0.0441651, 0.765992}, {1.2168, 0, 0.76094}, {
+     1.325, 0, 0.863037}, {1.30156, 0.0351562, 0.863037}}], 
+   Polygon3DBox[{{0.925, 0, 0.413086}, {0.925, -0.0928131, 0.445244}, {
+     1.09436, -0.0838042, 0.517625}, {1.10352, 0, 0.493759}}], 
+   Polygon3DBox[{{0.925, -0.0928131, 0.445244}, {0.925, -0.123751, 
+    0.515991}, {1.07422, -0.111739, 0.570131}, {1.09436, -0.0838042, 
+    0.517625}}], 
+   Polygon3DBox[{{0.925, -0.123751, 0.515991}, {0.925, -0.0928131, 
+    0.586738}, {1.05408, -0.0838042, 0.622637}, {1.07422, -0.111739, 
+    0.570131}}], 
+   Polygon3DBox[{{0.925, -0.0928131, 0.586738}, {0.925, 0, 0.618896}, {
+     1.04492, 0, 0.646503}, {1.05408, -0.0838042, 0.622637}}], 
+   Polygon3DBox[{{1.10352, 0, 0.493759}, {1.09436, -0.0838042, 0.517625}, {
+     1.16016, -0.0639847, 0.637698}, {1.17188, 0, 0.623779}}], 
+   Polygon3DBox[{{1.09436, -0.0838042, 0.517625}, {1.07422, -0.111739, 
+    0.570131}, {1.13437, -0.0853129, 0.66832}, {1.16016, -0.0639847, 
+    0.637698}}], 
+   Polygon3DBox[{{1.07422, -0.111739, 0.570131}, {1.05408, -0.0838042, 
+    0.622637}, {1.10859, -0.0639847, 0.698941}, {1.13437, -0.0853129, 
+    0.66832}}], 
+   Polygon3DBox[{{1.05408, -0.0838042, 0.622637}, {1.04492, 0, 0.646503}, {
+     1.09687, 0, 0.71286}, {1.10859, -0.0639847, 0.698941}}], 
+   Polygon3DBox[{{1.17188, 0, 0.623779}, {1.16016, -0.0639847, 0.637698}, {
+     1.20251, -0.0441651, 0.765992}, {1.2168, 0, 0.76094}}], 
+   Polygon3DBox[{{1.16016, -0.0639847, 0.637698}, {1.13437, -0.0853129, 
+    0.66832}, {1.17109, -0.0588868, 0.777105}, {1.20251, -0.0441651, 
+    0.765992}}], 
+   Polygon3DBox[{{1.13437, -0.0853129, 0.66832}, {1.10859, -0.0639847, 
+    0.698941}, {1.13967, -0.0441651, 0.788218}, {1.17109, -0.0588868, 
+    0.777105}}], 
+   Polygon3DBox[{{1.10859, -0.0639847, 0.698941}, {1.09687, 0, 0.71286}, {
+     1.12539, 0, 0.79327}, {1.13967, -0.0441651, 0.788218}}], 
+   Polygon3DBox[{{1.2168, 0, 0.76094}, {1.20251, -0.0441651, 0.765992}, {
+     1.30156, -0.0351562, 0.863037}, {1.325, 0, 0.863037}}], 
+   Polygon3DBox[{{1.20251, -0.0441651, 0.765992}, {1.17109, -0.0588868, 
+    0.777105}, {1.25, -0.046875, 0.863037}, {1.30156, -0.0351562, 0.863037}}],
+    Polygon3DBox[{{1.17109, -0.0588868, 0.777105}, {1.13967, -0.0441651, 
+    0.788218}, {1.19844, -0.0351562, 0.863037}, {1.25, -0.046875, 0.863037}}],
+    Polygon3DBox[{{1.13967, -0.0441651, 0.788218}, {1.12539, 0, 0.79327}, {
+     1.175, 0, 0.863037}, {1.19844, -0.0351562, 0.863037}}], 
+   Polygon3DBox[{{1.175, 0, 0.863037}, {1.19844, 0.0351562, 0.863037}, {
+     1.21807, 0.032959, 0.873741}, {1.19297, 0, 0.8732}}], 
+   Polygon3DBox[{{1.19844, 0.0351562, 0.863037}, {1.25, 0.046875, 0.863037}, {
+    1.27329, 0.0439453, 0.874933}, {1.21807, 0.032959, 0.873741}}], 
+   Polygon3DBox[{{1.25, 0.046875, 0.863037}, {1.30156, 0.0351562, 0.863037}, {
+    1.32851, 0.032959, 0.876125}, {1.27329, 0.0439453, 0.874933}}], 
+   Polygon3DBox[{{1.30156, 0.0351562, 0.863037}, {1.325, 0, 0.863037}, {
+     1.35361, 0, 0.876667}, {1.32851, 0.032959, 0.876125}}], 
+   Polygon3DBox[{{1.19297, 0, 0.8732}, {1.21807, 0.032959, 0.873741}, {
+     1.22981, 0.028125, 0.87746}, {1.20625, 0, 0.876587}}], 
+   Polygon3DBox[{{1.21807, 0.032959, 0.873741}, {1.27329, 0.0439453, 
+    0.874933}, {1.28164, 0.0375, 0.879379}, {1.22981, 0.028125, 0.87746}}], 
+   Polygon3DBox[{{1.27329, 0.0439453, 0.874933}, {1.32851, 0.032959, 
+    0.876125}, {1.33347, 0.028125, 0.881299}, {1.28164, 0.0375, 0.879379}}], 
+   Polygon3DBox[{{1.32851, 0.032959, 0.876125}, {1.35361, 0, 0.876667}, {
+     1.35703, 0, 0.882171}, {1.33347, 0.028125, 0.881299}}], 
+   Polygon3DBox[{{1.20625, 0, 0.876587}, {1.22981, 0.028125, 0.87746}, {
+     1.23016, 0.023291, 0.873967}, {1.21016, 0, 0.8732}}], 
+   Polygon3DBox[{{1.22981, 0.028125, 0.87746}, {1.28164, 0.0375, 0.879379}, {
+    1.27417, 0.0310547, 0.875654}, {1.23016, 0.023291, 0.873967}}], 
+   Polygon3DBox[{{1.28164, 0.0375, 0.879379}, {1.33347, 0.028125, 0.881299}, {
+    1.31818, 0.023291, 0.877342}, {1.27417, 0.0310547, 0.875654}}], 
+   Polygon3DBox[{{1.33347, 0.028125, 0.881299}, {1.35703, 0, 0.882171}, {
+     1.33818, 0, 0.878109}, {1.31818, 0.023291, 0.877342}}], 
+   Polygon3DBox[{{1.21016, 0, 0.8732}, {1.23016, 0.023291, 0.873967}, {
+     1.21563, 0.0210938, 0.863037}, {1.2, 0, 0.863037}}], 
+   Polygon3DBox[{{1.23016, 0.023291, 0.873967}, {1.27417, 0.0310547, 
+    0.875654}, {1.25, 0.028125, 0.863037}, {1.21563, 0.0210938, 0.863037}}], 
+   Polygon3DBox[{{1.27417, 0.0310547, 0.875654}, {1.31818, 0.023291, 
+    0.877342}, {1.28437, 0.0210938, 0.863037}, {1.25, 0.028125, 0.863037}}], 
+   Polygon3DBox[{{1.31818, 0.023291, 0.877342}, {1.33818, 0, 0.878109}, {
+     1.3, 0, 0.863037}, {1.28437, 0.0210938, 0.863037}}], 
+   Polygon3DBox[{{1.325, 0, 0.863037}, {1.30156, -0.0351562, 0.863037}, {
+     1.32851, -0.032959, 0.876125}, {1.35361, 0, 0.876667}}], 
+   Polygon3DBox[{{1.30156, -0.0351562, 0.863037}, {1.25, -0.046875, 
+    0.863037}, {1.27329, -0.0439453, 0.874933}, {1.32851, -0.032959, 
+    0.876125}}], 
+   Polygon3DBox[{{1.25, -0.046875, 0.863037}, {1.19844, -0.0351562, 
+    0.863037}, {1.21807, -0.032959, 0.873741}, {1.27329, -0.0439453, 
+    0.874933}}], 
+   Polygon3DBox[{{1.19844, -0.0351562, 0.863037}, {1.175, 0, 0.863037}, {
+     1.19297, 0, 0.8732}, {1.21807, -0.032959, 0.873741}}], 
+   Polygon3DBox[{{1.35361, 0, 0.876667}, {1.32851, -0.032959, 0.876125}, {
+     1.33347, -0.028125, 0.881299}, {1.35703, 0, 0.882171}}], 
+   Polygon3DBox[{{1.32851, -0.032959, 0.876125}, {1.27329, -0.0439453, 
+    0.874933}, {1.28164, -0.0375, 0.879379}, {1.33347, -0.028125, 0.881299}}],
+    Polygon3DBox[{{1.27329, -0.0439453, 0.874933}, {1.21807, -0.032959, 
+    0.873741}, {1.22981, -0.028125, 0.87746}, {1.28164, -0.0375, 0.879379}}], 
+   Polygon3DBox[{{1.21807, -0.032959, 0.873741}, {1.19297, 0, 0.8732}, {
+     1.20625, 0, 0.876587}, {1.22981, -0.028125, 0.87746}}], 
+   Polygon3DBox[{{1.35703, 0, 0.882171}, {1.33347, -0.028125, 0.881299}, {
+     1.31818, -0.023291, 0.877342}, {1.33818, 0, 0.878109}}], 
+   Polygon3DBox[{{1.33347, -0.028125, 0.881299}, {1.28164, -0.0375, 
+    0.879379}, {1.27417, -0.0310547, 0.875654}, {1.31818, -0.023291, 
+    0.877342}}], 
+   Polygon3DBox[{{1.28164, -0.0375, 0.879379}, {1.22981, -0.028125, 
+    0.87746}, {1.23016, -0.023291, 0.873967}, {1.27417, -0.0310547, 
+    0.875654}}], 
+   Polygon3DBox[{{1.22981, -0.028125, 0.87746}, {1.20625, 0, 0.876587}, {
+     1.21016, 0, 0.8732}, {1.23016, -0.023291, 0.873967}}], 
+   Polygon3DBox[{{1.33818, 0, 0.878109}, {1.31818, -0.023291, 0.877342}, {
+     1.28437, -0.0210938, 0.863037}, {1.3, 0, 0.863037}}], 
+   Polygon3DBox[{{1.31818, -0.023291, 0.877342}, {1.27417, -0.0310547, 
+    0.875654}, {1.25, -0.028125, 0.863037}, {1.28437, -0.0210938, 0.863037}}],
+    Polygon3DBox[{{1.27417, -0.0310547, 0.875654}, {1.23016, -0.023291, 
+    0.873967}, {1.21563, -0.0210938, 0.863037}, {1.25, -0.028125, 0.863037}}],
+    Polygon3DBox[{{1.23016, -0.023291, 0.873967}, {1.21016, 0, 0.8732}, {
+     1.2, 0, 0.863037}, {1.21563, -0.0210938, 0.863037}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.578586, 0.0335127, 1.03776}, {
+     0.585156, 0, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.56054, 0.0605401, 1.03776}, {0.578586, 
+     0.0335127, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.533513, 0.0785866, 1.03776}, {0.56054, 
+     0.0605401, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.5, 0.0851567, 1.03776}, {0.533513, 
+     0.0785866, 1.03776}}], 
+   Polygon3DBox[{{0.585156, 0, 1.03776}, {0.578586, 0.0335127, 1.03776}, {
+     0.574979, 0.0319696, 1.00793}, {0.58125, 0, 1.00793}}], 
+   Polygon3DBox[{{0.578586, 0.0335127, 1.03776}, {0.56054, 0.0605401, 
+    1.03776}, {0.557758, 0.0577578, 1.00793}, {0.574979, 0.0319696, 
+    1.00793}}], 
+   Polygon3DBox[{{0.56054, 0.0605401, 1.03776}, {0.533513, 0.0785866, 
+    1.03776}, {0.53197, 0.0749796, 1.00793}, {0.557758, 0.0577578, 1.00793}}],
+    Polygon3DBox[{{0.533513, 0.0785866, 1.03776}, {0.5, 0.0851567, 1.03776}, {
+    0.5, 0.0812503, 1.00793}, {0.53197, 0.0749796, 1.00793}}], 
+   Polygon3DBox[{{0.58125, 0, 1.00793}, {0.574979, 0.0319696, 1.00793}, {
+     0.545414, 0.0193479, 0.971153}, {0.549219, 0, 0.971153}}], 
+   Polygon3DBox[{{0.574979, 0.0319696, 1.00793}, {0.557758, 0.0577578, 
+    1.00793}, {0.534972, 0.0349715, 0.971153}, {0.545414, 0.0193479, 
+    0.971153}}], 
+   Polygon3DBox[{{0.557758, 0.0577578, 1.00793}, {0.53197, 0.0749796, 
+    1.00793}, {0.519348, 0.0454139, 0.971153}, {0.534972, 0.0349715, 
+    0.971153}}], 
+   Polygon3DBox[{{0.53197, 0.0749796, 1.00793}, {0.5, 0.0812503, 1.00793}, {
+    0.5, 0.0492185, 0.971153}, {0.519348, 0.0454139, 0.971153}}], 
+   Polygon3DBox[{{0.549219, 0, 0.971153}, {0.545414, 0.0193479, 0.971153}, {
+     0.546125, 0.0196248, 0.937988}, {0.55, 0, 0.937988}}], 
+   Polygon3DBox[{{0.545414, 0.0193479, 0.971153}, {0.534972, 0.0349715, 
+    0.971153}, {0.5355, 0.0354995, 0.937988}, {0.546125, 0.0196248, 
+    0.937988}}], 
+   Polygon3DBox[{{0.534972, 0.0349715, 0.971153}, {0.519348, 0.0454139, 
+    0.971153}, {0.519625, 0.0461242, 0.937988}, {0.5355, 0.0354995, 
+    0.937988}}], 
+   Polygon3DBox[{{0.519348, 0.0454139, 0.971153}, {0.5, 0.0492185, 
+    0.971153}, {0.5, 0.049999, 0.937988}, {0.519625, 0.0461242, 0.937988}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.466487, 0.0785866, 1.03776}, {0.5, 
+     0.0851567, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.43946, 0.0605401, 1.03776}, {0.466487, 
+     0.0785866, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.421414, 0.0335127, 1.03776}, {0.43946, 
+     0.0605401, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.414844, 0, 1.03776}, {0.421414, 
+     0.0335127, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0.0851567, 1.03776}, {0.466487, 0.0785866, 1.03776}, {
+    0.46803, 0.0749796, 1.00793}, {0.5, 0.0812503, 1.00793}}], 
+   Polygon3DBox[{{0.466487, 0.0785866, 1.03776}, {0.43946, 0.0605401, 
+    1.03776}, {0.442242, 0.0577578, 1.00793}, {0.46803, 0.0749796, 1.00793}}],
+    Polygon3DBox[{{0.43946, 0.0605401, 1.03776}, {0.421414, 0.0335127, 
+    1.03776}, {0.425021, 0.0319696, 1.00793}, {0.442242, 0.0577578, 
+    1.00793}}], 
+   Polygon3DBox[{{0.421414, 0.0335127, 1.03776}, {0.414844, 0, 1.03776}, {
+     0.41875, 0, 1.00793}, {0.425021, 0.0319696, 1.00793}}], 
+   Polygon3DBox[{{0.5, 0.0812503, 1.00793}, {0.46803, 0.0749796, 1.00793}, {
+    0.480652, 0.0454139, 0.971153}, {0.5, 0.0492185, 0.971153}}], 
+   Polygon3DBox[{{0.46803, 0.0749796, 1.00793}, {0.442242, 0.0577578, 
+    1.00793}, {0.465028, 0.0349715, 0.971153}, {0.480652, 0.0454139, 
+    0.971153}}], 
+   Polygon3DBox[{{0.442242, 0.0577578, 1.00793}, {0.425021, 0.0319696, 
+    1.00793}, {0.454586, 0.0193479, 0.971153}, {0.465028, 0.0349715, 
+    0.971153}}], 
+   Polygon3DBox[{{0.425021, 0.0319696, 1.00793}, {0.41875, 0, 1.00793}, {
+     0.450781, 0, 0.971153}, {0.454586, 0.0193479, 0.971153}}], 
+   Polygon3DBox[{{0.5, 0.0492185, 0.971153}, {0.480652, 0.0454139, 
+    0.971153}, {0.480375, 0.0461242, 0.937988}, {0.5, 0.049999, 0.937988}}], 
+   Polygon3DBox[{{0.480652, 0.0454139, 0.971153}, {0.465028, 0.0349715, 
+    0.971153}, {0.4645, 0.0354995, 0.937988}, {0.480375, 0.0461242, 
+    0.937988}}], 
+   Polygon3DBox[{{0.465028, 0.0349715, 0.971153}, {0.454586, 0.0193479, 
+    0.971153}, {0.453875, 0.0196248, 0.937988}, {0.4645, 0.0354995, 
+    0.937988}}], 
+   Polygon3DBox[{{0.454586, 0.0193479, 0.971153}, {0.450781, 0, 0.971153}, {
+     0.45, 0, 0.937988}, {0.453875, 0.0196248, 0.937988}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.421414, -0.0335127, 1.03776}, {
+     0.414844, 0, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.43946, -0.0605401, 1.03776}, {
+     0.421414, -0.0335127, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.466487, -0.0785866, 1.03776}, {
+     0.43946, -0.0605401, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.5, -0.0851567, 1.03776}, {
+     0.466487, -0.0785866, 1.03776}}], 
+   Polygon3DBox[{{0.414844, 0, 1.03776}, {0.421414, -0.0335127, 1.03776}, {
+     0.425021, -0.0319696, 1.00793}, {0.41875, 0, 1.00793}}], 
+   Polygon3DBox[{{0.421414, -0.0335127, 1.03776}, {0.43946, -0.0605401, 
+    1.03776}, {0.442242, -0.0577578, 1.00793}, {0.425021, -0.0319696, 
+    1.00793}}], 
+   Polygon3DBox[{{0.43946, -0.0605401, 1.03776}, {0.466487, -0.0785866, 
+    1.03776}, {0.46803, -0.0749796, 1.00793}, {0.442242, -0.0577578, 
+    1.00793}}], 
+   Polygon3DBox[{{0.466487, -0.0785866, 1.03776}, {0.5, -0.0851567, 
+    1.03776}, {0.5, -0.0812503, 1.00793}, {0.46803, -0.0749796, 1.00793}}], 
+   Polygon3DBox[{{0.41875, 0, 1.00793}, {0.425021, -0.0319696, 1.00793}, {
+     0.454586, -0.0193479, 0.971153}, {0.450781, 0, 0.971153}}], 
+   Polygon3DBox[{{0.425021, -0.0319696, 1.00793}, {0.442242, -0.0577578, 
+    1.00793}, {0.465028, -0.0349715, 0.971153}, {0.454586, -0.0193479, 
+    0.971153}}], 
+   Polygon3DBox[{{0.442242, -0.0577578, 1.00793}, {0.46803, -0.0749796, 
+    1.00793}, {0.480652, -0.0454139, 0.971153}, {0.465028, -0.0349715, 
+    0.971153}}], 
+   Polygon3DBox[{{0.46803, -0.0749796, 1.00793}, {0.5, -0.0812503, 1.00793}, {
+    0.5, -0.0492185, 0.971153}, {0.480652, -0.0454139, 0.971153}}], 
+   Polygon3DBox[{{0.450781, 0, 0.971153}, {0.454586, -0.0193479, 0.971153}, {
+     0.453875, -0.0196248, 0.937988}, {0.45, 0, 0.937988}}], 
+   Polygon3DBox[{{0.454586, -0.0193479, 0.971153}, {0.465028, -0.0349715, 
+    0.971153}, {0.4645, -0.0354995, 0.937988}, {0.453875, -0.0196248, 
+    0.937988}}], 
+   Polygon3DBox[{{0.465028, -0.0349715, 0.971153}, {0.480652, -0.0454139, 
+    0.971153}, {0.480375, -0.0461242, 0.937988}, {0.4645, -0.0354995, 
+    0.937988}}], 
+   Polygon3DBox[{{0.480652, -0.0454139, 0.971153}, {0.5, -0.0492185, 
+    0.971153}, {0.5, -0.049999, 0.937988}, {0.480375, -0.0461242, 0.937988}}],
+    Polygon3DBox[{{0.5, 0, 1.05005}, {0.533513, -0.0785866, 1.03776}, {
+     0.5, -0.0851567, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.56054, -0.0605401, 1.03776}, {
+     0.533513, -0.0785866, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.578586, -0.0335127, 1.03776}, {
+     0.56054, -0.0605401, 1.03776}}], 
+   Polygon3DBox[{{0.5, 0, 1.05005}, {0.585156, 0, 1.03776}, {
+     0.578586, -0.0335127, 1.03776}}], 
+   Polygon3DBox[{{0.5, -0.0851567, 1.03776}, {0.533513, -0.0785866, 
+    1.03776}, {0.53197, -0.0749796, 1.00793}, {0.5, -0.0812503, 1.00793}}], 
+   Polygon3DBox[{{0.533513, -0.0785866, 1.03776}, {0.56054, -0.0605401, 
+    1.03776}, {0.557758, -0.0577578, 1.00793}, {0.53197, -0.0749796, 
+    1.00793}}], 
+   Polygon3DBox[{{0.56054, -0.0605401, 1.03776}, {0.578586, -0.0335127, 
+    1.03776}, {0.574979, -0.0319696, 1.00793}, {0.557758, -0.0577578, 
+    1.00793}}], 
+   Polygon3DBox[{{0.578586, -0.0335127, 1.03776}, {0.585156, 0, 1.03776}, {
+     0.58125, 0, 1.00793}, {0.574979, -0.0319696, 1.00793}}], 
+   Polygon3DBox[{{0.5, -0.0812503, 1.00793}, {0.53197, -0.0749796, 1.00793}, {
+    0.519348, -0.0454139, 0.971153}, {0.5, -0.0492185, 0.971153}}], 
+   Polygon3DBox[{{0.53197, -0.0749796, 1.00793}, {0.557758, -0.0577578, 
+    1.00793}, {0.534972, -0.0349715, 0.971153}, {0.519348, -0.0454139, 
+    0.971153}}], 
+   Polygon3DBox[{{0.557758, -0.0577578, 1.00793}, {0.574979, -0.0319696, 
+    1.00793}, {0.545414, -0.0193479, 0.971153}, {0.534972, -0.0349715, 
+    0.971153}}], 
+   Polygon3DBox[{{0.574979, -0.0319696, 1.00793}, {0.58125, 0, 1.00793}, {
+     0.549219, 0, 0.971153}, {0.545414, -0.0193479, 0.971153}}], 
+   Polygon3DBox[{{0.5, -0.0492185, 0.971153}, {0.519348, -0.0454139, 
+    0.971153}, {0.519625, -0.0461242, 0.937988}, {0.5, -0.049999, 0.937988}}],
+    Polygon3DBox[{{0.519348, -0.0454139, 0.971153}, {0.534972, -0.0349715, 
+    0.971153}, {0.5355, -0.0354995, 0.937988}, {0.519625, -0.0461242, 
+    0.937988}}], 
+   Polygon3DBox[{{0.534972, -0.0349715, 0.971153}, {0.545414, -0.0193479, 
+    0.971153}, {0.546125, -0.0196248, 0.937988}, {0.5355, -0.0354995, 
+    0.937988}}], 
+   Polygon3DBox[{{0.545414, -0.0193479, 0.971153}, {0.549219, 0, 0.971153}, {
+     0.55, 0, 0.937988}, {0.546125, -0.0196248, 0.937988}}], 
+   Polygon3DBox[{{0.55, 0, 0.937988}, {0.546125, 0.0196248, 0.937988}, {
+     0.605223, 0.0447694, 0.915394}, {0.614062, 0, 0.915394}}], 
+   Polygon3DBox[{{0.546125, 0.0196248, 0.937988}, {0.5355, 0.0354995, 
+    0.937988}, {0.580984, 0.0809842, 0.915394}, {0.605223, 0.0447694, 
+    0.915394}}], 
+   Polygon3DBox[{{0.5355, 0.0354995, 0.937988}, {0.519625, 0.0461242, 
+    0.937988}, {0.54477, 0.105222, 0.915394}, {0.580984, 0.0809842, 
+    0.915394}}], 
+   Polygon3DBox[{{0.519625, 0.0461242, 0.937988}, {0.5, 0.049999, 0.937988}, {
+    0.5, 0.114062, 0.915394}, {0.54477, 0.105222, 0.915394}}], 
+   Polygon3DBox[{{0.614062, 0, 0.915394}, {0.605223, 0.0447694, 0.915394}, {
+     0.690266, 0.080953, 0.900055}, {0.70625, 0, 0.900055}}], 
+   Polygon3DBox[{{0.605223, 0.0447694, 0.915394}, {0.580984, 0.0809842, 
+    0.915394}, {0.646437, 0.146438, 0.900055}, {0.690266, 0.080953, 
+    0.900055}}], 
+   Polygon3DBox[{{0.580984, 0.0809842, 0.915394}, {0.54477, 0.105222, 
+    0.915394}, {0.580953, 0.190266, 0.900055}, {0.646437, 0.146438, 
+    0.900055}}], 
+   Polygon3DBox[{{0.54477, 0.105222, 0.915394}, {0.5, 0.114062, 0.915394}, {
+    0.5, 0.20625, 0.900055}, {0.580953, 0.190266, 0.900055}}], 
+   Polygon3DBox[{{0.70625, 0, 0.900055}, {0.690266, 0.080953, 0.900055}, {
+     0.76666, 0.113457, 0.884945}, {0.789062, 0, 0.884945}}], 
+   Polygon3DBox[{{0.690266, 0.080953, 0.900055}, {0.646437, 0.146438, 
+    0.900055}, {0.705234, 0.205234, 0.884945}, {0.76666, 0.113457, 
+    0.884945}}], 
+   Polygon3DBox[{{0.646437, 0.146438, 0.900055}, {0.580953, 0.190266, 
+    0.900055}, {0.613457, 0.266661, 0.884945}, {0.705234, 0.205234, 
+    0.884945}}], 
+   Polygon3DBox[{{0.580953, 0.190266, 0.900055}, {0.5, 0.20625, 0.900055}, {
+    0.5, 0.289063, 0.884945}, {0.613457, 0.266661, 0.884945}}], 
+   Polygon3DBox[{{0.789062, 0, 0.884945}, {0.76666, 0.113457, 0.884945}, {
+     0.799812, 0.127562, 0.863037}, {0.825, 0, 0.863037}}], 
+   Polygon3DBox[{{0.76666, 0.113457, 0.884945}, {0.705234, 0.205234, 
+    0.884945}, {0.73075, 0.23075, 0.863037}, {0.799812, 0.127562, 0.863037}}],
+    Polygon3DBox[{{0.705234, 0.205234, 0.884945}, {0.613457, 0.266661, 
+    0.884945}, {0.627562, 0.299813, 0.863037}, {0.73075, 0.23075, 0.863037}}],
+    Polygon3DBox[{{0.613457, 0.266661, 0.884945}, {0.5, 0.289063, 0.884945}, {
+    0.5, 0.325001, 0.863037}, {0.627562, 0.299813, 0.863037}}], 
+   Polygon3DBox[{{0.5, 0.049999, 0.937988}, {0.480375, 0.0461242, 0.937988}, {
+    0.45523, 0.105222, 0.915394}, {0.5, 0.114062, 0.915394}}], 
+   Polygon3DBox[{{0.480375, 0.0461242, 0.937988}, {0.4645, 0.0354995, 
+    0.937988}, {0.419016, 0.0809842, 0.915394}, {0.45523, 0.105222, 
+    0.915394}}], 
+   Polygon3DBox[{{0.4645, 0.0354995, 0.937988}, {0.453875, 0.0196248, 
+    0.937988}, {0.394777, 0.0447694, 0.915394}, {0.419016, 0.0809842, 
+    0.915394}}], 
+   Polygon3DBox[{{0.453875, 0.0196248, 0.937988}, {0.45, 0, 0.937988}, {
+     0.385938, 0, 0.915394}, {0.394777, 0.0447694, 0.915394}}], 
+   Polygon3DBox[{{0.5, 0.114062, 0.915394}, {0.45523, 0.105222, 0.915394}, {
+    0.419047, 0.190266, 0.900055}, {0.5, 0.20625, 0.900055}}], 
+   Polygon3DBox[{{0.45523, 0.105222, 0.915394}, {0.419016, 0.0809842, 
+    0.915394}, {0.353562, 0.146438, 0.900055}, {0.419047, 0.190266, 
+    0.900055}}], 
+   Polygon3DBox[{{0.419016, 0.0809842, 0.915394}, {0.394777, 0.0447694, 
+    0.915394}, {0.309734, 0.080953, 0.900055}, {0.353562, 0.146438, 
+    0.900055}}], 
+   Polygon3DBox[{{0.394777, 0.0447694, 0.915394}, {0.385938, 0, 0.915394}, {
+     0.29375, 0, 0.900055}, {0.309734, 0.080953, 0.900055}}], 
+   Polygon3DBox[{{0.5, 0.20625, 0.900055}, {0.419047, 0.190266, 0.900055}, {
+    0.386543, 0.266661, 0.884945}, {0.5, 0.289063, 0.884945}}], 
+   Polygon3DBox[{{0.419047, 0.190266, 0.900055}, {0.353562, 0.146438, 
+    0.900055}, {0.294766, 0.205234, 0.884945}, {0.386543, 0.266661, 
+    0.884945}}], 
+   Polygon3DBox[{{0.353562, 0.146438, 0.900055}, {0.309734, 0.080953, 
+    0.900055}, {0.23334, 0.113457, 0.884945}, {0.294766, 0.205234, 
+    0.884945}}], 
+   Polygon3DBox[{{0.309734, 0.080953, 0.900055}, {0.29375, 0, 0.900055}, {
+     0.210938, 0, 0.884945}, {0.23334, 0.113457, 0.884945}}], 
+   Polygon3DBox[{{0.5, 0.289063, 0.884945}, {0.386543, 0.266661, 0.884945}, {
+    0.372437, 0.299813, 0.863037}, {0.5, 0.325001, 0.863037}}], 
+   Polygon3DBox[{{0.386543, 0.266661, 0.884945}, {0.294766, 0.205234, 
+    0.884945}, {0.26925, 0.23075, 0.863037}, {0.372437, 0.299813, 0.863037}}],
+    Polygon3DBox[{{0.294766, 0.205234, 0.884945}, {0.23334, 0.113457, 
+    0.884945}, {0.200187, 0.127562, 0.863037}, {0.26925, 0.23075, 0.863037}}],
+    Polygon3DBox[{{0.23334, 0.113457, 0.884945}, {0.210938, 0, 0.884945}, {
+     0.175, 0, 0.863037}, {0.200187, 0.127562, 0.863037}}], 
+   Polygon3DBox[{{0.45, 0, 0.937988}, {0.453875, -0.0196248, 0.937988}, {
+     0.394777, -0.0447694, 0.915394}, {0.385938, 0, 0.915394}}], 
+   Polygon3DBox[{{0.453875, -0.0196248, 0.937988}, {0.4645, -0.0354995, 
+    0.937988}, {0.419016, -0.0809842, 0.915394}, {0.394777, -0.0447694, 
+    0.915394}}], 
+   Polygon3DBox[{{0.4645, -0.0354995, 0.937988}, {0.480375, -0.0461242, 
+    0.937988}, {0.45523, -0.105222, 0.915394}, {0.419016, -0.0809842, 
+    0.915394}}], 
+   Polygon3DBox[{{0.480375, -0.0461242, 0.937988}, {0.5, -0.049999, 
+    0.937988}, {0.5, -0.114062, 0.915394}, {0.45523, -0.105222, 0.915394}}], 
+   Polygon3DBox[{{0.385938, 0, 0.915394}, {0.394777, -0.0447694, 0.915394}, {
+     0.309734, -0.080953, 0.900055}, {0.29375, 0, 0.900055}}], 
+   Polygon3DBox[{{0.394777, -0.0447694, 0.915394}, {0.419016, -0.0809842, 
+    0.915394}, {0.353562, -0.146438, 0.900055}, {0.309734, -0.080953, 
+    0.900055}}], 
+   Polygon3DBox[{{0.419016, -0.0809842, 0.915394}, {0.45523, -0.105222, 
+    0.915394}, {0.419047, -0.190266, 0.900055}, {0.353562, -0.146438, 
+    0.900055}}], 
+   Polygon3DBox[{{0.45523, -0.105222, 0.915394}, {0.5, -0.114062, 0.915394}, {
+    0.5, -0.20625, 0.900055}, {0.419047, -0.190266, 0.900055}}], 
+   Polygon3DBox[{{0.29375, 0, 0.900055}, {0.309734, -0.080953, 0.900055}, {
+     0.23334, -0.113457, 0.884945}, {0.210938, 0, 0.884945}}], 
+   Polygon3DBox[{{0.309734, -0.080953, 0.900055}, {0.353562, -0.146438, 
+    0.900055}, {0.294766, -0.205234, 0.884945}, {0.23334, -0.113457, 
+    0.884945}}], 
+   Polygon3DBox[{{0.353562, -0.146438, 0.900055}, {0.419047, -0.190266, 
+    0.900055}, {0.386543, -0.266661, 0.884945}, {0.294766, -0.205234, 
+    0.884945}}], 
+   Polygon3DBox[{{0.419047, -0.190266, 0.900055}, {0.5, -0.20625, 0.900055}, {
+    0.5, -0.289063, 0.884945}, {0.386543, -0.266661, 0.884945}}], 
+   Polygon3DBox[{{0.210938, 0, 0.884945}, {0.23334, -0.113457, 0.884945}, {
+     0.200187, -0.127562, 0.863037}, {0.175, 0, 0.863037}}], 
+   Polygon3DBox[{{0.23334, -0.113457, 0.884945}, {0.294766, -0.205234, 
+    0.884945}, {0.26925, -0.23075, 0.863037}, {0.200187, -0.127562, 
+    0.863037}}], 
+   Polygon3DBox[{{0.294766, -0.205234, 0.884945}, {0.386543, -0.266661, 
+    0.884945}, {0.372437, -0.299813, 0.863037}, {0.26925, -0.23075, 
+    0.863037}}], 
+   Polygon3DBox[{{0.386543, -0.266661, 0.884945}, {0.5, -0.289063, 
+    0.884945}, {0.5, -0.325001, 0.863037}, {0.372437, -0.299813, 0.863037}}], 
+   Polygon3DBox[{{0.5, -0.049999, 0.937988}, {0.519625, -0.0461242, 
+    0.937988}, {0.54477, -0.105222, 0.915394}, {0.5, -0.114062, 0.915394}}], 
+   Polygon3DBox[{{0.519625, -0.0461242, 0.937988}, {0.5355, -0.0354995, 
+    0.937988}, {0.580984, -0.0809842, 0.915394}, {0.54477, -0.105222, 
+    0.915394}}], 
+   Polygon3DBox[{{0.5355, -0.0354995, 0.937988}, {0.546125, -0.0196248, 
+    0.937988}, {0.605223, -0.0447694, 0.915394}, {0.580984, -0.0809842, 
+    0.915394}}], 
+   Polygon3DBox[{{0.546125, -0.0196248, 0.937988}, {0.55, 0, 0.937988}, {
+     0.614062, 0, 0.915394}, {0.605223, -0.0447694, 0.915394}}], 
+   Polygon3DBox[{{0.5, -0.114062, 0.915394}, {0.54477, -0.105222, 0.915394}, {
+    0.580953, -0.190266, 0.900055}, {0.5, -0.20625, 0.900055}}], 
+   Polygon3DBox[{{0.54477, -0.105222, 0.915394}, {0.580984, -0.0809842, 
+    0.915394}, {0.646437, -0.146438, 0.900055}, {0.580953, -0.190266, 
+    0.900055}}], 
+   Polygon3DBox[{{0.580984, -0.0809842, 0.915394}, {0.605223, -0.0447694, 
+    0.915394}, {0.690266, -0.080953, 0.900055}, {0.646437, -0.146438, 
+    0.900055}}], 
+   Polygon3DBox[{{0.605223, -0.0447694, 0.915394}, {0.614062, 0, 0.915394}, {
+     0.70625, 0, 0.900055}, {0.690266, -0.080953, 0.900055}}], 
+   Polygon3DBox[{{0.5, -0.20625, 0.900055}, {0.580953, -0.190266, 0.900055}, {
+    0.613457, -0.266661, 0.884945}, {0.5, -0.289063, 0.884945}}], 
+   Polygon3DBox[{{0.580953, -0.190266, 0.900055}, {0.646437, -0.146438, 
+    0.900055}, {0.705234, -0.205234, 0.884945}, {0.613457, -0.266661, 
+    0.884945}}], 
+   Polygon3DBox[{{0.646437, -0.146438, 0.900055}, {0.690266, -0.080953, 
+    0.900055}, {0.76666, -0.113457, 0.884945}, {0.705234, -0.205234, 
+    0.884945}}], 
+   Polygon3DBox[{{0.690266, -0.080953, 0.900055}, {0.70625, 0, 0.900055}, {
+     0.789062, 0, 0.884945}, {0.76666, -0.113457, 0.884945}}], 
+   Polygon3DBox[{{0.5, -0.289063, 0.884945}, {0.613457, -0.266661, 
+    0.884945}, {0.627562, -0.299813, 0.863037}, {0.5, -0.325001, 0.863037}}], 
+   Polygon3DBox[{{0.613457, -0.266661, 0.884945}, {0.705234, -0.205234, 
+    0.884945}, {0.73075, -0.23075, 0.863037}, {0.627562, -0.299813, 
+    0.863037}}], 
+   Polygon3DBox[{{0.705234, -0.205234, 0.884945}, {0.76666, -0.113457, 
+    0.884945}, {0.799812, -0.127562, 0.863037}, {0.73075, -0.23075, 
+    0.863037}}], 
+   Polygon3DBox[{{0.76666, -0.113457, 0.884945}, {0.789062, 0, 0.884945}, {
+     0.825, 0, 0.863037}, {0.799812, -0.127562, 0.863037}}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"triangles3d", "//", 
+   RowBox[{
+    RowBox[{"Take", "[", 
+     RowBox[{"#", ",", "5"}], "]"}], "&"}]}], "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.85`"},
+          {"0"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.822875`"},
+          {"0.137375`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.818371`"},
+          {"0.135459`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]},
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.818371`"},
+          {"0.135459`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.845117`"},
+          {"0"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.85`"},
+          {"0"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]},
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.822875`"},
+          {"0.137375`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.7485`"},
+          {"0.2485`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.745033`"},
+          {"0.245034`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]},
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.745033`"},
+          {"0.245034`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.818371`"},
+          {"0.135459`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.822875`"},
+          {"0.137375`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]},
+     {
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.7485`"},
+          {"0.2485`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.637375`"},
+          {"0.322875`"},
+          {"0.863037`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}], 
+      RowBox[{"(", "\[NoBreak]", 
+       TagBox[GridBox[{
+          {"0.635459`"},
+          {"0.318373`"},
+          {"0.881027`"}
+         },
+         GridBoxAlignment->{
+          "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+           "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.5599999999999999]}, 
+             Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}, "RowsIndexed" -> {}}],
+        Column], "\[NoBreak]", ")"}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Flatten", "[", 
+    RowBox[{"triangles3d", ",", "1"}], "]"}], "//", 
+   RowBox[{
+    RowBox[{"Take", "[", 
+     RowBox[{"#", ",", "5"}], "]"}], "&"}]}], "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"0.85`", "0", "0.863037`"},
+     {"0.822875`", "0.137375`", "0.863037`"},
+     {"0.818371`", "0.135459`", "0.881027`"},
+     {"0.818371`", "0.135459`", "0.881027`"},
+     {"0.845117`", "0", "0.881027`"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"bb", "=", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"ts", "=", 
+        RowBox[{"Flatten", "[", 
+         RowBox[{"triangles3d", ",", "1"}], "]"}]}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"With", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"xs", "=", 
+           RowBox[{
+            RowBox[{"Pluck", "[", "1", "]"}], "/@", "ts"}]}], ",", 
+          RowBox[{"ys", "=", 
+           RowBox[{
+            RowBox[{"Pluck", "[", "2", "]"}], "/@", "ts"}]}], ",", 
+          RowBox[{"zs", "=", 
+           RowBox[{
+            RowBox[{"Pluck", "[", "3", "]"}], "/@", "ts"}]}]}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Min", "[", "xs", "]"}], ",", 
+            RowBox[{"Max", "[", "xs", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Min", "[", "ys", "]"}], ",", 
+            RowBox[{"Max", "[", "ys", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Min", "[", "zs", "]"}], ",", 
+            RowBox[{"Max", "[", "zs", "]"}]}], "}"}]}], "}"}]}], "]"}]}], 
+     "]"}]}], ")"}], "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"-", "0.25`"}], "1.35703`"},
+     {
+      RowBox[{"-", "0.5`"}], "0.5`"},
+     {"0.300049`", "1.05005`"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"center", "=", 
+    RowBox[{"Mean", "/@", "bb"}]}], ")"}], "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", 
+   TagBox[GridBox[{
+      {"0.553515`"},
+      {"0.`"},
+      {"0.6750495`"}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}},
+        "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Column], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"cameraPosition", "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", 
+   TagBox[GridBox[{
+      {"1.3`"},
+      {
+       RowBox[{"-", "2.4`"}]},
+      {"2.`"}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}},
+        "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Column], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"viewVector", "=", 
+    RowBox[{"cameraPosition", "-", "center"}]}], ")"}], "//", 
+  "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", 
+   TagBox[GridBox[{
+      {"0.7464850000000001`"},
+      {
+       RowBox[{"-", "2.4`"}]},
+      {"1.3249505`"}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}},
+        "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Column], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+ESTABLISHING THE TEAPOT COORDINATE SYSTEM\
+\>", "Subsection"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CoPluck", "[", "i_Integer", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"list", "\[Function]", "\[IndentingNewLine]", 
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"L", "=", 
+       RowBox[{"Length", "@", "list"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"With", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"indices", "=", 
+         RowBox[{"Select", "[", 
+          RowBox[{
+           RowBox[{"Range", "[", "L", "]"}], ",", 
+           RowBox[{
+            RowBox[{"#", "=!=", "i"}], "&"}]}], "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{"list", ",", "#"}], "]"}], "&"}], "/@", "indices"}]}], 
+      "]"}]}], "]"}]}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RemoveDimension", "[", 
+   RowBox[{"faces_", ",", "dimNum_"}], "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"face", "\[Function]", 
+     RowBox[{
+      RowBox[{"CoPluck", "[", "dimNum", "]"}], "/@", "face"}]}], ")"}], "/@", 
+   "faces"}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GraphicsGrid", "[", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Graphics", "[", 
+       RowBox[{
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{"Gray", ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "1"}], "}"}]}], "}"}], "]"}], ",", 
+          RowBox[{"Disk", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}], ",", "0.25"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "Pink", ",", 
+          RowBox[{"Opacity", "[", "0.50", "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"(*", " ", 
+           RowBox[{"the", " ", "beef"}], " ", "*)"}], " ", 
+          RowBox[{"Polygon", "/@", 
+           RowBox[{"RemoveDimension", "[", 
+            RowBox[{"faces3d", ",", "#"}], "]"}]}]}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], "&"}], "/@", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<y,z\>\"", ",", "25"}], "]"}], ",", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<x,z\>\"", ",", "25"}], "]"}], ",", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<x,y\>\"", ",", "25"}], "]"}]}], "}"}]}], "}"}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{InsetBox[
+      GraphicsBox[{
+        {GrayLevel[0.5], LineBox[{{0, 0}, {1, 0}}], LineBox[{{0, 0}, {0, 1}}],
+          DiskBox[{0, 0}, 0.25]}, 
+        {RGBColor[1, 0.5, 0.5], Opacity[0.5], EdgeForm[GrayLevel[0]], 
+         PolygonBox[{{0, 0.863037}, {0.137375, 0.863037}, {0.135459, 
+           0.881027}, {0, 0.881027}}], 
+         PolygonBox[{{0.137375, 0.863037}, {0.2485, 0.863037}, {0.245034, 
+          0.881027}, {0.135459, 0.881027}}], 
+         PolygonBox[{{0.2485, 0.863037}, {0.322875, 0.863037}, {0.318373, 
+          0.881027}, {0.245034, 0.881027}}], 
+         PolygonBox[{{0.322875, 0.863037}, {0.35, 0.863037}, {0.34512, 
+          0.881027}, {0.318373, 0.881027}}], 
+         PolygonBox[{{0, 0.881027}, {0.135459, 0.881027}, {0.137682, 
+           0.887024}, {0, 0.887024}}], 
+         PolygonBox[{{0.135459, 0.881027}, {0.245034, 0.881027}, {0.249056, 
+          0.887024}, {0.137682, 0.887024}}], 
+         PolygonBox[{{0.245034, 0.881027}, {0.318373, 0.881027}, {0.323599, 
+          0.887024}, {0.249056, 0.887024}}], 
+         PolygonBox[{{0.318373, 0.881027}, {0.34512, 0.881027}, {0.350785, 
+          0.887024}, {0.323599, 0.887024}}], 
+         PolygonBox[{{0, 0.887024}, {0.137682, 0.887024}, {0.142205, 
+           0.881027}, {0, 0.881027}}], 
+         PolygonBox[{{0.137682, 0.887024}, {0.249056, 0.887024}, {0.257238, 
+          0.881027}, {0.142205, 0.881027}}], 
+         PolygonBox[{{0.249056, 0.887024}, {0.323599, 0.887024}, {0.334229, 
+          0.881027}, {0.257238, 0.881027}}], 
+         PolygonBox[{{0.323599, 0.887024}, {0.350785, 0.887024}, {0.362308, 
+          0.881027}, {0.334229, 0.881027}}], 
+         PolygonBox[{{0, 0.881027}, {0.142205, 0.881027}, {0.147187, 
+           0.863037}, {0, 0.863037}}], 
+         PolygonBox[{{0.142205, 0.881027}, {0.257238, 0.881027}, {0.26625, 
+          0.863037}, {0.147187, 0.863037}}], 
+         PolygonBox[{{0.257238, 0.881027}, {0.334229, 0.881027}, {0.345937, 
+          0.863037}, {0.26625, 0.863037}}], 
+         PolygonBox[{{0.334229, 0.881027}, {0.362308, 0.881027}, {0.375, 
+          0.863037}, {0.345937, 0.863037}}], 
+         PolygonBox[{{0.35, 0.863037}, {0.322875, 0.863037}, {0.318373, 
+          0.881027}, {0.34512, 0.881027}}], 
+         PolygonBox[{{0.322875, 0.863037}, {0.2485, 0.863037}, {0.245034, 
+          0.881027}, {0.318373, 0.881027}}], 
+         PolygonBox[{{0.2485, 0.863037}, {0.137375, 0.863037}, {0.135459, 
+          0.881027}, {0.245034, 0.881027}}], 
+         PolygonBox[{{0.137375, 0.863037}, {0, 0.863037}, {0, 0.881027}, {
+           0.135459, 0.881027}}], 
+         PolygonBox[{{0.34512, 0.881027}, {0.318373, 0.881027}, {0.323599, 
+          0.887024}, {0.350785, 0.887024}}], 
+         PolygonBox[{{0.318373, 0.881027}, {0.245034, 0.881027}, {0.249056, 
+          0.887024}, {0.323599, 0.887024}}], 
+         PolygonBox[{{0.245034, 0.881027}, {0.135459, 0.881027}, {0.137682, 
+          0.887024}, {0.249056, 0.887024}}], 
+         PolygonBox[{{0.135459, 0.881027}, {0, 0.881027}, {0, 0.887024}, {
+           0.137682, 0.887024}}], 
+         PolygonBox[{{0.350785, 0.887024}, {0.323599, 0.887024}, {0.334229, 
+          0.881027}, {0.362308, 0.881027}}], 
+         PolygonBox[{{0.323599, 0.887024}, {0.249056, 0.887024}, {0.257238, 
+          0.881027}, {0.334229, 0.881027}}], 
+         PolygonBox[{{0.249056, 0.887024}, {0.137682, 0.887024}, {0.142205, 
+          0.881027}, {0.257238, 0.881027}}], 
+         PolygonBox[{{0.137682, 0.887024}, {0, 0.887024}, {0, 0.881027}, {
+           0.142205, 0.881027}}], 
+         PolygonBox[{{0.362308, 0.881027}, {0.334229, 0.881027}, {0.345937, 
+          0.863037}, {0.375, 0.863037}}], 
+         PolygonBox[{{0.334229, 0.881027}, {0.257238, 0.881027}, {0.26625, 
+          0.863037}, {0.345937, 0.863037}}], 
+         PolygonBox[{{0.257238, 0.881027}, {0.142205, 0.881027}, {0.147187, 
+          0.863037}, {0.26625, 0.863037}}], 
+         PolygonBox[{{0.142205, 0.881027}, {0, 0.881027}, {0, 0.863037}, {
+           0.147187, 0.863037}}], 
+         PolygonBox[{{0, 0.863037}, {-0.137375, 0.863037}, {-0.135458, 
+           0.881027}, {0, 0.881027}}], 
+         PolygonBox[{{-0.137375, 0.863037}, {-0.2485, 0.863037}, {-0.245033, 
+          0.881027}, {-0.135458, 0.881027}}], 
+         PolygonBox[{{-0.2485, 0.863037}, {-0.322875, 0.863037}, {-0.318371, 
+          0.881027}, {-0.245033, 0.881027}}], 
+         PolygonBox[{{-0.322875, 0.863037}, {-0.35, 0.863037}, {-0.345118, 
+          0.881027}, {-0.318371, 0.881027}}], 
+         PolygonBox[{{0, 0.881027}, {-0.135458, 0.881027}, {-0.137681, 
+           0.887024}, {0, 0.887024}}], 
+         PolygonBox[{{-0.135458, 0.881027}, {-0.245033, 0.881027}, {-0.249054,
+           0.887024}, {-0.137681, 0.887024}}], 
+         PolygonBox[{{-0.245033, 0.881027}, {-0.318371, 0.881027}, {-0.323595,
+           0.887024}, {-0.249054, 0.887024}}], 
+         PolygonBox[{{-0.318371, 0.881027}, {-0.345118, 0.881027}, {-0.35078, 
+          0.887024}, {-0.323595, 0.887024}}], 
+         PolygonBox[{{0, 0.887024}, {-0.137681, 0.887024}, {-0.142204, 
+           0.881027}, {0, 0.881027}}], 
+         PolygonBox[{{-0.137681, 0.887024}, {-0.249054, 0.887024}, {-0.257235,
+           0.881027}, {-0.142204, 0.881027}}], 
+         PolygonBox[{{-0.249054, 0.887024}, {-0.323595, 0.887024}, {-0.334224,
+           0.881027}, {-0.257235, 0.881027}}], 
+         PolygonBox[{{-0.323595, 0.887024}, {-0.35078, 0.887024}, {-0.362303, 
+          0.881027}, {-0.334224, 0.881027}}], 
+         PolygonBox[{{0, 0.881027}, {-0.142204, 0.881027}, {-0.147187, 
+           0.863037}, {0, 0.863037}}], 
+         PolygonBox[{{-0.142204, 0.881027}, {-0.257235, 0.881027}, {-0.26625, 
+          0.863037}, {-0.147187, 0.863037}}], 
+         PolygonBox[{{-0.257235, 0.881027}, {-0.334224, 0.881027}, {-0.345937,
+           0.863037}, {-0.26625, 0.863037}}], 
+         PolygonBox[{{-0.334224, 0.881027}, {-0.362303, 0.881027}, {-0.375, 
+          0.863037}, {-0.345937, 0.863037}}], 
+         PolygonBox[{{-0.35, 0.863037}, {-0.322875, 0.863037}, {-0.318371, 
+          0.881027}, {-0.345118, 0.881027}}], 
+         PolygonBox[{{-0.322875, 0.863037}, {-0.2485, 0.863037}, {-0.245033, 
+          0.881027}, {-0.318371, 0.881027}}], 
+         PolygonBox[{{-0.2485, 0.863037}, {-0.137375, 0.863037}, {-0.135458, 
+          0.881027}, {-0.245033, 0.881027}}], 
+         PolygonBox[{{-0.137375, 0.863037}, {0, 0.863037}, {
+           0, 0.881027}, {-0.135458, 0.881027}}], 
+         PolygonBox[{{-0.345118, 0.881027}, {-0.318371, 0.881027}, {-0.323595,
+           0.887024}, {-0.35078, 0.887024}}], 
+         PolygonBox[{{-0.318371, 0.881027}, {-0.245033, 0.881027}, {-0.249054,
+           0.887024}, {-0.323595, 0.887024}}], 
+         PolygonBox[{{-0.245033, 0.881027}, {-0.135458, 0.881027}, {-0.137681,
+           0.887024}, {-0.249054, 0.887024}}], 
+         PolygonBox[{{-0.135458, 0.881027}, {0, 0.881027}, {
+           0, 0.887024}, {-0.137681, 0.887024}}], 
+         PolygonBox[{{-0.35078, 0.887024}, {-0.323595, 0.887024}, {-0.334224, 
+          0.881027}, {-0.362303, 0.881027}}], 
+         PolygonBox[{{-0.323595, 0.887024}, {-0.249054, 0.887024}, {-0.257235,
+           0.881027}, {-0.334224, 0.881027}}], 
+         PolygonBox[{{-0.249054, 0.887024}, {-0.137681, 0.887024}, {-0.142204,
+           0.881027}, {-0.257235, 0.881027}}], 
+         PolygonBox[{{-0.137681, 0.887024}, {0, 0.887024}, {
+           0, 0.881027}, {-0.142204, 0.881027}}], 
+         PolygonBox[{{-0.362303, 0.881027}, {-0.334224, 0.881027}, {-0.345937,
+           0.863037}, {-0.375, 0.863037}}], 
+         PolygonBox[{{-0.334224, 0.881027}, {-0.257235, 0.881027}, {-0.26625, 
+          0.863037}, {-0.345937, 0.863037}}], 
+         PolygonBox[{{-0.257235, 0.881027}, {-0.142204, 0.881027}, {-0.147187,
+           0.863037}, {-0.26625, 0.863037}}], 
+         PolygonBox[{{-0.142204, 0.881027}, {0, 0.881027}, {
+           0, 0.863037}, {-0.147187, 0.863037}}], 
+         PolygonBox[{{0, 0.863037}, {0.147187, 0.863037}, {0.165203, 
+           0.764481}, {0, 0.764481}}], 
+         PolygonBox[{{0.147187, 0.863037}, {0.26625, 0.863037}, {0.298838, 
+          0.764481}, {0.165203, 0.764481}}], 
+         PolygonBox[{{0.26625, 0.863037}, {0.345937, 0.863037}, {0.388279, 
+          0.764481}, {0.298838, 0.764481}}], 
+         PolygonBox[{{0.345937, 0.863037}, {0.375, 0.863037}, {0.420898, 
+          0.764481}, {0.388279, 0.764481}}], 
+         PolygonBox[{{0, 0.764481}, {0.165203, 0.764481}, {0.180918, 
+           0.66803}, {0, 0.66803}}], 
+         PolygonBox[{{0.165203, 0.764481}, {0.298838, 0.764481}, {0.327266, 
+          0.66803}, {0.180918, 0.66803}}], 
+         PolygonBox[{{0.298838, 0.764481}, {0.388279, 0.764481}, {0.425215, 
+          0.66803}, {0.327266, 0.66803}}], 
+         PolygonBox[{{0.388279, 0.764481}, {0.420898, 0.764481}, {0.460938, 
+          0.66803}, {0.425215, 0.66803}}], 
+         PolygonBox[{{0, 0.66803}, {0.180918, 0.66803}, {0.192034, 
+           0.575333}, {0, 0.575333}}], 
+         PolygonBox[{{0.180918, 0.66803}, {0.327266, 0.66803}, {0.347373, 
+          0.575333}, {0.192034, 0.575333}}], 
+         PolygonBox[{{0.327266, 0.66803}, {0.425215, 0.66803}, {0.45134, 
+          0.575333}, {0.347373, 0.575333}}], 
+         PolygonBox[{{0.425215, 0.66803}, {0.460938, 0.66803}, {0.489258, 
+          0.575333}, {0.45134, 0.575333}}], 
+         PolygonBox[{{0, 0.575333}, {0.192034, 0.575333}, {0.19625, 
+           0.488037}, {0, 0.488037}}], 
+         PolygonBox[{{0.192034, 0.575333}, {0.347373, 0.575333}, {0.355, 
+          0.488037}, {0.19625, 0.488037}}], 
+         PolygonBox[{{0.347373, 0.575333}, {0.45134, 0.575333}, {0.46125, 
+          0.488037}, {0.355, 0.488037}}], 
+         PolygonBox[{{0.45134, 0.575333}, {0.489258, 0.575333}, {0.5, 
+          0.488037}, {0.46125, 0.488037}}], 
+         PolygonBox[{{0.375, 0.863037}, {0.345937, 0.863037}, {0.388279, 
+          0.764481}, {0.420898, 0.764481}}], 
+         PolygonBox[{{0.345937, 0.863037}, {0.26625, 0.863037}, {0.298838, 
+          0.764481}, {0.388279, 0.764481}}], 
+         PolygonBox[{{0.26625, 0.863037}, {0.147187, 0.863037}, {0.165203, 
+          0.764481}, {0.298838, 0.764481}}], 
+         PolygonBox[{{0.147187, 0.863037}, {0, 0.863037}, {0, 0.764481}, {
+           0.165203, 0.764481}}], 
+         PolygonBox[{{0.420898, 0.764481}, {0.388279, 0.764481}, {0.425215, 
+          0.66803}, {0.460938, 0.66803}}], 
+         PolygonBox[{{0.388279, 0.764481}, {0.298838, 0.764481}, {0.327266, 
+          0.66803}, {0.425215, 0.66803}}], 
+         PolygonBox[{{0.298838, 0.764481}, {0.165203, 0.764481}, {0.180918, 
+          0.66803}, {0.327266, 0.66803}}], 
+         PolygonBox[{{0.165203, 0.764481}, {0, 0.764481}, {0, 0.66803}, {
+           0.180918, 0.66803}}], 
+         PolygonBox[{{0.460938, 0.66803}, {0.425215, 0.66803}, {0.45134, 
+          0.575333}, {0.489258, 0.575333}}], 
+         PolygonBox[{{0.425215, 0.66803}, {0.327266, 0.66803}, {0.347373, 
+          0.575333}, {0.45134, 0.575333}}], 
+         PolygonBox[{{0.327266, 0.66803}, {0.180918, 0.66803}, {0.192034, 
+          0.575333}, {0.347373, 0.575333}}], 
+         PolygonBox[{{0.180918, 0.66803}, {0, 0.66803}, {0, 0.575333}, {
+           0.192034, 0.575333}}], 
+         PolygonBox[{{0.489258, 0.575333}, {0.45134, 0.575333}, {0.46125, 
+          0.488037}, {0.5, 0.488037}}], 
+         PolygonBox[{{0.45134, 0.575333}, {0.347373, 0.575333}, {0.355, 
+          0.488037}, {0.46125, 0.488037}}], 
+         PolygonBox[{{0.347373, 0.575333}, {0.192034, 0.575333}, {0.19625, 
+          0.488037}, {0.355, 0.488037}}], 
+         PolygonBox[{{0.192034, 0.575333}, {0, 0.575333}, {0, 0.488037}, {
+           0.19625, 0.488037}}], 
+         PolygonBox[{{0, 0.863037}, {-0.147187, 0.863037}, {-0.165203, 
+           0.764481}, {0, 0.764481}}], 
+         PolygonBox[{{-0.147187, 0.863037}, {-0.26625, 0.863037}, {-0.298838, 
+          0.764481}, {-0.165203, 0.764481}}], 
+         PolygonBox[{{-0.26625, 0.863037}, {-0.345937, 0.863037}, {-0.388279, 
+          0.764481}, {-0.298838, 0.764481}}], 
+         PolygonBox[{{-0.345937, 0.863037}, {-0.375, 0.863037}, {-0.420898, 
+          0.764481}, {-0.388279, 0.764481}}], 
+         PolygonBox[{{0, 0.764481}, {-0.165203, 0.764481}, {-0.180918, 
+           0.66803}, {0, 0.66803}}], 
+         PolygonBox[{{-0.165203, 0.764481}, {-0.298838, 0.764481}, {-0.327266,
+           0.66803}, {-0.180918, 0.66803}}], 
+         PolygonBox[{{-0.298838, 0.764481}, {-0.388279, 0.764481}, {-0.425215,
+           0.66803}, {-0.327266, 0.66803}}], 
+         PolygonBox[{{-0.388279, 0.764481}, {-0.420898, 0.764481}, {-0.460938,
+           0.66803}, {-0.425215, 0.66803}}], 
+         PolygonBox[{{0, 0.66803}, {-0.180918, 0.66803}, {-0.192034, 
+           0.575333}, {0, 0.575333}}], 
+         PolygonBox[{{-0.180918, 0.66803}, {-0.327266, 0.66803}, {-0.347373, 
+          0.575333}, {-0.192034, 0.575333}}], 
+         PolygonBox[{{-0.327266, 0.66803}, {-0.425215, 0.66803}, {-0.45134, 
+          0.575333}, {-0.347373, 0.575333}}], 
+         PolygonBox[{{-0.425215, 0.66803}, {-0.460938, 0.66803}, {-0.489258, 
+          0.575333}, {-0.45134, 0.575333}}], 
+         PolygonBox[{{0, 0.575333}, {-0.192034, 0.575333}, {-0.19625, 
+           0.488037}, {0, 0.488037}}], 
+         PolygonBox[{{-0.192034, 0.575333}, {-0.347373, 0.575333}, {-0.355, 
+          0.488037}, {-0.19625, 0.488037}}], 
+         PolygonBox[{{-0.347373, 0.575333}, {-0.45134, 0.575333}, {-0.46125, 
+          0.488037}, {-0.355, 0.488037}}], 
+         PolygonBox[{{-0.45134, 0.575333}, {-0.489258, 0.575333}, {-0.5, 
+          0.488037}, {-0.46125, 0.488037}}], 
+         PolygonBox[{{-0.375, 0.863037}, {-0.345937, 0.863037}, {-0.388279, 
+          0.764481}, {-0.420898, 0.764481}}], 
+         PolygonBox[{{-0.345937, 0.863037}, {-0.26625, 0.863037}, {-0.298838, 
+          0.764481}, {-0.388279, 0.764481}}], 
+         PolygonBox[{{-0.26625, 0.863037}, {-0.147187, 0.863037}, {-0.165203, 
+          0.764481}, {-0.298838, 0.764481}}], 
+         PolygonBox[{{-0.147187, 0.863037}, {0, 0.863037}, {
+           0, 0.764481}, {-0.165203, 0.764481}}], 
+         PolygonBox[{{-0.420898, 0.764481}, {-0.388279, 0.764481}, {-0.425215,
+           0.66803}, {-0.460938, 0.66803}}], 
+         PolygonBox[{{-0.388279, 0.764481}, {-0.298838, 0.764481}, {-0.327266,
+           0.66803}, {-0.425215, 0.66803}}], 
+         PolygonBox[{{-0.298838, 0.764481}, {-0.165203, 0.764481}, {-0.180918,
+           0.66803}, {-0.327266, 0.66803}}], 
+         PolygonBox[{{-0.165203, 0.764481}, {0, 0.764481}, {
+           0, 0.66803}, {-0.180918, 0.66803}}], 
+         PolygonBox[{{-0.460938, 0.66803}, {-0.425215, 0.66803}, {-0.45134, 
+          0.575333}, {-0.489258, 0.575333}}], 
+         PolygonBox[{{-0.425215, 0.66803}, {-0.327266, 0.66803}, {-0.347373, 
+          0.575333}, {-0.45134, 0.575333}}], 
+         PolygonBox[{{-0.327266, 0.66803}, {-0.180918, 0.66803}, {-0.192034, 
+          0.575333}, {-0.347373, 0.575333}}], 
+         PolygonBox[{{-0.180918, 0.66803}, {0, 0.66803}, {
+           0, 0.575333}, {-0.192034, 0.575333}}], 
+         PolygonBox[{{-0.489258, 0.575333}, {-0.45134, 0.575333}, {-0.46125, 
+          0.488037}, {-0.5, 0.488037}}], 
+         PolygonBox[{{-0.45134, 0.575333}, {-0.347373, 0.575333}, {-0.355, 
+          0.488037}, {-0.46125, 0.488037}}], 
+         PolygonBox[{{-0.347373, 0.575333}, {-0.192034, 0.575333}, {-0.19625, 
+          0.488037}, {-0.355, 0.488037}}], 
+         PolygonBox[{{-0.192034, 0.575333}, {0, 0.575333}, {
+           0, 0.488037}, {-0.19625, 0.488037}}], 
+         PolygonBox[{{0, 0.488037}, {0.19625, 0.488037}, {0.188584, 
+           0.413654}, {0, 0.413654}}], 
+         PolygonBox[{{0.19625, 0.488037}, {0.355, 0.488037}, {0.341133, 
+          0.413654}, {0.188584, 0.413654}}], 
+         PolygonBox[{{0.355, 0.488037}, {0.46125, 0.488037}, {0.443233, 
+          0.413654}, {0.341133, 0.413654}}], 
+         PolygonBox[{{0.46125, 0.488037}, {0.5, 0.488037}, {0.480469, 
+          0.413654}, {0.443233, 0.413654}}], 
+         PolygonBox[{{0, 0.413654}, {0.188584, 0.413654}, {0.171719, 
+           0.358795}, {0, 0.358795}}], 
+         PolygonBox[{{0.188584, 0.413654}, {0.341133, 0.413654}, {0.310625, 
+          0.358795}, {0.171719, 0.358795}}], 
+         PolygonBox[{{0.341133, 0.413654}, {0.443233, 0.413654}, {0.403594, 
+          0.358795}, {0.310625, 0.358795}}], 
+         PolygonBox[{{0.443233, 0.413654}, {0.480469, 0.413654}, {0.4375, 
+          0.358795}, {0.403594, 0.358795}}], 
+         PolygonBox[{{0, 0.358795}, {0.171719, 0.358795}, {0.154853, 
+           0.32156}, {0, 0.32156}}], 
+         PolygonBox[{{0.171719, 0.358795}, {0.310625, 0.358795}, {0.280117, 
+          0.32156}, {0.154853, 0.32156}}], 
+         PolygonBox[{{0.310625, 0.358795}, {0.403594, 0.358795}, {0.363955, 
+          0.32156}, {0.280117, 0.32156}}], 
+         PolygonBox[{{0.403594, 0.358795}, {0.4375, 0.358795}, {0.394531, 
+          0.32156}, {0.363955, 0.32156}}], 
+         PolygonBox[{{0, 0.32156}, {0.154853, 0.32156}, {0.147187, 
+           0.300049}, {0, 0.300049}}], 
+         PolygonBox[{{0.154853, 0.32156}, {0.280117, 0.32156}, {0.26625, 
+          0.300049}, {0.147187, 0.300049}}], 
+         PolygonBox[{{0.280117, 0.32156}, {0.363955, 0.32156}, {0.345937, 
+          0.300049}, {0.26625, 0.300049}}], 
+         PolygonBox[{{0.363955, 0.32156}, {0.394531, 0.32156}, {0.375, 
+          0.300049}, {0.345937, 0.300049}}], 
+         PolygonBox[{{0.5, 0.488037}, {0.46125, 0.488037}, {0.443233, 
+          0.413654}, {0.480469, 0.413654}}], 
+         PolygonBox[{{0.46125, 0.488037}, {0.355, 0.488037}, {0.341133, 
+          0.413654}, {0.443233, 0.413654}}], 
+         PolygonBox[{{0.355, 0.488037}, {0.19625, 0.488037}, {0.188584, 
+          0.413654}, {0.341133, 0.413654}}], 
+         PolygonBox[{{0.19625, 0.488037}, {0, 0.488037}, {0, 0.413654}, {
+           0.188584, 0.413654}}], 
+         PolygonBox[{{0.480469, 0.413654}, {0.443233, 0.413654}, {0.403594, 
+          0.358795}, {0.4375, 0.358795}}], 
+         PolygonBox[{{0.443233, 0.413654}, {0.341133, 0.413654}, {0.310625, 
+          0.358795}, {0.403594, 0.358795}}], 
+         PolygonBox[{{0.341133, 0.413654}, {0.188584, 0.413654}, {0.171719, 
+          0.358795}, {0.310625, 0.358795}}], 
+         PolygonBox[{{0.188584, 0.413654}, {0, 0.413654}, {0, 0.358795}, {
+           0.171719, 0.358795}}], 
+         PolygonBox[{{0.4375, 0.358795}, {0.403594, 0.358795}, {0.363955, 
+          0.32156}, {0.394531, 0.32156}}], 
+         PolygonBox[{{0.403594, 0.358795}, {0.310625, 0.358795}, {0.280117, 
+          0.32156}, {0.363955, 0.32156}}], 
+         PolygonBox[{{0.310625, 0.358795}, {0.171719, 0.358795}, {0.154853, 
+          0.32156}, {0.280117, 0.32156}}], 
+         PolygonBox[{{0.171719, 0.358795}, {0, 0.358795}, {0, 0.32156}, {
+           0.154853, 0.32156}}], 
+         PolygonBox[{{0.394531, 0.32156}, {0.363955, 0.32156}, {0.345937, 
+          0.300049}, {0.375, 0.300049}}], 
+         PolygonBox[{{0.363955, 0.32156}, {0.280117, 0.32156}, {0.26625, 
+          0.300049}, {0.345937, 0.300049}}], 
+         PolygonBox[{{0.280117, 0.32156}, {0.154853, 0.32156}, {0.147187, 
+          0.300049}, {0.26625, 0.300049}}], 
+         PolygonBox[{{0.154853, 0.32156}, {0, 0.32156}, {0, 0.300049}, {
+           0.147187, 0.300049}}], 
+         PolygonBox[{{0, 0.488037}, {-0.19625, 0.488037}, {-0.188584, 
+           0.413654}, {0, 0.413654}}], 
+         PolygonBox[{{-0.19625, 0.488037}, {-0.355, 0.488037}, {-0.341133, 
+          0.413654}, {-0.188584, 0.413654}}], 
+         PolygonBox[{{-0.355, 0.488037}, {-0.46125, 0.488037}, {-0.443233, 
+          0.413654}, {-0.341133, 0.413654}}], 
+         PolygonBox[{{-0.46125, 0.488037}, {-0.5, 0.488037}, {-0.480469, 
+          0.413654}, {-0.443233, 0.413654}}], 
+         PolygonBox[{{0, 0.413654}, {-0.188584, 0.413654}, {-0.171719, 
+           0.358795}, {0, 0.358795}}], 
+         PolygonBox[{{-0.188584, 0.413654}, {-0.341133, 0.413654}, {-0.310625,
+           0.358795}, {-0.171719, 0.358795}}], 
+         PolygonBox[{{-0.341133, 0.413654}, {-0.443233, 0.413654}, {-0.403594,
+           0.358795}, {-0.310625, 0.358795}}], 
+         PolygonBox[{{-0.443233, 0.413654}, {-0.480469, 0.413654}, {-0.4375, 
+          0.358795}, {-0.403594, 0.358795}}], 
+         PolygonBox[{{0, 0.358795}, {-0.171719, 0.358795}, {-0.154853, 
+           0.32156}, {0, 0.32156}}], 
+         PolygonBox[{{-0.171719, 0.358795}, {-0.310625, 0.358795}, {-0.280117,
+           0.32156}, {-0.154853, 0.32156}}], 
+         PolygonBox[{{-0.310625, 0.358795}, {-0.403594, 0.358795}, {-0.363955,
+           0.32156}, {-0.280117, 0.32156}}], 
+         PolygonBox[{{-0.403594, 0.358795}, {-0.4375, 0.358795}, {-0.394531, 
+          0.32156}, {-0.363955, 0.32156}}], 
+         PolygonBox[{{0, 0.32156}, {-0.154853, 0.32156}, {-0.147187, 
+           0.300049}, {0, 0.300049}}], 
+         PolygonBox[{{-0.154853, 0.32156}, {-0.280117, 0.32156}, {-0.26625, 
+          0.300049}, {-0.147187, 0.300049}}], 
+         PolygonBox[{{-0.280117, 0.32156}, {-0.363955, 0.32156}, {-0.345937, 
+          0.300049}, {-0.26625, 0.300049}}], 
+         PolygonBox[{{-0.363955, 0.32156}, {-0.394531, 0.32156}, {-0.375, 
+          0.300049}, {-0.345937, 0.300049}}], 
+         PolygonBox[{{-0.5, 0.488037}, {-0.46125, 0.488037}, {-0.443233, 
+          0.413654}, {-0.480469, 0.413654}}], 
+         PolygonBox[{{-0.46125, 0.488037}, {-0.355, 0.488037}, {-0.341133, 
+          0.413654}, {-0.443233, 0.413654}}], 
+         PolygonBox[{{-0.355, 0.488037}, {-0.19625, 0.488037}, {-0.188584, 
+          0.413654}, {-0.341133, 0.413654}}], 
+         PolygonBox[{{-0.19625, 0.488037}, {0, 0.488037}, {
+           0, 0.413654}, {-0.188584, 0.413654}}], 
+         PolygonBox[{{-0.480469, 0.413654}, {-0.443233, 0.413654}, {-0.403594,
+           0.358795}, {-0.4375, 0.358795}}], 
+         PolygonBox[{{-0.443233, 0.413654}, {-0.341133, 0.413654}, {-0.310625,
+           0.358795}, {-0.403594, 0.358795}}], 
+         PolygonBox[{{-0.341133, 0.413654}, {-0.188584, 0.413654}, {-0.171719,
+           0.358795}, {-0.310625, 0.358795}}], 
+         PolygonBox[{{-0.188584, 0.413654}, {0, 0.413654}, {
+           0, 0.358795}, {-0.171719, 0.358795}}], 
+         PolygonBox[{{-0.4375, 0.358795}, {-0.403594, 0.358795}, {-0.363955, 
+          0.32156}, {-0.394531, 0.32156}}], 
+         PolygonBox[{{-0.403594, 0.358795}, {-0.310625, 0.358795}, {-0.280117,
+           0.32156}, {-0.363955, 0.32156}}], 
+         PolygonBox[{{-0.310625, 0.358795}, {-0.171719, 0.358795}, {-0.154853,
+           0.32156}, {-0.280117, 0.32156}}], 
+         PolygonBox[{{-0.171719, 0.358795}, {0, 0.358795}, {
+           0, 0.32156}, {-0.154853, 0.32156}}], 
+         PolygonBox[{{-0.394531, 0.32156}, {-0.363955, 0.32156}, {-0.345937, 
+          0.300049}, {-0.375, 0.300049}}], 
+         PolygonBox[{{-0.363955, 0.32156}, {-0.280117, 0.32156}, {-0.26625, 
+          0.300049}, {-0.345937, 0.300049}}], 
+         PolygonBox[{{-0.280117, 0.32156}, {-0.154853, 0.32156}, {-0.147187, 
+          0.300049}, {-0.26625, 0.300049}}], 
+         PolygonBox[{{-0.154853, 0.32156}, {0, 0.32156}, {
+           0, 0.300049}, {-0.147187, 0.300049}}], 
+         PolygonBox[{{0, 0.769043}, {0.0421881, 0.777779}, {0.0421881, 
+           0.776765}, {0, 0.768166}}], 
+         PolygonBox[{{0.0421881, 0.777779}, {0.0562508, 0.796997}, {0.0562508,
+           0.795683}, {0.0421881, 0.776765}}], 
+         PolygonBox[{{0.0562508, 0.796997}, {0.0421881, 0.816215}, {0.0421881,
+           0.814601}, {0.0562508, 0.795683}}], 
+         PolygonBox[{{0.0421881, 0.816215}, {0, 0.824951}, {0, 0.8232}, {
+           0.0421881, 0.814601}}], 
+         PolygonBox[{{0, 0.768166}, {0.0421881, 0.776765}, {0.0421881, 
+           0.769668}, {0, 0.762024}}], 
+         PolygonBox[{{0.0421881, 0.776765}, {0.0562508, 0.795683}, {0.0562508,
+           0.786484}, {0.0421881, 0.769668}}], 
+         PolygonBox[{{0.0562508, 0.795683}, {0.0421881, 0.814601}, {0.0421881,
+           0.8033}, {0.0562508, 0.786484}}], 
+         PolygonBox[{{0.0421881, 0.814601}, {0, 0.8232}, {0, 0.810943}, {
+           0.0421881, 0.8033}}], 
+         PolygonBox[{{0, 0.762024}, {0.0421881, 0.769668}, {0.0421881, 
+           0.750404}, {0, 0.745354}}], 
+         PolygonBox[{{0.0421881, 0.769668}, {0.0562508, 0.786484}, {0.0562508,
+           0.761515}, {0.0421881, 0.750404}}], 
+         PolygonBox[{{0.0562508, 0.786484}, {0.0421881, 0.8033}, {0.0421881, 
+          0.772625}, {0.0562508, 0.761515}}], 
+         PolygonBox[{{0.0421881, 0.8033}, {0, 0.810943}, {0, 0.777676}, {
+           0.0421881, 0.772625}}], 
+         PolygonBox[{{0, 0.745354}, {0.0421881, 0.750404}, {0.0421881, 
+           0.712891}, {0, 0.712891}}], 
+         PolygonBox[{{0.0421881, 0.750404}, {0.0562508, 0.761515}, {0.0562508,
+           0.712891}, {0.0421881, 0.712891}}], 
+         PolygonBox[{{0.0562508, 0.761515}, {0.0421881, 0.772625}, {0.0421881,
+           0.712891}, {0.0562508, 0.712891}}], 
+         PolygonBox[{{0.0421881, 0.772625}, {0, 0.777676}, {0, 0.712891}, {
+           0.0421881, 0.712891}}], 
+         PolygonBox[{{0, 0.824951}, {-0.0421881, 0.816215}, {-0.0421881, 
+           0.814601}, {0, 0.8232}}], 
+         PolygonBox[{{-0.0421881, 0.816215}, {-0.0562508, 
+          0.796997}, {-0.0562508, 0.795683}, {-0.0421881, 0.814601}}], 
+         PolygonBox[{{-0.0562508, 0.796997}, {-0.0421881, 
+          0.777779}, {-0.0421881, 0.776765}, {-0.0562508, 0.795683}}], 
+         PolygonBox[{{-0.0421881, 0.777779}, {0, 0.769043}, {
+           0, 0.768166}, {-0.0421881, 0.776765}}], 
+         PolygonBox[{{0, 0.8232}, {-0.0421881, 0.814601}, {-0.0421881, 
+           0.8033}, {0, 0.810943}}], 
+         PolygonBox[{{-0.0421881, 0.814601}, {-0.0562508, 
+          0.795683}, {-0.0562508, 0.786484}, {-0.0421881, 0.8033}}], 
+         PolygonBox[{{-0.0562508, 0.795683}, {-0.0421881, 
+          0.776765}, {-0.0421881, 0.769668}, {-0.0562508, 0.786484}}], 
+         PolygonBox[{{-0.0421881, 0.776765}, {0, 0.768166}, {
+           0, 0.762024}, {-0.0421881, 0.769668}}], 
+         PolygonBox[{{0, 0.810943}, {-0.0421881, 0.8033}, {-0.0421881, 
+           0.772625}, {0, 0.777676}}], 
+         PolygonBox[{{-0.0421881, 0.8033}, {-0.0562508, 
+          0.786484}, {-0.0562508, 0.761515}, {-0.0421881, 0.772625}}], 
+         PolygonBox[{{-0.0562508, 0.786484}, {-0.0421881, 
+          0.769668}, {-0.0421881, 0.750404}, {-0.0562508, 0.761515}}], 
+         PolygonBox[{{-0.0421881, 0.769668}, {0, 0.762024}, {
+           0, 0.745354}, {-0.0421881, 0.750404}}], 
+         PolygonBox[{{0, 0.777676}, {-0.0421881, 0.772625}, {-0.0421881, 
+           0.712891}, {0, 0.712891}}], 
+         PolygonBox[{{-0.0421881, 0.772625}, {-0.0562508, 
+          0.761515}, {-0.0562508, 0.712891}, {-0.0421881, 0.712891}}], 
+         PolygonBox[{{-0.0562508, 0.761515}, {-0.0421881, 
+          0.750404}, {-0.0421881, 0.712891}, {-0.0562508, 0.712891}}], 
+         PolygonBox[{{-0.0421881, 0.750404}, {0, 0.745354}, {
+           0, 0.712891}, {-0.0421881, 0.712891}}], 
+         PolygonBox[{{0, 0.712891}, {0.0421881, 0.712891}, {0.0421881, 
+           0.656723}, {0, 0.661621}}], 
+         PolygonBox[{{0.0421881, 0.712891}, {0.0562508, 0.712891}, {0.0562508,
+           0.645947}, {0.0421881, 0.656723}}], 
+         PolygonBox[{{0.0562508, 0.712891}, {0.0421881, 0.712891}, {0.0421881,
+           0.63517}, {0.0562508, 0.645947}}], 
+         PolygonBox[{{0.0421881, 0.712891}, {0, 0.712891}, {0, 0.630272}, {
+           0.0421881, 0.63517}}], 
+         PolygonBox[{{0, 0.661621}, {0.0421881, 0.656723}, {0.0421881, 
+           0.592611}, {0, 0.600098}}], 
+         PolygonBox[{{0.0421881, 0.656723}, {0.0562508, 0.645947}, {0.0562508,
+           0.576141}, {0.0421881, 0.592611}}], 
+         PolygonBox[{{0.0562508, 0.645947}, {0.0421881, 0.63517}, {0.0421881, 
+          0.559671}, {0.0562508, 0.576141}}], 
+         PolygonBox[{{0.0421881, 0.63517}, {0, 0.630272}, {0, 0.552185}, {
+           0.0421881, 0.559671}}], 
+         PolygonBox[{{0, 0.600098}, {0.0421881, 0.592611}, {0.0421881, 
+           0.529498}, {0, 0.538757}}], 
+         PolygonBox[{{0.0421881, 0.592611}, {0.0562508, 0.576141}, {0.0562508,
+           0.509128}, {0.0421881, 0.529498}}], 
+         PolygonBox[{{0.0562508, 0.576141}, {0.0421881, 0.559671}, {0.0421881,
+           0.488759}, {0.0562508, 0.509128}}], 
+         PolygonBox[{{0.0421881, 0.559671}, {0, 0.552185}, {0, 0.4795}, {
+           0.0421881, 0.488759}}], 
+         PolygonBox[{{0, 0.538757}, {0.0421881, 0.529498}, {0.0421881, 
+           0.476326}, {0, 0.488037}}], 
+         PolygonBox[{{0.0421881, 0.529498}, {0.0562508, 0.509128}, {0.0562508,
+           0.450561}, {0.0421881, 0.476326}}], 
+         PolygonBox[{{0.0562508, 0.509128}, {0.0421881, 0.488759}, {0.0421881,
+           0.424797}, {0.0562508, 0.450561}}], 
+         PolygonBox[{{0.0421881, 0.488759}, {0, 0.4795}, {0, 0.413086}, {
+           0.0421881, 0.424797}}], 
+         PolygonBox[{{0, 0.712891}, {-0.0421881, 0.712891}, {-0.0421881, 
+           0.63517}, {0, 0.630272}}], 
+         PolygonBox[{{-0.0421881, 0.712891}, {-0.0562508, 
+          0.712891}, {-0.0562508, 0.645947}, {-0.0421881, 0.63517}}], 
+         PolygonBox[{{-0.0562508, 0.712891}, {-0.0421881, 
+          0.712891}, {-0.0421881, 0.656723}, {-0.0562508, 0.645947}}], 
+         PolygonBox[{{-0.0421881, 0.712891}, {0, 0.712891}, {
+           0, 0.661621}, {-0.0421881, 0.656723}}], 
+         PolygonBox[{{0, 0.630272}, {-0.0421881, 0.63517}, {-0.0421881, 
+           0.559671}, {0, 0.552185}}], 
+         PolygonBox[{{-0.0421881, 0.63517}, {-0.0562508, 
+          0.645947}, {-0.0562508, 0.576141}, {-0.0421881, 0.559671}}], 
+         PolygonBox[{{-0.0562508, 0.645947}, {-0.0421881, 
+          0.656723}, {-0.0421881, 0.592611}, {-0.0562508, 0.576141}}], 
+         PolygonBox[{{-0.0421881, 0.656723}, {0, 0.661621}, {
+           0, 0.600098}, {-0.0421881, 0.592611}}], 
+         PolygonBox[{{0, 0.552185}, {-0.0421881, 0.559671}, {-0.0421881, 
+           0.488759}, {0, 0.4795}}], 
+         PolygonBox[{{-0.0421881, 0.559671}, {-0.0562508, 
+          0.576141}, {-0.0562508, 0.509128}, {-0.0421881, 0.488759}}], 
+         PolygonBox[{{-0.0562508, 0.576141}, {-0.0421881, 
+          0.592611}, {-0.0421881, 0.529498}, {-0.0562508, 0.509128}}], 
+         PolygonBox[{{-0.0421881, 0.592611}, {0, 0.600098}, {
+           0, 0.538757}, {-0.0421881, 0.529498}}], 
+         PolygonBox[{{0, 0.4795}, {-0.0421881, 0.488759}, {-0.0421881, 
+           0.424797}, {0, 0.413086}}], 
+         PolygonBox[{{-0.0421881, 0.488759}, {-0.0562508, 
+          0.509128}, {-0.0562508, 0.450561}, {-0.0421881, 0.424797}}], 
+         PolygonBox[{{-0.0562508, 0.509128}, {-0.0421881, 
+          0.529498}, {-0.0421881, 0.476326}, {-0.0562508, 0.450561}}], 
+         PolygonBox[{{-0.0421881, 0.529498}, {0, 0.538757}, {
+           0, 0.488037}, {-0.0421881, 0.476326}}], 
+         PolygonBox[{{0, 0.618896}, {0.0928131, 0.586738}, {0.0838042, 
+           0.622637}, {0, 0.646503}}], 
+         PolygonBox[{{0.0928131, 0.586738}, {0.123751, 0.515991}, {0.111739, 
+          0.570131}, {0.0838042, 0.622637}}], 
+         PolygonBox[{{0.123751, 0.515991}, {0.0928131, 0.445244}, {0.0838042, 
+          0.517625}, {0.111739, 0.570131}}], 
+         PolygonBox[{{0.0928131, 0.445244}, {0, 0.413086}, {0, 0.493759}, {
+           0.0838042, 0.517625}}], 
+         PolygonBox[{{0, 0.646503}, {0.0838042, 0.622637}, {0.0639847, 
+           0.698941}, {0, 0.71286}}], 
+         PolygonBox[{{0.0838042, 0.622637}, {0.111739, 0.570131}, {0.0853129, 
+          0.66832}, {0.0639847, 0.698941}}], 
+         PolygonBox[{{0.111739, 0.570131}, {0.0838042, 0.517625}, {0.0639847, 
+          0.637698}, {0.0853129, 0.66832}}], 
+         PolygonBox[{{0.0838042, 0.517625}, {0, 0.493759}, {0, 0.623779}, {
+           0.0639847, 0.637698}}], 
+         PolygonBox[{{0, 0.71286}, {0.0639847, 0.698941}, {0.0441651, 
+           0.788218}, {0, 0.79327}}], 
+         PolygonBox[{{0.0639847, 0.698941}, {0.0853129, 0.66832}, {0.0588868, 
+          0.777105}, {0.0441651, 0.788218}}], 
+         PolygonBox[{{0.0853129, 0.66832}, {0.0639847, 0.637698}, {0.0441651, 
+          0.765992}, {0.0588868, 0.777105}}], 
+         PolygonBox[{{0.0639847, 0.637698}, {0, 0.623779}, {0, 0.76094}, {
+           0.0441651, 0.765992}}], 
+         PolygonBox[{{0, 0.79327}, {0.0441651, 0.788218}, {0.0351562, 
+           0.863037}, {0, 0.863037}}], 
+         PolygonBox[{{0.0441651, 0.788218}, {0.0588868, 0.777105}, {0.046875, 
+          0.863037}, {0.0351562, 0.863037}}], 
+         PolygonBox[{{0.0588868, 0.777105}, {0.0441651, 0.765992}, {0.0351562,
+           0.863037}, {0.046875, 0.863037}}], 
+         PolygonBox[{{0.0441651, 0.765992}, {0, 0.76094}, {0, 0.863037}, {
+           0.0351562, 0.863037}}], 
+         PolygonBox[{{0, 0.413086}, {-0.0928131, 0.445244}, {-0.0838042, 
+           0.517625}, {0, 0.493759}}], 
+         PolygonBox[{{-0.0928131, 0.445244}, {-0.123751, 
+          0.515991}, {-0.111739, 0.570131}, {-0.0838042, 0.517625}}], 
+         PolygonBox[{{-0.123751, 0.515991}, {-0.0928131, 
+          0.586738}, {-0.0838042, 0.622637}, {-0.111739, 0.570131}}], 
+         PolygonBox[{{-0.0928131, 0.586738}, {0, 0.618896}, {
+           0, 0.646503}, {-0.0838042, 0.622637}}], 
+         PolygonBox[{{0, 0.493759}, {-0.0838042, 0.517625}, {-0.0639847, 
+           0.637698}, {0, 0.623779}}], 
+         PolygonBox[{{-0.0838042, 0.517625}, {-0.111739, 
+          0.570131}, {-0.0853129, 0.66832}, {-0.0639847, 0.637698}}], 
+         PolygonBox[{{-0.111739, 0.570131}, {-0.0838042, 
+          0.622637}, {-0.0639847, 0.698941}, {-0.0853129, 0.66832}}], 
+         PolygonBox[{{-0.0838042, 0.622637}, {0, 0.646503}, {
+           0, 0.71286}, {-0.0639847, 0.698941}}], 
+         PolygonBox[{{0, 0.623779}, {-0.0639847, 0.637698}, {-0.0441651, 
+           0.765992}, {0, 0.76094}}], 
+         PolygonBox[{{-0.0639847, 0.637698}, {-0.0853129, 
+          0.66832}, {-0.0588868, 0.777105}, {-0.0441651, 0.765992}}], 
+         PolygonBox[{{-0.0853129, 0.66832}, {-0.0639847, 
+          0.698941}, {-0.0441651, 0.788218}, {-0.0588868, 0.777105}}], 
+         PolygonBox[{{-0.0639847, 0.698941}, {0, 0.71286}, {
+           0, 0.79327}, {-0.0441651, 0.788218}}], 
+         PolygonBox[{{0, 0.76094}, {-0.0441651, 0.765992}, {-0.0351562, 
+           0.863037}, {0, 0.863037}}], 
+         PolygonBox[{{-0.0441651, 0.765992}, {-0.0588868, 
+          0.777105}, {-0.046875, 0.863037}, {-0.0351562, 0.863037}}], 
+         PolygonBox[{{-0.0588868, 0.777105}, {-0.0441651, 
+          0.788218}, {-0.0351562, 0.863037}, {-0.046875, 0.863037}}], 
+         PolygonBox[{{-0.0441651, 0.788218}, {0, 0.79327}, {
+           0, 0.863037}, {-0.0351562, 0.863037}}], 
+         PolygonBox[{{0, 0.863037}, {0.0351562, 0.863037}, {0.032959, 
+           0.873741}, {0, 0.8732}}], 
+         PolygonBox[{{0.0351562, 0.863037}, {0.046875, 0.863037}, {0.0439453, 
+          0.874933}, {0.032959, 0.873741}}], 
+         PolygonBox[{{0.046875, 0.863037}, {0.0351562, 0.863037}, {0.032959, 
+          0.876125}, {0.0439453, 0.874933}}], 
+         PolygonBox[{{0.0351562, 0.863037}, {0, 0.863037}, {0, 0.876667}, {
+           0.032959, 0.876125}}], 
+         PolygonBox[{{0, 0.8732}, {0.032959, 0.873741}, {0.028125, 0.87746}, {
+           0, 0.876587}}], 
+         PolygonBox[{{0.032959, 0.873741}, {0.0439453, 0.874933}, {0.0375, 
+          0.879379}, {0.028125, 0.87746}}], 
+         PolygonBox[{{0.0439453, 0.874933}, {0.032959, 0.876125}, {0.028125, 
+          0.881299}, {0.0375, 0.879379}}], 
+         PolygonBox[{{0.032959, 0.876125}, {0, 0.876667}, {0, 0.882171}, {
+           0.028125, 0.881299}}], 
+         PolygonBox[{{0, 0.876587}, {0.028125, 0.87746}, {0.023291, 
+           0.873967}, {0, 0.8732}}], 
+         PolygonBox[{{0.028125, 0.87746}, {0.0375, 0.879379}, {0.0310547, 
+          0.875654}, {0.023291, 0.873967}}], 
+         PolygonBox[{{0.0375, 0.879379}, {0.028125, 0.881299}, {0.023291, 
+          0.877342}, {0.0310547, 0.875654}}], 
+         PolygonBox[{{0.028125, 0.881299}, {0, 0.882171}, {0, 0.878109}, {
+           0.023291, 0.877342}}], 
+         PolygonBox[{{0, 0.8732}, {0.023291, 0.873967}, {0.0210938, 
+           0.863037}, {0, 0.863037}}], 
+         PolygonBox[{{0.023291, 0.873967}, {0.0310547, 0.875654}, {0.028125, 
+          0.863037}, {0.0210938, 0.863037}}], 
+         PolygonBox[{{0.0310547, 0.875654}, {0.023291, 0.877342}, {0.0210938, 
+          0.863037}, {0.028125, 0.863037}}], 
+         PolygonBox[{{0.023291, 0.877342}, {0, 0.878109}, {0, 0.863037}, {
+           0.0210938, 0.863037}}], 
+         PolygonBox[{{0, 0.863037}, {-0.0351562, 0.863037}, {-0.032959, 
+           0.876125}, {0, 0.876667}}], 
+         PolygonBox[{{-0.0351562, 0.863037}, {-0.046875, 
+          0.863037}, {-0.0439453, 0.874933}, {-0.032959, 0.876125}}], 
+         PolygonBox[{{-0.046875, 0.863037}, {-0.0351562, 
+          0.863037}, {-0.032959, 0.873741}, {-0.0439453, 0.874933}}], 
+         PolygonBox[{{-0.0351562, 0.863037}, {0, 0.863037}, {
+           0, 0.8732}, {-0.032959, 0.873741}}], 
+         PolygonBox[{{0, 0.876667}, {-0.032959, 0.876125}, {-0.028125, 
+           0.881299}, {0, 0.882171}}], 
+         PolygonBox[{{-0.032959, 0.876125}, {-0.0439453, 0.874933}, {-0.0375, 
+          0.879379}, {-0.028125, 0.881299}}], 
+         PolygonBox[{{-0.0439453, 0.874933}, {-0.032959, 
+          0.873741}, {-0.028125, 0.87746}, {-0.0375, 0.879379}}], 
+         PolygonBox[{{-0.032959, 0.873741}, {0, 0.8732}, {
+           0, 0.876587}, {-0.028125, 0.87746}}], 
+         PolygonBox[{{0, 0.882171}, {-0.028125, 0.881299}, {-0.023291, 
+           0.877342}, {0, 0.878109}}], 
+         PolygonBox[{{-0.028125, 0.881299}, {-0.0375, 0.879379}, {-0.0310547, 
+          0.875654}, {-0.023291, 0.877342}}], 
+         PolygonBox[{{-0.0375, 0.879379}, {-0.028125, 0.87746}, {-0.023291, 
+          0.873967}, {-0.0310547, 0.875654}}], 
+         PolygonBox[{{-0.028125, 0.87746}, {0, 0.876587}, {
+           0, 0.8732}, {-0.023291, 0.873967}}], 
+         PolygonBox[{{0, 0.878109}, {-0.023291, 0.877342}, {-0.0210938, 
+           0.863037}, {0, 0.863037}}], 
+         PolygonBox[{{-0.023291, 0.877342}, {-0.0310547, 
+          0.875654}, {-0.028125, 0.863037}, {-0.0210938, 0.863037}}], 
+         PolygonBox[{{-0.0310547, 0.875654}, {-0.023291, 
+          0.873967}, {-0.0210938, 0.863037}, {-0.028125, 0.863037}}], 
+         PolygonBox[{{-0.023291, 0.873967}, {0, 0.8732}, {
+           0, 0.863037}, {-0.0210938, 0.863037}}], 
+         PolygonBox[{{0, 1.05005}, {0.0335127, 1.03776}, {0, 1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {0.0605401, 1.03776}, {0.0335127, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {0.0785866, 1.03776}, {0.0605401, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {0.0851567, 1.03776}, {0.0785866, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.03776}, {0.0335127, 1.03776}, {0.0319696, 
+           1.00793}, {0, 1.00793}}], 
+         PolygonBox[{{0.0335127, 1.03776}, {0.0605401, 1.03776}, {0.0577578, 
+          1.00793}, {0.0319696, 1.00793}}], 
+         PolygonBox[{{0.0605401, 1.03776}, {0.0785866, 1.03776}, {0.0749796, 
+          1.00793}, {0.0577578, 1.00793}}], 
+         PolygonBox[{{0.0785866, 1.03776}, {0.0851567, 1.03776}, {0.0812503, 
+          1.00793}, {0.0749796, 1.00793}}], 
+         PolygonBox[{{0, 1.00793}, {0.0319696, 1.00793}, {0.0193479, 
+           0.971153}, {0, 0.971153}}], 
+         PolygonBox[{{0.0319696, 1.00793}, {0.0577578, 1.00793}, {0.0349715, 
+          0.971153}, {0.0193479, 0.971153}}], 
+         PolygonBox[{{0.0577578, 1.00793}, {0.0749796, 1.00793}, {0.0454139, 
+          0.971153}, {0.0349715, 0.971153}}], 
+         PolygonBox[{{0.0749796, 1.00793}, {0.0812503, 1.00793}, {0.0492185, 
+          0.971153}, {0.0454139, 0.971153}}], 
+         PolygonBox[{{0, 0.971153}, {0.0193479, 0.971153}, {0.0196248, 
+           0.937988}, {0, 0.937988}}], 
+         PolygonBox[{{0.0193479, 0.971153}, {0.0349715, 0.971153}, {0.0354995,
+           0.937988}, {0.0196248, 0.937988}}], 
+         PolygonBox[{{0.0349715, 0.971153}, {0.0454139, 0.971153}, {0.0461242,
+           0.937988}, {0.0354995, 0.937988}}], 
+         PolygonBox[{{0.0454139, 0.971153}, {0.0492185, 0.971153}, {0.049999, 
+          0.937988}, {0.0461242, 0.937988}}], 
+         PolygonBox[{{0, 1.05005}, {0.0785866, 1.03776}, {0.0851567, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {0.0605401, 1.03776}, {0.0785866, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {0.0335127, 1.03776}, {0.0605401, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {0, 1.03776}, {0.0335127, 1.03776}}], 
+         PolygonBox[{{0.0851567, 1.03776}, {0.0785866, 1.03776}, {0.0749796, 
+          1.00793}, {0.0812503, 1.00793}}], 
+         PolygonBox[{{0.0785866, 1.03776}, {0.0605401, 1.03776}, {0.0577578, 
+          1.00793}, {0.0749796, 1.00793}}], 
+         PolygonBox[{{0.0605401, 1.03776}, {0.0335127, 1.03776}, {0.0319696, 
+          1.00793}, {0.0577578, 1.00793}}], 
+         PolygonBox[{{0.0335127, 1.03776}, {0, 1.03776}, {0, 1.00793}, {
+           0.0319696, 1.00793}}], 
+         PolygonBox[{{0.0812503, 1.00793}, {0.0749796, 1.00793}, {0.0454139, 
+          0.971153}, {0.0492185, 0.971153}}], 
+         PolygonBox[{{0.0749796, 1.00793}, {0.0577578, 1.00793}, {0.0349715, 
+          0.971153}, {0.0454139, 0.971153}}], 
+         PolygonBox[{{0.0577578, 1.00793}, {0.0319696, 1.00793}, {0.0193479, 
+          0.971153}, {0.0349715, 0.971153}}], 
+         PolygonBox[{{0.0319696, 1.00793}, {0, 1.00793}, {0, 0.971153}, {
+           0.0193479, 0.971153}}], 
+         PolygonBox[{{0.0492185, 0.971153}, {0.0454139, 0.971153}, {0.0461242,
+           0.937988}, {0.049999, 0.937988}}], 
+         PolygonBox[{{0.0454139, 0.971153}, {0.0349715, 0.971153}, {0.0354995,
+           0.937988}, {0.0461242, 0.937988}}], 
+         PolygonBox[{{0.0349715, 0.971153}, {0.0193479, 0.971153}, {0.0196248,
+           0.937988}, {0.0354995, 0.937988}}], 
+         PolygonBox[{{0.0193479, 0.971153}, {0, 0.971153}, {0, 0.937988}, {
+           0.0196248, 0.937988}}], 
+         PolygonBox[{{0, 1.05005}, {-0.0335127, 1.03776}, {0, 1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {-0.0605401, 1.03776}, {-0.0335127, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {-0.0785866, 1.03776}, {-0.0605401, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {-0.0851567, 1.03776}, {-0.0785866, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.03776}, {-0.0335127, 1.03776}, {-0.0319696, 
+           1.00793}, {0, 1.00793}}], 
+         PolygonBox[{{-0.0335127, 1.03776}, {-0.0605401, 
+          1.03776}, {-0.0577578, 1.00793}, {-0.0319696, 1.00793}}], 
+         PolygonBox[{{-0.0605401, 1.03776}, {-0.0785866, 
+          1.03776}, {-0.0749796, 1.00793}, {-0.0577578, 1.00793}}], 
+         PolygonBox[{{-0.0785866, 1.03776}, {-0.0851567, 
+          1.03776}, {-0.0812503, 1.00793}, {-0.0749796, 1.00793}}], 
+         PolygonBox[{{0, 1.00793}, {-0.0319696, 1.00793}, {-0.0193479, 
+           0.971153}, {0, 0.971153}}], 
+         PolygonBox[{{-0.0319696, 1.00793}, {-0.0577578, 
+          1.00793}, {-0.0349715, 0.971153}, {-0.0193479, 0.971153}}], 
+         PolygonBox[{{-0.0577578, 1.00793}, {-0.0749796, 
+          1.00793}, {-0.0454139, 0.971153}, {-0.0349715, 0.971153}}], 
+         PolygonBox[{{-0.0749796, 1.00793}, {-0.0812503, 
+          1.00793}, {-0.0492185, 0.971153}, {-0.0454139, 0.971153}}], 
+         PolygonBox[{{0, 0.971153}, {-0.0193479, 0.971153}, {-0.0196248, 
+           0.937988}, {0, 0.937988}}], 
+         PolygonBox[{{-0.0193479, 0.971153}, {-0.0349715, 
+          0.971153}, {-0.0354995, 0.937988}, {-0.0196248, 0.937988}}], 
+         PolygonBox[{{-0.0349715, 0.971153}, {-0.0454139, 
+          0.971153}, {-0.0461242, 0.937988}, {-0.0354995, 0.937988}}], 
+         PolygonBox[{{-0.0454139, 0.971153}, {-0.0492185, 
+          0.971153}, {-0.049999, 0.937988}, {-0.0461242, 0.937988}}], 
+         PolygonBox[{{0, 1.05005}, {-0.0785866, 1.03776}, {-0.0851567, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {-0.0605401, 1.03776}, {-0.0785866, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {-0.0335127, 1.03776}, {-0.0605401, 
+           1.03776}}], 
+         PolygonBox[{{0, 1.05005}, {0, 1.03776}, {-0.0335127, 1.03776}}], 
+         PolygonBox[{{-0.0851567, 1.03776}, {-0.0785866, 
+          1.03776}, {-0.0749796, 1.00793}, {-0.0812503, 1.00793}}], 
+         PolygonBox[{{-0.0785866, 1.03776}, {-0.0605401, 
+          1.03776}, {-0.0577578, 1.00793}, {-0.0749796, 1.00793}}], 
+         PolygonBox[{{-0.0605401, 1.03776}, {-0.0335127, 
+          1.03776}, {-0.0319696, 1.00793}, {-0.0577578, 1.00793}}], 
+         PolygonBox[{{-0.0335127, 1.03776}, {0, 1.03776}, {
+           0, 1.00793}, {-0.0319696, 1.00793}}], 
+         PolygonBox[{{-0.0812503, 1.00793}, {-0.0749796, 
+          1.00793}, {-0.0454139, 0.971153}, {-0.0492185, 0.971153}}], 
+         PolygonBox[{{-0.0749796, 1.00793}, {-0.0577578, 
+          1.00793}, {-0.0349715, 0.971153}, {-0.0454139, 0.971153}}], 
+         PolygonBox[{{-0.0577578, 1.00793}, {-0.0319696, 
+          1.00793}, {-0.0193479, 0.971153}, {-0.0349715, 0.971153}}], 
+         PolygonBox[{{-0.0319696, 1.00793}, {0, 1.00793}, {
+           0, 0.971153}, {-0.0193479, 0.971153}}], 
+         PolygonBox[{{-0.0492185, 0.971153}, {-0.0454139, 
+          0.971153}, {-0.0461242, 0.937988}, {-0.049999, 0.937988}}], 
+         PolygonBox[{{-0.0454139, 0.971153}, {-0.0349715, 
+          0.971153}, {-0.0354995, 0.937988}, {-0.0461242, 0.937988}}], 
+         PolygonBox[{{-0.0349715, 0.971153}, {-0.0193479, 
+          0.971153}, {-0.0196248, 0.937988}, {-0.0354995, 0.937988}}], 
+         PolygonBox[{{-0.0193479, 0.971153}, {0, 0.971153}, {
+           0, 0.937988}, {-0.0196248, 0.937988}}], 
+         PolygonBox[{{0, 0.937988}, {0.0196248, 0.937988}, {0.0447694, 
+           0.915394}, {0, 0.915394}}], 
+         PolygonBox[{{0.0196248, 0.937988}, {0.0354995, 0.937988}, {0.0809842,
+           0.915394}, {0.0447694, 0.915394}}], 
+         PolygonBox[{{0.0354995, 0.937988}, {0.0461242, 0.937988}, {0.105222, 
+          0.915394}, {0.0809842, 0.915394}}], 
+         PolygonBox[{{0.0461242, 0.937988}, {0.049999, 0.937988}, {0.114062, 
+          0.915394}, {0.105222, 0.915394}}], 
+         PolygonBox[{{0, 0.915394}, {0.0447694, 0.915394}, {0.080953, 
+           0.900055}, {0, 0.900055}}], 
+         PolygonBox[{{0.0447694, 0.915394}, {0.0809842, 0.915394}, {0.146438, 
+          0.900055}, {0.080953, 0.900055}}], 
+         PolygonBox[{{0.0809842, 0.915394}, {0.105222, 0.915394}, {0.190266, 
+          0.900055}, {0.146438, 0.900055}}], 
+         PolygonBox[{{0.105222, 0.915394}, {0.114062, 0.915394}, {0.20625, 
+          0.900055}, {0.190266, 0.900055}}], 
+         PolygonBox[{{0, 0.900055}, {0.080953, 0.900055}, {0.113457, 
+           0.884945}, {0, 0.884945}}], 
+         PolygonBox[{{0.080953, 0.900055}, {0.146438, 0.900055}, {0.205234, 
+          0.884945}, {0.113457, 0.884945}}], 
+         PolygonBox[{{0.146438, 0.900055}, {0.190266, 0.900055}, {0.266661, 
+          0.884945}, {0.205234, 0.884945}}], 
+         PolygonBox[{{0.190266, 0.900055}, {0.20625, 0.900055}, {0.289063, 
+          0.884945}, {0.266661, 0.884945}}], 
+         PolygonBox[{{0, 0.884945}, {0.113457, 0.884945}, {0.127562, 
+           0.863037}, {0, 0.863037}}], 
+         PolygonBox[{{0.113457, 0.884945}, {0.205234, 0.884945}, {0.23075, 
+          0.863037}, {0.127562, 0.863037}}], 
+         PolygonBox[{{0.205234, 0.884945}, {0.266661, 0.884945}, {0.299813, 
+          0.863037}, {0.23075, 0.863037}}], 
+         PolygonBox[{{0.266661, 0.884945}, {0.289063, 0.884945}, {0.325001, 
+          0.863037}, {0.299813, 0.863037}}], 
+         PolygonBox[{{0.049999, 0.937988}, {0.0461242, 0.937988}, {0.105222, 
+          0.915394}, {0.114062, 0.915394}}], 
+         PolygonBox[{{0.0461242, 0.937988}, {0.0354995, 0.937988}, {0.0809842,
+           0.915394}, {0.105222, 0.915394}}], 
+         PolygonBox[{{0.0354995, 0.937988}, {0.0196248, 0.937988}, {0.0447694,
+           0.915394}, {0.0809842, 0.915394}}], 
+         PolygonBox[{{0.0196248, 0.937988}, {0, 0.937988}, {0, 0.915394}, {
+           0.0447694, 0.915394}}], 
+         PolygonBox[{{0.114062, 0.915394}, {0.105222, 0.915394}, {0.190266, 
+          0.900055}, {0.20625, 0.900055}}], 
+         PolygonBox[{{0.105222, 0.915394}, {0.0809842, 0.915394}, {0.146438, 
+          0.900055}, {0.190266, 0.900055}}], 
+         PolygonBox[{{0.0809842, 0.915394}, {0.0447694, 0.915394}, {0.080953, 
+          0.900055}, {0.146438, 0.900055}}], 
+         PolygonBox[{{0.0447694, 0.915394}, {0, 0.915394}, {0, 0.900055}, {
+           0.080953, 0.900055}}], 
+         PolygonBox[{{0.20625, 0.900055}, {0.190266, 0.900055}, {0.266661, 
+          0.884945}, {0.289063, 0.884945}}], 
+         PolygonBox[{{0.190266, 0.900055}, {0.146438, 0.900055}, {0.205234, 
+          0.884945}, {0.266661, 0.884945}}], 
+         PolygonBox[{{0.146438, 0.900055}, {0.080953, 0.900055}, {0.113457, 
+          0.884945}, {0.205234, 0.884945}}], 
+         PolygonBox[{{0.080953, 0.900055}, {0, 0.900055}, {0, 0.884945}, {
+           0.113457, 0.884945}}], 
+         PolygonBox[{{0.289063, 0.884945}, {0.266661, 0.884945}, {0.299813, 
+          0.863037}, {0.325001, 0.863037}}], 
+         PolygonBox[{{0.266661, 0.884945}, {0.205234, 0.884945}, {0.23075, 
+          0.863037}, {0.299813, 0.863037}}], 
+         PolygonBox[{{0.205234, 0.884945}, {0.113457, 0.884945}, {0.127562, 
+          0.863037}, {0.23075, 0.863037}}], 
+         PolygonBox[{{0.113457, 0.884945}, {0, 0.884945}, {0, 0.863037}, {
+           0.127562, 0.863037}}], 
+         PolygonBox[{{0, 0.937988}, {-0.0196248, 0.937988}, {-0.0447694, 
+           0.915394}, {0, 0.915394}}], 
+         PolygonBox[{{-0.0196248, 0.937988}, {-0.0354995, 
+          0.937988}, {-0.0809842, 0.915394}, {-0.0447694, 0.915394}}], 
+         PolygonBox[{{-0.0354995, 0.937988}, {-0.0461242, 
+          0.937988}, {-0.105222, 0.915394}, {-0.0809842, 0.915394}}], 
+         PolygonBox[{{-0.0461242, 0.937988}, {-0.049999, 
+          0.937988}, {-0.114062, 0.915394}, {-0.105222, 0.915394}}], 
+         PolygonBox[{{0, 0.915394}, {-0.0447694, 0.915394}, {-0.080953, 
+           0.900055}, {0, 0.900055}}], 
+         PolygonBox[{{-0.0447694, 0.915394}, {-0.0809842, 
+          0.915394}, {-0.146438, 0.900055}, {-0.080953, 0.900055}}], 
+         PolygonBox[{{-0.0809842, 0.915394}, {-0.105222, 
+          0.915394}, {-0.190266, 0.900055}, {-0.146438, 0.900055}}], 
+         PolygonBox[{{-0.105222, 0.915394}, {-0.114062, 0.915394}, {-0.20625, 
+          0.900055}, {-0.190266, 0.900055}}], 
+         PolygonBox[{{0, 0.900055}, {-0.080953, 0.900055}, {-0.113457, 
+           0.884945}, {0, 0.884945}}], 
+         PolygonBox[{{-0.080953, 0.900055}, {-0.146438, 0.900055}, {-0.205234,
+           0.884945}, {-0.113457, 0.884945}}], 
+         PolygonBox[{{-0.146438, 0.900055}, {-0.190266, 0.900055}, {-0.266661,
+           0.884945}, {-0.205234, 0.884945}}], 
+         PolygonBox[{{-0.190266, 0.900055}, {-0.20625, 0.900055}, {-0.289063, 
+          0.884945}, {-0.266661, 0.884945}}], 
+         PolygonBox[{{0, 0.884945}, {-0.113457, 0.884945}, {-0.127562, 
+           0.863037}, {0, 0.863037}}], 
+         PolygonBox[{{-0.113457, 0.884945}, {-0.205234, 0.884945}, {-0.23075, 
+          0.863037}, {-0.127562, 0.863037}}], 
+         PolygonBox[{{-0.205234, 0.884945}, {-0.266661, 0.884945}, {-0.299813,
+           0.863037}, {-0.23075, 0.863037}}], 
+         PolygonBox[{{-0.266661, 0.884945}, {-0.289063, 0.884945}, {-0.325001,
+           0.863037}, {-0.299813, 0.863037}}], 
+         PolygonBox[{{-0.049999, 0.937988}, {-0.0461242, 
+          0.937988}, {-0.105222, 0.915394}, {-0.114062, 0.915394}}], 
+         PolygonBox[{{-0.0461242, 0.937988}, {-0.0354995, 
+          0.937988}, {-0.0809842, 0.915394}, {-0.105222, 0.915394}}], 
+         PolygonBox[{{-0.0354995, 0.937988}, {-0.0196248, 
+          0.937988}, {-0.0447694, 0.915394}, {-0.0809842, 0.915394}}], 
+         PolygonBox[{{-0.0196248, 0.937988}, {0, 0.937988}, {
+           0, 0.915394}, {-0.0447694, 0.915394}}], 
+         PolygonBox[{{-0.114062, 0.915394}, {-0.105222, 0.915394}, {-0.190266,
+           0.900055}, {-0.20625, 0.900055}}], 
+         PolygonBox[{{-0.105222, 0.915394}, {-0.0809842, 
+          0.915394}, {-0.146438, 0.900055}, {-0.190266, 0.900055}}], 
+         PolygonBox[{{-0.0809842, 0.915394}, {-0.0447694, 
+          0.915394}, {-0.080953, 0.900055}, {-0.146438, 0.900055}}], 
+         PolygonBox[{{-0.0447694, 0.915394}, {0, 0.915394}, {
+           0, 0.900055}, {-0.080953, 0.900055}}], 
+         PolygonBox[{{-0.20625, 0.900055}, {-0.190266, 0.900055}, {-0.266661, 
+          0.884945}, {-0.289063, 0.884945}}], 
+         PolygonBox[{{-0.190266, 0.900055}, {-0.146438, 0.900055}, {-0.205234,
+           0.884945}, {-0.266661, 0.884945}}], 
+         PolygonBox[{{-0.146438, 0.900055}, {-0.080953, 0.900055}, {-0.113457,
+           0.884945}, {-0.205234, 0.884945}}], 
+         PolygonBox[{{-0.080953, 0.900055}, {0, 0.900055}, {
+           0, 0.884945}, {-0.113457, 0.884945}}], 
+         PolygonBox[{{-0.289063, 0.884945}, {-0.266661, 0.884945}, {-0.299813,
+           0.863037}, {-0.325001, 0.863037}}], 
+         PolygonBox[{{-0.266661, 0.884945}, {-0.205234, 0.884945}, {-0.23075, 
+          0.863037}, {-0.299813, 0.863037}}], 
+         PolygonBox[{{-0.205234, 0.884945}, {-0.113457, 0.884945}, {-0.127562,
+           0.863037}, {-0.23075, 0.863037}}], 
+         PolygonBox[{{-0.113457, 0.884945}, {0, 0.884945}, {
+           0, 0.863037}, {-0.127562, 0.863037}}]}},
+       Axes->True], {193.5, -179.49042197843227`}, 
+      ImageScaled[{0.5, 0.5}], {360., 336.5445412095605}], InsetBox[
+      GraphicsBox[{
+        {GrayLevel[0.5], LineBox[{{0, 0}, {1, 0}}], LineBox[{{0, 0}, {0, 1}}],
+          DiskBox[{0, 0}, 0.25]}, 
+        {RGBColor[1, 0.5, 0.5], Opacity[0.5], EdgeForm[GrayLevel[0]], 
+         PolygonBox[{{0.85, 0.863037}, {0.822875, 0.863037}, {0.818371, 
+          0.881027}, {0.845117, 0.881027}}], 
+         PolygonBox[{{0.822875, 0.863037}, {0.7485, 0.863037}, {0.745033, 
+          0.881027}, {0.818371, 0.881027}}], 
+         PolygonBox[{{0.7485, 0.863037}, {0.637375, 0.863037}, {0.635459, 
+          0.881027}, {0.745033, 0.881027}}], 
+         PolygonBox[{{0.637375, 0.863037}, {0.5, 0.863037}, {0.5, 0.881027}, {
+          0.635459, 0.881027}}], 
+         PolygonBox[{{0.845117, 0.881027}, {0.818371, 0.881027}, {0.823596, 
+          0.887024}, {0.850781, 0.887024}}], 
+         PolygonBox[{{0.818371, 0.881027}, {0.745033, 0.881027}, {0.749055, 
+          0.887024}, {0.823596, 0.887024}}], 
+         PolygonBox[{{0.745033, 0.881027}, {0.635459, 0.881027}, {0.637682, 
+          0.887024}, {0.749055, 0.887024}}], 
+         PolygonBox[{{0.635459, 0.881027}, {0.5, 0.881027}, {0.5, 0.887024}, {
+          0.637682, 0.887024}}], 
+         PolygonBox[{{0.850781, 0.887024}, {0.823596, 0.887024}, {0.834226, 
+          0.881027}, {0.862305, 0.881027}}], 
+         PolygonBox[{{0.823596, 0.887024}, {0.749055, 0.887024}, {0.757236, 
+          0.881027}, {0.834226, 0.881027}}], 
+         PolygonBox[{{0.749055, 0.887024}, {0.637682, 0.887024}, {0.642205, 
+          0.881027}, {0.757236, 0.881027}}], 
+         PolygonBox[{{0.637682, 0.887024}, {0.5, 0.887024}, {0.5, 0.881027}, {
+          0.642205, 0.881027}}], 
+         PolygonBox[{{0.862305, 0.881027}, {0.834226, 0.881027}, {0.845937, 
+          0.863037}, {0.875, 0.863037}}], 
+         PolygonBox[{{0.834226, 0.881027}, {0.757236, 0.881027}, {0.76625, 
+          0.863037}, {0.845937, 0.863037}}], 
+         PolygonBox[{{0.757236, 0.881027}, {0.642205, 0.881027}, {0.647187, 
+          0.863037}, {0.76625, 0.863037}}], 
+         PolygonBox[{{0.642205, 0.881027}, {0.5, 0.881027}, {0.5, 0.863037}, {
+          0.647187, 0.863037}}], 
+         PolygonBox[{{0.5, 0.863037}, {0.362625, 0.863037}, {0.364542, 
+          0.881027}, {0.5, 0.881027}}], 
+         PolygonBox[{{0.362625, 0.863037}, {0.2515, 0.863037}, {0.254967, 
+          0.881027}, {0.364542, 0.881027}}], 
+         PolygonBox[{{0.2515, 0.863037}, {0.177125, 0.863037}, {0.181629, 
+          0.881027}, {0.254967, 0.881027}}], 
+         PolygonBox[{{0.177125, 0.863037}, {0.15, 0.863037}, {0.154883, 
+          0.881027}, {0.181629, 0.881027}}], 
+         PolygonBox[{{0.5, 0.881027}, {0.364542, 0.881027}, {0.362318, 
+          0.887024}, {0.5, 0.887024}}], 
+         PolygonBox[{{0.364542, 0.881027}, {0.254967, 0.881027}, {0.250945, 
+          0.887024}, {0.362318, 0.887024}}], 
+         PolygonBox[{{0.254967, 0.881027}, {0.181629, 0.881027}, {0.176404, 
+          0.887024}, {0.250945, 0.887024}}], 
+         PolygonBox[{{0.181629, 0.881027}, {0.154883, 0.881027}, {0.149219, 
+          0.887024}, {0.176404, 0.887024}}], 
+         PolygonBox[{{0.5, 0.887024}, {0.362318, 0.887024}, {0.357795, 
+          0.881027}, {0.5, 0.881027}}], 
+         PolygonBox[{{0.362318, 0.887024}, {0.250945, 0.887024}, {0.242764, 
+          0.881027}, {0.357795, 0.881027}}], 
+         PolygonBox[{{0.250945, 0.887024}, {0.176404, 0.887024}, {0.165774, 
+          0.881027}, {0.242764, 0.881027}}], 
+         PolygonBox[{{0.176404, 0.887024}, {0.149219, 0.887024}, {0.137695, 
+          0.881027}, {0.165774, 0.881027}}], 
+         PolygonBox[{{0.5, 0.881027}, {0.357795, 0.881027}, {0.352812, 
+          0.863037}, {0.5, 0.863037}}], 
+         PolygonBox[{{0.357795, 0.881027}, {0.242764, 0.881027}, {0.23375, 
+          0.863037}, {0.352812, 0.863037}}], 
+         PolygonBox[{{0.242764, 0.881027}, {0.165774, 0.881027}, {0.154062, 
+          0.863037}, {0.23375, 0.863037}}], 
+         PolygonBox[{{0.165774, 0.881027}, {0.137695, 0.881027}, {0.125, 
+          0.863037}, {0.154062, 0.863037}}], 
+         PolygonBox[{{0.15, 0.863037}, {0.177125, 0.863037}, {0.181629, 
+          0.881027}, {0.154883, 0.881027}}], 
+         PolygonBox[{{0.177125, 0.863037}, {0.2515, 0.863037}, {0.254967, 
+          0.881027}, {0.181629, 0.881027}}], 
+         PolygonBox[{{0.2515, 0.863037}, {0.362625, 0.863037}, {0.364542, 
+          0.881027}, {0.254967, 0.881027}}], 
+         PolygonBox[{{0.362625, 0.863037}, {0.5, 0.863037}, {0.5, 0.881027}, {
+          0.364542, 0.881027}}], 
+         PolygonBox[{{0.154883, 0.881027}, {0.181629, 0.881027}, {0.176404, 
+          0.887024}, {0.149219, 0.887024}}], 
+         PolygonBox[{{0.181629, 0.881027}, {0.254967, 0.881027}, {0.250945, 
+          0.887024}, {0.176404, 0.887024}}], 
+         PolygonBox[{{0.254967, 0.881027}, {0.364542, 0.881027}, {0.362318, 
+          0.887024}, {0.250945, 0.887024}}], 
+         PolygonBox[{{0.364542, 0.881027}, {0.5, 0.881027}, {0.5, 0.887024}, {
+          0.362318, 0.887024}}], 
+         PolygonBox[{{0.149219, 0.887024}, {0.176404, 0.887024}, {0.165774, 
+          0.881027}, {0.137695, 0.881027}}], 
+         PolygonBox[{{0.176404, 0.887024}, {0.250945, 0.887024}, {0.242764, 
+          0.881027}, {0.165774, 0.881027}}], 
+         PolygonBox[{{0.250945, 0.887024}, {0.362318, 0.887024}, {0.357795, 
+          0.881027}, {0.242764, 0.881027}}], 
+         PolygonBox[{{0.362318, 0.887024}, {0.5, 0.887024}, {0.5, 0.881027}, {
+          0.357795, 0.881027}}], 
+         PolygonBox[{{0.137695, 0.881027}, {0.165774, 0.881027}, {0.154062, 
+          0.863037}, {0.125, 0.863037}}], 
+         PolygonBox[{{0.165774, 0.881027}, {0.242764, 0.881027}, {0.23375, 
+          0.863037}, {0.154062, 0.863037}}], 
+         PolygonBox[{{0.242764, 0.881027}, {0.357795, 0.881027}, {0.352812, 
+          0.863037}, {0.23375, 0.863037}}], 
+         PolygonBox[{{0.357795, 0.881027}, {0.5, 0.881027}, {0.5, 0.863037}, {
+          0.352812, 0.863037}}], 
+         PolygonBox[{{0.5, 0.863037}, {0.637375, 0.863037}, {0.635459, 
+          0.881027}, {0.5, 0.881027}}], 
+         PolygonBox[{{0.637375, 0.863037}, {0.7485, 0.863037}, {0.745033, 
+          0.881027}, {0.635459, 0.881027}}], 
+         PolygonBox[{{0.7485, 0.863037}, {0.822875, 0.863037}, {0.818371, 
+          0.881027}, {0.745033, 0.881027}}], 
+         PolygonBox[{{0.822875, 0.863037}, {0.85, 0.863037}, {0.845117, 
+          0.881027}, {0.818371, 0.881027}}], 
+         PolygonBox[{{0.5, 0.881027}, {0.635459, 0.881027}, {0.637682, 
+          0.887024}, {0.5, 0.887024}}], 
+         PolygonBox[{{0.635459, 0.881027}, {0.745033, 0.881027}, {0.749055, 
+          0.887024}, {0.637682, 0.887024}}], 
+         PolygonBox[{{0.745033, 0.881027}, {0.818371, 0.881027}, {0.823596, 
+          0.887024}, {0.749055, 0.887024}}], 
+         PolygonBox[{{0.818371, 0.881027}, {0.845117, 0.881027}, {0.850781, 
+          0.887024}, {0.823596, 0.887024}}], 
+         PolygonBox[{{0.5, 0.887024}, {0.637682, 0.887024}, {0.642205, 
+          0.881027}, {0.5, 0.881027}}], 
+         PolygonBox[{{0.637682, 0.887024}, {0.749055, 0.887024}, {0.757236, 
+          0.881027}, {0.642205, 0.881027}}], 
+         PolygonBox[{{0.749055, 0.887024}, {0.823596, 0.887024}, {0.834226, 
+          0.881027}, {0.757236, 0.881027}}], 
+         PolygonBox[{{0.823596, 0.887024}, {0.850781, 0.887024}, {0.862305, 
+          0.881027}, {0.834226, 0.881027}}], 
+         PolygonBox[{{0.5, 0.881027}, {0.642205, 0.881027}, {0.647187, 
+          0.863037}, {0.5, 0.863037}}], 
+         PolygonBox[{{0.642205, 0.881027}, {0.757236, 0.881027}, {0.76625, 
+          0.863037}, {0.647187, 0.863037}}], 
+         PolygonBox[{{0.757236, 0.881027}, {0.834226, 0.881027}, {0.845937, 
+          0.863037}, {0.76625, 0.863037}}], 
+         PolygonBox[{{0.834226, 0.881027}, {0.862305, 0.881027}, {0.875, 
+          0.863037}, {0.845937, 0.863037}}], 
+         PolygonBox[{{0.875, 0.863037}, {0.845937, 0.863037}, {0.888279, 
+          0.764481}, {0.920898, 0.764481}}], 
+         PolygonBox[{{0.845937, 0.863037}, {0.76625, 0.863037}, {0.798838, 
+          0.764481}, {0.888279, 0.764481}}], 
+         PolygonBox[{{0.76625, 0.863037}, {0.647187, 0.863037}, {0.665203, 
+          0.764481}, {0.798838, 0.764481}}], 
+         PolygonBox[{{0.647187, 0.863037}, {0.5, 0.863037}, {0.5, 0.764481}, {
+          0.665203, 0.764481}}], 
+         PolygonBox[{{0.920898, 0.764481}, {0.888279, 0.764481}, {0.925215, 
+          0.66803}, {0.960938, 0.66803}}], 
+         PolygonBox[{{0.888279, 0.764481}, {0.798838, 0.764481}, {0.827266, 
+          0.66803}, {0.925215, 0.66803}}], 
+         PolygonBox[{{0.798838, 0.764481}, {0.665203, 0.764481}, {0.680918, 
+          0.66803}, {0.827266, 0.66803}}], 
+         PolygonBox[{{0.665203, 0.764481}, {0.5, 0.764481}, {0.5, 0.66803}, {
+          0.680918, 0.66803}}], 
+         PolygonBox[{{0.960938, 0.66803}, {0.925215, 0.66803}, {0.95134, 
+          0.575333}, {0.989258, 0.575333}}], 
+         PolygonBox[{{0.925215, 0.66803}, {0.827266, 0.66803}, {0.847373, 
+          0.575333}, {0.95134, 0.575333}}], 
+         PolygonBox[{{0.827266, 0.66803}, {0.680918, 0.66803}, {0.692034, 
+          0.575333}, {0.847373, 0.575333}}], 
+         PolygonBox[{{0.680918, 0.66803}, {0.5, 0.66803}, {0.5, 0.575333}, {
+          0.692034, 0.575333}}], 
+         PolygonBox[{{0.989258, 0.575333}, {0.95134, 0.575333}, {0.96125, 
+           0.488037}, {1, 0.488037}}], 
+         PolygonBox[{{0.95134, 0.575333}, {0.847373, 0.575333}, {0.855, 
+          0.488037}, {0.96125, 0.488037}}], 
+         PolygonBox[{{0.847373, 0.575333}, {0.692034, 0.575333}, {0.69625, 
+          0.488037}, {0.855, 0.488037}}], 
+         PolygonBox[{{0.692034, 0.575333}, {0.5, 0.575333}, {0.5, 0.488037}, {
+          0.69625, 0.488037}}], 
+         PolygonBox[{{0.5, 0.863037}, {0.352812, 0.863037}, {0.334797, 
+          0.764481}, {0.5, 0.764481}}], 
+         PolygonBox[{{0.352812, 0.863037}, {0.23375, 0.863037}, {0.201162, 
+          0.764481}, {0.334797, 0.764481}}], 
+         PolygonBox[{{0.23375, 0.863037}, {0.154062, 0.863037}, {0.111721, 
+          0.764481}, {0.201162, 0.764481}}], 
+         PolygonBox[{{0.154062, 0.863037}, {0.125, 0.863037}, {0.0791016, 
+          0.764481}, {0.111721, 0.764481}}], 
+         PolygonBox[{{0.5, 0.764481}, {0.334797, 0.764481}, {0.319082, 
+          0.66803}, {0.5, 0.66803}}], 
+         PolygonBox[{{0.334797, 0.764481}, {0.201162, 0.764481}, {0.172734, 
+          0.66803}, {0.319082, 0.66803}}], 
+         PolygonBox[{{0.201162, 0.764481}, {0.111721, 0.764481}, {0.0747852, 
+          0.66803}, {0.172734, 0.66803}}], 
+         PolygonBox[{{0.111721, 0.764481}, {0.0791016, 0.764481}, {0.0390625, 
+          0.66803}, {0.0747852, 0.66803}}], 
+         PolygonBox[{{0.5, 0.66803}, {0.319082, 0.66803}, {0.307966, 
+          0.575333}, {0.5, 0.575333}}], 
+         PolygonBox[{{0.319082, 0.66803}, {0.172734, 0.66803}, {0.152627, 
+          0.575333}, {0.307966, 0.575333}}], 
+         PolygonBox[{{0.172734, 0.66803}, {0.0747852, 0.66803}, {0.0486597, 
+          0.575333}, {0.152627, 0.575333}}], 
+         PolygonBox[{{0.0747852, 0.66803}, {0.0390625, 0.66803}, {0.0107422, 
+          0.575333}, {0.0486597, 0.575333}}], 
+         PolygonBox[{{0.5, 0.575333}, {0.307966, 0.575333}, {0.30375, 
+          0.488037}, {0.5, 0.488037}}], 
+         PolygonBox[{{0.307966, 0.575333}, {0.152627, 0.575333}, {0.145, 
+          0.488037}, {0.30375, 0.488037}}], 
+         PolygonBox[{{0.152627, 0.575333}, {0.0486597, 0.575333}, {0.03875, 
+          0.488037}, {0.145, 0.488037}}], 
+         PolygonBox[{{0.0486597, 0.575333}, {0.0107422, 0.575333}, {
+           0, 0.488037}, {0.03875, 0.488037}}], 
+         PolygonBox[{{0.125, 0.863037}, {0.154062, 0.863037}, {0.111721, 
+          0.764481}, {0.0791016, 0.764481}}], 
+         PolygonBox[{{0.154062, 0.863037}, {0.23375, 0.863037}, {0.201162, 
+          0.764481}, {0.111721, 0.764481}}], 
+         PolygonBox[{{0.23375, 0.863037}, {0.352812, 0.863037}, {0.334797, 
+          0.764481}, {0.201162, 0.764481}}], 
+         PolygonBox[{{0.352812, 0.863037}, {0.5, 0.863037}, {0.5, 0.764481}, {
+          0.334797, 0.764481}}], 
+         PolygonBox[{{0.0791016, 0.764481}, {0.111721, 0.764481}, {0.0747852, 
+          0.66803}, {0.0390625, 0.66803}}], 
+         PolygonBox[{{0.111721, 0.764481}, {0.201162, 0.764481}, {0.172734, 
+          0.66803}, {0.0747852, 0.66803}}], 
+         PolygonBox[{{0.201162, 0.764481}, {0.334797, 0.764481}, {0.319082, 
+          0.66803}, {0.172734, 0.66803}}], 
+         PolygonBox[{{0.334797, 0.764481}, {0.5, 0.764481}, {0.5, 0.66803}, {
+          0.319082, 0.66803}}], 
+         PolygonBox[{{0.0390625, 0.66803}, {0.0747852, 0.66803}, {0.0486597, 
+          0.575333}, {0.0107422, 0.575333}}], 
+         PolygonBox[{{0.0747852, 0.66803}, {0.172734, 0.66803}, {0.152627, 
+          0.575333}, {0.0486597, 0.575333}}], 
+         PolygonBox[{{0.172734, 0.66803}, {0.319082, 0.66803}, {0.307966, 
+          0.575333}, {0.152627, 0.575333}}], 
+         PolygonBox[{{0.319082, 0.66803}, {0.5, 0.66803}, {0.5, 0.575333}, {
+          0.307966, 0.575333}}], 
+         PolygonBox[{{0.0107422, 0.575333}, {0.0486597, 0.575333}, {0.03875, 
+           0.488037}, {0, 0.488037}}], 
+         PolygonBox[{{0.0486597, 0.575333}, {0.152627, 0.575333}, {0.145, 
+          0.488037}, {0.03875, 0.488037}}], 
+         PolygonBox[{{0.152627, 0.575333}, {0.307966, 0.575333}, {0.30375, 
+          0.488037}, {0.145, 0.488037}}], 
+         PolygonBox[{{0.307966, 0.575333}, {0.5, 0.575333}, {0.5, 0.488037}, {
+          0.30375, 0.488037}}], 
+         PolygonBox[{{0.5, 0.863037}, {0.647187, 0.863037}, {0.665203, 
+          0.764481}, {0.5, 0.764481}}], 
+         PolygonBox[{{0.647187, 0.863037}, {0.76625, 0.863037}, {0.798838, 
+          0.764481}, {0.665203, 0.764481}}], 
+         PolygonBox[{{0.76625, 0.863037}, {0.845937, 0.863037}, {0.888279, 
+          0.764481}, {0.798838, 0.764481}}], 
+         PolygonBox[{{0.845937, 0.863037}, {0.875, 0.863037}, {0.920898, 
+          0.764481}, {0.888279, 0.764481}}], 
+         PolygonBox[{{0.5, 0.764481}, {0.665203, 0.764481}, {0.680918, 
+          0.66803}, {0.5, 0.66803}}], 
+         PolygonBox[{{0.665203, 0.764481}, {0.798838, 0.764481}, {0.827266, 
+          0.66803}, {0.680918, 0.66803}}], 
+         PolygonBox[{{0.798838, 0.764481}, {0.888279, 0.764481}, {0.925215, 
+          0.66803}, {0.827266, 0.66803}}], 
+         PolygonBox[{{0.888279, 0.764481}, {0.920898, 0.764481}, {0.960938, 
+          0.66803}, {0.925215, 0.66803}}], 
+         PolygonBox[{{0.5, 0.66803}, {0.680918, 0.66803}, {0.692034, 
+          0.575333}, {0.5, 0.575333}}], 
+         PolygonBox[{{0.680918, 0.66803}, {0.827266, 0.66803}, {0.847373, 
+          0.575333}, {0.692034, 0.575333}}], 
+         PolygonBox[{{0.827266, 0.66803}, {0.925215, 0.66803}, {0.95134, 
+          0.575333}, {0.847373, 0.575333}}], 
+         PolygonBox[{{0.925215, 0.66803}, {0.960938, 0.66803}, {0.989258, 
+          0.575333}, {0.95134, 0.575333}}], 
+         PolygonBox[{{0.5, 0.575333}, {0.692034, 0.575333}, {0.69625, 
+          0.488037}, {0.5, 0.488037}}], 
+         PolygonBox[{{0.692034, 0.575333}, {0.847373, 0.575333}, {0.855, 
+          0.488037}, {0.69625, 0.488037}}], 
+         PolygonBox[{{0.847373, 0.575333}, {0.95134, 0.575333}, {0.96125, 
+          0.488037}, {0.855, 0.488037}}], 
+         PolygonBox[{{0.95134, 0.575333}, {0.989258, 0.575333}, {
+           1, 0.488037}, {0.96125, 0.488037}}], 
+         PolygonBox[{{1, 0.488037}, {0.96125, 0.488037}, {0.943232, 
+           0.413654}, {0.980469, 0.413654}}], 
+         PolygonBox[{{0.96125, 0.488037}, {0.855, 0.488037}, {0.841133, 
+          0.413654}, {0.943232, 0.413654}}], 
+         PolygonBox[{{0.855, 0.488037}, {0.69625, 0.488037}, {0.688584, 
+          0.413654}, {0.841133, 0.413654}}], 
+         PolygonBox[{{0.69625, 0.488037}, {0.5, 0.488037}, {0.5, 0.413654}, {
+          0.688584, 0.413654}}], 
+         PolygonBox[{{0.980469, 0.413654}, {0.943232, 0.413654}, {0.903594, 
+          0.358795}, {0.9375, 0.358795}}], 
+         PolygonBox[{{0.943232, 0.413654}, {0.841133, 0.413654}, {0.810625, 
+          0.358795}, {0.903594, 0.358795}}], 
+         PolygonBox[{{0.841133, 0.413654}, {0.688584, 0.413654}, {0.671719, 
+          0.358795}, {0.810625, 0.358795}}], 
+         PolygonBox[{{0.688584, 0.413654}, {0.5, 0.413654}, {0.5, 0.358795}, {
+          0.671719, 0.358795}}], 
+         PolygonBox[{{0.9375, 0.358795}, {0.903594, 0.358795}, {0.863955, 
+          0.32156}, {0.894531, 0.32156}}], 
+         PolygonBox[{{0.903594, 0.358795}, {0.810625, 0.358795}, {0.780117, 
+          0.32156}, {0.863955, 0.32156}}], 
+         PolygonBox[{{0.810625, 0.358795}, {0.671719, 0.358795}, {0.654853, 
+          0.32156}, {0.780117, 0.32156}}], 
+         PolygonBox[{{0.671719, 0.358795}, {0.5, 0.358795}, {0.5, 0.32156}, {
+          0.654853, 0.32156}}], 
+         PolygonBox[{{0.894531, 0.32156}, {0.863955, 0.32156}, {0.845937, 
+          0.300049}, {0.875, 0.300049}}], 
+         PolygonBox[{{0.863955, 0.32156}, {0.780117, 0.32156}, {0.76625, 
+          0.300049}, {0.845937, 0.300049}}], 
+         PolygonBox[{{0.780117, 0.32156}, {0.654853, 0.32156}, {0.647187, 
+          0.300049}, {0.76625, 0.300049}}], 
+         PolygonBox[{{0.654853, 0.32156}, {0.5, 0.32156}, {0.5, 0.300049}, {
+          0.647187, 0.300049}}], 
+         PolygonBox[{{0.5, 0.488037}, {0.30375, 0.488037}, {0.311416, 
+          0.413654}, {0.5, 0.413654}}], 
+         PolygonBox[{{0.30375, 0.488037}, {0.145, 0.488037}, {0.158867, 
+          0.413654}, {0.311416, 0.413654}}], 
+         PolygonBox[{{0.145, 0.488037}, {0.03875, 0.488037}, {0.0567676, 
+          0.413654}, {0.158867, 0.413654}}], 
+         PolygonBox[{{0.03875, 0.488037}, {0, 0.488037}, {0.0195312, 
+           0.413654}, {0.0567676, 0.413654}}], 
+         PolygonBox[{{0.5, 0.413654}, {0.311416, 0.413654}, {0.328281, 
+          0.358795}, {0.5, 0.358795}}], 
+         PolygonBox[{{0.311416, 0.413654}, {0.158867, 0.413654}, {0.189375, 
+          0.358795}, {0.328281, 0.358795}}], 
+         PolygonBox[{{0.158867, 0.413654}, {0.0567676, 0.413654}, {0.0964063, 
+          0.358795}, {0.189375, 0.358795}}], 
+         PolygonBox[{{0.0567676, 0.413654}, {0.0195312, 0.413654}, {0.0625, 
+          0.358795}, {0.0964063, 0.358795}}], 
+         PolygonBox[{{0.5, 0.358795}, {0.328281, 0.358795}, {0.345146, 
+          0.32156}, {0.5, 0.32156}}], 
+         PolygonBox[{{0.328281, 0.358795}, {0.189375, 0.358795}, {0.219883, 
+          0.32156}, {0.345146, 0.32156}}], 
+         PolygonBox[{{0.189375, 0.358795}, {0.0964063, 0.358795}, {0.136045, 
+          0.32156}, {0.219883, 0.32156}}], 
+         PolygonBox[{{0.0964063, 0.358795}, {0.0625, 0.358795}, {0.105469, 
+          0.32156}, {0.136045, 0.32156}}], 
+         PolygonBox[{{0.5, 0.32156}, {0.345146, 0.32156}, {0.352812, 
+          0.300049}, {0.5, 0.300049}}], 
+         PolygonBox[{{0.345146, 0.32156}, {0.219883, 0.32156}, {0.23375, 
+          0.300049}, {0.352812, 0.300049}}], 
+         PolygonBox[{{0.219883, 0.32156}, {0.136045, 0.32156}, {0.154062, 
+          0.300049}, {0.23375, 0.300049}}], 
+         PolygonBox[{{0.136045, 0.32156}, {0.105469, 0.32156}, {0.125, 
+          0.300049}, {0.154062, 0.300049}}], 
+         PolygonBox[{{0, 0.488037}, {0.03875, 0.488037}, {0.0567676, 
+           0.413654}, {0.0195312, 0.413654}}], 
+         PolygonBox[{{0.03875, 0.488037}, {0.145, 0.488037}, {0.158867, 
+          0.413654}, {0.0567676, 0.413654}}], 
+         PolygonBox[{{0.145, 0.488037}, {0.30375, 0.488037}, {0.311416, 
+          0.413654}, {0.158867, 0.413654}}], 
+         PolygonBox[{{0.30375, 0.488037}, {0.5, 0.488037}, {0.5, 0.413654}, {
+          0.311416, 0.413654}}], 
+         PolygonBox[{{0.0195312, 0.413654}, {0.0567676, 0.413654}, {0.0964063,
+           0.358795}, {0.0625, 0.358795}}], 
+         PolygonBox[{{0.0567676, 0.413654}, {0.158867, 0.413654}, {0.189375, 
+          0.358795}, {0.0964063, 0.358795}}], 
+         PolygonBox[{{0.158867, 0.413654}, {0.311416, 0.413654}, {0.328281, 
+          0.358795}, {0.189375, 0.358795}}], 
+         PolygonBox[{{0.311416, 0.413654}, {0.5, 0.413654}, {0.5, 0.358795}, {
+          0.328281, 0.358795}}], 
+         PolygonBox[{{0.0625, 0.358795}, {0.0964063, 0.358795}, {0.136045, 
+          0.32156}, {0.105469, 0.32156}}], 
+         PolygonBox[{{0.0964063, 0.358795}, {0.189375, 0.358795}, {0.219883, 
+          0.32156}, {0.136045, 0.32156}}], 
+         PolygonBox[{{0.189375, 0.358795}, {0.328281, 0.358795}, {0.345146, 
+          0.32156}, {0.219883, 0.32156}}], 
+         PolygonBox[{{0.328281, 0.358795}, {0.5, 0.358795}, {0.5, 0.32156}, {
+          0.345146, 0.32156}}], 
+         PolygonBox[{{0.105469, 0.32156}, {0.136045, 0.32156}, {0.154062, 
+          0.300049}, {0.125, 0.300049}}], 
+         PolygonBox[{{0.136045, 0.32156}, {0.219883, 0.32156}, {0.23375, 
+          0.300049}, {0.154062, 0.300049}}], 
+         PolygonBox[{{0.219883, 0.32156}, {0.345146, 0.32156}, {0.352812, 
+          0.300049}, {0.23375, 0.300049}}], 
+         PolygonBox[{{0.345146, 0.32156}, {0.5, 0.32156}, {0.5, 0.300049}, {
+          0.352812, 0.300049}}], 
+         PolygonBox[{{0.5, 0.488037}, {0.69625, 0.488037}, {0.688584, 
+          0.413654}, {0.5, 0.413654}}], 
+         PolygonBox[{{0.69625, 0.488037}, {0.855, 0.488037}, {0.841133, 
+          0.413654}, {0.688584, 0.413654}}], 
+         PolygonBox[{{0.855, 0.488037}, {0.96125, 0.488037}, {0.943232, 
+          0.413654}, {0.841133, 0.413654}}], 
+         PolygonBox[{{0.96125, 0.488037}, {1, 0.488037}, {0.980469, 0.413654},
+            {0.943232, 0.413654}}], 
+         PolygonBox[{{0.5, 0.413654}, {0.688584, 0.413654}, {0.671719, 
+          0.358795}, {0.5, 0.358795}}], 
+         PolygonBox[{{0.688584, 0.413654}, {0.841133, 0.413654}, {0.810625, 
+          0.358795}, {0.671719, 0.358795}}], 
+         PolygonBox[{{0.841133, 0.413654}, {0.943232, 0.413654}, {0.903594, 
+          0.358795}, {0.810625, 0.358795}}], 
+         PolygonBox[{{0.943232, 0.413654}, {0.980469, 0.413654}, {0.9375, 
+          0.358795}, {0.903594, 0.358795}}], 
+         PolygonBox[{{0.5, 0.358795}, {0.671719, 0.358795}, {0.654853, 
+          0.32156}, {0.5, 0.32156}}], 
+         PolygonBox[{{0.671719, 0.358795}, {0.810625, 0.358795}, {0.780117, 
+          0.32156}, {0.654853, 0.32156}}], 
+         PolygonBox[{{0.810625, 0.358795}, {0.903594, 0.358795}, {0.863955, 
+          0.32156}, {0.780117, 0.32156}}], 
+         PolygonBox[{{0.903594, 0.358795}, {0.9375, 0.358795}, {0.894531, 
+          0.32156}, {0.863955, 0.32156}}], 
+         PolygonBox[{{0.5, 0.32156}, {0.654853, 0.32156}, {0.647187, 
+          0.300049}, {0.5, 0.300049}}], 
+         PolygonBox[{{0.654853, 0.32156}, {0.780117, 0.32156}, {0.76625, 
+          0.300049}, {0.647187, 0.300049}}], 
+         PolygonBox[{{0.780117, 0.32156}, {0.863955, 0.32156}, {0.845937, 
+          0.300049}, {0.76625, 0.300049}}], 
+         PolygonBox[{{0.863955, 0.32156}, {0.894531, 0.32156}, {0.875, 
+          0.300049}, {0.845937, 0.300049}}], 
+         PolygonBox[{{0.1, 0.769043}, {0.103906, 0.777779}, {-0.0202759, 
+          0.776765}, {-0.0167969, 0.768166}}], 
+         PolygonBox[{{0.103906, 0.777779}, {0.1125, 0.796997}, {-0.0279297, 
+          0.795683}, {-0.0202759, 0.776765}}], 
+         PolygonBox[{{0.1125, 0.796997}, {0.121094, 0.816215}, {-0.0355835, 
+          0.814601}, {-0.0279297, 0.795683}}], 
+         PolygonBox[{{0.121094, 0.816215}, {0.125, 0.824951}, {-0.0390625, 
+          0.8232}, {-0.0355835, 0.814601}}], 
+         PolygonBox[{{-0.0167969, 0.768166}, {-0.0202759, 
+          0.776765}, {-0.111426, 0.769668}, {-0.103125, 0.762024}}], 
+         PolygonBox[{{-0.0202759, 0.776765}, {-0.0279297, 
+          0.795683}, {-0.129688, 0.786484}, {-0.111426, 0.769668}}], 
+         PolygonBox[{{-0.0279297, 0.795683}, {-0.0355835, 
+          0.814601}, {-0.147949, 0.8033}, {-0.129688, 0.786484}}], 
+         PolygonBox[{{-0.0355835, 0.814601}, {-0.0390625, 0.8232}, {-0.15625, 
+          0.810943}, {-0.147949, 0.8033}}], 
+         PolygonBox[{{-0.103125, 0.762024}, {-0.111426, 0.769668}, {-0.167566,
+           0.750404}, {-0.156641, 0.745354}}], 
+         PolygonBox[{{-0.111426, 0.769668}, {-0.129688, 0.786484}, {-0.191602,
+           0.761515}, {-0.167566, 0.750404}}], 
+         PolygonBox[{{-0.129688, 0.786484}, {-0.147949, 0.8033}, {-0.215637, 
+          0.772625}, {-0.191602, 0.761515}}], 
+         PolygonBox[{{-0.147949, 0.8033}, {-0.15625, 0.810943}, {-0.226562, 
+          0.777676}, {-0.215637, 0.772625}}], 
+         PolygonBox[{{-0.156641, 0.745354}, {-0.167566, 0.750404}, {-0.186719,
+           0.712891}, {-0.175, 0.712891}}], 
+         PolygonBox[{{-0.167566, 0.750404}, {-0.191602, 0.761515}, {-0.2125, 
+          0.712891}, {-0.186719, 0.712891}}], 
+         PolygonBox[{{-0.191602, 0.761515}, {-0.215637, 0.772625}, {-0.238281,
+           0.712891}, {-0.2125, 0.712891}}], 
+         PolygonBox[{{-0.215637, 0.772625}, {-0.226562, 0.777676}, {-0.25, 
+          0.712891}, {-0.238281, 0.712891}}], 
+         PolygonBox[{{0.125, 0.824951}, {0.121094, 0.816215}, {-0.0355835, 
+          0.814601}, {-0.0390625, 0.8232}}], 
+         PolygonBox[{{0.121094, 0.816215}, {0.1125, 0.796997}, {-0.0279297, 
+          0.795683}, {-0.0355835, 0.814601}}], 
+         PolygonBox[{{0.1125, 0.796997}, {0.103906, 0.777779}, {-0.0202759, 
+          0.776765}, {-0.0279297, 0.795683}}], 
+         PolygonBox[{{0.103906, 0.777779}, {0.1, 0.769043}, {-0.0167969, 
+          0.768166}, {-0.0202759, 0.776765}}], 
+         PolygonBox[{{-0.0390625, 0.8232}, {-0.0355835, 0.814601}, {-0.147949,
+           0.8033}, {-0.15625, 0.810943}}], 
+         PolygonBox[{{-0.0355835, 0.814601}, {-0.0279297, 
+          0.795683}, {-0.129688, 0.786484}, {-0.147949, 0.8033}}], 
+         PolygonBox[{{-0.0279297, 0.795683}, {-0.0202759, 
+          0.776765}, {-0.111426, 0.769668}, {-0.129688, 0.786484}}], 
+         PolygonBox[{{-0.0202759, 0.776765}, {-0.0167969, 
+          0.768166}, {-0.103125, 0.762024}, {-0.111426, 0.769668}}], 
+         PolygonBox[{{-0.15625, 0.810943}, {-0.147949, 0.8033}, {-0.215637, 
+          0.772625}, {-0.226562, 0.777676}}], 
+         PolygonBox[{{-0.147949, 0.8033}, {-0.129688, 0.786484}, {-0.191602, 
+          0.761515}, {-0.215637, 0.772625}}], 
+         PolygonBox[{{-0.129688, 0.786484}, {-0.111426, 0.769668}, {-0.167566,
+           0.750404}, {-0.191602, 0.761515}}], 
+         PolygonBox[{{-0.111426, 0.769668}, {-0.103125, 0.762024}, {-0.156641,
+           0.745354}, {-0.167566, 0.750404}}], 
+         PolygonBox[{{-0.226562, 0.777676}, {-0.215637, 0.772625}, {-0.238281,
+           0.712891}, {-0.25, 0.712891}}], 
+         PolygonBox[{{-0.215637, 0.772625}, {-0.191602, 0.761515}, {-0.2125, 
+          0.712891}, {-0.238281, 0.712891}}], 
+         PolygonBox[{{-0.191602, 0.761515}, {-0.167566, 0.750404}, {-0.186719,
+           0.712891}, {-0.2125, 0.712891}}], 
+         PolygonBox[{{-0.167566, 0.750404}, {-0.156641, 0.745354}, {-0.175, 
+          0.712891}, {-0.186719, 0.712891}}], 
+         PolygonBox[{{-0.175, 0.712891}, {-0.186719, 0.712891}, {-0.175885, 
+          0.656723}, {-0.165234, 0.661621}}], 
+         PolygonBox[{{-0.186719, 0.712891}, {-0.2125, 0.712891}, {-0.199316, 
+          0.645947}, {-0.175885, 0.656723}}], 
+         PolygonBox[{{-0.2125, 0.712891}, {-0.238281, 0.712891}, {-0.222748, 
+          0.63517}, {-0.199316, 0.645947}}], 
+         PolygonBox[{{-0.238281, 0.712891}, {-0.25, 0.712891}, {-0.233398, 
+          0.630272}, {-0.222748, 0.63517}}], 
+         PolygonBox[{{-0.165234, 0.661621}, {-0.175885, 0.656723}, {-0.141943,
+           0.592611}, {-0.134375, 0.600098}}], 
+         PolygonBox[{{-0.175885, 0.656723}, {-0.199316, 0.645947}, {-0.158594,
+           0.576141}, {-0.141943, 0.592611}}], 
+         PolygonBox[{{-0.199316, 0.645947}, {-0.222748, 0.63517}, {-0.175244, 
+          0.559671}, {-0.158594, 0.576141}}], 
+         PolygonBox[{{-0.222748, 0.63517}, {-0.233398, 0.630272}, {-0.182812, 
+          0.552185}, {-0.175244, 0.559671}}], 
+         PolygonBox[{{-0.134375, 0.600098}, {-0.141943, 
+          0.592611}, {-0.0827332, 0.529498}, {-0.0800781, 0.538757}}], 
+         PolygonBox[{{-0.141943, 0.592611}, {-0.158594, 
+          0.576141}, {-0.0885742, 0.509128}, {-0.0827332, 0.529498}}], 
+         PolygonBox[{{-0.158594, 0.576141}, {-0.175244, 
+          0.559671}, {-0.0944153, 0.488759}, {-0.0885742, 0.509128}}], 
+         PolygonBox[{{-0.175244, 0.559671}, {-0.182812, 
+          0.552185}, {-0.0970703, 0.4795}, {-0.0944153, 0.488759}}], 
+         PolygonBox[{{-0.0800781, 0.538757}, {-0.0827332, 0.529498}, {
+           0.00390625, 0.476326}, {0, 0.488037}}], 
+         PolygonBox[{{-0.0827332, 0.529498}, {-0.0885742, 0.509128}, {0.0125, 
+          0.450561}, {0.00390625, 0.476326}}], 
+         PolygonBox[{{-0.0885742, 0.509128}, {-0.0944153, 0.488759}, {
+          0.0210938, 0.424797}, {0.0125, 0.450561}}], 
+         PolygonBox[{{-0.0944153, 0.488759}, {-0.0970703, 0.4795}, {0.025, 
+          0.413086}, {0.0210938, 0.424797}}], 
+         PolygonBox[{{-0.25, 0.712891}, {-0.238281, 0.712891}, {-0.222748, 
+          0.63517}, {-0.233398, 0.630272}}], 
+         PolygonBox[{{-0.238281, 0.712891}, {-0.2125, 0.712891}, {-0.199316, 
+          0.645947}, {-0.222748, 0.63517}}], 
+         PolygonBox[{{-0.2125, 0.712891}, {-0.186719, 0.712891}, {-0.175885, 
+          0.656723}, {-0.199316, 0.645947}}], 
+         PolygonBox[{{-0.186719, 0.712891}, {-0.175, 0.712891}, {-0.165234, 
+          0.661621}, {-0.175885, 0.656723}}], 
+         PolygonBox[{{-0.233398, 0.630272}, {-0.222748, 0.63517}, {-0.175244, 
+          0.559671}, {-0.182812, 0.552185}}], 
+         PolygonBox[{{-0.222748, 0.63517}, {-0.199316, 0.645947}, {-0.158594, 
+          0.576141}, {-0.175244, 0.559671}}], 
+         PolygonBox[{{-0.199316, 0.645947}, {-0.175885, 0.656723}, {-0.141943,
+           0.592611}, {-0.158594, 0.576141}}], 
+         PolygonBox[{{-0.175885, 0.656723}, {-0.165234, 0.661621}, {-0.134375,
+           0.600098}, {-0.141943, 0.592611}}], 
+         PolygonBox[{{-0.182812, 0.552185}, {-0.175244, 
+          0.559671}, {-0.0944153, 0.488759}, {-0.0970703, 0.4795}}], 
+         PolygonBox[{{-0.175244, 0.559671}, {-0.158594, 
+          0.576141}, {-0.0885742, 0.509128}, {-0.0944153, 0.488759}}], 
+         PolygonBox[{{-0.158594, 0.576141}, {-0.141943, 
+          0.592611}, {-0.0827332, 0.529498}, {-0.0885742, 0.509128}}], 
+         PolygonBox[{{-0.141943, 0.592611}, {-0.134375, 
+          0.600098}, {-0.0800781, 0.538757}, {-0.0827332, 0.529498}}], 
+         PolygonBox[{{-0.0970703, 0.4795}, {-0.0944153, 0.488759}, {0.0210938,
+           0.424797}, {0.025, 0.413086}}], 
+         PolygonBox[{{-0.0944153, 0.488759}, {-0.0885742, 0.509128}, {0.0125, 
+          0.450561}, {0.0210938, 0.424797}}], 
+         PolygonBox[{{-0.0885742, 0.509128}, {-0.0827332, 0.529498}, {
+          0.00390625, 0.476326}, {0.0125, 0.450561}}], 
+         PolygonBox[{{-0.0827332, 0.529498}, {-0.0800781, 0.538757}, {
+           0, 0.488037}, {0.00390625, 0.476326}}], 
+         PolygonBox[{{0.925, 0.618896}, {0.925, 0.586738}, {1.05408, 
+          0.622637}, {1.04492, 0.646503}}], 
+         PolygonBox[{{0.925, 0.586738}, {0.925, 0.515991}, {1.07422, 
+          0.570131}, {1.05408, 0.622637}}], 
+         PolygonBox[{{0.925, 0.515991}, {0.925, 0.445244}, {1.09436, 
+          0.517625}, {1.07422, 0.570131}}], 
+         PolygonBox[{{0.925, 0.445244}, {0.925, 0.413086}, {1.10352, 
+          0.493759}, {1.09436, 0.517625}}], 
+         PolygonBox[{{1.04492, 0.646503}, {1.05408, 0.622637}, {1.10859, 
+          0.698941}, {1.09687, 0.71286}}], 
+         PolygonBox[{{1.05408, 0.622637}, {1.07422, 0.570131}, {1.13437, 
+          0.66832}, {1.10859, 0.698941}}], 
+         PolygonBox[{{1.07422, 0.570131}, {1.09436, 0.517625}, {1.16016, 
+          0.637698}, {1.13437, 0.66832}}], 
+         PolygonBox[{{1.09436, 0.517625}, {1.10352, 0.493759}, {1.17188, 
+          0.623779}, {1.16016, 0.637698}}], 
+         PolygonBox[{{1.09687, 0.71286}, {1.10859, 0.698941}, {1.13967, 
+          0.788218}, {1.12539, 0.79327}}], 
+         PolygonBox[{{1.10859, 0.698941}, {1.13437, 0.66832}, {1.17109, 
+          0.777105}, {1.13967, 0.788218}}], 
+         PolygonBox[{{1.13437, 0.66832}, {1.16016, 0.637698}, {1.20251, 
+          0.765992}, {1.17109, 0.777105}}], 
+         PolygonBox[{{1.16016, 0.637698}, {1.17188, 0.623779}, {1.2168, 
+          0.76094}, {1.20251, 0.765992}}], 
+         PolygonBox[{{1.12539, 0.79327}, {1.13967, 0.788218}, {1.19844, 
+          0.863037}, {1.175, 0.863037}}], 
+         PolygonBox[{{1.13967, 0.788218}, {1.17109, 0.777105}, {1.25, 
+          0.863037}, {1.19844, 0.863037}}], 
+         PolygonBox[{{1.17109, 0.777105}, {1.20251, 0.765992}, {1.30156, 
+          0.863037}, {1.25, 0.863037}}], 
+         PolygonBox[{{1.20251, 0.765992}, {1.2168, 0.76094}, {1.325, 
+          0.863037}, {1.30156, 0.863037}}], 
+         PolygonBox[{{0.925, 0.413086}, {0.925, 0.445244}, {1.09436, 
+          0.517625}, {1.10352, 0.493759}}], 
+         PolygonBox[{{0.925, 0.445244}, {0.925, 0.515991}, {1.07422, 
+          0.570131}, {1.09436, 0.517625}}], 
+         PolygonBox[{{0.925, 0.515991}, {0.925, 0.586738}, {1.05408, 
+          0.622637}, {1.07422, 0.570131}}], 
+         PolygonBox[{{0.925, 0.586738}, {0.925, 0.618896}, {1.04492, 
+          0.646503}, {1.05408, 0.622637}}], 
+         PolygonBox[{{1.10352, 0.493759}, {1.09436, 0.517625}, {1.16016, 
+          0.637698}, {1.17188, 0.623779}}], 
+         PolygonBox[{{1.09436, 0.517625}, {1.07422, 0.570131}, {1.13437, 
+          0.66832}, {1.16016, 0.637698}}], 
+         PolygonBox[{{1.07422, 0.570131}, {1.05408, 0.622637}, {1.10859, 
+          0.698941}, {1.13437, 0.66832}}], 
+         PolygonBox[{{1.05408, 0.622637}, {1.04492, 0.646503}, {1.09687, 
+          0.71286}, {1.10859, 0.698941}}], 
+         PolygonBox[{{1.17188, 0.623779}, {1.16016, 0.637698}, {1.20251, 
+          0.765992}, {1.2168, 0.76094}}], 
+         PolygonBox[{{1.16016, 0.637698}, {1.13437, 0.66832}, {1.17109, 
+          0.777105}, {1.20251, 0.765992}}], 
+         PolygonBox[{{1.13437, 0.66832}, {1.10859, 0.698941}, {1.13967, 
+          0.788218}, {1.17109, 0.777105}}], 
+         PolygonBox[{{1.10859, 0.698941}, {1.09687, 0.71286}, {1.12539, 
+          0.79327}, {1.13967, 0.788218}}], 
+         PolygonBox[{{1.2168, 0.76094}, {1.20251, 0.765992}, {1.30156, 
+          0.863037}, {1.325, 0.863037}}], 
+         PolygonBox[{{1.20251, 0.765992}, {1.17109, 0.777105}, {1.25, 
+          0.863037}, {1.30156, 0.863037}}], 
+         PolygonBox[{{1.17109, 0.777105}, {1.13967, 0.788218}, {1.19844, 
+          0.863037}, {1.25, 0.863037}}], 
+         PolygonBox[{{1.13967, 0.788218}, {1.12539, 0.79327}, {1.175, 
+          0.863037}, {1.19844, 0.863037}}], 
+         PolygonBox[{{1.175, 0.863037}, {1.19844, 0.863037}, {1.21807, 
+          0.873741}, {1.19297, 0.8732}}], 
+         PolygonBox[{{1.19844, 0.863037}, {1.25, 0.863037}, {1.27329, 
+          0.874933}, {1.21807, 0.873741}}], 
+         PolygonBox[{{1.25, 0.863037}, {1.30156, 0.863037}, {1.32851, 
+          0.876125}, {1.27329, 0.874933}}], 
+         PolygonBox[{{1.30156, 0.863037}, {1.325, 0.863037}, {1.35361, 
+          0.876667}, {1.32851, 0.876125}}], 
+         PolygonBox[{{1.19297, 0.8732}, {1.21807, 0.873741}, {1.22981, 
+          0.87746}, {1.20625, 0.876587}}], 
+         PolygonBox[{{1.21807, 0.873741}, {1.27329, 0.874933}, {1.28164, 
+          0.879379}, {1.22981, 0.87746}}], 
+         PolygonBox[{{1.27329, 0.874933}, {1.32851, 0.876125}, {1.33347, 
+          0.881299}, {1.28164, 0.879379}}], 
+         PolygonBox[{{1.32851, 0.876125}, {1.35361, 0.876667}, {1.35703, 
+          0.882171}, {1.33347, 0.881299}}], 
+         PolygonBox[{{1.20625, 0.876587}, {1.22981, 0.87746}, {1.23016, 
+          0.873967}, {1.21016, 0.8732}}], 
+         PolygonBox[{{1.22981, 0.87746}, {1.28164, 0.879379}, {1.27417, 
+          0.875654}, {1.23016, 0.873967}}], 
+         PolygonBox[{{1.28164, 0.879379}, {1.33347, 0.881299}, {1.31818, 
+          0.877342}, {1.27417, 0.875654}}], 
+         PolygonBox[{{1.33347, 0.881299}, {1.35703, 0.882171}, {1.33818, 
+          0.878109}, {1.31818, 0.877342}}], 
+         PolygonBox[{{1.21016, 0.8732}, {1.23016, 0.873967}, {1.21563, 
+          0.863037}, {1.2, 0.863037}}], 
+         PolygonBox[{{1.23016, 0.873967}, {1.27417, 0.875654}, {1.25, 
+          0.863037}, {1.21563, 0.863037}}], 
+         PolygonBox[{{1.27417, 0.875654}, {1.31818, 0.877342}, {1.28437, 
+          0.863037}, {1.25, 0.863037}}], 
+         PolygonBox[{{1.31818, 0.877342}, {1.33818, 0.878109}, {1.3, 
+          0.863037}, {1.28437, 0.863037}}], 
+         PolygonBox[{{1.325, 0.863037}, {1.30156, 0.863037}, {1.32851, 
+          0.876125}, {1.35361, 0.876667}}], 
+         PolygonBox[{{1.30156, 0.863037}, {1.25, 0.863037}, {1.27329, 
+          0.874933}, {1.32851, 0.876125}}], 
+         PolygonBox[{{1.25, 0.863037}, {1.19844, 0.863037}, {1.21807, 
+          0.873741}, {1.27329, 0.874933}}], 
+         PolygonBox[{{1.19844, 0.863037}, {1.175, 0.863037}, {1.19297, 
+          0.8732}, {1.21807, 0.873741}}], 
+         PolygonBox[{{1.35361, 0.876667}, {1.32851, 0.876125}, {1.33347, 
+          0.881299}, {1.35703, 0.882171}}], 
+         PolygonBox[{{1.32851, 0.876125}, {1.27329, 0.874933}, {1.28164, 
+          0.879379}, {1.33347, 0.881299}}], 
+         PolygonBox[{{1.27329, 0.874933}, {1.21807, 0.873741}, {1.22981, 
+          0.87746}, {1.28164, 0.879379}}], 
+         PolygonBox[{{1.21807, 0.873741}, {1.19297, 0.8732}, {1.20625, 
+          0.876587}, {1.22981, 0.87746}}], 
+         PolygonBox[{{1.35703, 0.882171}, {1.33347, 0.881299}, {1.31818, 
+          0.877342}, {1.33818, 0.878109}}], 
+         PolygonBox[{{1.33347, 0.881299}, {1.28164, 0.879379}, {1.27417, 
+          0.875654}, {1.31818, 0.877342}}], 
+         PolygonBox[{{1.28164, 0.879379}, {1.22981, 0.87746}, {1.23016, 
+          0.873967}, {1.27417, 0.875654}}], 
+         PolygonBox[{{1.22981, 0.87746}, {1.20625, 0.876587}, {1.21016, 
+          0.8732}, {1.23016, 0.873967}}], 
+         PolygonBox[{{1.33818, 0.878109}, {1.31818, 0.877342}, {1.28437, 
+          0.863037}, {1.3, 0.863037}}], 
+         PolygonBox[{{1.31818, 0.877342}, {1.27417, 0.875654}, {1.25, 
+          0.863037}, {1.28437, 0.863037}}], 
+         PolygonBox[{{1.27417, 0.875654}, {1.23016, 0.873967}, {1.21563, 
+          0.863037}, {1.25, 0.863037}}], 
+         PolygonBox[{{1.23016, 0.873967}, {1.21016, 0.8732}, {1.2, 
+          0.863037}, {1.21563, 0.863037}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.578586, 1.03776}, {0.585156, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.56054, 1.03776}, {0.578586, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.533513, 1.03776}, {0.56054, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.5, 1.03776}, {0.533513, 1.03776}}], 
+         PolygonBox[{{0.585156, 1.03776}, {0.578586, 1.03776}, {0.574979, 
+          1.00793}, {0.58125, 1.00793}}], 
+         PolygonBox[{{0.578586, 1.03776}, {0.56054, 1.03776}, {0.557758, 
+          1.00793}, {0.574979, 1.00793}}], 
+         PolygonBox[{{0.56054, 1.03776}, {0.533513, 1.03776}, {0.53197, 
+          1.00793}, {0.557758, 1.00793}}], 
+         PolygonBox[{{0.533513, 1.03776}, {0.5, 1.03776}, {0.5, 1.00793}, {
+          0.53197, 1.00793}}], 
+         PolygonBox[{{0.58125, 1.00793}, {0.574979, 1.00793}, {0.545414, 
+          0.971153}, {0.549219, 0.971153}}], 
+         PolygonBox[{{0.574979, 1.00793}, {0.557758, 1.00793}, {0.534972, 
+          0.971153}, {0.545414, 0.971153}}], 
+         PolygonBox[{{0.557758, 1.00793}, {0.53197, 1.00793}, {0.519348, 
+          0.971153}, {0.534972, 0.971153}}], 
+         PolygonBox[{{0.53197, 1.00793}, {0.5, 1.00793}, {0.5, 0.971153}, {
+          0.519348, 0.971153}}], 
+         PolygonBox[{{0.549219, 0.971153}, {0.545414, 0.971153}, {0.546125, 
+          0.937988}, {0.55, 0.937988}}], 
+         PolygonBox[{{0.545414, 0.971153}, {0.534972, 0.971153}, {0.5355, 
+          0.937988}, {0.546125, 0.937988}}], 
+         PolygonBox[{{0.534972, 0.971153}, {0.519348, 0.971153}, {0.519625, 
+          0.937988}, {0.5355, 0.937988}}], 
+         PolygonBox[{{0.519348, 0.971153}, {0.5, 0.971153}, {0.5, 0.937988}, {
+          0.519625, 0.937988}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.466487, 1.03776}, {0.5, 1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.43946, 1.03776}, {0.466487, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.421414, 1.03776}, {0.43946, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.414844, 1.03776}, {0.421414, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.03776}, {0.466487, 1.03776}, {0.46803, 
+          1.00793}, {0.5, 1.00793}}], 
+         PolygonBox[{{0.466487, 1.03776}, {0.43946, 1.03776}, {0.442242, 
+          1.00793}, {0.46803, 1.00793}}], 
+         PolygonBox[{{0.43946, 1.03776}, {0.421414, 1.03776}, {0.425021, 
+          1.00793}, {0.442242, 1.00793}}], 
+         PolygonBox[{{0.421414, 1.03776}, {0.414844, 1.03776}, {0.41875, 
+          1.00793}, {0.425021, 1.00793}}], 
+         PolygonBox[{{0.5, 1.00793}, {0.46803, 1.00793}, {0.480652, 
+          0.971153}, {0.5, 0.971153}}], 
+         PolygonBox[{{0.46803, 1.00793}, {0.442242, 1.00793}, {0.465028, 
+          0.971153}, {0.480652, 0.971153}}], 
+         PolygonBox[{{0.442242, 1.00793}, {0.425021, 1.00793}, {0.454586, 
+          0.971153}, {0.465028, 0.971153}}], 
+         PolygonBox[{{0.425021, 1.00793}, {0.41875, 1.00793}, {0.450781, 
+          0.971153}, {0.454586, 0.971153}}], 
+         PolygonBox[{{0.5, 0.971153}, {0.480652, 0.971153}, {0.480375, 
+          0.937988}, {0.5, 0.937988}}], 
+         PolygonBox[{{0.480652, 0.971153}, {0.465028, 0.971153}, {0.4645, 
+          0.937988}, {0.480375, 0.937988}}], 
+         PolygonBox[{{0.465028, 0.971153}, {0.454586, 0.971153}, {0.453875, 
+          0.937988}, {0.4645, 0.937988}}], 
+         PolygonBox[{{0.454586, 0.971153}, {0.450781, 0.971153}, {0.45, 
+          0.937988}, {0.453875, 0.937988}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.421414, 1.03776}, {0.414844, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.43946, 1.03776}, {0.421414, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.466487, 1.03776}, {0.43946, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.5, 1.03776}, {0.466487, 1.03776}}], 
+         PolygonBox[{{0.414844, 1.03776}, {0.421414, 1.03776}, {0.425021, 
+          1.00793}, {0.41875, 1.00793}}], 
+         PolygonBox[{{0.421414, 1.03776}, {0.43946, 1.03776}, {0.442242, 
+          1.00793}, {0.425021, 1.00793}}], 
+         PolygonBox[{{0.43946, 1.03776}, {0.466487, 1.03776}, {0.46803, 
+          1.00793}, {0.442242, 1.00793}}], 
+         PolygonBox[{{0.466487, 1.03776}, {0.5, 1.03776}, {0.5, 1.00793}, {
+          0.46803, 1.00793}}], 
+         PolygonBox[{{0.41875, 1.00793}, {0.425021, 1.00793}, {0.454586, 
+          0.971153}, {0.450781, 0.971153}}], 
+         PolygonBox[{{0.425021, 1.00793}, {0.442242, 1.00793}, {0.465028, 
+          0.971153}, {0.454586, 0.971153}}], 
+         PolygonBox[{{0.442242, 1.00793}, {0.46803, 1.00793}, {0.480652, 
+          0.971153}, {0.465028, 0.971153}}], 
+         PolygonBox[{{0.46803, 1.00793}, {0.5, 1.00793}, {0.5, 0.971153}, {
+          0.480652, 0.971153}}], 
+         PolygonBox[{{0.450781, 0.971153}, {0.454586, 0.971153}, {0.453875, 
+          0.937988}, {0.45, 0.937988}}], 
+         PolygonBox[{{0.454586, 0.971153}, {0.465028, 0.971153}, {0.4645, 
+          0.937988}, {0.453875, 0.937988}}], 
+         PolygonBox[{{0.465028, 0.971153}, {0.480652, 0.971153}, {0.480375, 
+          0.937988}, {0.4645, 0.937988}}], 
+         PolygonBox[{{0.480652, 0.971153}, {0.5, 0.971153}, {0.5, 0.937988}, {
+          0.480375, 0.937988}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.533513, 1.03776}, {0.5, 1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.56054, 1.03776}, {0.533513, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.578586, 1.03776}, {0.56054, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.05005}, {0.585156, 1.03776}, {0.578586, 
+          1.03776}}], 
+         PolygonBox[{{0.5, 1.03776}, {0.533513, 1.03776}, {0.53197, 
+          1.00793}, {0.5, 1.00793}}], 
+         PolygonBox[{{0.533513, 1.03776}, {0.56054, 1.03776}, {0.557758, 
+          1.00793}, {0.53197, 1.00793}}], 
+         PolygonBox[{{0.56054, 1.03776}, {0.578586, 1.03776}, {0.574979, 
+          1.00793}, {0.557758, 1.00793}}], 
+         PolygonBox[{{0.578586, 1.03776}, {0.585156, 1.03776}, {0.58125, 
+          1.00793}, {0.574979, 1.00793}}], 
+         PolygonBox[{{0.5, 1.00793}, {0.53197, 1.00793}, {0.519348, 
+          0.971153}, {0.5, 0.971153}}], 
+         PolygonBox[{{0.53197, 1.00793}, {0.557758, 1.00793}, {0.534972, 
+          0.971153}, {0.519348, 0.971153}}], 
+         PolygonBox[{{0.557758, 1.00793}, {0.574979, 1.00793}, {0.545414, 
+          0.971153}, {0.534972, 0.971153}}], 
+         PolygonBox[{{0.574979, 1.00793}, {0.58125, 1.00793}, {0.549219, 
+          0.971153}, {0.545414, 0.971153}}], 
+         PolygonBox[{{0.5, 0.971153}, {0.519348, 0.971153}, {0.519625, 
+          0.937988}, {0.5, 0.937988}}], 
+         PolygonBox[{{0.519348, 0.971153}, {0.534972, 0.971153}, {0.5355, 
+          0.937988}, {0.519625, 0.937988}}], 
+         PolygonBox[{{0.534972, 0.971153}, {0.545414, 0.971153}, {0.546125, 
+          0.937988}, {0.5355, 0.937988}}], 
+         PolygonBox[{{0.545414, 0.971153}, {0.549219, 0.971153}, {0.55, 
+          0.937988}, {0.546125, 0.937988}}], 
+         PolygonBox[{{0.55, 0.937988}, {0.546125, 0.937988}, {0.605223, 
+          0.915394}, {0.614062, 0.915394}}], 
+         PolygonBox[{{0.546125, 0.937988}, {0.5355, 0.937988}, {0.580984, 
+          0.915394}, {0.605223, 0.915394}}], 
+         PolygonBox[{{0.5355, 0.937988}, {0.519625, 0.937988}, {0.54477, 
+          0.915394}, {0.580984, 0.915394}}], 
+         PolygonBox[{{0.519625, 0.937988}, {0.5, 0.937988}, {0.5, 0.915394}, {
+          0.54477, 0.915394}}], 
+         PolygonBox[{{0.614062, 0.915394}, {0.605223, 0.915394}, {0.690266, 
+          0.900055}, {0.70625, 0.900055}}], 
+         PolygonBox[{{0.605223, 0.915394}, {0.580984, 0.915394}, {0.646437, 
+          0.900055}, {0.690266, 0.900055}}], 
+         PolygonBox[{{0.580984, 0.915394}, {0.54477, 0.915394}, {0.580953, 
+          0.900055}, {0.646437, 0.900055}}], 
+         PolygonBox[{{0.54477, 0.915394}, {0.5, 0.915394}, {0.5, 0.900055}, {
+          0.580953, 0.900055}}], 
+         PolygonBox[{{0.70625, 0.900055}, {0.690266, 0.900055}, {0.76666, 
+          0.884945}, {0.789062, 0.884945}}], 
+         PolygonBox[{{0.690266, 0.900055}, {0.646437, 0.900055}, {0.705234, 
+          0.884945}, {0.76666, 0.884945}}], 
+         PolygonBox[{{0.646437, 0.900055}, {0.580953, 0.900055}, {0.613457, 
+          0.884945}, {0.705234, 0.884945}}], 
+         PolygonBox[{{0.580953, 0.900055}, {0.5, 0.900055}, {0.5, 0.884945}, {
+          0.613457, 0.884945}}], 
+         PolygonBox[{{0.789062, 0.884945}, {0.76666, 0.884945}, {0.799812, 
+          0.863037}, {0.825, 0.863037}}], 
+         PolygonBox[{{0.76666, 0.884945}, {0.705234, 0.884945}, {0.73075, 
+          0.863037}, {0.799812, 0.863037}}], 
+         PolygonBox[{{0.705234, 0.884945}, {0.613457, 0.884945}, {0.627562, 
+          0.863037}, {0.73075, 0.863037}}], 
+         PolygonBox[{{0.613457, 0.884945}, {0.5, 0.884945}, {0.5, 0.863037}, {
+          0.627562, 0.863037}}], 
+         PolygonBox[{{0.5, 0.937988}, {0.480375, 0.937988}, {0.45523, 
+          0.915394}, {0.5, 0.915394}}], 
+         PolygonBox[{{0.480375, 0.937988}, {0.4645, 0.937988}, {0.419016, 
+          0.915394}, {0.45523, 0.915394}}], 
+         PolygonBox[{{0.4645, 0.937988}, {0.453875, 0.937988}, {0.394777, 
+          0.915394}, {0.419016, 0.915394}}], 
+         PolygonBox[{{0.453875, 0.937988}, {0.45, 0.937988}, {0.385938, 
+          0.915394}, {0.394777, 0.915394}}], 
+         PolygonBox[{{0.5, 0.915394}, {0.45523, 0.915394}, {0.419047, 
+          0.900055}, {0.5, 0.900055}}], 
+         PolygonBox[{{0.45523, 0.915394}, {0.419016, 0.915394}, {0.353562, 
+          0.900055}, {0.419047, 0.900055}}], 
+         PolygonBox[{{0.419016, 0.915394}, {0.394777, 0.915394}, {0.309734, 
+          0.900055}, {0.353562, 0.900055}}], 
+         PolygonBox[{{0.394777, 0.915394}, {0.385938, 0.915394}, {0.29375, 
+          0.900055}, {0.309734, 0.900055}}], 
+         PolygonBox[{{0.5, 0.900055}, {0.419047, 0.900055}, {0.386543, 
+          0.884945}, {0.5, 0.884945}}], 
+         PolygonBox[{{0.419047, 0.900055}, {0.353562, 0.900055}, {0.294766, 
+          0.884945}, {0.386543, 0.884945}}], 
+         PolygonBox[{{0.353562, 0.900055}, {0.309734, 0.900055}, {0.23334, 
+          0.884945}, {0.294766, 0.884945}}], 
+         PolygonBox[{{0.309734, 0.900055}, {0.29375, 0.900055}, {0.210938, 
+          0.884945}, {0.23334, 0.884945}}], 
+         PolygonBox[{{0.5, 0.884945}, {0.386543, 0.884945}, {0.372437, 
+          0.863037}, {0.5, 0.863037}}], 
+         PolygonBox[{{0.386543, 0.884945}, {0.294766, 0.884945}, {0.26925, 
+          0.863037}, {0.372437, 0.863037}}], 
+         PolygonBox[{{0.294766, 0.884945}, {0.23334, 0.884945}, {0.200187, 
+          0.863037}, {0.26925, 0.863037}}], 
+         PolygonBox[{{0.23334, 0.884945}, {0.210938, 0.884945}, {0.175, 
+          0.863037}, {0.200187, 0.863037}}], 
+         PolygonBox[{{0.45, 0.937988}, {0.453875, 0.937988}, {0.394777, 
+          0.915394}, {0.385938, 0.915394}}], 
+         PolygonBox[{{0.453875, 0.937988}, {0.4645, 0.937988}, {0.419016, 
+          0.915394}, {0.394777, 0.915394}}], 
+         PolygonBox[{{0.4645, 0.937988}, {0.480375, 0.937988}, {0.45523, 
+          0.915394}, {0.419016, 0.915394}}], 
+         PolygonBox[{{0.480375, 0.937988}, {0.5, 0.937988}, {0.5, 0.915394}, {
+          0.45523, 0.915394}}], 
+         PolygonBox[{{0.385938, 0.915394}, {0.394777, 0.915394}, {0.309734, 
+          0.900055}, {0.29375, 0.900055}}], 
+         PolygonBox[{{0.394777, 0.915394}, {0.419016, 0.915394}, {0.353562, 
+          0.900055}, {0.309734, 0.900055}}], 
+         PolygonBox[{{0.419016, 0.915394}, {0.45523, 0.915394}, {0.419047, 
+          0.900055}, {0.353562, 0.900055}}], 
+         PolygonBox[{{0.45523, 0.915394}, {0.5, 0.915394}, {0.5, 0.900055}, {
+          0.419047, 0.900055}}], 
+         PolygonBox[{{0.29375, 0.900055}, {0.309734, 0.900055}, {0.23334, 
+          0.884945}, {0.210938, 0.884945}}], 
+         PolygonBox[{{0.309734, 0.900055}, {0.353562, 0.900055}, {0.294766, 
+          0.884945}, {0.23334, 0.884945}}], 
+         PolygonBox[{{0.353562, 0.900055}, {0.419047, 0.900055}, {0.386543, 
+          0.884945}, {0.294766, 0.884945}}], 
+         PolygonBox[{{0.419047, 0.900055}, {0.5, 0.900055}, {0.5, 0.884945}, {
+          0.386543, 0.884945}}], 
+         PolygonBox[{{0.210938, 0.884945}, {0.23334, 0.884945}, {0.200187, 
+          0.863037}, {0.175, 0.863037}}], 
+         PolygonBox[{{0.23334, 0.884945}, {0.294766, 0.884945}, {0.26925, 
+          0.863037}, {0.200187, 0.863037}}], 
+         PolygonBox[{{0.294766, 0.884945}, {0.386543, 0.884945}, {0.372437, 
+          0.863037}, {0.26925, 0.863037}}], 
+         PolygonBox[{{0.386543, 0.884945}, {0.5, 0.884945}, {0.5, 0.863037}, {
+          0.372437, 0.863037}}], 
+         PolygonBox[{{0.5, 0.937988}, {0.519625, 0.937988}, {0.54477, 
+          0.915394}, {0.5, 0.915394}}], 
+         PolygonBox[{{0.519625, 0.937988}, {0.5355, 0.937988}, {0.580984, 
+          0.915394}, {0.54477, 0.915394}}], 
+         PolygonBox[{{0.5355, 0.937988}, {0.546125, 0.937988}, {0.605223, 
+          0.915394}, {0.580984, 0.915394}}], 
+         PolygonBox[{{0.546125, 0.937988}, {0.55, 0.937988}, {0.614062, 
+          0.915394}, {0.605223, 0.915394}}], 
+         PolygonBox[{{0.5, 0.915394}, {0.54477, 0.915394}, {0.580953, 
+          0.900055}, {0.5, 0.900055}}], 
+         PolygonBox[{{0.54477, 0.915394}, {0.580984, 0.915394}, {0.646437, 
+          0.900055}, {0.580953, 0.900055}}], 
+         PolygonBox[{{0.580984, 0.915394}, {0.605223, 0.915394}, {0.690266, 
+          0.900055}, {0.646437, 0.900055}}], 
+         PolygonBox[{{0.605223, 0.915394}, {0.614062, 0.915394}, {0.70625, 
+          0.900055}, {0.690266, 0.900055}}], 
+         PolygonBox[{{0.5, 0.900055}, {0.580953, 0.900055}, {0.613457, 
+          0.884945}, {0.5, 0.884945}}], 
+         PolygonBox[{{0.580953, 0.900055}, {0.646437, 0.900055}, {0.705234, 
+          0.884945}, {0.613457, 0.884945}}], 
+         PolygonBox[{{0.646437, 0.900055}, {0.690266, 0.900055}, {0.76666, 
+          0.884945}, {0.705234, 0.884945}}], 
+         PolygonBox[{{0.690266, 0.900055}, {0.70625, 0.900055}, {0.789062, 
+          0.884945}, {0.76666, 0.884945}}], 
+         PolygonBox[{{0.5, 0.884945}, {0.613457, 0.884945}, {0.627562, 
+          0.863037}, {0.5, 0.863037}}], 
+         PolygonBox[{{0.613457, 0.884945}, {0.705234, 0.884945}, {0.73075, 
+          0.863037}, {0.627562, 0.863037}}], 
+         PolygonBox[{{0.705234, 0.884945}, {0.76666, 0.884945}, {0.799812, 
+          0.863037}, {0.73075, 0.863037}}], 
+         PolygonBox[{{0.76666, 0.884945}, {0.789062, 0.884945}, {0.825, 
+          0.863037}, {0.799812, 0.863037}}]}},
+       Axes->True], {580.5, -179.49042197843227`}, 
+      ImageScaled[{0.5, 0.5}], {360., 336.5445412095605}], InsetBox[
+      GraphicsBox[{
+        {GrayLevel[0.5], LineBox[{{0, 0}, {1, 0}}], LineBox[{{0, 0}, {0, 1}}],
+          DiskBox[{0, 0}, 0.25]}, 
+        {RGBColor[1, 0.5, 0.5], Opacity[0.5], EdgeForm[GrayLevel[0]], 
+         PolygonBox[{{0.85, 0}, {0.822875, 0.137375}, {0.818371, 0.135459}, {
+           0.845117, 0}}], 
+         PolygonBox[{{0.822875, 0.137375}, {0.7485, 0.2485}, {0.745033, 
+          0.245034}, {0.818371, 0.135459}}], 
+         PolygonBox[{{0.7485, 0.2485}, {0.637375, 0.322875}, {0.635459, 
+          0.318373}, {0.745033, 0.245034}}], 
+         PolygonBox[{{0.637375, 0.322875}, {0.5, 0.35}, {0.5, 0.34512}, {
+          0.635459, 0.318373}}], 
+         PolygonBox[{{0.845117, 0}, {0.818371, 0.135459}, {0.823596, 
+           0.137682}, {0.850781, 0}}], 
+         PolygonBox[{{0.818371, 0.135459}, {0.745033, 0.245034}, {0.749055, 
+          0.249056}, {0.823596, 0.137682}}], 
+         PolygonBox[{{0.745033, 0.245034}, {0.635459, 0.318373}, {0.637682, 
+          0.323599}, {0.749055, 0.249056}}], 
+         PolygonBox[{{0.635459, 0.318373}, {0.5, 0.34512}, {0.5, 0.350785}, {
+          0.637682, 0.323599}}], 
+         PolygonBox[{{0.850781, 0}, {0.823596, 0.137682}, {0.834226, 
+           0.142205}, {0.862305, 0}}], 
+         PolygonBox[{{0.823596, 0.137682}, {0.749055, 0.249056}, {0.757236, 
+          0.257238}, {0.834226, 0.142205}}], 
+         PolygonBox[{{0.749055, 0.249056}, {0.637682, 0.323599}, {0.642205, 
+          0.334229}, {0.757236, 0.257238}}], 
+         PolygonBox[{{0.637682, 0.323599}, {0.5, 0.350785}, {0.5, 0.362308}, {
+          0.642205, 0.334229}}], 
+         PolygonBox[{{0.862305, 0}, {0.834226, 0.142205}, {0.845937, 
+           0.147187}, {0.875, 0}}], 
+         PolygonBox[{{0.834226, 0.142205}, {0.757236, 0.257238}, {0.76625, 
+          0.26625}, {0.845937, 0.147187}}], 
+         PolygonBox[{{0.757236, 0.257238}, {0.642205, 0.334229}, {0.647187, 
+          0.345937}, {0.76625, 0.26625}}], 
+         PolygonBox[{{0.642205, 0.334229}, {0.5, 0.362308}, {0.5, 0.375}, {
+          0.647187, 0.345937}}], 
+         PolygonBox[{{0.5, 0.35}, {0.362625, 0.322875}, {0.364542, 
+          0.318373}, {0.5, 0.34512}}], 
+         PolygonBox[{{0.362625, 0.322875}, {0.2515, 0.2485}, {0.254967, 
+          0.245034}, {0.364542, 0.318373}}], 
+         PolygonBox[{{0.2515, 0.2485}, {0.177125, 0.137375}, {0.181629, 
+          0.135459}, {0.254967, 0.245034}}], 
+         PolygonBox[{{0.177125, 0.137375}, {0.15, 0}, {0.154883, 0}, {
+           0.181629, 0.135459}}], 
+         PolygonBox[{{0.5, 0.34512}, {0.364542, 0.318373}, {0.362318, 
+          0.323599}, {0.5, 0.350785}}], 
+         PolygonBox[{{0.364542, 0.318373}, {0.254967, 0.245034}, {0.250945, 
+          0.249056}, {0.362318, 0.323599}}], 
+         PolygonBox[{{0.254967, 0.245034}, {0.181629, 0.135459}, {0.176404, 
+          0.137682}, {0.250945, 0.249056}}], 
+         PolygonBox[{{0.181629, 0.135459}, {0.154883, 0}, {0.149219, 0}, {
+           0.176404, 0.137682}}], 
+         PolygonBox[{{0.5, 0.350785}, {0.362318, 0.323599}, {0.357795, 
+          0.334229}, {0.5, 0.362308}}], 
+         PolygonBox[{{0.362318, 0.323599}, {0.250945, 0.249056}, {0.242764, 
+          0.257238}, {0.357795, 0.334229}}], 
+         PolygonBox[{{0.250945, 0.249056}, {0.176404, 0.137682}, {0.165774, 
+          0.142205}, {0.242764, 0.257238}}], 
+         PolygonBox[{{0.176404, 0.137682}, {0.149219, 0}, {0.137695, 0}, {
+           0.165774, 0.142205}}], 
+         PolygonBox[{{0.5, 0.362308}, {0.357795, 0.334229}, {0.352812, 
+          0.345937}, {0.5, 0.375}}], 
+         PolygonBox[{{0.357795, 0.334229}, {0.242764, 0.257238}, {0.23375, 
+          0.26625}, {0.352812, 0.345937}}], 
+         PolygonBox[{{0.242764, 0.257238}, {0.165774, 0.142205}, {0.154062, 
+          0.147187}, {0.23375, 0.26625}}], 
+         PolygonBox[{{0.165774, 0.142205}, {0.137695, 0}, {0.125, 0}, {
+           0.154062, 0.147187}}], 
+         PolygonBox[{{0.15, 0}, {0.177125, -0.137375}, {
+           0.181629, -0.135458}, {0.154883, 0}}], 
+         PolygonBox[{{0.177125, -0.137375}, {0.2515, -0.2485}, {
+          0.254967, -0.245033}, {0.181629, -0.135458}}], 
+         PolygonBox[{{0.2515, -0.2485}, {0.362625, -0.322875}, {
+          0.364542, -0.318371}, {0.254967, -0.245033}}], 
+         PolygonBox[{{0.362625, -0.322875}, {0.5, -0.35}, {0.5, -0.345118}, {
+          0.364542, -0.318371}}], 
+         PolygonBox[{{0.154883, 0}, {0.181629, -0.135458}, {
+           0.176404, -0.137681}, {0.149219, 0}}], 
+         PolygonBox[{{0.181629, -0.135458}, {0.254967, -0.245033}, {
+          0.250945, -0.249054}, {0.176404, -0.137681}}], 
+         PolygonBox[{{0.254967, -0.245033}, {0.364542, -0.318371}, {
+          0.362318, -0.323595}, {0.250945, -0.249054}}], 
+         PolygonBox[{{0.364542, -0.318371}, {0.5, -0.345118}, {
+          0.5, -0.35078}, {0.362318, -0.323595}}], 
+         PolygonBox[{{0.149219, 0}, {0.176404, -0.137681}, {
+           0.165774, -0.142204}, {0.137695, 0}}], 
+         PolygonBox[{{0.176404, -0.137681}, {0.250945, -0.249054}, {
+          0.242764, -0.257235}, {0.165774, -0.142204}}], 
+         PolygonBox[{{0.250945, -0.249054}, {0.362318, -0.323595}, {
+          0.357795, -0.334224}, {0.242764, -0.257235}}], 
+         PolygonBox[{{0.362318, -0.323595}, {0.5, -0.35078}, {
+          0.5, -0.362303}, {0.357795, -0.334224}}], 
+         PolygonBox[{{0.137695, 0}, {0.165774, -0.142204}, {
+           0.154062, -0.147187}, {0.125, 0}}], 
+         PolygonBox[{{0.165774, -0.142204}, {0.242764, -0.257235}, {
+          0.23375, -0.26625}, {0.154062, -0.147187}}], 
+         PolygonBox[{{0.242764, -0.257235}, {0.357795, -0.334224}, {
+          0.352812, -0.345937}, {0.23375, -0.26625}}], 
+         PolygonBox[{{0.357795, -0.334224}, {0.5, -0.362303}, {0.5, -0.375}, {
+          0.352812, -0.345937}}], 
+         PolygonBox[{{0.5, -0.35}, {0.637375, -0.322875}, {
+          0.635459, -0.318371}, {0.5, -0.345118}}], 
+         PolygonBox[{{0.637375, -0.322875}, {0.7485, -0.2485}, {
+          0.745033, -0.245033}, {0.635459, -0.318371}}], 
+         PolygonBox[{{0.7485, -0.2485}, {0.822875, -0.137375}, {
+          0.818371, -0.135458}, {0.745033, -0.245033}}], 
+         PolygonBox[{{0.822875, -0.137375}, {0.85, 0}, {0.845117, 0}, {
+           0.818371, -0.135458}}], 
+         PolygonBox[{{0.5, -0.345118}, {0.635459, -0.318371}, {
+          0.637682, -0.323595}, {0.5, -0.35078}}], 
+         PolygonBox[{{0.635459, -0.318371}, {0.745033, -0.245033}, {
+          0.749055, -0.249054}, {0.637682, -0.323595}}], 
+         PolygonBox[{{0.745033, -0.245033}, {0.818371, -0.135458}, {
+          0.823596, -0.137681}, {0.749055, -0.249054}}], 
+         PolygonBox[{{0.818371, -0.135458}, {0.845117, 0}, {0.850781, 0}, {
+           0.823596, -0.137681}}], 
+         PolygonBox[{{0.5, -0.35078}, {0.637682, -0.323595}, {
+          0.642205, -0.334224}, {0.5, -0.362303}}], 
+         PolygonBox[{{0.637682, -0.323595}, {0.749055, -0.249054}, {
+          0.757236, -0.257235}, {0.642205, -0.334224}}], 
+         PolygonBox[{{0.749055, -0.249054}, {0.823596, -0.137681}, {
+          0.834226, -0.142204}, {0.757236, -0.257235}}], 
+         PolygonBox[{{0.823596, -0.137681}, {0.850781, 0}, {0.862305, 0}, {
+           0.834226, -0.142204}}], 
+         PolygonBox[{{0.5, -0.362303}, {0.642205, -0.334224}, {
+          0.647187, -0.345937}, {0.5, -0.375}}], 
+         PolygonBox[{{0.642205, -0.334224}, {0.757236, -0.257235}, {
+          0.76625, -0.26625}, {0.647187, -0.345937}}], 
+         PolygonBox[{{0.757236, -0.257235}, {0.834226, -0.142204}, {
+          0.845937, -0.147187}, {0.76625, -0.26625}}], 
+         PolygonBox[{{0.834226, -0.142204}, {0.862305, 0}, {0.875, 0}, {
+           0.845937, -0.147187}}], 
+         PolygonBox[{{0.875, 0}, {0.845937, 0.147187}, {0.888279, 0.165203}, {
+           0.920898, 0}}], 
+         PolygonBox[{{0.845937, 0.147187}, {0.76625, 0.26625}, {0.798838, 
+          0.298838}, {0.888279, 0.165203}}], 
+         PolygonBox[{{0.76625, 0.26625}, {0.647187, 0.345937}, {0.665203, 
+          0.388279}, {0.798838, 0.298838}}], 
+         PolygonBox[{{0.647187, 0.345937}, {0.5, 0.375}, {0.5, 0.420898}, {
+          0.665203, 0.388279}}], 
+         PolygonBox[{{0.920898, 0}, {0.888279, 0.165203}, {0.925215, 
+           0.180918}, {0.960938, 0}}], 
+         PolygonBox[{{0.888279, 0.165203}, {0.798838, 0.298838}, {0.827266, 
+          0.327266}, {0.925215, 0.180918}}], 
+         PolygonBox[{{0.798838, 0.298838}, {0.665203, 0.388279}, {0.680918, 
+          0.425215}, {0.827266, 0.327266}}], 
+         PolygonBox[{{0.665203, 0.388279}, {0.5, 0.420898}, {0.5, 0.460938}, {
+          0.680918, 0.425215}}], 
+         PolygonBox[{{0.960938, 0}, {0.925215, 0.180918}, {0.95134, 
+           0.192034}, {0.989258, 0}}], 
+         PolygonBox[{{0.925215, 0.180918}, {0.827266, 0.327266}, {0.847373, 
+          0.347373}, {0.95134, 0.192034}}], 
+         PolygonBox[{{0.827266, 0.327266}, {0.680918, 0.425215}, {0.692034, 
+          0.45134}, {0.847373, 0.347373}}], 
+         PolygonBox[{{0.680918, 0.425215}, {0.5, 0.460938}, {0.5, 0.489258}, {
+          0.692034, 0.45134}}], 
+         PolygonBox[{{0.989258, 0}, {0.95134, 0.192034}, {0.96125, 0.19625}, {
+           1, 0}}], 
+         PolygonBox[{{0.95134, 0.192034}, {0.847373, 0.347373}, {0.855, 
+          0.355}, {0.96125, 0.19625}}], 
+         PolygonBox[{{0.847373, 0.347373}, {0.692034, 0.45134}, {0.69625, 
+          0.46125}, {0.855, 0.355}}], 
+         PolygonBox[{{0.692034, 0.45134}, {0.5, 0.489258}, {0.5, 0.5}, {
+          0.69625, 0.46125}}], 
+         PolygonBox[{{0.5, 0.375}, {0.352812, 0.345937}, {0.334797, 
+          0.388279}, {0.5, 0.420898}}], 
+         PolygonBox[{{0.352812, 0.345937}, {0.23375, 0.26625}, {0.201162, 
+          0.298838}, {0.334797, 0.388279}}], 
+         PolygonBox[{{0.23375, 0.26625}, {0.154062, 0.147187}, {0.111721, 
+          0.165203}, {0.201162, 0.298838}}], 
+         PolygonBox[{{0.154062, 0.147187}, {0.125, 0}, {0.0791016, 0}, {
+           0.111721, 0.165203}}], 
+         PolygonBox[{{0.5, 0.420898}, {0.334797, 0.388279}, {0.319082, 
+          0.425215}, {0.5, 0.460938}}], 
+         PolygonBox[{{0.334797, 0.388279}, {0.201162, 0.298838}, {0.172734, 
+          0.327266}, {0.319082, 0.425215}}], 
+         PolygonBox[{{0.201162, 0.298838}, {0.111721, 0.165203}, {0.0747852, 
+          0.180918}, {0.172734, 0.327266}}], 
+         PolygonBox[{{0.111721, 0.165203}, {0.0791016, 0}, {0.0390625, 0}, {
+           0.0747852, 0.180918}}], 
+         PolygonBox[{{0.5, 0.460938}, {0.319082, 0.425215}, {0.307966, 
+          0.45134}, {0.5, 0.489258}}], 
+         PolygonBox[{{0.319082, 0.425215}, {0.172734, 0.327266}, {0.152627, 
+          0.347373}, {0.307966, 0.45134}}], 
+         PolygonBox[{{0.172734, 0.327266}, {0.0747852, 0.180918}, {0.0486597, 
+          0.192034}, {0.152627, 0.347373}}], 
+         PolygonBox[{{0.0747852, 0.180918}, {0.0390625, 0}, {0.0107422, 0}, {
+           0.0486597, 0.192034}}], 
+         PolygonBox[{{0.5, 0.489258}, {0.307966, 0.45134}, {0.30375, 
+          0.46125}, {0.5, 0.5}}], 
+         PolygonBox[{{0.307966, 0.45134}, {0.152627, 0.347373}, {0.145, 
+          0.355}, {0.30375, 0.46125}}], 
+         PolygonBox[{{0.152627, 0.347373}, {0.0486597, 0.192034}, {0.03875, 
+          0.19625}, {0.145, 0.355}}], 
+         PolygonBox[{{0.0486597, 0.192034}, {0.0107422, 0}, {0, 0}, {0.03875, 
+           0.19625}}], 
+         PolygonBox[{{0.125, 0}, {0.154062, -0.147187}, {
+           0.111721, -0.165203}, {0.0791016, 0}}], 
+         PolygonBox[{{0.154062, -0.147187}, {0.23375, -0.26625}, {
+          0.201162, -0.298838}, {0.111721, -0.165203}}], 
+         PolygonBox[{{0.23375, -0.26625}, {0.352812, -0.345937}, {
+          0.334797, -0.388279}, {0.201162, -0.298838}}], 
+         PolygonBox[{{0.352812, -0.345937}, {0.5, -0.375}, {0.5, -0.420898}, {
+          0.334797, -0.388279}}], 
+         PolygonBox[{{0.0791016, 0}, {0.111721, -0.165203}, {
+           0.0747852, -0.180918}, {0.0390625, 0}}], 
+         PolygonBox[{{0.111721, -0.165203}, {0.201162, -0.298838}, {
+          0.172734, -0.327266}, {0.0747852, -0.180918}}], 
+         PolygonBox[{{0.201162, -0.298838}, {0.334797, -0.388279}, {
+          0.319082, -0.425215}, {0.172734, -0.327266}}], 
+         PolygonBox[{{0.334797, -0.388279}, {0.5, -0.420898}, {
+          0.5, -0.460938}, {0.319082, -0.425215}}], 
+         PolygonBox[{{0.0390625, 0}, {0.0747852, -0.180918}, {
+           0.0486597, -0.192034}, {0.0107422, 0}}], 
+         PolygonBox[{{0.0747852, -0.180918}, {0.172734, -0.327266}, {
+          0.152627, -0.347373}, {0.0486597, -0.192034}}], 
+         PolygonBox[{{0.172734, -0.327266}, {0.319082, -0.425215}, {
+          0.307966, -0.45134}, {0.152627, -0.347373}}], 
+         PolygonBox[{{0.319082, -0.425215}, {0.5, -0.460938}, {
+          0.5, -0.489258}, {0.307966, -0.45134}}], 
+         PolygonBox[{{0.0107422, 0}, {0.0486597, -0.192034}, {
+           0.03875, -0.19625}, {0, 0}}], 
+         PolygonBox[{{0.0486597, -0.192034}, {0.152627, -0.347373}, {
+          0.145, -0.355}, {0.03875, -0.19625}}], 
+         PolygonBox[{{0.152627, -0.347373}, {0.307966, -0.45134}, {
+          0.30375, -0.46125}, {0.145, -0.355}}], 
+         PolygonBox[{{0.307966, -0.45134}, {0.5, -0.489258}, {0.5, -0.5}, {
+          0.30375, -0.46125}}], 
+         PolygonBox[{{0.5, -0.375}, {0.647187, -0.345937}, {
+          0.665203, -0.388279}, {0.5, -0.420898}}], 
+         PolygonBox[{{0.647187, -0.345937}, {0.76625, -0.26625}, {
+          0.798838, -0.298838}, {0.665203, -0.388279}}], 
+         PolygonBox[{{0.76625, -0.26625}, {0.845937, -0.147187}, {
+          0.888279, -0.165203}, {0.798838, -0.298838}}], 
+         PolygonBox[{{0.845937, -0.147187}, {0.875, 0}, {0.920898, 0}, {
+           0.888279, -0.165203}}], 
+         PolygonBox[{{0.5, -0.420898}, {0.665203, -0.388279}, {
+          0.680918, -0.425215}, {0.5, -0.460938}}], 
+         PolygonBox[{{0.665203, -0.388279}, {0.798838, -0.298838}, {
+          0.827266, -0.327266}, {0.680918, -0.425215}}], 
+         PolygonBox[{{0.798838, -0.298838}, {0.888279, -0.165203}, {
+          0.925215, -0.180918}, {0.827266, -0.327266}}], 
+         PolygonBox[{{0.888279, -0.165203}, {0.920898, 0}, {0.960938, 0}, {
+           0.925215, -0.180918}}], 
+         PolygonBox[{{0.5, -0.460938}, {0.680918, -0.425215}, {
+          0.692034, -0.45134}, {0.5, -0.489258}}], 
+         PolygonBox[{{0.680918, -0.425215}, {0.827266, -0.327266}, {
+          0.847373, -0.347373}, {0.692034, -0.45134}}], 
+         PolygonBox[{{0.827266, -0.327266}, {0.925215, -0.180918}, {
+          0.95134, -0.192034}, {0.847373, -0.347373}}], 
+         PolygonBox[{{0.925215, -0.180918}, {0.960938, 0}, {0.989258, 0}, {
+           0.95134, -0.192034}}], 
+         PolygonBox[{{0.5, -0.489258}, {0.692034, -0.45134}, {
+          0.69625, -0.46125}, {0.5, -0.5}}], 
+         PolygonBox[{{0.692034, -0.45134}, {0.847373, -0.347373}, {
+          0.855, -0.355}, {0.69625, -0.46125}}], 
+         PolygonBox[{{0.847373, -0.347373}, {0.95134, -0.192034}, {
+          0.96125, -0.19625}, {0.855, -0.355}}], 
+         PolygonBox[{{0.95134, -0.192034}, {0.989258, 0}, {1, 0}, {
+           0.96125, -0.19625}}], 
+         PolygonBox[{{1, 0}, {0.96125, 0.19625}, {0.943232, 0.188584}, {
+           0.980469, 0}}], 
+         PolygonBox[{{0.96125, 0.19625}, {0.855, 0.355}, {0.841133, 
+          0.341133}, {0.943232, 0.188584}}], 
+         PolygonBox[{{0.855, 0.355}, {0.69625, 0.46125}, {0.688584, 
+          0.443233}, {0.841133, 0.341133}}], 
+         PolygonBox[{{0.69625, 0.46125}, {0.5, 0.5}, {0.5, 0.480469}, {
+          0.688584, 0.443233}}], 
+         PolygonBox[{{0.980469, 0}, {0.943232, 0.188584}, {0.903594, 
+           0.171719}, {0.9375, 0}}], 
+         PolygonBox[{{0.943232, 0.188584}, {0.841133, 0.341133}, {0.810625, 
+          0.310625}, {0.903594, 0.171719}}], 
+         PolygonBox[{{0.841133, 0.341133}, {0.688584, 0.443233}, {0.671719, 
+          0.403594}, {0.810625, 0.310625}}], 
+         PolygonBox[{{0.688584, 0.443233}, {0.5, 0.480469}, {0.5, 0.4375}, {
+          0.671719, 0.403594}}], 
+         PolygonBox[{{0.9375, 0}, {0.903594, 0.171719}, {0.863955, 
+           0.154853}, {0.894531, 0}}], 
+         PolygonBox[{{0.903594, 0.171719}, {0.810625, 0.310625}, {0.780117, 
+          0.280117}, {0.863955, 0.154853}}], 
+         PolygonBox[{{0.810625, 0.310625}, {0.671719, 0.403594}, {0.654853, 
+          0.363955}, {0.780117, 0.280117}}], 
+         PolygonBox[{{0.671719, 0.403594}, {0.5, 0.4375}, {0.5, 0.394531}, {
+          0.654853, 0.363955}}], 
+         PolygonBox[{{0.894531, 0}, {0.863955, 0.154853}, {0.845937, 
+           0.147187}, {0.875, 0}}], 
+         PolygonBox[{{0.863955, 0.154853}, {0.780117, 0.280117}, {0.76625, 
+          0.26625}, {0.845937, 0.147187}}], 
+         PolygonBox[{{0.780117, 0.280117}, {0.654853, 0.363955}, {0.647187, 
+          0.345937}, {0.76625, 0.26625}}], 
+         PolygonBox[{{0.654853, 0.363955}, {0.5, 0.394531}, {0.5, 0.375}, {
+          0.647187, 0.345937}}], 
+         PolygonBox[{{0.5, 0.5}, {0.30375, 0.46125}, {0.311416, 0.443233}, {
+          0.5, 0.480469}}], 
+         PolygonBox[{{0.30375, 0.46125}, {0.145, 0.355}, {0.158867, 
+          0.341133}, {0.311416, 0.443233}}], 
+         PolygonBox[{{0.145, 0.355}, {0.03875, 0.19625}, {0.0567676, 
+          0.188584}, {0.158867, 0.341133}}], 
+         PolygonBox[{{0.03875, 0.19625}, {0, 0}, {0.0195312, 0}, {0.0567676, 
+           0.188584}}], 
+         PolygonBox[{{0.5, 0.480469}, {0.311416, 0.443233}, {0.328281, 
+          0.403594}, {0.5, 0.4375}}], 
+         PolygonBox[{{0.311416, 0.443233}, {0.158867, 0.341133}, {0.189375, 
+          0.310625}, {0.328281, 0.403594}}], 
+         PolygonBox[{{0.158867, 0.341133}, {0.0567676, 0.188584}, {0.0964063, 
+          0.171719}, {0.189375, 0.310625}}], 
+         PolygonBox[{{0.0567676, 0.188584}, {0.0195312, 0}, {0.0625, 0}, {
+           0.0964063, 0.171719}}], 
+         PolygonBox[{{0.5, 0.4375}, {0.328281, 0.403594}, {0.345146, 
+          0.363955}, {0.5, 0.394531}}], 
+         PolygonBox[{{0.328281, 0.403594}, {0.189375, 0.310625}, {0.219883, 
+          0.280117}, {0.345146, 0.363955}}], 
+         PolygonBox[{{0.189375, 0.310625}, {0.0964063, 0.171719}, {0.136045, 
+          0.154853}, {0.219883, 0.280117}}], 
+         PolygonBox[{{0.0964063, 0.171719}, {0.0625, 0}, {0.105469, 0}, {
+           0.136045, 0.154853}}], 
+         PolygonBox[{{0.5, 0.394531}, {0.345146, 0.363955}, {0.352812, 
+          0.345937}, {0.5, 0.375}}], 
+         PolygonBox[{{0.345146, 0.363955}, {0.219883, 0.280117}, {0.23375, 
+          0.26625}, {0.352812, 0.345937}}], 
+         PolygonBox[{{0.219883, 0.280117}, {0.136045, 0.154853}, {0.154062, 
+          0.147187}, {0.23375, 0.26625}}], 
+         PolygonBox[{{0.136045, 0.154853}, {0.105469, 0}, {0.125, 0}, {
+           0.154062, 0.147187}}], 
+         PolygonBox[{{0, 0}, {0.03875, -0.19625}, {0.0567676, -0.188584}, {
+           0.0195312, 0}}], 
+         PolygonBox[{{0.03875, -0.19625}, {0.145, -0.355}, {
+          0.158867, -0.341133}, {0.0567676, -0.188584}}], 
+         PolygonBox[{{0.145, -0.355}, {0.30375, -0.46125}, {
+          0.311416, -0.443233}, {0.158867, -0.341133}}], 
+         PolygonBox[{{0.30375, -0.46125}, {0.5, -0.5}, {0.5, -0.480469}, {
+          0.311416, -0.443233}}], 
+         PolygonBox[{{0.0195312, 0}, {0.0567676, -0.188584}, {
+           0.0964063, -0.171719}, {0.0625, 0}}], 
+         PolygonBox[{{0.0567676, -0.188584}, {0.158867, -0.341133}, {
+          0.189375, -0.310625}, {0.0964063, -0.171719}}], 
+         PolygonBox[{{0.158867, -0.341133}, {0.311416, -0.443233}, {
+          0.328281, -0.403594}, {0.189375, -0.310625}}], 
+         PolygonBox[{{0.311416, -0.443233}, {0.5, -0.480469}, {
+          0.5, -0.4375}, {0.328281, -0.403594}}], 
+         PolygonBox[{{0.0625, 0}, {0.0964063, -0.171719}, {
+           0.136045, -0.154853}, {0.105469, 0}}], 
+         PolygonBox[{{0.0964063, -0.171719}, {0.189375, -0.310625}, {
+          0.219883, -0.280117}, {0.136045, -0.154853}}], 
+         PolygonBox[{{0.189375, -0.310625}, {0.328281, -0.403594}, {
+          0.345146, -0.363955}, {0.219883, -0.280117}}], 
+         PolygonBox[{{0.328281, -0.403594}, {0.5, -0.4375}, {
+          0.5, -0.394531}, {0.345146, -0.363955}}], 
+         PolygonBox[{{0.105469, 0}, {0.136045, -0.154853}, {
+           0.154062, -0.147187}, {0.125, 0}}], 
+         PolygonBox[{{0.136045, -0.154853}, {0.219883, -0.280117}, {
+          0.23375, -0.26625}, {0.154062, -0.147187}}], 
+         PolygonBox[{{0.219883, -0.280117}, {0.345146, -0.363955}, {
+          0.352812, -0.345937}, {0.23375, -0.26625}}], 
+         PolygonBox[{{0.345146, -0.363955}, {0.5, -0.394531}, {0.5, -0.375}, {
+          0.352812, -0.345937}}], 
+         PolygonBox[{{0.5, -0.5}, {0.69625, -0.46125}, {
+          0.688584, -0.443233}, {0.5, -0.480469}}], 
+         PolygonBox[{{0.69625, -0.46125}, {0.855, -0.355}, {
+          0.841133, -0.341133}, {0.688584, -0.443233}}], 
+         PolygonBox[{{0.855, -0.355}, {0.96125, -0.19625}, {
+          0.943232, -0.188584}, {0.841133, -0.341133}}], 
+         PolygonBox[{{0.96125, -0.19625}, {1, 0}, {0.980469, 0}, {
+           0.943232, -0.188584}}], 
+         PolygonBox[{{0.5, -0.480469}, {0.688584, -0.443233}, {
+          0.671719, -0.403594}, {0.5, -0.4375}}], 
+         PolygonBox[{{0.688584, -0.443233}, {0.841133, -0.341133}, {
+          0.810625, -0.310625}, {0.671719, -0.403594}}], 
+         PolygonBox[{{0.841133, -0.341133}, {0.943232, -0.188584}, {
+          0.903594, -0.171719}, {0.810625, -0.310625}}], 
+         PolygonBox[{{0.943232, -0.188584}, {0.980469, 0}, {0.9375, 0}, {
+           0.903594, -0.171719}}], 
+         PolygonBox[{{0.5, -0.4375}, {0.671719, -0.403594}, {
+          0.654853, -0.363955}, {0.5, -0.394531}}], 
+         PolygonBox[{{0.671719, -0.403594}, {0.810625, -0.310625}, {
+          0.780117, -0.280117}, {0.654853, -0.363955}}], 
+         PolygonBox[{{0.810625, -0.310625}, {0.903594, -0.171719}, {
+          0.863955, -0.154853}, {0.780117, -0.280117}}], 
+         PolygonBox[{{0.903594, -0.171719}, {0.9375, 0}, {0.894531, 0}, {
+           0.863955, -0.154853}}], 
+         PolygonBox[{{0.5, -0.394531}, {0.654853, -0.363955}, {
+          0.647187, -0.345937}, {0.5, -0.375}}], 
+         PolygonBox[{{0.654853, -0.363955}, {0.780117, -0.280117}, {
+          0.76625, -0.26625}, {0.647187, -0.345937}}], 
+         PolygonBox[{{0.780117, -0.280117}, {0.863955, -0.154853}, {
+          0.845937, -0.147187}, {0.76625, -0.26625}}], 
+         PolygonBox[{{0.863955, -0.154853}, {0.894531, 0}, {0.875, 0}, {
+           0.845937, -0.147187}}], 
+         PolygonBox[{{0.1, 0}, {0.103906, 0.0421881}, {-0.0202759, 
+           0.0421881}, {-0.0167969, 0}}], 
+         PolygonBox[{{0.103906, 0.0421881}, {0.1125, 0.0562508}, {-0.0279297, 
+          0.0562508}, {-0.0202759, 0.0421881}}], 
+         PolygonBox[{{0.1125, 0.0562508}, {0.121094, 0.0421881}, {-0.0355835, 
+          0.0421881}, {-0.0279297, 0.0562508}}], 
+         PolygonBox[{{0.121094, 0.0421881}, {
+           0.125, 0}, {-0.0390625, 0}, {-0.0355835, 0.0421881}}], 
+         PolygonBox[{{-0.0167969, 0}, {-0.0202759, 0.0421881}, {-0.111426, 
+           0.0421881}, {-0.103125, 0}}], 
+         PolygonBox[{{-0.0202759, 0.0421881}, {-0.0279297, 
+          0.0562508}, {-0.129688, 0.0562508}, {-0.111426, 0.0421881}}], 
+         PolygonBox[{{-0.0279297, 0.0562508}, {-0.0355835, 
+          0.0421881}, {-0.147949, 0.0421881}, {-0.129688, 0.0562508}}], 
+         PolygonBox[{{-0.0355835, 
+           0.0421881}, {-0.0390625, 0}, {-0.15625, 0}, {-0.147949, 
+           0.0421881}}], 
+         PolygonBox[{{-0.103125, 0}, {-0.111426, 0.0421881}, {-0.167566, 
+           0.0421881}, {-0.156641, 0}}], 
+         PolygonBox[{{-0.111426, 0.0421881}, {-0.129688, 
+          0.0562508}, {-0.191602, 0.0562508}, {-0.167566, 0.0421881}}], 
+         PolygonBox[{{-0.129688, 0.0562508}, {-0.147949, 
+          0.0421881}, {-0.215637, 0.0421881}, {-0.191602, 0.0562508}}], 
+         PolygonBox[{{-0.147949, 
+           0.0421881}, {-0.15625, 0}, {-0.226562, 0}, {-0.215637, 
+           0.0421881}}], 
+         PolygonBox[{{-0.156641, 0}, {-0.167566, 0.0421881}, {-0.186719, 
+           0.0421881}, {-0.175, 0}}], 
+         PolygonBox[{{-0.167566, 0.0421881}, {-0.191602, 0.0562508}, {-0.2125,
+           0.0562508}, {-0.186719, 0.0421881}}], 
+         PolygonBox[{{-0.191602, 0.0562508}, {-0.215637, 
+          0.0421881}, {-0.238281, 0.0421881}, {-0.2125, 0.0562508}}], 
+         PolygonBox[{{-0.215637, 
+           0.0421881}, {-0.226562, 0}, {-0.25, 0}, {-0.238281, 0.0421881}}], 
+         PolygonBox[{{0.125, 0}, {
+           0.121094, -0.0421881}, {-0.0355835, -0.0421881}, {-0.0390625, 0}}],
+          PolygonBox[{{0.121094, -0.0421881}, {
+          0.1125, -0.0562508}, {-0.0279297, -0.0562508}, {-0.0355835, \
+-0.0421881}}], 
+         PolygonBox[{{0.1125, -0.0562508}, {
+          0.103906, -0.0421881}, {-0.0202759, -0.0421881}, {-0.0279297, \
+-0.0562508}}], 
+         PolygonBox[{{0.103906, -0.0421881}, {
+           0.1, 0}, {-0.0167969, 0}, {-0.0202759, -0.0421881}}], 
+         PolygonBox[{{-0.0390625, 
+            0}, {-0.0355835, -0.0421881}, {-0.147949, -0.0421881}, {-0.15625, 
+            0}}], PolygonBox[{{-0.0355835, -0.0421881}, {-0.0279297, \
+-0.0562508}, {-0.129688, -0.0562508}, {-0.147949, -0.0421881}}], 
+         PolygonBox[{{-0.0279297, -0.0562508}, {-0.0202759, -0.0421881}, \
+{-0.111426, -0.0421881}, {-0.129688, -0.0562508}}], 
+         PolygonBox[{{-0.0202759, -0.0421881}, {-0.0167969, 0}, {-0.103125, 
+            0}, {-0.111426, -0.0421881}}], 
+         PolygonBox[{{-0.15625, 
+            0}, {-0.147949, -0.0421881}, {-0.215637, -0.0421881}, {-0.226562, 
+            0}}], PolygonBox[{{-0.147949, -0.0421881}, {-0.129688, \
+-0.0562508}, {-0.191602, -0.0562508}, {-0.215637, -0.0421881}}], 
+         PolygonBox[{{-0.129688, -0.0562508}, {-0.111426, -0.0421881}, \
+{-0.167566, -0.0421881}, {-0.191602, -0.0562508}}], 
+         PolygonBox[{{-0.111426, -0.0421881}, {-0.103125, 0}, {-0.156641, 
+            0}, {-0.167566, -0.0421881}}], 
+         PolygonBox[{{-0.226562, 
+            0}, {-0.215637, -0.0421881}, {-0.238281, -0.0421881}, {-0.25, 
+            0}}], PolygonBox[{{-0.215637, -0.0421881}, {-0.191602, \
+-0.0562508}, {-0.2125, -0.0562508}, {-0.238281, -0.0421881}}], 
+         PolygonBox[{{-0.191602, -0.0562508}, {-0.167566, -0.0421881}, \
+{-0.186719, -0.0421881}, {-0.2125, -0.0562508}}], 
+         PolygonBox[{{-0.167566, -0.0421881}, {-0.156641, 0}, {-0.175, 
+            0}, {-0.186719, -0.0421881}}], 
+         PolygonBox[{{-0.175, 0}, {-0.186719, 0.0421881}, {-0.175885, 
+           0.0421881}, {-0.165234, 0}}], 
+         PolygonBox[{{-0.186719, 0.0421881}, {-0.2125, 0.0562508}, {-0.199316,
+           0.0562508}, {-0.175885, 0.0421881}}], 
+         PolygonBox[{{-0.2125, 0.0562508}, {-0.238281, 0.0421881}, {-0.222748,
+           0.0421881}, {-0.199316, 0.0562508}}], 
+         PolygonBox[{{-0.238281, 
+           0.0421881}, {-0.25, 0}, {-0.233398, 0}, {-0.222748, 0.0421881}}], 
+         PolygonBox[{{-0.165234, 0}, {-0.175885, 0.0421881}, {-0.141943, 
+           0.0421881}, {-0.134375, 0}}], 
+         PolygonBox[{{-0.175885, 0.0421881}, {-0.199316, 
+          0.0562508}, {-0.158594, 0.0562508}, {-0.141943, 0.0421881}}], 
+         PolygonBox[{{-0.199316, 0.0562508}, {-0.222748, 
+          0.0421881}, {-0.175244, 0.0421881}, {-0.158594, 0.0562508}}], 
+         PolygonBox[{{-0.222748, 
+           0.0421881}, {-0.233398, 0}, {-0.182812, 0}, {-0.175244, 
+           0.0421881}}], 
+         PolygonBox[{{-0.134375, 0}, {-0.141943, 0.0421881}, {-0.0827332, 
+           0.0421881}, {-0.0800781, 0}}], 
+         PolygonBox[{{-0.141943, 0.0421881}, {-0.158594, 
+          0.0562508}, {-0.0885742, 0.0562508}, {-0.0827332, 0.0421881}}], 
+         PolygonBox[{{-0.158594, 0.0562508}, {-0.175244, 
+          0.0421881}, {-0.0944153, 0.0421881}, {-0.0885742, 0.0562508}}], 
+         PolygonBox[{{-0.175244, 
+           0.0421881}, {-0.182812, 0}, {-0.0970703, 0}, {-0.0944153, 
+           0.0421881}}], 
+         PolygonBox[{{-0.0800781, 0}, {-0.0827332, 0.0421881}, {0.00390625, 
+           0.0421881}, {0, 0}}], 
+         PolygonBox[{{-0.0827332, 0.0421881}, {-0.0885742, 0.0562508}, {
+          0.0125, 0.0562508}, {0.00390625, 0.0421881}}], 
+         PolygonBox[{{-0.0885742, 0.0562508}, {-0.0944153, 0.0421881}, {
+          0.0210938, 0.0421881}, {0.0125, 0.0562508}}], 
+         PolygonBox[{{-0.0944153, 0.0421881}, {-0.0970703, 0}, {0.025, 0}, {
+           0.0210938, 0.0421881}}], 
+         PolygonBox[{{-0.25, 
+            0}, {-0.238281, -0.0421881}, {-0.222748, -0.0421881}, {-0.233398, 
+            0}}], PolygonBox[{{-0.238281, -0.0421881}, {-0.2125, -0.0562508}, \
+{-0.199316, -0.0562508}, {-0.222748, -0.0421881}}], 
+         PolygonBox[{{-0.2125, -0.0562508}, {-0.186719, -0.0421881}, \
+{-0.175885, -0.0421881}, {-0.199316, -0.0562508}}], 
+         PolygonBox[{{-0.186719, -0.0421881}, {-0.175, 0}, {-0.165234, 
+            0}, {-0.175885, -0.0421881}}], 
+         PolygonBox[{{-0.233398, 
+            0}, {-0.222748, -0.0421881}, {-0.175244, -0.0421881}, {-0.182812, 
+            0}}], PolygonBox[{{-0.222748, -0.0421881}, {-0.199316, \
+-0.0562508}, {-0.158594, -0.0562508}, {-0.175244, -0.0421881}}], 
+         PolygonBox[{{-0.199316, -0.0562508}, {-0.175885, -0.0421881}, \
+{-0.141943, -0.0421881}, {-0.158594, -0.0562508}}], 
+         PolygonBox[{{-0.175885, -0.0421881}, {-0.165234, 0}, {-0.134375, 
+            0}, {-0.141943, -0.0421881}}], 
+         PolygonBox[{{-0.182812, 
+            0}, {-0.175244, -0.0421881}, {-0.0944153, -0.0421881}, \
+{-0.0970703, 0}}], 
+         PolygonBox[{{-0.175244, -0.0421881}, {-0.158594, -0.0562508}, \
+{-0.0885742, -0.0562508}, {-0.0944153, -0.0421881}}], 
+         PolygonBox[{{-0.158594, -0.0562508}, {-0.141943, -0.0421881}, \
+{-0.0827332, -0.0421881}, {-0.0885742, -0.0562508}}], 
+         PolygonBox[{{-0.141943, -0.0421881}, {-0.134375, 0}, {-0.0800781, 
+            0}, {-0.0827332, -0.0421881}}], 
+         PolygonBox[{{-0.0970703, 0}, {-0.0944153, -0.0421881}, {
+           0.0210938, -0.0421881}, {0.025, 0}}], 
+         PolygonBox[{{-0.0944153, -0.0421881}, {-0.0885742, -0.0562508}, {
+          0.0125, -0.0562508}, {0.0210938, -0.0421881}}], 
+         PolygonBox[{{-0.0885742, -0.0562508}, {-0.0827332, -0.0421881}, {
+          0.00390625, -0.0421881}, {0.0125, -0.0562508}}], 
+         PolygonBox[{{-0.0827332, -0.0421881}, {-0.0800781, 0}, {0, 0}, {
+           0.00390625, -0.0421881}}], 
+         PolygonBox[{{0.925, 0}, {0.925, 0.0928131}, {1.05408, 0.0838042}, {
+           1.04492, 0}}], 
+         PolygonBox[{{0.925, 0.0928131}, {0.925, 0.123751}, {1.07422, 
+          0.111739}, {1.05408, 0.0838042}}], 
+         PolygonBox[{{0.925, 0.123751}, {0.925, 0.0928131}, {1.09436, 
+          0.0838042}, {1.07422, 0.111739}}], 
+         PolygonBox[{{0.925, 0.0928131}, {0.925, 0}, {1.10352, 0}, {1.09436, 
+           0.0838042}}], 
+         PolygonBox[{{1.04492, 0}, {1.05408, 0.0838042}, {1.10859, 
+           0.0639847}, {1.09687, 0}}], 
+         PolygonBox[{{1.05408, 0.0838042}, {1.07422, 0.111739}, {1.13437, 
+          0.0853129}, {1.10859, 0.0639847}}], 
+         PolygonBox[{{1.07422, 0.111739}, {1.09436, 0.0838042}, {1.16016, 
+          0.0639847}, {1.13437, 0.0853129}}], 
+         PolygonBox[{{1.09436, 0.0838042}, {1.10352, 0}, {1.17188, 0}, {
+           1.16016, 0.0639847}}], 
+         PolygonBox[{{1.09687, 0}, {1.10859, 0.0639847}, {1.13967, 
+           0.0441651}, {1.12539, 0}}], 
+         PolygonBox[{{1.10859, 0.0639847}, {1.13437, 0.0853129}, {1.17109, 
+          0.0588868}, {1.13967, 0.0441651}}], 
+         PolygonBox[{{1.13437, 0.0853129}, {1.16016, 0.0639847}, {1.20251, 
+          0.0441651}, {1.17109, 0.0588868}}], 
+         PolygonBox[{{1.16016, 0.0639847}, {1.17188, 0}, {1.2168, 0}, {
+           1.20251, 0.0441651}}], 
+         PolygonBox[{{1.12539, 0}, {1.13967, 0.0441651}, {1.19844, 
+           0.0351562}, {1.175, 0}}], 
+         PolygonBox[{{1.13967, 0.0441651}, {1.17109, 0.0588868}, {1.25, 
+          0.046875}, {1.19844, 0.0351562}}], 
+         PolygonBox[{{1.17109, 0.0588868}, {1.20251, 0.0441651}, {1.30156, 
+          0.0351562}, {1.25, 0.046875}}], 
+         PolygonBox[{{1.20251, 0.0441651}, {1.2168, 0}, {1.325, 0}, {1.30156, 
+           0.0351562}}], 
+         PolygonBox[{{0.925, 0}, {0.925, -0.0928131}, {1.09436, -0.0838042}, {
+           1.10352, 0}}], 
+         PolygonBox[{{0.925, -0.0928131}, {0.925, -0.123751}, {
+          1.07422, -0.111739}, {1.09436, -0.0838042}}], 
+         PolygonBox[{{0.925, -0.123751}, {0.925, -0.0928131}, {
+          1.05408, -0.0838042}, {1.07422, -0.111739}}], 
+         PolygonBox[{{0.925, -0.0928131}, {0.925, 0}, {1.04492, 0}, {
+           1.05408, -0.0838042}}], 
+         PolygonBox[{{1.10352, 0}, {1.09436, -0.0838042}, {
+           1.16016, -0.0639847}, {1.17188, 0}}], 
+         PolygonBox[{{1.09436, -0.0838042}, {1.07422, -0.111739}, {
+          1.13437, -0.0853129}, {1.16016, -0.0639847}}], 
+         PolygonBox[{{1.07422, -0.111739}, {1.05408, -0.0838042}, {
+          1.10859, -0.0639847}, {1.13437, -0.0853129}}], 
+         PolygonBox[{{1.05408, -0.0838042}, {1.04492, 0}, {1.09687, 0}, {
+           1.10859, -0.0639847}}], 
+         PolygonBox[{{1.17188, 0}, {1.16016, -0.0639847}, {
+           1.20251, -0.0441651}, {1.2168, 0}}], 
+         PolygonBox[{{1.16016, -0.0639847}, {1.13437, -0.0853129}, {
+          1.17109, -0.0588868}, {1.20251, -0.0441651}}], 
+         PolygonBox[{{1.13437, -0.0853129}, {1.10859, -0.0639847}, {
+          1.13967, -0.0441651}, {1.17109, -0.0588868}}], 
+         PolygonBox[{{1.10859, -0.0639847}, {1.09687, 0}, {1.12539, 0}, {
+           1.13967, -0.0441651}}], 
+         PolygonBox[{{1.2168, 0}, {1.20251, -0.0441651}, {
+           1.30156, -0.0351562}, {1.325, 0}}], 
+         PolygonBox[{{1.20251, -0.0441651}, {1.17109, -0.0588868}, {
+          1.25, -0.046875}, {1.30156, -0.0351562}}], 
+         PolygonBox[{{1.17109, -0.0588868}, {1.13967, -0.0441651}, {
+          1.19844, -0.0351562}, {1.25, -0.046875}}], 
+         PolygonBox[{{1.13967, -0.0441651}, {1.12539, 0}, {1.175, 0}, {
+           1.19844, -0.0351562}}], 
+         PolygonBox[{{1.175, 0}, {1.19844, 0.0351562}, {1.21807, 0.032959}, {
+           1.19297, 0}}], 
+         PolygonBox[{{1.19844, 0.0351562}, {1.25, 0.046875}, {1.27329, 
+          0.0439453}, {1.21807, 0.032959}}], 
+         PolygonBox[{{1.25, 0.046875}, {1.30156, 0.0351562}, {1.32851, 
+          0.032959}, {1.27329, 0.0439453}}], 
+         PolygonBox[{{1.30156, 0.0351562}, {1.325, 0}, {1.35361, 0}, {1.32851,
+            0.032959}}], 
+         PolygonBox[{{1.19297, 0}, {1.21807, 0.032959}, {1.22981, 0.028125}, {
+           1.20625, 0}}], 
+         PolygonBox[{{1.21807, 0.032959}, {1.27329, 0.0439453}, {1.28164, 
+          0.0375}, {1.22981, 0.028125}}], 
+         PolygonBox[{{1.27329, 0.0439453}, {1.32851, 0.032959}, {1.33347, 
+          0.028125}, {1.28164, 0.0375}}], 
+         PolygonBox[{{1.32851, 0.032959}, {1.35361, 0}, {1.35703, 0}, {
+           1.33347, 0.028125}}], 
+         PolygonBox[{{1.20625, 0}, {1.22981, 0.028125}, {1.23016, 0.023291}, {
+           1.21016, 0}}], 
+         PolygonBox[{{1.22981, 0.028125}, {1.28164, 0.0375}, {1.27417, 
+          0.0310547}, {1.23016, 0.023291}}], 
+         PolygonBox[{{1.28164, 0.0375}, {1.33347, 0.028125}, {1.31818, 
+          0.023291}, {1.27417, 0.0310547}}], 
+         PolygonBox[{{1.33347, 0.028125}, {1.35703, 0}, {1.33818, 0}, {
+           1.31818, 0.023291}}], 
+         PolygonBox[{{1.21016, 0}, {1.23016, 0.023291}, {1.21563, 
+           0.0210938}, {1.2, 0}}], 
+         PolygonBox[{{1.23016, 0.023291}, {1.27417, 0.0310547}, {1.25, 
+          0.028125}, {1.21563, 0.0210938}}], 
+         PolygonBox[{{1.27417, 0.0310547}, {1.31818, 0.023291}, {1.28437, 
+          0.0210938}, {1.25, 0.028125}}], 
+         PolygonBox[{{1.31818, 0.023291}, {1.33818, 0}, {1.3, 0}, {1.28437, 
+           0.0210938}}], 
+         PolygonBox[{{1.325, 0}, {1.30156, -0.0351562}, {
+           1.32851, -0.032959}, {1.35361, 0}}], 
+         PolygonBox[{{1.30156, -0.0351562}, {1.25, -0.046875}, {
+          1.27329, -0.0439453}, {1.32851, -0.032959}}], 
+         PolygonBox[{{1.25, -0.046875}, {1.19844, -0.0351562}, {
+          1.21807, -0.032959}, {1.27329, -0.0439453}}], 
+         PolygonBox[{{1.19844, -0.0351562}, {1.175, 0}, {1.19297, 0}, {
+           1.21807, -0.032959}}], 
+         PolygonBox[{{1.35361, 0}, {1.32851, -0.032959}, {
+           1.33347, -0.028125}, {1.35703, 0}}], 
+         PolygonBox[{{1.32851, -0.032959}, {1.27329, -0.0439453}, {
+          1.28164, -0.0375}, {1.33347, -0.028125}}], 
+         PolygonBox[{{1.27329, -0.0439453}, {1.21807, -0.032959}, {
+          1.22981, -0.028125}, {1.28164, -0.0375}}], 
+         PolygonBox[{{1.21807, -0.032959}, {1.19297, 0}, {1.20625, 0}, {
+           1.22981, -0.028125}}], 
+         PolygonBox[{{1.35703, 0}, {1.33347, -0.028125}, {
+           1.31818, -0.023291}, {1.33818, 0}}], 
+         PolygonBox[{{1.33347, -0.028125}, {1.28164, -0.0375}, {
+          1.27417, -0.0310547}, {1.31818, -0.023291}}], 
+         PolygonBox[{{1.28164, -0.0375}, {1.22981, -0.028125}, {
+          1.23016, -0.023291}, {1.27417, -0.0310547}}], 
+         PolygonBox[{{1.22981, -0.028125}, {1.20625, 0}, {1.21016, 0}, {
+           1.23016, -0.023291}}], 
+         PolygonBox[{{1.33818, 0}, {1.31818, -0.023291}, {
+           1.28437, -0.0210938}, {1.3, 0}}], 
+         PolygonBox[{{1.31818, -0.023291}, {1.27417, -0.0310547}, {
+          1.25, -0.028125}, {1.28437, -0.0210938}}], 
+         PolygonBox[{{1.27417, -0.0310547}, {1.23016, -0.023291}, {
+          1.21563, -0.0210938}, {1.25, -0.028125}}], 
+         PolygonBox[{{1.23016, -0.023291}, {1.21016, 0}, {1.2, 0}, {
+           1.21563, -0.0210938}}], 
+         PolygonBox[{{0.5, 0}, {0.578586, 0.0335127}, {0.585156, 0}}], 
+         PolygonBox[{{0.5, 0}, {0.56054, 0.0605401}, {0.578586, 0.0335127}}], 
+         PolygonBox[{{0.5, 0}, {0.533513, 0.0785866}, {0.56054, 0.0605401}}], 
+         PolygonBox[{{0.5, 0}, {0.5, 0.0851567}, {0.533513, 0.0785866}}], 
+         PolygonBox[{{0.585156, 0}, {0.578586, 0.0335127}, {0.574979, 
+           0.0319696}, {0.58125, 0}}], 
+         PolygonBox[{{0.578586, 0.0335127}, {0.56054, 0.0605401}, {0.557758, 
+          0.0577578}, {0.574979, 0.0319696}}], 
+         PolygonBox[{{0.56054, 0.0605401}, {0.533513, 0.0785866}, {0.53197, 
+          0.0749796}, {0.557758, 0.0577578}}], 
+         PolygonBox[{{0.533513, 0.0785866}, {0.5, 0.0851567}, {0.5, 
+          0.0812503}, {0.53197, 0.0749796}}], 
+         PolygonBox[{{0.58125, 0}, {0.574979, 0.0319696}, {0.545414, 
+           0.0193479}, {0.549219, 0}}], 
+         PolygonBox[{{0.574979, 0.0319696}, {0.557758, 0.0577578}, {0.534972, 
+          0.0349715}, {0.545414, 0.0193479}}], 
+         PolygonBox[{{0.557758, 0.0577578}, {0.53197, 0.0749796}, {0.519348, 
+          0.0454139}, {0.534972, 0.0349715}}], 
+         PolygonBox[{{0.53197, 0.0749796}, {0.5, 0.0812503}, {0.5, 
+          0.0492185}, {0.519348, 0.0454139}}], 
+         PolygonBox[{{0.549219, 0}, {0.545414, 0.0193479}, {0.546125, 
+           0.0196248}, {0.55, 0}}], 
+         PolygonBox[{{0.545414, 0.0193479}, {0.534972, 0.0349715}, {0.5355, 
+          0.0354995}, {0.546125, 0.0196248}}], 
+         PolygonBox[{{0.534972, 0.0349715}, {0.519348, 0.0454139}, {0.519625, 
+          0.0461242}, {0.5355, 0.0354995}}], 
+         PolygonBox[{{0.519348, 0.0454139}, {0.5, 0.0492185}, {0.5, 
+          0.049999}, {0.519625, 0.0461242}}], 
+         PolygonBox[{{0.5, 0}, {0.466487, 0.0785866}, {0.5, 0.0851567}}], 
+         PolygonBox[{{0.5, 0}, {0.43946, 0.0605401}, {0.466487, 0.0785866}}], 
+         PolygonBox[{{0.5, 0}, {0.421414, 0.0335127}, {0.43946, 0.0605401}}], 
+         PolygonBox[{{0.5, 0}, {0.414844, 0}, {0.421414, 0.0335127}}], 
+         PolygonBox[{{0.5, 0.0851567}, {0.466487, 0.0785866}, {0.46803, 
+          0.0749796}, {0.5, 0.0812503}}], 
+         PolygonBox[{{0.466487, 0.0785866}, {0.43946, 0.0605401}, {0.442242, 
+          0.0577578}, {0.46803, 0.0749796}}], 
+         PolygonBox[{{0.43946, 0.0605401}, {0.421414, 0.0335127}, {0.425021, 
+          0.0319696}, {0.442242, 0.0577578}}], 
+         PolygonBox[{{0.421414, 0.0335127}, {0.414844, 0}, {0.41875, 0}, {
+           0.425021, 0.0319696}}], 
+         PolygonBox[{{0.5, 0.0812503}, {0.46803, 0.0749796}, {0.480652, 
+          0.0454139}, {0.5, 0.0492185}}], 
+         PolygonBox[{{0.46803, 0.0749796}, {0.442242, 0.0577578}, {0.465028, 
+          0.0349715}, {0.480652, 0.0454139}}], 
+         PolygonBox[{{0.442242, 0.0577578}, {0.425021, 0.0319696}, {0.454586, 
+          0.0193479}, {0.465028, 0.0349715}}], 
+         PolygonBox[{{0.425021, 0.0319696}, {0.41875, 0}, {0.450781, 0}, {
+           0.454586, 0.0193479}}], 
+         PolygonBox[{{0.5, 0.0492185}, {0.480652, 0.0454139}, {0.480375, 
+          0.0461242}, {0.5, 0.049999}}], 
+         PolygonBox[{{0.480652, 0.0454139}, {0.465028, 0.0349715}, {0.4645, 
+          0.0354995}, {0.480375, 0.0461242}}], 
+         PolygonBox[{{0.465028, 0.0349715}, {0.454586, 0.0193479}, {0.453875, 
+          0.0196248}, {0.4645, 0.0354995}}], 
+         PolygonBox[{{0.454586, 0.0193479}, {0.450781, 0}, {0.45, 0}, {
+           0.453875, 0.0196248}}], 
+         PolygonBox[{{0.5, 0}, {0.421414, -0.0335127}, {0.414844, 0}}], 
+         PolygonBox[{{0.5, 0}, {0.43946, -0.0605401}, {
+           0.421414, -0.0335127}}], 
+         PolygonBox[{{0.5, 0}, {0.466487, -0.0785866}, {
+           0.43946, -0.0605401}}], 
+         PolygonBox[{{0.5, 0}, {0.5, -0.0851567}, {0.466487, -0.0785866}}], 
+         PolygonBox[{{0.414844, 0}, {0.421414, -0.0335127}, {
+           0.425021, -0.0319696}, {0.41875, 0}}], 
+         PolygonBox[{{0.421414, -0.0335127}, {0.43946, -0.0605401}, {
+          0.442242, -0.0577578}, {0.425021, -0.0319696}}], 
+         PolygonBox[{{0.43946, -0.0605401}, {0.466487, -0.0785866}, {
+          0.46803, -0.0749796}, {0.442242, -0.0577578}}], 
+         PolygonBox[{{0.466487, -0.0785866}, {0.5, -0.0851567}, {
+          0.5, -0.0812503}, {0.46803, -0.0749796}}], 
+         PolygonBox[{{0.41875, 0}, {0.425021, -0.0319696}, {
+           0.454586, -0.0193479}, {0.450781, 0}}], 
+         PolygonBox[{{0.425021, -0.0319696}, {0.442242, -0.0577578}, {
+          0.465028, -0.0349715}, {0.454586, -0.0193479}}], 
+         PolygonBox[{{0.442242, -0.0577578}, {0.46803, -0.0749796}, {
+          0.480652, -0.0454139}, {0.465028, -0.0349715}}], 
+         PolygonBox[{{0.46803, -0.0749796}, {0.5, -0.0812503}, {
+          0.5, -0.0492185}, {0.480652, -0.0454139}}], 
+         PolygonBox[{{0.450781, 0}, {0.454586, -0.0193479}, {
+           0.453875, -0.0196248}, {0.45, 0}}], 
+         PolygonBox[{{0.454586, -0.0193479}, {0.465028, -0.0349715}, {
+          0.4645, -0.0354995}, {0.453875, -0.0196248}}], 
+         PolygonBox[{{0.465028, -0.0349715}, {0.480652, -0.0454139}, {
+          0.480375, -0.0461242}, {0.4645, -0.0354995}}], 
+         PolygonBox[{{0.480652, -0.0454139}, {0.5, -0.0492185}, {
+          0.5, -0.049999}, {0.480375, -0.0461242}}], 
+         PolygonBox[{{0.5, 0}, {0.533513, -0.0785866}, {0.5, -0.0851567}}], 
+         PolygonBox[{{0.5, 0}, {0.56054, -0.0605401}, {
+           0.533513, -0.0785866}}], 
+         PolygonBox[{{0.5, 0}, {0.578586, -0.0335127}, {
+           0.56054, -0.0605401}}], 
+         PolygonBox[{{0.5, 0}, {0.585156, 0}, {0.578586, -0.0335127}}], 
+         PolygonBox[{{0.5, -0.0851567}, {0.533513, -0.0785866}, {
+          0.53197, -0.0749796}, {0.5, -0.0812503}}], 
+         PolygonBox[{{0.533513, -0.0785866}, {0.56054, -0.0605401}, {
+          0.557758, -0.0577578}, {0.53197, -0.0749796}}], 
+         PolygonBox[{{0.56054, -0.0605401}, {0.578586, -0.0335127}, {
+          0.574979, -0.0319696}, {0.557758, -0.0577578}}], 
+         PolygonBox[{{0.578586, -0.0335127}, {0.585156, 0}, {0.58125, 0}, {
+           0.574979, -0.0319696}}], 
+         PolygonBox[{{0.5, -0.0812503}, {0.53197, -0.0749796}, {
+          0.519348, -0.0454139}, {0.5, -0.0492185}}], 
+         PolygonBox[{{0.53197, -0.0749796}, {0.557758, -0.0577578}, {
+          0.534972, -0.0349715}, {0.519348, -0.0454139}}], 
+         PolygonBox[{{0.557758, -0.0577578}, {0.574979, -0.0319696}, {
+          0.545414, -0.0193479}, {0.534972, -0.0349715}}], 
+         PolygonBox[{{0.574979, -0.0319696}, {0.58125, 0}, {0.549219, 0}, {
+           0.545414, -0.0193479}}], 
+         PolygonBox[{{0.5, -0.0492185}, {0.519348, -0.0454139}, {
+          0.519625, -0.0461242}, {0.5, -0.049999}}], 
+         PolygonBox[{{0.519348, -0.0454139}, {0.534972, -0.0349715}, {
+          0.5355, -0.0354995}, {0.519625, -0.0461242}}], 
+         PolygonBox[{{0.534972, -0.0349715}, {0.545414, -0.0193479}, {
+          0.546125, -0.0196248}, {0.5355, -0.0354995}}], 
+         PolygonBox[{{0.545414, -0.0193479}, {0.549219, 0}, {0.55, 0}, {
+           0.546125, -0.0196248}}], 
+         PolygonBox[{{0.55, 0}, {0.546125, 0.0196248}, {0.605223, 
+           0.0447694}, {0.614062, 0}}], 
+         PolygonBox[{{0.546125, 0.0196248}, {0.5355, 0.0354995}, {0.580984, 
+          0.0809842}, {0.605223, 0.0447694}}], 
+         PolygonBox[{{0.5355, 0.0354995}, {0.519625, 0.0461242}, {0.54477, 
+          0.105222}, {0.580984, 0.0809842}}], 
+         PolygonBox[{{0.519625, 0.0461242}, {0.5, 0.049999}, {0.5, 
+          0.114062}, {0.54477, 0.105222}}], 
+         PolygonBox[{{0.614062, 0}, {0.605223, 0.0447694}, {0.690266, 
+           0.080953}, {0.70625, 0}}], 
+         PolygonBox[{{0.605223, 0.0447694}, {0.580984, 0.0809842}, {0.646437, 
+          0.146438}, {0.690266, 0.080953}}], 
+         PolygonBox[{{0.580984, 0.0809842}, {0.54477, 0.105222}, {0.580953, 
+          0.190266}, {0.646437, 0.146438}}], 
+         PolygonBox[{{0.54477, 0.105222}, {0.5, 0.114062}, {0.5, 0.20625}, {
+          0.580953, 0.190266}}], 
+         PolygonBox[{{0.70625, 0}, {0.690266, 0.080953}, {0.76666, 
+           0.113457}, {0.789062, 0}}], 
+         PolygonBox[{{0.690266, 0.080953}, {0.646437, 0.146438}, {0.705234, 
+          0.205234}, {0.76666, 0.113457}}], 
+         PolygonBox[{{0.646437, 0.146438}, {0.580953, 0.190266}, {0.613457, 
+          0.266661}, {0.705234, 0.205234}}], 
+         PolygonBox[{{0.580953, 0.190266}, {0.5, 0.20625}, {0.5, 0.289063}, {
+          0.613457, 0.266661}}], 
+         PolygonBox[{{0.789062, 0}, {0.76666, 0.113457}, {0.799812, 
+           0.127562}, {0.825, 0}}], 
+         PolygonBox[{{0.76666, 0.113457}, {0.705234, 0.205234}, {0.73075, 
+          0.23075}, {0.799812, 0.127562}}], 
+         PolygonBox[{{0.705234, 0.205234}, {0.613457, 0.266661}, {0.627562, 
+          0.299813}, {0.73075, 0.23075}}], 
+         PolygonBox[{{0.613457, 0.266661}, {0.5, 0.289063}, {0.5, 0.325001}, {
+          0.627562, 0.299813}}], 
+         PolygonBox[{{0.5, 0.049999}, {0.480375, 0.0461242}, {0.45523, 
+          0.105222}, {0.5, 0.114062}}], 
+         PolygonBox[{{0.480375, 0.0461242}, {0.4645, 0.0354995}, {0.419016, 
+          0.0809842}, {0.45523, 0.105222}}], 
+         PolygonBox[{{0.4645, 0.0354995}, {0.453875, 0.0196248}, {0.394777, 
+          0.0447694}, {0.419016, 0.0809842}}], 
+         PolygonBox[{{0.453875, 0.0196248}, {0.45, 0}, {0.385938, 0}, {
+           0.394777, 0.0447694}}], 
+         PolygonBox[{{0.5, 0.114062}, {0.45523, 0.105222}, {0.419047, 
+          0.190266}, {0.5, 0.20625}}], 
+         PolygonBox[{{0.45523, 0.105222}, {0.419016, 0.0809842}, {0.353562, 
+          0.146438}, {0.419047, 0.190266}}], 
+         PolygonBox[{{0.419016, 0.0809842}, {0.394777, 0.0447694}, {0.309734, 
+          0.080953}, {0.353562, 0.146438}}], 
+         PolygonBox[{{0.394777, 0.0447694}, {0.385938, 0}, {0.29375, 0}, {
+           0.309734, 0.080953}}], 
+         PolygonBox[{{0.5, 0.20625}, {0.419047, 0.190266}, {0.386543, 
+          0.266661}, {0.5, 0.289063}}], 
+         PolygonBox[{{0.419047, 0.190266}, {0.353562, 0.146438}, {0.294766, 
+          0.205234}, {0.386543, 0.266661}}], 
+         PolygonBox[{{0.353562, 0.146438}, {0.309734, 0.080953}, {0.23334, 
+          0.113457}, {0.294766, 0.205234}}], 
+         PolygonBox[{{0.309734, 0.080953}, {0.29375, 0}, {0.210938, 0}, {
+           0.23334, 0.113457}}], 
+         PolygonBox[{{0.5, 0.289063}, {0.386543, 0.266661}, {0.372437, 
+          0.299813}, {0.5, 0.325001}}], 
+         PolygonBox[{{0.386543, 0.266661}, {0.294766, 0.205234}, {0.26925, 
+          0.23075}, {0.372437, 0.299813}}], 
+         PolygonBox[{{0.294766, 0.205234}, {0.23334, 0.113457}, {0.200187, 
+          0.127562}, {0.26925, 0.23075}}], 
+         PolygonBox[{{0.23334, 0.113457}, {0.210938, 0}, {0.175, 0}, {
+           0.200187, 0.127562}}], 
+         PolygonBox[{{0.45, 0}, {0.453875, -0.0196248}, {
+           0.394777, -0.0447694}, {0.385938, 0}}], 
+         PolygonBox[{{0.453875, -0.0196248}, {0.4645, -0.0354995}, {
+          0.419016, -0.0809842}, {0.394777, -0.0447694}}], 
+         PolygonBox[{{0.4645, -0.0354995}, {0.480375, -0.0461242}, {
+          0.45523, -0.105222}, {0.419016, -0.0809842}}], 
+         PolygonBox[{{0.480375, -0.0461242}, {0.5, -0.049999}, {
+          0.5, -0.114062}, {0.45523, -0.105222}}], 
+         PolygonBox[{{0.385938, 0}, {0.394777, -0.0447694}, {
+           0.309734, -0.080953}, {0.29375, 0}}], 
+         PolygonBox[{{0.394777, -0.0447694}, {0.419016, -0.0809842}, {
+          0.353562, -0.146438}, {0.309734, -0.080953}}], 
+         PolygonBox[{{0.419016, -0.0809842}, {0.45523, -0.105222}, {
+          0.419047, -0.190266}, {0.353562, -0.146438}}], 
+         PolygonBox[{{0.45523, -0.105222}, {0.5, -0.114062}, {
+          0.5, -0.20625}, {0.419047, -0.190266}}], 
+         PolygonBox[{{0.29375, 0}, {0.309734, -0.080953}, {
+           0.23334, -0.113457}, {0.210938, 0}}], 
+         PolygonBox[{{0.309734, -0.080953}, {0.353562, -0.146438}, {
+          0.294766, -0.205234}, {0.23334, -0.113457}}], 
+         PolygonBox[{{0.353562, -0.146438}, {0.419047, -0.190266}, {
+          0.386543, -0.266661}, {0.294766, -0.205234}}], 
+         PolygonBox[{{0.419047, -0.190266}, {0.5, -0.20625}, {
+          0.5, -0.289063}, {0.386543, -0.266661}}], 
+         PolygonBox[{{0.210938, 0}, {0.23334, -0.113457}, {
+           0.200187, -0.127562}, {0.175, 0}}], 
+         PolygonBox[{{0.23334, -0.113457}, {0.294766, -0.205234}, {
+          0.26925, -0.23075}, {0.200187, -0.127562}}], 
+         PolygonBox[{{0.294766, -0.205234}, {0.386543, -0.266661}, {
+          0.372437, -0.299813}, {0.26925, -0.23075}}], 
+         PolygonBox[{{0.386543, -0.266661}, {0.5, -0.289063}, {
+          0.5, -0.325001}, {0.372437, -0.299813}}], 
+         PolygonBox[{{0.5, -0.049999}, {0.519625, -0.0461242}, {
+          0.54477, -0.105222}, {0.5, -0.114062}}], 
+         PolygonBox[{{0.519625, -0.0461242}, {0.5355, -0.0354995}, {
+          0.580984, -0.0809842}, {0.54477, -0.105222}}], 
+         PolygonBox[{{0.5355, -0.0354995}, {0.546125, -0.0196248}, {
+          0.605223, -0.0447694}, {0.580984, -0.0809842}}], 
+         PolygonBox[{{0.546125, -0.0196248}, {0.55, 0}, {0.614062, 0}, {
+           0.605223, -0.0447694}}], 
+         PolygonBox[{{0.5, -0.114062}, {0.54477, -0.105222}, {
+          0.580953, -0.190266}, {0.5, -0.20625}}], 
+         PolygonBox[{{0.54477, -0.105222}, {0.580984, -0.0809842}, {
+          0.646437, -0.146438}, {0.580953, -0.190266}}], 
+         PolygonBox[{{0.580984, -0.0809842}, {0.605223, -0.0447694}, {
+          0.690266, -0.080953}, {0.646437, -0.146438}}], 
+         PolygonBox[{{0.605223, -0.0447694}, {0.614062, 0}, {0.70625, 0}, {
+           0.690266, -0.080953}}], 
+         PolygonBox[{{0.5, -0.20625}, {0.580953, -0.190266}, {
+          0.613457, -0.266661}, {0.5, -0.289063}}], 
+         PolygonBox[{{0.580953, -0.190266}, {0.646437, -0.146438}, {
+          0.705234, -0.205234}, {0.613457, -0.266661}}], 
+         PolygonBox[{{0.646437, -0.146438}, {0.690266, -0.080953}, {
+          0.76666, -0.113457}, {0.705234, -0.205234}}], 
+         PolygonBox[{{0.690266, -0.080953}, {0.70625, 0}, {0.789062, 0}, {
+           0.76666, -0.113457}}], 
+         PolygonBox[{{0.5, -0.289063}, {0.613457, -0.266661}, {
+          0.627562, -0.299813}, {0.5, -0.325001}}], 
+         PolygonBox[{{0.613457, -0.266661}, {0.705234, -0.205234}, {
+          0.73075, -0.23075}, {0.627562, -0.299813}}], 
+         PolygonBox[{{0.705234, -0.205234}, {0.76666, -0.113457}, {
+          0.799812, -0.127562}, {0.73075, -0.23075}}], 
+         PolygonBox[{{0.76666, -0.113457}, {0.789062, 0}, {0.825, 0}, {
+           0.799812, -0.127562}}]}},
+       Axes->True], {967.5, -179.49042197843227`}, 
+      ImageScaled[{0.5, 0.5}], {360., 336.5445412095605}]}, {InsetBox[
+      StyleBox["\<\"y,z\"\>",
+       StripOnInput->False,
+       FontSize->25], {193.5, -538.4712659352967}, {
+      Center, Center}, {360., 336.54454120956046`}], InsetBox[
+      StyleBox["\<\"x,z\"\>",
+       StripOnInput->False,
+       FontSize->25], {580.5, -538.4712659352967}, {
+      Center, Center}, {360., 336.54454120956046`}], InsetBox[
+      StyleBox["\<\"x,y\"\>",
+       StripOnInput->False,
+       FontSize->25], {967.5, -538.4712659352967}, {
+      Center, Center}, {360., 336.54454120956046`}]}}, {}},
+  ContentSelectable->True,
+  PlotRangePadding->{6, 5}]], "Output",
+ ImageCache->GraphicsData["CompressedBitmap", "\<\
+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
++Ysqmle8ji0tZZ6GYFa8Mi9dCIM8+nDCRqS9P9s6Z47kv4KUFFkAR8oAgJPT
+VQUF6tyBR8GrqpJQ507yMwxD1MtQ3L12zN/xypKSTla5PvPU7bc/d+2UKSh5
+wsxYLIcM87/KFTvGn31k2rTTv1zEVrl6xiirXEv8z9WD/gfeT9RLi7asPvCn
+NWuYjSxZ6CFCm+HCh+RkOAs+JFZ94BxhtE9L8vMR+JPw0kV6FGQuRv2LkRUV
+CIsiOdkoqEbSFKq7s1HHCj+s9FNG3VtwoBdxZ4CCA4cqunUr+eCDD9qiIiLg
+b+FWLpyi3OF9bOOYMQaMJMmLel+yKpap4EDplQ05b7ta8ZrOK4TAa7eurk7v
+lZ7OEtXAFxBwskKIyK/8rLSwEP4D+BHk8Eohp4bqpFBSK4QogA1yDOBdnRHT
+zPHZdKoykYF63+Ig4jGcIKJ8i4O8cW1Dw6ynfvKTvw7me+1dSouPP9OdICSK
+g3wbiWAgxAgIi5Zl1dXoESSghwblvT/ceCPbeV3WBhHzx91o9gPDBg6UygZk
+ECaifTJEgqNi0WYTmBZHEaJNpMeJ6CCPAYhgPAxlMPkaC6rgm8mwnF5IYHz2
+rF692sHF8f3Nzc2yWQu3aHPyNlbF9q677mJHkbwN2xka54XhO2TLbbfdxu9s
+V3+FAKnXrlKYxVsGqV+/fiy5Vy2D1Ny/PyNGiLtyEtjPknb1KYOkF6ektKXy
+bEz0DoUAUBDASoBbATalDBLieNJDgkXesFT918ByqCl5at0jK7tBVM8PLNNt
+tpbsxMSLBQTjfMoeHfxg2zbPpG7dZGr/xQlk+5KMRYEbRAHhyMZSTEGjfP+S
+0B8tWbDgq9riYrbeogsN0ygkfvE4IABfy8xevdhRBG/z0LCe3DF+PA99i9SO
+/TfcIDNCtCje5hpcUNBWxX2FxrWFCQnn5vXrx464c9Bx4OS3voWFCie2jRuH
+uGNLbmIi3nS1mbAZcfMyvKEgbKwIABRl4U6EwUIZMLWhtDHEUms+HYWLtiS+
+0oAdRfI2dh1hd3bk5G1t2fHxDNAWeK9tz+DF69iRnX07WqmLutiUBC2n8jMy
+QO/DrkpcxlvlbRbZnZDAgJkIZEMnIhYymuYYxP3zefN00uNqlTd9x+jRWF0F
+mIBoLDJrYe+hIo6V3lQhpqjyJl0x8NgARbJqB4GqvBEawXnY1aVDlTeFvIPR
+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
+/m/7Kn8PEv8HQLmBaA==\
+\>"]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GraphicsGrid", "[", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Graphics", "[", 
+       RowBox[{
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{"Red", ",", 
+          RowBox[{"Disk", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"CoPluck", "[", "#", "]"}], "[", "viewVector", "]"}], 
+            ",", "0.0625"}], "]"}], ",", "\[IndentingNewLine]", "Gray", ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "1"}], "}"}]}], "}"}], "]"}], ",", 
+          RowBox[{"Disk", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}], ",", "0.25"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "Pink", ",", 
+          RowBox[{"Opacity", "[", "0.50", "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"(*", " ", 
+           RowBox[{"the", " ", "beef"}], " ", "*)"}], "\[IndentingNewLine]", 
+          RowBox[{"Translate", "[", "\[IndentingNewLine]", " ", 
+           RowBox[{
+            RowBox[{"Polygon", "/@", 
+             RowBox[{"RemoveDimension", "[", 
+              RowBox[{"faces3d", ",", "#"}], "]"}]}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"CoPluck", "[", "#", "]"}], "[", 
+             RowBox[{"-", "center"}], "]"}]}], "]"}]}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], "&"}], "/@", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<y,z\>\"", ",", "25"}], "]"}], ",", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<x,z\>\"", ",", "25"}], "]"}], ",", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<x,y\>\"", ",", "25"}], "]"}]}], "}"}]}], "}"}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{InsetBox[
+      GraphicsBox[{
+        {RGBColor[1, 0, 0], DiskBox[{-2.4, 1.3249505}, 0.0625]}, 
+        {GrayLevel[0.5], LineBox[{{0, 0}, {1, 0}}], LineBox[{{0, 0}, {0, 1}}],
+          DiskBox[{0, 0}, 0.25]}, 
+        {RGBColor[1, 0.5, 0.5], Opacity[0.5], EdgeForm[GrayLevel[0]], 
+         GeometricTransformationBox[{
+           PolygonBox[{{0, 0.863037}, {0.137375, 0.863037}, {0.135459, 
+             0.881027}, {0, 0.881027}}], 
+           PolygonBox[{{0.137375, 0.863037}, {0.2485, 0.863037}, {0.245034, 
+            0.881027}, {0.135459, 0.881027}}], 
+           PolygonBox[{{0.2485, 0.863037}, {0.322875, 0.863037}, {0.318373, 
+            0.881027}, {0.245034, 0.881027}}], 
+           PolygonBox[{{0.322875, 0.863037}, {0.35, 0.863037}, {0.34512, 
+            0.881027}, {0.318373, 0.881027}}], 
+           PolygonBox[{{0, 0.881027}, {0.135459, 0.881027}, {0.137682, 
+             0.887024}, {0, 0.887024}}], 
+           PolygonBox[{{0.135459, 0.881027}, {0.245034, 0.881027}, {0.249056, 
+            0.887024}, {0.137682, 0.887024}}], 
+           PolygonBox[{{0.245034, 0.881027}, {0.318373, 0.881027}, {0.323599, 
+            0.887024}, {0.249056, 0.887024}}], 
+           PolygonBox[{{0.318373, 0.881027}, {0.34512, 0.881027}, {0.350785, 
+            0.887024}, {0.323599, 0.887024}}], 
+           PolygonBox[{{0, 0.887024}, {0.137682, 0.887024}, {0.142205, 
+             0.881027}, {0, 0.881027}}], 
+           PolygonBox[{{0.137682, 0.887024}, {0.249056, 0.887024}, {0.257238, 
+            0.881027}, {0.142205, 0.881027}}], 
+           PolygonBox[{{0.249056, 0.887024}, {0.323599, 0.887024}, {0.334229, 
+            0.881027}, {0.257238, 0.881027}}], 
+           PolygonBox[{{0.323599, 0.887024}, {0.350785, 0.887024}, {0.362308, 
+            0.881027}, {0.334229, 0.881027}}], 
+           PolygonBox[{{0, 0.881027}, {0.142205, 0.881027}, {0.147187, 
+             0.863037}, {0, 0.863037}}], 
+           PolygonBox[{{0.142205, 0.881027}, {0.257238, 0.881027}, {0.26625, 
+            0.863037}, {0.147187, 0.863037}}], 
+           PolygonBox[{{0.257238, 0.881027}, {0.334229, 0.881027}, {0.345937, 
+            0.863037}, {0.26625, 0.863037}}], 
+           PolygonBox[{{0.334229, 0.881027}, {0.362308, 0.881027}, {0.375, 
+            0.863037}, {0.345937, 0.863037}}], 
+           PolygonBox[{{0.35, 0.863037}, {0.322875, 0.863037}, {0.318373, 
+            0.881027}, {0.34512, 0.881027}}], 
+           PolygonBox[{{0.322875, 0.863037}, {0.2485, 0.863037}, {0.245034, 
+            0.881027}, {0.318373, 0.881027}}], 
+           PolygonBox[{{0.2485, 0.863037}, {0.137375, 0.863037}, {0.135459, 
+            0.881027}, {0.245034, 0.881027}}], 
+           PolygonBox[{{0.137375, 0.863037}, {0, 0.863037}, {0, 0.881027}, {
+             0.135459, 0.881027}}], 
+           PolygonBox[{{0.34512, 0.881027}, {0.318373, 0.881027}, {0.323599, 
+            0.887024}, {0.350785, 0.887024}}], 
+           PolygonBox[{{0.318373, 0.881027}, {0.245034, 0.881027}, {0.249056, 
+            0.887024}, {0.323599, 0.887024}}], 
+           PolygonBox[{{0.245034, 0.881027}, {0.135459, 0.881027}, {0.137682, 
+            0.887024}, {0.249056, 0.887024}}], 
+           PolygonBox[{{0.135459, 0.881027}, {0, 0.881027}, {0, 0.887024}, {
+             0.137682, 0.887024}}], 
+           PolygonBox[{{0.350785, 0.887024}, {0.323599, 0.887024}, {0.334229, 
+            0.881027}, {0.362308, 0.881027}}], 
+           PolygonBox[{{0.323599, 0.887024}, {0.249056, 0.887024}, {0.257238, 
+            0.881027}, {0.334229, 0.881027}}], 
+           PolygonBox[{{0.249056, 0.887024}, {0.137682, 0.887024}, {0.142205, 
+            0.881027}, {0.257238, 0.881027}}], 
+           PolygonBox[{{0.137682, 0.887024}, {0, 0.887024}, {0, 0.881027}, {
+             0.142205, 0.881027}}], 
+           PolygonBox[{{0.362308, 0.881027}, {0.334229, 0.881027}, {0.345937, 
+            0.863037}, {0.375, 0.863037}}], 
+           PolygonBox[{{0.334229, 0.881027}, {0.257238, 0.881027}, {0.26625, 
+            0.863037}, {0.345937, 0.863037}}], 
+           PolygonBox[{{0.257238, 0.881027}, {0.142205, 0.881027}, {0.147187, 
+            0.863037}, {0.26625, 0.863037}}], 
+           PolygonBox[{{0.142205, 0.881027}, {0, 0.881027}, {0, 0.863037}, {
+             0.147187, 0.863037}}], 
+           PolygonBox[{{0, 0.863037}, {-0.137375, 0.863037}, {-0.135458, 
+             0.881027}, {0, 0.881027}}], 
+           PolygonBox[{{-0.137375, 0.863037}, {-0.2485, 0.863037}, {-0.245033,
+             0.881027}, {-0.135458, 0.881027}}], 
+           PolygonBox[{{-0.2485, 0.863037}, {-0.322875, 0.863037}, {-0.318371,
+             0.881027}, {-0.245033, 0.881027}}], 
+           PolygonBox[{{-0.322875, 0.863037}, {-0.35, 0.863037}, {-0.345118, 
+            0.881027}, {-0.318371, 0.881027}}], 
+           PolygonBox[{{0, 0.881027}, {-0.135458, 0.881027}, {-0.137681, 
+             0.887024}, {0, 0.887024}}], 
+           PolygonBox[{{-0.135458, 0.881027}, {-0.245033, 
+            0.881027}, {-0.249054, 0.887024}, {-0.137681, 0.887024}}], 
+           PolygonBox[{{-0.245033, 0.881027}, {-0.318371, 
+            0.881027}, {-0.323595, 0.887024}, {-0.249054, 0.887024}}], 
+           PolygonBox[{{-0.318371, 0.881027}, {-0.345118, 
+            0.881027}, {-0.35078, 0.887024}, {-0.323595, 0.887024}}], 
+           PolygonBox[{{0, 0.887024}, {-0.137681, 0.887024}, {-0.142204, 
+             0.881027}, {0, 0.881027}}], 
+           PolygonBox[{{-0.137681, 0.887024}, {-0.249054, 
+            0.887024}, {-0.257235, 0.881027}, {-0.142204, 0.881027}}], 
+           PolygonBox[{{-0.249054, 0.887024}, {-0.323595, 
+            0.887024}, {-0.334224, 0.881027}, {-0.257235, 0.881027}}], 
+           PolygonBox[{{-0.323595, 0.887024}, {-0.35078, 
+            0.887024}, {-0.362303, 0.881027}, {-0.334224, 0.881027}}], 
+           PolygonBox[{{0, 0.881027}, {-0.142204, 0.881027}, {-0.147187, 
+             0.863037}, {0, 0.863037}}], 
+           PolygonBox[{{-0.142204, 0.881027}, {-0.257235, 
+            0.881027}, {-0.26625, 0.863037}, {-0.147187, 0.863037}}], 
+           PolygonBox[{{-0.257235, 0.881027}, {-0.334224, 
+            0.881027}, {-0.345937, 0.863037}, {-0.26625, 0.863037}}], 
+           PolygonBox[{{-0.334224, 0.881027}, {-0.362303, 0.881027}, {-0.375, 
+            0.863037}, {-0.345937, 0.863037}}], 
+           PolygonBox[{{-0.35, 0.863037}, {-0.322875, 0.863037}, {-0.318371, 
+            0.881027}, {-0.345118, 0.881027}}], 
+           PolygonBox[{{-0.322875, 0.863037}, {-0.2485, 0.863037}, {-0.245033,
+             0.881027}, {-0.318371, 0.881027}}], 
+           PolygonBox[{{-0.2485, 0.863037}, {-0.137375, 0.863037}, {-0.135458,
+             0.881027}, {-0.245033, 0.881027}}], 
+           PolygonBox[{{-0.137375, 0.863037}, {0, 0.863037}, {
+             0, 0.881027}, {-0.135458, 0.881027}}], 
+           PolygonBox[{{-0.345118, 0.881027}, {-0.318371, 
+            0.881027}, {-0.323595, 0.887024}, {-0.35078, 0.887024}}], 
+           PolygonBox[{{-0.318371, 0.881027}, {-0.245033, 
+            0.881027}, {-0.249054, 0.887024}, {-0.323595, 0.887024}}], 
+           PolygonBox[{{-0.245033, 0.881027}, {-0.135458, 
+            0.881027}, {-0.137681, 0.887024}, {-0.249054, 0.887024}}], 
+           PolygonBox[{{-0.135458, 0.881027}, {0, 0.881027}, {
+             0, 0.887024}, {-0.137681, 0.887024}}], 
+           PolygonBox[{{-0.35078, 0.887024}, {-0.323595, 
+            0.887024}, {-0.334224, 0.881027}, {-0.362303, 0.881027}}], 
+           PolygonBox[{{-0.323595, 0.887024}, {-0.249054, 
+            0.887024}, {-0.257235, 0.881027}, {-0.334224, 0.881027}}], 
+           PolygonBox[{{-0.249054, 0.887024}, {-0.137681, 
+            0.887024}, {-0.142204, 0.881027}, {-0.257235, 0.881027}}], 
+           PolygonBox[{{-0.137681, 0.887024}, {0, 0.887024}, {
+             0, 0.881027}, {-0.142204, 0.881027}}], 
+           PolygonBox[{{-0.362303, 0.881027}, {-0.334224, 
+            0.881027}, {-0.345937, 0.863037}, {-0.375, 0.863037}}], 
+           PolygonBox[{{-0.334224, 0.881027}, {-0.257235, 
+            0.881027}, {-0.26625, 0.863037}, {-0.345937, 0.863037}}], 
+           PolygonBox[{{-0.257235, 0.881027}, {-0.142204, 
+            0.881027}, {-0.147187, 0.863037}, {-0.26625, 0.863037}}], 
+           PolygonBox[{{-0.142204, 0.881027}, {0, 0.881027}, {
+             0, 0.863037}, {-0.147187, 0.863037}}], 
+           PolygonBox[{{0, 0.863037}, {0.147187, 0.863037}, {0.165203, 
+             0.764481}, {0, 0.764481}}], 
+           PolygonBox[{{0.147187, 0.863037}, {0.26625, 0.863037}, {0.298838, 
+            0.764481}, {0.165203, 0.764481}}], 
+           PolygonBox[{{0.26625, 0.863037}, {0.345937, 0.863037}, {0.388279, 
+            0.764481}, {0.298838, 0.764481}}], 
+           PolygonBox[{{0.345937, 0.863037}, {0.375, 0.863037}, {0.420898, 
+            0.764481}, {0.388279, 0.764481}}], 
+           PolygonBox[{{0, 0.764481}, {0.165203, 0.764481}, {0.180918, 
+             0.66803}, {0, 0.66803}}], 
+           PolygonBox[{{0.165203, 0.764481}, {0.298838, 0.764481}, {0.327266, 
+            0.66803}, {0.180918, 0.66803}}], 
+           PolygonBox[{{0.298838, 0.764481}, {0.388279, 0.764481}, {0.425215, 
+            0.66803}, {0.327266, 0.66803}}], 
+           PolygonBox[{{0.388279, 0.764481}, {0.420898, 0.764481}, {0.460938, 
+            0.66803}, {0.425215, 0.66803}}], 
+           PolygonBox[{{0, 0.66803}, {0.180918, 0.66803}, {0.192034, 
+             0.575333}, {0, 0.575333}}], 
+           PolygonBox[{{0.180918, 0.66803}, {0.327266, 0.66803}, {0.347373, 
+            0.575333}, {0.192034, 0.575333}}], 
+           PolygonBox[{{0.327266, 0.66803}, {0.425215, 0.66803}, {0.45134, 
+            0.575333}, {0.347373, 0.575333}}], 
+           PolygonBox[{{0.425215, 0.66803}, {0.460938, 0.66803}, {0.489258, 
+            0.575333}, {0.45134, 0.575333}}], 
+           PolygonBox[{{0, 0.575333}, {0.192034, 0.575333}, {0.19625, 
+             0.488037}, {0, 0.488037}}], 
+           PolygonBox[{{0.192034, 0.575333}, {0.347373, 0.575333}, {0.355, 
+            0.488037}, {0.19625, 0.488037}}], 
+           PolygonBox[{{0.347373, 0.575333}, {0.45134, 0.575333}, {0.46125, 
+            0.488037}, {0.355, 0.488037}}], 
+           PolygonBox[{{0.45134, 0.575333}, {0.489258, 0.575333}, {0.5, 
+            0.488037}, {0.46125, 0.488037}}], 
+           PolygonBox[{{0.375, 0.863037}, {0.345937, 0.863037}, {0.388279, 
+            0.764481}, {0.420898, 0.764481}}], 
+           PolygonBox[{{0.345937, 0.863037}, {0.26625, 0.863037}, {0.298838, 
+            0.764481}, {0.388279, 0.764481}}], 
+           PolygonBox[{{0.26625, 0.863037}, {0.147187, 0.863037}, {0.165203, 
+            0.764481}, {0.298838, 0.764481}}], 
+           PolygonBox[{{0.147187, 0.863037}, {0, 0.863037}, {0, 0.764481}, {
+             0.165203, 0.764481}}], 
+           PolygonBox[{{0.420898, 0.764481}, {0.388279, 0.764481}, {0.425215, 
+            0.66803}, {0.460938, 0.66803}}], 
+           PolygonBox[{{0.388279, 0.764481}, {0.298838, 0.764481}, {0.327266, 
+            0.66803}, {0.425215, 0.66803}}], 
+           PolygonBox[{{0.298838, 0.764481}, {0.165203, 0.764481}, {0.180918, 
+            0.66803}, {0.327266, 0.66803}}], 
+           PolygonBox[{{0.165203, 0.764481}, {0, 0.764481}, {0, 0.66803}, {
+             0.180918, 0.66803}}], 
+           PolygonBox[{{0.460938, 0.66803}, {0.425215, 0.66803}, {0.45134, 
+            0.575333}, {0.489258, 0.575333}}], 
+           PolygonBox[{{0.425215, 0.66803}, {0.327266, 0.66803}, {0.347373, 
+            0.575333}, {0.45134, 0.575333}}], 
+           PolygonBox[{{0.327266, 0.66803}, {0.180918, 0.66803}, {0.192034, 
+            0.575333}, {0.347373, 0.575333}}], 
+           PolygonBox[{{0.180918, 0.66803}, {0, 0.66803}, {0, 0.575333}, {
+             0.192034, 0.575333}}], 
+           PolygonBox[{{0.489258, 0.575333}, {0.45134, 0.575333}, {0.46125, 
+            0.488037}, {0.5, 0.488037}}], 
+           PolygonBox[{{0.45134, 0.575333}, {0.347373, 0.575333}, {0.355, 
+            0.488037}, {0.46125, 0.488037}}], 
+           PolygonBox[{{0.347373, 0.575333}, {0.192034, 0.575333}, {0.19625, 
+            0.488037}, {0.355, 0.488037}}], 
+           PolygonBox[{{0.192034, 0.575333}, {0, 0.575333}, {0, 0.488037}, {
+             0.19625, 0.488037}}], 
+           PolygonBox[{{0, 0.863037}, {-0.147187, 0.863037}, {-0.165203, 
+             0.764481}, {0, 0.764481}}], 
+           PolygonBox[{{-0.147187, 0.863037}, {-0.26625, 
+            0.863037}, {-0.298838, 0.764481}, {-0.165203, 0.764481}}], 
+           PolygonBox[{{-0.26625, 0.863037}, {-0.345937, 
+            0.863037}, {-0.388279, 0.764481}, {-0.298838, 0.764481}}], 
+           PolygonBox[{{-0.345937, 0.863037}, {-0.375, 0.863037}, {-0.420898, 
+            0.764481}, {-0.388279, 0.764481}}], 
+           PolygonBox[{{0, 0.764481}, {-0.165203, 0.764481}, {-0.180918, 
+             0.66803}, {0, 0.66803}}], 
+           PolygonBox[{{-0.165203, 0.764481}, {-0.298838, 
+            0.764481}, {-0.327266, 0.66803}, {-0.180918, 0.66803}}], 
+           PolygonBox[{{-0.298838, 0.764481}, {-0.388279, 
+            0.764481}, {-0.425215, 0.66803}, {-0.327266, 0.66803}}], 
+           PolygonBox[{{-0.388279, 0.764481}, {-0.420898, 
+            0.764481}, {-0.460938, 0.66803}, {-0.425215, 0.66803}}], 
+           PolygonBox[{{0, 0.66803}, {-0.180918, 0.66803}, {-0.192034, 
+             0.575333}, {0, 0.575333}}], 
+           PolygonBox[{{-0.180918, 0.66803}, {-0.327266, 0.66803}, {-0.347373,
+             0.575333}, {-0.192034, 0.575333}}], 
+           PolygonBox[{{-0.327266, 0.66803}, {-0.425215, 0.66803}, {-0.45134, 
+            0.575333}, {-0.347373, 0.575333}}], 
+           PolygonBox[{{-0.425215, 0.66803}, {-0.460938, 0.66803}, {-0.489258,
+             0.575333}, {-0.45134, 0.575333}}], 
+           PolygonBox[{{0, 0.575333}, {-0.192034, 0.575333}, {-0.19625, 
+             0.488037}, {0, 0.488037}}], 
+           PolygonBox[{{-0.192034, 0.575333}, {-0.347373, 0.575333}, {-0.355, 
+            0.488037}, {-0.19625, 0.488037}}], 
+           PolygonBox[{{-0.347373, 0.575333}, {-0.45134, 0.575333}, {-0.46125,
+             0.488037}, {-0.355, 0.488037}}], 
+           PolygonBox[{{-0.45134, 0.575333}, {-0.489258, 0.575333}, {-0.5, 
+            0.488037}, {-0.46125, 0.488037}}], 
+           PolygonBox[{{-0.375, 0.863037}, {-0.345937, 0.863037}, {-0.388279, 
+            0.764481}, {-0.420898, 0.764481}}], 
+           PolygonBox[{{-0.345937, 0.863037}, {-0.26625, 
+            0.863037}, {-0.298838, 0.764481}, {-0.388279, 0.764481}}], 
+           PolygonBox[{{-0.26625, 0.863037}, {-0.147187, 
+            0.863037}, {-0.165203, 0.764481}, {-0.298838, 0.764481}}], 
+           PolygonBox[{{-0.147187, 0.863037}, {0, 0.863037}, {
+             0, 0.764481}, {-0.165203, 0.764481}}], 
+           PolygonBox[{{-0.420898, 0.764481}, {-0.388279, 
+            0.764481}, {-0.425215, 0.66803}, {-0.460938, 0.66803}}], 
+           PolygonBox[{{-0.388279, 0.764481}, {-0.298838, 
+            0.764481}, {-0.327266, 0.66803}, {-0.425215, 0.66803}}], 
+           PolygonBox[{{-0.298838, 0.764481}, {-0.165203, 
+            0.764481}, {-0.180918, 0.66803}, {-0.327266, 0.66803}}], 
+           PolygonBox[{{-0.165203, 0.764481}, {0, 0.764481}, {
+             0, 0.66803}, {-0.180918, 0.66803}}], 
+           PolygonBox[{{-0.460938, 0.66803}, {-0.425215, 0.66803}, {-0.45134, 
+            0.575333}, {-0.489258, 0.575333}}], 
+           PolygonBox[{{-0.425215, 0.66803}, {-0.327266, 0.66803}, {-0.347373,
+             0.575333}, {-0.45134, 0.575333}}], 
+           PolygonBox[{{-0.327266, 0.66803}, {-0.180918, 0.66803}, {-0.192034,
+             0.575333}, {-0.347373, 0.575333}}], 
+           PolygonBox[{{-0.180918, 0.66803}, {0, 0.66803}, {
+             0, 0.575333}, {-0.192034, 0.575333}}], 
+           PolygonBox[{{-0.489258, 0.575333}, {-0.45134, 0.575333}, {-0.46125,
+             0.488037}, {-0.5, 0.488037}}], 
+           PolygonBox[{{-0.45134, 0.575333}, {-0.347373, 0.575333}, {-0.355, 
+            0.488037}, {-0.46125, 0.488037}}], 
+           PolygonBox[{{-0.347373, 0.575333}, {-0.192034, 
+            0.575333}, {-0.19625, 0.488037}, {-0.355, 0.488037}}], 
+           PolygonBox[{{-0.192034, 0.575333}, {0, 0.575333}, {
+             0, 0.488037}, {-0.19625, 0.488037}}], 
+           PolygonBox[{{0, 0.488037}, {0.19625, 0.488037}, {0.188584, 
+             0.413654}, {0, 0.413654}}], 
+           PolygonBox[{{0.19625, 0.488037}, {0.355, 0.488037}, {0.341133, 
+            0.413654}, {0.188584, 0.413654}}], 
+           PolygonBox[{{0.355, 0.488037}, {0.46125, 0.488037}, {0.443233, 
+            0.413654}, {0.341133, 0.413654}}], 
+           PolygonBox[{{0.46125, 0.488037}, {0.5, 0.488037}, {0.480469, 
+            0.413654}, {0.443233, 0.413654}}], 
+           PolygonBox[{{0, 0.413654}, {0.188584, 0.413654}, {0.171719, 
+             0.358795}, {0, 0.358795}}], 
+           PolygonBox[{{0.188584, 0.413654}, {0.341133, 0.413654}, {0.310625, 
+            0.358795}, {0.171719, 0.358795}}], 
+           PolygonBox[{{0.341133, 0.413654}, {0.443233, 0.413654}, {0.403594, 
+            0.358795}, {0.310625, 0.358795}}], 
+           PolygonBox[{{0.443233, 0.413654}, {0.480469, 0.413654}, {0.4375, 
+            0.358795}, {0.403594, 0.358795}}], 
+           PolygonBox[{{0, 0.358795}, {0.171719, 0.358795}, {0.154853, 
+             0.32156}, {0, 0.32156}}], 
+           PolygonBox[{{0.171719, 0.358795}, {0.310625, 0.358795}, {0.280117, 
+            0.32156}, {0.154853, 0.32156}}], 
+           PolygonBox[{{0.310625, 0.358795}, {0.403594, 0.358795}, {0.363955, 
+            0.32156}, {0.280117, 0.32156}}], 
+           PolygonBox[{{0.403594, 0.358795}, {0.4375, 0.358795}, {0.394531, 
+            0.32156}, {0.363955, 0.32156}}], 
+           PolygonBox[{{0, 0.32156}, {0.154853, 0.32156}, {0.147187, 
+             0.300049}, {0, 0.300049}}], 
+           PolygonBox[{{0.154853, 0.32156}, {0.280117, 0.32156}, {0.26625, 
+            0.300049}, {0.147187, 0.300049}}], 
+           PolygonBox[{{0.280117, 0.32156}, {0.363955, 0.32156}, {0.345937, 
+            0.300049}, {0.26625, 0.300049}}], 
+           PolygonBox[{{0.363955, 0.32156}, {0.394531, 0.32156}, {0.375, 
+            0.300049}, {0.345937, 0.300049}}], 
+           PolygonBox[{{0.5, 0.488037}, {0.46125, 0.488037}, {0.443233, 
+            0.413654}, {0.480469, 0.413654}}], 
+           PolygonBox[{{0.46125, 0.488037}, {0.355, 0.488037}, {0.341133, 
+            0.413654}, {0.443233, 0.413654}}], 
+           PolygonBox[{{0.355, 0.488037}, {0.19625, 0.488037}, {0.188584, 
+            0.413654}, {0.341133, 0.413654}}], 
+           PolygonBox[{{0.19625, 0.488037}, {0, 0.488037}, {0, 0.413654}, {
+             0.188584, 0.413654}}], 
+           PolygonBox[{{0.480469, 0.413654}, {0.443233, 0.413654}, {0.403594, 
+            0.358795}, {0.4375, 0.358795}}], 
+           PolygonBox[{{0.443233, 0.413654}, {0.341133, 0.413654}, {0.310625, 
+            0.358795}, {0.403594, 0.358795}}], 
+           PolygonBox[{{0.341133, 0.413654}, {0.188584, 0.413654}, {0.171719, 
+            0.358795}, {0.310625, 0.358795}}], 
+           PolygonBox[{{0.188584, 0.413654}, {0, 0.413654}, {0, 0.358795}, {
+             0.171719, 0.358795}}], 
+           PolygonBox[{{0.4375, 0.358795}, {0.403594, 0.358795}, {0.363955, 
+            0.32156}, {0.394531, 0.32156}}], 
+           PolygonBox[{{0.403594, 0.358795}, {0.310625, 0.358795}, {0.280117, 
+            0.32156}, {0.363955, 0.32156}}], 
+           PolygonBox[{{0.310625, 0.358795}, {0.171719, 0.358795}, {0.154853, 
+            0.32156}, {0.280117, 0.32156}}], 
+           PolygonBox[{{0.171719, 0.358795}, {0, 0.358795}, {0, 0.32156}, {
+             0.154853, 0.32156}}], 
+           PolygonBox[{{0.394531, 0.32156}, {0.363955, 0.32156}, {0.345937, 
+            0.300049}, {0.375, 0.300049}}], 
+           PolygonBox[{{0.363955, 0.32156}, {0.280117, 0.32156}, {0.26625, 
+            0.300049}, {0.345937, 0.300049}}], 
+           PolygonBox[{{0.280117, 0.32156}, {0.154853, 0.32156}, {0.147187, 
+            0.300049}, {0.26625, 0.300049}}], 
+           PolygonBox[{{0.154853, 0.32156}, {0, 0.32156}, {0, 0.300049}, {
+             0.147187, 0.300049}}], 
+           PolygonBox[{{0, 0.488037}, {-0.19625, 0.488037}, {-0.188584, 
+             0.413654}, {0, 0.413654}}], 
+           PolygonBox[{{-0.19625, 0.488037}, {-0.355, 0.488037}, {-0.341133, 
+            0.413654}, {-0.188584, 0.413654}}], 
+           PolygonBox[{{-0.355, 0.488037}, {-0.46125, 0.488037}, {-0.443233, 
+            0.413654}, {-0.341133, 0.413654}}], 
+           PolygonBox[{{-0.46125, 0.488037}, {-0.5, 0.488037}, {-0.480469, 
+            0.413654}, {-0.443233, 0.413654}}], 
+           PolygonBox[{{0, 0.413654}, {-0.188584, 0.413654}, {-0.171719, 
+             0.358795}, {0, 0.358795}}], 
+           PolygonBox[{{-0.188584, 0.413654}, {-0.341133, 
+            0.413654}, {-0.310625, 0.358795}, {-0.171719, 0.358795}}], 
+           PolygonBox[{{-0.341133, 0.413654}, {-0.443233, 
+            0.413654}, {-0.403594, 0.358795}, {-0.310625, 0.358795}}], 
+           PolygonBox[{{-0.443233, 0.413654}, {-0.480469, 0.413654}, {-0.4375,
+             0.358795}, {-0.403594, 0.358795}}], 
+           PolygonBox[{{0, 0.358795}, {-0.171719, 0.358795}, {-0.154853, 
+             0.32156}, {0, 0.32156}}], 
+           PolygonBox[{{-0.171719, 0.358795}, {-0.310625, 
+            0.358795}, {-0.280117, 0.32156}, {-0.154853, 0.32156}}], 
+           PolygonBox[{{-0.310625, 0.358795}, {-0.403594, 
+            0.358795}, {-0.363955, 0.32156}, {-0.280117, 0.32156}}], 
+           PolygonBox[{{-0.403594, 0.358795}, {-0.4375, 0.358795}, {-0.394531,
+             0.32156}, {-0.363955, 0.32156}}], 
+           PolygonBox[{{0, 0.32156}, {-0.154853, 0.32156}, {-0.147187, 
+             0.300049}, {0, 0.300049}}], 
+           PolygonBox[{{-0.154853, 0.32156}, {-0.280117, 0.32156}, {-0.26625, 
+            0.300049}, {-0.147187, 0.300049}}], 
+           PolygonBox[{{-0.280117, 0.32156}, {-0.363955, 0.32156}, {-0.345937,
+             0.300049}, {-0.26625, 0.300049}}], 
+           PolygonBox[{{-0.363955, 0.32156}, {-0.394531, 0.32156}, {-0.375, 
+            0.300049}, {-0.345937, 0.300049}}], 
+           PolygonBox[{{-0.5, 0.488037}, {-0.46125, 0.488037}, {-0.443233, 
+            0.413654}, {-0.480469, 0.413654}}], 
+           PolygonBox[{{-0.46125, 0.488037}, {-0.355, 0.488037}, {-0.341133, 
+            0.413654}, {-0.443233, 0.413654}}], 
+           PolygonBox[{{-0.355, 0.488037}, {-0.19625, 0.488037}, {-0.188584, 
+            0.413654}, {-0.341133, 0.413654}}], 
+           PolygonBox[{{-0.19625, 0.488037}, {0, 0.488037}, {
+             0, 0.413654}, {-0.188584, 0.413654}}], 
+           PolygonBox[{{-0.480469, 0.413654}, {-0.443233, 
+            0.413654}, {-0.403594, 0.358795}, {-0.4375, 0.358795}}], 
+           PolygonBox[{{-0.443233, 0.413654}, {-0.341133, 
+            0.413654}, {-0.310625, 0.358795}, {-0.403594, 0.358795}}], 
+           PolygonBox[{{-0.341133, 0.413654}, {-0.188584, 
+            0.413654}, {-0.171719, 0.358795}, {-0.310625, 0.358795}}], 
+           PolygonBox[{{-0.188584, 0.413654}, {0, 0.413654}, {
+             0, 0.358795}, {-0.171719, 0.358795}}], 
+           PolygonBox[{{-0.4375, 0.358795}, {-0.403594, 0.358795}, {-0.363955,
+             0.32156}, {-0.394531, 0.32156}}], 
+           PolygonBox[{{-0.403594, 0.358795}, {-0.310625, 
+            0.358795}, {-0.280117, 0.32156}, {-0.363955, 0.32156}}], 
+           PolygonBox[{{-0.310625, 0.358795}, {-0.171719, 
+            0.358795}, {-0.154853, 0.32156}, {-0.280117, 0.32156}}], 
+           PolygonBox[{{-0.171719, 0.358795}, {0, 0.358795}, {
+             0, 0.32156}, {-0.154853, 0.32156}}], 
+           PolygonBox[{{-0.394531, 0.32156}, {-0.363955, 0.32156}, {-0.345937,
+             0.300049}, {-0.375, 0.300049}}], 
+           PolygonBox[{{-0.363955, 0.32156}, {-0.280117, 0.32156}, {-0.26625, 
+            0.300049}, {-0.345937, 0.300049}}], 
+           PolygonBox[{{-0.280117, 0.32156}, {-0.154853, 0.32156}, {-0.147187,
+             0.300049}, {-0.26625, 0.300049}}], 
+           PolygonBox[{{-0.154853, 0.32156}, {0, 0.32156}, {
+             0, 0.300049}, {-0.147187, 0.300049}}], 
+           PolygonBox[{{0, 0.769043}, {0.0421881, 0.777779}, {0.0421881, 
+             0.776765}, {0, 0.768166}}], 
+           PolygonBox[{{0.0421881, 0.777779}, {0.0562508, 0.796997}, {
+            0.0562508, 0.795683}, {0.0421881, 0.776765}}], 
+           PolygonBox[{{0.0562508, 0.796997}, {0.0421881, 0.816215}, {
+            0.0421881, 0.814601}, {0.0562508, 0.795683}}], 
+           PolygonBox[{{0.0421881, 0.816215}, {0, 0.824951}, {0, 0.8232}, {
+             0.0421881, 0.814601}}], 
+           PolygonBox[{{0, 0.768166}, {0.0421881, 0.776765}, {0.0421881, 
+             0.769668}, {0, 0.762024}}], 
+           PolygonBox[{{0.0421881, 0.776765}, {0.0562508, 0.795683}, {
+            0.0562508, 0.786484}, {0.0421881, 0.769668}}], 
+           PolygonBox[{{0.0562508, 0.795683}, {0.0421881, 0.814601}, {
+            0.0421881, 0.8033}, {0.0562508, 0.786484}}], 
+           PolygonBox[{{0.0421881, 0.814601}, {0, 0.8232}, {0, 0.810943}, {
+             0.0421881, 0.8033}}], 
+           PolygonBox[{{0, 0.762024}, {0.0421881, 0.769668}, {0.0421881, 
+             0.750404}, {0, 0.745354}}], 
+           PolygonBox[{{0.0421881, 0.769668}, {0.0562508, 0.786484}, {
+            0.0562508, 0.761515}, {0.0421881, 0.750404}}], 
+           PolygonBox[{{0.0562508, 0.786484}, {0.0421881, 0.8033}, {0.0421881,
+             0.772625}, {0.0562508, 0.761515}}], 
+           PolygonBox[{{0.0421881, 0.8033}, {0, 0.810943}, {0, 0.777676}, {
+             0.0421881, 0.772625}}], 
+           PolygonBox[{{0, 0.745354}, {0.0421881, 0.750404}, {0.0421881, 
+             0.712891}, {0, 0.712891}}], 
+           PolygonBox[{{0.0421881, 0.750404}, {0.0562508, 0.761515}, {
+            0.0562508, 0.712891}, {0.0421881, 0.712891}}], 
+           PolygonBox[{{0.0562508, 0.761515}, {0.0421881, 0.772625}, {
+            0.0421881, 0.712891}, {0.0562508, 0.712891}}], 
+           PolygonBox[{{0.0421881, 0.772625}, {0, 0.777676}, {0, 0.712891}, {
+             0.0421881, 0.712891}}], 
+           PolygonBox[{{0, 0.824951}, {-0.0421881, 0.816215}, {-0.0421881, 
+             0.814601}, {0, 0.8232}}], 
+           PolygonBox[{{-0.0421881, 0.816215}, {-0.0562508, 
+            0.796997}, {-0.0562508, 0.795683}, {-0.0421881, 0.814601}}], 
+           PolygonBox[{{-0.0562508, 0.796997}, {-0.0421881, 
+            0.777779}, {-0.0421881, 0.776765}, {-0.0562508, 0.795683}}], 
+           PolygonBox[{{-0.0421881, 0.777779}, {0, 0.769043}, {
+             0, 0.768166}, {-0.0421881, 0.776765}}], 
+           PolygonBox[{{0, 0.8232}, {-0.0421881, 0.814601}, {-0.0421881, 
+             0.8033}, {0, 0.810943}}], 
+           PolygonBox[{{-0.0421881, 0.814601}, {-0.0562508, 
+            0.795683}, {-0.0562508, 0.786484}, {-0.0421881, 0.8033}}], 
+           PolygonBox[{{-0.0562508, 0.795683}, {-0.0421881, 
+            0.776765}, {-0.0421881, 0.769668}, {-0.0562508, 0.786484}}], 
+           PolygonBox[{{-0.0421881, 0.776765}, {0, 0.768166}, {
+             0, 0.762024}, {-0.0421881, 0.769668}}], 
+           PolygonBox[{{0, 0.810943}, {-0.0421881, 0.8033}, {-0.0421881, 
+             0.772625}, {0, 0.777676}}], 
+           PolygonBox[{{-0.0421881, 0.8033}, {-0.0562508, 
+            0.786484}, {-0.0562508, 0.761515}, {-0.0421881, 0.772625}}], 
+           PolygonBox[{{-0.0562508, 0.786484}, {-0.0421881, 
+            0.769668}, {-0.0421881, 0.750404}, {-0.0562508, 0.761515}}], 
+           PolygonBox[{{-0.0421881, 0.769668}, {0, 0.762024}, {
+             0, 0.745354}, {-0.0421881, 0.750404}}], 
+           PolygonBox[{{0, 0.777676}, {-0.0421881, 0.772625}, {-0.0421881, 
+             0.712891}, {0, 0.712891}}], 
+           PolygonBox[{{-0.0421881, 0.772625}, {-0.0562508, 
+            0.761515}, {-0.0562508, 0.712891}, {-0.0421881, 0.712891}}], 
+           PolygonBox[{{-0.0562508, 0.761515}, {-0.0421881, 
+            0.750404}, {-0.0421881, 0.712891}, {-0.0562508, 0.712891}}], 
+           PolygonBox[{{-0.0421881, 0.750404}, {0, 0.745354}, {
+             0, 0.712891}, {-0.0421881, 0.712891}}], 
+           PolygonBox[{{0, 0.712891}, {0.0421881, 0.712891}, {0.0421881, 
+             0.656723}, {0, 0.661621}}], 
+           PolygonBox[{{0.0421881, 0.712891}, {0.0562508, 0.712891}, {
+            0.0562508, 0.645947}, {0.0421881, 0.656723}}], 
+           PolygonBox[{{0.0562508, 0.712891}, {0.0421881, 0.712891}, {
+            0.0421881, 0.63517}, {0.0562508, 0.645947}}], 
+           PolygonBox[{{0.0421881, 0.712891}, {0, 0.712891}, {0, 0.630272}, {
+             0.0421881, 0.63517}}], 
+           PolygonBox[{{0, 0.661621}, {0.0421881, 0.656723}, {0.0421881, 
+             0.592611}, {0, 0.600098}}], 
+           PolygonBox[{{0.0421881, 0.656723}, {0.0562508, 0.645947}, {
+            0.0562508, 0.576141}, {0.0421881, 0.592611}}], 
+           PolygonBox[{{0.0562508, 0.645947}, {0.0421881, 0.63517}, {
+            0.0421881, 0.559671}, {0.0562508, 0.576141}}], 
+           PolygonBox[{{0.0421881, 0.63517}, {0, 0.630272}, {0, 0.552185}, {
+             0.0421881, 0.559671}}], 
+           PolygonBox[{{0, 0.600098}, {0.0421881, 0.592611}, {0.0421881, 
+             0.529498}, {0, 0.538757}}], 
+           PolygonBox[{{0.0421881, 0.592611}, {0.0562508, 0.576141}, {
+            0.0562508, 0.509128}, {0.0421881, 0.529498}}], 
+           PolygonBox[{{0.0562508, 0.576141}, {0.0421881, 0.559671}, {
+            0.0421881, 0.488759}, {0.0562508, 0.509128}}], 
+           PolygonBox[{{0.0421881, 0.559671}, {0, 0.552185}, {0, 0.4795}, {
+             0.0421881, 0.488759}}], 
+           PolygonBox[{{0, 0.538757}, {0.0421881, 0.529498}, {0.0421881, 
+             0.476326}, {0, 0.488037}}], 
+           PolygonBox[{{0.0421881, 0.529498}, {0.0562508, 0.509128}, {
+            0.0562508, 0.450561}, {0.0421881, 0.476326}}], 
+           PolygonBox[{{0.0562508, 0.509128}, {0.0421881, 0.488759}, {
+            0.0421881, 0.424797}, {0.0562508, 0.450561}}], 
+           PolygonBox[{{0.0421881, 0.488759}, {0, 0.4795}, {0, 0.413086}, {
+             0.0421881, 0.424797}}], 
+           PolygonBox[{{0, 0.712891}, {-0.0421881, 0.712891}, {-0.0421881, 
+             0.63517}, {0, 0.630272}}], 
+           PolygonBox[{{-0.0421881, 0.712891}, {-0.0562508, 
+            0.712891}, {-0.0562508, 0.645947}, {-0.0421881, 0.63517}}], 
+           PolygonBox[{{-0.0562508, 0.712891}, {-0.0421881, 
+            0.712891}, {-0.0421881, 0.656723}, {-0.0562508, 0.645947}}], 
+           PolygonBox[{{-0.0421881, 0.712891}, {0, 0.712891}, {
+             0, 0.661621}, {-0.0421881, 0.656723}}], 
+           PolygonBox[{{0, 0.630272}, {-0.0421881, 0.63517}, {-0.0421881, 
+             0.559671}, {0, 0.552185}}], 
+           PolygonBox[{{-0.0421881, 0.63517}, {-0.0562508, 
+            0.645947}, {-0.0562508, 0.576141}, {-0.0421881, 0.559671}}], 
+           PolygonBox[{{-0.0562508, 0.645947}, {-0.0421881, 
+            0.656723}, {-0.0421881, 0.592611}, {-0.0562508, 0.576141}}], 
+           PolygonBox[{{-0.0421881, 0.656723}, {0, 0.661621}, {
+             0, 0.600098}, {-0.0421881, 0.592611}}], 
+           PolygonBox[{{0, 0.552185}, {-0.0421881, 0.559671}, {-0.0421881, 
+             0.488759}, {0, 0.4795}}], 
+           PolygonBox[{{-0.0421881, 0.559671}, {-0.0562508, 
+            0.576141}, {-0.0562508, 0.509128}, {-0.0421881, 0.488759}}], 
+           PolygonBox[{{-0.0562508, 0.576141}, {-0.0421881, 
+            0.592611}, {-0.0421881, 0.529498}, {-0.0562508, 0.509128}}], 
+           PolygonBox[{{-0.0421881, 0.592611}, {0, 0.600098}, {
+             0, 0.538757}, {-0.0421881, 0.529498}}], 
+           PolygonBox[{{0, 0.4795}, {-0.0421881, 0.488759}, {-0.0421881, 
+             0.424797}, {0, 0.413086}}], 
+           PolygonBox[{{-0.0421881, 0.488759}, {-0.0562508, 
+            0.509128}, {-0.0562508, 0.450561}, {-0.0421881, 0.424797}}], 
+           PolygonBox[{{-0.0562508, 0.509128}, {-0.0421881, 
+            0.529498}, {-0.0421881, 0.476326}, {-0.0562508, 0.450561}}], 
+           PolygonBox[{{-0.0421881, 0.529498}, {0, 0.538757}, {
+             0, 0.488037}, {-0.0421881, 0.476326}}], 
+           PolygonBox[{{0, 0.618896}, {0.0928131, 0.586738}, {0.0838042, 
+             0.622637}, {0, 0.646503}}], 
+           PolygonBox[{{0.0928131, 0.586738}, {0.123751, 0.515991}, {0.111739,
+             0.570131}, {0.0838042, 0.622637}}], 
+           PolygonBox[{{0.123751, 0.515991}, {0.0928131, 0.445244}, {
+            0.0838042, 0.517625}, {0.111739, 0.570131}}], 
+           PolygonBox[{{0.0928131, 0.445244}, {0, 0.413086}, {0, 0.493759}, {
+             0.0838042, 0.517625}}], 
+           PolygonBox[{{0, 0.646503}, {0.0838042, 0.622637}, {0.0639847, 
+             0.698941}, {0, 0.71286}}], 
+           PolygonBox[{{0.0838042, 0.622637}, {0.111739, 0.570131}, {
+            0.0853129, 0.66832}, {0.0639847, 0.698941}}], 
+           PolygonBox[{{0.111739, 0.570131}, {0.0838042, 0.517625}, {
+            0.0639847, 0.637698}, {0.0853129, 0.66832}}], 
+           PolygonBox[{{0.0838042, 0.517625}, {0, 0.493759}, {0, 0.623779}, {
+             0.0639847, 0.637698}}], 
+           PolygonBox[{{0, 0.71286}, {0.0639847, 0.698941}, {0.0441651, 
+             0.788218}, {0, 0.79327}}], 
+           PolygonBox[{{0.0639847, 0.698941}, {0.0853129, 0.66832}, {
+            0.0588868, 0.777105}, {0.0441651, 0.788218}}], 
+           PolygonBox[{{0.0853129, 0.66832}, {0.0639847, 0.637698}, {
+            0.0441651, 0.765992}, {0.0588868, 0.777105}}], 
+           PolygonBox[{{0.0639847, 0.637698}, {0, 0.623779}, {0, 0.76094}, {
+             0.0441651, 0.765992}}], 
+           PolygonBox[{{0, 0.79327}, {0.0441651, 0.788218}, {0.0351562, 
+             0.863037}, {0, 0.863037}}], 
+           PolygonBox[{{0.0441651, 0.788218}, {0.0588868, 0.777105}, {
+            0.046875, 0.863037}, {0.0351562, 0.863037}}], 
+           PolygonBox[{{0.0588868, 0.777105}, {0.0441651, 0.765992}, {
+            0.0351562, 0.863037}, {0.046875, 0.863037}}], 
+           PolygonBox[{{0.0441651, 0.765992}, {0, 0.76094}, {0, 0.863037}, {
+             0.0351562, 0.863037}}], 
+           PolygonBox[{{0, 0.413086}, {-0.0928131, 0.445244}, {-0.0838042, 
+             0.517625}, {0, 0.493759}}], 
+           PolygonBox[{{-0.0928131, 0.445244}, {-0.123751, 
+            0.515991}, {-0.111739, 0.570131}, {-0.0838042, 0.517625}}], 
+           PolygonBox[{{-0.123751, 0.515991}, {-0.0928131, 
+            0.586738}, {-0.0838042, 0.622637}, {-0.111739, 0.570131}}], 
+           PolygonBox[{{-0.0928131, 0.586738}, {0, 0.618896}, {
+             0, 0.646503}, {-0.0838042, 0.622637}}], 
+           PolygonBox[{{0, 0.493759}, {-0.0838042, 0.517625}, {-0.0639847, 
+             0.637698}, {0, 0.623779}}], 
+           PolygonBox[{{-0.0838042, 0.517625}, {-0.111739, 
+            0.570131}, {-0.0853129, 0.66832}, {-0.0639847, 0.637698}}], 
+           PolygonBox[{{-0.111739, 0.570131}, {-0.0838042, 
+            0.622637}, {-0.0639847, 0.698941}, {-0.0853129, 0.66832}}], 
+           PolygonBox[{{-0.0838042, 0.622637}, {0, 0.646503}, {
+             0, 0.71286}, {-0.0639847, 0.698941}}], 
+           PolygonBox[{{0, 0.623779}, {-0.0639847, 0.637698}, {-0.0441651, 
+             0.765992}, {0, 0.76094}}], 
+           PolygonBox[{{-0.0639847, 0.637698}, {-0.0853129, 
+            0.66832}, {-0.0588868, 0.777105}, {-0.0441651, 0.765992}}], 
+           PolygonBox[{{-0.0853129, 0.66832}, {-0.0639847, 
+            0.698941}, {-0.0441651, 0.788218}, {-0.0588868, 0.777105}}], 
+           PolygonBox[{{-0.0639847, 0.698941}, {0, 0.71286}, {
+             0, 0.79327}, {-0.0441651, 0.788218}}], 
+           PolygonBox[{{0, 0.76094}, {-0.0441651, 0.765992}, {-0.0351562, 
+             0.863037}, {0, 0.863037}}], 
+           PolygonBox[{{-0.0441651, 0.765992}, {-0.0588868, 
+            0.777105}, {-0.046875, 0.863037}, {-0.0351562, 0.863037}}], 
+           PolygonBox[{{-0.0588868, 0.777105}, {-0.0441651, 
+            0.788218}, {-0.0351562, 0.863037}, {-0.046875, 0.863037}}], 
+           PolygonBox[{{-0.0441651, 0.788218}, {0, 0.79327}, {
+             0, 0.863037}, {-0.0351562, 0.863037}}], 
+           PolygonBox[{{0, 0.863037}, {0.0351562, 0.863037}, {0.032959, 
+             0.873741}, {0, 0.8732}}], 
+           PolygonBox[{{0.0351562, 0.863037}, {0.046875, 0.863037}, {
+            0.0439453, 0.874933}, {0.032959, 0.873741}}], 
+           PolygonBox[{{0.046875, 0.863037}, {0.0351562, 0.863037}, {0.032959,
+             0.876125}, {0.0439453, 0.874933}}], 
+           PolygonBox[{{0.0351562, 0.863037}, {0, 0.863037}, {0, 0.876667}, {
+             0.032959, 0.876125}}], 
+           PolygonBox[{{0, 0.8732}, {0.032959, 0.873741}, {0.028125, 
+             0.87746}, {0, 0.876587}}], 
+           PolygonBox[{{0.032959, 0.873741}, {0.0439453, 0.874933}, {0.0375, 
+            0.879379}, {0.028125, 0.87746}}], 
+           PolygonBox[{{0.0439453, 0.874933}, {0.032959, 0.876125}, {0.028125,
+             0.881299}, {0.0375, 0.879379}}], 
+           PolygonBox[{{0.032959, 0.876125}, {0, 0.876667}, {0, 0.882171}, {
+             0.028125, 0.881299}}], 
+           PolygonBox[{{0, 0.876587}, {0.028125, 0.87746}, {0.023291, 
+             0.873967}, {0, 0.8732}}], 
+           PolygonBox[{{0.028125, 0.87746}, {0.0375, 0.879379}, {0.0310547, 
+            0.875654}, {0.023291, 0.873967}}], 
+           PolygonBox[{{0.0375, 0.879379}, {0.028125, 0.881299}, {0.023291, 
+            0.877342}, {0.0310547, 0.875654}}], 
+           PolygonBox[{{0.028125, 0.881299}, {0, 0.882171}, {0, 0.878109}, {
+             0.023291, 0.877342}}], 
+           PolygonBox[{{0, 0.8732}, {0.023291, 0.873967}, {0.0210938, 
+             0.863037}, {0, 0.863037}}], 
+           PolygonBox[{{0.023291, 0.873967}, {0.0310547, 0.875654}, {0.028125,
+             0.863037}, {0.0210938, 0.863037}}], 
+           PolygonBox[{{0.0310547, 0.875654}, {0.023291, 0.877342}, {
+            0.0210938, 0.863037}, {0.028125, 0.863037}}], 
+           PolygonBox[{{0.023291, 0.877342}, {0, 0.878109}, {0, 0.863037}, {
+             0.0210938, 0.863037}}], 
+           PolygonBox[{{0, 0.863037}, {-0.0351562, 0.863037}, {-0.032959, 
+             0.876125}, {0, 0.876667}}], 
+           PolygonBox[{{-0.0351562, 0.863037}, {-0.046875, 
+            0.863037}, {-0.0439453, 0.874933}, {-0.032959, 0.876125}}], 
+           PolygonBox[{{-0.046875, 0.863037}, {-0.0351562, 
+            0.863037}, {-0.032959, 0.873741}, {-0.0439453, 0.874933}}], 
+           PolygonBox[{{-0.0351562, 0.863037}, {0, 0.863037}, {
+             0, 0.8732}, {-0.032959, 0.873741}}], 
+           PolygonBox[{{0, 0.876667}, {-0.032959, 0.876125}, {-0.028125, 
+             0.881299}, {0, 0.882171}}], 
+           PolygonBox[{{-0.032959, 0.876125}, {-0.0439453, 
+            0.874933}, {-0.0375, 0.879379}, {-0.028125, 0.881299}}], 
+           PolygonBox[{{-0.0439453, 0.874933}, {-0.032959, 
+            0.873741}, {-0.028125, 0.87746}, {-0.0375, 0.879379}}], 
+           PolygonBox[{{-0.032959, 0.873741}, {0, 0.8732}, {
+             0, 0.876587}, {-0.028125, 0.87746}}], 
+           PolygonBox[{{0, 0.882171}, {-0.028125, 0.881299}, {-0.023291, 
+             0.877342}, {0, 0.878109}}], 
+           PolygonBox[{{-0.028125, 0.881299}, {-0.0375, 
+            0.879379}, {-0.0310547, 0.875654}, {-0.023291, 0.877342}}], 
+           PolygonBox[{{-0.0375, 0.879379}, {-0.028125, 0.87746}, {-0.023291, 
+            0.873967}, {-0.0310547, 0.875654}}], 
+           PolygonBox[{{-0.028125, 0.87746}, {0, 0.876587}, {
+             0, 0.8732}, {-0.023291, 0.873967}}], 
+           PolygonBox[{{0, 0.878109}, {-0.023291, 0.877342}, {-0.0210938, 
+             0.863037}, {0, 0.863037}}], 
+           PolygonBox[{{-0.023291, 0.877342}, {-0.0310547, 
+            0.875654}, {-0.028125, 0.863037}, {-0.0210938, 0.863037}}], 
+           PolygonBox[{{-0.0310547, 0.875654}, {-0.023291, 
+            0.873967}, {-0.0210938, 0.863037}, {-0.028125, 0.863037}}], 
+           PolygonBox[{{-0.023291, 0.873967}, {0, 0.8732}, {
+             0, 0.863037}, {-0.0210938, 0.863037}}], 
+           PolygonBox[{{0, 1.05005}, {0.0335127, 1.03776}, {0, 1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {0.0605401, 1.03776}, {0.0335127, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {0.0785866, 1.03776}, {0.0605401, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {0.0851567, 1.03776}, {0.0785866, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.03776}, {0.0335127, 1.03776}, {0.0319696, 
+             1.00793}, {0, 1.00793}}], 
+           PolygonBox[{{0.0335127, 1.03776}, {0.0605401, 1.03776}, {0.0577578,
+             1.00793}, {0.0319696, 1.00793}}], 
+           PolygonBox[{{0.0605401, 1.03776}, {0.0785866, 1.03776}, {0.0749796,
+             1.00793}, {0.0577578, 1.00793}}], 
+           PolygonBox[{{0.0785866, 1.03776}, {0.0851567, 1.03776}, {0.0812503,
+             1.00793}, {0.0749796, 1.00793}}], 
+           PolygonBox[{{0, 1.00793}, {0.0319696, 1.00793}, {0.0193479, 
+             0.971153}, {0, 0.971153}}], 
+           PolygonBox[{{0.0319696, 1.00793}, {0.0577578, 1.00793}, {0.0349715,
+             0.971153}, {0.0193479, 0.971153}}], 
+           PolygonBox[{{0.0577578, 1.00793}, {0.0749796, 1.00793}, {0.0454139,
+             0.971153}, {0.0349715, 0.971153}}], 
+           PolygonBox[{{0.0749796, 1.00793}, {0.0812503, 1.00793}, {0.0492185,
+             0.971153}, {0.0454139, 0.971153}}], 
+           PolygonBox[{{0, 0.971153}, {0.0193479, 0.971153}, {0.0196248, 
+             0.937988}, {0, 0.937988}}], 
+           PolygonBox[{{0.0193479, 0.971153}, {0.0349715, 0.971153}, {
+            0.0354995, 0.937988}, {0.0196248, 0.937988}}], 
+           PolygonBox[{{0.0349715, 0.971153}, {0.0454139, 0.971153}, {
+            0.0461242, 0.937988}, {0.0354995, 0.937988}}], 
+           PolygonBox[{{0.0454139, 0.971153}, {0.0492185, 0.971153}, {
+            0.049999, 0.937988}, {0.0461242, 0.937988}}], 
+           PolygonBox[{{0, 1.05005}, {0.0785866, 1.03776}, {0.0851567, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {0.0605401, 1.03776}, {0.0785866, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {0.0335127, 1.03776}, {0.0605401, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {0, 1.03776}, {0.0335127, 1.03776}}], 
+           PolygonBox[{{0.0851567, 1.03776}, {0.0785866, 1.03776}, {0.0749796,
+             1.00793}, {0.0812503, 1.00793}}], 
+           PolygonBox[{{0.0785866, 1.03776}, {0.0605401, 1.03776}, {0.0577578,
+             1.00793}, {0.0749796, 1.00793}}], 
+           PolygonBox[{{0.0605401, 1.03776}, {0.0335127, 1.03776}, {0.0319696,
+             1.00793}, {0.0577578, 1.00793}}], 
+           PolygonBox[{{0.0335127, 1.03776}, {0, 1.03776}, {0, 1.00793}, {
+             0.0319696, 1.00793}}], 
+           PolygonBox[{{0.0812503, 1.00793}, {0.0749796, 1.00793}, {0.0454139,
+             0.971153}, {0.0492185, 0.971153}}], 
+           PolygonBox[{{0.0749796, 1.00793}, {0.0577578, 1.00793}, {0.0349715,
+             0.971153}, {0.0454139, 0.971153}}], 
+           PolygonBox[{{0.0577578, 1.00793}, {0.0319696, 1.00793}, {0.0193479,
+             0.971153}, {0.0349715, 0.971153}}], 
+           PolygonBox[{{0.0319696, 1.00793}, {0, 1.00793}, {0, 0.971153}, {
+             0.0193479, 0.971153}}], 
+           PolygonBox[{{0.0492185, 0.971153}, {0.0454139, 0.971153}, {
+            0.0461242, 0.937988}, {0.049999, 0.937988}}], 
+           PolygonBox[{{0.0454139, 0.971153}, {0.0349715, 0.971153}, {
+            0.0354995, 0.937988}, {0.0461242, 0.937988}}], 
+           PolygonBox[{{0.0349715, 0.971153}, {0.0193479, 0.971153}, {
+            0.0196248, 0.937988}, {0.0354995, 0.937988}}], 
+           PolygonBox[{{0.0193479, 0.971153}, {0, 0.971153}, {0, 0.937988}, {
+             0.0196248, 0.937988}}], 
+           PolygonBox[{{0, 1.05005}, {-0.0335127, 1.03776}, {0, 1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {-0.0605401, 1.03776}, {-0.0335127, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {-0.0785866, 1.03776}, {-0.0605401, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {-0.0851567, 1.03776}, {-0.0785866, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.03776}, {-0.0335127, 1.03776}, {-0.0319696, 
+             1.00793}, {0, 1.00793}}], 
+           PolygonBox[{{-0.0335127, 1.03776}, {-0.0605401, 
+            1.03776}, {-0.0577578, 1.00793}, {-0.0319696, 1.00793}}], 
+           PolygonBox[{{-0.0605401, 1.03776}, {-0.0785866, 
+            1.03776}, {-0.0749796, 1.00793}, {-0.0577578, 1.00793}}], 
+           PolygonBox[{{-0.0785866, 1.03776}, {-0.0851567, 
+            1.03776}, {-0.0812503, 1.00793}, {-0.0749796, 1.00793}}], 
+           PolygonBox[{{0, 1.00793}, {-0.0319696, 1.00793}, {-0.0193479, 
+             0.971153}, {0, 0.971153}}], 
+           PolygonBox[{{-0.0319696, 1.00793}, {-0.0577578, 
+            1.00793}, {-0.0349715, 0.971153}, {-0.0193479, 0.971153}}], 
+           PolygonBox[{{-0.0577578, 1.00793}, {-0.0749796, 
+            1.00793}, {-0.0454139, 0.971153}, {-0.0349715, 0.971153}}], 
+           PolygonBox[{{-0.0749796, 1.00793}, {-0.0812503, 
+            1.00793}, {-0.0492185, 0.971153}, {-0.0454139, 0.971153}}], 
+           PolygonBox[{{0, 0.971153}, {-0.0193479, 0.971153}, {-0.0196248, 
+             0.937988}, {0, 0.937988}}], 
+           PolygonBox[{{-0.0193479, 0.971153}, {-0.0349715, 
+            0.971153}, {-0.0354995, 0.937988}, {-0.0196248, 0.937988}}], 
+           PolygonBox[{{-0.0349715, 0.971153}, {-0.0454139, 
+            0.971153}, {-0.0461242, 0.937988}, {-0.0354995, 0.937988}}], 
+           PolygonBox[{{-0.0454139, 0.971153}, {-0.0492185, 
+            0.971153}, {-0.049999, 0.937988}, {-0.0461242, 0.937988}}], 
+           PolygonBox[{{0, 1.05005}, {-0.0785866, 1.03776}, {-0.0851567, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {-0.0605401, 1.03776}, {-0.0785866, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {-0.0335127, 1.03776}, {-0.0605401, 
+             1.03776}}], 
+           PolygonBox[{{0, 1.05005}, {0, 1.03776}, {-0.0335127, 1.03776}}], 
+           PolygonBox[{{-0.0851567, 1.03776}, {-0.0785866, 
+            1.03776}, {-0.0749796, 1.00793}, {-0.0812503, 1.00793}}], 
+           PolygonBox[{{-0.0785866, 1.03776}, {-0.0605401, 
+            1.03776}, {-0.0577578, 1.00793}, {-0.0749796, 1.00793}}], 
+           PolygonBox[{{-0.0605401, 1.03776}, {-0.0335127, 
+            1.03776}, {-0.0319696, 1.00793}, {-0.0577578, 1.00793}}], 
+           PolygonBox[{{-0.0335127, 1.03776}, {0, 1.03776}, {
+             0, 1.00793}, {-0.0319696, 1.00793}}], 
+           PolygonBox[{{-0.0812503, 1.00793}, {-0.0749796, 
+            1.00793}, {-0.0454139, 0.971153}, {-0.0492185, 0.971153}}], 
+           PolygonBox[{{-0.0749796, 1.00793}, {-0.0577578, 
+            1.00793}, {-0.0349715, 0.971153}, {-0.0454139, 0.971153}}], 
+           PolygonBox[{{-0.0577578, 1.00793}, {-0.0319696, 
+            1.00793}, {-0.0193479, 0.971153}, {-0.0349715, 0.971153}}], 
+           PolygonBox[{{-0.0319696, 1.00793}, {0, 1.00793}, {
+             0, 0.971153}, {-0.0193479, 0.971153}}], 
+           PolygonBox[{{-0.0492185, 0.971153}, {-0.0454139, 
+            0.971153}, {-0.0461242, 0.937988}, {-0.049999, 0.937988}}], 
+           PolygonBox[{{-0.0454139, 0.971153}, {-0.0349715, 
+            0.971153}, {-0.0354995, 0.937988}, {-0.0461242, 0.937988}}], 
+           PolygonBox[{{-0.0349715, 0.971153}, {-0.0193479, 
+            0.971153}, {-0.0196248, 0.937988}, {-0.0354995, 0.937988}}], 
+           PolygonBox[{{-0.0193479, 0.971153}, {0, 0.971153}, {
+             0, 0.937988}, {-0.0196248, 0.937988}}], 
+           PolygonBox[{{0, 0.937988}, {0.0196248, 0.937988}, {0.0447694, 
+             0.915394}, {0, 0.915394}}], 
+           PolygonBox[{{0.0196248, 0.937988}, {0.0354995, 0.937988}, {
+            0.0809842, 0.915394}, {0.0447694, 0.915394}}], 
+           PolygonBox[{{0.0354995, 0.937988}, {0.0461242, 0.937988}, {
+            0.105222, 0.915394}, {0.0809842, 0.915394}}], 
+           PolygonBox[{{0.0461242, 0.937988}, {0.049999, 0.937988}, {0.114062,
+             0.915394}, {0.105222, 0.915394}}], 
+           PolygonBox[{{0, 0.915394}, {0.0447694, 0.915394}, {0.080953, 
+             0.900055}, {0, 0.900055}}], 
+           PolygonBox[{{0.0447694, 0.915394}, {0.0809842, 0.915394}, {
+            0.146438, 0.900055}, {0.080953, 0.900055}}], 
+           PolygonBox[{{0.0809842, 0.915394}, {0.105222, 0.915394}, {0.190266,
+             0.900055}, {0.146438, 0.900055}}], 
+           PolygonBox[{{0.105222, 0.915394}, {0.114062, 0.915394}, {0.20625, 
+            0.900055}, {0.190266, 0.900055}}], 
+           PolygonBox[{{0, 0.900055}, {0.080953, 0.900055}, {0.113457, 
+             0.884945}, {0, 0.884945}}], 
+           PolygonBox[{{0.080953, 0.900055}, {0.146438, 0.900055}, {0.205234, 
+            0.884945}, {0.113457, 0.884945}}], 
+           PolygonBox[{{0.146438, 0.900055}, {0.190266, 0.900055}, {0.266661, 
+            0.884945}, {0.205234, 0.884945}}], 
+           PolygonBox[{{0.190266, 0.900055}, {0.20625, 0.900055}, {0.289063, 
+            0.884945}, {0.266661, 0.884945}}], 
+           PolygonBox[{{0, 0.884945}, {0.113457, 0.884945}, {0.127562, 
+             0.863037}, {0, 0.863037}}], 
+           PolygonBox[{{0.113457, 0.884945}, {0.205234, 0.884945}, {0.23075, 
+            0.863037}, {0.127562, 0.863037}}], 
+           PolygonBox[{{0.205234, 0.884945}, {0.266661, 0.884945}, {0.299813, 
+            0.863037}, {0.23075, 0.863037}}], 
+           PolygonBox[{{0.266661, 0.884945}, {0.289063, 0.884945}, {0.325001, 
+            0.863037}, {0.299813, 0.863037}}], 
+           PolygonBox[{{0.049999, 0.937988}, {0.0461242, 0.937988}, {0.105222,
+             0.915394}, {0.114062, 0.915394}}], 
+           PolygonBox[{{0.0461242, 0.937988}, {0.0354995, 0.937988}, {
+            0.0809842, 0.915394}, {0.105222, 0.915394}}], 
+           PolygonBox[{{0.0354995, 0.937988}, {0.0196248, 0.937988}, {
+            0.0447694, 0.915394}, {0.0809842, 0.915394}}], 
+           PolygonBox[{{0.0196248, 0.937988}, {0, 0.937988}, {0, 0.915394}, {
+             0.0447694, 0.915394}}], 
+           PolygonBox[{{0.114062, 0.915394}, {0.105222, 0.915394}, {0.190266, 
+            0.900055}, {0.20625, 0.900055}}], 
+           PolygonBox[{{0.105222, 0.915394}, {0.0809842, 0.915394}, {0.146438,
+             0.900055}, {0.190266, 0.900055}}], 
+           PolygonBox[{{0.0809842, 0.915394}, {0.0447694, 0.915394}, {
+            0.080953, 0.900055}, {0.146438, 0.900055}}], 
+           PolygonBox[{{0.0447694, 0.915394}, {0, 0.915394}, {0, 0.900055}, {
+             0.080953, 0.900055}}], 
+           PolygonBox[{{0.20625, 0.900055}, {0.190266, 0.900055}, {0.266661, 
+            0.884945}, {0.289063, 0.884945}}], 
+           PolygonBox[{{0.190266, 0.900055}, {0.146438, 0.900055}, {0.205234, 
+            0.884945}, {0.266661, 0.884945}}], 
+           PolygonBox[{{0.146438, 0.900055}, {0.080953, 0.900055}, {0.113457, 
+            0.884945}, {0.205234, 0.884945}}], 
+           PolygonBox[{{0.080953, 0.900055}, {0, 0.900055}, {0, 0.884945}, {
+             0.113457, 0.884945}}], 
+           PolygonBox[{{0.289063, 0.884945}, {0.266661, 0.884945}, {0.299813, 
+            0.863037}, {0.325001, 0.863037}}], 
+           PolygonBox[{{0.266661, 0.884945}, {0.205234, 0.884945}, {0.23075, 
+            0.863037}, {0.299813, 0.863037}}], 
+           PolygonBox[{{0.205234, 0.884945}, {0.113457, 0.884945}, {0.127562, 
+            0.863037}, {0.23075, 0.863037}}], 
+           PolygonBox[{{0.113457, 0.884945}, {0, 0.884945}, {0, 0.863037}, {
+             0.127562, 0.863037}}], 
+           PolygonBox[{{0, 0.937988}, {-0.0196248, 0.937988}, {-0.0447694, 
+             0.915394}, {0, 0.915394}}], 
+           PolygonBox[{{-0.0196248, 0.937988}, {-0.0354995, 
+            0.937988}, {-0.0809842, 0.915394}, {-0.0447694, 0.915394}}], 
+           PolygonBox[{{-0.0354995, 0.937988}, {-0.0461242, 
+            0.937988}, {-0.105222, 0.915394}, {-0.0809842, 0.915394}}], 
+           PolygonBox[{{-0.0461242, 0.937988}, {-0.049999, 
+            0.937988}, {-0.114062, 0.915394}, {-0.105222, 0.915394}}], 
+           PolygonBox[{{0, 0.915394}, {-0.0447694, 0.915394}, {-0.080953, 
+             0.900055}, {0, 0.900055}}], 
+           PolygonBox[{{-0.0447694, 0.915394}, {-0.0809842, 
+            0.915394}, {-0.146438, 0.900055}, {-0.080953, 0.900055}}], 
+           PolygonBox[{{-0.0809842, 0.915394}, {-0.105222, 
+            0.915394}, {-0.190266, 0.900055}, {-0.146438, 0.900055}}], 
+           PolygonBox[{{-0.105222, 0.915394}, {-0.114062, 
+            0.915394}, {-0.20625, 0.900055}, {-0.190266, 0.900055}}], 
+           PolygonBox[{{0, 0.900055}, {-0.080953, 0.900055}, {-0.113457, 
+             0.884945}, {0, 0.884945}}], 
+           PolygonBox[{{-0.080953, 0.900055}, {-0.146438, 
+            0.900055}, {-0.205234, 0.884945}, {-0.113457, 0.884945}}], 
+           PolygonBox[{{-0.146438, 0.900055}, {-0.190266, 
+            0.900055}, {-0.266661, 0.884945}, {-0.205234, 0.884945}}], 
+           PolygonBox[{{-0.190266, 0.900055}, {-0.20625, 
+            0.900055}, {-0.289063, 0.884945}, {-0.266661, 0.884945}}], 
+           PolygonBox[{{0, 0.884945}, {-0.113457, 0.884945}, {-0.127562, 
+             0.863037}, {0, 0.863037}}], 
+           PolygonBox[{{-0.113457, 0.884945}, {-0.205234, 
+            0.884945}, {-0.23075, 0.863037}, {-0.127562, 0.863037}}], 
+           PolygonBox[{{-0.205234, 0.884945}, {-0.266661, 
+            0.884945}, {-0.299813, 0.863037}, {-0.23075, 0.863037}}], 
+           PolygonBox[{{-0.266661, 0.884945}, {-0.289063, 
+            0.884945}, {-0.325001, 0.863037}, {-0.299813, 0.863037}}], 
+           PolygonBox[{{-0.049999, 0.937988}, {-0.0461242, 
+            0.937988}, {-0.105222, 0.915394}, {-0.114062, 0.915394}}], 
+           PolygonBox[{{-0.0461242, 0.937988}, {-0.0354995, 
+            0.937988}, {-0.0809842, 0.915394}, {-0.105222, 0.915394}}], 
+           PolygonBox[{{-0.0354995, 0.937988}, {-0.0196248, 
+            0.937988}, {-0.0447694, 0.915394}, {-0.0809842, 0.915394}}], 
+           PolygonBox[{{-0.0196248, 0.937988}, {0, 0.937988}, {
+             0, 0.915394}, {-0.0447694, 0.915394}}], 
+           PolygonBox[{{-0.114062, 0.915394}, {-0.105222, 
+            0.915394}, {-0.190266, 0.900055}, {-0.20625, 0.900055}}], 
+           PolygonBox[{{-0.105222, 0.915394}, {-0.0809842, 
+            0.915394}, {-0.146438, 0.900055}, {-0.190266, 0.900055}}], 
+           PolygonBox[{{-0.0809842, 0.915394}, {-0.0447694, 
+            0.915394}, {-0.080953, 0.900055}, {-0.146438, 0.900055}}], 
+           PolygonBox[{{-0.0447694, 0.915394}, {0, 0.915394}, {
+             0, 0.900055}, {-0.080953, 0.900055}}], 
+           PolygonBox[{{-0.20625, 0.900055}, {-0.190266, 
+            0.900055}, {-0.266661, 0.884945}, {-0.289063, 0.884945}}], 
+           PolygonBox[{{-0.190266, 0.900055}, {-0.146438, 
+            0.900055}, {-0.205234, 0.884945}, {-0.266661, 0.884945}}], 
+           PolygonBox[{{-0.146438, 0.900055}, {-0.080953, 
+            0.900055}, {-0.113457, 0.884945}, {-0.205234, 0.884945}}], 
+           PolygonBox[{{-0.080953, 0.900055}, {0, 0.900055}, {
+             0, 0.884945}, {-0.113457, 0.884945}}], 
+           PolygonBox[{{-0.289063, 0.884945}, {-0.266661, 
+            0.884945}, {-0.299813, 0.863037}, {-0.325001, 0.863037}}], 
+           PolygonBox[{{-0.266661, 0.884945}, {-0.205234, 
+            0.884945}, {-0.23075, 0.863037}, {-0.299813, 0.863037}}], 
+           PolygonBox[{{-0.205234, 0.884945}, {-0.113457, 
+            0.884945}, {-0.127562, 0.863037}, {-0.23075, 0.863037}}], 
+           PolygonBox[{{-0.113457, 0.884945}, {0, 0.884945}, {
+             0, 0.863037}, {-0.127562, 0.863037}}]}, {0., -0.6750495}]}},
+       Axes->True], {193.5, -192.}, ImageScaled[{0.5, 0.5}], {360., 360.}], 
+     InsetBox[
+      GraphicsBox[{
+        {RGBColor[1, 0, 0], DiskBox[{0.7464850000000001, 1.3249505}, 0.0625]}, 
+        {GrayLevel[0.5], LineBox[{{0, 0}, {1, 0}}], LineBox[{{0, 0}, {0, 1}}],
+          DiskBox[{0, 0}, 0.25]}, 
+        {RGBColor[1, 0.5, 0.5], Opacity[0.5], EdgeForm[GrayLevel[0]], 
+         GeometricTransformationBox[{
+           PolygonBox[{{0.85, 0.863037}, {0.822875, 0.863037}, {0.818371, 
+            0.881027}, {0.845117, 0.881027}}], 
+           PolygonBox[{{0.822875, 0.863037}, {0.7485, 0.863037}, {0.745033, 
+            0.881027}, {0.818371, 0.881027}}], 
+           PolygonBox[{{0.7485, 0.863037}, {0.637375, 0.863037}, {0.635459, 
+            0.881027}, {0.745033, 0.881027}}], 
+           PolygonBox[{{0.637375, 0.863037}, {0.5, 0.863037}, {0.5, 
+            0.881027}, {0.635459, 0.881027}}], 
+           PolygonBox[{{0.845117, 0.881027}, {0.818371, 0.881027}, {0.823596, 
+            0.887024}, {0.850781, 0.887024}}], 
+           PolygonBox[{{0.818371, 0.881027}, {0.745033, 0.881027}, {0.749055, 
+            0.887024}, {0.823596, 0.887024}}], 
+           PolygonBox[{{0.745033, 0.881027}, {0.635459, 0.881027}, {0.637682, 
+            0.887024}, {0.749055, 0.887024}}], 
+           PolygonBox[{{0.635459, 0.881027}, {0.5, 0.881027}, {0.5, 
+            0.887024}, {0.637682, 0.887024}}], 
+           PolygonBox[{{0.850781, 0.887024}, {0.823596, 0.887024}, {0.834226, 
+            0.881027}, {0.862305, 0.881027}}], 
+           PolygonBox[{{0.823596, 0.887024}, {0.749055, 0.887024}, {0.757236, 
+            0.881027}, {0.834226, 0.881027}}], 
+           PolygonBox[{{0.749055, 0.887024}, {0.637682, 0.887024}, {0.642205, 
+            0.881027}, {0.757236, 0.881027}}], 
+           PolygonBox[{{0.637682, 0.887024}, {0.5, 0.887024}, {0.5, 
+            0.881027}, {0.642205, 0.881027}}], 
+           PolygonBox[{{0.862305, 0.881027}, {0.834226, 0.881027}, {0.845937, 
+            0.863037}, {0.875, 0.863037}}], 
+           PolygonBox[{{0.834226, 0.881027}, {0.757236, 0.881027}, {0.76625, 
+            0.863037}, {0.845937, 0.863037}}], 
+           PolygonBox[{{0.757236, 0.881027}, {0.642205, 0.881027}, {0.647187, 
+            0.863037}, {0.76625, 0.863037}}], 
+           PolygonBox[{{0.642205, 0.881027}, {0.5, 0.881027}, {0.5, 
+            0.863037}, {0.647187, 0.863037}}], 
+           PolygonBox[{{0.5, 0.863037}, {0.362625, 0.863037}, {0.364542, 
+            0.881027}, {0.5, 0.881027}}], 
+           PolygonBox[{{0.362625, 0.863037}, {0.2515, 0.863037}, {0.254967, 
+            0.881027}, {0.364542, 0.881027}}], 
+           PolygonBox[{{0.2515, 0.863037}, {0.177125, 0.863037}, {0.181629, 
+            0.881027}, {0.254967, 0.881027}}], 
+           PolygonBox[{{0.177125, 0.863037}, {0.15, 0.863037}, {0.154883, 
+            0.881027}, {0.181629, 0.881027}}], 
+           PolygonBox[{{0.5, 0.881027}, {0.364542, 0.881027}, {0.362318, 
+            0.887024}, {0.5, 0.887024}}], 
+           PolygonBox[{{0.364542, 0.881027}, {0.254967, 0.881027}, {0.250945, 
+            0.887024}, {0.362318, 0.887024}}], 
+           PolygonBox[{{0.254967, 0.881027}, {0.181629, 0.881027}, {0.176404, 
+            0.887024}, {0.250945, 0.887024}}], 
+           PolygonBox[{{0.181629, 0.881027}, {0.154883, 0.881027}, {0.149219, 
+            0.887024}, {0.176404, 0.887024}}], 
+           PolygonBox[{{0.5, 0.887024}, {0.362318, 0.887024}, {0.357795, 
+            0.881027}, {0.5, 0.881027}}], 
+           PolygonBox[{{0.362318, 0.887024}, {0.250945, 0.887024}, {0.242764, 
+            0.881027}, {0.357795, 0.881027}}], 
+           PolygonBox[{{0.250945, 0.887024}, {0.176404, 0.887024}, {0.165774, 
+            0.881027}, {0.242764, 0.881027}}], 
+           PolygonBox[{{0.176404, 0.887024}, {0.149219, 0.887024}, {0.137695, 
+            0.881027}, {0.165774, 0.881027}}], 
+           PolygonBox[{{0.5, 0.881027}, {0.357795, 0.881027}, {0.352812, 
+            0.863037}, {0.5, 0.863037}}], 
+           PolygonBox[{{0.357795, 0.881027}, {0.242764, 0.881027}, {0.23375, 
+            0.863037}, {0.352812, 0.863037}}], 
+           PolygonBox[{{0.242764, 0.881027}, {0.165774, 0.881027}, {0.154062, 
+            0.863037}, {0.23375, 0.863037}}], 
+           PolygonBox[{{0.165774, 0.881027}, {0.137695, 0.881027}, {0.125, 
+            0.863037}, {0.154062, 0.863037}}], 
+           PolygonBox[{{0.15, 0.863037}, {0.177125, 0.863037}, {0.181629, 
+            0.881027}, {0.154883, 0.881027}}], 
+           PolygonBox[{{0.177125, 0.863037}, {0.2515, 0.863037}, {0.254967, 
+            0.881027}, {0.181629, 0.881027}}], 
+           PolygonBox[{{0.2515, 0.863037}, {0.362625, 0.863037}, {0.364542, 
+            0.881027}, {0.254967, 0.881027}}], 
+           PolygonBox[{{0.362625, 0.863037}, {0.5, 0.863037}, {0.5, 
+            0.881027}, {0.364542, 0.881027}}], 
+           PolygonBox[{{0.154883, 0.881027}, {0.181629, 0.881027}, {0.176404, 
+            0.887024}, {0.149219, 0.887024}}], 
+           PolygonBox[{{0.181629, 0.881027}, {0.254967, 0.881027}, {0.250945, 
+            0.887024}, {0.176404, 0.887024}}], 
+           PolygonBox[{{0.254967, 0.881027}, {0.364542, 0.881027}, {0.362318, 
+            0.887024}, {0.250945, 0.887024}}], 
+           PolygonBox[{{0.364542, 0.881027}, {0.5, 0.881027}, {0.5, 
+            0.887024}, {0.362318, 0.887024}}], 
+           PolygonBox[{{0.149219, 0.887024}, {0.176404, 0.887024}, {0.165774, 
+            0.881027}, {0.137695, 0.881027}}], 
+           PolygonBox[{{0.176404, 0.887024}, {0.250945, 0.887024}, {0.242764, 
+            0.881027}, {0.165774, 0.881027}}], 
+           PolygonBox[{{0.250945, 0.887024}, {0.362318, 0.887024}, {0.357795, 
+            0.881027}, {0.242764, 0.881027}}], 
+           PolygonBox[{{0.362318, 0.887024}, {0.5, 0.887024}, {0.5, 
+            0.881027}, {0.357795, 0.881027}}], 
+           PolygonBox[{{0.137695, 0.881027}, {0.165774, 0.881027}, {0.154062, 
+            0.863037}, {0.125, 0.863037}}], 
+           PolygonBox[{{0.165774, 0.881027}, {0.242764, 0.881027}, {0.23375, 
+            0.863037}, {0.154062, 0.863037}}], 
+           PolygonBox[{{0.242764, 0.881027}, {0.357795, 0.881027}, {0.352812, 
+            0.863037}, {0.23375, 0.863037}}], 
+           PolygonBox[{{0.357795, 0.881027}, {0.5, 0.881027}, {0.5, 
+            0.863037}, {0.352812, 0.863037}}], 
+           PolygonBox[{{0.5, 0.863037}, {0.637375, 0.863037}, {0.635459, 
+            0.881027}, {0.5, 0.881027}}], 
+           PolygonBox[{{0.637375, 0.863037}, {0.7485, 0.863037}, {0.745033, 
+            0.881027}, {0.635459, 0.881027}}], 
+           PolygonBox[{{0.7485, 0.863037}, {0.822875, 0.863037}, {0.818371, 
+            0.881027}, {0.745033, 0.881027}}], 
+           PolygonBox[{{0.822875, 0.863037}, {0.85, 0.863037}, {0.845117, 
+            0.881027}, {0.818371, 0.881027}}], 
+           PolygonBox[{{0.5, 0.881027}, {0.635459, 0.881027}, {0.637682, 
+            0.887024}, {0.5, 0.887024}}], 
+           PolygonBox[{{0.635459, 0.881027}, {0.745033, 0.881027}, {0.749055, 
+            0.887024}, {0.637682, 0.887024}}], 
+           PolygonBox[{{0.745033, 0.881027}, {0.818371, 0.881027}, {0.823596, 
+            0.887024}, {0.749055, 0.887024}}], 
+           PolygonBox[{{0.818371, 0.881027}, {0.845117, 0.881027}, {0.850781, 
+            0.887024}, {0.823596, 0.887024}}], 
+           PolygonBox[{{0.5, 0.887024}, {0.637682, 0.887024}, {0.642205, 
+            0.881027}, {0.5, 0.881027}}], 
+           PolygonBox[{{0.637682, 0.887024}, {0.749055, 0.887024}, {0.757236, 
+            0.881027}, {0.642205, 0.881027}}], 
+           PolygonBox[{{0.749055, 0.887024}, {0.823596, 0.887024}, {0.834226, 
+            0.881027}, {0.757236, 0.881027}}], 
+           PolygonBox[{{0.823596, 0.887024}, {0.850781, 0.887024}, {0.862305, 
+            0.881027}, {0.834226, 0.881027}}], 
+           PolygonBox[{{0.5, 0.881027}, {0.642205, 0.881027}, {0.647187, 
+            0.863037}, {0.5, 0.863037}}], 
+           PolygonBox[{{0.642205, 0.881027}, {0.757236, 0.881027}, {0.76625, 
+            0.863037}, {0.647187, 0.863037}}], 
+           PolygonBox[{{0.757236, 0.881027}, {0.834226, 0.881027}, {0.845937, 
+            0.863037}, {0.76625, 0.863037}}], 
+           PolygonBox[{{0.834226, 0.881027}, {0.862305, 0.881027}, {0.875, 
+            0.863037}, {0.845937, 0.863037}}], 
+           PolygonBox[{{0.875, 0.863037}, {0.845937, 0.863037}, {0.888279, 
+            0.764481}, {0.920898, 0.764481}}], 
+           PolygonBox[{{0.845937, 0.863037}, {0.76625, 0.863037}, {0.798838, 
+            0.764481}, {0.888279, 0.764481}}], 
+           PolygonBox[{{0.76625, 0.863037}, {0.647187, 0.863037}, {0.665203, 
+            0.764481}, {0.798838, 0.764481}}], 
+           PolygonBox[{{0.647187, 0.863037}, {0.5, 0.863037}, {0.5, 
+            0.764481}, {0.665203, 0.764481}}], 
+           PolygonBox[{{0.920898, 0.764481}, {0.888279, 0.764481}, {0.925215, 
+            0.66803}, {0.960938, 0.66803}}], 
+           PolygonBox[{{0.888279, 0.764481}, {0.798838, 0.764481}, {0.827266, 
+            0.66803}, {0.925215, 0.66803}}], 
+           PolygonBox[{{0.798838, 0.764481}, {0.665203, 0.764481}, {0.680918, 
+            0.66803}, {0.827266, 0.66803}}], 
+           PolygonBox[{{0.665203, 0.764481}, {0.5, 0.764481}, {0.5, 
+            0.66803}, {0.680918, 0.66803}}], 
+           PolygonBox[{{0.960938, 0.66803}, {0.925215, 0.66803}, {0.95134, 
+            0.575333}, {0.989258, 0.575333}}], 
+           PolygonBox[{{0.925215, 0.66803}, {0.827266, 0.66803}, {0.847373, 
+            0.575333}, {0.95134, 0.575333}}], 
+           PolygonBox[{{0.827266, 0.66803}, {0.680918, 0.66803}, {0.692034, 
+            0.575333}, {0.847373, 0.575333}}], 
+           PolygonBox[{{0.680918, 0.66803}, {0.5, 0.66803}, {0.5, 0.575333}, {
+            0.692034, 0.575333}}], 
+           PolygonBox[{{0.989258, 0.575333}, {0.95134, 0.575333}, {0.96125, 
+             0.488037}, {1, 0.488037}}], 
+           PolygonBox[{{0.95134, 0.575333}, {0.847373, 0.575333}, {0.855, 
+            0.488037}, {0.96125, 0.488037}}], 
+           PolygonBox[{{0.847373, 0.575333}, {0.692034, 0.575333}, {0.69625, 
+            0.488037}, {0.855, 0.488037}}], 
+           PolygonBox[{{0.692034, 0.575333}, {0.5, 0.575333}, {0.5, 
+            0.488037}, {0.69625, 0.488037}}], 
+           PolygonBox[{{0.5, 0.863037}, {0.352812, 0.863037}, {0.334797, 
+            0.764481}, {0.5, 0.764481}}], 
+           PolygonBox[{{0.352812, 0.863037}, {0.23375, 0.863037}, {0.201162, 
+            0.764481}, {0.334797, 0.764481}}], 
+           PolygonBox[{{0.23375, 0.863037}, {0.154062, 0.863037}, {0.111721, 
+            0.764481}, {0.201162, 0.764481}}], 
+           PolygonBox[{{0.154062, 0.863037}, {0.125, 0.863037}, {0.0791016, 
+            0.764481}, {0.111721, 0.764481}}], 
+           PolygonBox[{{0.5, 0.764481}, {0.334797, 0.764481}, {0.319082, 
+            0.66803}, {0.5, 0.66803}}], 
+           PolygonBox[{{0.334797, 0.764481}, {0.201162, 0.764481}, {0.172734, 
+            0.66803}, {0.319082, 0.66803}}], 
+           PolygonBox[{{0.201162, 0.764481}, {0.111721, 0.764481}, {0.0747852,
+             0.66803}, {0.172734, 0.66803}}], 
+           PolygonBox[{{0.111721, 0.764481}, {0.0791016, 0.764481}, {
+            0.0390625, 0.66803}, {0.0747852, 0.66803}}], 
+           PolygonBox[{{0.5, 0.66803}, {0.319082, 0.66803}, {0.307966, 
+            0.575333}, {0.5, 0.575333}}], 
+           PolygonBox[{{0.319082, 0.66803}, {0.172734, 0.66803}, {0.152627, 
+            0.575333}, {0.307966, 0.575333}}], 
+           PolygonBox[{{0.172734, 0.66803}, {0.0747852, 0.66803}, {0.0486597, 
+            0.575333}, {0.152627, 0.575333}}], 
+           PolygonBox[{{0.0747852, 0.66803}, {0.0390625, 0.66803}, {0.0107422,
+             0.575333}, {0.0486597, 0.575333}}], 
+           PolygonBox[{{0.5, 0.575333}, {0.307966, 0.575333}, {0.30375, 
+            0.488037}, {0.5, 0.488037}}], 
+           PolygonBox[{{0.307966, 0.575333}, {0.152627, 0.575333}, {0.145, 
+            0.488037}, {0.30375, 0.488037}}], 
+           PolygonBox[{{0.152627, 0.575333}, {0.0486597, 0.575333}, {0.03875, 
+            0.488037}, {0.145, 0.488037}}], 
+           PolygonBox[{{0.0486597, 0.575333}, {0.0107422, 0.575333}, {
+             0, 0.488037}, {0.03875, 0.488037}}], 
+           PolygonBox[{{0.125, 0.863037}, {0.154062, 0.863037}, {0.111721, 
+            0.764481}, {0.0791016, 0.764481}}], 
+           PolygonBox[{{0.154062, 0.863037}, {0.23375, 0.863037}, {0.201162, 
+            0.764481}, {0.111721, 0.764481}}], 
+           PolygonBox[{{0.23375, 0.863037}, {0.352812, 0.863037}, {0.334797, 
+            0.764481}, {0.201162, 0.764481}}], 
+           PolygonBox[{{0.352812, 0.863037}, {0.5, 0.863037}, {0.5, 
+            0.764481}, {0.334797, 0.764481}}], 
+           PolygonBox[{{0.0791016, 0.764481}, {0.111721, 0.764481}, {
+            0.0747852, 0.66803}, {0.0390625, 0.66803}}], 
+           PolygonBox[{{0.111721, 0.764481}, {0.201162, 0.764481}, {0.172734, 
+            0.66803}, {0.0747852, 0.66803}}], 
+           PolygonBox[{{0.201162, 0.764481}, {0.334797, 0.764481}, {0.319082, 
+            0.66803}, {0.172734, 0.66803}}], 
+           PolygonBox[{{0.334797, 0.764481}, {0.5, 0.764481}, {0.5, 
+            0.66803}, {0.319082, 0.66803}}], 
+           PolygonBox[{{0.0390625, 0.66803}, {0.0747852, 0.66803}, {0.0486597,
+             0.575333}, {0.0107422, 0.575333}}], 
+           PolygonBox[{{0.0747852, 0.66803}, {0.172734, 0.66803}, {0.152627, 
+            0.575333}, {0.0486597, 0.575333}}], 
+           PolygonBox[{{0.172734, 0.66803}, {0.319082, 0.66803}, {0.307966, 
+            0.575333}, {0.152627, 0.575333}}], 
+           PolygonBox[{{0.319082, 0.66803}, {0.5, 0.66803}, {0.5, 0.575333}, {
+            0.307966, 0.575333}}], 
+           PolygonBox[{{0.0107422, 0.575333}, {0.0486597, 0.575333}, {0.03875,
+              0.488037}, {0, 0.488037}}], 
+           PolygonBox[{{0.0486597, 0.575333}, {0.152627, 0.575333}, {0.145, 
+            0.488037}, {0.03875, 0.488037}}], 
+           PolygonBox[{{0.152627, 0.575333}, {0.307966, 0.575333}, {0.30375, 
+            0.488037}, {0.145, 0.488037}}], 
+           PolygonBox[{{0.307966, 0.575333}, {0.5, 0.575333}, {0.5, 
+            0.488037}, {0.30375, 0.488037}}], 
+           PolygonBox[{{0.5, 0.863037}, {0.647187, 0.863037}, {0.665203, 
+            0.764481}, {0.5, 0.764481}}], 
+           PolygonBox[{{0.647187, 0.863037}, {0.76625, 0.863037}, {0.798838, 
+            0.764481}, {0.665203, 0.764481}}], 
+           PolygonBox[{{0.76625, 0.863037}, {0.845937, 0.863037}, {0.888279, 
+            0.764481}, {0.798838, 0.764481}}], 
+           PolygonBox[{{0.845937, 0.863037}, {0.875, 0.863037}, {0.920898, 
+            0.764481}, {0.888279, 0.764481}}], 
+           PolygonBox[{{0.5, 0.764481}, {0.665203, 0.764481}, {0.680918, 
+            0.66803}, {0.5, 0.66803}}], 
+           PolygonBox[{{0.665203, 0.764481}, {0.798838, 0.764481}, {0.827266, 
+            0.66803}, {0.680918, 0.66803}}], 
+           PolygonBox[{{0.798838, 0.764481}, {0.888279, 0.764481}, {0.925215, 
+            0.66803}, {0.827266, 0.66803}}], 
+           PolygonBox[{{0.888279, 0.764481}, {0.920898, 0.764481}, {0.960938, 
+            0.66803}, {0.925215, 0.66803}}], 
+           PolygonBox[{{0.5, 0.66803}, {0.680918, 0.66803}, {0.692034, 
+            0.575333}, {0.5, 0.575333}}], 
+           PolygonBox[{{0.680918, 0.66803}, {0.827266, 0.66803}, {0.847373, 
+            0.575333}, {0.692034, 0.575333}}], 
+           PolygonBox[{{0.827266, 0.66803}, {0.925215, 0.66803}, {0.95134, 
+            0.575333}, {0.847373, 0.575333}}], 
+           PolygonBox[{{0.925215, 0.66803}, {0.960938, 0.66803}, {0.989258, 
+            0.575333}, {0.95134, 0.575333}}], 
+           PolygonBox[{{0.5, 0.575333}, {0.692034, 0.575333}, {0.69625, 
+            0.488037}, {0.5, 0.488037}}], 
+           PolygonBox[{{0.692034, 0.575333}, {0.847373, 0.575333}, {0.855, 
+            0.488037}, {0.69625, 0.488037}}], 
+           PolygonBox[{{0.847373, 0.575333}, {0.95134, 0.575333}, {0.96125, 
+            0.488037}, {0.855, 0.488037}}], 
+           PolygonBox[{{0.95134, 0.575333}, {0.989258, 0.575333}, {
+             1, 0.488037}, {0.96125, 0.488037}}], 
+           PolygonBox[{{1, 0.488037}, {0.96125, 0.488037}, {0.943232, 
+             0.413654}, {0.980469, 0.413654}}], 
+           PolygonBox[{{0.96125, 0.488037}, {0.855, 0.488037}, {0.841133, 
+            0.413654}, {0.943232, 0.413654}}], 
+           PolygonBox[{{0.855, 0.488037}, {0.69625, 0.488037}, {0.688584, 
+            0.413654}, {0.841133, 0.413654}}], 
+           PolygonBox[{{0.69625, 0.488037}, {0.5, 0.488037}, {0.5, 
+            0.413654}, {0.688584, 0.413654}}], 
+           PolygonBox[{{0.980469, 0.413654}, {0.943232, 0.413654}, {0.903594, 
+            0.358795}, {0.9375, 0.358795}}], 
+           PolygonBox[{{0.943232, 0.413654}, {0.841133, 0.413654}, {0.810625, 
+            0.358795}, {0.903594, 0.358795}}], 
+           PolygonBox[{{0.841133, 0.413654}, {0.688584, 0.413654}, {0.671719, 
+            0.358795}, {0.810625, 0.358795}}], 
+           PolygonBox[{{0.688584, 0.413654}, {0.5, 0.413654}, {0.5, 
+            0.358795}, {0.671719, 0.358795}}], 
+           PolygonBox[{{0.9375, 0.358795}, {0.903594, 0.358795}, {0.863955, 
+            0.32156}, {0.894531, 0.32156}}], 
+           PolygonBox[{{0.903594, 0.358795}, {0.810625, 0.358795}, {0.780117, 
+            0.32156}, {0.863955, 0.32156}}], 
+           PolygonBox[{{0.810625, 0.358795}, {0.671719, 0.358795}, {0.654853, 
+            0.32156}, {0.780117, 0.32156}}], 
+           PolygonBox[{{0.671719, 0.358795}, {0.5, 0.358795}, {0.5, 
+            0.32156}, {0.654853, 0.32156}}], 
+           PolygonBox[{{0.894531, 0.32156}, {0.863955, 0.32156}, {0.845937, 
+            0.300049}, {0.875, 0.300049}}], 
+           PolygonBox[{{0.863955, 0.32156}, {0.780117, 0.32156}, {0.76625, 
+            0.300049}, {0.845937, 0.300049}}], 
+           PolygonBox[{{0.780117, 0.32156}, {0.654853, 0.32156}, {0.647187, 
+            0.300049}, {0.76625, 0.300049}}], 
+           PolygonBox[{{0.654853, 0.32156}, {0.5, 0.32156}, {0.5, 0.300049}, {
+            0.647187, 0.300049}}], 
+           PolygonBox[{{0.5, 0.488037}, {0.30375, 0.488037}, {0.311416, 
+            0.413654}, {0.5, 0.413654}}], 
+           PolygonBox[{{0.30375, 0.488037}, {0.145, 0.488037}, {0.158867, 
+            0.413654}, {0.311416, 0.413654}}], 
+           PolygonBox[{{0.145, 0.488037}, {0.03875, 0.488037}, {0.0567676, 
+            0.413654}, {0.158867, 0.413654}}], 
+           PolygonBox[{{0.03875, 0.488037}, {0, 0.488037}, {0.0195312, 
+             0.413654}, {0.0567676, 0.413654}}], 
+           PolygonBox[{{0.5, 0.413654}, {0.311416, 0.413654}, {0.328281, 
+            0.358795}, {0.5, 0.358795}}], 
+           PolygonBox[{{0.311416, 0.413654}, {0.158867, 0.413654}, {0.189375, 
+            0.358795}, {0.328281, 0.358795}}], 
+           PolygonBox[{{0.158867, 0.413654}, {0.0567676, 0.413654}, {
+            0.0964063, 0.358795}, {0.189375, 0.358795}}], 
+           PolygonBox[{{0.0567676, 0.413654}, {0.0195312, 0.413654}, {0.0625, 
+            0.358795}, {0.0964063, 0.358795}}], 
+           PolygonBox[{{0.5, 0.358795}, {0.328281, 0.358795}, {0.345146, 
+            0.32156}, {0.5, 0.32156}}], 
+           PolygonBox[{{0.328281, 0.358795}, {0.189375, 0.358795}, {0.219883, 
+            0.32156}, {0.345146, 0.32156}}], 
+           PolygonBox[{{0.189375, 0.358795}, {0.0964063, 0.358795}, {0.136045,
+             0.32156}, {0.219883, 0.32156}}], 
+           PolygonBox[{{0.0964063, 0.358795}, {0.0625, 0.358795}, {0.105469, 
+            0.32156}, {0.136045, 0.32156}}], 
+           PolygonBox[{{0.5, 0.32156}, {0.345146, 0.32156}, {0.352812, 
+            0.300049}, {0.5, 0.300049}}], 
+           PolygonBox[{{0.345146, 0.32156}, {0.219883, 0.32156}, {0.23375, 
+            0.300049}, {0.352812, 0.300049}}], 
+           PolygonBox[{{0.219883, 0.32156}, {0.136045, 0.32156}, {0.154062, 
+            0.300049}, {0.23375, 0.300049}}], 
+           PolygonBox[{{0.136045, 0.32156}, {0.105469, 0.32156}, {0.125, 
+            0.300049}, {0.154062, 0.300049}}], 
+           PolygonBox[{{0, 0.488037}, {0.03875, 0.488037}, {0.0567676, 
+             0.413654}, {0.0195312, 0.413654}}], 
+           PolygonBox[{{0.03875, 0.488037}, {0.145, 0.488037}, {0.158867, 
+            0.413654}, {0.0567676, 0.413654}}], 
+           PolygonBox[{{0.145, 0.488037}, {0.30375, 0.488037}, {0.311416, 
+            0.413654}, {0.158867, 0.413654}}], 
+           PolygonBox[{{0.30375, 0.488037}, {0.5, 0.488037}, {0.5, 
+            0.413654}, {0.311416, 0.413654}}], 
+           PolygonBox[{{0.0195312, 0.413654}, {0.0567676, 0.413654}, {
+            0.0964063, 0.358795}, {0.0625, 0.358795}}], 
+           PolygonBox[{{0.0567676, 0.413654}, {0.158867, 0.413654}, {0.189375,
+             0.358795}, {0.0964063, 0.358795}}], 
+           PolygonBox[{{0.158867, 0.413654}, {0.311416, 0.413654}, {0.328281, 
+            0.358795}, {0.189375, 0.358795}}], 
+           PolygonBox[{{0.311416, 0.413654}, {0.5, 0.413654}, {0.5, 
+            0.358795}, {0.328281, 0.358795}}], 
+           PolygonBox[{{0.0625, 0.358795}, {0.0964063, 0.358795}, {0.136045, 
+            0.32156}, {0.105469, 0.32156}}], 
+           PolygonBox[{{0.0964063, 0.358795}, {0.189375, 0.358795}, {0.219883,
+             0.32156}, {0.136045, 0.32156}}], 
+           PolygonBox[{{0.189375, 0.358795}, {0.328281, 0.358795}, {0.345146, 
+            0.32156}, {0.219883, 0.32156}}], 
+           PolygonBox[{{0.328281, 0.358795}, {0.5, 0.358795}, {0.5, 
+            0.32156}, {0.345146, 0.32156}}], 
+           PolygonBox[{{0.105469, 0.32156}, {0.136045, 0.32156}, {0.154062, 
+            0.300049}, {0.125, 0.300049}}], 
+           PolygonBox[{{0.136045, 0.32156}, {0.219883, 0.32156}, {0.23375, 
+            0.300049}, {0.154062, 0.300049}}], 
+           PolygonBox[{{0.219883, 0.32156}, {0.345146, 0.32156}, {0.352812, 
+            0.300049}, {0.23375, 0.300049}}], 
+           PolygonBox[{{0.345146, 0.32156}, {0.5, 0.32156}, {0.5, 0.300049}, {
+            0.352812, 0.300049}}], 
+           PolygonBox[{{0.5, 0.488037}, {0.69625, 0.488037}, {0.688584, 
+            0.413654}, {0.5, 0.413654}}], 
+           PolygonBox[{{0.69625, 0.488037}, {0.855, 0.488037}, {0.841133, 
+            0.413654}, {0.688584, 0.413654}}], 
+           PolygonBox[{{0.855, 0.488037}, {0.96125, 0.488037}, {0.943232, 
+            0.413654}, {0.841133, 0.413654}}], 
+           PolygonBox[{{0.96125, 0.488037}, {1, 0.488037}, {0.980469, 
+             0.413654}, {0.943232, 0.413654}}], 
+           PolygonBox[{{0.5, 0.413654}, {0.688584, 0.413654}, {0.671719, 
+            0.358795}, {0.5, 0.358795}}], 
+           PolygonBox[{{0.688584, 0.413654}, {0.841133, 0.413654}, {0.810625, 
+            0.358795}, {0.671719, 0.358795}}], 
+           PolygonBox[{{0.841133, 0.413654}, {0.943232, 0.413654}, {0.903594, 
+            0.358795}, {0.810625, 0.358795}}], 
+           PolygonBox[{{0.943232, 0.413654}, {0.980469, 0.413654}, {0.9375, 
+            0.358795}, {0.903594, 0.358795}}], 
+           PolygonBox[{{0.5, 0.358795}, {0.671719, 0.358795}, {0.654853, 
+            0.32156}, {0.5, 0.32156}}], 
+           PolygonBox[{{0.671719, 0.358795}, {0.810625, 0.358795}, {0.780117, 
+            0.32156}, {0.654853, 0.32156}}], 
+           PolygonBox[{{0.810625, 0.358795}, {0.903594, 0.358795}, {0.863955, 
+            0.32156}, {0.780117, 0.32156}}], 
+           PolygonBox[{{0.903594, 0.358795}, {0.9375, 0.358795}, {0.894531, 
+            0.32156}, {0.863955, 0.32156}}], 
+           PolygonBox[{{0.5, 0.32156}, {0.654853, 0.32156}, {0.647187, 
+            0.300049}, {0.5, 0.300049}}], 
+           PolygonBox[{{0.654853, 0.32156}, {0.780117, 0.32156}, {0.76625, 
+            0.300049}, {0.647187, 0.300049}}], 
+           PolygonBox[{{0.780117, 0.32156}, {0.863955, 0.32156}, {0.845937, 
+            0.300049}, {0.76625, 0.300049}}], 
+           PolygonBox[{{0.863955, 0.32156}, {0.894531, 0.32156}, {0.875, 
+            0.300049}, {0.845937, 0.300049}}], 
+           PolygonBox[{{0.1, 0.769043}, {0.103906, 0.777779}, {-0.0202759, 
+            0.776765}, {-0.0167969, 0.768166}}], 
+           PolygonBox[{{0.103906, 0.777779}, {0.1125, 0.796997}, {-0.0279297, 
+            0.795683}, {-0.0202759, 0.776765}}], 
+           PolygonBox[{{0.1125, 0.796997}, {0.121094, 0.816215}, {-0.0355835, 
+            0.814601}, {-0.0279297, 0.795683}}], 
+           PolygonBox[{{0.121094, 0.816215}, {0.125, 0.824951}, {-0.0390625, 
+            0.8232}, {-0.0355835, 0.814601}}], 
+           PolygonBox[{{-0.0167969, 0.768166}, {-0.0202759, 
+            0.776765}, {-0.111426, 0.769668}, {-0.103125, 0.762024}}], 
+           PolygonBox[{{-0.0202759, 0.776765}, {-0.0279297, 
+            0.795683}, {-0.129688, 0.786484}, {-0.111426, 0.769668}}], 
+           PolygonBox[{{-0.0279297, 0.795683}, {-0.0355835, 
+            0.814601}, {-0.147949, 0.8033}, {-0.129688, 0.786484}}], 
+           PolygonBox[{{-0.0355835, 0.814601}, {-0.0390625, 
+            0.8232}, {-0.15625, 0.810943}, {-0.147949, 0.8033}}], 
+           PolygonBox[{{-0.103125, 0.762024}, {-0.111426, 
+            0.769668}, {-0.167566, 0.750404}, {-0.156641, 0.745354}}], 
+           PolygonBox[{{-0.111426, 0.769668}, {-0.129688, 
+            0.786484}, {-0.191602, 0.761515}, {-0.167566, 0.750404}}], 
+           PolygonBox[{{-0.129688, 0.786484}, {-0.147949, 0.8033}, {-0.215637,
+             0.772625}, {-0.191602, 0.761515}}], 
+           PolygonBox[{{-0.147949, 0.8033}, {-0.15625, 0.810943}, {-0.226562, 
+            0.777676}, {-0.215637, 0.772625}}], 
+           PolygonBox[{{-0.156641, 0.745354}, {-0.167566, 
+            0.750404}, {-0.186719, 0.712891}, {-0.175, 0.712891}}], 
+           PolygonBox[{{-0.167566, 0.750404}, {-0.191602, 0.761515}, {-0.2125,
+             0.712891}, {-0.186719, 0.712891}}], 
+           PolygonBox[{{-0.191602, 0.761515}, {-0.215637, 
+            0.772625}, {-0.238281, 0.712891}, {-0.2125, 0.712891}}], 
+           PolygonBox[{{-0.215637, 0.772625}, {-0.226562, 0.777676}, {-0.25, 
+            0.712891}, {-0.238281, 0.712891}}], 
+           PolygonBox[{{0.125, 0.824951}, {0.121094, 0.816215}, {-0.0355835, 
+            0.814601}, {-0.0390625, 0.8232}}], 
+           PolygonBox[{{0.121094, 0.816215}, {0.1125, 0.796997}, {-0.0279297, 
+            0.795683}, {-0.0355835, 0.814601}}], 
+           PolygonBox[{{0.1125, 0.796997}, {0.103906, 0.777779}, {-0.0202759, 
+            0.776765}, {-0.0279297, 0.795683}}], 
+           PolygonBox[{{0.103906, 0.777779}, {0.1, 0.769043}, {-0.0167969, 
+            0.768166}, {-0.0202759, 0.776765}}], 
+           PolygonBox[{{-0.0390625, 0.8232}, {-0.0355835, 
+            0.814601}, {-0.147949, 0.8033}, {-0.15625, 0.810943}}], 
+           PolygonBox[{{-0.0355835, 0.814601}, {-0.0279297, 
+            0.795683}, {-0.129688, 0.786484}, {-0.147949, 0.8033}}], 
+           PolygonBox[{{-0.0279297, 0.795683}, {-0.0202759, 
+            0.776765}, {-0.111426, 0.769668}, {-0.129688, 0.786484}}], 
+           PolygonBox[{{-0.0202759, 0.776765}, {-0.0167969, 
+            0.768166}, {-0.103125, 0.762024}, {-0.111426, 0.769668}}], 
+           PolygonBox[{{-0.15625, 0.810943}, {-0.147949, 0.8033}, {-0.215637, 
+            0.772625}, {-0.226562, 0.777676}}], 
+           PolygonBox[{{-0.147949, 0.8033}, {-0.129688, 0.786484}, {-0.191602,
+             0.761515}, {-0.215637, 0.772625}}], 
+           PolygonBox[{{-0.129688, 0.786484}, {-0.111426, 
+            0.769668}, {-0.167566, 0.750404}, {-0.191602, 0.761515}}], 
+           PolygonBox[{{-0.111426, 0.769668}, {-0.103125, 
+            0.762024}, {-0.156641, 0.745354}, {-0.167566, 0.750404}}], 
+           PolygonBox[{{-0.226562, 0.777676}, {-0.215637, 
+            0.772625}, {-0.238281, 0.712891}, {-0.25, 0.712891}}], 
+           PolygonBox[{{-0.215637, 0.772625}, {-0.191602, 0.761515}, {-0.2125,
+             0.712891}, {-0.238281, 0.712891}}], 
+           PolygonBox[{{-0.191602, 0.761515}, {-0.167566, 
+            0.750404}, {-0.186719, 0.712891}, {-0.2125, 0.712891}}], 
+           PolygonBox[{{-0.167566, 0.750404}, {-0.156641, 0.745354}, {-0.175, 
+            0.712891}, {-0.186719, 0.712891}}], 
+           PolygonBox[{{-0.175, 0.712891}, {-0.186719, 0.712891}, {-0.175885, 
+            0.656723}, {-0.165234, 0.661621}}], 
+           PolygonBox[{{-0.186719, 0.712891}, {-0.2125, 0.712891}, {-0.199316,
+             0.645947}, {-0.175885, 0.656723}}], 
+           PolygonBox[{{-0.2125, 0.712891}, {-0.238281, 0.712891}, {-0.222748,
+             0.63517}, {-0.199316, 0.645947}}], 
+           PolygonBox[{{-0.238281, 0.712891}, {-0.25, 0.712891}, {-0.233398, 
+            0.630272}, {-0.222748, 0.63517}}], 
+           PolygonBox[{{-0.165234, 0.661621}, {-0.175885, 
+            0.656723}, {-0.141943, 0.592611}, {-0.134375, 0.600098}}], 
+           PolygonBox[{{-0.175885, 0.656723}, {-0.199316, 
+            0.645947}, {-0.158594, 0.576141}, {-0.141943, 0.592611}}], 
+           PolygonBox[{{-0.199316, 0.645947}, {-0.222748, 
+            0.63517}, {-0.175244, 0.559671}, {-0.158594, 0.576141}}], 
+           PolygonBox[{{-0.222748, 0.63517}, {-0.233398, 
+            0.630272}, {-0.182812, 0.552185}, {-0.175244, 0.559671}}], 
+           PolygonBox[{{-0.134375, 0.600098}, {-0.141943, 
+            0.592611}, {-0.0827332, 0.529498}, {-0.0800781, 0.538757}}], 
+           PolygonBox[{{-0.141943, 0.592611}, {-0.158594, 
+            0.576141}, {-0.0885742, 0.509128}, {-0.0827332, 0.529498}}], 
+           PolygonBox[{{-0.158594, 0.576141}, {-0.175244, 
+            0.559671}, {-0.0944153, 0.488759}, {-0.0885742, 0.509128}}], 
+           PolygonBox[{{-0.175244, 0.559671}, {-0.182812, 
+            0.552185}, {-0.0970703, 0.4795}, {-0.0944153, 0.488759}}], 
+           PolygonBox[{{-0.0800781, 0.538757}, {-0.0827332, 0.529498}, {
+             0.00390625, 0.476326}, {0, 0.488037}}], 
+           PolygonBox[{{-0.0827332, 0.529498}, {-0.0885742, 0.509128}, {
+            0.0125, 0.450561}, {0.00390625, 0.476326}}], 
+           PolygonBox[{{-0.0885742, 0.509128}, {-0.0944153, 0.488759}, {
+            0.0210938, 0.424797}, {0.0125, 0.450561}}], 
+           PolygonBox[{{-0.0944153, 0.488759}, {-0.0970703, 0.4795}, {0.025, 
+            0.413086}, {0.0210938, 0.424797}}], 
+           PolygonBox[{{-0.25, 0.712891}, {-0.238281, 0.712891}, {-0.222748, 
+            0.63517}, {-0.233398, 0.630272}}], 
+           PolygonBox[{{-0.238281, 0.712891}, {-0.2125, 0.712891}, {-0.199316,
+             0.645947}, {-0.222748, 0.63517}}], 
+           PolygonBox[{{-0.2125, 0.712891}, {-0.186719, 0.712891}, {-0.175885,
+             0.656723}, {-0.199316, 0.645947}}], 
+           PolygonBox[{{-0.186719, 0.712891}, {-0.175, 0.712891}, {-0.165234, 
+            0.661621}, {-0.175885, 0.656723}}], 
+           PolygonBox[{{-0.233398, 0.630272}, {-0.222748, 
+            0.63517}, {-0.175244, 0.559671}, {-0.182812, 0.552185}}], 
+           PolygonBox[{{-0.222748, 0.63517}, {-0.199316, 
+            0.645947}, {-0.158594, 0.576141}, {-0.175244, 0.559671}}], 
+           PolygonBox[{{-0.199316, 0.645947}, {-0.175885, 
+            0.656723}, {-0.141943, 0.592611}, {-0.158594, 0.576141}}], 
+           PolygonBox[{{-0.175885, 0.656723}, {-0.165234, 
+            0.661621}, {-0.134375, 0.600098}, {-0.141943, 0.592611}}], 
+           PolygonBox[{{-0.182812, 0.552185}, {-0.175244, 
+            0.559671}, {-0.0944153, 0.488759}, {-0.0970703, 0.4795}}], 
+           PolygonBox[{{-0.175244, 0.559671}, {-0.158594, 
+            0.576141}, {-0.0885742, 0.509128}, {-0.0944153, 0.488759}}], 
+           PolygonBox[{{-0.158594, 0.576141}, {-0.141943, 
+            0.592611}, {-0.0827332, 0.529498}, {-0.0885742, 0.509128}}], 
+           PolygonBox[{{-0.141943, 0.592611}, {-0.134375, 
+            0.600098}, {-0.0800781, 0.538757}, {-0.0827332, 0.529498}}], 
+           PolygonBox[{{-0.0970703, 0.4795}, {-0.0944153, 0.488759}, {
+            0.0210938, 0.424797}, {0.025, 0.413086}}], 
+           PolygonBox[{{-0.0944153, 0.488759}, {-0.0885742, 0.509128}, {
+            0.0125, 0.450561}, {0.0210938, 0.424797}}], 
+           PolygonBox[{{-0.0885742, 0.509128}, {-0.0827332, 0.529498}, {
+            0.00390625, 0.476326}, {0.0125, 0.450561}}], 
+           PolygonBox[{{-0.0827332, 0.529498}, {-0.0800781, 0.538757}, {
+             0, 0.488037}, {0.00390625, 0.476326}}], 
+           PolygonBox[{{0.925, 0.618896}, {0.925, 0.586738}, {1.05408, 
+            0.622637}, {1.04492, 0.646503}}], 
+           PolygonBox[{{0.925, 0.586738}, {0.925, 0.515991}, {1.07422, 
+            0.570131}, {1.05408, 0.622637}}], 
+           PolygonBox[{{0.925, 0.515991}, {0.925, 0.445244}, {1.09436, 
+            0.517625}, {1.07422, 0.570131}}], 
+           PolygonBox[{{0.925, 0.445244}, {0.925, 0.413086}, {1.10352, 
+            0.493759}, {1.09436, 0.517625}}], 
+           PolygonBox[{{1.04492, 0.646503}, {1.05408, 0.622637}, {1.10859, 
+            0.698941}, {1.09687, 0.71286}}], 
+           PolygonBox[{{1.05408, 0.622637}, {1.07422, 0.570131}, {1.13437, 
+            0.66832}, {1.10859, 0.698941}}], 
+           PolygonBox[{{1.07422, 0.570131}, {1.09436, 0.517625}, {1.16016, 
+            0.637698}, {1.13437, 0.66832}}], 
+           PolygonBox[{{1.09436, 0.517625}, {1.10352, 0.493759}, {1.17188, 
+            0.623779}, {1.16016, 0.637698}}], 
+           PolygonBox[{{1.09687, 0.71286}, {1.10859, 0.698941}, {1.13967, 
+            0.788218}, {1.12539, 0.79327}}], 
+           PolygonBox[{{1.10859, 0.698941}, {1.13437, 0.66832}, {1.17109, 
+            0.777105}, {1.13967, 0.788218}}], 
+           PolygonBox[{{1.13437, 0.66832}, {1.16016, 0.637698}, {1.20251, 
+            0.765992}, {1.17109, 0.777105}}], 
+           PolygonBox[{{1.16016, 0.637698}, {1.17188, 0.623779}, {1.2168, 
+            0.76094}, {1.20251, 0.765992}}], 
+           PolygonBox[{{1.12539, 0.79327}, {1.13967, 0.788218}, {1.19844, 
+            0.863037}, {1.175, 0.863037}}], 
+           PolygonBox[{{1.13967, 0.788218}, {1.17109, 0.777105}, {1.25, 
+            0.863037}, {1.19844, 0.863037}}], 
+           PolygonBox[{{1.17109, 0.777105}, {1.20251, 0.765992}, {1.30156, 
+            0.863037}, {1.25, 0.863037}}], 
+           PolygonBox[{{1.20251, 0.765992}, {1.2168, 0.76094}, {1.325, 
+            0.863037}, {1.30156, 0.863037}}], 
+           PolygonBox[{{0.925, 0.413086}, {0.925, 0.445244}, {1.09436, 
+            0.517625}, {1.10352, 0.493759}}], 
+           PolygonBox[{{0.925, 0.445244}, {0.925, 0.515991}, {1.07422, 
+            0.570131}, {1.09436, 0.517625}}], 
+           PolygonBox[{{0.925, 0.515991}, {0.925, 0.586738}, {1.05408, 
+            0.622637}, {1.07422, 0.570131}}], 
+           PolygonBox[{{0.925, 0.586738}, {0.925, 0.618896}, {1.04492, 
+            0.646503}, {1.05408, 0.622637}}], 
+           PolygonBox[{{1.10352, 0.493759}, {1.09436, 0.517625}, {1.16016, 
+            0.637698}, {1.17188, 0.623779}}], 
+           PolygonBox[{{1.09436, 0.517625}, {1.07422, 0.570131}, {1.13437, 
+            0.66832}, {1.16016, 0.637698}}], 
+           PolygonBox[{{1.07422, 0.570131}, {1.05408, 0.622637}, {1.10859, 
+            0.698941}, {1.13437, 0.66832}}], 
+           PolygonBox[{{1.05408, 0.622637}, {1.04492, 0.646503}, {1.09687, 
+            0.71286}, {1.10859, 0.698941}}], 
+           PolygonBox[{{1.17188, 0.623779}, {1.16016, 0.637698}, {1.20251, 
+            0.765992}, {1.2168, 0.76094}}], 
+           PolygonBox[{{1.16016, 0.637698}, {1.13437, 0.66832}, {1.17109, 
+            0.777105}, {1.20251, 0.765992}}], 
+           PolygonBox[{{1.13437, 0.66832}, {1.10859, 0.698941}, {1.13967, 
+            0.788218}, {1.17109, 0.777105}}], 
+           PolygonBox[{{1.10859, 0.698941}, {1.09687, 0.71286}, {1.12539, 
+            0.79327}, {1.13967, 0.788218}}], 
+           PolygonBox[{{1.2168, 0.76094}, {1.20251, 0.765992}, {1.30156, 
+            0.863037}, {1.325, 0.863037}}], 
+           PolygonBox[{{1.20251, 0.765992}, {1.17109, 0.777105}, {1.25, 
+            0.863037}, {1.30156, 0.863037}}], 
+           PolygonBox[{{1.17109, 0.777105}, {1.13967, 0.788218}, {1.19844, 
+            0.863037}, {1.25, 0.863037}}], 
+           PolygonBox[{{1.13967, 0.788218}, {1.12539, 0.79327}, {1.175, 
+            0.863037}, {1.19844, 0.863037}}], 
+           PolygonBox[{{1.175, 0.863037}, {1.19844, 0.863037}, {1.21807, 
+            0.873741}, {1.19297, 0.8732}}], 
+           PolygonBox[{{1.19844, 0.863037}, {1.25, 0.863037}, {1.27329, 
+            0.874933}, {1.21807, 0.873741}}], 
+           PolygonBox[{{1.25, 0.863037}, {1.30156, 0.863037}, {1.32851, 
+            0.876125}, {1.27329, 0.874933}}], 
+           PolygonBox[{{1.30156, 0.863037}, {1.325, 0.863037}, {1.35361, 
+            0.876667}, {1.32851, 0.876125}}], 
+           PolygonBox[{{1.19297, 0.8732}, {1.21807, 0.873741}, {1.22981, 
+            0.87746}, {1.20625, 0.876587}}], 
+           PolygonBox[{{1.21807, 0.873741}, {1.27329, 0.874933}, {1.28164, 
+            0.879379}, {1.22981, 0.87746}}], 
+           PolygonBox[{{1.27329, 0.874933}, {1.32851, 0.876125}, {1.33347, 
+            0.881299}, {1.28164, 0.879379}}], 
+           PolygonBox[{{1.32851, 0.876125}, {1.35361, 0.876667}, {1.35703, 
+            0.882171}, {1.33347, 0.881299}}], 
+           PolygonBox[{{1.20625, 0.876587}, {1.22981, 0.87746}, {1.23016, 
+            0.873967}, {1.21016, 0.8732}}], 
+           PolygonBox[{{1.22981, 0.87746}, {1.28164, 0.879379}, {1.27417, 
+            0.875654}, {1.23016, 0.873967}}], 
+           PolygonBox[{{1.28164, 0.879379}, {1.33347, 0.881299}, {1.31818, 
+            0.877342}, {1.27417, 0.875654}}], 
+           PolygonBox[{{1.33347, 0.881299}, {1.35703, 0.882171}, {1.33818, 
+            0.878109}, {1.31818, 0.877342}}], 
+           PolygonBox[{{1.21016, 0.8732}, {1.23016, 0.873967}, {1.21563, 
+            0.863037}, {1.2, 0.863037}}], 
+           PolygonBox[{{1.23016, 0.873967}, {1.27417, 0.875654}, {1.25, 
+            0.863037}, {1.21563, 0.863037}}], 
+           PolygonBox[{{1.27417, 0.875654}, {1.31818, 0.877342}, {1.28437, 
+            0.863037}, {1.25, 0.863037}}], 
+           PolygonBox[{{1.31818, 0.877342}, {1.33818, 0.878109}, {1.3, 
+            0.863037}, {1.28437, 0.863037}}], 
+           PolygonBox[{{1.325, 0.863037}, {1.30156, 0.863037}, {1.32851, 
+            0.876125}, {1.35361, 0.876667}}], 
+           PolygonBox[{{1.30156, 0.863037}, {1.25, 0.863037}, {1.27329, 
+            0.874933}, {1.32851, 0.876125}}], 
+           PolygonBox[{{1.25, 0.863037}, {1.19844, 0.863037}, {1.21807, 
+            0.873741}, {1.27329, 0.874933}}], 
+           PolygonBox[{{1.19844, 0.863037}, {1.175, 0.863037}, {1.19297, 
+            0.8732}, {1.21807, 0.873741}}], 
+           PolygonBox[{{1.35361, 0.876667}, {1.32851, 0.876125}, {1.33347, 
+            0.881299}, {1.35703, 0.882171}}], 
+           PolygonBox[{{1.32851, 0.876125}, {1.27329, 0.874933}, {1.28164, 
+            0.879379}, {1.33347, 0.881299}}], 
+           PolygonBox[{{1.27329, 0.874933}, {1.21807, 0.873741}, {1.22981, 
+            0.87746}, {1.28164, 0.879379}}], 
+           PolygonBox[{{1.21807, 0.873741}, {1.19297, 0.8732}, {1.20625, 
+            0.876587}, {1.22981, 0.87746}}], 
+           PolygonBox[{{1.35703, 0.882171}, {1.33347, 0.881299}, {1.31818, 
+            0.877342}, {1.33818, 0.878109}}], 
+           PolygonBox[{{1.33347, 0.881299}, {1.28164, 0.879379}, {1.27417, 
+            0.875654}, {1.31818, 0.877342}}], 
+           PolygonBox[{{1.28164, 0.879379}, {1.22981, 0.87746}, {1.23016, 
+            0.873967}, {1.27417, 0.875654}}], 
+           PolygonBox[{{1.22981, 0.87746}, {1.20625, 0.876587}, {1.21016, 
+            0.8732}, {1.23016, 0.873967}}], 
+           PolygonBox[{{1.33818, 0.878109}, {1.31818, 0.877342}, {1.28437, 
+            0.863037}, {1.3, 0.863037}}], 
+           PolygonBox[{{1.31818, 0.877342}, {1.27417, 0.875654}, {1.25, 
+            0.863037}, {1.28437, 0.863037}}], 
+           PolygonBox[{{1.27417, 0.875654}, {1.23016, 0.873967}, {1.21563, 
+            0.863037}, {1.25, 0.863037}}], 
+           PolygonBox[{{1.23016, 0.873967}, {1.21016, 0.8732}, {1.2, 
+            0.863037}, {1.21563, 0.863037}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.578586, 1.03776}, {0.585156, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.56054, 1.03776}, {0.578586, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.533513, 1.03776}, {0.56054, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.5, 1.03776}, {0.533513, 1.03776}}], 
+           PolygonBox[{{0.585156, 1.03776}, {0.578586, 1.03776}, {0.574979, 
+            1.00793}, {0.58125, 1.00793}}], 
+           PolygonBox[{{0.578586, 1.03776}, {0.56054, 1.03776}, {0.557758, 
+            1.00793}, {0.574979, 1.00793}}], 
+           PolygonBox[{{0.56054, 1.03776}, {0.533513, 1.03776}, {0.53197, 
+            1.00793}, {0.557758, 1.00793}}], 
+           PolygonBox[{{0.533513, 1.03776}, {0.5, 1.03776}, {0.5, 1.00793}, {
+            0.53197, 1.00793}}], 
+           PolygonBox[{{0.58125, 1.00793}, {0.574979, 1.00793}, {0.545414, 
+            0.971153}, {0.549219, 0.971153}}], 
+           PolygonBox[{{0.574979, 1.00793}, {0.557758, 1.00793}, {0.534972, 
+            0.971153}, {0.545414, 0.971153}}], 
+           PolygonBox[{{0.557758, 1.00793}, {0.53197, 1.00793}, {0.519348, 
+            0.971153}, {0.534972, 0.971153}}], 
+           PolygonBox[{{0.53197, 1.00793}, {0.5, 1.00793}, {0.5, 0.971153}, {
+            0.519348, 0.971153}}], 
+           PolygonBox[{{0.549219, 0.971153}, {0.545414, 0.971153}, {0.546125, 
+            0.937988}, {0.55, 0.937988}}], 
+           PolygonBox[{{0.545414, 0.971153}, {0.534972, 0.971153}, {0.5355, 
+            0.937988}, {0.546125, 0.937988}}], 
+           PolygonBox[{{0.534972, 0.971153}, {0.519348, 0.971153}, {0.519625, 
+            0.937988}, {0.5355, 0.937988}}], 
+           PolygonBox[{{0.519348, 0.971153}, {0.5, 0.971153}, {0.5, 
+            0.937988}, {0.519625, 0.937988}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.466487, 1.03776}, {0.5, 1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.43946, 1.03776}, {0.466487, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.421414, 1.03776}, {0.43946, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.414844, 1.03776}, {0.421414, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.03776}, {0.466487, 1.03776}, {0.46803, 
+            1.00793}, {0.5, 1.00793}}], 
+           PolygonBox[{{0.466487, 1.03776}, {0.43946, 1.03776}, {0.442242, 
+            1.00793}, {0.46803, 1.00793}}], 
+           PolygonBox[{{0.43946, 1.03776}, {0.421414, 1.03776}, {0.425021, 
+            1.00793}, {0.442242, 1.00793}}], 
+           PolygonBox[{{0.421414, 1.03776}, {0.414844, 1.03776}, {0.41875, 
+            1.00793}, {0.425021, 1.00793}}], 
+           PolygonBox[{{0.5, 1.00793}, {0.46803, 1.00793}, {0.480652, 
+            0.971153}, {0.5, 0.971153}}], 
+           PolygonBox[{{0.46803, 1.00793}, {0.442242, 1.00793}, {0.465028, 
+            0.971153}, {0.480652, 0.971153}}], 
+           PolygonBox[{{0.442242, 1.00793}, {0.425021, 1.00793}, {0.454586, 
+            0.971153}, {0.465028, 0.971153}}], 
+           PolygonBox[{{0.425021, 1.00793}, {0.41875, 1.00793}, {0.450781, 
+            0.971153}, {0.454586, 0.971153}}], 
+           PolygonBox[{{0.5, 0.971153}, {0.480652, 0.971153}, {0.480375, 
+            0.937988}, {0.5, 0.937988}}], 
+           PolygonBox[{{0.480652, 0.971153}, {0.465028, 0.971153}, {0.4645, 
+            0.937988}, {0.480375, 0.937988}}], 
+           PolygonBox[{{0.465028, 0.971153}, {0.454586, 0.971153}, {0.453875, 
+            0.937988}, {0.4645, 0.937988}}], 
+           PolygonBox[{{0.454586, 0.971153}, {0.450781, 0.971153}, {0.45, 
+            0.937988}, {0.453875, 0.937988}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.421414, 1.03776}, {0.414844, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.43946, 1.03776}, {0.421414, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.466487, 1.03776}, {0.43946, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.5, 1.03776}, {0.466487, 1.03776}}], 
+           PolygonBox[{{0.414844, 1.03776}, {0.421414, 1.03776}, {0.425021, 
+            1.00793}, {0.41875, 1.00793}}], 
+           PolygonBox[{{0.421414, 1.03776}, {0.43946, 1.03776}, {0.442242, 
+            1.00793}, {0.425021, 1.00793}}], 
+           PolygonBox[{{0.43946, 1.03776}, {0.466487, 1.03776}, {0.46803, 
+            1.00793}, {0.442242, 1.00793}}], 
+           PolygonBox[{{0.466487, 1.03776}, {0.5, 1.03776}, {0.5, 1.00793}, {
+            0.46803, 1.00793}}], 
+           PolygonBox[{{0.41875, 1.00793}, {0.425021, 1.00793}, {0.454586, 
+            0.971153}, {0.450781, 0.971153}}], 
+           PolygonBox[{{0.425021, 1.00793}, {0.442242, 1.00793}, {0.465028, 
+            0.971153}, {0.454586, 0.971153}}], 
+           PolygonBox[{{0.442242, 1.00793}, {0.46803, 1.00793}, {0.480652, 
+            0.971153}, {0.465028, 0.971153}}], 
+           PolygonBox[{{0.46803, 1.00793}, {0.5, 1.00793}, {0.5, 0.971153}, {
+            0.480652, 0.971153}}], 
+           PolygonBox[{{0.450781, 0.971153}, {0.454586, 0.971153}, {0.453875, 
+            0.937988}, {0.45, 0.937988}}], 
+           PolygonBox[{{0.454586, 0.971153}, {0.465028, 0.971153}, {0.4645, 
+            0.937988}, {0.453875, 0.937988}}], 
+           PolygonBox[{{0.465028, 0.971153}, {0.480652, 0.971153}, {0.480375, 
+            0.937988}, {0.4645, 0.937988}}], 
+           PolygonBox[{{0.480652, 0.971153}, {0.5, 0.971153}, {0.5, 
+            0.937988}, {0.480375, 0.937988}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.533513, 1.03776}, {0.5, 1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.56054, 1.03776}, {0.533513, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.578586, 1.03776}, {0.56054, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.05005}, {0.585156, 1.03776}, {0.578586, 
+            1.03776}}], 
+           PolygonBox[{{0.5, 1.03776}, {0.533513, 1.03776}, {0.53197, 
+            1.00793}, {0.5, 1.00793}}], 
+           PolygonBox[{{0.533513, 1.03776}, {0.56054, 1.03776}, {0.557758, 
+            1.00793}, {0.53197, 1.00793}}], 
+           PolygonBox[{{0.56054, 1.03776}, {0.578586, 1.03776}, {0.574979, 
+            1.00793}, {0.557758, 1.00793}}], 
+           PolygonBox[{{0.578586, 1.03776}, {0.585156, 1.03776}, {0.58125, 
+            1.00793}, {0.574979, 1.00793}}], 
+           PolygonBox[{{0.5, 1.00793}, {0.53197, 1.00793}, {0.519348, 
+            0.971153}, {0.5, 0.971153}}], 
+           PolygonBox[{{0.53197, 1.00793}, {0.557758, 1.00793}, {0.534972, 
+            0.971153}, {0.519348, 0.971153}}], 
+           PolygonBox[{{0.557758, 1.00793}, {0.574979, 1.00793}, {0.545414, 
+            0.971153}, {0.534972, 0.971153}}], 
+           PolygonBox[{{0.574979, 1.00793}, {0.58125, 1.00793}, {0.549219, 
+            0.971153}, {0.545414, 0.971153}}], 
+           PolygonBox[{{0.5, 0.971153}, {0.519348, 0.971153}, {0.519625, 
+            0.937988}, {0.5, 0.937988}}], 
+           PolygonBox[{{0.519348, 0.971153}, {0.534972, 0.971153}, {0.5355, 
+            0.937988}, {0.519625, 0.937988}}], 
+           PolygonBox[{{0.534972, 0.971153}, {0.545414, 0.971153}, {0.546125, 
+            0.937988}, {0.5355, 0.937988}}], 
+           PolygonBox[{{0.545414, 0.971153}, {0.549219, 0.971153}, {0.55, 
+            0.937988}, {0.546125, 0.937988}}], 
+           PolygonBox[{{0.55, 0.937988}, {0.546125, 0.937988}, {0.605223, 
+            0.915394}, {0.614062, 0.915394}}], 
+           PolygonBox[{{0.546125, 0.937988}, {0.5355, 0.937988}, {0.580984, 
+            0.915394}, {0.605223, 0.915394}}], 
+           PolygonBox[{{0.5355, 0.937988}, {0.519625, 0.937988}, {0.54477, 
+            0.915394}, {0.580984, 0.915394}}], 
+           PolygonBox[{{0.519625, 0.937988}, {0.5, 0.937988}, {0.5, 
+            0.915394}, {0.54477, 0.915394}}], 
+           PolygonBox[{{0.614062, 0.915394}, {0.605223, 0.915394}, {0.690266, 
+            0.900055}, {0.70625, 0.900055}}], 
+           PolygonBox[{{0.605223, 0.915394}, {0.580984, 0.915394}, {0.646437, 
+            0.900055}, {0.690266, 0.900055}}], 
+           PolygonBox[{{0.580984, 0.915394}, {0.54477, 0.915394}, {0.580953, 
+            0.900055}, {0.646437, 0.900055}}], 
+           PolygonBox[{{0.54477, 0.915394}, {0.5, 0.915394}, {0.5, 
+            0.900055}, {0.580953, 0.900055}}], 
+           PolygonBox[{{0.70625, 0.900055}, {0.690266, 0.900055}, {0.76666, 
+            0.884945}, {0.789062, 0.884945}}], 
+           PolygonBox[{{0.690266, 0.900055}, {0.646437, 0.900055}, {0.705234, 
+            0.884945}, {0.76666, 0.884945}}], 
+           PolygonBox[{{0.646437, 0.900055}, {0.580953, 0.900055}, {0.613457, 
+            0.884945}, {0.705234, 0.884945}}], 
+           PolygonBox[{{0.580953, 0.900055}, {0.5, 0.900055}, {0.5, 
+            0.884945}, {0.613457, 0.884945}}], 
+           PolygonBox[{{0.789062, 0.884945}, {0.76666, 0.884945}, {0.799812, 
+            0.863037}, {0.825, 0.863037}}], 
+           PolygonBox[{{0.76666, 0.884945}, {0.705234, 0.884945}, {0.73075, 
+            0.863037}, {0.799812, 0.863037}}], 
+           PolygonBox[{{0.705234, 0.884945}, {0.613457, 0.884945}, {0.627562, 
+            0.863037}, {0.73075, 0.863037}}], 
+           PolygonBox[{{0.613457, 0.884945}, {0.5, 0.884945}, {0.5, 
+            0.863037}, {0.627562, 0.863037}}], 
+           PolygonBox[{{0.5, 0.937988}, {0.480375, 0.937988}, {0.45523, 
+            0.915394}, {0.5, 0.915394}}], 
+           PolygonBox[{{0.480375, 0.937988}, {0.4645, 0.937988}, {0.419016, 
+            0.915394}, {0.45523, 0.915394}}], 
+           PolygonBox[{{0.4645, 0.937988}, {0.453875, 0.937988}, {0.394777, 
+            0.915394}, {0.419016, 0.915394}}], 
+           PolygonBox[{{0.453875, 0.937988}, {0.45, 0.937988}, {0.385938, 
+            0.915394}, {0.394777, 0.915394}}], 
+           PolygonBox[{{0.5, 0.915394}, {0.45523, 0.915394}, {0.419047, 
+            0.900055}, {0.5, 0.900055}}], 
+           PolygonBox[{{0.45523, 0.915394}, {0.419016, 0.915394}, {0.353562, 
+            0.900055}, {0.419047, 0.900055}}], 
+           PolygonBox[{{0.419016, 0.915394}, {0.394777, 0.915394}, {0.309734, 
+            0.900055}, {0.353562, 0.900055}}], 
+           PolygonBox[{{0.394777, 0.915394}, {0.385938, 0.915394}, {0.29375, 
+            0.900055}, {0.309734, 0.900055}}], 
+           PolygonBox[{{0.5, 0.900055}, {0.419047, 0.900055}, {0.386543, 
+            0.884945}, {0.5, 0.884945}}], 
+           PolygonBox[{{0.419047, 0.900055}, {0.353562, 0.900055}, {0.294766, 
+            0.884945}, {0.386543, 0.884945}}], 
+           PolygonBox[{{0.353562, 0.900055}, {0.309734, 0.900055}, {0.23334, 
+            0.884945}, {0.294766, 0.884945}}], 
+           PolygonBox[{{0.309734, 0.900055}, {0.29375, 0.900055}, {0.210938, 
+            0.884945}, {0.23334, 0.884945}}], 
+           PolygonBox[{{0.5, 0.884945}, {0.386543, 0.884945}, {0.372437, 
+            0.863037}, {0.5, 0.863037}}], 
+           PolygonBox[{{0.386543, 0.884945}, {0.294766, 0.884945}, {0.26925, 
+            0.863037}, {0.372437, 0.863037}}], 
+           PolygonBox[{{0.294766, 0.884945}, {0.23334, 0.884945}, {0.200187, 
+            0.863037}, {0.26925, 0.863037}}], 
+           PolygonBox[{{0.23334, 0.884945}, {0.210938, 0.884945}, {0.175, 
+            0.863037}, {0.200187, 0.863037}}], 
+           PolygonBox[{{0.45, 0.937988}, {0.453875, 0.937988}, {0.394777, 
+            0.915394}, {0.385938, 0.915394}}], 
+           PolygonBox[{{0.453875, 0.937988}, {0.4645, 0.937988}, {0.419016, 
+            0.915394}, {0.394777, 0.915394}}], 
+           PolygonBox[{{0.4645, 0.937988}, {0.480375, 0.937988}, {0.45523, 
+            0.915394}, {0.419016, 0.915394}}], 
+           PolygonBox[{{0.480375, 0.937988}, {0.5, 0.937988}, {0.5, 
+            0.915394}, {0.45523, 0.915394}}], 
+           PolygonBox[{{0.385938, 0.915394}, {0.394777, 0.915394}, {0.309734, 
+            0.900055}, {0.29375, 0.900055}}], 
+           PolygonBox[{{0.394777, 0.915394}, {0.419016, 0.915394}, {0.353562, 
+            0.900055}, {0.309734, 0.900055}}], 
+           PolygonBox[{{0.419016, 0.915394}, {0.45523, 0.915394}, {0.419047, 
+            0.900055}, {0.353562, 0.900055}}], 
+           PolygonBox[{{0.45523, 0.915394}, {0.5, 0.915394}, {0.5, 
+            0.900055}, {0.419047, 0.900055}}], 
+           PolygonBox[{{0.29375, 0.900055}, {0.309734, 0.900055}, {0.23334, 
+            0.884945}, {0.210938, 0.884945}}], 
+           PolygonBox[{{0.309734, 0.900055}, {0.353562, 0.900055}, {0.294766, 
+            0.884945}, {0.23334, 0.884945}}], 
+           PolygonBox[{{0.353562, 0.900055}, {0.419047, 0.900055}, {0.386543, 
+            0.884945}, {0.294766, 0.884945}}], 
+           PolygonBox[{{0.419047, 0.900055}, {0.5, 0.900055}, {0.5, 
+            0.884945}, {0.386543, 0.884945}}], 
+           PolygonBox[{{0.210938, 0.884945}, {0.23334, 0.884945}, {0.200187, 
+            0.863037}, {0.175, 0.863037}}], 
+           PolygonBox[{{0.23334, 0.884945}, {0.294766, 0.884945}, {0.26925, 
+            0.863037}, {0.200187, 0.863037}}], 
+           PolygonBox[{{0.294766, 0.884945}, {0.386543, 0.884945}, {0.372437, 
+            0.863037}, {0.26925, 0.863037}}], 
+           PolygonBox[{{0.386543, 0.884945}, {0.5, 0.884945}, {0.5, 
+            0.863037}, {0.372437, 0.863037}}], 
+           PolygonBox[{{0.5, 0.937988}, {0.519625, 0.937988}, {0.54477, 
+            0.915394}, {0.5, 0.915394}}], 
+           PolygonBox[{{0.519625, 0.937988}, {0.5355, 0.937988}, {0.580984, 
+            0.915394}, {0.54477, 0.915394}}], 
+           PolygonBox[{{0.5355, 0.937988}, {0.546125, 0.937988}, {0.605223, 
+            0.915394}, {0.580984, 0.915394}}], 
+           PolygonBox[{{0.546125, 0.937988}, {0.55, 0.937988}, {0.614062, 
+            0.915394}, {0.605223, 0.915394}}], 
+           PolygonBox[{{0.5, 0.915394}, {0.54477, 0.915394}, {0.580953, 
+            0.900055}, {0.5, 0.900055}}], 
+           PolygonBox[{{0.54477, 0.915394}, {0.580984, 0.915394}, {0.646437, 
+            0.900055}, {0.580953, 0.900055}}], 
+           PolygonBox[{{0.580984, 0.915394}, {0.605223, 0.915394}, {0.690266, 
+            0.900055}, {0.646437, 0.900055}}], 
+           PolygonBox[{{0.605223, 0.915394}, {0.614062, 0.915394}, {0.70625, 
+            0.900055}, {0.690266, 0.900055}}], 
+           PolygonBox[{{0.5, 0.900055}, {0.580953, 0.900055}, {0.613457, 
+            0.884945}, {0.5, 0.884945}}], 
+           PolygonBox[{{0.580953, 0.900055}, {0.646437, 0.900055}, {0.705234, 
+            0.884945}, {0.613457, 0.884945}}], 
+           PolygonBox[{{0.646437, 0.900055}, {0.690266, 0.900055}, {0.76666, 
+            0.884945}, {0.705234, 0.884945}}], 
+           PolygonBox[{{0.690266, 0.900055}, {0.70625, 0.900055}, {0.789062, 
+            0.884945}, {0.76666, 0.884945}}], 
+           PolygonBox[{{0.5, 0.884945}, {0.613457, 0.884945}, {0.627562, 
+            0.863037}, {0.5, 0.863037}}], 
+           PolygonBox[{{0.613457, 0.884945}, {0.705234, 0.884945}, {0.73075, 
+            0.863037}, {0.627562, 0.863037}}], 
+           PolygonBox[{{0.705234, 0.884945}, {0.76666, 0.884945}, {0.799812, 
+            0.863037}, {0.73075, 0.863037}}], 
+           PolygonBox[{{0.76666, 0.884945}, {0.789062, 0.884945}, {0.825, 
+            0.863037}, {0.799812, 0.863037}}]}, {-0.553515, -0.6750495}]}},
+       Axes->True], {580.5, -192.}, ImageScaled[{0.5, 0.5}], {360., 360.}], 
+     InsetBox[
+      GraphicsBox[{
+        {RGBColor[1, 0, 0], DiskBox[{0.7464850000000001, -2.4}, 0.0625]}, 
+        {GrayLevel[0.5], LineBox[{{0, 0}, {1, 0}}], LineBox[{{0, 0}, {0, 1}}],
+          DiskBox[{0, 0}, 0.25]}, 
+        {RGBColor[1, 0.5, 0.5], Opacity[0.5], EdgeForm[GrayLevel[0]], 
+         GeometricTransformationBox[{
+           PolygonBox[{{0.85, 0}, {0.822875, 0.137375}, {0.818371, 
+             0.135459}, {0.845117, 0}}], 
+           PolygonBox[{{0.822875, 0.137375}, {0.7485, 0.2485}, {0.745033, 
+            0.245034}, {0.818371, 0.135459}}], 
+           PolygonBox[{{0.7485, 0.2485}, {0.637375, 0.322875}, {0.635459, 
+            0.318373}, {0.745033, 0.245034}}], 
+           PolygonBox[{{0.637375, 0.322875}, {0.5, 0.35}, {0.5, 0.34512}, {
+            0.635459, 0.318373}}], 
+           PolygonBox[{{0.845117, 0}, {0.818371, 0.135459}, {0.823596, 
+             0.137682}, {0.850781, 0}}], 
+           PolygonBox[{{0.818371, 0.135459}, {0.745033, 0.245034}, {0.749055, 
+            0.249056}, {0.823596, 0.137682}}], 
+           PolygonBox[{{0.745033, 0.245034}, {0.635459, 0.318373}, {0.637682, 
+            0.323599}, {0.749055, 0.249056}}], 
+           PolygonBox[{{0.635459, 0.318373}, {0.5, 0.34512}, {0.5, 
+            0.350785}, {0.637682, 0.323599}}], 
+           PolygonBox[{{0.850781, 0}, {0.823596, 0.137682}, {0.834226, 
+             0.142205}, {0.862305, 0}}], 
+           PolygonBox[{{0.823596, 0.137682}, {0.749055, 0.249056}, {0.757236, 
+            0.257238}, {0.834226, 0.142205}}], 
+           PolygonBox[{{0.749055, 0.249056}, {0.637682, 0.323599}, {0.642205, 
+            0.334229}, {0.757236, 0.257238}}], 
+           PolygonBox[{{0.637682, 0.323599}, {0.5, 0.350785}, {0.5, 
+            0.362308}, {0.642205, 0.334229}}], 
+           PolygonBox[{{0.862305, 0}, {0.834226, 0.142205}, {0.845937, 
+             0.147187}, {0.875, 0}}], 
+           PolygonBox[{{0.834226, 0.142205}, {0.757236, 0.257238}, {0.76625, 
+            0.26625}, {0.845937, 0.147187}}], 
+           PolygonBox[{{0.757236, 0.257238}, {0.642205, 0.334229}, {0.647187, 
+            0.345937}, {0.76625, 0.26625}}], 
+           PolygonBox[{{0.642205, 0.334229}, {0.5, 0.362308}, {0.5, 0.375}, {
+            0.647187, 0.345937}}], 
+           PolygonBox[{{0.5, 0.35}, {0.362625, 0.322875}, {0.364542, 
+            0.318373}, {0.5, 0.34512}}], 
+           PolygonBox[{{0.362625, 0.322875}, {0.2515, 0.2485}, {0.254967, 
+            0.245034}, {0.364542, 0.318373}}], 
+           PolygonBox[{{0.2515, 0.2485}, {0.177125, 0.137375}, {0.181629, 
+            0.135459}, {0.254967, 0.245034}}], 
+           PolygonBox[{{0.177125, 0.137375}, {0.15, 0}, {0.154883, 0}, {
+             0.181629, 0.135459}}], 
+           PolygonBox[{{0.5, 0.34512}, {0.364542, 0.318373}, {0.362318, 
+            0.323599}, {0.5, 0.350785}}], 
+           PolygonBox[{{0.364542, 0.318373}, {0.254967, 0.245034}, {0.250945, 
+            0.249056}, {0.362318, 0.323599}}], 
+           PolygonBox[{{0.254967, 0.245034}, {0.181629, 0.135459}, {0.176404, 
+            0.137682}, {0.250945, 0.249056}}], 
+           PolygonBox[{{0.181629, 0.135459}, {0.154883, 0}, {0.149219, 0}, {
+             0.176404, 0.137682}}], 
+           PolygonBox[{{0.5, 0.350785}, {0.362318, 0.323599}, {0.357795, 
+            0.334229}, {0.5, 0.362308}}], 
+           PolygonBox[{{0.362318, 0.323599}, {0.250945, 0.249056}, {0.242764, 
+            0.257238}, {0.357795, 0.334229}}], 
+           PolygonBox[{{0.250945, 0.249056}, {0.176404, 0.137682}, {0.165774, 
+            0.142205}, {0.242764, 0.257238}}], 
+           PolygonBox[{{0.176404, 0.137682}, {0.149219, 0}, {0.137695, 0}, {
+             0.165774, 0.142205}}], 
+           PolygonBox[{{0.5, 0.362308}, {0.357795, 0.334229}, {0.352812, 
+            0.345937}, {0.5, 0.375}}], 
+           PolygonBox[{{0.357795, 0.334229}, {0.242764, 0.257238}, {0.23375, 
+            0.26625}, {0.352812, 0.345937}}], 
+           PolygonBox[{{0.242764, 0.257238}, {0.165774, 0.142205}, {0.154062, 
+            0.147187}, {0.23375, 0.26625}}], 
+           PolygonBox[{{0.165774, 0.142205}, {0.137695, 0}, {0.125, 0}, {
+             0.154062, 0.147187}}], 
+           PolygonBox[{{0.15, 0}, {0.177125, -0.137375}, {
+             0.181629, -0.135458}, {0.154883, 0}}], 
+           PolygonBox[{{0.177125, -0.137375}, {0.2515, -0.2485}, {
+            0.254967, -0.245033}, {0.181629, -0.135458}}], 
+           PolygonBox[{{0.2515, -0.2485}, {0.362625, -0.322875}, {
+            0.364542, -0.318371}, {0.254967, -0.245033}}], 
+           PolygonBox[{{0.362625, -0.322875}, {0.5, -0.35}, {
+            0.5, -0.345118}, {0.364542, -0.318371}}], 
+           PolygonBox[{{0.154883, 0}, {0.181629, -0.135458}, {
+             0.176404, -0.137681}, {0.149219, 0}}], 
+           PolygonBox[{{0.181629, -0.135458}, {0.254967, -0.245033}, {
+            0.250945, -0.249054}, {0.176404, -0.137681}}], 
+           PolygonBox[{{0.254967, -0.245033}, {0.364542, -0.318371}, {
+            0.362318, -0.323595}, {0.250945, -0.249054}}], 
+           PolygonBox[{{0.364542, -0.318371}, {0.5, -0.345118}, {
+            0.5, -0.35078}, {0.362318, -0.323595}}], 
+           PolygonBox[{{0.149219, 0}, {0.176404, -0.137681}, {
+             0.165774, -0.142204}, {0.137695, 0}}], 
+           PolygonBox[{{0.176404, -0.137681}, {0.250945, -0.249054}, {
+            0.242764, -0.257235}, {0.165774, -0.142204}}], 
+           PolygonBox[{{0.250945, -0.249054}, {0.362318, -0.323595}, {
+            0.357795, -0.334224}, {0.242764, -0.257235}}], 
+           PolygonBox[{{0.362318, -0.323595}, {0.5, -0.35078}, {
+            0.5, -0.362303}, {0.357795, -0.334224}}], 
+           PolygonBox[{{0.137695, 0}, {0.165774, -0.142204}, {
+             0.154062, -0.147187}, {0.125, 0}}], 
+           PolygonBox[{{0.165774, -0.142204}, {0.242764, -0.257235}, {
+            0.23375, -0.26625}, {0.154062, -0.147187}}], 
+           PolygonBox[{{0.242764, -0.257235}, {0.357795, -0.334224}, {
+            0.352812, -0.345937}, {0.23375, -0.26625}}], 
+           PolygonBox[{{0.357795, -0.334224}, {0.5, -0.362303}, {
+            0.5, -0.375}, {0.352812, -0.345937}}], 
+           PolygonBox[{{0.5, -0.35}, {0.637375, -0.322875}, {
+            0.635459, -0.318371}, {0.5, -0.345118}}], 
+           PolygonBox[{{0.637375, -0.322875}, {0.7485, -0.2485}, {
+            0.745033, -0.245033}, {0.635459, -0.318371}}], 
+           PolygonBox[{{0.7485, -0.2485}, {0.822875, -0.137375}, {
+            0.818371, -0.135458}, {0.745033, -0.245033}}], 
+           PolygonBox[{{0.822875, -0.137375}, {0.85, 0}, {0.845117, 0}, {
+             0.818371, -0.135458}}], 
+           PolygonBox[{{0.5, -0.345118}, {0.635459, -0.318371}, {
+            0.637682, -0.323595}, {0.5, -0.35078}}], 
+           PolygonBox[{{0.635459, -0.318371}, {0.745033, -0.245033}, {
+            0.749055, -0.249054}, {0.637682, -0.323595}}], 
+           PolygonBox[{{0.745033, -0.245033}, {0.818371, -0.135458}, {
+            0.823596, -0.137681}, {0.749055, -0.249054}}], 
+           PolygonBox[{{0.818371, -0.135458}, {0.845117, 0}, {0.850781, 0}, {
+             0.823596, -0.137681}}], 
+           PolygonBox[{{0.5, -0.35078}, {0.637682, -0.323595}, {
+            0.642205, -0.334224}, {0.5, -0.362303}}], 
+           PolygonBox[{{0.637682, -0.323595}, {0.749055, -0.249054}, {
+            0.757236, -0.257235}, {0.642205, -0.334224}}], 
+           PolygonBox[{{0.749055, -0.249054}, {0.823596, -0.137681}, {
+            0.834226, -0.142204}, {0.757236, -0.257235}}], 
+           PolygonBox[{{0.823596, -0.137681}, {0.850781, 0}, {0.862305, 0}, {
+             0.834226, -0.142204}}], 
+           PolygonBox[{{0.5, -0.362303}, {0.642205, -0.334224}, {
+            0.647187, -0.345937}, {0.5, -0.375}}], 
+           PolygonBox[{{0.642205, -0.334224}, {0.757236, -0.257235}, {
+            0.76625, -0.26625}, {0.647187, -0.345937}}], 
+           PolygonBox[{{0.757236, -0.257235}, {0.834226, -0.142204}, {
+            0.845937, -0.147187}, {0.76625, -0.26625}}], 
+           PolygonBox[{{0.834226, -0.142204}, {0.862305, 0}, {0.875, 0}, {
+             0.845937, -0.147187}}], 
+           PolygonBox[{{0.875, 0}, {0.845937, 0.147187}, {0.888279, 
+             0.165203}, {0.920898, 0}}], 
+           PolygonBox[{{0.845937, 0.147187}, {0.76625, 0.26625}, {0.798838, 
+            0.298838}, {0.888279, 0.165203}}], 
+           PolygonBox[{{0.76625, 0.26625}, {0.647187, 0.345937}, {0.665203, 
+            0.388279}, {0.798838, 0.298838}}], 
+           PolygonBox[{{0.647187, 0.345937}, {0.5, 0.375}, {0.5, 0.420898}, {
+            0.665203, 0.388279}}], 
+           PolygonBox[{{0.920898, 0}, {0.888279, 0.165203}, {0.925215, 
+             0.180918}, {0.960938, 0}}], 
+           PolygonBox[{{0.888279, 0.165203}, {0.798838, 0.298838}, {0.827266, 
+            0.327266}, {0.925215, 0.180918}}], 
+           PolygonBox[{{0.798838, 0.298838}, {0.665203, 0.388279}, {0.680918, 
+            0.425215}, {0.827266, 0.327266}}], 
+           PolygonBox[{{0.665203, 0.388279}, {0.5, 0.420898}, {0.5, 
+            0.460938}, {0.680918, 0.425215}}], 
+           PolygonBox[{{0.960938, 0}, {0.925215, 0.180918}, {0.95134, 
+             0.192034}, {0.989258, 0}}], 
+           PolygonBox[{{0.925215, 0.180918}, {0.827266, 0.327266}, {0.847373, 
+            0.347373}, {0.95134, 0.192034}}], 
+           PolygonBox[{{0.827266, 0.327266}, {0.680918, 0.425215}, {0.692034, 
+            0.45134}, {0.847373, 0.347373}}], 
+           PolygonBox[{{0.680918, 0.425215}, {0.5, 0.460938}, {0.5, 
+            0.489258}, {0.692034, 0.45134}}], 
+           PolygonBox[{{0.989258, 0}, {0.95134, 0.192034}, {0.96125, 
+             0.19625}, {1, 0}}], 
+           PolygonBox[{{0.95134, 0.192034}, {0.847373, 0.347373}, {0.855, 
+            0.355}, {0.96125, 0.19625}}], 
+           PolygonBox[{{0.847373, 0.347373}, {0.692034, 0.45134}, {0.69625, 
+            0.46125}, {0.855, 0.355}}], 
+           PolygonBox[{{0.692034, 0.45134}, {0.5, 0.489258}, {0.5, 0.5}, {
+            0.69625, 0.46125}}], 
+           PolygonBox[{{0.5, 0.375}, {0.352812, 0.345937}, {0.334797, 
+            0.388279}, {0.5, 0.420898}}], 
+           PolygonBox[{{0.352812, 0.345937}, {0.23375, 0.26625}, {0.201162, 
+            0.298838}, {0.334797, 0.388279}}], 
+           PolygonBox[{{0.23375, 0.26625}, {0.154062, 0.147187}, {0.111721, 
+            0.165203}, {0.201162, 0.298838}}], 
+           PolygonBox[{{0.154062, 0.147187}, {0.125, 0}, {0.0791016, 0}, {
+             0.111721, 0.165203}}], 
+           PolygonBox[{{0.5, 0.420898}, {0.334797, 0.388279}, {0.319082, 
+            0.425215}, {0.5, 0.460938}}], 
+           PolygonBox[{{0.334797, 0.388279}, {0.201162, 0.298838}, {0.172734, 
+            0.327266}, {0.319082, 0.425215}}], 
+           PolygonBox[{{0.201162, 0.298838}, {0.111721, 0.165203}, {0.0747852,
+             0.180918}, {0.172734, 0.327266}}], 
+           PolygonBox[{{0.111721, 0.165203}, {0.0791016, 0}, {0.0390625, 0}, {
+             0.0747852, 0.180918}}], 
+           PolygonBox[{{0.5, 0.460938}, {0.319082, 0.425215}, {0.307966, 
+            0.45134}, {0.5, 0.489258}}], 
+           PolygonBox[{{0.319082, 0.425215}, {0.172734, 0.327266}, {0.152627, 
+            0.347373}, {0.307966, 0.45134}}], 
+           PolygonBox[{{0.172734, 0.327266}, {0.0747852, 0.180918}, {
+            0.0486597, 0.192034}, {0.152627, 0.347373}}], 
+           PolygonBox[{{0.0747852, 0.180918}, {0.0390625, 0}, {
+             0.0107422, 0}, {0.0486597, 0.192034}}], 
+           PolygonBox[{{0.5, 0.489258}, {0.307966, 0.45134}, {0.30375, 
+            0.46125}, {0.5, 0.5}}], 
+           PolygonBox[{{0.307966, 0.45134}, {0.152627, 0.347373}, {0.145, 
+            0.355}, {0.30375, 0.46125}}], 
+           PolygonBox[{{0.152627, 0.347373}, {0.0486597, 0.192034}, {0.03875, 
+            0.19625}, {0.145, 0.355}}], 
+           PolygonBox[{{0.0486597, 0.192034}, {0.0107422, 0}, {0, 0}, {
+             0.03875, 0.19625}}], 
+           PolygonBox[{{0.125, 0}, {0.154062, -0.147187}, {
+             0.111721, -0.165203}, {0.0791016, 0}}], 
+           PolygonBox[{{0.154062, -0.147187}, {0.23375, -0.26625}, {
+            0.201162, -0.298838}, {0.111721, -0.165203}}], 
+           PolygonBox[{{0.23375, -0.26625}, {0.352812, -0.345937}, {
+            0.334797, -0.388279}, {0.201162, -0.298838}}], 
+           PolygonBox[{{0.352812, -0.345937}, {0.5, -0.375}, {
+            0.5, -0.420898}, {0.334797, -0.388279}}], 
+           PolygonBox[{{0.0791016, 0}, {0.111721, -0.165203}, {
+             0.0747852, -0.180918}, {0.0390625, 0}}], 
+           PolygonBox[{{0.111721, -0.165203}, {0.201162, -0.298838}, {
+            0.172734, -0.327266}, {0.0747852, -0.180918}}], 
+           PolygonBox[{{0.201162, -0.298838}, {0.334797, -0.388279}, {
+            0.319082, -0.425215}, {0.172734, -0.327266}}], 
+           PolygonBox[{{0.334797, -0.388279}, {0.5, -0.420898}, {
+            0.5, -0.460938}, {0.319082, -0.425215}}], 
+           PolygonBox[{{0.0390625, 0}, {0.0747852, -0.180918}, {
+             0.0486597, -0.192034}, {0.0107422, 0}}], 
+           PolygonBox[{{0.0747852, -0.180918}, {0.172734, -0.327266}, {
+            0.152627, -0.347373}, {0.0486597, -0.192034}}], 
+           PolygonBox[{{0.172734, -0.327266}, {0.319082, -0.425215}, {
+            0.307966, -0.45134}, {0.152627, -0.347373}}], 
+           PolygonBox[{{0.319082, -0.425215}, {0.5, -0.460938}, {
+            0.5, -0.489258}, {0.307966, -0.45134}}], 
+           PolygonBox[{{0.0107422, 0}, {0.0486597, -0.192034}, {
+             0.03875, -0.19625}, {0, 0}}], 
+           PolygonBox[{{0.0486597, -0.192034}, {0.152627, -0.347373}, {
+            0.145, -0.355}, {0.03875, -0.19625}}], 
+           PolygonBox[{{0.152627, -0.347373}, {0.307966, -0.45134}, {
+            0.30375, -0.46125}, {0.145, -0.355}}], 
+           PolygonBox[{{0.307966, -0.45134}, {0.5, -0.489258}, {0.5, -0.5}, {
+            0.30375, -0.46125}}], 
+           PolygonBox[{{0.5, -0.375}, {0.647187, -0.345937}, {
+            0.665203, -0.388279}, {0.5, -0.420898}}], 
+           PolygonBox[{{0.647187, -0.345937}, {0.76625, -0.26625}, {
+            0.798838, -0.298838}, {0.665203, -0.388279}}], 
+           PolygonBox[{{0.76625, -0.26625}, {0.845937, -0.147187}, {
+            0.888279, -0.165203}, {0.798838, -0.298838}}], 
+           PolygonBox[{{0.845937, -0.147187}, {0.875, 0}, {0.920898, 0}, {
+             0.888279, -0.165203}}], 
+           PolygonBox[{{0.5, -0.420898}, {0.665203, -0.388279}, {
+            0.680918, -0.425215}, {0.5, -0.460938}}], 
+           PolygonBox[{{0.665203, -0.388279}, {0.798838, -0.298838}, {
+            0.827266, -0.327266}, {0.680918, -0.425215}}], 
+           PolygonBox[{{0.798838, -0.298838}, {0.888279, -0.165203}, {
+            0.925215, -0.180918}, {0.827266, -0.327266}}], 
+           PolygonBox[{{0.888279, -0.165203}, {0.920898, 0}, {0.960938, 0}, {
+             0.925215, -0.180918}}], 
+           PolygonBox[{{0.5, -0.460938}, {0.680918, -0.425215}, {
+            0.692034, -0.45134}, {0.5, -0.489258}}], 
+           PolygonBox[{{0.680918, -0.425215}, {0.827266, -0.327266}, {
+            0.847373, -0.347373}, {0.692034, -0.45134}}], 
+           PolygonBox[{{0.827266, -0.327266}, {0.925215, -0.180918}, {
+            0.95134, -0.192034}, {0.847373, -0.347373}}], 
+           PolygonBox[{{0.925215, -0.180918}, {0.960938, 0}, {0.989258, 0}, {
+             0.95134, -0.192034}}], 
+           PolygonBox[{{0.5, -0.489258}, {0.692034, -0.45134}, {
+            0.69625, -0.46125}, {0.5, -0.5}}], 
+           PolygonBox[{{0.692034, -0.45134}, {0.847373, -0.347373}, {
+            0.855, -0.355}, {0.69625, -0.46125}}], 
+           PolygonBox[{{0.847373, -0.347373}, {0.95134, -0.192034}, {
+            0.96125, -0.19625}, {0.855, -0.355}}], 
+           PolygonBox[{{0.95134, -0.192034}, {0.989258, 0}, {1, 0}, {
+             0.96125, -0.19625}}], 
+           PolygonBox[{{1, 0}, {0.96125, 0.19625}, {0.943232, 0.188584}, {
+             0.980469, 0}}], 
+           PolygonBox[{{0.96125, 0.19625}, {0.855, 0.355}, {0.841133, 
+            0.341133}, {0.943232, 0.188584}}], 
+           PolygonBox[{{0.855, 0.355}, {0.69625, 0.46125}, {0.688584, 
+            0.443233}, {0.841133, 0.341133}}], 
+           PolygonBox[{{0.69625, 0.46125}, {0.5, 0.5}, {0.5, 0.480469}, {
+            0.688584, 0.443233}}], 
+           PolygonBox[{{0.980469, 0}, {0.943232, 0.188584}, {0.903594, 
+             0.171719}, {0.9375, 0}}], 
+           PolygonBox[{{0.943232, 0.188584}, {0.841133, 0.341133}, {0.810625, 
+            0.310625}, {0.903594, 0.171719}}], 
+           PolygonBox[{{0.841133, 0.341133}, {0.688584, 0.443233}, {0.671719, 
+            0.403594}, {0.810625, 0.310625}}], 
+           PolygonBox[{{0.688584, 0.443233}, {0.5, 0.480469}, {0.5, 0.4375}, {
+            0.671719, 0.403594}}], 
+           PolygonBox[{{0.9375, 0}, {0.903594, 0.171719}, {0.863955, 
+             0.154853}, {0.894531, 0}}], 
+           PolygonBox[{{0.903594, 0.171719}, {0.810625, 0.310625}, {0.780117, 
+            0.280117}, {0.863955, 0.154853}}], 
+           PolygonBox[{{0.810625, 0.310625}, {0.671719, 0.403594}, {0.654853, 
+            0.363955}, {0.780117, 0.280117}}], 
+           PolygonBox[{{0.671719, 0.403594}, {0.5, 0.4375}, {0.5, 0.394531}, {
+            0.654853, 0.363955}}], 
+           PolygonBox[{{0.894531, 0}, {0.863955, 0.154853}, {0.845937, 
+             0.147187}, {0.875, 0}}], 
+           PolygonBox[{{0.863955, 0.154853}, {0.780117, 0.280117}, {0.76625, 
+            0.26625}, {0.845937, 0.147187}}], 
+           PolygonBox[{{0.780117, 0.280117}, {0.654853, 0.363955}, {0.647187, 
+            0.345937}, {0.76625, 0.26625}}], 
+           PolygonBox[{{0.654853, 0.363955}, {0.5, 0.394531}, {0.5, 0.375}, {
+            0.647187, 0.345937}}], 
+           PolygonBox[{{0.5, 0.5}, {0.30375, 0.46125}, {0.311416, 0.443233}, {
+            0.5, 0.480469}}], 
+           PolygonBox[{{0.30375, 0.46125}, {0.145, 0.355}, {0.158867, 
+            0.341133}, {0.311416, 0.443233}}], 
+           PolygonBox[{{0.145, 0.355}, {0.03875, 0.19625}, {0.0567676, 
+            0.188584}, {0.158867, 0.341133}}], 
+           PolygonBox[{{0.03875, 0.19625}, {0, 0}, {0.0195312, 0}, {0.0567676,
+              0.188584}}], 
+           PolygonBox[{{0.5, 0.480469}, {0.311416, 0.443233}, {0.328281, 
+            0.403594}, {0.5, 0.4375}}], 
+           PolygonBox[{{0.311416, 0.443233}, {0.158867, 0.341133}, {0.189375, 
+            0.310625}, {0.328281, 0.403594}}], 
+           PolygonBox[{{0.158867, 0.341133}, {0.0567676, 0.188584}, {
+            0.0964063, 0.171719}, {0.189375, 0.310625}}], 
+           PolygonBox[{{0.0567676, 0.188584}, {0.0195312, 0}, {0.0625, 0}, {
+             0.0964063, 0.171719}}], 
+           PolygonBox[{{0.5, 0.4375}, {0.328281, 0.403594}, {0.345146, 
+            0.363955}, {0.5, 0.394531}}], 
+           PolygonBox[{{0.328281, 0.403594}, {0.189375, 0.310625}, {0.219883, 
+            0.280117}, {0.345146, 0.363955}}], 
+           PolygonBox[{{0.189375, 0.310625}, {0.0964063, 0.171719}, {0.136045,
+             0.154853}, {0.219883, 0.280117}}], 
+           PolygonBox[{{0.0964063, 0.171719}, {0.0625, 0}, {0.105469, 0}, {
+             0.136045, 0.154853}}], 
+           PolygonBox[{{0.5, 0.394531}, {0.345146, 0.363955}, {0.352812, 
+            0.345937}, {0.5, 0.375}}], 
+           PolygonBox[{{0.345146, 0.363955}, {0.219883, 0.280117}, {0.23375, 
+            0.26625}, {0.352812, 0.345937}}], 
+           PolygonBox[{{0.219883, 0.280117}, {0.136045, 0.154853}, {0.154062, 
+            0.147187}, {0.23375, 0.26625}}], 
+           PolygonBox[{{0.136045, 0.154853}, {0.105469, 0}, {0.125, 0}, {
+             0.154062, 0.147187}}], 
+           PolygonBox[{{0, 0}, {0.03875, -0.19625}, {0.0567676, -0.188584}, {
+             0.0195312, 0}}], 
+           PolygonBox[{{0.03875, -0.19625}, {0.145, -0.355}, {
+            0.158867, -0.341133}, {0.0567676, -0.188584}}], 
+           PolygonBox[{{0.145, -0.355}, {0.30375, -0.46125}, {
+            0.311416, -0.443233}, {0.158867, -0.341133}}], 
+           PolygonBox[{{0.30375, -0.46125}, {0.5, -0.5}, {0.5, -0.480469}, {
+            0.311416, -0.443233}}], 
+           PolygonBox[{{0.0195312, 0}, {0.0567676, -0.188584}, {
+             0.0964063, -0.171719}, {0.0625, 0}}], 
+           PolygonBox[{{0.0567676, -0.188584}, {0.158867, -0.341133}, {
+            0.189375, -0.310625}, {0.0964063, -0.171719}}], 
+           PolygonBox[{{0.158867, -0.341133}, {0.311416, -0.443233}, {
+            0.328281, -0.403594}, {0.189375, -0.310625}}], 
+           PolygonBox[{{0.311416, -0.443233}, {0.5, -0.480469}, {
+            0.5, -0.4375}, {0.328281, -0.403594}}], 
+           PolygonBox[{{0.0625, 0}, {0.0964063, -0.171719}, {
+             0.136045, -0.154853}, {0.105469, 0}}], 
+           PolygonBox[{{0.0964063, -0.171719}, {0.189375, -0.310625}, {
+            0.219883, -0.280117}, {0.136045, -0.154853}}], 
+           PolygonBox[{{0.189375, -0.310625}, {0.328281, -0.403594}, {
+            0.345146, -0.363955}, {0.219883, -0.280117}}], 
+           PolygonBox[{{0.328281, -0.403594}, {0.5, -0.4375}, {
+            0.5, -0.394531}, {0.345146, -0.363955}}], 
+           PolygonBox[{{0.105469, 0}, {0.136045, -0.154853}, {
+             0.154062, -0.147187}, {0.125, 0}}], 
+           PolygonBox[{{0.136045, -0.154853}, {0.219883, -0.280117}, {
+            0.23375, -0.26625}, {0.154062, -0.147187}}], 
+           PolygonBox[{{0.219883, -0.280117}, {0.345146, -0.363955}, {
+            0.352812, -0.345937}, {0.23375, -0.26625}}], 
+           PolygonBox[{{0.345146, -0.363955}, {0.5, -0.394531}, {
+            0.5, -0.375}, {0.352812, -0.345937}}], 
+           PolygonBox[{{0.5, -0.5}, {0.69625, -0.46125}, {
+            0.688584, -0.443233}, {0.5, -0.480469}}], 
+           PolygonBox[{{0.69625, -0.46125}, {0.855, -0.355}, {
+            0.841133, -0.341133}, {0.688584, -0.443233}}], 
+           PolygonBox[{{0.855, -0.355}, {0.96125, -0.19625}, {
+            0.943232, -0.188584}, {0.841133, -0.341133}}], 
+           PolygonBox[{{0.96125, -0.19625}, {1, 0}, {0.980469, 0}, {
+             0.943232, -0.188584}}], 
+           PolygonBox[{{0.5, -0.480469}, {0.688584, -0.443233}, {
+            0.671719, -0.403594}, {0.5, -0.4375}}], 
+           PolygonBox[{{0.688584, -0.443233}, {0.841133, -0.341133}, {
+            0.810625, -0.310625}, {0.671719, -0.403594}}], 
+           PolygonBox[{{0.841133, -0.341133}, {0.943232, -0.188584}, {
+            0.903594, -0.171719}, {0.810625, -0.310625}}], 
+           PolygonBox[{{0.943232, -0.188584}, {0.980469, 0}, {0.9375, 0}, {
+             0.903594, -0.171719}}], 
+           PolygonBox[{{0.5, -0.4375}, {0.671719, -0.403594}, {
+            0.654853, -0.363955}, {0.5, -0.394531}}], 
+           PolygonBox[{{0.671719, -0.403594}, {0.810625, -0.310625}, {
+            0.780117, -0.280117}, {0.654853, -0.363955}}], 
+           PolygonBox[{{0.810625, -0.310625}, {0.903594, -0.171719}, {
+            0.863955, -0.154853}, {0.780117, -0.280117}}], 
+           PolygonBox[{{0.903594, -0.171719}, {0.9375, 0}, {0.894531, 0}, {
+             0.863955, -0.154853}}], 
+           PolygonBox[{{0.5, -0.394531}, {0.654853, -0.363955}, {
+            0.647187, -0.345937}, {0.5, -0.375}}], 
+           PolygonBox[{{0.654853, -0.363955}, {0.780117, -0.280117}, {
+            0.76625, -0.26625}, {0.647187, -0.345937}}], 
+           PolygonBox[{{0.780117, -0.280117}, {0.863955, -0.154853}, {
+            0.845937, -0.147187}, {0.76625, -0.26625}}], 
+           PolygonBox[{{0.863955, -0.154853}, {0.894531, 0}, {0.875, 0}, {
+             0.845937, -0.147187}}], 
+           PolygonBox[{{0.1, 0}, {0.103906, 0.0421881}, {-0.0202759, 
+             0.0421881}, {-0.0167969, 0}}], 
+           PolygonBox[{{0.103906, 0.0421881}, {0.1125, 
+            0.0562508}, {-0.0279297, 0.0562508}, {-0.0202759, 0.0421881}}], 
+           PolygonBox[{{0.1125, 0.0562508}, {0.121094, 
+            0.0421881}, {-0.0355835, 0.0421881}, {-0.0279297, 0.0562508}}], 
+           PolygonBox[{{0.121094, 0.0421881}, {
+             0.125, 0}, {-0.0390625, 0}, {-0.0355835, 0.0421881}}], 
+           PolygonBox[{{-0.0167969, 0}, {-0.0202759, 0.0421881}, {-0.111426, 
+             0.0421881}, {-0.103125, 0}}], 
+           PolygonBox[{{-0.0202759, 0.0421881}, {-0.0279297, 
+            0.0562508}, {-0.129688, 0.0562508}, {-0.111426, 0.0421881}}], 
+           PolygonBox[{{-0.0279297, 0.0562508}, {-0.0355835, 
+            0.0421881}, {-0.147949, 0.0421881}, {-0.129688, 0.0562508}}], 
+           PolygonBox[{{-0.0355835, 
+             0.0421881}, {-0.0390625, 0}, {-0.15625, 0}, {-0.147949, 
+             0.0421881}}], 
+           PolygonBox[{{-0.103125, 0}, {-0.111426, 0.0421881}, {-0.167566, 
+             0.0421881}, {-0.156641, 0}}], 
+           PolygonBox[{{-0.111426, 0.0421881}, {-0.129688, 
+            0.0562508}, {-0.191602, 0.0562508}, {-0.167566, 0.0421881}}], 
+           PolygonBox[{{-0.129688, 0.0562508}, {-0.147949, 
+            0.0421881}, {-0.215637, 0.0421881}, {-0.191602, 0.0562508}}], 
+           PolygonBox[{{-0.147949, 
+             0.0421881}, {-0.15625, 0}, {-0.226562, 0}, {-0.215637, 
+             0.0421881}}], 
+           PolygonBox[{{-0.156641, 0}, {-0.167566, 0.0421881}, {-0.186719, 
+             0.0421881}, {-0.175, 0}}], 
+           PolygonBox[{{-0.167566, 0.0421881}, {-0.191602, 
+            0.0562508}, {-0.2125, 0.0562508}, {-0.186719, 0.0421881}}], 
+           PolygonBox[{{-0.191602, 0.0562508}, {-0.215637, 
+            0.0421881}, {-0.238281, 0.0421881}, {-0.2125, 0.0562508}}], 
+           PolygonBox[{{-0.215637, 
+             0.0421881}, {-0.226562, 0}, {-0.25, 0}, {-0.238281, 0.0421881}}],
+            PolygonBox[{{0.125, 0}, {
+             0.121094, -0.0421881}, {-0.0355835, -0.0421881}, {-0.0390625, 
+              0}}], PolygonBox[{{0.121094, -0.0421881}, {
+            0.1125, -0.0562508}, {-0.0279297, -0.0562508}, {-0.0355835, \
+-0.0421881}}], 
+           PolygonBox[{{0.1125, -0.0562508}, {
+            0.103906, -0.0421881}, {-0.0202759, -0.0421881}, {-0.0279297, \
+-0.0562508}}], 
+           PolygonBox[{{0.103906, -0.0421881}, {
+             0.1, 0}, {-0.0167969, 0}, {-0.0202759, -0.0421881}}], 
+           PolygonBox[{{-0.0390625, 
+              0}, {-0.0355835, -0.0421881}, {-0.147949, -0.0421881}, \
+{-0.15625, 0}}], 
+           PolygonBox[{{-0.0355835, -0.0421881}, {-0.0279297, -0.0562508}, \
+{-0.129688, -0.0562508}, {-0.147949, -0.0421881}}], 
+           PolygonBox[{{-0.0279297, -0.0562508}, {-0.0202759, -0.0421881}, \
+{-0.111426, -0.0421881}, {-0.129688, -0.0562508}}], 
+           PolygonBox[{{-0.0202759, -0.0421881}, {-0.0167969, 0}, {-0.103125, 
+              0}, {-0.111426, -0.0421881}}], 
+           PolygonBox[{{-0.15625, 
+              0}, {-0.147949, -0.0421881}, {-0.215637, -0.0421881}, \
+{-0.226562, 0}}], 
+           PolygonBox[{{-0.147949, -0.0421881}, {-0.129688, -0.0562508}, \
+{-0.191602, -0.0562508}, {-0.215637, -0.0421881}}], 
+           PolygonBox[{{-0.129688, -0.0562508}, {-0.111426, -0.0421881}, \
+{-0.167566, -0.0421881}, {-0.191602, -0.0562508}}], 
+           PolygonBox[{{-0.111426, -0.0421881}, {-0.103125, 0}, {-0.156641, 
+              0}, {-0.167566, -0.0421881}}], 
+           PolygonBox[{{-0.226562, 
+              0}, {-0.215637, -0.0421881}, {-0.238281, -0.0421881}, {-0.25, 
+              0}}], PolygonBox[{{-0.215637, -0.0421881}, {-0.191602, \
+-0.0562508}, {-0.2125, -0.0562508}, {-0.238281, -0.0421881}}], 
+           PolygonBox[{{-0.191602, -0.0562508}, {-0.167566, -0.0421881}, \
+{-0.186719, -0.0421881}, {-0.2125, -0.0562508}}], 
+           PolygonBox[{{-0.167566, -0.0421881}, {-0.156641, 0}, {-0.175, 
+              0}, {-0.186719, -0.0421881}}], 
+           PolygonBox[{{-0.175, 0}, {-0.186719, 0.0421881}, {-0.175885, 
+             0.0421881}, {-0.165234, 0}}], 
+           PolygonBox[{{-0.186719, 0.0421881}, {-0.2125, 
+            0.0562508}, {-0.199316, 0.0562508}, {-0.175885, 0.0421881}}], 
+           PolygonBox[{{-0.2125, 0.0562508}, {-0.238281, 
+            0.0421881}, {-0.222748, 0.0421881}, {-0.199316, 0.0562508}}], 
+           PolygonBox[{{-0.238281, 
+             0.0421881}, {-0.25, 0}, {-0.233398, 0}, {-0.222748, 0.0421881}}],
+            PolygonBox[{{-0.165234, 0}, {-0.175885, 0.0421881}, {-0.141943, 
+             0.0421881}, {-0.134375, 0}}], 
+           PolygonBox[{{-0.175885, 0.0421881}, {-0.199316, 
+            0.0562508}, {-0.158594, 0.0562508}, {-0.141943, 0.0421881}}], 
+           PolygonBox[{{-0.199316, 0.0562508}, {-0.222748, 
+            0.0421881}, {-0.175244, 0.0421881}, {-0.158594, 0.0562508}}], 
+           PolygonBox[{{-0.222748, 
+             0.0421881}, {-0.233398, 0}, {-0.182812, 0}, {-0.175244, 
+             0.0421881}}], 
+           PolygonBox[{{-0.134375, 0}, {-0.141943, 0.0421881}, {-0.0827332, 
+             0.0421881}, {-0.0800781, 0}}], 
+           PolygonBox[{{-0.141943, 0.0421881}, {-0.158594, 
+            0.0562508}, {-0.0885742, 0.0562508}, {-0.0827332, 0.0421881}}], 
+           PolygonBox[{{-0.158594, 0.0562508}, {-0.175244, 
+            0.0421881}, {-0.0944153, 0.0421881}, {-0.0885742, 0.0562508}}], 
+           PolygonBox[{{-0.175244, 
+             0.0421881}, {-0.182812, 0}, {-0.0970703, 0}, {-0.0944153, 
+             0.0421881}}], 
+           PolygonBox[{{-0.0800781, 0}, {-0.0827332, 0.0421881}, {0.00390625, 
+             0.0421881}, {0, 0}}], 
+           PolygonBox[{{-0.0827332, 0.0421881}, {-0.0885742, 0.0562508}, {
+            0.0125, 0.0562508}, {0.00390625, 0.0421881}}], 
+           PolygonBox[{{-0.0885742, 0.0562508}, {-0.0944153, 0.0421881}, {
+            0.0210938, 0.0421881}, {0.0125, 0.0562508}}], 
+           PolygonBox[{{-0.0944153, 0.0421881}, {-0.0970703, 0}, {0.025, 0}, {
+             0.0210938, 0.0421881}}], 
+           PolygonBox[{{-0.25, 
+              0}, {-0.238281, -0.0421881}, {-0.222748, -0.0421881}, \
+{-0.233398, 0}}], 
+           PolygonBox[{{-0.238281, -0.0421881}, {-0.2125, -0.0562508}, \
+{-0.199316, -0.0562508}, {-0.222748, -0.0421881}}], 
+           PolygonBox[{{-0.2125, -0.0562508}, {-0.186719, -0.0421881}, \
+{-0.175885, -0.0421881}, {-0.199316, -0.0562508}}], 
+           PolygonBox[{{-0.186719, -0.0421881}, {-0.175, 0}, {-0.165234, 
+              0}, {-0.175885, -0.0421881}}], 
+           PolygonBox[{{-0.233398, 
+              0}, {-0.222748, -0.0421881}, {-0.175244, -0.0421881}, \
+{-0.182812, 0}}], 
+           PolygonBox[{{-0.222748, -0.0421881}, {-0.199316, -0.0562508}, \
+{-0.158594, -0.0562508}, {-0.175244, -0.0421881}}], 
+           PolygonBox[{{-0.199316, -0.0562508}, {-0.175885, -0.0421881}, \
+{-0.141943, -0.0421881}, {-0.158594, -0.0562508}}], 
+           PolygonBox[{{-0.175885, -0.0421881}, {-0.165234, 0}, {-0.134375, 
+              0}, {-0.141943, -0.0421881}}], 
+           PolygonBox[{{-0.182812, 
+              0}, {-0.175244, -0.0421881}, {-0.0944153, -0.0421881}, \
+{-0.0970703, 0}}], 
+           PolygonBox[{{-0.175244, -0.0421881}, {-0.158594, -0.0562508}, \
+{-0.0885742, -0.0562508}, {-0.0944153, -0.0421881}}], 
+           PolygonBox[{{-0.158594, -0.0562508}, {-0.141943, -0.0421881}, \
+{-0.0827332, -0.0421881}, {-0.0885742, -0.0562508}}], 
+           PolygonBox[{{-0.141943, -0.0421881}, {-0.134375, 0}, {-0.0800781, 
+              0}, {-0.0827332, -0.0421881}}], 
+           PolygonBox[{{-0.0970703, 0}, {-0.0944153, -0.0421881}, {
+             0.0210938, -0.0421881}, {0.025, 0}}], 
+           PolygonBox[{{-0.0944153, -0.0421881}, {-0.0885742, -0.0562508}, {
+            0.0125, -0.0562508}, {0.0210938, -0.0421881}}], 
+           PolygonBox[{{-0.0885742, -0.0562508}, {-0.0827332, -0.0421881}, {
+            0.00390625, -0.0421881}, {0.0125, -0.0562508}}], 
+           PolygonBox[{{-0.0827332, -0.0421881}, {-0.0800781, 0}, {0, 0}, {
+             0.00390625, -0.0421881}}], 
+           PolygonBox[{{0.925, 0}, {0.925, 0.0928131}, {1.05408, 0.0838042}, {
+             1.04492, 0}}], 
+           PolygonBox[{{0.925, 0.0928131}, {0.925, 0.123751}, {1.07422, 
+            0.111739}, {1.05408, 0.0838042}}], 
+           PolygonBox[{{0.925, 0.123751}, {0.925, 0.0928131}, {1.09436, 
+            0.0838042}, {1.07422, 0.111739}}], 
+           PolygonBox[{{0.925, 0.0928131}, {0.925, 0}, {1.10352, 0}, {1.09436,
+              0.0838042}}], 
+           PolygonBox[{{1.04492, 0}, {1.05408, 0.0838042}, {1.10859, 
+             0.0639847}, {1.09687, 0}}], 
+           PolygonBox[{{1.05408, 0.0838042}, {1.07422, 0.111739}, {1.13437, 
+            0.0853129}, {1.10859, 0.0639847}}], 
+           PolygonBox[{{1.07422, 0.111739}, {1.09436, 0.0838042}, {1.16016, 
+            0.0639847}, {1.13437, 0.0853129}}], 
+           PolygonBox[{{1.09436, 0.0838042}, {1.10352, 0}, {1.17188, 0}, {
+             1.16016, 0.0639847}}], 
+           PolygonBox[{{1.09687, 0}, {1.10859, 0.0639847}, {1.13967, 
+             0.0441651}, {1.12539, 0}}], 
+           PolygonBox[{{1.10859, 0.0639847}, {1.13437, 0.0853129}, {1.17109, 
+            0.0588868}, {1.13967, 0.0441651}}], 
+           PolygonBox[{{1.13437, 0.0853129}, {1.16016, 0.0639847}, {1.20251, 
+            0.0441651}, {1.17109, 0.0588868}}], 
+           PolygonBox[{{1.16016, 0.0639847}, {1.17188, 0}, {1.2168, 0}, {
+             1.20251, 0.0441651}}], 
+           PolygonBox[{{1.12539, 0}, {1.13967, 0.0441651}, {1.19844, 
+             0.0351562}, {1.175, 0}}], 
+           PolygonBox[{{1.13967, 0.0441651}, {1.17109, 0.0588868}, {1.25, 
+            0.046875}, {1.19844, 0.0351562}}], 
+           PolygonBox[{{1.17109, 0.0588868}, {1.20251, 0.0441651}, {1.30156, 
+            0.0351562}, {1.25, 0.046875}}], 
+           PolygonBox[{{1.20251, 0.0441651}, {1.2168, 0}, {1.325, 0}, {
+             1.30156, 0.0351562}}], 
+           PolygonBox[{{0.925, 0}, {0.925, -0.0928131}, {
+             1.09436, -0.0838042}, {1.10352, 0}}], 
+           PolygonBox[{{0.925, -0.0928131}, {0.925, -0.123751}, {
+            1.07422, -0.111739}, {1.09436, -0.0838042}}], 
+           PolygonBox[{{0.925, -0.123751}, {0.925, -0.0928131}, {
+            1.05408, -0.0838042}, {1.07422, -0.111739}}], 
+           PolygonBox[{{0.925, -0.0928131}, {0.925, 0}, {1.04492, 0}, {
+             1.05408, -0.0838042}}], 
+           PolygonBox[{{1.10352, 0}, {1.09436, -0.0838042}, {
+             1.16016, -0.0639847}, {1.17188, 0}}], 
+           PolygonBox[{{1.09436, -0.0838042}, {1.07422, -0.111739}, {
+            1.13437, -0.0853129}, {1.16016, -0.0639847}}], 
+           PolygonBox[{{1.07422, -0.111739}, {1.05408, -0.0838042}, {
+            1.10859, -0.0639847}, {1.13437, -0.0853129}}], 
+           PolygonBox[{{1.05408, -0.0838042}, {1.04492, 0}, {1.09687, 0}, {
+             1.10859, -0.0639847}}], 
+           PolygonBox[{{1.17188, 0}, {1.16016, -0.0639847}, {
+             1.20251, -0.0441651}, {1.2168, 0}}], 
+           PolygonBox[{{1.16016, -0.0639847}, {1.13437, -0.0853129}, {
+            1.17109, -0.0588868}, {1.20251, -0.0441651}}], 
+           PolygonBox[{{1.13437, -0.0853129}, {1.10859, -0.0639847}, {
+            1.13967, -0.0441651}, {1.17109, -0.0588868}}], 
+           PolygonBox[{{1.10859, -0.0639847}, {1.09687, 0}, {1.12539, 0}, {
+             1.13967, -0.0441651}}], 
+           PolygonBox[{{1.2168, 0}, {1.20251, -0.0441651}, {
+             1.30156, -0.0351562}, {1.325, 0}}], 
+           PolygonBox[{{1.20251, -0.0441651}, {1.17109, -0.0588868}, {
+            1.25, -0.046875}, {1.30156, -0.0351562}}], 
+           PolygonBox[{{1.17109, -0.0588868}, {1.13967, -0.0441651}, {
+            1.19844, -0.0351562}, {1.25, -0.046875}}], 
+           PolygonBox[{{1.13967, -0.0441651}, {1.12539, 0}, {1.175, 0}, {
+             1.19844, -0.0351562}}], 
+           PolygonBox[{{1.175, 0}, {1.19844, 0.0351562}, {1.21807, 
+             0.032959}, {1.19297, 0}}], 
+           PolygonBox[{{1.19844, 0.0351562}, {1.25, 0.046875}, {1.27329, 
+            0.0439453}, {1.21807, 0.032959}}], 
+           PolygonBox[{{1.25, 0.046875}, {1.30156, 0.0351562}, {1.32851, 
+            0.032959}, {1.27329, 0.0439453}}], 
+           PolygonBox[{{1.30156, 0.0351562}, {1.325, 0}, {1.35361, 0}, {
+             1.32851, 0.032959}}], 
+           PolygonBox[{{1.19297, 0}, {1.21807, 0.032959}, {1.22981, 
+             0.028125}, {1.20625, 0}}], 
+           PolygonBox[{{1.21807, 0.032959}, {1.27329, 0.0439453}, {1.28164, 
+            0.0375}, {1.22981, 0.028125}}], 
+           PolygonBox[{{1.27329, 0.0439453}, {1.32851, 0.032959}, {1.33347, 
+            0.028125}, {1.28164, 0.0375}}], 
+           PolygonBox[{{1.32851, 0.032959}, {1.35361, 0}, {1.35703, 0}, {
+             1.33347, 0.028125}}], 
+           PolygonBox[{{1.20625, 0}, {1.22981, 0.028125}, {1.23016, 
+             0.023291}, {1.21016, 0}}], 
+           PolygonBox[{{1.22981, 0.028125}, {1.28164, 0.0375}, {1.27417, 
+            0.0310547}, {1.23016, 0.023291}}], 
+           PolygonBox[{{1.28164, 0.0375}, {1.33347, 0.028125}, {1.31818, 
+            0.023291}, {1.27417, 0.0310547}}], 
+           PolygonBox[{{1.33347, 0.028125}, {1.35703, 0}, {1.33818, 0}, {
+             1.31818, 0.023291}}], 
+           PolygonBox[{{1.21016, 0}, {1.23016, 0.023291}, {1.21563, 
+             0.0210938}, {1.2, 0}}], 
+           PolygonBox[{{1.23016, 0.023291}, {1.27417, 0.0310547}, {1.25, 
+            0.028125}, {1.21563, 0.0210938}}], 
+           PolygonBox[{{1.27417, 0.0310547}, {1.31818, 0.023291}, {1.28437, 
+            0.0210938}, {1.25, 0.028125}}], 
+           PolygonBox[{{1.31818, 0.023291}, {1.33818, 0}, {1.3, 0}, {1.28437, 
+             0.0210938}}], 
+           PolygonBox[{{1.325, 0}, {1.30156, -0.0351562}, {
+             1.32851, -0.032959}, {1.35361, 0}}], 
+           PolygonBox[{{1.30156, -0.0351562}, {1.25, -0.046875}, {
+            1.27329, -0.0439453}, {1.32851, -0.032959}}], 
+           PolygonBox[{{1.25, -0.046875}, {1.19844, -0.0351562}, {
+            1.21807, -0.032959}, {1.27329, -0.0439453}}], 
+           PolygonBox[{{1.19844, -0.0351562}, {1.175, 0}, {1.19297, 0}, {
+             1.21807, -0.032959}}], 
+           PolygonBox[{{1.35361, 0}, {1.32851, -0.032959}, {
+             1.33347, -0.028125}, {1.35703, 0}}], 
+           PolygonBox[{{1.32851, -0.032959}, {1.27329, -0.0439453}, {
+            1.28164, -0.0375}, {1.33347, -0.028125}}], 
+           PolygonBox[{{1.27329, -0.0439453}, {1.21807, -0.032959}, {
+            1.22981, -0.028125}, {1.28164, -0.0375}}], 
+           PolygonBox[{{1.21807, -0.032959}, {1.19297, 0}, {1.20625, 0}, {
+             1.22981, -0.028125}}], 
+           PolygonBox[{{1.35703, 0}, {1.33347, -0.028125}, {
+             1.31818, -0.023291}, {1.33818, 0}}], 
+           PolygonBox[{{1.33347, -0.028125}, {1.28164, -0.0375}, {
+            1.27417, -0.0310547}, {1.31818, -0.023291}}], 
+           PolygonBox[{{1.28164, -0.0375}, {1.22981, -0.028125}, {
+            1.23016, -0.023291}, {1.27417, -0.0310547}}], 
+           PolygonBox[{{1.22981, -0.028125}, {1.20625, 0}, {1.21016, 0}, {
+             1.23016, -0.023291}}], 
+           PolygonBox[{{1.33818, 0}, {1.31818, -0.023291}, {
+             1.28437, -0.0210938}, {1.3, 0}}], 
+           PolygonBox[{{1.31818, -0.023291}, {1.27417, -0.0310547}, {
+            1.25, -0.028125}, {1.28437, -0.0210938}}], 
+           PolygonBox[{{1.27417, -0.0310547}, {1.23016, -0.023291}, {
+            1.21563, -0.0210938}, {1.25, -0.028125}}], 
+           PolygonBox[{{1.23016, -0.023291}, {1.21016, 0}, {1.2, 0}, {
+             1.21563, -0.0210938}}], 
+           PolygonBox[{{0.5, 0}, {0.578586, 0.0335127}, {0.585156, 0}}], 
+           PolygonBox[{{0.5, 0}, {0.56054, 0.0605401}, {0.578586, 
+             0.0335127}}], 
+           PolygonBox[{{0.5, 0}, {0.533513, 0.0785866}, {0.56054, 
+             0.0605401}}], 
+           PolygonBox[{{0.5, 0}, {0.5, 0.0851567}, {0.533513, 0.0785866}}], 
+           PolygonBox[{{0.585156, 0}, {0.578586, 0.0335127}, {0.574979, 
+             0.0319696}, {0.58125, 0}}], 
+           PolygonBox[{{0.578586, 0.0335127}, {0.56054, 0.0605401}, {0.557758,
+             0.0577578}, {0.574979, 0.0319696}}], 
+           PolygonBox[{{0.56054, 0.0605401}, {0.533513, 0.0785866}, {0.53197, 
+            0.0749796}, {0.557758, 0.0577578}}], 
+           PolygonBox[{{0.533513, 0.0785866}, {0.5, 0.0851567}, {0.5, 
+            0.0812503}, {0.53197, 0.0749796}}], 
+           PolygonBox[{{0.58125, 0}, {0.574979, 0.0319696}, {0.545414, 
+             0.0193479}, {0.549219, 0}}], 
+           PolygonBox[{{0.574979, 0.0319696}, {0.557758, 0.0577578}, {
+            0.534972, 0.0349715}, {0.545414, 0.0193479}}], 
+           PolygonBox[{{0.557758, 0.0577578}, {0.53197, 0.0749796}, {0.519348,
+             0.0454139}, {0.534972, 0.0349715}}], 
+           PolygonBox[{{0.53197, 0.0749796}, {0.5, 0.0812503}, {0.5, 
+            0.0492185}, {0.519348, 0.0454139}}], 
+           PolygonBox[{{0.549219, 0}, {0.545414, 0.0193479}, {0.546125, 
+             0.0196248}, {0.55, 0}}], 
+           PolygonBox[{{0.545414, 0.0193479}, {0.534972, 0.0349715}, {0.5355, 
+            0.0354995}, {0.546125, 0.0196248}}], 
+           PolygonBox[{{0.534972, 0.0349715}, {0.519348, 0.0454139}, {
+            0.519625, 0.0461242}, {0.5355, 0.0354995}}], 
+           PolygonBox[{{0.519348, 0.0454139}, {0.5, 0.0492185}, {0.5, 
+            0.049999}, {0.519625, 0.0461242}}], 
+           PolygonBox[{{0.5, 0}, {0.466487, 0.0785866}, {0.5, 0.0851567}}], 
+           PolygonBox[{{0.5, 0}, {0.43946, 0.0605401}, {0.466487, 
+             0.0785866}}], 
+           PolygonBox[{{0.5, 0}, {0.421414, 0.0335127}, {0.43946, 
+             0.0605401}}], 
+           PolygonBox[{{0.5, 0}, {0.414844, 0}, {0.421414, 0.0335127}}], 
+           PolygonBox[{{0.5, 0.0851567}, {0.466487, 0.0785866}, {0.46803, 
+            0.0749796}, {0.5, 0.0812503}}], 
+           PolygonBox[{{0.466487, 0.0785866}, {0.43946, 0.0605401}, {0.442242,
+             0.0577578}, {0.46803, 0.0749796}}], 
+           PolygonBox[{{0.43946, 0.0605401}, {0.421414, 0.0335127}, {0.425021,
+             0.0319696}, {0.442242, 0.0577578}}], 
+           PolygonBox[{{0.421414, 0.0335127}, {0.414844, 0}, {0.41875, 0}, {
+             0.425021, 0.0319696}}], 
+           PolygonBox[{{0.5, 0.0812503}, {0.46803, 0.0749796}, {0.480652, 
+            0.0454139}, {0.5, 0.0492185}}], 
+           PolygonBox[{{0.46803, 0.0749796}, {0.442242, 0.0577578}, {0.465028,
+             0.0349715}, {0.480652, 0.0454139}}], 
+           PolygonBox[{{0.442242, 0.0577578}, {0.425021, 0.0319696}, {
+            0.454586, 0.0193479}, {0.465028, 0.0349715}}], 
+           PolygonBox[{{0.425021, 0.0319696}, {0.41875, 0}, {0.450781, 0}, {
+             0.454586, 0.0193479}}], 
+           PolygonBox[{{0.5, 0.0492185}, {0.480652, 0.0454139}, {0.480375, 
+            0.0461242}, {0.5, 0.049999}}], 
+           PolygonBox[{{0.480652, 0.0454139}, {0.465028, 0.0349715}, {0.4645, 
+            0.0354995}, {0.480375, 0.0461242}}], 
+           PolygonBox[{{0.465028, 0.0349715}, {0.454586, 0.0193479}, {
+            0.453875, 0.0196248}, {0.4645, 0.0354995}}], 
+           PolygonBox[{{0.454586, 0.0193479}, {0.450781, 0}, {0.45, 0}, {
+             0.453875, 0.0196248}}], 
+           PolygonBox[{{0.5, 0}, {0.421414, -0.0335127}, {0.414844, 0}}], 
+           PolygonBox[{{0.5, 0}, {0.43946, -0.0605401}, {
+             0.421414, -0.0335127}}], 
+           PolygonBox[{{0.5, 0}, {0.466487, -0.0785866}, {
+             0.43946, -0.0605401}}], 
+           PolygonBox[{{0.5, 0}, {0.5, -0.0851567}, {0.466487, -0.0785866}}], 
+           PolygonBox[{{0.414844, 0}, {0.421414, -0.0335127}, {
+             0.425021, -0.0319696}, {0.41875, 0}}], 
+           PolygonBox[{{0.421414, -0.0335127}, {0.43946, -0.0605401}, {
+            0.442242, -0.0577578}, {0.425021, -0.0319696}}], 
+           PolygonBox[{{0.43946, -0.0605401}, {0.466487, -0.0785866}, {
+            0.46803, -0.0749796}, {0.442242, -0.0577578}}], 
+           PolygonBox[{{0.466487, -0.0785866}, {0.5, -0.0851567}, {
+            0.5, -0.0812503}, {0.46803, -0.0749796}}], 
+           PolygonBox[{{0.41875, 0}, {0.425021, -0.0319696}, {
+             0.454586, -0.0193479}, {0.450781, 0}}], 
+           PolygonBox[{{0.425021, -0.0319696}, {0.442242, -0.0577578}, {
+            0.465028, -0.0349715}, {0.454586, -0.0193479}}], 
+           PolygonBox[{{0.442242, -0.0577578}, {0.46803, -0.0749796}, {
+            0.480652, -0.0454139}, {0.465028, -0.0349715}}], 
+           PolygonBox[{{0.46803, -0.0749796}, {0.5, -0.0812503}, {
+            0.5, -0.0492185}, {0.480652, -0.0454139}}], 
+           PolygonBox[{{0.450781, 0}, {0.454586, -0.0193479}, {
+             0.453875, -0.0196248}, {0.45, 0}}], 
+           PolygonBox[{{0.454586, -0.0193479}, {0.465028, -0.0349715}, {
+            0.4645, -0.0354995}, {0.453875, -0.0196248}}], 
+           PolygonBox[{{0.465028, -0.0349715}, {0.480652, -0.0454139}, {
+            0.480375, -0.0461242}, {0.4645, -0.0354995}}], 
+           PolygonBox[{{0.480652, -0.0454139}, {0.5, -0.0492185}, {
+            0.5, -0.049999}, {0.480375, -0.0461242}}], 
+           PolygonBox[{{0.5, 0}, {0.533513, -0.0785866}, {0.5, -0.0851567}}], 
+           PolygonBox[{{0.5, 0}, {0.56054, -0.0605401}, {
+             0.533513, -0.0785866}}], 
+           PolygonBox[{{0.5, 0}, {0.578586, -0.0335127}, {
+             0.56054, -0.0605401}}], 
+           PolygonBox[{{0.5, 0}, {0.585156, 0}, {0.578586, -0.0335127}}], 
+           PolygonBox[{{0.5, -0.0851567}, {0.533513, -0.0785866}, {
+            0.53197, -0.0749796}, {0.5, -0.0812503}}], 
+           PolygonBox[{{0.533513, -0.0785866}, {0.56054, -0.0605401}, {
+            0.557758, -0.0577578}, {0.53197, -0.0749796}}], 
+           PolygonBox[{{0.56054, -0.0605401}, {0.578586, -0.0335127}, {
+            0.574979, -0.0319696}, {0.557758, -0.0577578}}], 
+           PolygonBox[{{0.578586, -0.0335127}, {0.585156, 0}, {0.58125, 0}, {
+             0.574979, -0.0319696}}], 
+           PolygonBox[{{0.5, -0.0812503}, {0.53197, -0.0749796}, {
+            0.519348, -0.0454139}, {0.5, -0.0492185}}], 
+           PolygonBox[{{0.53197, -0.0749796}, {0.557758, -0.0577578}, {
+            0.534972, -0.0349715}, {0.519348, -0.0454139}}], 
+           PolygonBox[{{0.557758, -0.0577578}, {0.574979, -0.0319696}, {
+            0.545414, -0.0193479}, {0.534972, -0.0349715}}], 
+           PolygonBox[{{0.574979, -0.0319696}, {0.58125, 0}, {0.549219, 0}, {
+             0.545414, -0.0193479}}], 
+           PolygonBox[{{0.5, -0.0492185}, {0.519348, -0.0454139}, {
+            0.519625, -0.0461242}, {0.5, -0.049999}}], 
+           PolygonBox[{{0.519348, -0.0454139}, {0.534972, -0.0349715}, {
+            0.5355, -0.0354995}, {0.519625, -0.0461242}}], 
+           PolygonBox[{{0.534972, -0.0349715}, {0.545414, -0.0193479}, {
+            0.546125, -0.0196248}, {0.5355, -0.0354995}}], 
+           PolygonBox[{{0.545414, -0.0193479}, {0.549219, 0}, {0.55, 0}, {
+             0.546125, -0.0196248}}], 
+           PolygonBox[{{0.55, 0}, {0.546125, 0.0196248}, {0.605223, 
+             0.0447694}, {0.614062, 0}}], 
+           PolygonBox[{{0.546125, 0.0196248}, {0.5355, 0.0354995}, {0.580984, 
+            0.0809842}, {0.605223, 0.0447694}}], 
+           PolygonBox[{{0.5355, 0.0354995}, {0.519625, 0.0461242}, {0.54477, 
+            0.105222}, {0.580984, 0.0809842}}], 
+           PolygonBox[{{0.519625, 0.0461242}, {0.5, 0.049999}, {0.5, 
+            0.114062}, {0.54477, 0.105222}}], 
+           PolygonBox[{{0.614062, 0}, {0.605223, 0.0447694}, {0.690266, 
+             0.080953}, {0.70625, 0}}], 
+           PolygonBox[{{0.605223, 0.0447694}, {0.580984, 0.0809842}, {
+            0.646437, 0.146438}, {0.690266, 0.080953}}], 
+           PolygonBox[{{0.580984, 0.0809842}, {0.54477, 0.105222}, {0.580953, 
+            0.190266}, {0.646437, 0.146438}}], 
+           PolygonBox[{{0.54477, 0.105222}, {0.5, 0.114062}, {0.5, 0.20625}, {
+            0.580953, 0.190266}}], 
+           PolygonBox[{{0.70625, 0}, {0.690266, 0.080953}, {0.76666, 
+             0.113457}, {0.789062, 0}}], 
+           PolygonBox[{{0.690266, 0.080953}, {0.646437, 0.146438}, {0.705234, 
+            0.205234}, {0.76666, 0.113457}}], 
+           PolygonBox[{{0.646437, 0.146438}, {0.580953, 0.190266}, {0.613457, 
+            0.266661}, {0.705234, 0.205234}}], 
+           PolygonBox[{{0.580953, 0.190266}, {0.5, 0.20625}, {0.5, 
+            0.289063}, {0.613457, 0.266661}}], 
+           PolygonBox[{{0.789062, 0}, {0.76666, 0.113457}, {0.799812, 
+             0.127562}, {0.825, 0}}], 
+           PolygonBox[{{0.76666, 0.113457}, {0.705234, 0.205234}, {0.73075, 
+            0.23075}, {0.799812, 0.127562}}], 
+           PolygonBox[{{0.705234, 0.205234}, {0.613457, 0.266661}, {0.627562, 
+            0.299813}, {0.73075, 0.23075}}], 
+           PolygonBox[{{0.613457, 0.266661}, {0.5, 0.289063}, {0.5, 
+            0.325001}, {0.627562, 0.299813}}], 
+           PolygonBox[{{0.5, 0.049999}, {0.480375, 0.0461242}, {0.45523, 
+            0.105222}, {0.5, 0.114062}}], 
+           PolygonBox[{{0.480375, 0.0461242}, {0.4645, 0.0354995}, {0.419016, 
+            0.0809842}, {0.45523, 0.105222}}], 
+           PolygonBox[{{0.4645, 0.0354995}, {0.453875, 0.0196248}, {0.394777, 
+            0.0447694}, {0.419016, 0.0809842}}], 
+           PolygonBox[{{0.453875, 0.0196248}, {0.45, 0}, {0.385938, 0}, {
+             0.394777, 0.0447694}}], 
+           PolygonBox[{{0.5, 0.114062}, {0.45523, 0.105222}, {0.419047, 
+            0.190266}, {0.5, 0.20625}}], 
+           PolygonBox[{{0.45523, 0.105222}, {0.419016, 0.0809842}, {0.353562, 
+            0.146438}, {0.419047, 0.190266}}], 
+           PolygonBox[{{0.419016, 0.0809842}, {0.394777, 0.0447694}, {
+            0.309734, 0.080953}, {0.353562, 0.146438}}], 
+           PolygonBox[{{0.394777, 0.0447694}, {0.385938, 0}, {0.29375, 0}, {
+             0.309734, 0.080953}}], 
+           PolygonBox[{{0.5, 0.20625}, {0.419047, 0.190266}, {0.386543, 
+            0.266661}, {0.5, 0.289063}}], 
+           PolygonBox[{{0.419047, 0.190266}, {0.353562, 0.146438}, {0.294766, 
+            0.205234}, {0.386543, 0.266661}}], 
+           PolygonBox[{{0.353562, 0.146438}, {0.309734, 0.080953}, {0.23334, 
+            0.113457}, {0.294766, 0.205234}}], 
+           PolygonBox[{{0.309734, 0.080953}, {0.29375, 0}, {0.210938, 0}, {
+             0.23334, 0.113457}}], 
+           PolygonBox[{{0.5, 0.289063}, {0.386543, 0.266661}, {0.372437, 
+            0.299813}, {0.5, 0.325001}}], 
+           PolygonBox[{{0.386543, 0.266661}, {0.294766, 0.205234}, {0.26925, 
+            0.23075}, {0.372437, 0.299813}}], 
+           PolygonBox[{{0.294766, 0.205234}, {0.23334, 0.113457}, {0.200187, 
+            0.127562}, {0.26925, 0.23075}}], 
+           PolygonBox[{{0.23334, 0.113457}, {0.210938, 0}, {0.175, 0}, {
+             0.200187, 0.127562}}], 
+           PolygonBox[{{0.45, 0}, {0.453875, -0.0196248}, {
+             0.394777, -0.0447694}, {0.385938, 0}}], 
+           PolygonBox[{{0.453875, -0.0196248}, {0.4645, -0.0354995}, {
+            0.419016, -0.0809842}, {0.394777, -0.0447694}}], 
+           PolygonBox[{{0.4645, -0.0354995}, {0.480375, -0.0461242}, {
+            0.45523, -0.105222}, {0.419016, -0.0809842}}], 
+           PolygonBox[{{0.480375, -0.0461242}, {0.5, -0.049999}, {
+            0.5, -0.114062}, {0.45523, -0.105222}}], 
+           PolygonBox[{{0.385938, 0}, {0.394777, -0.0447694}, {
+             0.309734, -0.080953}, {0.29375, 0}}], 
+           PolygonBox[{{0.394777, -0.0447694}, {0.419016, -0.0809842}, {
+            0.353562, -0.146438}, {0.309734, -0.080953}}], 
+           PolygonBox[{{0.419016, -0.0809842}, {0.45523, -0.105222}, {
+            0.419047, -0.190266}, {0.353562, -0.146438}}], 
+           PolygonBox[{{0.45523, -0.105222}, {0.5, -0.114062}, {
+            0.5, -0.20625}, {0.419047, -0.190266}}], 
+           PolygonBox[{{0.29375, 0}, {0.309734, -0.080953}, {
+             0.23334, -0.113457}, {0.210938, 0}}], 
+           PolygonBox[{{0.309734, -0.080953}, {0.353562, -0.146438}, {
+            0.294766, -0.205234}, {0.23334, -0.113457}}], 
+           PolygonBox[{{0.353562, -0.146438}, {0.419047, -0.190266}, {
+            0.386543, -0.266661}, {0.294766, -0.205234}}], 
+           PolygonBox[{{0.419047, -0.190266}, {0.5, -0.20625}, {
+            0.5, -0.289063}, {0.386543, -0.266661}}], 
+           PolygonBox[{{0.210938, 0}, {0.23334, -0.113457}, {
+             0.200187, -0.127562}, {0.175, 0}}], 
+           PolygonBox[{{0.23334, -0.113457}, {0.294766, -0.205234}, {
+            0.26925, -0.23075}, {0.200187, -0.127562}}], 
+           PolygonBox[{{0.294766, -0.205234}, {0.386543, -0.266661}, {
+            0.372437, -0.299813}, {0.26925, -0.23075}}], 
+           PolygonBox[{{0.386543, -0.266661}, {0.5, -0.289063}, {
+            0.5, -0.325001}, {0.372437, -0.299813}}], 
+           PolygonBox[{{0.5, -0.049999}, {0.519625, -0.0461242}, {
+            0.54477, -0.105222}, {0.5, -0.114062}}], 
+           PolygonBox[{{0.519625, -0.0461242}, {0.5355, -0.0354995}, {
+            0.580984, -0.0809842}, {0.54477, -0.105222}}], 
+           PolygonBox[{{0.5355, -0.0354995}, {0.546125, -0.0196248}, {
+            0.605223, -0.0447694}, {0.580984, -0.0809842}}], 
+           PolygonBox[{{0.546125, -0.0196248}, {0.55, 0}, {0.614062, 0}, {
+             0.605223, -0.0447694}}], 
+           PolygonBox[{{0.5, -0.114062}, {0.54477, -0.105222}, {
+            0.580953, -0.190266}, {0.5, -0.20625}}], 
+           PolygonBox[{{0.54477, -0.105222}, {0.580984, -0.0809842}, {
+            0.646437, -0.146438}, {0.580953, -0.190266}}], 
+           PolygonBox[{{0.580984, -0.0809842}, {0.605223, -0.0447694}, {
+            0.690266, -0.080953}, {0.646437, -0.146438}}], 
+           PolygonBox[{{0.605223, -0.0447694}, {0.614062, 0}, {0.70625, 0}, {
+             0.690266, -0.080953}}], 
+           PolygonBox[{{0.5, -0.20625}, {0.580953, -0.190266}, {
+            0.613457, -0.266661}, {0.5, -0.289063}}], 
+           PolygonBox[{{0.580953, -0.190266}, {0.646437, -0.146438}, {
+            0.705234, -0.205234}, {0.613457, -0.266661}}], 
+           PolygonBox[{{0.646437, -0.146438}, {0.690266, -0.080953}, {
+            0.76666, -0.113457}, {0.705234, -0.205234}}], 
+           PolygonBox[{{0.690266, -0.080953}, {0.70625, 0}, {0.789062, 0}, {
+             0.76666, -0.113457}}], 
+           PolygonBox[{{0.5, -0.289063}, {0.613457, -0.266661}, {
+            0.627562, -0.299813}, {0.5, -0.325001}}], 
+           PolygonBox[{{0.613457, -0.266661}, {0.705234, -0.205234}, {
+            0.73075, -0.23075}, {0.627562, -0.299813}}], 
+           PolygonBox[{{0.705234, -0.205234}, {0.76666, -0.113457}, {
+            0.799812, -0.127562}, {0.73075, -0.23075}}], 
+           PolygonBox[{{0.76666, -0.113457}, {0.789062, 0}, {0.825, 0}, {
+             0.799812, -0.127562}}]}, {-0.553515, 0.}]}},
+       Axes->True], {967.5, -192.}, ImageScaled[{0.5, 0.5}], {360., 360.}]}, {
+     InsetBox[
+      StyleBox["\<\"y,z\"\>",
+       StripOnInput->False,
+       FontSize->25], {193.5, -576.}, {Center, Center}, {360., 360.}], 
+     InsetBox[
+      StyleBox["\<\"x,z\"\>",
+       StripOnInput->False,
+       FontSize->25], {580.5, -576.}, {Center, Center}, {360., 360.}], 
+     InsetBox[
+      StyleBox["\<\"x,y\"\>",
+       StripOnInput->False,
+       FontSize->25], {967.5, -576.}, {Center, Center}, {360., 360.}]}}, {}},
+  ContentSelectable->True,
+  PlotRangePadding->{6, 5}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"vvXY", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+    "viewVector", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], ",", 
+    RowBox[{
+    "viewVector", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], ",",
+     "0"}], "}"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.7464850000000001`", ",", 
+   RowBox[{"-", "2.4`"}], ",", "0"}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Rotate (yaw) in the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{"X", ",", " ", "Y"}], "}"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " plane:"
+}], "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RotationMatrix", "[", 
+   RowBox[{
+    RowBox[{"ArcTan", "@@", 
+     RowBox[{"vvXY", "\[LeftDoubleBracket]", 
+      RowBox[{";;", "2"}], "\[RightDoubleBracket]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "0"}], "}"}], ",", "vvXY"}], "}"}]}], 
+   "]"}], "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"0.2970006515313948`", 
+      RowBox[{"-", "0.9548772764025368`"}], "0.`"},
+     {"0.9548772764025368`", "0.29700065153139493`", "0.`"},
+     {"0.`", "0.`", "1.`"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Pitch in the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{"X", ",", " ", "Z"}], "}"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " plane:"
+}], "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RotationMatrix", "[", 
+   RowBox[{
+    RowBox[{"ArcTan", "[", 
+     RowBox[{
+      RowBox[{
+      "viewVector", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}], 
+      ",", 
+      RowBox[{"Norm", "[", "vvXY", "]"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"vvXY", ",", "viewVector"}], "}"}]}], "]"}], "//", 
+  "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"0.9529249161710623`", "0.1513495933467517`", 
+      RowBox[{"-", "0.2627306695727509`"}]},
+     {"0.1513495933467517`", "0.5134007729127795`", "0.8446969556985119`"},
+     {"0.2627306695727521`", 
+      RowBox[{"-", "0.8446969556985114`"}], "0.46632568908384214`"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -15229,8 +23559,24 @@ Z4l7ssdekeOe/BWLHPfkB2z/nfkJW8f71l57ePEH5rdyeGXzgv2gG+99sPW6
        135}, {163, 136, 129}, {163, 140, 136}, {163, 156, 140}, {163, 188, 
       156}, {163, 213, 188}, {163, 229, 213}, {163, 233, 229}, {163, 239, 
       233}}]}]},
-  Boxed->False]], "Output"]
-}, Open  ]]
+  AutomaticImageSize->True,
+  Boxed->False,
+  ImageSize->{346.0011328656371, 221.952468411583},
+  ViewPoint->{1.0392170623175803`, -3.03156031081426, 1.0861261341500674`},
+  ViewVertical->{0.0860334747734598, -0.4637768489965304, 
+   2.0432370025173237`}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The form of teapot2 is very close to that of TeapotOFF.  Its ",
+ StyleBox["\[LeftDoubleBracket]1,2\[RightDoubleBracket]", "Input"],
+ " element is a GraphicsComplex, which consists of explicit vertex \
+coordinates and lists of vertex indices to denote faces."
+}], "Text"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"teapot2", "//", "FullForm"}], ";"}]], "Input"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -17567,11 +25913,13 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"gr", "=", 
      RowBox[{"{", "\[IndentingNewLine]", 
-      RowBox[{"teapot2", "[", 
-       RowBox[{"[", 
-        RowBox[{"1", ",", "2"}], "]"}], "]"}], 
-      RowBox[{"(*", 
-       RowBox[{",", "\[IndentingNewLine]", 
+      RowBox[{"teapot2", "\[LeftDoubleBracket]", 
+       RowBox[{"1", ",", "2"}], "\[RightDoubleBracket]"}], 
+      RowBox[{"(*", " ", 
+       RowBox[{"the", " ", "GraphicsComplex"}], " ", "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{
         RowBox[{"Cuboid", "[", 
          RowBox[{
           RowBox[{"{", 
@@ -17580,8 +25928,7 @@ Cell[BoxData[
             RowBox[{"-", "1"}], ",", 
             RowBox[{"-", "1"}]}], "}"}], ",", 
           RowBox[{"{", 
-           RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "]"}], ",", 
-        "\[IndentingNewLine]", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
         RowBox[{"Cuboid", "[", "]"}], ",", "\[IndentingNewLine]", 
         RowBox[{"{", 
          RowBox[{"Red", ",", 
@@ -17592,7 +25939,7 @@ Cell[BoxData[
               RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}], ",", 
             RowBox[{"{", 
              RowBox[{"0", ",", "1", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
-        "\[IndentingNewLine]", 
+        " ", "\[IndentingNewLine]", 
         RowBox[{"{", 
          RowBox[{"Blue", ",", 
           RowBox[{"Cuboid", "[", 
@@ -17602,10 +25949,17 @@ Cell[BoxData[
             RowBox[{"{", 
              RowBox[{"3", ",", "1", ",", "2"}], "}"}]}], "]"}]}], "}"}]}], 
        "*)"}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{"3", "d", " ", "bounding", " ", "box"}], " ", "*)"}], 
+    "\[IndentingNewLine]", 
     RowBox[{"bb", "=", 
      RowBox[{"PlotRange", "[", 
       RowBox[{"Graphics3D", "[", "gr", "]"}], "]"}]}], ";", 
     "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "reciprocal", " ", "extents", " ", "in", " ", "all", " ", "three", " ", 
+      "directions"}], " ", "*)"}], "\[IndentingNewLine]", 
     RowBox[{"scale", "=", 
      RowBox[{
       RowBox[{
@@ -17615,65 +25969,93 @@ Cell[BoxData[
     "\[IndentingNewLine]", 
     RowBox[{"center", "=", 
      RowBox[{"Mean", "/@", "bb"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "A", " ", "pair", " ", "of", " ", "the", " ", "camera", " ", "location", 
+      " ", "\[IndentingNewLine]", "and", " ", "the", " ", "center", " ", "of",
+       " ", "the", " ", "scene"}], " ", "*)"}], "\[IndentingNewLine]", 
     RowBox[{"vv", "=", 
      RowBox[{"{", 
       RowBox[{"(*", 
        RowBox[{"{", 
         RowBox[{"6", ",", "5", ",", "2"}], "}"}], "*)"}], 
+      "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"{", 
         RowBox[{"1.3", ",", " ", 
-         RowBox[{"-", "2.4"}], ",", " ", "2.0"}], "}"}], ",", 
-       RowBox[{"Mean", "/@", "bb"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"-", "2.4"}], ",", " ", "2.0"}], "}"}], 
+       RowBox[{"(*", " ", 
+        RowBox[{"MMA", " ", "default", " ", "camera", " ", "loc"}], " ", 
+        "*)"}], ",", "\[IndentingNewLine]", "center"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{"cam", " ", "loc", " ", "wrt", " ", "obj", " ", "ctr"}], " ", 
+     "*)"}], "\[IndentingNewLine]", 
     RowBox[{"v1", "=", 
      RowBox[{"(", 
       RowBox[{
-       RowBox[{"vv", "[", 
-        RowBox[{"[", "1", "]"}], "]"}], "-", "center"}], ")"}]}], ";", 
-    "\[IndentingNewLine]", 
+       RowBox[{"vv", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+       "-", "center"}], ")"}]}], ";", 
+    RowBox[{"(*", " ", 
+     RowBox[{"cam", " ", "loc", " ", "wrt", " ", "obj", " ", "ctr"}], " ", 
+     "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{"vertical", " ", "vector", " ", 
+      RowBox[{"??", "?"}]}], " ", "*)"}], "\[IndentingNewLine]", 
     RowBox[{"vert", "=", 
      RowBox[{"{", 
       RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], 
-    RowBox[{"(*", 
+    RowBox[{"(*", " ", 
      RowBox[{
       RowBox[{"-", 
        RowBox[{
         RowBox[{"{", 
          RowBox[{"0", ",", "0", ",", "1"}], "}"}], ".", "v1"}]}], " ", "v1"}],
-      "*)"}], ";", "\[IndentingNewLine]", 
+      " ", "*)"}], ";", "\[IndentingNewLine]", 
     RowBox[{"viewAngle", "=", 
      RowBox[{"37.5", " ", "Degree"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"ArcTan", "[", 
+       RowBox[{"x", ",", "y"}], "]"}], " ", "\[Equal]", " ", 
+      RowBox[{"arc", " ", "tan", " ", "of", " ", 
+       RowBox[{"y", "/", "x"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"ang", " ", "from", " ", "x"}], ",", 
+      RowBox[{
+      "y", " ", "plane", " ", "to", " ", "cam", " ", "loc", " ", "vec"}]}], 
+     " ", "*)"}], "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"theta", "[", "v1_", "]"}], ":=", 
      RowBox[{"ArcTan", "[", 
       RowBox[{
-       RowBox[{"v1", "[", 
-        RowBox[{"[", "3", "]"}], "]"}], ",", 
+       RowBox[{"v1", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}], 
+       ",", 
        RowBox[{"Norm", "[", 
-        RowBox[{"v1", "[", 
-         RowBox[{"[", 
-          RowBox[{";;", "2"}], "]"}], "]"}], "]"}]}], "]"}]}], ";", 
-    "\[IndentingNewLine]", 
+        RowBox[{"v1", "\[LeftDoubleBracket]", 
+         RowBox[{";;", "2"}], "\[RightDoubleBracket]"}], "]"}]}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"phi", "[", "v1_", "]"}], ":=", 
      RowBox[{"If", "[", 
       RowBox[{
        RowBox[{
         RowBox[{"Norm", "[", 
-         RowBox[{"v1", "[", 
-          RowBox[{"[", 
-           RowBox[{";;", "2"}], "]"}], "]"}], "]"}], ">", ".0001"}], ",", 
+         RowBox[{"v1", "\[LeftDoubleBracket]", 
+          RowBox[{";;", "2"}], "\[RightDoubleBracket]"}], "]"}], ">", 
+        ".0001"}], ",", 
        RowBox[{"ArcTan", "[", 
         RowBox[{
-         RowBox[{"v1", "[", 
-          RowBox[{"[", "1", "]"}], "]"}], ",", 
-         RowBox[{"v1", "[", 
-          RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ",", "0"}], "]"}]}], ";", 
-    "\[IndentingNewLine]", 
+         RowBox[{"v1", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}],
+          ",", 
+         RowBox[{
+         "v1", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}]}], 
+        "]"}], ",", "0"}], "]"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"alpha", "[", 
       RowBox[{"vert_", ",", "v1_"}], "]"}], ":=", 
-     RowBox[{"ArcTan", "[", 
+     RowBox[{"ArcTan", "[", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{
         RowBox[{"{", 
@@ -17683,7 +26065,7 @@ Cell[BoxData[
             RowBox[{"phi", "[", "v1", "]"}], "]"}]}], ",", 
           RowBox[{"Cos", "[", 
            RowBox[{"phi", "[", "v1", "]"}], "]"}], ",", "0"}], "}"}], ".", 
-        "vert"}], ",", 
+        "vert"}], ",", "\[IndentingNewLine]", 
        RowBox[{
         RowBox[{"Cross", "[", 
          RowBox[{
@@ -17700,7 +26082,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"tt", "[", 
       RowBox[{"v1_", ",", "vert_", ",", "center_", ",", "r_"}], "]"}], ":=", 
-     RowBox[{"TransformationMatrix", "[", 
+     RowBox[{"TransformationMatrix", "[", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"RotationTransform", "[", 
         RowBox[{
@@ -17710,40 +26092,47 @@ Cell[BoxData[
             RowBox[{"vert", "/", "scale"}], ",", "v1"}], "]"}]}], ",", 
          RowBox[{"{", 
           RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ".", 
+       "\[IndentingNewLine]", 
        RowBox[{"RotationTransform", "[", 
         RowBox[{
          RowBox[{"-", 
           RowBox[{"theta", "[", "v1", "]"}]}], ",", 
          RowBox[{"{", 
           RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "]"}], ".", 
+       "\[IndentingNewLine]", 
        RowBox[{"RotationTransform", "[", 
         RowBox[{
          RowBox[{"-", 
           RowBox[{"phi", "[", "v1", "]"}]}], ",", 
          RowBox[{"{", 
           RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ".", 
+       "\[IndentingNewLine]", 
        RowBox[{"ScalingTransform", "[", 
         RowBox[{"r", " ", 
          RowBox[{"{", 
           RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "]"}], ".", 
+       "\[IndentingNewLine]", 
        RowBox[{"TranslationTransform", "[", 
         RowBox[{"-", "center"}], "]"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"pp", "[", "ang_", "]"}], ":=", 
-     RowBox[{"{", 
+     RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"{", 
         RowBox[{"1", ",", "0", ",", 
          RowBox[{"-", 
           RowBox[{"Tan", "[", "ang", "]"}]}], ",", "1"}], "}"}], ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"{", 
         RowBox[{"0", ",", "1", ",", 
          RowBox[{"-", 
           RowBox[{"Tan", "[", "ang", "]"}]}], ",", "1"}], "}"}], ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"{", 
         RowBox[{"0", ",", "0", ",", 
          RowBox[{"-", 
           RowBox[{"Tan", "[", "ang", "]"}]}], ",", "0"}], "}"}], ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"{", 
         RowBox[{"0", ",", "0", ",", 
          RowBox[{
@@ -17753,58 +26142,73 @@ Cell[BoxData[
     RowBox[{"obj", "=", 
      RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"\"\<bb\>\"", "\[RuleDelayed]", "bb"}], ",", 
-       RowBox[{"\"\<scale\>\"", "\[RuleDelayed]", "scale"}], ",", 
+       RowBox[{"\"\<theta\>\"", "\[RuleDelayed]", 
+        RowBox[{
+         RowBox[{"theta", "[", "v1", "]"}], "/", "Degree"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"\"\<phi\>\"", "\[RuleDelayed]", 
+        RowBox[{
+         RowBox[{"phi", "[", "v1", "]"}], "/", "Degree"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"\"\<alpha\>\"", "\[RuleDelayed]", 
+        RowBox[{
+         RowBox[{"alpha", "[", 
+          RowBox[{"vert", ",", "v1"}], "]"}], "/", "Degree"}]}], ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"\"\<center\>\"", "\[RuleDelayed]", "center"}], ",", 
-       RowBox[{"\"\<vv\>\"", "\[RuleDelayed]", "vv"}], ",", 
        RowBox[{"\"\<v1\>\"", "\[RuleDelayed]", "v1"}], ",", 
        RowBox[{"\"\<vert\>\"", "\[RuleDelayed]", "vert"}], ",", 
-       RowBox[{"\"\<viewAngle\>\"", "\[RuleDelayed]", "viewAngle"}], ",", 
-       RowBox[{"\"\<theta\>\"", "\[RuleDelayed]", 
-        RowBox[{"theta", "[", "v1", "]"}]}], ",", 
-       RowBox[{"\"\<phi\>\"", "\[RuleDelayed]", 
-        RowBox[{"phi", "[", "v1", "]"}]}], ",", 
-       RowBox[{"\"\<alpha\>\"", "\[RuleDelayed]", 
-        RowBox[{"alpha", "[", 
-         RowBox[{"vert", ",", "v1"}], "]"}]}]}], "}"}]}], ";", 
-    "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
+       RowBox[{"\"\<bb\>\"", "\[RuleDelayed]", "bb"}], ",", 
+       RowBox[{"\"\<scale\>\"", "\[RuleDelayed]", "scale"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"\"\<vv\>\"", "\[RuleDelayed]", "vv"}], ",", 
+       RowBox[{"\"\<viewAngle\>\"", "\[RuleDelayed]", 
+        RowBox[{"viewAngle", "/", "Degree"}]}]}], "\[IndentingNewLine]", 
+      "}"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{"Panel", "[", 
      RowBox[{"Column", "[", 
       RowBox[{
-       RowBox[{"{", 
+       RowBox[{"{", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{
           RowBox[{
            RowBox[{"Labeled", "[", 
-            RowBox[{"#", ",", 
+            RowBox[{"#", ",", "\[IndentingNewLine]", 
              RowBox[{"Style", "[", 
               RowBox[{
               "\"\<Transforming ViewVector/ViewVertical/ViewAngle to \
-ViewMatrix\>\"", ",", "15", ",", 
+ViewMatrix\>\"", ",", "\[IndentingNewLine]", "15", 
+               RowBox[{"(*", " ", 
+                RowBox[{"font", " ", "size"}], " ", "*)"}], ",", 
                RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], ",", 
-               "Bold"}], "]"}], ",", "Top", ",", 
+               "Bold"}], "]"}], ",", "\[IndentingNewLine]", "Top", ",", 
+             "\[IndentingNewLine]", 
              RowBox[{"Background", "\[Rule]", "White"}], ",", 
-             RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
              RowBox[{"FrameStyle", "\[Rule]", "Gray"}]}], "]"}], "&"}], "@", 
+          "\[IndentingNewLine]", 
           RowBox[{"Grid", "[", 
            RowBox[{
-            RowBox[{"{", 
+            RowBox[{"{", "\[IndentingNewLine]", 
              RowBox[{
               RowBox[{"{", 
                RowBox[{
-                RowBox[{"Labeled", "[", 
+                RowBox[{"Labeled", "[", "\[IndentingNewLine]", 
                  RowBox[{
                   RowBox[{"Dynamic", "@", 
                    RowBox[{"Graphics3D", "[", 
                     RowBox[{
-                    RowBox[{"{", "gr", "}"}], ",", 
+                    RowBox[{"{", "gr", "}"}], ",", "\[IndentingNewLine]", 
                     RowBox[{"Axes", "\[Rule]", "True"}], ",", 
                     RowBox[{"AxesLabel", "\[Rule]", 
                     RowBox[{"{", 
                     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}],
-                     "}"}]}], ",", 
+                     "}"}]}], ",", "\[IndentingNewLine]", 
                     RowBox[{"ViewAngle", "\[Rule]", 
                     RowBox[{"Dynamic", "[", "viewAngle", "]"}]}], ",", 
+                    "\[IndentingNewLine]", 
                     RowBox[{"ViewVector", "\[Rule]", 
                     RowBox[{"Dynamic", "[", 
                     RowBox[{"vv", ",", 
@@ -17813,29 +26217,34 @@ ViewMatrix\>\"", ",", "15", ",",
                     RowBox[{
                     RowBox[{"vv", "=", "#"}], ";", 
                     RowBox[{"center", "=", 
-                    RowBox[{"vv", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}]}], ";", 
+                    RowBox[{
+                    "vv", "\[LeftDoubleBracket]", "2", 
+                    "\[RightDoubleBracket]"}]}], ";", 
                     RowBox[{"v1", "=", 
                     RowBox[{
-                    RowBox[{"vv", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "-", "center"}]}]}], 
-                    ")"}], "&"}]}], "]"}]}], ",", 
+                    RowBox[{
+                    "vv", "\[LeftDoubleBracket]", "1", 
+                    "\[RightDoubleBracket]"}], "-", "center"}]}]}], ")"}], 
+                    "&"}]}], "]"}]}], ",", "\[IndentingNewLine]", 
                     RowBox[{"ViewVertical", "\[Rule]", 
                     RowBox[{"Dynamic", "[", "vert", "]"}]}], ",", 
                     RowBox[{"ImageSize", "\[Rule]", "270"}]}], "]"}]}], ",", 
+                  "\[IndentingNewLine]", 
                   RowBox[{"Style", "[", 
                    RowBox[{"\"\<ViewVector, ViewVertical, ViewAngle\>\"", ",", 
                     RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], 
-                    ",", "Bold"}], "]"}], ",", "Top", ",", 
+                    ",", "Bold"}], "]"}], ",", "\[IndentingNewLine]", "Top", 
+                  ",", 
                   RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}], ",", 
-                RowBox[{"Labeled", "[", 
+                "\[IndentingNewLine]", 
+                RowBox[{"Labeled", "[", "\[IndentingNewLine]", 
                  RowBox[{
                   RowBox[{"Dynamic", "@", 
                    RowBox[{"Graphics3D", "[", 
                     RowBox[{
-                    RowBox[{"{", "gr", "}"}], ",", 
+                    RowBox[{"{", "gr", "}"}], ",", "\[IndentingNewLine]", 
                     RowBox[{"ViewMatrix", "\[Rule]", 
-                    RowBox[{"{", 
+                    RowBox[{"{", "\[IndentingNewLine]", 
                     RowBox[{
                     RowBox[{"tt", "[", 
                     RowBox[{"v1", ",", "vert", ",", "center", ",", 
@@ -17843,19 +26252,23 @@ ViewMatrix\>\"", ",", "15", ",",
                     RowBox[{"Cot", "[", 
                     RowBox[{"viewAngle", "/", "2"}], "]"}], "/", 
                     RowBox[{"Norm", "[", "v1", "]"}]}]}], "]"}], ",", 
+                    "\[IndentingNewLine]", 
                     RowBox[{"pp", "[", 
                     RowBox[{"viewAngle", "/", "2"}], "]"}]}], "}"}]}], ",", 
+                    "\[IndentingNewLine]", 
                     RowBox[{"Axes", "\[Rule]", "True"}], ",", 
                     RowBox[{"AxesLabel", "\[Rule]", 
                     RowBox[{"{", 
                     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}],
-                     "}"}]}], ",", 
+                     "}"}]}], ",", "\[IndentingNewLine]", 
                     RowBox[{"ImageSize", "\[Rule]", "270"}]}], "]"}]}], ",", 
+                  "\[IndentingNewLine]", 
                   RowBox[{"Style", "[", 
                    RowBox[{"\"\<ViewMatrix\>\"", ",", "Bold", ",", 
                     RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}]}], 
-                   "]"}], ",", "Top", ",", 
-                  RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]}], "}"}], ",", 
+                   "]"}], ",", "\[IndentingNewLine]", "Top", ",", 
+                  RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]}], "}"}], ",",
+               "\[IndentingNewLine]", 
               RowBox[{"{", 
                RowBox[{
                 RowBox[{"Dynamic", "@", 
@@ -17863,7 +26276,7 @@ ViewMatrix\>\"", ",", "15", ",",
                   RowBox[{
                    RowBox[{
                     RowBox[{
-                    RowBox[{"N", "[", 
+                    RowBox[{"N", "[", "\[IndentingNewLine]", 
                     RowBox[{"{", 
                     RowBox[{
                     RowBox[{"tt", "[", 
@@ -17872,23 +26285,30 @@ ViewMatrix\>\"", ",", "15", ",",
                     RowBox[{"Cot", "[", 
                     RowBox[{"viewAngle", "/", "2"}], "]"}], "/", 
                     RowBox[{"Norm", "[", "v1", "]"}]}]}], "]"}], ",", 
+                    "\[IndentingNewLine]", 
                     RowBox[{"pp", "[", 
-                    RowBox[{"viewAngle", "/", "2"}], "]"}]}], "}"}], "]"}], "/.", 
+                    RowBox[{"viewAngle", "/", "2"}], "]"}]}], "}"}], "]"}], "//", 
+                    RowBox[{"Chop", "/.", "\[IndentingNewLine]", 
                     RowBox[{"{", 
                     RowBox[{
                     RowBox[{"a_", "?", "NumericQ"}], "\[RuleDelayed]", 
                     RowBox[{"NumberForm", "[", 
-                    RowBox[{"a", ",", "3"}], "]"}]}], "}"}]}], "//", 
+                    RowBox[{"a", ",", "3"}], "]"}]}], "}"}]}]}], "//", 
+                    "\[IndentingNewLine]", 
                     RowBox[{
                     RowBox[{"MatrixForm", "[", 
                     RowBox[{"#", ",", 
                     RowBox[{"TableDirections", "\[Rule]", "Row"}]}], "]"}], 
-                    "&"}]}], ",", 
+                    "&"}]}], 
+                   RowBox[{"(*", " ", 
+                    RowBox[{"sort", " ", "of", " ", "a", " ", "transpose"}], 
+                    " ", "*)"}], ",", "\[IndentingNewLine]", 
                    RowBox[{"Style", "[", 
                     RowBox[{"\"\<ViewMatrix\>\"", ",", "12", ",", 
                     RowBox[{"FontFamily", "\[Rule]", "\"\<Helvetica\>\""}], 
                     ",", "Bold"}], "]"}], ",", "Left"}], "]"}]}], ",", 
-                "SpanFromLeft"}], "}"}]}], "}"}], ",", 
+                "\[IndentingNewLine]", "SpanFromLeft"}], "}"}]}], 
+             "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
             RowBox[{"Spacings", "\[Rule]", 
              RowBox[{"{", 
               RowBox[{"1", ",", "2"}], "}"}]}]}], "]"}]}], ",", 
@@ -17897,21 +26317,26 @@ ViewMatrix\>\"", ",", "15", ",",
           RowBox[{"gridRules", "@", "obj"}], "]"}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"Button", "[", 
-          RowBox[{"\"\<Print ViewMatrix\>\"", ",", 
+          RowBox[{"\"\<Print ViewMatrix\>\"", ",", "\[IndentingNewLine]", 
            RowBox[{"Print", "[", 
-            RowBox[{"N", "[", 
-             RowBox[{"{", 
+            RowBox[{"N", "[", "\[IndentingNewLine]", 
+             RowBox[{
               RowBox[{
-               RowBox[{"tt", "[", 
-                RowBox[{"v1", ",", "vert", ",", "center", ",", 
-                 RowBox[{
-                  RowBox[{"Cot", "[", 
-                   RowBox[{"viewAngle", "/", "2"}], "]"}], "/", 
-                  RowBox[{"Norm", "[", "v1", "]"}]}]}], "]"}], ",", 
-               RowBox[{"pp", "[", 
-                RowBox[{"viewAngle", "/", "2"}], "]"}]}], "}"}], "]"}], "]"}],
-            ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"tt", "[", 
+                  RowBox[{"v1", ",", "vert", ",", "center", ",", 
+                   RowBox[{
+                    RowBox[{"Cot", "[", 
+                    RowBox[{"viewAngle", "/", "2"}], "]"}], "/", 
+                    RowBox[{"Norm", "[", "v1", "]"}]}]}], "]"}], ",", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"pp", "[", 
+                  RowBox[{"viewAngle", "/", "2"}], "]"}]}], "}"}], "//", 
+               "Chop"}], "//", "MatrixForm"}], "]"}], "]"}], ",", 
+           "\[IndentingNewLine]", 
            RowBox[{"ImageSize", "\[Rule]", "150"}]}], "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}], "]"}]}]}], 
   "]"}]], "Input"],
 
@@ -18206,13 +26631,13 @@ Z4l7ssdekeOe/BWLHPfkB2z/nfkJW8f71l57ePEH5rdyeGXzgv2gG+99sPW6
   0.6750495}}, $CellContext`theta$$, $CellContext`phi$$, \
 $CellContext`alpha$$, $CellContext`vert$$ = {0, 0, 
   1}, $CellContext`viewAngle$$ = 0.6544984694978736, $CellContext`obj$$ = {
-  "bb" :> $CellContext`bb$$, "scale" :> $CellContext`scale$$, 
-   "center" :> $CellContext`center$$, "vv" :> $CellContext`vv$$, 
-   "v1" :> $CellContext`v1$$, "vert" :> $CellContext`vert$$, 
-   "viewAngle" :> $CellContext`viewAngle$$, 
-   "theta" :> $CellContext`theta$$[$CellContext`v1$$], 
-   "phi" :> $CellContext`phi$$[$CellContext`v1$$], 
-   "alpha" :> $CellContext`alpha$$[$CellContext`vert$$, $CellContext`v1$$]}}, 
+  "theta" :> $CellContext`theta$$[$CellContext`v1$$]/Degree, 
+   "phi" :> $CellContext`phi$$[$CellContext`v1$$]/Degree, 
+   "alpha" :> $CellContext`alpha$$[$CellContext`vert$$, $CellContext`v1$$]/
+    Degree, "center" :> $CellContext`center$$, "v1" :> $CellContext`v1$$, 
+   "vert" :> $CellContext`vert$$, "bb" :> $CellContext`bb$$, 
+   "scale" :> $CellContext`scale$$, "vv" :> $CellContext`vv$$, 
+   "viewAngle" :> $CellContext`viewAngle$$/Degree}}, 
   PanelBox[
    TagBox[GridBox[{
       {
@@ -18230,7 +26655,7 @@ $CellContext`center$$ = Part[$CellContext`vv$$, 2]; $CellContext`v1$$ =
                     Part[$CellContext`vv$$, 1] - $CellContext`center$$)& ], 
                   ViewVertical -> Dynamic[$CellContext`vert$$], ImageSize -> 
                   270], StandardForm], 
-                ImageSizeCache -> {405., {198., 207.}}], 
+                ImageSizeCache -> {378., {185., 193.}}], 
                StyleBox[
                "\"ViewVector, ViewVertical, ViewAngle\"", StripOnInput -> 
                 False, FontFamily -> "Helvetica", FontWeight -> Bold]}, 
@@ -18261,7 +26686,7 @@ $CellContext`center$$, Cot[$CellContext`viewAngle$$/2]/
                     Norm[$CellContext`v1$$]], 
                     $CellContext`pp$$[$CellContext`viewAngle$$/2]}, Axes -> 
                   True, AxesLabel -> {"x", "y", "z"}, ImageSize -> 270], 
-                 StandardForm], ImageSizeCache -> {405., {198., 207.}}], 
+                 StandardForm], ImageSizeCache -> {378., {185., 193.}}], 
                StyleBox[
                "\"ViewMatrix\"", StripOnInput -> False, FontFamily -> 
                 "Helvetica", FontWeight -> Bold]}, "Labeled", 
@@ -18287,17 +26712,16 @@ $CellContext`center$$, Cot[$CellContext`viewAngle$$/2]/
               ToBoxes[
                Labeled[
                 (MatrixForm[#, TableDirections -> Row]& )[
-                 ReplaceAll[
+                 ReplaceAll[Chop, {PatternTest[
+                    Pattern[$CellContext`a, 
+                    Blank[]], NumericQ] :> NumberForm[$CellContext`a, 3]}][
                   N[{
                     $CellContext`tt$$[$CellContext`v1$$, $CellContext`vert$$, \
 $CellContext`center$$, Cot[$CellContext`viewAngle$$/2]/
                     Norm[$CellContext`v1$$]], 
-                    $CellContext`pp$$[$CellContext`viewAngle$$/2]}], {
-                  PatternTest[
-                    Pattern[$CellContext`a, 
-                    Blank[]], NumericQ] :> NumberForm[$CellContext`a, 3]}]], 
+                    $CellContext`pp$$[$CellContext`viewAngle$$/2]}]]], 
                 Style["ViewMatrix", 12, FontFamily -> "Helvetica", Bold], 
-                Left], StandardForm], ImageSizeCache -> {913., {64., 78.}}], 
+                Left], StandardForm], ImageSizeCache -> {950., {59., 72.}}], 
              "\[SpanFromLeft]"}}, AutoDelete -> False, 
            GridBoxItemSize -> {
             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
@@ -18333,16 +26757,18 @@ $CellContext`center$$, Cot[$CellContext`viewAngle$$/2]/
       {
        DynamicBox[ToBoxes[
          Jacquard`gridRules[$CellContext`obj$$], StandardForm],
-        ImageSizeCache->{355., {651., 665.}}]},
+        ImageSizeCache->{326., {594.5, 607.5}}]},
       {
        ButtonBox["\<\"Print ViewMatrix\"\>",
         Appearance->Automatic,
         ButtonFunction:>Print[
-          N[{
-            $CellContext`tt$$[$CellContext`v1$$, $CellContext`vert$$, \
+          N[
+           MatrixForm[
+            Chop[{
+              $CellContext`tt$$[$CellContext`v1$$, $CellContext`vert$$, \
 $CellContext`center$$, Cot[$CellContext`viewAngle$$/2]/
-             Norm[$CellContext`v1$$]], 
-            $CellContext`pp$$[$CellContext`viewAngle$$/2]}]],
+               Norm[$CellContext`v1$$]], 
+              $CellContext`pp$$[$CellContext`viewAngle$$/2]}]]]],
         Evaluator->Automatic,
         ImageSize->150,
         Method->"Preemptive"]}
@@ -18413,10 +26839,10 @@ CellContext`scale$$, $CellContext`v1$], {0, 0, 1}],
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1675, 1510},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{942, 990},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
 ShowSelection->True,
-Magnification->1.5,
+Magnification->1.4000000953674316`,
 FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
 StyleDefinitions->FrontEnd`FileName[{"Creative"}, "NaturalColor.nb", 
   CharacterEncoding -> "WindowsANSI"]
@@ -18433,116 +26859,194 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1257, 32, 37, 0, 98, "Title"],
-Cell[1297, 34, 174094, 4374, 9428, "Input"],
+Cell[1257, 32, 37, 0, 91, "Title"],
+Cell[1297, 34, 174094, 4374, 17181, "Input"],
 Cell[CellGroupData[{
-Cell[175416, 4412, 130, 2, 86, "Input"],
-Cell[175549, 4416, 16507, 242, 625, "Output"]
+Cell[175416, 4412, 130, 2, 81, "Input"],
+Cell[175549, 4416, 16507, 242, 584, "Output"]
 }, Open  ]],
-Cell[192071, 4661, 587, 16, 140, "Input"],
+Cell[192071, 4661, 587, 16, 131, "Input"],
 Cell[CellGroupData[{
-Cell[192683, 4681, 99, 2, 58, "Input"],
-Cell[192785, 4685, 66271, 1068, 472, "Output"]
-}, Open  ]],
-Cell[259071, 5756, 51, 0, 42, "Text"],
-Cell[259125, 5758, 176, 5, 58, "Input"],
-Cell[259304, 5765, 45, 0, 42, "Text"],
-Cell[259352, 5767, 2122, 57, 302, "Input"],
-Cell[261477, 5826, 192, 4, 42, "Text"],
-Cell[261672, 5832, 396, 12, 86, "Input"],
-Cell[262071, 5846, 547, 13, 167, "Input"],
-Cell[CellGroupData[{
-Cell[262643, 5863, 309, 9, 58, "Input"],
-Cell[262955, 5874, 10251, 275, 371, "Output"]
-}, Open  ]],
-Cell[273221, 6152, 51, 0, 42, "Text"],
-Cell[273275, 6154, 320, 9, 86, "Input"],
-Cell[273598, 6165, 156, 3, 42, "Text"],
-Cell[CellGroupData[{
-Cell[273779, 6172, 633, 19, 58, "Input"],
-Cell[274415, 6193, 1124, 37, 81, "Output"]
-}, Open  ]],
-Cell[275554, 6233, 153, 3, 42, "Text"],
-Cell[CellGroupData[{
-Cell[275732, 6240, 592, 18, 58, "Input"],
-Cell[276327, 6260, 627, 20, 92, "Output"]
-}, Open  ]],
-Cell[276969, 6283, 92, 2, 42, "Text"],
-Cell[277064, 6287, 1310, 37, 140, "Input"],
-Cell[278377, 6326, 97, 2, 42, "Text"],
-Cell[CellGroupData[{
-Cell[278499, 6332, 170, 5, 58, "Input"],
-Cell[278672, 6339, 11040, 337, 377, "Output"]
-}, Open  ]],
-Cell[289727, 6679, 45, 0, 42, "Text"],
-Cell[289775, 6681, 2084, 47, 140, "Input"],
-Cell[CellGroupData[{
-Cell[291884, 6732, 111, 2, 58, "Input"],
-Cell[291998, 6736, 7834, 237, 377, "Output"]
-}, Open  ]],
-Cell[299847, 6976, 102, 2, 42, "Text"],
-Cell[CellGroupData[{
-Cell[299974, 6982, 2535, 53, 167, "Input"],
-Cell[302512, 7037, 754, 22, 156, "Output"]
+Cell[192683, 4681, 167, 5, 55, "Input"],
+Cell[192853, 4688, 13467, 360, 369, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[303303, 7064, 380, 11, 58, "Input"],
-Cell[303686, 7077, 83, 1, 57, "Output"]
-}, Open  ]],
-Cell[303784, 7081, 1281, 34, 329, "Input"],
-Cell[CellGroupData[{
-Cell[305090, 7119, 625, 15, 221, "Input"],
-Cell[305718, 7136, 8801, 234, 371, "Output"]
-}, Open  ]],
-Cell[314534, 7373, 289, 8, 58, "Input"],
-Cell[CellGroupData[{
-Cell[314848, 7385, 365, 11, 58, "Input"],
-Cell[315216, 7398, 3743, 105, 156, "Output"]
+Cell[206357, 5053, 99, 2, 55, "Input"],
+Cell[206459, 5057, 66512, 1073, 432, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[318996, 7508, 669, 20, 58, "Input"],
-Cell[319668, 7530, 9396, 255, 371, "Output"]
+Cell[273008, 6135, 35, 0, 105, "Section"],
+Cell[273046, 6137, 51, 0, 38, "Text"],
+Cell[273100, 6139, 176, 5, 55, "Input"],
+Cell[273279, 6146, 45, 0, 38, "Text"],
+Cell[273327, 6148, 2122, 57, 281, "Input"],
+Cell[275452, 6207, 192, 4, 38, "Text"],
+Cell[275647, 6213, 396, 12, 81, "Input"],
+Cell[276046, 6227, 547, 13, 156, "Input"],
+Cell[CellGroupData[{
+Cell[276618, 6244, 33, 0, 52, "Subsection"],
+Cell[CellGroupData[{
+Cell[276676, 6248, 309, 9, 55, "Input"],
+Cell[276988, 6259, 10251, 275, 369, "Output"]
+}, Open  ]],
+Cell[287254, 6537, 51, 0, 38, "Text"],
+Cell[287308, 6539, 320, 9, 81, "Input"],
+Cell[287631, 6550, 156, 3, 38, "Text"],
+Cell[CellGroupData[{
+Cell[287812, 6557, 633, 19, 55, "Input"],
+Cell[288448, 6578, 1124, 37, 125, "Output"]
+}, Open  ]],
+Cell[289587, 6618, 153, 3, 38, "Text"],
+Cell[CellGroupData[{
+Cell[289765, 6625, 592, 18, 55, "Input"],
+Cell[290360, 6645, 627, 20, 87, "Output"]
+}, Open  ]],
+Cell[291002, 6668, 92, 2, 38, "Text"],
+Cell[291097, 6672, 1310, 37, 131, "Input"],
+Cell[292410, 6711, 97, 2, 38, "Text"],
+Cell[CellGroupData[{
+Cell[292532, 6717, 170, 5, 55, "Input"],
+Cell[292705, 6724, 10374, 317, 352, "Output"]
+}, Open  ]],
+Cell[303094, 7044, 45, 0, 38, "Text"],
+Cell[303142, 7046, 2084, 47, 156, "Input"],
+Cell[CellGroupData[{
+Cell[305251, 7097, 111, 2, 55, "Input"],
+Cell[305365, 7101, 7816, 237, 352, "Output"]
+}, Open  ]],
+Cell[313196, 7341, 102, 2, 38, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[329101, 7790, 198, 6, 58, "Input"],
-Cell[329302, 7798, 2193, 72, 158, "Output"]
+Cell[313335, 7348, 29, 0, 52, "Subsection"],
+Cell[CellGroupData[{
+Cell[313389, 7352, 2535, 53, 181, "Input"],
+Cell[315927, 7407, 754, 22, 154, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[331532, 7875, 322, 10, 58, "Input"],
-Cell[331857, 7887, 211253, 3491, 326, "Output"]
+Cell[316718, 7434, 380, 11, 81, "Input"],
+Cell[317101, 7447, 83, 1, 55, "Output"]
+}, Open  ]],
+Cell[317199, 7451, 1281, 34, 306, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[543147, 11383, 795, 24, 86, "Input"],
-Cell[543945, 11409, 177455, 3471, 326, "Output"]
+Cell[318517, 7490, 33, 0, 52, "Subsection"],
+Cell[318553, 7492, 78, 2, 38, "Text"],
+Cell[CellGroupData[{
+Cell[318656, 7498, 625, 15, 206, "Input"],
+Cell[319284, 7515, 8801, 234, 369, "Output"]
+}, Open  ]],
+Cell[328100, 7752, 289, 8, 55, "Input"],
+Cell[CellGroupData[{
+Cell[328414, 7764, 365, 11, 55, "Input"],
+Cell[328782, 7777, 3743, 105, 154, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[721437, 14885, 504, 12, 167, "Input"],
-Cell[721944, 14899, 87, 1, 57, "Output"]
+Cell[332562, 7887, 669, 20, 55, "Input"],
+Cell[333234, 7909, 9396, 255, 369, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[722068, 14905, 518, 12, 167, "Input"],
-Cell[722589, 14919, 95, 1, 57, "Output"]
+Cell[342667, 8169, 198, 6, 55, "Input"],
+Cell[342868, 8177, 2193, 72, 156, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[722721, 14925, 49, 0, 113, "Section"],
-Cell[722773, 14927, 69, 0, 42, "Text"],
-Cell[722845, 14929, 89, 2, 58, "Input",
- InitializationCell->True],
+Cell[345098, 8254, 322, 10, 55, "Input"],
+Cell[345423, 8266, 211245, 3495, 304, "Output"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[722959, 14935, 367, 10, 58, "Input"],
-Cell[723329, 14947, 19353, 284, 472, "Output"]
+Cell[556705, 11766, 795, 24, 81, "Input"],
+Cell[557503, 11792, 177455, 3471, 304, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[734995, 15268, 504, 12, 156, "Input"],
+Cell[735502, 15282, 87, 1, 55, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[735626, 15288, 518, 12, 156, "Input"],
+Cell[736147, 15302, 95, 1, 55, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[736303, 15310, 39, 0, 62, "Section"],
+Cell[CellGroupData[{
+Cell[736367, 15314, 99, 2, 55, "Input"],
+Cell[736469, 15318, 66271, 1068, 441, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[802777, 16391, 171, 5, 55, "Input"],
+Cell[802951, 16398, 10251, 275, 369, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[813239, 16678, 231, 7, 55, "Input"],
+Cell[813473, 16687, 761, 20, 154, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[814271, 16712, 1330, 39, 106, "Input"],
+Cell[815604, 16753, 678, 20, 112, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[816319, 16778, 141, 4, 55, "Input"],
+Cell[816463, 16784, 659, 20, 112, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[817159, 16809, 72, 1, 55, "Input"],
+Cell[817234, 16812, 671, 21, 112, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[817942, 16838, 161, 5, 55, "Input"],
+Cell[818106, 16845, 693, 21, 112, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[818836, 16871, 71, 2, 52, "Subsection"],
+Cell[818910, 16875, 810, 23, 156, "Input"],
+Cell[819723, 16900, 317, 9, 81, "Input"],
+Cell[CellGroupData[{
+Cell[820065, 16913, 1837, 48, 206, "Input"],
+Cell[821905, 16963, 201383, 3384, 345, 160251, 2708, "CachedBoxData", \
+"BoxData", "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1023325, 20352, 2344, 59, 331, "Input"],
+Cell[1025672, 20413, 165847, 2721, 366, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1191556, 23139, 280, 8, 55, "Input"],
+Cell[1191839, 23149, 123, 3, 55, "Output"]
+}, Open  ]],
+Cell[1191977, 23155, 200, 8, 38, "Text"],
+Cell[CellGroupData[{
+Cell[1192202, 23167, 374, 11, 55, "Input"],
+Cell[1192579, 23180, 722, 19, 112, "Output"]
+}, Open  ]],
+Cell[1193316, 23202, 193, 8, 38, "Text"],
+Cell[CellGroupData[{
+Cell[1193534, 23214, 383, 12, 81, "Input"],
+Cell[1193920, 23228, 824, 20, 112, "Output"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[742731, 15237, 26, 0, 113, "Section"],
-Cell[742760, 15239, 60, 0, 42, "Text"],
+Cell[1194805, 23255, 49, 0, 105, "Section"],
+Cell[1194857, 23257, 69, 0, 38, "Text"],
+Cell[1194929, 23259, 89, 2, 55, "Input",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[742845, 15243, 5124, 118, 896, "Input"],
-Cell[747972, 15363, 133804, 2190, 505, "Output"]
+Cell[1195043, 23265, 367, 10, 106, "Input"],
+Cell[1195413, 23277, 19593, 289, 346, "Output"]
+}, Open  ]],
+Cell[1215021, 23569, 288, 5, 63, "Text"],
+Cell[1215312, 23576, 81, 2, 55, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[881813, 17558, 14540, 357, 1139, "Input"],
-Cell[896356, 17917, 29378, 493, 2168, "Output"]
+Cell[1215430, 23583, 26, 0, 105, "Section"],
+Cell[1215459, 23585, 60, 0, 38, "Text"],
+Cell[CellGroupData[{
+Cell[1215544, 23589, 5124, 118, 831, "Input"],
+Cell[1220671, 23709, 133804, 2190, 471, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1354512, 25904, 18592, 436, 2256, "Input"],
+Cell[1373107, 26342, 29445, 494, 1995, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -18552,4 +27056,4 @@ Cell[896356, 17917, 29378, 493, 2168, "Output"]
 
 (* End of internal cache information *)
 
-(* NotebookSignature Dx0vI@13gpdxMAw3Glqp#ZzR *)
+(* NotebookSignature luDnSjF3AOfUgDwaBgaDshnS *)
